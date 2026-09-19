@@ -16,6 +16,7 @@ własnej, legalnie posiadanej kopii gry.
 | --- | --- | --- | --- |
 | [Shotgun Cop Man](games/shotgun-cop-man/) | 485 wpisów — menu, sterowanie, samouczek, dialogi, edytor poziomów, osiągnięcia | 0.1 | Polski dodany jako jedenasty język; zweryfikowany strukturalnie, test w grze jeszcze przed nami |
 | [Anger Foot](games/anger-foot/) | 1774 z 1776 wpisów — menu, ustawienia, samouczki, dialogi, nazwy poziomów, buty, osiągnięcia, napisy końcowe | 0.1 | Polski wchodzi w pusty slot włoski; przetestowany ekran tytułowy i menu |
+| [Dread Templar](games/dread-templar/) | 636 wpisów — menu, ustawienia, sterowanie, samouczek, dialogi, przerywniki, nazwy poziomów i bossów, opisy run | 0.1 | Polski wchodzi w pusty slot `pol` zostawiony przez twórców; czcionki gry nie mają polskich znaków |
 
 Szczegóły — jak dana gra trzyma teksty, co dokładnie zostało podmienione i czego nie ruszono —
 opisuje README każdej gry. Instrukcja dla gracza leży w `games/<gra>/docs/INSTALL.txt`.

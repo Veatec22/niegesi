@@ -1,0 +1,39 @@
+DREAD TEMPLAR - POLISH TRANSLATION 0.1
+
+1. Close the game.
+2. Open the game folder (GOG Galaxy: Manage > Show folder; Steam: Manage > Browse local files).
+3. Make a copy of the whole DreadTemplar_Data folder somewhere outside the game folder, or
+   at least of resources.assets and every level* file inside it.
+4. Drag the DreadTemplar_Data folder from this package into the game folder and confirm
+   replacing the files.
+5. Start the game, open Options > Language and pick POLSKI, then restart the game as the
+   menu asks.
+
+No scripts, no installer and no mod loader are required.
+
+RESTORING
+Close the game and put your copies of the original files back. You can also verify/repair
+the installation in GOG Galaxy or Steam.
+
+HOW IT WORKS
+All of the game's text lives in one JSON object inside resources.assets, keyed by language.
+The developers left an empty "pol" block in it - the slot exists, nobody ever filled it.
+This package fills it. The options menu carries ten language buttons, one of which is a
+disabled leftover Italian button; enabling it and relabelling it gives Polish its own
+button. Nothing else in the files is touched: the other nine languages are byte-identical,
+and no executable, DLL or scene geometry is modified.
+
+COMPATIBILITY
+Built and verified against the GOG build from 2026-09. The build tool refuses to work with
+any other version of the game files. After a game update, do not use this package until a
+new build has been made and checked.
+
+SCOPE
+All 636 text entries: menus, settings, controls, tutorial, in-game messages, dialogue,
+cutscenes, level names, boss names, weapons and every rune description.
+
+KNOWN PROBLEM - POLISH LETTERS
+The fonts shipped with the game have no glyphs for a c e l n s z z with their Polish marks.
+Their character tables end at Latin-1, which covers French, German, Spanish and Portuguese
+but not Polish. Those letters will render as empty boxes until the font atlas is extended.
+The letter o with an acute is present and renders correctly.
