@@ -1,0 +1,5926 @@
+[
+  {
+    "key": "0",
+    "english": "A very small percentage of people may experience a seizure when exposed to certain visual images, including flashing lights or patterns that may appear in video games.",
+    "polish": "Niewielki odsetek ludzi może dostać ataku padaczki pod wpływem określonych obrazów, w tym migających świateł lub wzorów, które mogą pojawić się w grach wideo."
+  },
+  {
+    "key": "1",
+    "english": "Play at your own risk.",
+    "polish": "Grasz na własną odpowiedzialność."
+  },
+  {
+    "key": "2",
+    "english": "Free",
+    "polish": "Za darmo"
+  },
+  {
+    "key": "3",
+    "english": "THE INFINITE FOYER",
+    "polish": "NIESKOŃCZONY HOL"
+  },
+  {
+    "key": "4",
+    "english": "THE BOUNDLESS HALLWAYS",
+    "polish": "BEZKRESNE KORYTARZE"
+  },
+  {
+    "key": "5",
+    "english": "THE PRIMORDIAL CONSERVATORY",
+    "polish": "PRAODWIECZNA ORANŻERIA"
+  },
+  {
+    "key": "6",
+    "english": "THE UNTOLD BATHHOUSE",
+    "polish": "NIEOPOWIEDZIANE ŁAŹNIE"
+  },
+  {
+    "key": "7",
+    "english": "THE BOTTOMLESS CELLAR",
+    "polish": "BEZDENNA PIWNICA"
+  },
+  {
+    "key": "8",
+    "english": "THE VAST LIBRARY",
+    "polish": "OGROMNA BIBLIOTEKA"
+  },
+  {
+    "key": "9",
+    "english": "THE COLOSSAL CHAPEL",
+    "polish": "KOLOSALNA KAPLICA"
+  },
+  {
+    "key": "10",
+    "english": "THE COSMIC BALLROOM",
+    "polish": "KOSMICZNA SALA BALOWA"
+  },
+  {
+    "key": "11",
+    "english": "Use",
+    "polish": "Użyj"
+  },
+  {
+    "key": "12",
+    "english": "Exit",
+    "polish": "Wyjście"
+  },
+  {
+    "key": "13",
+    "english": "Price: ",
+    "polish": "Cena: "
+  },
+  {
+    "key": "14",
+    "english": "Enemies are "
+  },
+  {
+    "key": "15",
+    "english": " Years Later"
+  },
+  {
+    "key": "16",
+    "english": "No Guns Selected",
+    "polish": "Nie wybrano broni"
+  },
+  {
+    "key": "17",
+    "english": "Inventory",
+    "polish": "Ekwipunek"
+  },
+  {
+    "key": "18",
+    "english": " - Select",
+    "polish": " - Wybierz"
+  },
+  {
+    "key": "19",
+    "english": " - Adjust",
+    "polish": " - Zmień"
+  },
+  {
+    "key": "20",
+    "english": "OPTIONS",
+    "polish": "OPCJE"
+  },
+  {
+    "key": "21",
+    "english": "SOUND",
+    "polish": "DŹWIĘK"
+  },
+  {
+    "key": "22",
+    "english": "KEYBOARD REMAPPING",
+    "polish": "ZMIANA KLAWISZY"
+  },
+  {
+    "key": "23",
+    "english": "CONTROLLER REMAPPING",
+    "polish": "ZMIANA PRZYCISKÓW PADA"
+  },
+  {
+    "key": "24",
+    "english": "CONTROLLER SETTINGS",
+    "polish": "USTAWIENIA PADA"
+  },
+  {
+    "key": "25",
+    "english": "GRAPHICS",
+    "polish": "GRAFIKA"
+  },
+  {
+    "key": "26",
+    "english": "ACCESSIBILITY",
+    "polish": "UŁATWIENIA"
+  },
+  {
+    "key": "27",
+    "english": " - CONFIRM",
+    "polish": " - ZATWIERDŹ"
+  },
+  {
+    "key": "28",
+    "english": " - BACK",
+    "polish": " - WSTECZ"
+  },
+  {
+    "key": "29",
+    "english": " - ADJUST",
+    "polish": " - ZMIEŃ"
+  },
+  {
+    "key": "30",
+    "english": "Left/Right",
+    "polish": "Lewo/Prawo"
+  },
+  {
+    "key": "31",
+    "english": "Resume",
+    "polish": "Wznów"
+  },
+  {
+    "key": "32",
+    "english": "Liquors",
+    "polish": "Trunki"
+  },
+  {
+    "key": "33",
+    "english": "Options",
+    "polish": "Opcje"
+  },
+  {
+    "key": "34",
+    "english": "Quit to Desktop",
+    "polish": "Wyjdź do pulpitu"
+  },
+  {
+    "key": "35",
+    "english": "Save and Quit",
+    "polish": "Zapisz i wyjdź"
+  },
+  {
+    "key": "36",
+    "english": "CLEAR",
+    "polish": "WYCZYŚĆ"
+  },
+  {
+    "key": "37",
+    "english": "Continue",
+    "polish": "Kontynuuj"
+  },
+  {
+    "key": "38",
+    "english": "New Run",
+    "polish": "Nowy przebieg"
+  },
+  {
+    "key": "39",
+    "english": "Quit to Desktop",
+    "polish": "Wyjdź do pulpitu"
+  },
+  {
+    "key": "40",
+    "english": "Impossible Mode",
+    "polish": "Tryb niemożliwy"
+  },
+  {
+    "key": "50",
+    "english": " to kick open doors.",
+    "polish": ", aby wyważać drzwi."
+  },
+  {
+    "key": "51",
+    "english": " to pick up guns.",
+    "polish": ", aby podnosić broń."
+  },
+  {
+    "key": "52",
+    "english": " to shoot. Press ",
+    "polish": ", aby strzelać. Naciśnij "
+  },
+  {
+    "key": "53",
+    "english": " to activate Focus. Press ",
+    "polish": ", aby włączyć Skupienie. Naciśnij "
+  },
+  {
+    "key": "54",
+    "english": " to roll. ",
+    "polish": ", aby zrobić unik. "
+  },
+  {
+    "key": "55",
+    "english": "Press Space to vault over furniture.",
+    "polish": "Naciśnij spację, aby przeskakiwać meble."
+  },
+  {
+    "key": "56",
+    "english": "Press ",
+    "polish": "Naciśnij "
+  },
+  {
+    "key": "57",
+    "english": " to reload.",
+    "polish": ", aby przeładować."
+  },
+  {
+    "key": "58",
+    "english": "Sound",
+    "polish": "Dźwięk"
+  },
+  {
+    "key": "59",
+    "english": "Remap Keyboard",
+    "polish": "Zmień klawisze"
+  },
+  {
+    "key": "60",
+    "english": "Remap Controller",
+    "polish": "Zmień przyciski pada"
+  },
+  {
+    "key": "61",
+    "english": "Controller Settings"
+  },
+  {
+    "key": "62",
+    "english": "Graphics"
+  },
+  {
+    "key": "63",
+    "english": "Accessibility"
+  },
+  {
+    "key": "64",
+    "english": "Back"
+  },
+  {
+    "key": "65",
+    "english": "Sound Volume"
+  },
+  {
+    "key": "66",
+    "english": "Music Volume"
+  },
+  {
+    "key": "67",
+    "english": "Up"
+  },
+  {
+    "key": "68",
+    "english": "Down"
+  },
+  {
+    "key": "69",
+    "english": "Left"
+  },
+  {
+    "key": "70",
+    "english": "Right"
+  },
+  {
+    "key": "71",
+    "english": "Activate Focus"
+  },
+  {
+    "key": "72",
+    "english": "Roll"
+  },
+  {
+    "key": "73",
+    "english": "Shoot"
+  },
+  {
+    "key": "74",
+    "english": "Pick-up/Throw Weapon"
+  },
+  {
+    "key": "75",
+    "english": "Interact"
+  },
+  {
+    "key": "76",
+    "english": "Kick"
+  },
+  {
+    "key": "77",
+    "english": "Crosshair Speed"
+  },
+  {
+    "key": "78",
+    "english": "Crosshair Over Player Speed"
+  },
+  {
+    "key": "79",
+    "english": "Slow Down Crosshair During Focus"
+  },
+  {
+    "key": "80",
+    "english": "Vibration Amount"
+  },
+  {
+    "key": "81",
+    "english": "Fullscreen"
+  },
+  {
+    "key": "82",
+    "english": "Hitmarkers"
+  },
+  {
+    "key": "83",
+    "english": "Crosshair Size"
+  },
+  {
+    "key": "84",
+    "english": "Crosshair Visibility"
+  },
+  {
+    "key": "85",
+    "english": "Screenshake Amount"
+  },
+  {
+    "key": "86",
+    "english": "Flashing Lights"
+  },
+  {
+    "key": "87",
+    "english": "Music Slowdown during Focus"
+  },
+  {
+    "key": "88",
+    "english": "Toggle Focus"
+  },
+  {
+    "key": "89",
+    "english": "Enemy Amount for Arrows to Appear"
+  },
+  {
+    "key": "90",
+    "english": "Sound Volume: "
+  },
+  {
+    "key": "91",
+    "english": "Music Volume: "
+  },
+  {
+    "key": "92",
+    "english": "Press Key"
+  },
+  {
+    "key": "93",
+    "english": "Press Button"
+  },
+  {
+    "key": "94",
+    "english": "Yes"
+  },
+  {
+    "key": "95",
+    "english": "No"
+  },
+  {
+    "key": "96",
+    "english": " MAG"
+  },
+  {
+    "key": "97",
+    "english": " MAGS"
+  },
+  {
+    "key": "98",
+    "english": " SHELL"
+  },
+  {
+    "key": "99",
+    "english": " SHELLS"
+  },
+  {
+    "key": "100",
+    "english": "UNLIMITED",
+    "polish": "BEZ LIMITU"
+  },
+  {
+    "key": "101",
+    "english": "Far-Sighted"
+  },
+  {
+    "key": "102",
+    "english": "Perceptive"
+  },
+  {
+    "key": "103",
+    "english": "Fast"
+  },
+  {
+    "key": "104",
+    "english": "Hyper"
+  },
+  {
+    "key": "105",
+    "english": "Temporally-enhanced"
+  },
+  {
+    "key": "106",
+    "english": "Suppressive"
+  },
+  {
+    "key": "107",
+    "english": "Meticulous"
+  },
+  {
+    "key": "108",
+    "english": "Cautious"
+  },
+  {
+    "key": "109",
+    "english": "High-velocity"
+  },
+  {
+    "key": "110",
+    "english": "Rapid-firing"
+  },
+  {
+    "key": "111",
+    "english": "Steady-handed"
+  },
+  {
+    "key": "112",
+    "english": "Armored"
+  },
+  {
+    "key": "113",
+    "english": "Super-armored"
+  },
+  {
+    "key": "500",
+    "english": "INBRED BASILISK"
+  },
+  {
+    "key": "501",
+    "english": "THE LEGIONARY"
+  },
+  {
+    "key": "502",
+    "english": "SENIOR GRAND BOTANIST"
+  },
+  {
+    "key": "503",
+    "english": "THE ABHORRENCE"
+  },
+  {
+    "key": "504",
+    "english": "EHIZTARIA"
+  },
+  {
+    "key": "505",
+    "english": "MR. MANSLAUGHTER"
+  },
+  {
+    "key": "506",
+    "english": "DEABRUA"
+  },
+  {
+    "key": "507",
+    "english": "THE FORSAKEN HEART"
+  },
+  {
+    "key": "508",
+    "english": "THE HEART OF THE MANSION"
+  },
+  {
+    "key": "998",
+    "english": "Restock Bar"
+  },
+  {
+    "key": "999",
+    "english": "Restock the bar with new drinks. More expensive to restock an emptier bar."
+  },
+  {
+    "key": "1000",
+    "english": "Smart Gun"
+  },
+  {
+    "key": "1001",
+    "english": "Bullets have a 25% chance to home in on enemies."
+  },
+  {
+    "key": "1002",
+    "english": "Chenrezig"
+  },
+  {
+    "key": "1003",
+    "english": "Dual-wield one-handed weapons, cannot vault while doing so."
+  },
+  {
+    "key": "1004",
+    "english": "Ricochet"
+  },
+  {
+    "key": "1005",
+    "english": "Bullets have a 33% chance to ricochet off walls."
+  },
+  {
+    "key": "1006",
+    "english": "Nucleus"
+  },
+  {
+    "key": "1007",
+    "english": "Focus activates much faster."
+  },
+  {
+    "key": "1008",
+    "english": "The One"
+  },
+  {
+    "key": "1009",
+    "english": "Hold Shoot while unarmed to block bullets."
+  },
+  {
+    "key": "1010",
+    "english": "Jormungandr"
+  },
+  {
+    "key": "1011",
+    "english": "Kunai become throwing axes that return when pressing pick-up."
+  },
+  {
+    "key": "1012",
+    "english": "Wick"
+  },
+  {
+    "key": "1013",
+    "english": "Pistols shoot with perfect accuracy."
+  },
+  {
+    "key": "1014",
+    "english": "Automation"
+  },
+  {
+    "key": "1015",
+    "english": "Thrown guns transform into automatic turrets."
+  },
+  {
+    "key": "1016",
+    "english": "Knock Knock"
+  },
+  {
+    "key": "1017",
+    "english": "Doors and glass can be destroyed with a single shot."
+  },
+  {
+    "key": "1018",
+    "english": "Packed Shells"
+  },
+  {
+    "key": "1019",
+    "english": "All shotguns produce 3 more bullets."
+  },
+  {
+    "key": "1020",
+    "english": "Homing Pigeon"
+  },
+  {
+    "key": "1021",
+    "english": "25% chance for missed shots to return to your ammo count. Doesn't work with Shotguns."
+  },
+  {
+    "key": "1022",
+    "english": "Gun Boots"
+  },
+  {
+    "key": "1023",
+    "english": "Kicking fires a bullet from your boot."
+  },
+  {
+    "key": "1024",
+    "english": "Clarity"
+  },
+  {
+    "key": "1025",
+    "english": "Do 50% more damage while in Focus, but Focus decreases faster."
+  },
+  {
+    "key": "1026",
+    "english": "Grenade Prince"
+  },
+  {
+    "key": "1027",
+    "english": "Killing an enemy with a grenade gives you another grenade."
+  },
+  {
+    "key": "1028",
+    "english": "Choke"
+  },
+  {
+    "key": "1029",
+    "english": "Shotgun spread is tighter."
+  },
+  {
+    "key": "1030",
+    "english": "Enloudener"
+  },
+  {
+    "key": "1031",
+    "english": "Bullets do 20% more damage, but guns are extremely loud."
+  },
+  {
+    "key": "1032",
+    "english": "Prestissimo"
+  },
+  {
+    "key": "1033",
+    "english": "Fire rate of guns is increased."
+  },
+  {
+    "key": "1034",
+    "english": "Laser"
+  },
+  {
+    "key": "1035",
+    "english": "Accuracy increased by 25%"
+  },
+  {
+    "key": "1036",
+    "english": "Aperture"
+  },
+  {
+    "key": "1037",
+    "english": "Increases time in Focus."
+  },
+  {
+    "key": "1038",
+    "english": "Hair of the Dog"
+  },
+  {
+    "key": "1039",
+    "english": "Increases health by 15."
+  },
+  {
+    "key": "1040",
+    "english": "Meter"
+  },
+  {
+    "key": "1041",
+    "english": "Increases movement speed."
+  },
+  {
+    "key": "1042",
+    "english": "Fat Wallet"
+  },
+  {
+    "key": "1043",
+    "english": "Enemies drop more coins."
+  },
+  {
+    "key": "1044",
+    "english": "Well-Stocked"
+  },
+  {
+    "key": "1045",
+    "english": "Adds a fourth option to the drink list."
+  },
+  {
+    "key": "1046",
+    "english": "The Wanderer"
+  },
+  {
+    "key": "1047",
+    "english": "Occasionally The Wanderer will assist you during Focus."
+  },
+  {
+    "key": "1048",
+    "english": "Sleight of Hand"
+  },
+  {
+    "key": "1049",
+    "english": "Rolling while unarmed generates a kunai."
+  },
+  {
+    "key": "1050",
+    "english": "Dome 2016"
+  },
+  {
+    "key": "1051",
+    "english": "Increases chance to splatter an enemy."
+  },
+  {
+    "key": "1052",
+    "english": "Deep Mags"
+  },
+  {
+    "key": "1053",
+    "english": "All guns have 15% more ammo."
+  },
+  {
+    "key": "1054",
+    "english": "Rambo"
+  },
+  {
+    "key": "1055",
+    "english": "LMGs fire twice as fast but are 4 times less accurate."
+  },
+  {
+    "key": "1056",
+    "english": "Greaser"
+  },
+  {
+    "key": "1057",
+    "english": "SMGs have a 20% faster fire rate."
+  },
+  {
+    "key": "1058",
+    "english": "Lightweight"
+  },
+  {
+    "key": "1059",
+    "english": "Move faster when holding a pistol."
+  },
+  {
+    "key": "1060",
+    "english": "Steel Toe"
+  },
+  {
+    "key": "1061",
+    "english": "Kick enemy bullets to reflect them."
+  },
+  {
+    "key": "1062",
+    "english": "Cadaver"
+  },
+  {
+    "key": "1063",
+    "english": "Dead bodies have a chance to explode."
+  },
+  {
+    "key": "1064",
+    "english": "Field Medic"
+  },
+  {
+    "key": "1065",
+    "english": "Enemies have a chance to drop a medpack."
+  },
+  {
+    "key": "1066",
+    "english": "Pocket Ace"
+  },
+  {
+    "key": "1067",
+    "english": "Your guns have a 20% chance to sometimes fire 2 bullets instead of one."
+  },
+  {
+    "key": "1068",
+    "english": "House of Daggers"
+  },
+  {
+    "key": "1069",
+    "english": "Throw two additional phantom kunai."
+  },
+  {
+    "key": "1070",
+    "english": "Ordnance"
+  },
+  {
+    "key": "1071",
+    "english": "Find grenades more often."
+  },
+  {
+    "key": "1072",
+    "english": "Hayabusa"
+  },
+  {
+    "key": "1073",
+    "english": "Find kunai more often."
+  },
+  {
+    "key": "1074",
+    "english": "Box Mag"
+  },
+  {
+    "key": "1075",
+    "english": "LMGs have 25% more ammo."
+  },
+  {
+    "key": "1076",
+    "english": "Tab"
+  },
+  {
+    "key": "1077",
+    "english": "Shop prices are 20% cheaper."
+  },
+  {
+    "key": "1078",
+    "english": "Chain Mail"
+  },
+  {
+    "key": "1079",
+    "english": "10% chance to block incoming bullets."
+  },
+  {
+    "key": "1080",
+    "english": "Bill's Big One"
+  },
+  {
+    "key": "1081",
+    "english": "Your bullets are slightly larger."
+  },
+  {
+    "key": "1082",
+    "english": "Roxy"
+  },
+  {
+    "key": "1083",
+    "english": "Get an attack dog. Won't help in boss fights."
+  },
+  {
+    "key": "1084",
+    "english": "Cheshire"
+  },
+  {
+    "key": "1085",
+    "english": "Become invisible while rolling."
+  },
+  {
+    "key": "1086",
+    "english": "Shhh"
+  },
+  {
+    "key": "1087",
+    "english": "Your footsteps and silenced weapons are completely silent."
+  },
+  {
+    "key": "1088",
+    "english": "Sliver"
+  },
+  {
+    "key": "1089",
+    "english": "A killing shot leaves you with 1 HP and a moment of invulnerability."
+  },
+  {
+    "key": "1090",
+    "english": "Roadhouse"
+  },
+  {
+    "key": "1091",
+    "english": "Kicking an enemy has a 50% chance to splatter them."
+  },
+  {
+    "key": "1092",
+    "english": "Iron Sighted"
+  },
+  {
+    "key": "1093",
+    "english": "Rifles have an increased chance to splatter an enemy."
+  },
+  {
+    "key": "1094",
+    "english": "High Roller"
+  },
+  {
+    "key": "1095",
+    "english": "Killing an enemy during Focus rolls a slot; get 3 of a kind for a prize."
+  },
+  {
+    "key": "1096",
+    "english": "Tachypsychia"
+  },
+  {
+    "key": "1097",
+    "english": "Move faster during Focus."
+  },
+  {
+    "key": "1098",
+    "english": "Soul"
+  },
+  {
+    "key": "1099",
+    "english": "On kill bullets randomly fly out of an enemy's body."
+  },
+  {
+    "key": "1100",
+    "english": "Bloodweiser"
+  },
+  {
+    "key": "1101",
+    "english": "Catching aerial blood droplets heals you slightly."
+  },
+  {
+    "key": "1102",
+    "english": "Halo"
+  },
+  {
+    "key": "1103",
+    "english": "Recharging shield that can block a single bullet."
+  },
+  {
+    "key": "1104",
+    "english": "Adrenaline"
+  },
+  {
+    "key": "1105",
+    "english": "When health is below 25%, speed and damage are increased."
+  },
+  {
+    "key": "1106",
+    "english": "Blood Donation"
+  },
+  {
+    "key": "1107",
+    "english": "Rifle kills heal you a little bit."
+  },
+  {
+    "key": "1108",
+    "english": "Aerodynamics"
+  },
+  {
+    "key": "1109",
+    "english": "Your bullets move faster during Focus."
+  },
+  {
+    "key": "1110",
+    "english": "Scope"
+  },
+  {
+    "key": "1111",
+    "english": "Bullets have a 25% chance to pierce."
+  },
+  {
+    "key": "1112",
+    "english": "Time Tumbler"
+  },
+  {
+    "key": "1113",
+    "english": "Rolling through enemy bullets restores some Focus."
+  },
+  {
+    "key": "1114",
+    "english": "Reserve"
+  },
+  {
+    "key": "1115",
+    "english": "Picked up guns come with an extra magazine."
+  },
+  {
+    "key": "1116",
+    "english": "Party Trick"
+  },
+  {
+    "key": "1117",
+    "english": "Throw two grenades instead of one."
+  },
+  {
+    "key": "1118",
+    "english": "Vigor"
+  },
+  {
+    "key": "1119",
+    "english": "Combo multiplier lasts longer."
+  },
+  {
+    "key": "1120",
+    "english": "Animal"
+  },
+  {
+    "key": "1121",
+    "english": "Every bullet eases the pain. Hurting enemies heals you slightly."
+  },
+  {
+    "key": "1122",
+    "english": "Control"
+  },
+  {
+    "key": "1123",
+    "english": "Hold Pick-up to pull guns in a radius around you towards you."
+  },
+  {
+    "key": "1124",
+    "english": "Effigy"
+  },
+  {
+    "key": "1125",
+    "english": "When hit by 5 bullets, 5 bullets come firing out of you and home toward enemies."
+  },
+  {
+    "key": "1126",
+    "english": "Bubble"
+  },
+  {
+    "key": "1127",
+    "english": "Create a shield around you when you go below 25% health."
+  },
+  {
+    "key": "1128",
+    "english": "Energy Transfer"
+  },
+  {
+    "key": "1129",
+    "english": "Killing enemies has a chance to restore some Focus."
+  },
+  {
+    "key": "1130",
+    "english": "Technomancer"
+  },
+  {
+    "key": "1131",
+    "english": "Gain a flying drone that shoots at enemies."
+  },
+  {
+    "key": "1132",
+    "english": "Statue's Gamble"
+  },
+  {
+    "key": "1133",
+    "english": "Damage is increased by 20% when standing still."
+  },
+  {
+    "key": "1134",
+    "english": "Dividends"
+  },
+  {
+    "key": "1135",
+    "english": "Reloading increases fire rate by 15%, up to 3 times."
+  },
+  {
+    "key": "1136",
+    "english": "Hot Swap"
+  },
+  {
+    "key": "1137",
+    "english": "Picking up a different gun increases damage by 50% for 5 seconds."
+  },
+  {
+    "key": "1138",
+    "english": "Black Market"
+  },
+  {
+    "key": "1139",
+    "english": "Damage is doubled, but fire rate is halved."
+  },
+  {
+    "key": "1140",
+    "english": "Goldeneye"
+  },
+  {
+    "key": "1141",
+    "english": "See enemy healthbars."
+  },
+  {
+    "key": "1142",
+    "english": "Pouch"
+  },
+  {
+    "key": "1143",
+    "english": "Pistols come with an extra magazine."
+  },
+  {
+    "key": "1144",
+    "english": "Freerunner"
+  },
+  {
+    "key": "1145",
+    "english": "Vaulting increases damage by 50% for 5 seconds."
+  },
+  {
+    "key": "1146",
+    "english": "Drop On"
+  },
+  {
+    "key": "1147",
+    "english": "Do more damage to enemies at close range."
+  },
+  {
+    "key": "1148",
+    "english": "Mass Accelerator"
+  },
+  {
+    "key": "1149",
+    "english": "Rifles do more damage at longer ranges."
+  },
+  {
+    "key": "1150",
+    "english": "El Cycle"
+  },
+  {
+    "key": "1151",
+    "english": "Killing an enemy with the last round in a Shotgun restores half of total ammo."
+  },
+  {
+    "key": "1152",
+    "english": "Bullet Prince"
+  },
+  {
+    "key": "1153",
+    "english": "LMGs don't have to reload."
+  },
+  {
+    "key": "1154",
+    "english": "Linebacker"
+  },
+  {
+    "key": "1155",
+    "english": "Kill enemies by rolling into them."
+  },
+  {
+    "key": "1156",
+    "english": "Grey Matter"
+  },
+  {
+    "key": "1157",
+    "english": "Splattering an enemy refills Focus."
+  },
+  {
+    "key": "1158",
+    "english": "Trophy"
+  },
+  {
+    "key": "1159",
+    "english": "Splattering an enemy causes all other enemies to drop extra coins for 10 seconds."
+  },
+  {
+    "key": "1160",
+    "english": "Fidelity"
+  },
+  {
+    "key": "1161",
+    "english": "Landing shots increases damage by 10%, missing decreases damage by 20%. Caps at 50%."
+  },
+  {
+    "key": "1162",
+    "english": "Shredder"
+  },
+  {
+    "key": "1163",
+    "english": "Enemies killed with an SMG have a chance to drop more coin."
+  },
+  {
+    "key": "1164",
+    "english": "Hound's Blood"
+  },
+  {
+    "key": "1165",
+    "english": "Take less damage overall."
+  },
+  {
+    "key": "1166",
+    "english": "Hedgehog"
+  },
+  {
+    "key": "1167",
+    "english": "Rolling through doors opens them."
+  },
+  {
+    "key": "1168",
+    "english": "Many Doors"
+  },
+  {
+    "key": "1169",
+    "english": "Become much more likely to enter a Misplaced Chamber."
+  },
+  {
+    "key": "1170",
+    "english": "Capitalism"
+  },
+  {
+    "key": "1171",
+    "english": "Health is reduced by half, but enemies drop twice as many coins."
+  },
+  {
+    "key": "1172",
+    "english": "Packed"
+  },
+  {
+    "key": "1173",
+    "english": "Grenades explode in a much larger radius."
+  },
+  {
+    "key": "1174",
+    "english": "Turtle"
+  },
+  {
+    "key": "1175",
+    "english": "Health is increased by 25%, but movement speed is reduced."
+  },
+  {
+    "key": "1176",
+    "english": "Sticky"
+  },
+  {
+    "key": "1177",
+    "english": "Can't drop a weapon until it's out of ammo, but shots fired do 50% more damage."
+  },
+  {
+    "key": "1178",
+    "english": "Rehab"
+  },
+  {
+    "key": "1179",
+    "english": "Focus restores faster."
+  },
+  {
+    "key": "1180",
+    "english": "Rain Check"
+  },
+  {
+    "key": "1181",
+    "english": "Your first drink will be free the next time you enter the bar."
+  },
+  {
+    "key": "1182",
+    "english": "Insurance Policy"
+  },
+  {
+    "key": "1183",
+    "english": "Receive 50% more coin, but you have to pay for all damages caused."
+  },
+  {
+    "key": "1184",
+    "english": "Healthcare"
+  },
+  {
+    "key": "1185",
+    "english": "Each collected coin heals you a little bit."
+  },
+  {
+    "key": "1186",
+    "english": "Clemens"
+  },
+  {
+    "key": "1187",
+    "english": "Throw grenades farther."
+  },
+  {
+    "key": "1188",
+    "english": "Practiced"
+  },
+  {
+    "key": "1189",
+    "english": "Reload faster."
+  },
+  {
+    "key": "1190",
+    "english": "Wealth Jar"
+  },
+  {
+    "key": "1191",
+    "english": "Vases drop coin when broken."
+  },
+  {
+    "key": "1192",
+    "english": "Firing Stance"
+  },
+  {
+    "key": "1193",
+    "english": "Standing still greatly increases accuracy."
+  },
+  {
+    "key": "1194",
+    "english": "Rabid"
+  },
+  {
+    "key": "1195",
+    "english": "Reaching a new combo level refills some health."
+  },
+  {
+    "key": "1196",
+    "english": "Trigger Walk"
+  },
+  {
+    "key": "1197",
+    "english": "Increased fire rate during Focus."
+  },
+  {
+    "key": "1198",
+    "english": "Heavy"
+  },
+  {
+    "key": "1199",
+    "english": "Your bullets do 20% more damage, but their velocity is reduced."
+  },
+  {
+    "key": "1200",
+    "english": "Flying Squirrel"
+  },
+  {
+    "key": "1201",
+    "english": "Your bullets do 20% more damage, but they don't fly straight."
+  },
+  {
+    "key": "1202",
+    "english": "Cliche"
+  },
+  {
+    "key": "1203",
+    "english": "Explosive barrels spawn in rooms."
+  },
+  {
+    "key": "2000",
+    "english": "Hmm, it seems another otxo has washed up on our shores."
+  },
+  {
+    "key": "2001",
+    "english": "It's been a few years since the last one."
+  },
+  {
+    "key": "2002",
+    "english": "Let me guess, you found the mask somewhere, you were compelled to put it on, you don't really remember after that..."
+  },
+  {
+    "key": "2003",
+    "english": "Then you ended up here, face down in the sand.  Is that right?"
+  },
+  {
+    "key": "2004",
+    "english": "It's always the same. You had someone with you as well."
+  },
+  {
+    "key": "2005",
+    "english": "Your beloved, from the looks of it."
+  },
+  {
+    "key": "2006",
+    "english": "They're deep inside the Mansion now, if you intend to find them."
+  },
+  {
+    "key": "2007",
+    "english": "But hold on, don't just go rushing in there yet. You'll be killed instantly."
+  },
+  {
+    "key": "2008",
+    "english": "Let me at least explain how things work around here:"
+  },
+  {
+    "key": "2009",
+    "english": "First of all, don't bother trying to leave. You can't."
+  },
+  {
+    "key": "2010",
+    "english": "And don't bother trying to kill yourself either."
+  },
+  {
+    "key": "2011",
+    "english": "You can't truly die while you're wearing the mask. You'll just end up back on this beach."
+  },
+  {
+    "key": "2012",
+    "english": "And you can't release the mask until you've destroyed the heart of the Mansion."
+  },
+  {
+    "key": "2013",
+    "english": "Only then can you be free. Make sense?"
+  },
+  {
+    "key": "2014",
+    "english": "Lovely. Now then, why don't we make sure you can handle yourself in there?"
+  },
+  {
+    "key": "2015",
+    "english": "Come with me."
+  },
+  {
+    "key": "2016",
+    "english": "The first thing you need to understand is kicking."
+  },
+  {
+    "key": "2017",
+    "english": "The doors in the Mansion are locked, even to your adversaries who patrol it."
+  },
+  {
+    "key": "2018",
+    "english": "You can get them open by kicking them, firing enough into them, or by detonating an explosive nearby."
+  },
+  {
+    "key": "2019",
+    "english": "I'd recommend kicking.  Walk up to the door and deliver a swift kick and it should shatter right open."
+  },
+  {
+    "key": "2020",
+    "english": "Your foes inside the Mansion will be seeking to stop you from progressing."
+  },
+  {
+    "key": "2021",
+    "english": "To that end they'll fire upon you with all manner of weaponry."
+  },
+  {
+    "key": "2022",
+    "english": "Your only recourse is, of course, to shoot back."
+  },
+  {
+    "key": "2023",
+    "english": "You can borrow my old service rifle. Take some shots at these targets."
+  },
+  {
+    "key": "2024",
+    "english": "If you run out of ammo, you can always reload with a fresh magazine."
+  },
+  {
+    "key": "2025",
+    "english": "If you're out of magazines you'll have to find a new gun. Or kick your enemies to death."
+  },
+  {
+    "key": "2026",
+    "english": "This is probably the most important thing I can tell you, so pay attention."
+  },
+  {
+    "key": "2027",
+    "english": "Your adversaries inside the Mansion will have extremely high reaction time."
+  },
+  {
+    "key": "2028",
+    "english": "However, thanks to that mask, you do have a leg-up on them."
+  },
+  {
+    "key": "2029",
+    "english": "You can activate an ability called Focus, which heightens your senses and allows you to move faster than them."
+  },
+  {
+    "key": "2030",
+    "english": "Try activating Focus and slipping your way through the bullets coming from this turret."
+  },
+  {
+    "key": "2031",
+    "english": "You can also roll, which will allow you to dodge bullets as they fly over you."
+  },
+  {
+    "key": "2032",
+    "english": "Alright, just one last thing."
+  },
+  {
+    "key": "2033",
+    "english": "As you kill your enemies, you may notice that you gain a combo meter."
+  },
+  {
+    "key": "2034",
+    "english": "The combo meter goes up if you're killing enemies quickly or in interesting ways."
+  },
+  {
+    "key": "2035",
+    "english": "This is extremely important, especially if you intend to make it to the end:"
+  },
+  {
+    "key": "2036",
+    "english": "Enemies will drop more coin if you have a combo going."
+  },
+  {
+    "key": "2037",
+    "english": "If you're going too slowly and not keeping up a combo, they won't drop much at all."
+  },
+  {
+    "key": "2038",
+    "english": "So, for your sake, try to move quickly. Don't be afraid of your foes."
+  },
+  {
+    "key": "2039",
+    "english": "Alright, go ahead and face off against some actual enemies in this next section."
+  },
+  {
+    "key": "2040",
+    "english": "I'll be waiting for you at the end."
+  },
+  {
+    "key": "2041",
+    "english": "Remember, use Focus. It's the only advantage you have."
+  },
+  {
+    "key": "2042",
+    "english": "Well, you're as ready as you're going to be."
+  },
+  {
+    "key": "2043",
+    "english": "Time for the real thing. Good luck. And say hello to the bartender for me."
+  },
+  {
+    "key": "2044",
+    "english": "You have probably noticed a few new faces out here."
+  },
+  {
+    "key": "2045",
+    "english": "We are the servants of the Mansion."
+  },
+  {
+    "key": "2046",
+    "english": "We consist of various wanderers, vagabonds, and transients that have somehow wound up here."
+  },
+  {
+    "key": "2047",
+    "english": "And unlike you otxo, it seems that there is no chance we can ever leave."
+  },
+  {
+    "key": "2048",
+    "english": "..."
+  },
+  {
+    "key": "2049",
+    "english": "Ah, don't worry. We've all made peace with it one way or another."
+  },
+  {
+    "key": "2050",
+    "english": "I suppose I should introduce myself.  I am the Groundskeeper."
+  },
+  {
+    "key": "2051",
+    "english": "I mostly tend to the Mansion's horticulture, but I've become somewhat of a defacto caretaker for all."
+  },
+  {
+    "key": "2052",
+    "english": "Likely because I've been here the longest... well, in a sense."
+  },
+  {
+    "key": "2053",
+    "english": "I get the feeling the bartender and that girl with him have been here much, much longer."
+  },
+  {
+    "key": "2054",
+    "english": "But they seem to be content staying within the Rose Room, so we don't see them often."
+  },
+  {
+    "key": "2055",
+    "english": "Anyways, I won't keep you from your purpose any longer."
+  },
+  {
+    "key": "2056",
+    "english": "Good luck in there, and if you need anything from me, I'll be here."
+  },
+  {
+    "key": "2057",
+    "english": "Ah, trying again, are we Otxo?"
+  },
+  {
+    "key": "2058",
+    "english": "I hope your luck is better this time..."
+  },
+  {
+    "key": "2059",
+    "english": "You know, we aren't the only ones."
+  },
+  {
+    "key": "2060",
+    "english": "There's beings in there absorbed by the Mansion's power, their minds twisted and weak."
+  },
+  {
+    "key": "2061",
+    "english": "My master is one of them. He taught me everything I know about horticulture..."
+  },
+  {
+    "key": "2062",
+    "english": "But there's no saving him now. He's too far gone."
+  },
+  {
+    "key": "2063",
+    "english": "A long time ago, a great hunter arrived on these shores and entered the Mansion."
+  },
+  {
+    "key": "2064",
+    "english": "Unlike others brought to this place unwillingly, it seemed he had come here with intention."
+  },
+  {
+    "key": "2065",
+    "english": "He was a large man of few words but he mentioned something about black saurian-beasts."
+  },
+  {
+    "key": "2066",
+    "english": "He said that he had travelled worlds in order to slay them, that that was his purpose."
+  },
+  {
+    "key": "2067",
+    "english": "Anyways, he never returned to the beach after he entered."
+  },
+  {
+    "key": "2068",
+    "english": "I can't say what happened, but if he's still in there, there's no chance his mind is his own."
+  },
+  {
+    "key": "2069",
+    "english": "Do you believe in ghosts, Otxo?"
+  },
+  {
+    "key": "2070",
+    "english": "I know it's a strange question when we're in a place like this."
+  },
+  {
+    "key": "2071",
+    "english": "But I've seen things in the Mansion that don't fit the rules of this world."
+  },
+  {
+    "key": "2072",
+    "english": "Certainly makes a man wonder."
+  },
+  {
+    "key": "2073",
+    "english": "Have you been to the conservatory?"
+  },
+  {
+    "key": "2074",
+    "english": "At one time that was my pride and joy, a true melding of man and nature in a handful of beautiful rooms..."
+  },
+  {
+    "key": "2075",
+    "english": "Of course my days caring for the conservatory are long gone."
+  },
+  {
+    "key": "2076",
+    "english": "I don't dare enter the Mansion now, lest the husks tear me apart."
+  },
+  {
+    "key": "2077",
+    "english": "You don't sleep."
+  },
+  {
+    "key": "2078",
+    "english": "I know cause I don't either. In fact nobody here does."
+  },
+  {
+    "key": "2079",
+    "english": "Been that way for a long time."
+  },
+  {
+    "key": "2080",
+    "english": "In my time here there hasn't been an otxo quite like you."
+  },
+  {
+    "key": "2081",
+    "english": "You're different... I don't know how, but you're different."
+  },
+  {
+    "key": "2082",
+    "english": "Maybe it's because you still think you can make it. We'll see if that lasts."
+  },
+  {
+    "key": "2083",
+    "english": "Going for it again are we?"
+  },
+  {
+    "key": "2084",
+    "english": "Well, here's hoping that you're successful this time."
+  },
+  {
+    "key": "2085",
+    "english": "That bartender is an interesting fellow isn't he?"
+  },
+  {
+    "key": "2086",
+    "english": "He's not quite like the rest of us. I think it's because we're not from here."
+  },
+  {
+    "key": "2087",
+    "english": "And I get the impression that maybe he is."
+  },
+  {
+    "key": "2088",
+    "english": "Regardless, he serves a strong drink, so I've got not complaints."
+  },
+  {
+    "key": "2089",
+    "english": "At one point the Mansion used to have a beautiful flower bed surrounding it."
+  },
+  {
+    "key": "2090",
+    "english": "Petunias, marigolds, tulips, orchids, and carnations."
+  },
+  {
+    "key": "2091",
+    "english": "A splendid circle of lillies..."
+  },
+  {
+    "key": "2092",
+    "english": "Now it's all I can do to keep the grass at bay and handle the few potted plants."
+  },
+  {
+    "key": "2093",
+    "english": "It's not quite what it once was."
+  },
+  {
+    "key": "2094",
+    "english": "Are you familiar with the lotus flower?"
+  },
+  {
+    "key": "2095",
+    "english": "In some cultures it represents the path to enlightenment."
+  },
+  {
+    "key": "2096",
+    "english": "In others, it's the path from death to rebirth in the afterlife."
+  },
+  {
+    "key": "2097",
+    "english": "..."
+  },
+  {
+    "key": "2098",
+    "english": "Lotus grows here, you know. In the ponds in the conservatory."
+  },
+  {
+    "key": "2099",
+    "english": "It's hard to grow much of anything here outside the Mansion."
+  },
+  {
+    "key": "2100",
+    "english": "The salt from the ocean has permeated the soil. Makes it hard for roots to grow strong."
+  },
+  {
+    "key": "2101",
+    "english": "The grass does ok, but it grows in low."
+  },
+  {
+    "key": "2102",
+    "english": "At one time I worked hard to keep the Mansion beautiful..."
+  },
+  {
+    "key": "2103",
+    "english": "But those days have long since passed. Now I just do what I'm able."
+  },
+  {
+    "key": "2104",
+    "english": "This ocean is a calm one. No rogue waves, no flooding."
+  },
+  {
+    "key": "2105",
+    "english": "The tide never changes either."
+  },
+  {
+    "key": "2106",
+    "english": "Of course, that's because the time never changes."
+  },
+  {
+    "key": "2107",
+    "english": "Always eternally sunset. Beautiful, eh?"
+  },
+  {
+    "key": "2108",
+    "english": "This place never changes much."
+  },
+  {
+    "key": "2109",
+    "english": "It's been a long time since the last otxo, I think we were all starting to get bored."
+  },
+  {
+    "key": "2110",
+    "english": "At least you're someone who hasn't heard me talk before."
+  },
+  {
+    "key": "2111",
+    "english": "Do you grow tired of this otxo?"
+  },
+  {
+    "key": "2112",
+    "english": "I did at first... but time continued on, and now I simply exist in a comfortable state."
+  },
+  {
+    "key": "2113",
+    "english": "My purpose is here, to care for the plants and to care for the people."
+  },
+  {
+    "key": "2114",
+    "english": "All it required was some acceptance."
+  },
+  {
+    "key": "2115",
+    "english": "Could I bum a cigarette, Otxo?"
+  },
+  {
+    "key": "2116",
+    "english": "..."
+  },
+  {
+    "key": "2117",
+    "english": "Oh sorry, I forgot. Heh."
+  },
+  {
+    "key": "2118",
+    "english": "You know, for a long time I was just here by myself."
+  },
+  {
+    "key": "2119",
+    "english": "Even with the others here, it's quite a pleasure to have your company."
+  },
+  {
+    "key": "2120",
+    "english": "Temporary as it may be."
+  },
+  {
+    "key": "2121",
+    "english": "You know Otxo, I haven't said this to any others, but..."
+  },
+  {
+    "key": "2122",
+    "english": "Of all the otxos we've had, I think you're my favorite."
+  },
+  {
+    "key": "2123",
+    "english": "There's something in your eyes. I can't explain it."
+  },
+  {
+    "key": "2124",
+    "english": "But I can see that you're more determined than anyone else."
+  },
+  {
+    "key": "2125",
+    "english": "Sometimes, when the wind is still and the waves are quiet, I sit out here and calm my breathing."
+  },
+  {
+    "key": "2126",
+    "english": "And in that silence, after a time, I can begin to hear a heartbeat that isn't my own."
+  },
+  {
+    "key": "2127",
+    "english": "It sounds like it comes from deep within the Mansion, but who could say..."
+  },
+  {
+    "key": "2128",
+    "english": "Have you heard it, Otxo?"
+  },
+  {
+    "key": "2129",
+    "english": "You know, I've been in the Mansion a few times, looking for the Master."
+  },
+  {
+    "key": "2130",
+    "english": "But whenever I go inside it's completely empty... except for the bar, of course."
+  },
+  {
+    "key": "2131",
+    "english": "You've met that girl in the bar, yeah?"
+  },
+  {
+    "key": "2132",
+    "english": "She's... unusual. A strange girl. Beautiful though."
+  },
+  {
+    "key": "2133",
+    "english": "More beautiful than this Mansion deserves, to be frank."
+  },
+  {
+    "key": "2134",
+    "english": "This Mansion... it needs control, you know?"
+  },
+  {
+    "key": "2135",
+    "english": "It fears chaos. You can feel it when you enter."
+  },
+  {
+    "key": "2136",
+    "english": "You seek to shake up that control, don't you Otxo?"
+  },
+  {
+    "key": "2137",
+    "english": "I won't lie to you Otxo. Some days I grow tired of this."
+  },
+  {
+    "key": "2138",
+    "english": "The monotony of existing in this place..."
+  },
+  {
+    "key": "2139",
+    "english": "But then someone like you comes along and it's suddenly not so drab any longer."
+  },
+  {
+    "key": "2140",
+    "english": "For a time I tried to grow trees around the Mansion, but they never took root."
+  },
+  {
+    "key": "2141",
+    "english": "I don't know if it was just the hard conditions out here or what."
+  },
+  {
+    "key": "2142",
+    "english": "It's a real shame. Some beautiful willows shading the Mansion would be a nice touch."
+  },
+  {
+    "key": "2143",
+    "english": "When I first came here I tended to a bonsai tree."
+  },
+  {
+    "key": "2144",
+    "english": "It was meditative, carefully clipping the branches, shaping it to my desire..."
+  },
+  {
+    "key": "2145",
+    "english": "But like all things in the Mansion, it eventually grew brown and hollow, rotted from the inside out."
+  },
+  {
+    "key": "2146",
+    "english": "I did my best to save it but nothing seemed to help."
+  },
+  {
+    "key": "2147",
+    "english": "I never tried to grow another one after that."
+  },
+  {
+    "key": "2148",
+    "english": ""
+  },
+  {
+    "key": "2149",
+    "english": ""
+  },
+  {
+    "key": "2150",
+    "english": ""
+  },
+  {
+    "key": "2151",
+    "english": ""
+  },
+  {
+    "key": "2152",
+    "english": ""
+  },
+  {
+    "key": "2500",
+    "english": ""
+  },
+  {
+    "key": "2501",
+    "english": ""
+  },
+  {
+    "key": "2502",
+    "english": ""
+  },
+  {
+    "key": "2503",
+    "english": ""
+  },
+  {
+    "key": "2504",
+    "english": ""
+  },
+  {
+    "key": "2505",
+    "english": ""
+  },
+  {
+    "key": "2506",
+    "english": ""
+  },
+  {
+    "key": "2507",
+    "english": ""
+  },
+  {
+    "key": "2508",
+    "english": ""
+  },
+  {
+    "key": "2509",
+    "english": ""
+  },
+  {
+    "key": "2510",
+    "english": ""
+  },
+  {
+    "key": "2511",
+    "english": ""
+  },
+  {
+    "key": "2512",
+    "english": ""
+  },
+  {
+    "key": "2513",
+    "english": ""
+  },
+  {
+    "key": "2514",
+    "english": ""
+  },
+  {
+    "key": "2515",
+    "english": ""
+  },
+  {
+    "key": "2516",
+    "english": ""
+  },
+  {
+    "key": "2517",
+    "english": ""
+  },
+  {
+    "key": "2518",
+    "english": ""
+  },
+  {
+    "key": "2519",
+    "english": ""
+  },
+  {
+    "key": "2520",
+    "english": ""
+  },
+  {
+    "key": "2521",
+    "english": ""
+  },
+  {
+    "key": "2522",
+    "english": ""
+  },
+  {
+    "key": "2523",
+    "english": ""
+  },
+  {
+    "key": "2524",
+    "english": ""
+  },
+  {
+    "key": "2525",
+    "english": ""
+  },
+  {
+    "key": "2526",
+    "english": ""
+  },
+  {
+    "key": "2527",
+    "english": ""
+  },
+  {
+    "key": "2528",
+    "english": ""
+  },
+  {
+    "key": "2529",
+    "english": ""
+  },
+  {
+    "key": "3000",
+    "english": "Roxy"
+  },
+  {
+    "key": "3001",
+    "english": "Who's a good dog?"
+  },
+  {
+    "key": "3002",
+    "english": "Cowboy Cat"
+  },
+  {
+    "key": "3003",
+    "english": "And I miss you..."
+  },
+  {
+    "key": "3004",
+    "english": "Avery"
+  },
+  {
+    "key": "3005",
+    "english": "My work is not yet done."
+  },
+  {
+    "key": "3006",
+    "english": "ITTA"
+  },
+  {
+    "key": "3007",
+    "english": "Everyone I love is dead."
+  },
+  {
+    "key": "3008",
+    "english": "Cvnka"
+  },
+  {
+    "key": "3009",
+    "english": "We love Cvnka we do we do!"
+  },
+  {
+    "key": "3010",
+    "english": "Billie"
+  },
+  {
+    "key": "3011",
+    "english": "Protector of the village."
+  },
+  {
+    "key": "3012",
+    "english": "Micah"
+  },
+  {
+    "key": "3013",
+    "english": "Handyman of the village."
+  },
+  {
+    "key": "3014",
+    "english": "Hazel"
+  },
+  {
+    "key": "3015",
+    "english": "Elder of the village."
+  },
+  {
+    "key": "3016",
+    "english": "Lionel"
+  },
+  {
+    "key": "3017",
+    "english": "Barrel inspector of the village."
+  },
+  {
+    "key": "3018",
+    "english": "Boy"
+  },
+  {
+    "key": "3019",
+    "english": "The fated one."
+  },
+  {
+    "key": "3020",
+    "english": "Hercules"
+  },
+  {
+    "key": "3021",
+    "english": "Right hand man of Daddy."
+  },
+  {
+    "key": "3022",
+    "english": "Punished Hercules"
+  },
+  {
+    "key": "3023",
+    "english": "A lost, blemished soul."
+  },
+  {
+    "key": "3024",
+    "english": "GMPL"
+  },
+  {
+    "key": "3025",
+    "english": "Logo of the Game Maker's Pro League."
+  },
+  {
+    "key": "3026",
+    "english": "Mixolumia"
+  },
+  {
+    "key": "3027",
+    "english": "Diamonds and chain reactions."
+  },
+  {
+    "key": "3028",
+    "english": "Little Soda"
+  },
+  {
+    "key": "3029",
+    "english": "Sip sip."
+  },
+  {
+    "key": "3030",
+    "english": "Bonsai Tree"
+  },
+  {
+    "key": "3031",
+    "english": "Growth."
+  },
+  {
+    "key": "3032",
+    "english": "Son of Edinu"
+  },
+  {
+    "key": "3033",
+    "english": "A lost child of the void fluid."
+  },
+  {
+    "key": "3034",
+    "english": "Wirt the Cat"
+  },
+  {
+    "key": "3035",
+    "english": "Here he is."
+  },
+  {
+    "key": "3036",
+    "english": "Bery"
+  },
+  {
+    "key": "3037",
+    "english": "Fish fear 'em."
+  },
+  {
+    "key": "3038",
+    "english": "Luna"
+  },
+  {
+    "key": "3039",
+    "english": "Cleanse the curse."
+  },
+  {
+    "key": "3040",
+    "english": "Daemon Lord"
+  },
+  {
+    "key": "3041",
+    "english": "Denizen of the Hidden Layer."
+  },
+  {
+    "key": "3042",
+    "english": "Hell Hound"
+  },
+  {
+    "key": "3043",
+    "english": "Who's a good... dog?"
+  },
+  {
+    "key": "3044",
+    "english": "Phone"
+  },
+  {
+    "key": "3045",
+    "english": "A brick, truly."
+  },
+  {
+    "key": "3046",
+    "english": "Fish"
+  },
+  {
+    "key": "3047",
+    "english": "Probably seen better days."
+  },
+  {
+    "key": "3048",
+    "english": "Frog"
+  },
+  {
+    "key": "3049",
+    "english": "Just a little guy!"
+  },
+  {
+    "key": "3050",
+    "english": "Hot Dog"
+  },
+  {
+    "key": "3051",
+    "english": "Frankfurter, sausage, etc."
+  },
+  {
+    "key": "3052",
+    "english": "Lydia"
+  },
+  {
+    "key": "3053",
+    "english": "Didn't quite make the cut."
+  },
+  {
+    "key": "3054",
+    "english": "Lucky Rabbit's Foot"
+  },
+  {
+    "key": "3055",
+    "english": "Won't help you, unfortunately."
+  },
+  {
+    "key": "3056",
+    "english": "Mushroom"
+  },
+  {
+    "key": "3057",
+    "english": "Probably poisonous."
+  },
+  {
+    "key": "3058",
+    "english": "The Bomb"
+  },
+  {
+    "key": "3059",
+    "english": "1.2 megatonnes of fun."
+  },
+  {
+    "key": "3060",
+    "english": "Ramen"
+  },
+  {
+    "key": "3061",
+    "english": "Delicious."
+  },
+  {
+    "key": "3062",
+    "english": "Stop Sign"
+  },
+  {
+    "key": "3063",
+    "english": "Doesn't look like it's from here."
+  },
+  {
+    "key": "3064",
+    "english": "Television"
+  },
+  {
+    "key": "3065",
+    "english": "Can't change the channel."
+  },
+  {
+    "key": "3066",
+    "english": "VHS"
+  },
+  {
+    "key": "3067",
+    "english": "A symbol of another era."
+  },
+  {
+    "key": "3068",
+    "english": "3D Glasses"
+  },
+  {
+    "key": "3069",
+    "english": "Stereoscopic magic."
+  },
+  {
+    "key": "3070",
+    "english": "Beer"
+  },
+  {
+    "key": "3071",
+    "english": "Grab a cold one."
+  },
+  {
+    "key": "3072",
+    "english": "A Bomb"
+  },
+  {
+    "key": "3073",
+    "english": "Just a little guy."
+  },
+  {
+    "key": "3074",
+    "english": "Burger"
+  },
+  {
+    "key": "3075",
+    "english": "You hungry?"
+  },
+  {
+    "key": "3076",
+    "english": "Daisy"
+  },
+  {
+    "key": "3077",
+    "english": "Hot dog dog, but real."
+  },
+  {
+    "key": "3078",
+    "english": "Splitz"
+  },
+  {
+    "key": "3079",
+    "english": "Property of Roanoke Museum of History and Wonder."
+  },
+  {
+    "key": "3080",
+    "english": ""
+  },
+  {
+    "key": "3081",
+    "english": ""
+  },
+  {
+    "key": "3082",
+    "english": ""
+  },
+  {
+    "key": "3083",
+    "english": ""
+  },
+  {
+    "key": "3500",
+    "english": "Oy."
+  },
+  {
+    "key": "3501",
+    "english": "Can I help you, sea-wolf?"
+  },
+  {
+    "key": "3502",
+    "english": "I'm hard up in a clinch, with no knife to cut the seizing."
+  },
+  {
+    "key": "3503",
+    "english": "I've got to get this dinghy repaired so I can get off this god-forsaken beach."
+  },
+  {
+    "key": "3504",
+    "english": "I don't pay heed to what that blasted groundskeeper says, I'm going to find my way out of here."
+  },
+  {
+    "key": "3505",
+    "english": "..."
+  },
+  {
+    "key": "3506",
+    "english": "Aye, sorry lad. I'm just beginning to forget how long I've been here."
+  },
+  {
+    "key": "3507",
+    "english": "I thought it was only a few weeks ago that I washed up here but... maybe it was months?"
+  },
+  {
+    "key": "3508",
+    "english": "What a lubberly soul I've become..."
+  },
+  {
+    "key": "3509",
+    "english": "What ocean claims this beach sea-wolf?"
+  },
+  {
+    "key": "3510",
+    "english": "I had thought myself a well traveled sailor but alas, I don't recognize these waters."
+  },
+  {
+    "key": "3511",
+    "english": "Is the heading of the sun rise even east...?"
+  },
+  {
+    "key": "3512",
+    "english": "This sea isn't like any I've seen."
+  },
+  {
+    "key": "3513",
+    "english": "There's no tides, the waves never change size..."
+  },
+  {
+    "key": "3514",
+    "english": "As a man who has trusted the will of the sea his whole life, I find myself lost."
+  },
+  {
+    "key": "3515",
+    "english": "Lad, I can't recall if I arrived in this dinghy or not."
+  },
+  {
+    "key": "3516",
+    "english": "It doesn't look like it's the one from my ship but it's certainly mine now."
+  },
+  {
+    "key": "3517",
+    "english": "If I can just get it fixed, I think I might be able to row away from here."
+  },
+  {
+    "key": "3518",
+    "english": "Oy sea-wolf. Come to hear my moaning again?"
+  },
+  {
+    "key": "3519",
+    "english": "Heh, sorry. Haven't got much else to do but complain in my predicament."
+  },
+  {
+    "key": "3520",
+    "english": "I've tried walking the length of the beach, and behind the manor as well..."
+  },
+  {
+    "key": "3521",
+    "english": "But every time I end up back here."
+  },
+  {
+    "key": "3522",
+    "english": "So I think the sea has to be the exit. I've tried swimming, of course."
+  },
+  {
+    "key": "3523",
+    "english": "But the waves are just a little too much.  I haven't the strength."
+  },
+  {
+    "key": "3524",
+    "english": "That's why this boat... this dinghy will be my key to get out of here."
+  },
+  {
+    "key": "3525",
+    "english": "Before I was here, I fished every one of the seven seas."
+  },
+  {
+    "key": "3526",
+    "english": "Every season I brought back a plentiful haul."
+  },
+  {
+    "key": "3527",
+    "english": "You ever had a sixteen foot marlin on your line, sea-wolf?"
+  },
+  {
+    "key": "3528",
+    "english": "Hell of a fight to bring it in..."
+  },
+  {
+    "key": "3529",
+    "english": "How long have we been here sea-wolf?"
+  },
+  {
+    "key": "3530",
+    "english": "This eternal sunset muddles the days..."
+  },
+  {
+    "key": "3531",
+    "english": "I can't handle the others on this beach."
+  },
+  {
+    "key": "3532",
+    "english": "They've just accepted their predicament. Weak, I say."
+  },
+  {
+    "key": "3533",
+    "english": "But not I. I was raised by the sea! I'm strong of heart and body."
+  },
+  {
+    "key": "3534",
+    "english": "I'll get off this god-forsaken strip of beach if it kills me."
+  },
+  {
+    "key": "3535",
+    "english": "Do you know how I arrived here, sea-wolf?"
+  },
+  {
+    "key": "3536",
+    "english": "I was navigating my ship and crew through a brutal night squall."
+  },
+  {
+    "key": "3537",
+    "english": "We'd been sailing for days without provisions. Everyone was tired and ragged."
+  },
+  {
+    "key": "3538",
+    "english": "In a flash of lightning I saw a large rock, a stack. I couldn't believe it."
+  },
+  {
+    "key": "3539",
+    "english": "We weren't that close to land, at least, that's what I had thought."
+  },
+  {
+    "key": "3540",
+    "english": "I tried to turn, but it was too late. We collided."
+  },
+  {
+    "key": "3541",
+    "english": "I can't recall much else, but I awoke gasping for breath on this beach..."
+  },
+  {
+    "key": "3542",
+    "english": "That mask you wear..."
+  },
+  {
+    "key": "3543",
+    "english": "You can't take it off, can you sea-wolf?"
+  },
+  {
+    "key": "3544",
+    "english": "I've heard stories of such a curse in my travels, but never seen it in the flesh..."
+  },
+  {
+    "key": "3545",
+    "english": "Oh, Sally Racket, Hi-oh!"
+  },
+  {
+    "key": "3546",
+    "english": "Cheerly, man!"
+  },
+  {
+    "key": "3547",
+    "english": "Pawned my best jacket, Hi-oh!"
+  },
+  {
+    "key": "3548",
+    "english": "Cheerly, man!"
+  },
+  {
+    "key": "3549",
+    "english": "And sold pawn the ticket, Hi-oh!"
+  },
+  {
+    "key": "3550",
+    "english": "Hehe... just an old tune we used to sing."
+  },
+  {
+    "key": "3551",
+    "english": "..."
+  },
+  {
+    "key": "3552",
+    "english": "Ah! Sea-wolf... sorry, I didn't notice you at first."
+  },
+  {
+    "key": "3553",
+    "english": "My mind wanders when I'm staring out at the sea."
+  },
+  {
+    "key": "3554",
+    "english": "Especially in this place..."
+  },
+  {
+    "key": "3555",
+    "english": "Oy..."
+  },
+  {
+    "key": "3556",
+    "english": "You... You've been to the lighthouse, haven't ye?"
+  },
+  {
+    "key": "3557",
+    "english": "I can see it in your eyes. You've been there for sure."
+  },
+  {
+    "key": "3558",
+    "english": "Hmm..."
+  },
+  {
+    "key": "3559",
+    "english": "Here. Let me give you this. It's my old fishing rod."
+  },
+  {
+    "key": "3560",
+    "english": "You seem like you may have a fisherman's eye. Give it a shot."
+  },
+  {
+    "key": "3561",
+    "english": "If you walk up to the edge of the water here, you'll be able to cast your line in."
+  },
+  {
+    "key": "3562",
+    "english": "And if you catch something, you can bring it to the fire over here and cook it."
+  },
+  {
+    "key": "3563",
+    "english": "Nothing beats the taste of fresh caught fish. It's good for the mind and soul."
+  },
+  {
+    "key": "3564",
+    "english": "Oh, you can also only catch one a day. Something to keep in mind."
+  },
+  {
+    "key": "3565",
+    "english": "Despite the utter repugnance of this place, there's life in them waters."
+  },
+  {
+    "key": "3566",
+    "english": "I've seen some fish jumping, and the sea birds are always looking for washed up meals."
+  },
+  {
+    "key": "3567",
+    "english": "Tis a healthy ocean, this one..."
+  },
+  {
+    "key": "3568",
+    "english": "Aye sea-wolf... You've caught me wondering if I'll ever be off this beach..."
+  },
+  {
+    "key": "3569",
+    "english": "I've got to keep trying, I shan't be stuck here..."
+  },
+  {
+    "key": "3570",
+    "english": "You've got a fighter's spirirt haven't ye, sea-wolf?"
+  },
+  {
+    "key": "3571",
+    "english": "The way you carry yourself, the look in your eyes."
+  },
+  {
+    "key": "3572",
+    "english": "Knew many a man like you back in my sailing days. Dangerous, they were."
+  },
+  {
+    "key": "3573",
+    "english": "Do ye reckon you're dangerous as well?"
+  },
+  {
+    "key": "3574",
+    "english": ""
+  },
+  {
+    "key": "3575",
+    "english": ""
+  },
+  {
+    "key": "3576",
+    "english": ""
+  },
+  {
+    "key": "3577",
+    "english": ""
+  },
+  {
+    "key": "3578",
+    "english": ""
+  },
+  {
+    "key": "3579",
+    "english": ""
+  },
+  {
+    "key": "3580",
+    "english": ""
+  },
+  {
+    "key": "3581",
+    "english": ""
+  },
+  {
+    "key": "3582",
+    "english": ""
+  },
+  {
+    "key": "3583",
+    "english": ""
+  },
+  {
+    "key": "3584",
+    "english": ""
+  },
+  {
+    "key": "3585",
+    "english": ""
+  },
+  {
+    "key": "3586",
+    "english": ""
+  },
+  {
+    "key": "3587",
+    "english": ""
+  },
+  {
+    "key": "3588",
+    "english": ""
+  },
+  {
+    "key": "3589",
+    "english": ""
+  },
+  {
+    "key": "3590",
+    "english": ""
+  },
+  {
+    "key": "3591",
+    "english": ""
+  },
+  {
+    "key": "4000",
+    "english": "Welcome.  What can I get you?"
+  },
+  {
+    "key": "4001",
+    "english": "May I interest you in a drink?"
+  },
+  {
+    "key": "4002",
+    "english": "I've got the cure for what ails you.  Take a look."
+  },
+  {
+    "key": "4003",
+    "english": "They say a bartender is just a pharmacist with a limited inventory..."
+  },
+  {
+    "key": "4004",
+    "english": "What can I get started for you?"
+  },
+  {
+    "key": "4005",
+    "english": "Just give me the word and I'll pour you a glass of something strong."
+  },
+  {
+    "key": "4006",
+    "english": "It's good to see you.  Now what can I get for you?"
+  },
+  {
+    "key": "4007",
+    "english": "As long as you've got the coin, I've got the drinks."
+  },
+  {
+    "key": "4008",
+    "english": "You look like you've seen better days.  Let's fix that."
+  },
+  {
+    "key": "4009",
+    "english": "What would you like?"
+  },
+  {
+    "key": "4010",
+    "english": "Excuse me sir!"
+  },
+  {
+    "key": "4011",
+    "english": "It looks like it's your first time in."
+  },
+  {
+    "key": "4012",
+    "english": "If you'd kindly set your weapon aside, your first drink will be on the house."
+  },
+  {
+    "key": "4013",
+    "english": "And trust me,  you're going to want one."
+  },
+  {
+    "key": "4020",
+    "english": "First one is on the house. What can I get you?"
+  },
+  {
+    "key": "4021",
+    "english": "This one's on me.  What can I get you?"
+  },
+  {
+    "key": "4030",
+    "english": "Sorry sir, no weapons allowed at the bar."
+  },
+  {
+    "key": "4031",
+    "english": "Weapons are forbidden at the bar sir, please place that somewhere else."
+  },
+  {
+    "key": "4032",
+    "english": "My apologies sir, I can't serve you unless you're unarmed."
+  },
+  {
+    "key": "4040",
+    "english": "It seems you've done some damage to the Mansion."
+  },
+  {
+    "key": "4041",
+    "english": "Your bill is "
+  },
+  {
+    "key": "4042",
+    "english": "I'll go ahead and take that payment."
+  },
+  {
+    "key": "4043",
+    "english": " coins."
+  },
+  {
+    "key": "4044",
+    "english": "Now then.  What can I get for you?"
+  },
+  {
+    "key": "4045",
+    "english": "One moment please..."
+  },
+  {
+    "key": "4046",
+    "english": "Maybe a drink would ease your pain."
+  },
+  {
+    "key": "4047",
+    "english": "What'll you be having?"
+  },
+  {
+    "key": "4048",
+    "english": "What're you buyin'?"
+  },
+  {
+    "key": "4049",
+    "english": "A drink, sir?"
+  },
+  {
+    "key": "4050",
+    "english": "Something to take the edge off?"
+  },
+  {
+    "key": "4051",
+    "english": "You stare into the bottle long enough..."
+  },
+  {
+    "key": "4052",
+    "english": "What doesn't kill you makes you stronger. A drink, sir?"
+  },
+  {
+    "key": "4053",
+    "english": "Every profound spirit needs a mask. What can I get you?"
+  },
+  {
+    "key": "4054",
+    "english": "Without spirits, life would be a mistake, eh?"
+  },
+  {
+    "key": "4055",
+    "english": "You've made it this far... You're stronger than you look."
+  },
+  {
+    "key": "4056",
+    "english": "This is the last time I'll serve you. Please, a drink."
+  },
+  {
+    "key": "4057",
+    "english": "You've come a long way. It's my honor to serve you one last time."
+  },
+  {
+    "key": "4058",
+    "english": "Well my friend, this is it. A drink in your honor."
+  },
+  {
+    "key": "4059",
+    "english": "You're almost at the end... One more drink to ease the pain."
+  },
+  {
+    "key": "4500",
+    "english": "Welcome, Otxo."
+  },
+  {
+    "key": "4501",
+    "english": "Do you know why we, the denizens of this place, call your kind otxo?"
+  },
+  {
+    "key": "4502",
+    "english": "It means wolf. Because that's what you are... A rabid, violent, helpless beast."
+  },
+  {
+    "key": "4503",
+    "english": "A starving dog only in that condition because you turned your nose at the generous offerings of others."
+  },
+  {
+    "key": "4504",
+    "english": "In short, pathetic."
+  },
+  {
+    "key": "4505",
+    "english": "But it is not my place to judge..."
+  },
+  {
+    "key": "4506",
+    "english": "I am a Nun with the Church of Steel, an organization dedicated to the procurement and upkeep of firearms."
+  },
+  {
+    "key": "4507",
+    "english": "As the only apostle of the Church here, the Mansion has granted me some... unique privileges."
+  },
+  {
+    "key": "4508",
+    "english": "Through me you may choose, with some exceptions, what firearms will appear within the Mansion."
+  },
+  {
+    "key": "4509",
+    "english": "Of course, they will be wielded by your enemies. So be aware you may be choosing the firearms that kill you."
+  },
+  {
+    "key": "4510",
+    "english": "And if you acquire any new weapons they too will join the list."
+  },
+  {
+    "key": "4511",
+    "english": "Understand, my child? Good. Speak to me whenever you'd like to adjust your armory."
+  },
+  {
+    "key": "4512",
+    "english": "Let us view your weaponry."
+  },
+  {
+    "key": "4513",
+    "english": "Well well well Otxo."
+  },
+  {
+    "key": "4514",
+    "english": "You've done a fine job collecting weaponry."
+  },
+  {
+    "key": "4515",
+    "english": "The Church of Steel smiles upon such rigorous devotion, and as such have permitted me to grant you a new tool."
+  },
+  {
+    "key": "4516",
+    "english": "The Welwyn .32 will now be yours to use as you please."
+  },
+  {
+    "key": "4517",
+    "english": "Maybe not the most powerful weapon you'll ever encounter... and maybe not the fastest firing..."
+  },
+  {
+    "key": "4518",
+    "english": "In fact, some would say it's quite difficult to use indeed."
+  },
+  {
+    "key": "4519",
+    "english": "Regardless! It should be here the next time you stop by. You'll see it in the list."
+  },
+  {
+    "key": "4520",
+    "english": "Blessed be the Church of Steel."
+  },
+  {
+    "key": "4521",
+    "english": "Your armory, acolyte."
+  },
+  {
+    "key": "4522",
+    "english": "Ah my child, the Church of Steel is pleased with your work."
+  },
+  {
+    "key": "4523",
+    "english": "Your weapons..."
+  },
+  {
+    "key": "4524",
+    "english": "The Church of Steel welcomes you with open arms."
+  },
+  {
+    "key": "4525",
+    "english": "Your sins will be forgiven my child."
+  },
+  {
+    "key": "4526",
+    "english": "All that matters now is your tools."
+  },
+  {
+    "key": "4527",
+    "english": "Deadliness is next to godliness, as we say."
+  },
+  {
+    "key": "4528",
+    "english": "But ones tools are only as deadly as they are..."
+  },
+  {
+    "key": "4529",
+    "english": "Otxo, my child. Please view your weaponry."
+  },
+  {
+    "key": "4530",
+    "english": "Blessings be upon you Otxo."
+  },
+  {
+    "key": "4531",
+    "english": "Your armory awaits."
+  },
+  {
+    "key": "4532",
+    "english": "A devotee to the Church of Steel shall be well equipped."
+  },
+  {
+    "key": "4533",
+    "english": "Please Otxo, gaze upon your tools."
+  },
+  {
+    "key": "4534",
+    "english": "Gunfire is the singing of angels, and the shooter is the conductor of the choir."
+  },
+  {
+    "key": "4535",
+    "english": "Your instruments, my child."
+  },
+  {
+    "key": "4536",
+    "english": "You will die, Otxo. But your are blessed with the gift to choose how."
+  },
+  {
+    "key": "4537",
+    "english": ""
+  },
+  {
+    "key": "4538",
+    "english": ""
+  },
+  {
+    "key": "4539",
+    "english": ""
+  },
+  {
+    "key": "4540",
+    "english": ""
+  },
+  {
+    "key": "4541",
+    "english": ""
+  },
+  {
+    "key": "4542",
+    "english": ""
+  },
+  {
+    "key": "4543",
+    "english": ""
+  },
+  {
+    "key": "4544",
+    "english": ""
+  },
+  {
+    "key": "4545",
+    "english": ""
+  },
+  {
+    "key": "4546",
+    "english": ""
+  },
+  {
+    "key": "4547",
+    "english": ""
+  },
+  {
+    "key": "4548",
+    "english": ""
+  },
+  {
+    "key": "4549",
+    "english": ""
+  },
+  {
+    "key": "4550",
+    "english": ""
+  },
+  {
+    "key": "4551",
+    "english": ""
+  },
+  {
+    "key": "4552",
+    "english": ""
+  },
+  {
+    "key": "4553",
+    "english": ""
+  },
+  {
+    "key": "4554",
+    "english": ""
+  },
+  {
+    "key": "4555",
+    "english": ""
+  },
+  {
+    "key": "4556",
+    "english": ""
+  },
+  {
+    "key": "4557",
+    "english": ""
+  },
+  {
+    "key": "5000",
+    "english": "Heh..."
+  },
+  {
+    "key": "5001",
+    "english": "You know, we didn't wish to do wrong."
+  },
+  {
+    "key": "5002",
+    "english": "We were doing what we thought was right. We had to be."
+  },
+  {
+    "key": "5003",
+    "english": "But you... you lead us astray. Not you, but... you know what I mean."
+  },
+  {
+    "key": "5004",
+    "english": "How could we have known the outcome? How could we have known what would happen?"
+  },
+  {
+    "key": "5005",
+    "english": "This place, this paradise... it has consumed us. And it continues to consume."
+  },
+  {
+    "key": "5006",
+    "english": "You'll need to speak to the other one. In the motel."
+  },
+  {
+    "key": "5007",
+    "english": "He knows how to get there... if you want to see what we've done."
+  },
+  {
+    "key": "5008",
+    "english": "At long last someone has come to provide me company..."
+  },
+  {
+    "key": "5009",
+    "english": "That thing has poisoned my mind. I cannot escape, I will never be free."
+  },
+  {
+    "key": "5010",
+    "english": "It is too late for me. For all of us. We have committed too grave a sin."
+  },
+  {
+    "key": "5011",
+    "english": "I tried to run, but no matter how far I went, I always ended up back here."
+  },
+  {
+    "key": "5012",
+    "english": "Trapped in this room, unable to leave. Unable to die."
+  },
+  {
+    "key": "5013",
+    "english": "..."
+  },
+  {
+    "key": "5014",
+    "english": "I know why you've come to me. You've spoken to the others. You want to see Him."
+  },
+  {
+    "key": "5015",
+    "english": "If... if you stay with me for just a while longer, I'll direct you there."
+  },
+  {
+    "key": "5016",
+    "english": "Please, just a small reprieve from the solace."
+  },
+  {
+    "key": "5017",
+    "english": "Okay... thank you. It is nice to have another living soul here, just for a little while."
+  },
+  {
+    "key": "5018",
+    "english": "When you walk out that door, you'll be in His chamber."
+  },
+  {
+    "key": "5019",
+    "english": "You can see the sin we committed..."
+  },
+  {
+    "key": "5020",
+    "english": ""
+  },
+  {
+    "key": "6000",
+    "english": "So you've made it this far..."
+  },
+  {
+    "key": "6001",
+    "english": "I am the master of the Mansion."
+  },
+  {
+    "key": "6002",
+    "english": "I am you."
+  },
+  {
+    "key": "6003",
+    "english": "Maybe you don't remember coming to this place, controlling the Mansion..."
+  },
+  {
+    "key": "6004",
+    "english": "Your mask darkening over time."
+  },
+  {
+    "key": "6005",
+    "english": "But it doesn't matter now. Even if you kill me, you cannot destroy the Heart of the Mansion."
+  },
+  {
+    "key": "6006",
+    "english": "This place is too powerful for you to stop at this point. It is futile to even try."
+  },
+  {
+    "key": "6007",
+    "english": "You cut your way through your offshoots up to here, destroying everything in your path, and now you'll fall because you are not strong enough to finish this."
+  },
+  {
+    "key": "6008",
+    "english": "Come on then, let's get this over with."
+  },
+  {
+    "key": "6009",
+    "english": "Well, I certainly didn't expect one of you to make it this far."
+  },
+  {
+    "key": "6010",
+    "english": "No matter. You cannot destroy the heart."
+  },
+  {
+    "key": "6011",
+    "english": "Still going, huh?"
+  },
+  {
+    "key": "6012",
+    "english": "Huh, didn't think you'd make it this far."
+  },
+  {
+    "key": "6013",
+    "english": "Why are you trying so hard?"
+  },
+  {
+    "key": "6014",
+    "english": "Do you really think you can change anything?"
+  },
+  {
+    "key": "6015",
+    "english": "You're wasting your time."
+  },
+  {
+    "key": "6016",
+    "english": "If you think you can make it, you're wrong."
+  },
+  {
+    "key": "6017",
+    "english": "Even if you do make it, what then?"
+  },
+  {
+    "key": "6018",
+    "english": "Why don't you just give up?"
+  },
+  {
+    "key": "6019",
+    "english": "Haven't you had enough?"
+  },
+  {
+    "key": "6020",
+    "english": "This is all futile, in the end."
+  },
+  {
+    "key": "6021",
+    "english": "You disgust me."
+  },
+  {
+    "key": "6022",
+    "english": "Regardless of how much blood you shed, you'll always be worthless."
+  },
+  {
+    "key": "6023",
+    "english": "Wouldn't it be easier to just stop?"
+  },
+  {
+    "key": "6024",
+    "english": "Do you really think you're important in this place?"
+  },
+  {
+    "key": "6025",
+    "english": "You're scared, I can see it in your eyes."
+  },
+  {
+    "key": "6026",
+    "english": "You are your own humiliation."
+  },
+  {
+    "key": "6027",
+    "english": "Your sins almost equal mine."
+  },
+  {
+    "key": "6028",
+    "english": "Why don't you speak to me? Are you afraid?"
+  },
+  {
+    "key": "6029",
+    "english": "How do you think this ends?"
+  },
+  {
+    "key": "6030",
+    "english": "Maybe that gun would be best used on yourself."
+  },
+  {
+    "key": "6031",
+    "english": "Time to send you back where you belong."
+  },
+  {
+    "key": "6500",
+    "english": "Let's see what I can work on for you."
+  },
+  {
+    "key": "6501",
+    "english": "Sorry, that's everything I can import. Thank you for your continued patronage."
+  },
+  {
+    "key": "6502",
+    "english": "Excellent, you can have this now and I'll get the bar to start stocking this. Thank you."
+  },
+  {
+    "key": "6503",
+    "english": "Well hello there."
+  },
+  {
+    "key": "6504",
+    "english": "It's been a long time since the last one. Welcome to The Rose Room."
+  },
+  {
+    "key": "6505",
+    "english": "We're a humble little establishment offering drinks to weary souls in need."
+  },
+  {
+    "key": "6506",
+    "english": "My role here is to import new liquors for the bar."
+  },
+  {
+    "key": "6507",
+    "english": "Even though the bar's stock is quite large, it's always nice to add some new drinks to the menu from time to time."
+  },
+  {
+    "key": "6508",
+    "english": "You know, maybe we can help each other. The importing cost is quite high, higher than I would be able to pay alone."
+  },
+  {
+    "key": "6509",
+    "english": "If you could bankroll some of the importation fees, I'd be able to find some more drinks to import for you."
+  },
+  {
+    "key": "6510",
+    "english": "That way you can permanently add new liquors to the bar's stock, which you may be served the next time you're here."
+  },
+  {
+    "key": "6511",
+    "english": "And if you do pay the full importation fee, you'll be able to have the drink immediately, as a little added bonus."
+  },
+  {
+    "key": "6512",
+    "english": "What do you say? Pretty good deal, no?"
+  },
+  {
+    "key": "6513",
+    "english": "Just speak to me if you'd like to take a look at the list."
+  },
+  {
+    "key": "6514",
+    "english": "I've got some imports here you may be interested in."
+  },
+  {
+    "key": "6515",
+    "english": "I'll put your investment to good use. Shall we take a look?"
+  },
+  {
+    "key": "6516",
+    "english": "Let's check the progress of your imports."
+  },
+  {
+    "key": "6517",
+    "english": "Time to get down to business, hm?"
+  },
+  {
+    "key": "6518",
+    "english": "Let's turn that coin into something you can use."
+  },
+  {
+    "key": "6519",
+    "english": "I've got a good handful of options here for you."
+  },
+  {
+    "key": "6520",
+    "english": "Keen to make some investments, hm?"
+  },
+  {
+    "key": "6521",
+    "english": "Let's import some drinks."
+  },
+  {
+    "key": "6522",
+    "english": "Let me show you what we can work on."
+  },
+  {
+    "key": "7000",
+    "english": "Pistol"
+  },
+  {
+    "key": "7001",
+    "english": "LMG"
+  },
+  {
+    "key": "7002",
+    "english": "Shotgun"
+  },
+  {
+    "key": "7003",
+    "english": "SMG"
+  },
+  {
+    "key": "7004",
+    "english": "Rifle"
+  },
+  {
+    "key": "7005",
+    "english": "Judas 17"
+  },
+  {
+    "key": "7006",
+    "english": "Judas 18"
+  },
+  {
+    "key": "7007",
+    "english": "John 1911 Silenced"
+  },
+  {
+    "key": "7008",
+    "english": "Myrica 45"
+  },
+  {
+    "key": "7009",
+    "english": "Meriwether .303"
+  },
+  {
+    "key": "7010",
+    "english": "Vespucci-12"
+  },
+  {
+    "key": "7011",
+    "english": "Abel Assault 12"
+  },
+  {
+    "key": "7012",
+    "english": "Wolf's-Bane 5.7"
+  },
+  {
+    "key": "7013",
+    "english": "Hedeoma 4.6 Silenced"
+  },
+  {
+    "key": "7014",
+    "english": "Ferula"
+  },
+  {
+    "key": "7015",
+    "english": "Gabriel G1"
+  },
+  {
+    "key": "7016",
+    "english": "Baal 95"
+  },
+  {
+    "key": "7017",
+    "english": "Damage:"
+  },
+  {
+    "key": "7018",
+    "english": "RPM:"
+  },
+  {
+    "key": "7019",
+    "english": "Christoforos 10 Silenced"
+  },
+  {
+    "key": "7020",
+    "english": "Elcano 50"
+  },
+  {
+    "key": "7021",
+    "english": "Elizabeth"
+  },
+  {
+    "key": "7022",
+    "english": "Cyrus-12 Silenced"
+  },
+  {
+    "key": "7023",
+    "english": "Cicatrix-H"
+  },
+  {
+    "key": "7024",
+    "english": "Titus-9 Silenced"
+  },
+  {
+    "key": "7025",
+    "english": "Magnolia 34"
+  },
+  {
+    "key": "7026",
+    "english": "Wallflower PK Silenced"
+  },
+  {
+    "key": "7027",
+    "english": "Cortes 1917"
+  },
+  {
+    "key": "7028",
+    "english": "Benjamin 10"
+  },
+  {
+    "key": "7029",
+    "english": "Jericho 40"
+  },
+  {
+    "key": "7030",
+    "english": "Brianna Model 1900"
+  },
+  {
+    "key": "7031",
+    "english": "Beatrice 1887"
+  },
+  {
+    "key": "7032",
+    "english": "Filipchenko 7.62"
+  },
+  {
+    "key": "7033",
+    "english": "Anther A2"
+  },
+  {
+    "key": "7034",
+    "english": "Gomorrah 36"
+  },
+  {
+    "key": "7035",
+    "english": "Stigma M4"
+  },
+  {
+    "key": "7036",
+    "english": "Raleigh .303"
+  },
+  {
+    "key": "7037",
+    "english": "Meconopsis 60"
+  },
+  {
+    "key": "7038",
+    "english": "M2 Dendrocnide"
+  },
+  {
+    "key": "7039",
+    "english": ""
+  },
+  {
+    "key": "7040",
+    "english": "New gun unlocked."
+  },
+  {
+    "key": "7041",
+    "english": "A collectible figure."
+  },
+  {
+    "key": "7042",
+    "english": "BR6"
+  },
+  {
+    "key": "7043",
+    "english": "Welwyn .32"
+  },
+  {
+    "key": "7044",
+    "english": "The Firearm"
+  },
+  {
+    "key": "8000",
+    "english": "Hmm..."
+  },
+  {
+    "key": "8001",
+    "english": "The Master... but... different?"
+  },
+  {
+    "key": "8002",
+    "english": "Or... just a different version..."
+  },
+  {
+    "key": "8003",
+    "english": "Ah! Forgive me for not introducing myself. I am the Deviant."
+  },
+  {
+    "key": "8004",
+    "english": "I am a collector of sorts. I am interested in... how would you call them..."
+  },
+  {
+    "key": "8005",
+    "english": "Artifacts? I suppose that's the best way to describe them."
+  },
+  {
+    "key": "8006",
+    "english": "Over the course of your time here you may come across these artifacts, you see."
+  },
+  {
+    "key": "8007",
+    "english": "And it is my duty to collect and display them for you."
+  },
+  {
+    "key": "8008",
+    "english": "Some consider these artifacts junk but... I must admit I am utterly fascinated by them."
+  },
+  {
+    "key": "8009",
+    "english": "So please, if you collect any, feel free to come see me so that we may examine them together."
+  },
+  {
+    "key": "8010",
+    "english": "Ah! Good to see you Otxo."
+  },
+  {
+    "key": "8011",
+    "english": "Let's take a gander at your collection, shall we?"
+  },
+  {
+    "key": "8012",
+    "english": "..."
+  },
+  {
+    "key": "8013",
+    "english": "Ack! Sorry Otxo, it seems I was lost in my thoughts."
+  },
+  {
+    "key": "8014",
+    "english": "Your collection awaits."
+  },
+  {
+    "key": "8015",
+    "english": "Ah... You've been to one, haven't you? I can smell it on you."
+  },
+  {
+    "key": "8016",
+    "english": "A room that didn't seem to fit in the Mansion, like it was from somewhere else?"
+  },
+  {
+    "key": "8017",
+    "english": "What was it like...?  Any artifacts?!"
+  },
+  {
+    "key": "8018",
+    "english": "Sorry, sorry... These rooms have been the object of my study for some time."
+  },
+  {
+    "key": "8019",
+    "english": "I've taken to calling them Misplaced Chambers. I'm still not sure what causes them."
+  },
+  {
+    "key": "8020",
+    "english": "My theory is that they're places the Master has visited, and that the Mansion has then absorbed."
+  },
+  {
+    "key": "8021",
+    "english": "But they could also be the Master's memories made real by the Mansion. Or maybe not even be real at all."
+  },
+  {
+    "key": "8022",
+    "english": "Needless to say, there's a lot of studying that needs to be done."
+  },
+  {
+    "key": "8023",
+    "english": "Otxo! Yes yes, your collection awaits!"
+  },
+  {
+    "key": "8024",
+    "english": "Ah, Otxo, my friend, have you come across any more artifacts?"
+  },
+  {
+    "key": "8025",
+    "english": "We both love to see your collection flourishing, don't we?"
+  },
+  {
+    "key": "8026",
+    "english": "Otxo! It seems you have completed your collection."
+  },
+  {
+    "key": "8027",
+    "english": "I'm surprised this day ever came! I had put together a little surprise for this occasion..."
+  },
+  {
+    "key": "8028",
+    "english": "It was a weapon that I found during my travels, called the BR6. Check the Nun's list and you'll see it."
+  },
+  {
+    "key": "8029",
+    "english": "And Otxo, thank you! This is a fine collection indeed!"
+  },
+  {
+    "key": "8030",
+    "english": "Beautiful day today, isn't it Otxo?"
+  },
+  {
+    "key": "8031",
+    "english": "Let's have a look at your collection."
+  },
+  {
+    "key": "8032",
+    "english": "Ah, Otxo, how are you today?"
+  },
+  {
+    "key": "8033",
+    "english": "Your collection finds you well."
+  },
+  {
+    "key": "8034",
+    "english": "Where some see trinkets, I see treasure!"
+  },
+  {
+    "key": "8035",
+    "english": "And your collection is a fine one indeed."
+  },
+  {
+    "key": "8036",
+    "english": "Well well well, shall we take a peek at your collection?"
+  },
+  {
+    "key": "8037",
+    "english": "Ah Otxo, a true pleasure to see you."
+  },
+  {
+    "key": "8038",
+    "english": "I assume you'd like to see your collection?"
+  },
+  {
+    "key": "8039",
+    "english": "Good day to you! Your collection, I presume?"
+  },
+  {
+    "key": "8040",
+    "english": ""
+  },
+  {
+    "key": "8041",
+    "english": ""
+  },
+  {
+    "key": "8042",
+    "english": ""
+  },
+  {
+    "key": "9000",
+    "english": "THE WRIT OF BEKATUA: Passage 1"
+  },
+  {
+    "key": "9001",
+    "english": "In the Time Before, an entity named Bekatua set out to create a home away from the chaos of life."
+  },
+  {
+    "key": "9002",
+    "english": "This was the initial impetus behind the creation of The Mansion."
+  },
+  {
+    "key": "9003",
+    "english": "Bekatua, satisfied with its new home, lived in comfort for millenia."
+  },
+  {
+    "key": "9004",
+    "english": "But that comfort came with boredom, as the doldrums of its unchanging home set in."
+  },
+  {
+    "key": "9005",
+    "english": "There was no surprise, nothing new, because it was simply the world it had created."
+  },
+  {
+    "key": "9006",
+    "english": "So Bekatua decided to test the limits of its ambition in its old age."
+  },
+  {
+    "key": "9007",
+    "english": "THE WRIT OF BEKATUA: Passage 2"
+  },
+  {
+    "key": "9008",
+    "english": "Bekatua's plan was to create something its perfect world did not have: chaos."
+  },
+  {
+    "key": "9009",
+    "english": "This would be accomplished with two things. The first: impulse, the need to act."
+  },
+  {
+    "key": "9010",
+    "english": "The second: violence, the need to change."
+  },
+  {
+    "key": "9011",
+    "english": "The first was achieved with Bekatua's creation of The Mask, which would pull entities from other worlds."
+  },
+  {
+    "key": "9012",
+    "english": "That way The Mansion would be populated with new viewpoints and new ideas."
+  },
+  {
+    "key": "9013",
+    "english": "The second was achieved with a device known as The Firearm, which only Bekatua controlled."
+  },
+  {
+    "key": "9014",
+    "english": "THE WRIT OF BEKATUA: Passage 3"
+  },
+  {
+    "key": "9015",
+    "english": "Bekatua was immediately pleased with the results of its ambitions."
+  },
+  {
+    "key": "9016",
+    "english": "The Mansion was soon populated with entities from other places and times, who formed a strong community."
+  },
+  {
+    "key": "9017",
+    "english": "Some of them chose to worship Bekatua as a god, others chose to simply live out their lives here."
+  },
+  {
+    "key": "9018",
+    "english": "The Mask did its job dutifully and every new day Bekatua was joyfully surprised."
+  },
+  {
+    "key": "9019",
+    "english": "No longer did the boredom of a perfect world make every day the same."
+  },
+  {
+    "key": "9020",
+    "english": "However, not unlike its creator, The Mask soon became overwhelmed with ambition."
+  },
+  {
+    "key": "9021",
+    "english": "THE WRIT OF BEKATUA: Passage 4"
+  },
+  {
+    "key": "9022",
+    "english": "Although The Mask knew and understood the reason for its creation, it felt it could not sit idle."
+  },
+  {
+    "key": "9023",
+    "english": "It could not shake the feeling that maybe there could be more."
+  },
+  {
+    "key": "9024",
+    "english": "It dreamed of a Mansion even greater than this one, larger and more resplendent."
+  },
+  {
+    "key": "9025",
+    "english": "Instead of a small community, a grand city."
+  },
+  {
+    "key": "9026",
+    "english": "A place where Bekatua and The Mask would truly have power."
+  },
+  {
+    "key": "9027",
+    "english": "THE WRIT OF BEKATUA: Passage 5"
+  },
+  {
+    "key": "9028",
+    "english": "But when The Mask approached Bekatua, Bekatua's ego would not allow it see its ambitions as worthwhile."
+  },
+  {
+    "key": "9029",
+    "english": "Dejected and ashamed, The Mask instead became devious."
+  },
+  {
+    "key": "9030",
+    "english": "It pulled in more and more entities from the outside, increasing the population of the community."
+  },
+  {
+    "key": "9031",
+    "english": "Soon, as with any growth, the community began infighting."
+  },
+  {
+    "key": "9032",
+    "english": "Every day the strife and anxiety of the community rose, but Bekatua did not know how to keep it in check."
+  },
+  {
+    "key": "9033",
+    "english": "For Bekatua did not see itself as a leader of the community, but simply as a denizen of this place."
+  },
+  {
+    "key": "9034",
+    "english": "THE WRIT OF BEKATUA: Passage 6"
+  },
+  {
+    "key": "9035",
+    "english": "The community eventually turned on itself."
+  },
+  {
+    "key": "9036",
+    "english": "Some blamed each other for the issues they were facing."
+  },
+  {
+    "key": "9037",
+    "english": "But a strong contingent began to blame Bekatua, a thought which spread like wildfire."
+  },
+  {
+    "key": "9038",
+    "english": "In a fit of rage the community rose up against Bekatua and cornered it within The Mansion."
+  },
+  {
+    "key": "9039",
+    "english": "Refusing to use The Firearm to defend itself, Bekatua sat idly while the mob whipped itself into a frenzy."
+  },
+  {
+    "key": "9040",
+    "english": "One member of the community eventually snatched The Firearm from Bekatua's hands."
+  },
+  {
+    "key": "9041",
+    "english": "Quickly The Firearm was turned on Bekatua and utilized."
+  },
+  {
+    "key": "9042",
+    "english": "And so, Bekatua was killed."
+  },
+  {
+    "key": "9043",
+    "english": "THE WRIT OF BEKATUA: Passage 7"
+  },
+  {
+    "key": "9044",
+    "english": "As soon as Bekatua fell, The Mansion shuddered and became unsteady."
+  },
+  {
+    "key": "9045",
+    "english": "The Heart of the Mansion, the thing keeping this place in existence, was fueled by Bekatua."
+  },
+  {
+    "key": "9046",
+    "english": "Without Bekatua The Heart was soon to die, and it would take The Mansion with it."
+  },
+  {
+    "key": "9047",
+    "english": "The community was scared and immediately regretful for their actions."
+  },
+  {
+    "key": "9048",
+    "english": "However, The Mask had accounted for this, and began implementing its plan."
+  },
+  {
+    "key": "9049",
+    "english": "THE WRIT OF BEKATUA: Passage 8"
+  },
+  {
+    "key": "9050",
+    "english": "The mob that had entered in order to face Bekatua turned to The Mask for guidance."
+  },
+  {
+    "key": "9051",
+    "english": "But before they could even ask what they should do, The Mask struck them down."
+  },
+  {
+    "key": "9052",
+    "english": "It was over in just seconds."
+  },
+  {
+    "key": "9053",
+    "english": "Their blood, pooling across the room, soaked into the floorboards of The Mansion."
+  },
+  {
+    "key": "9054",
+    "english": "From the floorboards it then soaked into the arterys of The Heart."
+  },
+  {
+    "key": "9055",
+    "english": "And The Mansion settled."
+  },
+  {
+    "key": "9056",
+    "english": "THE WRIT OF BEKATUA: Passage 9"
+  },
+  {
+    "key": "9057",
+    "english": "The community of The Mansion shrank as they were used to fuel The Heart."
+  },
+  {
+    "key": "9058",
+    "english": "The Mask found that it was able to use the corpses of those that had passed as soldiers."
+  },
+  {
+    "key": "9059",
+    "english": "These husks roamed the halls of The Mansion, killing any who entered."
+  },
+  {
+    "key": "9060",
+    "english": "Once the community had been depleted The Mask began travelling outside to collect entities."
+  },
+  {
+    "key": "9061",
+    "english": "Compelled to put on The Mask, they were promised treasure, great luck, or a chance to see a loved one."
+  },
+  {
+    "key": "9062",
+    "english": "THE WRIT OF BEKATUA: Passage 10"
+  },
+  {
+    "key": "9063",
+    "english": "The Mask was able to prevent the entities it brought from truly dying, its only power in Bekatua's world."
+  },
+  {
+    "key": "9064",
+    "english": "Even after they had spilled their blood within The Mansion they would wake up back on the beach."
+  },
+  {
+    "key": "9065",
+    "english": "In this way, The Mask could continually milk its captives until they had nothing left to give."
+  },
+  {
+    "key": "9066",
+    "english": "THE WRIT OF BEKATUA: Passage 11"
+  },
+  {
+    "key": "9067",
+    "english": "Most of the community died out, with only a handful of stragglers and newcomers remaining."
+  },
+  {
+    "key": "9068",
+    "english": "Those left of the community knew to stay outside of The Mansion."
+  },
+  {
+    "key": "9069",
+    "english": "Meanwhile, The Mask continued to bring in fresh blood to fuel The Heart."
+  },
+  {
+    "key": "9070",
+    "english": "And this is how it has been for some time."
+  },
+  {
+    "key": "9071",
+    "english": "DAY 1"
+  },
+  {
+    "key": "9072",
+    "english": "The most difficult thing is remembering how I got here."
+  },
+  {
+    "key": "9073",
+    "english": "I think... I was at the park with my son. He asked me to push him on the swings."
+  },
+  {
+    "key": "9074",
+    "english": "We were walking to the swingset when I saw a mask on the ground..."
+  },
+  {
+    "key": "9075",
+    "english": "And some kind of force or something compelled me to pick it up and put it on."
+  },
+  {
+    "key": "9076",
+    "english": "It's hazy, like a dream. I can't quite recall. But I heard my son crying for me, and then I awoke on the beach."
+  },
+  {
+    "key": "9077",
+    "english": "I get the feeling he's inside this mansion. These folks outside have certainly indicated as such."
+  },
+  {
+    "key": "9078",
+    "english": "No matter what, I'm going to get my son back and get out of here. Whatever it takes."
+  },
+  {
+    "key": "9079",
+    "english": "DAY 2"
+  },
+  {
+    "key": "9080",
+    "english": "Storming the mansion has so far proved fruitless. As soon as I get in there, I'm shot to pieces."
+  },
+  {
+    "key": "9081",
+    "english": "The pain seems to be extremely real. But as I feel myself fade away, I awake back on the beach."
+  },
+  {
+    "key": "9082",
+    "english": "The things in there don't seem to be entirely human. Maybe once, but not anymore."
+  },
+  {
+    "key": "9083",
+    "english": "I feel no remorse killing them, thankfully. I know they're keeping me from my son."
+  },
+  {
+    "key": "9084",
+    "english": "There's just so many of them. It's difficult to make it deeper in."
+  },
+  {
+    "key": "9085",
+    "english": "All I can do is keep trying..."
+  },
+  {
+    "key": "9086",
+    "english": "DAY 3"
+  },
+  {
+    "key": "9087",
+    "english": "These people out on the beach are a strange lot."
+  },
+  {
+    "key": "9088",
+    "english": "I feel like they know more than they're letting on, but at the same time, they don't seem to know much."
+  },
+  {
+    "key": "9089",
+    "english": "The groundskeeper in particular seems to have fully accepted that this is his life."
+  },
+  {
+    "key": "9090",
+    "english": "I don't understand it. Don't they want to get out of here? To go back to wherever they came from?"
+  },
+  {
+    "key": "9091",
+    "english": "And that nun... I've never met a nun with such an obsession for firearms before."
+  },
+  {
+    "key": "9092",
+    "english": "Strange woman."
+  },
+  {
+    "key": "9093",
+    "english": "DAY 4"
+  },
+  {
+    "key": "9094",
+    "english": "This is obvious, but I need to note it down in case I get out of here."
+  },
+  {
+    "key": "9095",
+    "english": "I can't get the mask off."
+  },
+  {
+    "key": "9096",
+    "english": "Try as I might, it simply won't come off. There's no straps, and as far as I can tell it's not glued on."
+  },
+  {
+    "key": "9097",
+    "english": "It just... won't come off. That's all there is to it."
+  },
+  {
+    "key": "9098",
+    "english": "It doesn't restrict my vision at all, so it's not a hindrance when I'm fighting in there."
+  },
+  {
+    "key": "9099",
+    "english": "Furthermore, it seems like it's opaque on the outside, even though it's almost completely translucent inside."
+  },
+  {
+    "key": "9100",
+    "english": "Regardless, I suppose I'm stuck with it."
+  },
+  {
+    "key": "9101",
+    "english": "DAY 5"
+  },
+  {
+    "key": "9102",
+    "english": "Despite being here as long as I have, it's occurred to me that I haven't gotten hungry yet."
+  },
+  {
+    "key": "9103",
+    "english": "I don't believe I've gotten thirsty yet either, but I keep buying drinks from that bartender anyway."
+  },
+  {
+    "key": "9104",
+    "english": "And as far as other bodily functions... well, haven't had any of those."
+  },
+  {
+    "key": "9105",
+    "english": "It's like my body is in some kind of stasis. I don't even get tired in the traditional sense."
+  },
+  {
+    "key": "9106",
+    "english": "I say it that way because as time has gone on, I've felt a sort of overall fatigue beginning to set in."
+  },
+  {
+    "key": "9107",
+    "english": "Even though I rest, every time I awake on that beach it's progressed a little more."
+  },
+  {
+    "key": "9108",
+    "english": "DAY 6"
+  },
+  {
+    "key": "9109",
+    "english": "Time here seems to progress unusually. Every time I awake on the beach, it seems to be sunset."
+  },
+  {
+    "key": "9110",
+    "english": "Last time, I stayed out on the beach for what felt like hours, just to watch the sun dip below the horizon."
+  },
+  {
+    "key": "9111",
+    "english": "But it never did. It seems this place is eternally almost twilight."
+  },
+  {
+    "key": "9112",
+    "english": "I've been marking the days by the amount times I've awoken on the beach. Even if it's not accurate, it's a decent count."
+  },
+  {
+    "key": "9113",
+    "english": "DAY 7"
+  },
+  {
+    "key": "9114",
+    "english": "I haven't written much about The Rose Room."
+  },
+  {
+    "key": "9115",
+    "english": "I kind of cast it off at first, I figured that if I was going to fight, I shouldn't be intoxicated."
+  },
+  {
+    "key": "9116",
+    "english": "But lately I've come to realize the drinks the bartender serves are... unique."
+  },
+  {
+    "key": "9117",
+    "english": "Rather than make me drunk, they make me feel powerful."
+  },
+  {
+    "key": "9118",
+    "english": "Now every time I enter the mansion, I make sure to grab a drink."
+  },
+  {
+    "key": "9119",
+    "english": "As for the bartender himself... he's more of an enigma than anyone else here."
+  },
+  {
+    "key": "9120",
+    "english": "It's like he exists just to serve. I tried asking him questions about the mansion, but he just stared at me."
+  },
+  {
+    "key": "9121",
+    "english": "And that girl in there... I just don't know."
+  },
+  {
+    "key": "9122",
+    "english": "DAY 8"
+  },
+  {
+    "key": "9123",
+    "english": "I spent some time today outside of the mansion with the deviant."
+  },
+  {
+    "key": "9124",
+    "english": "I hadn't noticed him at first, but when I finally did, I'm shocked that I didn't."
+  },
+  {
+    "key": "9125",
+    "english": "He's got an unusually shaped skull. Insect like."
+  },
+  {
+    "key": "9126",
+    "english": "Hell, he might be an insect. But he's awfully kind. One of the kindest here."
+  },
+  {
+    "key": "9127",
+    "english": "He's rather obsessed with a collection of... something. I'm not entirely sure what he means."
+  },
+  {
+    "key": "9128",
+    "english": "But he and I have talked at great length about my past life."
+  },
+  {
+    "key": "9129",
+    "english": "He asked me a lot of questions about my son..."
+  },
+  {
+    "key": "9130",
+    "english": "DAY 9"
+  },
+  {
+    "key": "9131",
+    "english": "My son is in here. I can sense it."
+  },
+  {
+    "key": "9132",
+    "english": "As I get further into the mansion, I can feel that I'm getting closer to him."
+  },
+  {
+    "key": "9133",
+    "english": "But as I get further, there's more to battle through. It only gets harder."
+  },
+  {
+    "key": "9134",
+    "english": "I can't give up.  I can't give up."
+  },
+  {
+    "key": "9135",
+    "english": "DAY 10"
+  },
+  {
+    "key": "9136",
+    "english": "I ran into a new figure in the mansion. A man like me, but his mask was red instead of white."
+  },
+  {
+    "key": "9137",
+    "english": "He didn't have much to say that wasn't just downright cruel."
+  },
+  {
+    "key": "9138",
+    "english": "I get the feeling he's like the bartender... maybe a product of this place, rather than a real person."
+  },
+  {
+    "key": "9139",
+    "english": "Still, I don't know what his deal was."
+  },
+  {
+    "key": "9140",
+    "english": "DAY 11"
+  },
+  {
+    "key": "9141",
+    "english": "On my last attempt I went through a door that opened to an old arcade, just like the ones I visited as a kid."
+  },
+  {
+    "key": "9142",
+    "english": "It felt strange to be in there. Something didn't feel right."
+  },
+  {
+    "key": "9143",
+    "english": "For a moment I was overjoyed because I wasn't in the mansion any longer."
+  },
+  {
+    "key": "9144",
+    "english": "But the arcade was empty and none of the machines worked."
+  },
+  {
+    "key": "9145",
+    "english": "I remembered my conversations with the deviant. He had spoken about something like this before."
+  },
+  {
+    "key": "9146",
+    "english": "He called them Misplaced Chambers. I guess they're not entirely outside the mansion, but not entirely within it either."
+  },
+  {
+    "key": "9147",
+    "english": "Regardless... besides the strangeness of the room itself, there was an oppressive feeling in my head."
+  },
+  {
+    "key": "9148",
+    "english": "It felt as if I didn't belong there."
+  },
+  {
+    "key": "9149",
+    "english": "I walked out the front doors of the arcade hoping to find a sunny street in front of me."
+  },
+  {
+    "key": "9150",
+    "english": "But I was simply back in the mansion."
+  },
+  {
+    "key": "9151",
+    "english": "DAY 12"
+  },
+  {
+    "key": "9152",
+    "english": "I don't know how many of them I've killed at this point."
+  },
+  {
+    "key": "9153",
+    "english": "Hundreds... maybe even thousands?"
+  },
+  {
+    "key": "9154",
+    "english": "And yet, it never ceases. I must continue until I've reached the end."
+  },
+  {
+    "key": "9155",
+    "english": "Slowly, but steadily, I am reaching deeper into the mansion."
+  },
+  {
+    "key": "9156",
+    "english": "I can make it. I have to make it. But this fatigue... this damn fatigue..."
+  },
+  {
+    "key": "9157",
+    "english": "Every day I'm a little more tired. Weaker. Slower. I need to be fast. I need to be deadly."
+  },
+  {
+    "key": "9158",
+    "english": "I'll finish this, even if I have to crawl."
+  },
+  {
+    "key": "9159",
+    "english": "DAY 13"
+  },
+  {
+    "key": "9160",
+    "english": "It appears that at the end of an area within the mansion, I will be forced into a room with a beast of some kind."
+  },
+  {
+    "key": "9161",
+    "english": "There was that mechanical snake at first, but I've been able to handily dispatch that."
+  },
+  {
+    "key": "9162",
+    "english": "But then there was that lizard, or maybe a gecko, made entirely of a black liquid, able to change shape at will."
+  },
+  {
+    "key": "9163",
+    "english": "I don't know what the hell these things are or where they come from, but I suppose it matters not."
+  },
+  {
+    "key": "9164",
+    "english": "They will die, like all the rest, until I've reached my son."
+  },
+  {
+    "key": "9165",
+    "english": "DAY 14"
+  },
+  {
+    "key": "9166",
+    "english": "The deviant and I sat together and watched the waves roll in for a while today."
+  },
+  {
+    "key": "9167",
+    "english": "We spoke little, but I get the sense he enjoyed my company."
+  },
+  {
+    "key": "9168",
+    "english": "I wonder, does the continual sunset look different through those compound eyes?"
+  },
+  {
+    "key": "9169",
+    "english": "Is it astounding to see it a hundred different times at once?"
+  },
+  {
+    "key": "9170",
+    "english": "DAY 15"
+  },
+  {
+    "key": "9171",
+    "english": "Over two weeks now. Despite this fatigue, I can feel my skill increasing."
+  },
+  {
+    "key": "9172",
+    "english": "I'm becoming faster, more agile, more accurate. More deadly."
+  },
+  {
+    "key": "9173",
+    "english": "I can consistently get further in. I'm starting to see new areas."
+  },
+  {
+    "key": "9174",
+    "english": "The girl at the bar has rewarded me with new drinks, new powers..."
+  },
+  {
+    "key": "9175",
+    "english": "I think, for the first time here, I feel a glimmer of hope."
+  },
+  {
+    "key": "9176",
+    "english": "I can do this. I can reach my son."
+  },
+  {
+    "key": "9177",
+    "english": "DAY 16"
+  },
+  {
+    "key": "9178",
+    "english": "I've been thinking about the mask."
+  },
+  {
+    "key": "9179",
+    "english": "Although I was compelled to put it on, I don't feel it exercising any control over me here."
+  },
+  {
+    "key": "9180",
+    "english": "Obviously I still can't remove it. But maybe its power isn't active here?"
+  },
+  {
+    "key": "9181",
+    "english": "Every now and then I worry that it will suddenly take control, but at this point I've become confident."
+  },
+  {
+    "key": "9182",
+    "english": "I am in control here. Despite the circumstances that have brought me here, I am all there is."
+  },
+  {
+    "key": "9183",
+    "english": "DAY 17"
+  },
+  {
+    "key": "9184",
+    "english": "Today I tried to leave for the first time."
+  },
+  {
+    "key": "9185",
+    "english": "I didn't let myself at first, my goal was only to find my son, and then I would figure the rest out."
+  },
+  {
+    "key": "9186",
+    "english": "But now that I've tried the mansion for some time, I took a look around the exterior."
+  },
+  {
+    "key": "9187",
+    "english": "The beach stretches on for as far as the eye can see."
+  },
+  {
+    "key": "9188",
+    "english": "I tried walking down it, and as soon as the mansion was out of sight behind me, it appeared in front of me."
+  },
+  {
+    "key": "9189",
+    "english": "Behind the mansion is just an endless field of grass."
+  },
+  {
+    "key": "9190",
+    "english": "I tried running out that way, and even though I was continually moving, I never got further from the mansion."
+  },
+  {
+    "key": "9191",
+    "english": "And then there's the sea..."
+  },
+  {
+    "key": "9192",
+    "english": "I haven't got a boat, and the few pieces of driftwood on the beach are waterlogged and useless."
+  },
+  {
+    "key": "9193",
+    "english": "So it seems I'm stuck here. Not that I would leave my son behind anyways."
+  },
+  {
+    "key": "9194",
+    "english": "DAY 20"
+  },
+  {
+    "key": "9195",
+    "english": "I've skipped a few entries because nothing of note has occurred."
+  },
+  {
+    "key": "9196",
+    "english": "I've been attempting the mansion every day but my earlier thoughts of progress seem to have been with fault."
+  },
+  {
+    "key": "9197",
+    "english": "The further I get the more difficult it becomes."
+  },
+  {
+    "key": "9198",
+    "english": "Deeper in there are new enemies, with different forms and abilities, who are stronger, faster..."
+  },
+  {
+    "key": "9199",
+    "english": "Despite becoming more adept I fear that I'm beginning to reach my limit."
+  },
+  {
+    "key": "9200",
+    "english": "DAY 26"
+  },
+  {
+    "key": "9201",
+    "english": "I don't even know how deep into the mansion I must go."
+  },
+  {
+    "key": "9202",
+    "english": "It could be infinite, for all I know."
+  },
+  {
+    "key": "9203",
+    "english": "I can feel my son's presence as I push further in, but what if that's just a ruse?"
+  },
+  {
+    "key": "9204",
+    "english": "It could be some kind of artificial feeling, it could be this damned mask..."
+  },
+  {
+    "key": "9205",
+    "english": "And the worst of it all, I have no choice."
+  },
+  {
+    "key": "9206",
+    "english": "DAY 30"
+  },
+  {
+    "key": "9207",
+    "english": "Just about a full month now. The changes to myself have been curious."
+  },
+  {
+    "key": "9208",
+    "english": "At first I was fueled by anger. I would find my son at all costs."
+  },
+  {
+    "key": "9209",
+    "english": "That anger simmered to dedication. I would not give up."
+  },
+  {
+    "key": "9210",
+    "english": "After a time, that dedication turned to despair..."
+  },
+  {
+    "key": "9211",
+    "english": "But now I've been overcome with a certain curiosity about it all, which has greatly lifted my mood."
+  },
+  {
+    "key": "9212",
+    "english": "I've had to decide that this endeavor is not impossible first and foremost."
+  },
+  {
+    "key": "9213",
+    "english": "And then from there, I have had to create a strategy."
+  },
+  {
+    "key": "9214",
+    "english": "What weapons do I find most effective? What drinks make me most powerful?"
+  },
+  {
+    "key": "9215",
+    "english": "What strategies do I employ when facing certain enemies?"
+  },
+  {
+    "key": "9216",
+    "english": "I've been writing down game plan strategies in the sand on the beach. They look like football plays."
+  },
+  {
+    "key": "9217",
+    "english": "The deviant has been watching me, so I've been explaining my plans to him as I draw them out."
+  },
+  {
+    "key": "9218",
+    "english": "He doesn't say much, but he does nod often, which I find reassuring."
+  },
+  {
+    "key": "9219",
+    "english": "DAY 36"
+  },
+  {
+    "key": "9220",
+    "english": "So far my planning has proved helpful. I've made it further into the mansion than ever before."
+  },
+  {
+    "key": "9221",
+    "english": "I know what to expect. I move more confidently. My enemies fall before me in a shower of blood."
+  },
+  {
+    "key": "9222",
+    "english": "Each firearm in there is unique, but I have learned the quirks and utility of every single one."
+  },
+  {
+    "key": "9223",
+    "english": "I feel I have to be near the end. The fatigue is stronger than ever before, but I can still shrug it off."
+  },
+  {
+    "key": "9224",
+    "english": "DAY 41"
+  },
+  {
+    "key": "9225",
+    "english": "I think that man in the red mask... I think he's related to my mask somehow."
+  },
+  {
+    "key": "9226",
+    "english": "I almost get the feeling the he IS my mask."
+  },
+  {
+    "key": "9227",
+    "english": "Or it's possible that I'm simply going crazy."
+  },
+  {
+    "key": "9228",
+    "english": "DAY 53"
+  },
+  {
+    "key": "9229",
+    "english": "I snapped at the deviant today."
+  },
+  {
+    "key": "9230",
+    "english": "He didn't do anything wrong, he was just being his normal self really. I apologized immediately."
+  },
+  {
+    "key": "9231",
+    "english": "But the pressure of this place... I'm so tired and I'm beginning to lose hope."
+  },
+  {
+    "key": "9232",
+    "english": "The exhaustion that I previously mentioned has strengthened to an alarming extreme."
+  },
+  {
+    "key": "9233",
+    "english": "It's making it difficult to make attempts. It affects my speed... my aim..."
+  },
+  {
+    "key": "9234",
+    "english": "I'm more reliant than ever on the bartender and his drinks."
+  },
+  {
+    "key": "9235",
+    "english": "But even with them, I don't know how many attempts I have in me."
+  },
+  {
+    "key": "9236",
+    "english": "DAY 59"
+  },
+  {
+    "key": "9237",
+    "english": "I think I got close."
+  },
+  {
+    "key": "9238",
+    "english": "I could feel my son so near to me, nearer than ever before."
+  },
+  {
+    "key": "9239",
+    "english": "The room I was in had massive tears in the floor with nothing but space below."
+  },
+  {
+    "key": "9240",
+    "english": "It was almost as if the mansion was starting to tear apart."
+  },
+  {
+    "key": "9241",
+    "english": "Besides my son I could feel something else... like an overwhelming oppressive energy."
+  },
+  {
+    "key": "9242",
+    "english": "But I couldn't reach far enough. I was so close but I couldn't do it."
+  },
+  {
+    "key": "9243",
+    "english": "DAY 68"
+  },
+  {
+    "key": "9244",
+    "english": "I saw the man in the red mask again."
+  },
+  {
+    "key": "9245",
+    "english": "He taunts me and me alone. He thinks that I can't do this."
+  },
+  {
+    "key": "9246",
+    "english": "He's getting under my skin... I tried to kill him."
+  },
+  {
+    "key": "9247",
+    "english": "But something wouldn't let me pull the trigger. Not yet. Maybe I saw myself in him?"
+  },
+  {
+    "key": "9248",
+    "english": "DAY 74"
+  },
+  {
+    "key": "9249",
+    "english": "I've been wondering lately if any of this is real. How could a place like this exist?"
+  },
+  {
+    "key": "9250",
+    "english": "But despite any questions of the material, I do know one thing. I am here."
+  },
+  {
+    "key": "9251",
+    "english": "It's not a dream. I hurt, I bleed, I feel."
+  },
+  {
+    "key": "9252",
+    "english": "Whatever this place is, I am trapped here. My son is trapped here."
+  },
+  {
+    "key": "9253",
+    "english": "DAY 80"
+  },
+  {
+    "key": "9254",
+    "english": "I've come to accept the conclusion I knew from the start, which is that this is all my fault."
+  },
+  {
+    "key": "9255",
+    "english": "Not just picking up the mask that day in the park... but everything else."
+  },
+  {
+    "key": "9256",
+    "english": "All the hurt I've caused my family. It all rests on my shoulders."
+  },
+  {
+    "key": "9257",
+    "english": "Because I refused to try. I refused to do anything. I was convinced that it was my battle alone."
+  },
+  {
+    "key": "9258",
+    "english": "And now, here in this place, not only have I been unable to save my son..."
+  },
+  {
+    "key": "9259",
+    "english": "I've been unable to save myself."
+  },
+  {
+    "key": "9260",
+    "english": "DAY 93"
+  },
+  {
+    "key": "9261",
+    "english": "A long time ago I began to love the killing."
+  },
+  {
+    "key": "9262",
+    "english": "At first it was a necessity. If I wanted to see my son, I would have to kill."
+  },
+  {
+    "key": "9263",
+    "english": "I was appalled by the bloodshed and I pulled the trigger by duty alone."
+  },
+  {
+    "key": "9264",
+    "english": "But now I enjoy it. The foes in there don't make any noise, but if they did I imagine I'd like their screams."
+  },
+  {
+    "key": "9265",
+    "english": "Seeing their blood pool on the floor fills me with a sense of glee."
+  },
+  {
+    "key": "9266",
+    "english": "I hate them. So naturally, I love it when they die."
+  },
+  {
+    "key": "9267",
+    "english": "Day 100"
+  },
+  {
+    "key": "9268",
+    "english": "This feels like it should be some kind of milestone, but it's not."
+  },
+  {
+    "key": "9269",
+    "english": "In the last few attempts I haven't made much progress."
+  },
+  {
+    "key": "9270",
+    "english": "The fatigue has permanently established itself in my body. I'm weak and getting weaker."
+  },
+  {
+    "key": "9271",
+    "english": "I might be nearing the end of my rope."
+  },
+  {
+    "key": "9272",
+    "english": "DAY 112"
+  },
+  {
+    "key": "9273",
+    "english": "My son, if you ever read this, I'm sorry."
+  },
+  {
+    "key": "9274",
+    "english": "This could have all been prevented and it's my fault."
+  },
+  {
+    "key": "9275",
+    "english": "I've tried to get you out of here but I just can't..."
+  },
+  {
+    "key": "9276",
+    "english": "I just can't..."
+  },
+  {
+    "key": "9277",
+    "english": "DAY 117"
+  },
+  {
+    "key": "9278",
+    "english": "I sat with the deviant for a long time today."
+  },
+  {
+    "key": "9279",
+    "english": "I told him of my struggles. He listened, quietly and calmly."
+  },
+  {
+    "key": "9280",
+    "english": "At one point I broke down and began sobbing."
+  },
+  {
+    "key": "9281",
+    "english": "He laid a hand on my shoulder, then leaned in and said that I've done all I can."
+  },
+  {
+    "key": "9282",
+    "english": "Is that it then? I won't get out of here, I won't save my son?"
+  },
+  {
+    "key": "9283",
+    "english": "We're doomed to an eternity in this place?"
+  },
+  {
+    "key": "9284",
+    "english": "I asked him these questions, and he simply nodded in silence."
+  },
+  {
+    "key": "9285",
+    "english": "I exploded. I struck him and screamed at him."
+  },
+  {
+    "key": "9286",
+    "english": "He couldn't possibly understand what it's like for me. He couldn't possibly understand the pain."
+  },
+  {
+    "key": "9287",
+    "english": "DAY 118"
+  },
+  {
+    "key": "9288",
+    "english": "The deviant wouldn't speak to me today. None of them would."
+  },
+  {
+    "key": "9289",
+    "english": "I tried to apologize to him but he simply looked away."
+  },
+  {
+    "key": "9290",
+    "english": "I'm truly alone in this place now. It's just me and the monsters in the mansion."
+  },
+  {
+    "key": "9291",
+    "english": "DAY 127"
+  },
+  {
+    "key": "9292",
+    "english": "None of the others will say a word to me."
+  },
+  {
+    "key": "9293",
+    "english": "The only one who speaks to me now is the one in the red mask."
+  },
+  {
+    "key": "9294",
+    "english": "He still chastises me for trying, and now I'm truly wondering why I'm trying at all."
+  },
+  {
+    "key": "9295",
+    "english": "There's no way I can succeed at this point. We're trapped here, we're truly trapped here."
+  },
+  {
+    "key": "9296",
+    "english": "Every day I'm becoming weaker. Soon I won't be able to go on at all."
+  },
+  {
+    "key": "9297",
+    "english": "A bullet will put a hole through my head and I won't wake up on the beach, I know it."
+  },
+  {
+    "key": "9298",
+    "english": "DAY 136"
+  },
+  {
+    "key": "9299",
+    "english": "Instead of going into the mansion today, I simply sat in the sand and counted the hours go by."
+  },
+  {
+    "key": "9300",
+    "english": "It was quiet. I'm not sure where the others had gone but I was alone there."
+  },
+  {
+    "key": "9301",
+    "english": "I don't think I can do this anymore."
+  },
+  {
+    "key": "9302",
+    "english": "DAY 138"
+  },
+  {
+    "key": "9303",
+    "english": "How long will I have to struggle?"
+  },
+  {
+    "key": "9304",
+    "english": "Over four and a half months of struggling. And yet nothing has changed."
+  },
+  {
+    "key": "9305",
+    "english": "In fact, it's only gotten worse. I'm exhausted, the fatigue is killing me."
+  },
+  {
+    "key": "9306",
+    "english": "The others outside the mansion have turned their back on me, which is my fault."
+  },
+  {
+    "key": "9307",
+    "english": "And despite my efforts, I've been completely unable to get further into the mansion."
+  },
+  {
+    "key": "9308",
+    "english": "I think I hit my peak a month or so ago..."
+  },
+  {
+    "key": "9309",
+    "english": "It's just not possible anymore."
+  },
+  {
+    "key": "9310",
+    "english": "DAY 145"
+  },
+  {
+    "key": "9311",
+    "english": "In a way, I've become at peace with it all."
+  },
+  {
+    "key": "9312",
+    "english": "I've realized that ever since I've arrived here, it's always been impossible."
+  },
+  {
+    "key": "9313",
+    "english": "No matter how hard I would have tried there is no chance I would have made it."
+  },
+  {
+    "key": "9314",
+    "english": "There is simply no route to happiness for me. I am doomed to this."
+  },
+  {
+    "key": "9315",
+    "english": "And with that understanding comes tranquility."
+  },
+  {
+    "key": "9316",
+    "english": "DAY 151"
+  },
+  {
+    "key": "9317",
+    "english": "I am more fatigued than I have ever been."
+  },
+  {
+    "key": "9318",
+    "english": "It's a struggle to even lift my rifle, let alone withstand the kick."
+  },
+  {
+    "key": "9319",
+    "english": "I think my time here has come to an end. My next entry will be my last."
+  },
+  {
+    "key": "9320",
+    "english": "DAY 155"
+  },
+  {
+    "key": "9321",
+    "english": "I am sure of it now, the next time I die in there will be the last. I won't awake on the beach."
+  },
+  {
+    "key": "9322",
+    "english": "So before I enter the mansion, I want to write a few things."
+  },
+  {
+    "key": "9323",
+    "english": "To my son, I'm sorry to cause you such pain. You deserve better."
+  },
+  {
+    "key": "9324",
+    "english": "I have failed you as a father and as a man. I tried for your sake, but I was not strong enough."
+  },
+  {
+    "key": "9325",
+    "english": "To the others on the beach, I'm sorry for my decorum. I did not treat you all with respect."
+  },
+  {
+    "key": "9326",
+    "english": "The truth is I just cannot take this any longer. The fatigue has left me so weak that I feel death imminent."
+  },
+  {
+    "key": "9327",
+    "english": "I tried so hard, and for so long, and it all amounted to nothing."
+  },
+  {
+    "key": "9328",
+    "english": "I have no choice but to accept that my time has come."
+  },
+  {
+    "key": "9329",
+    "english": "Hopefully a bullet entering my skull will be the last pain I feel."
+  },
+  {
+    "key": "9330",
+    "english": "I am truly, truly sorry."
+  },
+  {
+    "key": "9331",
+    "english": "we love it yes we do we love it yes we do we love it yes we do we love it yes we do we love it yes we do"
+  },
+  {
+    "key": "9332",
+    "english": "(It's scrawled all over the page.)"
+  },
+  {
+    "key": "9333",
+    "english": "i can see the man in front of me and he is me but i cannot be free until he is dead"
+  },
+  {
+    "key": "9334",
+    "english": "(There's nothing else on the page.)"
+  },
+  {
+    "key": "9335",
+    "english": "do not trust the man in the red mask do not trust the man in the red mask do not trust the man in the red mask"
+  },
+  {
+    "key": "9336",
+    "english": "(It's scrawled all over the page.)"
+  },
+  {
+    "key": "9337",
+    "english": "i cannot win but i must not fail i cannot win but i must not fail i cannot win but i must not fail"
+  },
+  {
+    "key": "9338",
+    "english": "(It's scrawled all over the page.)"
+  },
+  {
+    "key": "9339",
+    "english": "is this it?"
+  },
+  {
+    "key": "9340",
+    "english": "(There's nothing else on the page.)"
+  },
+  {
+    "key": "9341",
+    "english": "are they friend or foe do they live or die am i alive or am i already dead"
+  },
+  {
+    "key": "9342",
+    "english": "already dead already dead already dead already dead already dead already dead already dead already dead"
+  },
+  {
+    "key": "9343",
+    "english": "(It continues like this for the rest of the page.)"
+  },
+  {
+    "key": "9344",
+    "english": "i will never be free i will never be safe i will never exist again"
+  },
+  {
+    "key": "9345",
+    "english": "(There's nothing else on the page.)"
+  },
+  {
+    "key": "9346",
+    "english": "the pain never ends the pain never ends the pain never ends the pain never ends the pain never ends "
+  },
+  {
+    "key": "9347",
+    "english": "(It's scrawled all over the page.)"
+  },
+  {
+    "key": "9348",
+    "english": "i never wanted this"
+  },
+  {
+    "key": "9349",
+    "english": "(There's nothing else on the page.)"
+  },
+  {
+    "key": "9350",
+    "english": "i kill myself but i cannot die i kill myself but i cannot die i kill myself but i cannot die "
+  },
+  {
+    "key": "9351",
+    "english": "(It's scrawled all over the page.)"
+  },
+  {
+    "key": "9352",
+    "english": "in the end i am nothing but i am free at last"
+  },
+  {
+    "key": "9353",
+    "english": "(There's nothing else on the page.)"
+  },
+  {
+    "key": "9354",
+    "english": "i will soon be free i will soon be free i will soon be free i will soon be free i will soon be free"
+  },
+  {
+    "key": "9355",
+    "english": "(It's scrawled all over the page.)"
+  },
+  {
+    "key": "9356",
+    "english": "the blood inside me is the blood inside it and it feeds off of me"
+  },
+  {
+    "key": "9357",
+    "english": "(There's nothing else on the page.)"
+  },
+  {
+    "key": "9358",
+    "english": "the heart beats unbroken the heart beats unbroken the heart beats unbroken the heart beats unbroken"
+  },
+  {
+    "key": "9359",
+    "english": "(It's scrawled all over the page.)"
+  },
+  {
+    "key": "9360",
+    "english": ""
+  },
+  {
+    "key": "9361",
+    "english": ""
+  },
+  {
+    "key": "9362",
+    "english": ""
+  },
+  {
+    "key": "9363",
+    "english": ""
+  },
+  {
+    "key": "9364",
+    "english": ""
+  },
+  {
+    "key": "9365",
+    "english": ""
+  },
+  {
+    "key": "9366",
+    "english": ""
+  },
+  {
+    "key": "9367",
+    "english": ""
+  },
+  {
+    "key": "9368",
+    "english": ""
+  },
+  {
+    "key": "9369",
+    "english": ""
+  },
+  {
+    "key": "9370",
+    "english": ""
+  },
+  {
+    "key": "9371",
+    "english": ""
+  },
+  {
+    "key": "9372",
+    "english": ""
+  },
+  {
+    "key": "9373",
+    "english": ""
+  },
+  {
+    "key": "9374",
+    "english": ""
+  },
+  {
+    "key": "9375",
+    "english": ""
+  },
+  {
+    "key": "9376",
+    "english": ""
+  },
+  {
+    "key": "9377",
+    "english": ""
+  },
+  {
+    "key": "9500",
+    "english": "Well hello there Otxo."
+  },
+  {
+    "key": "9501",
+    "english": "Sorry I didn't avail myself to you earlier, but alas, I am here now."
+  },
+  {
+    "key": "9502",
+    "english": "I am a bit of a traveller myself, you see."
+  },
+  {
+    "key": "9503",
+    "english": "And I have something of an... accord, with the Mansion."
+  },
+  {
+    "key": "9504",
+    "english": "I can offer you changes to your experience inside there."
+  },
+  {
+    "key": "9505",
+    "english": "Some more difficult, some easier, some... just unusual."
+  },
+  {
+    "key": "9506",
+    "english": "Speak to me if you'd like to see."
+  },
+  {
+    "key": "9507",
+    "english": "Greetings Otxo, what can I offer you today?"
+  },
+  {
+    "key": "9508",
+    "english": "Angel Investor"
+  },
+  {
+    "key": "9509",
+    "english": "Start with 20,000 coin, but enemies don't drop any."
+  },
+  {
+    "key": "9510",
+    "english": "Gun Game"
+  },
+  {
+    "key": "9511",
+    "english": "Every time you kill an enemy your gun randomly changes to a different gun."
+  },
+  {
+    "key": "9512",
+    "english": "Alcoholic"
+  },
+  {
+    "key": "9513",
+    "english": "Drinks are free, but every time you take a drink your max health is lowered by 5%."
+  },
+  {
+    "key": "9514",
+    "english": "Unarmed"
+  },
+  {
+    "key": "9515",
+    "english": "Enemies drop kunai and grenades instead of guns."
+  },
+  {
+    "key": "9516",
+    "english": "HE Rounds"
+  },
+  {
+    "key": "9517",
+    "english": "All bullets explode."
+  },
+  {
+    "key": "9518",
+    "english": "Kitted Out"
+  },
+  {
+    "key": "9519",
+    "english": "Enemies have all attributes from the start."
+  },
+  {
+    "key": "9520",
+    "english": "MODIFIERS"
+  },
+  {
+    "key": "9521",
+    "english": "Is it better to be loved or feared?"
+  },
+  {
+    "key": "9522",
+    "english": "Could a god create a rock so heavy he himself could not lift it?"
+  },
+  {
+    "key": "9523",
+    "english": "Is it the mask, or is it you?"
+  },
+  {
+    "key": "9524",
+    "english": "Should man fear the darkness, or should darkness fear the man?"
+  },
+  {
+    "key": "9525",
+    "english": "Is a man not entitled to forgiveness?"
+  },
+  {
+    "key": "9526",
+    "english": "Is there a face behind that mask, or an empty black void?"
+  },
+  {
+    "key": "9527",
+    "english": "What is violence if not nature?"
+  },
+  {
+    "key": "9528",
+    "english": "If killing is natural, why is it wrong?"
+  },
+  {
+    "key": "9529",
+    "english": "Isn't the only way to change a mind through violence?"
+  },
+  {
+    "key": "9530",
+    "english": "You are ready. The altar awaits."
+  },
+  {
+    "key": "9531",
+    "english": "The altar has called to you as well."
+  },
+  {
+    "key": "9532",
+    "english": "We are humble servants of Bekatua, protectors of His will."
+  },
+  {
+    "key": "9533",
+    "english": "You wear the mask of the betrayer, but I suppose it does not matter now..."
+  },
+  {
+    "key": "9534",
+    "english": "If you want to know how this ends you must speak to the interlopers."
+  },
+  {
+    "key": "9535",
+    "english": "Pulled in so long ago, but have done so much damage... not their fault, of course."
+  },
+  {
+    "key": "9536",
+    "english": "There were three of them. One lies on the table here."
+  },
+  {
+    "key": "9537",
+    "english": "The other two are still out there, likely eternally lost in a hell of their own making."
+  },
+  {
+    "key": "9538",
+    "english": "Hmm..."
+  },
+  {
+    "key": "9539",
+    "english": "Try the one locked in the latrine."
+  },
+  {
+    "key": "9540",
+    "english": "Yes, that one will be more willing to speak at first..."
+  },
+  {
+    "key": "9541",
+    "english": "Find the latrine. The door will be open."
+  },
+  {
+    "key": "9542",
+    "english": "Left Mouse"
+  },
+  {
+    "key": "9543",
+    "english": "Right Mouse"
+  },
+  {
+    "key": "9544",
+    "english": "Middle Mouse"
+  },
+  {
+    "key": "9545",
+    "english": "Mouse Side Button 1"
+  },
+  {
+    "key": "9546",
+    "english": "Mouse Side Button 2"
+  },
+  {
+    "key": "9547",
+    "english": "- Button"
+  },
+  {
+    "key": "9548",
+    "english": "+ Button"
+  },
+  {
+    "key": "9549",
+    "english": "Left Stick Press"
+  },
+  {
+    "key": "9550",
+    "english": "Right Stick Press"
+  },
+  {
+    "key": "9551",
+    "english": "Up Button"
+  },
+  {
+    "key": "9552",
+    "english": "Down Button"
+  },
+  {
+    "key": "9553",
+    "english": "Left Button"
+  },
+  {
+    "key": "9554",
+    "english": "Right Button"
+  },
+  {
+    "key": "9555",
+    "english": "Use Desktop Mouse"
+  },
+  {
+    "key": "9556",
+    "english": "Game Mouse Speed"
+  },
+  {
+    "key": "9557",
+    "english": "Unused"
+  },
+  {
+    "key": "9558",
+    "english": ""
+  },
+  {
+    "key": "9559",
+    "english": ""
+  },
+  {
+    "key": "9560",
+    "english": "Cross Button"
+  },
+  {
+    "key": "9561",
+    "english": "Square Button"
+  },
+  {
+    "key": "9562",
+    "english": "Triangle Button"
+  },
+  {
+    "key": "9563",
+    "english": "Circle Button"
+  },
+  {
+    "key": "9564",
+    "english": "Touch pad Button"
+  },
+  {
+    "key": "9565",
+    "english": "Options Button"
+  },
+  {
+    "key": "9566",
+    "english": "Touch pad Button"
+  },
+  {
+    "key": "9567",
+    "english": "Button"
+  },
+  {
+    "key": "9999",
+    "english": "Show Gameplay Tips Screen"
+  },
+  {
+    "key": "10000",
+    "english": "Enemies will stop shooting when hit. You can use this to suppress large groups."
+  },
+  {
+    "key": "10001",
+    "english": "Roll to dodge bullets, escape danger, and better position yourself."
+  },
+  {
+    "key": "10002",
+    "english": "Try moving behind cover if you're taking a lot of fire."
+  },
+  {
+    "key": "10003",
+    "english": "Use Focus to get an advantage on your enemies."
+  },
+  {
+    "key": "10004",
+    "english": "Switch guns often."
+  },
+  {
+    "key": "10005",
+    "english": "Staying mobile in a firefight will often keep you from being hit."
+  },
+  {
+    "key": "10006",
+    "english": "Keep an eye on your ammo."
+  },
+  {
+    "key": "10007",
+    "english": "The higher your combo meter is, the more money you earn."
+  },
+  {
+    "key": "10008",
+    "english": "Focus recharges fast, so use it often."
+  },
+  {
+    "key": "10009",
+    "english": "Don't be picky about weapon selection. Full ammo is always best."
+  },
+  {
+    "key": "10010",
+    "english": "Don't panic. If you're in trouble, use Focus."
+  },
+  {
+    "key": "10011",
+    "english": "Keep your combo meter up by killing enemies quickly."
+  },
+  {
+    "key": "10012",
+    "english": "Killing an enemy will sometimes splatter them, which drops more coin."
+  },
+  {
+    "key": "10013",
+    "english": "You're invincible while vaulting over furniture. Use this to outmaneuver your enemies."
+  },
+  {
+    "key": "10014",
+    "english": "More coin means more drinks, so earn as much as you can."
+  },
+  {
+    "key": "10015",
+    "english": ""
+  },
+  {
+    "key": "10500",
+    "english": "FORSAKEN"
+  },
+  {
+    "key": "10501",
+    "english": "ROOMS CLEARED: "
+  },
+  {
+    "key": "10502",
+    "english": "TOTAL KILLS: "
+  },
+  {
+    "key": "10503",
+    "english": "BULLETS FIRED: "
+  },
+  {
+    "key": "10504",
+    "english": "ACCURACY: "
+  },
+  {
+    "key": "10505",
+    "english": "DRINKS: "
+  },
+  {
+    "key": "10506",
+    "english": "MONEY EARNED: "
+  },
+  {
+    "key": "10507",
+    "english": "HIGHEST COMBO: "
+  },
+  {
+    "key": "10508",
+    "english": "PREFERRED WEAPON TYPE: "
+  },
+  {
+    "key": "10509",
+    "english": "RUN TIME: "
+  },
+  {
+    "key": "10510",
+    "english": "PAPERS SCATTERED: "
+  },
+  {
+    "key": "10511",
+    "english": "VASES SHATTERED: "
+  },
+  {
+    "key": "10512",
+    "english": "DOORS KICKED: "
+  },
+  {
+    "key": "10513",
+    "english": "ROLLS: "
+  },
+  {
+    "key": "10514",
+    "english": "WINDOWS BROKEN: "
+  },
+  {
+    "key": "10515",
+    "english": "KILLS BY KICK: "
+  },
+  {
+    "key": "10516",
+    "english": "KILLS BY DOOR: "
+  },
+  {
+    "key": "10517",
+    "english": "GRENADES THROWN: "
+  },
+  {
+    "key": "10518",
+    "english": "KUNAI THROWN: "
+  },
+  {
+    "key": "10519",
+    "english": "PISTOL"
+  },
+  {
+    "key": "10520",
+    "english": "LMG"
+  },
+  {
+    "key": "10521",
+    "english": "RIFLE"
+  },
+  {
+    "key": "10522",
+    "english": "SHOTGUN"
+  },
+  {
+    "key": "10523",
+    "english": "SMG"
+  },
+  {
+    "key": "10524",
+    "english": "KUNAI"
+  },
+  {
+    "key": "10525",
+    "english": "GRENADE"
+  },
+  {
+    "key": "10526",
+    "english": "LEG"
+  },
+  {
+    "key": "10527",
+    "english": " - TRY AGAIN"
+  },
+  {
+    "key": "10528",
+    "english": " - BACK TO BEACH"
+  },
+  {
+    "key": "10529",
+    "english": "Language",
+    "polish": "Język"
+  },
+  {
+    "key": "10530",
+    "english": "Loading..."
+  },
+  {
+    "key": "10531",
+    "english": "Enter / "
+  },
+  {
+    "key": "10532",
+    "english": "Esc"
+  },
+  {
+    "key": "10533",
+    "english": "Reload"
+  },
+  {
+    "key": "10534",
+    "english": "/Vault"
+  },
+  {
+    "key": "11000",
+    "english": "OUTSIDE THE MANSION"
+  },
+  {
+    "key": "11001",
+    "english": "IN "
+  },
+  {
+    "key": "11002",
+    "english": "FIGHTING "
+  },
+  {
+    "key": "11003",
+    "english": "RUN ENDED"
+  },
+  {
+    "key": "11004",
+    "english": "Caveman"
+  },
+  {
+    "key": "11005",
+    "english": "Killing an enemy with a thrown gun or magazine restores half of current Focus."
+  },
+  {
+    "key": "11006",
+    "english": "Exhilaration"
+  },
+  {
+    "key": "11007",
+    "english": "Killing an enemy increases fire rate for a moment."
+  },
+  {
+    "key": "11008",
+    "english": "Pact"
+  },
+  {
+    "key": "11009",
+    "english": "Infinite ammo during Focus but Focus drains faster."
+  },
+  {
+    "key": "11010",
+    "english": "Sparta"
+  },
+  {
+    "key": "11011",
+    "english": "Kicking an enemy restores some Focus."
+  },
+  {
+    "key": "11012",
+    "english": "In Deep"
+  },
+  {
+    "key": "11013",
+    "english": "For every visible enemy bullet your fire rate is slightly increased."
+  },
+  {
+    "key": "11014",
+    "english": "Call of the Void"
+  },
+  {
+    "key": "11015",
+    "english": "20% chance on kill to shoot out tentacles that slaughter your enemies."
+  },
+  {
+    "key": "11016",
+    "english": "Homebrew"
+  },
+  {
+    "key": "11017",
+    "english": "Mental Strain"
+  },
+  {
+    "key": "11018",
+    "english": "While in Focus health drains but coin gained is doubled."
+  },
+  {
+    "key": "11019",
+    "english": "Start with 10,000 coin, but enemies don't drop any."
+  },
+  {
+    "key": "11020",
+    "english": "REWARDS:"
+  },
+  {
+    "key": "11021",
+    "english": "Good selection. Best of luck to you in there, otxo."
+  },
+  {
+    "key": "11022",
+    "english": "Sorry otxo, you've already chosen one of my offerings."
+  },
+  {
+    "key": "11023",
+    "english": "QR4 Plasma"
+  },
+  {
+    "key": "11024",
+    "english": "MX Marksman"
+  },
+  {
+    "key": "11025",
+    "english": "Baileya 12"
+  },
+  {
+    "key": "11026",
+    "english": "Cain .50 Anti-Materiel"
+  },
+  {
+    "key": "11027",
+    "english": "Stymen Smart Pistol"
+  },
+  {
+    "key": "11028",
+    "english": "Blunderbuss"
+  },
+  {
+    "key": "11029",
+    "english": "COMPLETED"
+  }
+]
