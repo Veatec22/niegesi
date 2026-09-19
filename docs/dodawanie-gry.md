@@ -42,6 +42,19 @@ dodatkowa warstwa do pomylenia.
 kontekstową z oryginału, jeśli gra taką trzyma. Zmiana tekstu w `pl.json` idzie w parze
 ze zmianą w pliku korektorskim.
 
+## Testowanie na własnej instalacji
+
+`tools/install.py` podmienia pliki w katalogu gry na zbudowane, a oryginały odkłada
+do `backups/<slug>/` (katalog ignorowany przez Gita). Plik, który ma już kopię, nie jest
+kopiowany drugi raz, więc dwukrotne uruchomienie nie nadpisze dobrych oryginałów
+załatanymi. To narzędzie służy wyłącznie do testów autora — gracz dostaje paczkę
+do przeciągnięcia, nie skrypt.
+
+```powershell
+.venv\Scripts\python.exe tools\install.py --game "<katalog *_Data gry>" --built games\<slug>\dist\<Nazwa>_Data --backup backups\<slug>
+.venv\Scripts\python.exe tools\install.py --game "<katalog *_Data gry>" --backup backups\<slug> --restore
+```
+
 ## Po dodaniu
 
 Dopisz grę do tabeli w [README.md](../README.md) — zakres, wersja, status testów.
