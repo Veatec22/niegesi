@@ -75,12 +75,13 @@ To weryfikacja plików, nie test w grze.
 
 Po tym teście slot zmieniono na chiński, bo tylko on rysuje interfejs czcionką dogrywaną z `yahei.ttf`, a ta ma komplet polskich liter. Francuski przywrócono do oryginału.
 
-**Wersja na slocie chińskim jest zbudowana i zainstalowana, ale w grze jeszcze niesprawdzona.** Otwarte pytania:
+**Test w grze, slot chiński (1.106): działa, z pełnymi ogonkami.** Menu wyświetliło *Nowy przebieg*, *Opcje*, *Język*, *Wyjdź do pulpitu* i *ZATWIERDŹ* — `ę`, `ź` i `Ź` narysowały się poprawnie. Potwierdza to, że gra przy chińskim rysuje interfejs czcionką dogrywaną z `yahei.ttf`, a nie wypaloną w `data.win`, i że prosi o zakres znaków obejmujący Latin Extended-A. Droga jest otwarta na pozostałe 1416 wpisów.
 
-1. czy przy chińskim gra faktycznie użyje `yahei.ttf` także do menu, a nie tylko do dialogów,
-2. czy zakres znaków, o jaki prosi przy dogrywaniu czcionki, obejmuje Latin Extended-A — jeśli został zawężony do CJK, ogonki dalej nie wyjdą,
-3. czy chiński slot nie zmienia łamania wierszy w sposób, który psuje polskie zdania,
-4. czy wybór języka zapisuje się między uruchomieniami.
+Niesprawdzone: łamanie dłuższych polskich zdań w dialogach i opisach trunków, oraz czy wybór języka utrzymuje się między uruchomieniami.
+
+### Otwarta sprawa: flaga
+
+Polski siedzi pod chińską flagą, bo ósmego slotu nie da się dołożyć bez łatania kodu natywnego. Tańsze rozwiązanie kosmetyczne jest w zasięgu: flagi to jeden sprite `sprFlags`, siedem klatek po 100×50 px, wszystkie na stronie tekstur 1 pod znanymi współrzędnymi. Tekstury są w formacie QOI spakowanym BZip2 — `bz2` jest w bibliotece standardowej, a QOI to kilkadziesiąt linii kodu. Przemalowanie klatki chińskiej na polską flagę nie wymaga przesuwania niczego w `data.win`, o ile nowy obrazek zmieści się w tej samej liczbie bajtów.
 
 ## Materiał gry
 
