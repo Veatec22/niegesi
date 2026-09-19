@@ -1,0 +1,47 @@
+# Dodawanie nowej gry
+
+Konwencje, których trzymają się wszystkie tłumaczenia w tym repozytorium. Celem jest to,
+żeby po roku dało się wrócić do dowolnego tytułu i od razu wiedzieć, gdzie co leży.
+
+## Katalog
+
+Nowa gra to `games/<slug>/`, gdzie `<slug>` to nazwa gry małymi literami z myślnikami
+(`shotgun-cop-man`, `anger-foot`). Bez sufiksu `-pl` — całe repozytorium jest polskie.
+
+Minimalna zawartość:
+
+| Ścieżka | Zawartość |
+| --- | --- |
+| `README.md` | Co obejmuje tłumaczenie, jak gra trzyma teksty, co build podmienia, czego nie rusza, status testów. Po angielsku — ten plik czyta też studio, jeśli kiedyś zechce wziąć tekst do siebie. |
+| `docs/INSTALL.txt` | Instrukcja dla gracza: instalacja, przywracanie oryginału, zgodność z wersją gry, zakres. Zwykły tekst, trafia do paczki jako `READ-ME.txt`. |
+| `tools/build.py` | Budowanie plików gry z oryginałów. |
+| `translations/pl.json` | Polskie teksty. |
+| `translations/en-pl-review.json` | Angielski oryginał obok tłumaczenia, do korekty. |
+
+Katalog `dist/` powstaje przy budowaniu i jest ignorowany przez Gita.
+
+## Zasady dla `tools/build.py`
+
+- `ROOT = Path(__file__).resolve().parents[1]` — ścieżki do `translations/` i `docs/`
+  liczone od katalogu gry, nie od miejsca uruchomienia.
+- Oryginały przypięte przez SHA-256 na górze pliku. Niezgodność = wypisanie oczekiwanej
+  sumy i wyjście bez zapisu czegokolwiek.
+- Domyślne wyjście: `ROOT / 'dist'`. Nigdy katalog gry.
+- Build nie instaluje, nie uruchamia gry i nie pisze niczego poza katalogiem wyjściowym.
+- Na końcu weryfikacja: liczba wpisów na wejściu i wyjściu, nienaruszone pozostałe języki,
+  obecność polskich tekstów. Build, który nie potrafi udowodnić, że nic nie zepsuł,
+  jest do poprawki.
+
+## Format `translations/`
+
+`pl.json` ma klucze takie, jakich używa gra — identyfikator terminu, path ID zasobu,
+cokolwiek jest w danym silniku naturalne. Klucz wymyślony na potrzeby tłumaczenia to
+dodatkowa warstwa do pomylenia.
+
+`en-pl-review.json` niesie ten sam klucz, angielski oryginał, polskie tłumaczenie i notatkę
+kontekstową z oryginału, jeśli gra taką trzyma. Zmiana tekstu w `pl.json` idzie w parze
+ze zmianą w pliku korektorskim.
+
+## Po dodaniu
+
+Dopisz grę do tabeli w [README.md](../README.md) — zakres, wersja, status testów.

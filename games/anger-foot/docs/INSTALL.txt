@@ -1,0 +1,33 @@
+ANGER FOOT - POLISH TRANSLATION 0.1
+
+1. Close the game.
+2. Open the game folder (GOG Galaxy: Manage > Show folder; Steam: Manage > Browse local files).
+3. Make a copy of Anger Foot_Data/resources.assets and Anger Foot_Data/sharedassets0.assets
+   somewhere outside the game folder.
+4. Drag the Anger Foot_Data folder from this package into the game folder and confirm
+   replacing both files.
+5. Start the game. The third item on the title screen is the language button - press it until
+   it reads POLSKI. The button shows the language that is currently active.
+
+No scripts, no installer and no mod loader are required.
+
+RESTORING
+Close the game and put your copies of the two original files back in the same place.
+You can also verify/repair the installation in GOG Galaxy or Steam.
+
+HOW IT WORKS
+The game ships twelve languages plus English, but its Italian slot is empty - the language
+record exists and no text was ever written into it. This package relabels that record as
+Polish and fills the corresponding text slot for 1774 entries. Italian was never selectable
+or advertised, so nothing playable is lost. All other languages stay byte-identical.
+
+COMPATIBILITY
+Built and verified against the GOG build from 2026-09. The build tool refuses to work with
+any other version of the game files. After a game update, do not use this package until a
+new build has been made and checked.
+
+SCOPE
+1774 of 1776 text entries (the remaining two are empty in the original as well). Menus,
+settings, tutorials, dialogue, level names, shoes, star goals, achievements and credits.
+Voice lines and the achievement text shown by the GOG/Steam clients are not affected.
+Polish diacritics fall back to a substitute font in some styles; this is cosmetic.

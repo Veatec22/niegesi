@@ -1,0 +1,18 @@
+SHOTGUN COP MAN - POLISH TRANSLATION 0.1
+
+1. Close the game.
+2. Open the game folder (Steam: Manage > Browse local files).
+3. Make a copy of Shotgun Cop Man_Data/resources.assets somewhere outside the game folder.
+4. Drag the Shotgun Cop Man_Data folder from this package into the game folder and confirm replacing resources.assets.
+5. Start the game. Choose Options > Language > Polski and confirm with Apply Settings. Polish is a separate, eleventh language; all original languages, English included, stay available. After updating from an older build of this mod the game may fall back to English, because the original index of that language is preserved.
+
+No scripts, no installer and no mod loader are required.
+
+RESTORING
+Close the game and put your copy of the original resources.assets back in the same place. You can also verify the game files in Steam (this restores files matching the current game version and may remove other mods).
+
+COMPATIBILITY
+This package was built and structurally verified against the installation from 2026-09-19. There is no automatic version check. After a game update, do not overwrite newer assets with this older package without confirming compatibility first.
+
+SCOPE
+485 entries of the localization table found in the game. All 4850 original strings (485 entries in 10 languages) are verified as preserved and 485 Polish strings are added. The menu code enumerates the languages dynamically. Selecting the new language and having it remembered still needs in-game testing, as do the new dialogue, tutorial, editor and Pedro text. Recorded voices and the achievement descriptions shown by the Steam client are not changed.

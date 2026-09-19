@@ -1,0 +1,10 @@
+dist/
+.venv/
+__pycache__/
+*.pyc
+*.assets
+*.resS
+*.resource
+*.dll
+*.exe
+*.zip
