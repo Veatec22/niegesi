@@ -20,7 +20,21 @@ OTXO_script_english_zho-CN.ini        [chinese-simplified]
 
 Sama podmiana tekstu jest więc trywialna. Problemem jest **ósmy slot, którego nie ma**. OTXO to GameMaker skompilowany do kodu natywnego: w `data.win` nie ma chunków z bytecode'em, a nazwy tych sześciu plików i siedem nazw sekcji to literały wewnątrz `OTXO_Release.exe`. Nie ma czego rozszerzyć bez łatania kodu maszynowego, a dopisanie `script_polish.ini` niczego nie uruchomi, bo nikt go nie szuka.
 
-Polski **przejmuje więc slot francuski** — tą samą drogą poszły fanowskie tłumaczenia japońskie i tureckie, tyle że na slocie chińskim. Wybór padł na francuski, bo to alfabet łaciński, więc gra zostaje przy `notosans.ttf`, którego tablica znaków zawiera wszystkie osiemnaście polskich liter. W menu języka polski jest zatem pod **francuską flagą**.
+Polski **przejmuje więc slot chiński** — tą samą drogą poszedł fanowski mod japoński. W menu języka polski jest zatem pod **chińską flagą**.
+
+Wybór slotu nie jest dowolny i zdecydowały o nim czcionki, co potwierdził test w grze (patrz *Status testów*). OTXO trzyma 29 wypalonych czcionek w `data.win` i większość z nich nie umie napisać po polsku:
+
+| czcionka | krój | glifów | polskie znaki |
+| --- | --- | --- | --- |
+| `font1`, `font2`, `font6` — menu | ITC Avant Garde Gothic | 190 | tylko `ó` |
+| `font1_rus` — wariant rosyjski | Noto Sans Mono | 273 | tylko `ó` |
+| `font4`, `font5`, `dialoguefont1` — dialogi | Courier New Baltic | 437 | **komplet** |
+
+Czcionki menu mają ASCII i Latin-1, więc `ó` się narysuje, a `ę`, `ź`, `ł` już nie. Rodzina Courier New Baltic ma komplet, ale obsługuje dialogi, nie menu — i nie da się jej tam podstawić bez ruszania kodu natywnego.
+
+Ratunkiem jest obiekt `obj_font_loader`, który **dogrywa czcionki z plików TTF leżących obok pliku wykonywalnego**: `notosans.ttf` i `yahei.ttf`. Sprawdziłem tablice znaków obu — **każdy z nich ma wszystkie osiemnaście polskich liter**. Chiński jest jedynym slotem, który rysuje interfejs czcionką z dysku zamiast wypaloną, więc to jedyna droga do pełnych ogonków bez przerabiania tekstur w `data.win`.
+
+Slot wybiera się parametrem: `build.py --slot ger-DE` zbuduje to samo dla niemieckiego.
 
 Plik nie powstaje od zera. Budowa bierze plik angielski jako szablon, podmienia nagłówek sekcji i wstawia przetłumaczone wartości w istniejące linie. Dzięki temu wpisy jeszcze nieprzetłumaczone zostają po angielsku, zamiast zniknąć, a każda pusta linia i każda dziwność oryginału przeżywa bez zmian — a jest ich sporo: osiem kluczy nie ma wartości w cudzysłowie, jedna linia niesie znak za zamykającym cudzysłowem, część plików ma inne zestawy kluczy niż angielski, a francuski powtarza cztery klucze.
 
@@ -29,7 +43,7 @@ Plik nie powstaje od zera. Budowa bierze plik angielski jako szablon, podmienia 
 | Odbiorca | Pliki | Zastosowanie |
 | --- | --- | --- |
 | Autor gry | [`translations/en-pl-review.json`](translations/en-pl-review.json) | Każdy wpis z kluczem, angielskim oryginałem i tłumaczeniem. Klucze są te same, których używa gra. |
-| Gracze | Zbudowany `OTXO_script_english_fre-FR.ini` | Jeden plik do podmiany. Patrz [INSTALL.txt](docs/INSTALL.txt). |
+| Gracze | Zbudowany `OTXO_script_english_zho-CN.ini` | Jeden plik do podmiany. Patrz [INSTALL.txt](docs/INSTALL.txt). |
 | Korekta | [`translations/pl.json`](translations/pl.json), [`tools/build.py`](tools/build.py) | Poprawianie tekstów i przebudowa. |
 
 ## Budowanie
@@ -39,7 +53,7 @@ Plik nie powstaje od zera. Budowa bierze plik angielski jako szablon, podmienia 
 .venv\Scripts\python.exe games\otxo\tools\build.py --game "C:\Games\OTXO"
 ```
 
-`extract.py` odświeża plik korektorski, `build.py` zapisuje `dist/OTXO_script_english_fre-FR.ini`. Źródłowy `script_english.ini` jest przypięty sumą SHA-256 w [`tools/build.py`](tools/build.py); inna wersja gry zostaje odrzucona i nic się nie zapisuje.
+`extract.py` odświeża plik korektorski, `build.py` zapisuje `dist/OTXO_script_english_zho-CN.ini`. Źródłowy `script_english.ini` jest przypięty sumą SHA-256 w [`tools/build.py`](tools/build.py); inna wersja gry zostaje odrzucona i nic się nie zapisuje.
 
 Instalacja do testów przez [`tools/install.py`](../../tools/install.py) z katalogu głównego — odkłada oryginał do `backups/otxo/`.
 
@@ -50,19 +64,23 @@ Build sprawdza się względem oryginału i bez tego nie zapisze pliku:
 - przepisanie angielskiego pliku bez żadnego tłumaczenia daje go **bajt w bajt** — dowód, że szablon niczego nie gubi;
 - zbudowany plik ma dokładnie ten sam zestaw kluczy co angielski i tyle samo linii;
 - każda wartość odczytana z powrotem jest albo tłumaczeniem z `pl.json`, albo nietkniętym angielskim oryginałem;
-- nagłówek sekcji to `[french]`, czyli ten, którego szuka gra;
+- nagłówek sekcji to `[chinese-simplified]`, czyli ten, którego szuka gra dla tego slotu;
 - żaden tekst nie zawiera cudzysłowu ani znaku nowej linii, które rozwaliłyby linię.
 
 To weryfikacja plików, nie test w grze.
 
 ## Status testów
 
-Plaster zbudowany i zainstalowany, oryginał w kopii zapasowej. **W grze jeszcze niesprawdzony.** Otwarte pytania, na które odpowie dopiero uruchomienie:
+**Test w grze, slot francuski (1.106): przejęcie slotu działa, czcionka nie.** Menu główne wyświetliło się po polsku — *Nowy przebieg*, *Opcje*, *Wyjdź do pulpitu* — co dowodzi, że gra czyta podmieniony plik i że przejęcie slotu jest właściwą drogą. Ale `ę`, `ź` i `Ź` nie narysowały się wcale: „Język" wyszło jako „J zyk", „Wyjdź do pulpitu" jako „Wyjd  do pulpitu". To zgadza się co do znaku z tablicą glifów `font1`/`font2`/`font6` odczytaną z `data.win`.
 
-1. czy przejęty slot faktycznie wczytuje nasz plik,
-2. czy polskie znaki się rysują — wpisy 3–10 to nazwy pięter wielkimi literami z `Ń`, `Ż`, `Ł`, `Ź`, dobrane właśnie pod ten test,
-3. czy wybór języka zapisuje się między uruchomieniami,
-4. czy dłuższe polskie napisy mieszczą się w interfejsie.
+Po tym teście slot zmieniono na chiński, bo tylko on rysuje interfejs czcionką dogrywaną z `yahei.ttf`, a ta ma komplet polskich liter. Francuski przywrócono do oryginału.
+
+**Wersja na slocie chińskim jest zbudowana i zainstalowana, ale w grze jeszcze niesprawdzona.** Otwarte pytania:
+
+1. czy przy chińskim gra faktycznie użyje `yahei.ttf` także do menu, a nie tylko do dialogów,
+2. czy zakres znaków, o jaki prosi przy dogrywaniu czcionki, obejmuje Latin Extended-A — jeśli został zawężony do CJK, ogonki dalej nie wyjdą,
+3. czy chiński slot nie zmienia łamania wierszy w sposób, który psuje polskie zdania,
+4. czy wybór języka zapisuje się między uruchomieniami.
 
 ## Materiał gry
 

@@ -2,21 +2,23 @@ OTXO - POLSKIE TLUMACZENIE 0.1 (w toku: menu, opcje, nazwy pieter, samouczek)
 
 1. Zamknij gre.
 2. Otworz katalog gry (GOG Galaxy: Zarzadzaj > Pokaz folder).
-3. Zrob kopie pliku OTXO_script_english_fre-FR.ini gdzies poza katalogiem gry.
-4. Skopiuj OTXO_script_english_fre-FR.ini z tej paczki do katalogu gry i potwierdz zastapienie.
-5. Uruchom gre i w opcjach wybierz jezyk pod FRANCUSKA FLAGA.
+3. Zrob kopie pliku OTXO_script_english_zho-CN.ini gdzies poza katalogiem gry.
+4. Skopiuj OTXO_script_english_zho-CN.ini z tej paczki do katalogu gry i potwierdz zastapienie.
+5. Uruchom gre i w opcjach wybierz jezyk pod CHINSKA FLAGA.
 
 Zadnych skryptow, instalatora ani mod loadera.
 
-DLACZEGO FRANCUSKA FLAGA
+DLACZEGO CHINSKA FLAGA
 OTXO to GameMaker skompilowany do kodu natywnego. Siedem jezykow - nazwy ich plikow
 i sekcji - to literaly zaszyte w OTXO_Release.exe. Osmego slotu nie ma i nie da sie
-go dolozyc bez lataniem kodu maszynowego, wiec polski przejmuje slot francuski.
-Francuski, bo to alfabet lacinski: gra zostaje przy notosans.ttf, ktory ma wszystkie
-polskie znaki. Flaga w menu pozostaje francuska - to kosmetyka, nie blad.
+go dolozyc bez latania kodu maszynowego, wiec polski przejmuje jeden z istniejacych.
+Padlo na chinski, bo wiekszosc czcionek gry jest wypalona w data.win i ma tylko
+ASCII z Latin-1 - narysuje "o z kreska", ale juz nie "e z ogonkiem". Chinski jest
+jedynym slotem, ktory dogrywa czcionke z pliku yahei.ttf, a ta ma komplet polskich
+znakow. Flaga w menu pozostaje chinska - to kosmetyka, nie blad.
 
 PRZYWRACANIE
-Wgraj z powrotem swoja kopie OTXO_script_english_fre-FR.ini. Mozna tez zweryfikowac
+Wgraj z powrotem swoja kopie OTXO_script_english_zho-CN.ini. Mozna tez zweryfikowac
 pliki gry w GOG Galaxy.
 
 ZAKRES

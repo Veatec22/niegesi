@@ -28,9 +28,15 @@ import script_ini
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = '0.1'
-SLOT = 'fre-FR'
-SECTION = 'french'
-TARGET = f'OTXO_script_english_{SLOT}.ini'
+SLOTS = {                      # slot -> section header the game looks for
+    'zho-CN': 'chinese-simplified',
+    'fre-FR': 'french',
+    'ger-DE': 'german',
+    'por-BR': 'portuguese',
+    'rus': 'russian',
+    'spa-ES': 'spanish',
+}
+SLOT = 'zho-CN'
 
 # script_english.ini as shipped, GOG build checked 2026-09-20.
 SOURCE_SHA256 = '99b2a4a2bee2502825012d71525fb743de4ffcdb065c859db2709bf53d301b0d'
@@ -42,7 +48,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--game', type=Path, required=True, help='The OTXO folder, never written to')
     parser.add_argument('--output', type=Path, default=ROOT / 'dist', help='Separate output directory')
+    parser.add_argument('--slot', choices=sorted(SLOTS), default=SLOT,
+                        help='Which language slot Polish takes over (default: %(default)s)')
     args = parser.parse_args()
+    slot, section = args.slot, SLOTS[args.slot]
+    target_name = f'OTXO_script_english_{slot}.ini'
 
     source = args.game.resolve() / 'script_english.ini'
     destination = args.output.resolve()
@@ -61,14 +71,14 @@ def main():
     unknown = [k for k in translations if k not in english]
     assert not unknown, f'Keys not present in the English file: {unknown[:5]}'
 
-    built = script_ini.rewrite(source, SECTION, translations)
+    built = script_ini.rewrite(source, section, translations)
     destination.mkdir(parents=True, exist_ok=True)
-    target = destination / TARGET
+    target = destination / target_name
     target.write_bytes(built)
 
     # --- verification, against the English original ---
     readback = script_ini.load(target)
-    assert script_ini.section(target) == SECTION
+    assert script_ini.section(target) == section
     assert set(readback) == set(english), 'The set of keys changed.'
     for key, text in readback.items():
         expected = translations.get(key, english[key])
@@ -79,15 +89,15 @@ def main():
 
     print(json.dumps({
         'version': VERSION,
-        'slot': SLOT,
-        'section': SECTION,
+        'slot': slot,
+        'section': section,
         'translated': len(translations),
         'of_entries': len(english),
         'polish_characters': sum(len(v) for v in translations.values()),
         'bytes': len(built),
         'sha256': hashlib.sha256(built).hexdigest()[:16],
         'output': str(target),
-        'install_as': TARGET,
+        'install_as': target_name,
     }, ensure_ascii=False))
 
 

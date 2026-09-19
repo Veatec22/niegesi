@@ -18,7 +18,7 @@ własnej, legalnie posiadanej kopii gry.
 | [Anger Foot](games/anger-foot/) | 1774 z 1776 wpisów — menu, ustawienia, samouczki, dialogi, nazwy poziomów, buty, osiągnięcia, napisy końcowe | 0.1 | Polski wchodzi w pusty slot włoski; przetestowany ekran tytułowy i menu |
 | [Dread Templar](games/dread-templar/) | 636 wpisów — menu, ustawienia, sterowanie, samouczek, dialogi, przerywniki, nazwy poziomów i bossów, opisy run | 0.1 | Polski wchodzi w pusty slot `pol` zostawiony przez twórców, plus przycisk w menu i łatka na jedną metodę w kodzie |
 | [SPRAWL](games/sprawl/) | 717/717 wpisów — menu, HUD, dialogi, kodeks, samouczki i interakcje | 0.2 | Osobny polski język i flaga; vertical menu i rozgrywki potwierdzony, pełna kampania czeka na test |
-| [OTXO](games/otxo/) | 52 z 1468 wpisów — plaster pionowy: menu, opcje, nazwy pięter, samouczek | 0.1 wip | Kod natywny, brak wolnego slotu — polski przejmuje slot francuski |
+| [OTXO](games/otxo/) | 52 z 1468 wpisów — plaster pionowy: menu, opcje, nazwy pięter, samouczek | 0.1 wip | Kod natywny, brak wolnego slotu — polski przejmuje slot chiński, bo tylko on dogrywa czcionkę z pliku |
 
 Szczegóły — jak dana gra trzyma teksty, co dokładnie zostało podmienione i czego nie ruszono —
 opisuje README każdej gry. Instrukcja dla gracza leży w `games/<gra>/docs/INSTALL.txt`.
