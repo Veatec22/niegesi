@@ -17,6 +17,7 @@ własnej, legalnie posiadanej kopii gry.
 | [Shotgun Cop Man](games/shotgun-cop-man/) | 485 wpisów — menu, sterowanie, samouczek, dialogi, edytor poziomów, osiągnięcia | 0.1 | Polski dodany jako jedenasty język; zweryfikowany strukturalnie, test w grze jeszcze przed nami |
 | [Anger Foot](games/anger-foot/) | 1774 z 1776 wpisów — menu, ustawienia, samouczki, dialogi, nazwy poziomów, buty, osiągnięcia, napisy końcowe | 0.1 | Polski wchodzi w pusty slot włoski; przetestowany ekran tytułowy i menu |
 | [Dread Templar](games/dread-templar/) | 636 wpisów — menu, ustawienia, sterowanie, samouczek, dialogi, przerywniki, nazwy poziomów i bossów, opisy run | 0.1 | Polski wchodzi w pusty slot `pol` zostawiony przez twórców, plus przycisk w menu i łatka na jedną metodę w kodzie |
+| [SPRAWL](games/sprawl/) | 75 z 717 wpisów — na razie menu i HUD, reszta w drodze | 0.1 wip | Unreal bierze język z systemu, więc wystarczy dołożyć plik `pl/Game.locres` |
 
 Szczegóły — jak dana gra trzyma teksty, co dokładnie zostało podmienione i czego nie ruszono —
 opisuje README każdej gry. Instrukcja dla gracza leży w `games/<gra>/docs/INSTALL.txt`.

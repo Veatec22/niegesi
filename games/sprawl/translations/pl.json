@@ -1,0 +1,377 @@
+[
+  {
+    "namespace": "UIStringTable",
+    "key": "ACCURACY",
+    "polish": "Celność"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_APPLY_CHANGES",
+    "polish": "Zastosuj zmiany"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "CONFIRM_QUIT_MESSAGE",
+    "polish": "Na pewno chcesz wyjść?"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "ARE_YOU_SURE",
+    "polish": "Na pewno?"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_AUDIO_CAT_NAME",
+    "polish": "Dźwięk"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "BACK",
+    "polish": "Wstecz"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "BEGIN",
+    "polish": "Rozpocznij"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "RACE_BEST_LAP_TIME",
+    "polish": "Najlepszy"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_KEYCARD_BLUE",
+    "polish": "Zdobyto niebieską kartę dostępu"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "CHECKPOINT_REACHED",
+    "polish": "Punkt kontrolny"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "CODEX",
+    "polish": "Kodeks"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "CODEX_ENTRY_FOUND",
+    "polish": "Znaleziono wpis kodeksu"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "CONFIRM",
+    "polish": "Potwierdź"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "CONTINUE",
+    "polish": "Kontynuuj"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "CONTINUE_PLAYING",
+    "polish": "Graj dalej"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_CONTROLS_CAT_NAME",
+    "polish": "Sterowanie"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "CREDITS",
+    "polish": "Twórcy"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "DEFAULTS",
+    "polish": "Domyślne"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_DIFFICULTY",
+    "polish": "Poziom trudności"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_DISPLAY_SUB_NAME",
+    "polish": "Ekran"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "DIFFICULTY_EASY",
+    "polish": "Łatwy"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "EPISODES",
+    "polish": "Epizody"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "EXTRAS",
+    "polish": "Dodatki"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_GAMEPAD_SUB_NAME",
+    "polish": "Pad"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_GAME_CAT_NAME",
+    "polish": "Rozgrywka"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_GRAPHICS_SUB_NAME",
+    "polish": "Grafika"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "DIFFICULTY_HARD",
+    "polish": "Trudny"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "HORDE_MODE",
+    "polish": "Tryb hordy"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_KEYBOARD_SUB_NAME",
+    "polish": "Klawiatura i mysz"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_KEYCARD_DEFAULT",
+    "polish": "Zdobyto kartę dostępu"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "KILLS",
+    "polish": "Zabójstwa"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "RACE_PREVIOUS_LAP_TIME",
+    "polish": "Ostatni"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "LEVEL_COMPLETE",
+    "polish": "Poziom ukończony"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "LEVEL_SELECT",
+    "polish": "Wybór poziomu"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "LOAD_LAST_CHECKPOINT",
+    "polish": "Wczytaj ostatni punkt kontrolny"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "LOADING",
+    "polish": "Ładowanie..."
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "NEW_GAME",
+    "polish": "Nowa gra"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "DIFFICULTY_NIGHTMARE",
+    "polish": "Koszmar"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "DIFFICULTY_NORMAL",
+    "polish": "Normalny"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "OFF",
+    "polish": "Wył."
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "ON",
+    "polish": "Wł."
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PAUSE",
+    "polish": "Pauza"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PAUSED",
+    "polish": "Wstrzymano"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_ADRENALINE",
+    "polish": "Zebrano adrenalinę"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_MINI",
+    "polish": "Zebrano amunicję do minigunu"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_ENERGY",
+    "polish": "Zebrano ogniwa energetyczne"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_GRENADE",
+    "polish": "Zebrano granaty"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_HANDGUN",
+    "polish": "Zebrano amunicję do pistoletu"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_ARMOR_H",
+    "polish": "Zebrano ciężki pancerz"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_HEALTH_L",
+    "polish": "Zebrano dużą apteczkę"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_ARMOR_L",
+    "polish": "Zebrano lekki pancerz"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_ARMOR_M",
+    "polish": "Zebrano średni pancerz"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_HEALTH_MED",
+    "polish": "Zebrano średnią apteczkę"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_HEALTH_MEG",
+    "polish": "Zebrano megaapteczkę"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_ROCKETS",
+    "polish": "Zebrano rakiety"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_SMG",
+    "polish": "Zebrano amunicję do pistoletu maszynowego"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_SHELLS",
+    "polish": "Zebrano naboje do strzelby"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_HEALTH_S",
+    "polish": "Zebrano małą apteczkę"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PROMPT_PRESS_ANY_KEY",
+    "polish": "Naciśnij dowolny przycisk"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PROMPT_PRESS_ANY_KEY_PS",
+    "polish": "Naciśnij dowolny przycisk"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "QUIT",
+    "polish": "Wyjdź"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "CLOSE_GAME",
+    "polish": "Zakończ grę"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_KEYCARD_RED",
+    "polish": "Zdobyto czerwoną kartę dostępu"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "RESET_TO_DEFAULTS",
+    "polish": "Przywróć domyślne"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "RESPAWN_PROMPT",
+    "polish": "Odrodzić się?"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "RESTART",
+    "polish": "Od nowa"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "RETURN_TO_MENU",
+    "polish": "Powrót do menu"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS",
+    "polish": "Ustawienia"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SHOTS",
+    "polish": "Strzały"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "START",
+    "polish": "Start"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "TIME",
+    "polish": "Czas"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "TIME_TRIAL",
+    "polish": "Próba czasowa"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "SETTINGS_VIDEO_CAT_NAME",
+    "polish": "Obraz"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "PU_KEYCARD_YELLOW",
+    "polish": "Zdobyto żółtą kartę dostępu"
+  },
+  {
+    "namespace": "UIStringTable",
+    "key": "YOU_DIED_PROMPT",
+    "polish": "Zginąłeś!"
+  }
+]
