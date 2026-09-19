@@ -23,7 +23,7 @@ A culture's resource does not have to be complete: whatever it leaves out falls 
 | Audience | Files | Use |
 | --- | --- | --- |
 | Game developer | [`translations/en-pl-review.json`](translations/en-pl-review.json) | Every entry with its namespace, key, English source and Polish translation. 693 of the 717 keys are readable String Table names — `LEVEL_E2M1_NAME`, `E1M5_PAIN`, `BERSERKER` — so the file maps straight back onto the project. |
-| Players | The built `Game.locres` | One file, a few kilobytes. See [INSTALL.txt](docs/INSTALL.txt). |
+| Players | The built `Sprawl-WindowsNoEditor_pl_P.pak` | One 5 KB archive dropped next to the game's own. See [INSTALL.txt](docs/INSTALL.txt). |
 | Translation contributors | [`translations/pl.json`](translations/pl.json), [`tools/build.py`](tools/build.py) | Editing the strings and rebuilding. |
 
 ## Building
@@ -37,7 +37,9 @@ python -m venv .venv
 .venv\Scripts\python.exe games\sprawl\tools\build.py
 ```
 
-`extract.py` refreshes the review file from the source; `build.py` writes `dist/Sprawl/Content/Localization/Game/pl/Game.locres`. The source resource is pinned by SHA-256 in [`tools/build.py`](tools/build.py); any other version is refused and nothing is written.
+`extract.py` refreshes the review file from the source; `build.py` writes both the resource and `dist/Sprawl-WindowsNoEditor_pl_P.pak`, the archive that actually delivers it. The source resource is pinned by SHA-256 in [`tools/build.py`](tools/build.py); any other version is refused and nothing is written.
+
+A packaged Unreal build reads its content out of `.pak` archives and never goes looking on disk, so a loose `.locres` in the right folder does nothing at all — the file is there and nothing ever enumerates it. [`tools/pak.py`](tools/pak.py) therefore writes a small version 11 archive, the same version the game's own uses, with the entry stored uncompressed: nothing here needs Oodle, which SPRAWL links statically and ships no library for. The archive declares no path-hash index, which Unreal accepts, falling back to the directory index — and spares us guessing at another of its hash functions.
 
 ## Verification
 
@@ -49,7 +51,9 @@ The build then checks itself: every translated key exists in the English resourc
 
 ## Testing status
 
-The 75 menu and HUD entries are built and installed as a loose file. What is not yet confirmed: whether a shipping build picks up a loose `.locres` at all, or whether the file has to be delivered inside a `_P.pak` mounted over the original. That is the point of this slice.
+A loose `.locres` was tried first and did nothing, which settled the question: delivery has to be an archive. The 75 menu and HUD entries are now packed into one and installed. Not yet confirmed in game.
+
+The archive is checked two ways before it ships: by this repository's own reader, and by a parser written earlier against SPRAWL's 3 GB original — that one, which has never seen anything but UnrealPak's output, reads ours and finds the entry, its size, its uncompressed length and the SHA-1 in its header all consistent.
 
 ## Game material
 

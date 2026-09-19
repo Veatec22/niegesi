@@ -2,19 +2,21 @@ SPRAWL - POLISH TRANSLATION 0.1 (work in progress: menu and HUD)
 
 1. Close the game.
 2. Open the game folder (GOG Galaxy: Manage > Show folder; Steam: Manage > Browse local files).
-3. Create the folders Sprawl\Content\Localization\Game\pl inside it if they are not there.
-4. Copy Game.locres from this package into that folder.
-5. Start the game.
+3. Copy Sprawl-WindowsNoEditor_pl_P.pak into Sprawl\Content\Paks, next to the game's own
+   Sprawl-WindowsNoEditor.pak.
+4. Start the game.
 
 No scripts, no installer and no mod loader are required, and nothing is overwritten -
-the file is new, so there is nothing to back up.
+the archive is new and sits alongside the original, so there is nothing to back up.
+A loose .locres dropped into Content\Localization does not work: a packaged Unreal build
+reads its content out of .pak archives and never looks at the folder.
 
 The game has no language menu: Unreal takes the language from Windows. On a Polish
 Windows it will now find the Polish file and use it. On any other system, add
 -culture=pl to the game's launch options.
 
 REMOVING
-Delete the pl folder you created. The game returns to English immediately.
+Delete Sprawl-WindowsNoEditor_pl_P.pak. The game returns to English immediately.
 
 WHAT IS TRANSLATED SO FAR
 75 of the game's 717 entries: the main menu, the settings categories, difficulty

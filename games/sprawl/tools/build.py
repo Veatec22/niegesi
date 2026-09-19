@@ -20,11 +20,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import locres
+import pak
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = '0.1'
 CULTURE = 'pl'
 INSIDE = f'Sprawl/Content/Localization/Game/{CULTURE}/Game.locres'
+ARCHIVE = 'Sprawl-WindowsNoEditor_pl_P.pak'
+PATH_HASH_SEED = 47419669          # the seed the game's own archive carries
 
 # en/Game.locres as shipped in Sprawl-WindowsNoEditor.pak, GOG build checked 2026-09-19.
 SOURCE_SHA256 = '514cdb17b9add2a80828bed6178da326e77f0bbef766a8cd9fa6cc44d06c65f7'
@@ -74,6 +77,13 @@ def main():
     carried = {h for h, _, _ in built.namespaces}
     assert carried <= {h for h, _, _ in english.namespaces}, 'A namespace hash was invented.'
 
+    # --- the archive: a packaged build reads its content out of paks, never off disk ---
+    archive = pak.write({INSIDE: data}, seed=PATH_HASH_SEED)
+    bundle = args.output.resolve() / ARCHIVE
+    bundle.write_bytes(archive)
+    mount, packed = pak.read(archive)
+    assert mount == pak.MOUNT_POINT and packed == {INSIDE: data}, 'The archive does not read back.'
+
     print(json.dumps({
         'version': VERSION,
         'culture': CULTURE,
@@ -83,8 +93,10 @@ def main():
         'namespaces': {name: len(entries) for _, name, entries in polish.namespaces},
         'bytes': len(data),
         'sha256': hashlib.sha256(data).hexdigest()[:16],
-        'output': str(target),
-        'install_as': INSIDE,
+        'locres': str(target),
+        'archive': str(bundle),
+        'archive_bytes': len(archive),
+        'install_as': f'Sprawl/Content/Paks/{ARCHIVE}',
     }, ensure_ascii=False))
 
 
