@@ -32,39 +32,43 @@ def main():
         raise SystemExit(f'Not a directory: {game}')
 
     if args.restore:
-        files = sorted(p for p in backup.iterdir() if p.is_file())
+        files = sorted(p for p in backup.rglob('*') if p.is_file())
         if not files:
             raise SystemExit(f'Nothing to restore from {backup}')
         for source in files:
-            shutil.copy2(source, game / source.name)
-            assert digest(game / source.name) == digest(source), source.name
+            target = game / source.relative_to(backup)
+            shutil.copy2(source, target)
+            assert digest(target) == digest(source), str(source)
         print(json.dumps({'restored': len(files), 'from': str(backup), 'into': str(game)}))
         return
 
     if args.built is None:
         raise SystemExit('--built is required unless --restore is given')
     built = args.built.resolve()
-    files = sorted(p for p in built.iterdir() if p.is_file())
+    files = sorted(p for p in built.rglob('*') if p.is_file())
     if not files:
         raise SystemExit(f'Nothing to install from {built}')
 
     backup.mkdir(parents=True, exist_ok=True)
     saved, kept = 0, 0
     for source in files:
-        target, keep = game / source.name, backup / source.name
+        relative = source.relative_to(built)
+        target, keep = game / relative, backup / relative
         if not target.exists():
             raise SystemExit(f'{target} does not exist - wrong game folder?')
         if keep.exists():
             kept += 1                      # an earlier run already saved the original
         else:
+            keep.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(target, keep)
-            assert digest(keep) == digest(target), source.name
+            assert digest(keep) == digest(target), str(relative)
             saved += 1
 
     installed = 0
     for source in files:
-        shutil.copy2(source, game / source.name)
-        assert digest(game / source.name) == digest(source), source.name
+        target = game / source.relative_to(built)
+        shutil.copy2(source, target)
+        assert digest(target) == digest(source), str(source)
         installed += 1
 
     print(json.dumps({'installed': installed, 'backed_up': saved, 'already_backed_up': kept,

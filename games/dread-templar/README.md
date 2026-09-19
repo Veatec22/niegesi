@@ -14,11 +14,17 @@ Every line of text in the game lives in a single JSON object stored as a TextAss
 { "eng": { "menu": { "mnt_004": { "text": "Options" } } } }
 ```
 
-The game ships nine languages — and **an empty `"pol"` block** sitting between `"rus"` and `"por"`. The slot exists in the data, the developers never filled it. This translation fills it; the other nine blocks are copied through byte for byte.
+The game ships nine languages - and **an empty `"pol"` block** sitting between `"rus"` and `"por"`. The slot exists in the data, the developers never filled it. This translation fills it; the other nine blocks are copied through byte for byte.
 
-The options menu is a second problem. It carries ten language buttons, `LanguagePick_eng_00` through `LanguagePick_jan_08` — plus `LanguagePick_ita_03`, a complete Italian button that was switched off and left in the scene. That leftover becomes the Polish one: its `m_IsActive` flag goes to 1, the language code it carries changes from `ita` to `pol`, and its label changes from `Italiano` to `Polski`. All three edits happen to keep their byte length, so the scene files are spliced in place instead of being re-serialized.
+Polish turns out to be half-built all the way down. Of the four methods in `Assembly-CSharp` that map a language code to something, three - `GlobalVars.SetLanguage`, `SaveLanguageStr` and `InitialGameLanguage` - already handle `pol`. That is why a Polish Windows makes the game pick Polish up by itself the moment the block has content in it.
 
-The same options menu is baked into 33 scene files, one per level, so all 33 are patched. No executable, DLL, shader or piece of scene geometry is modified.
+What is missing is the menu, and two things had to be built.
+
+**The button.** The options menu holds ten language buttons: `LanguagePick_eng_00` through `jan_08` under `Language_ToggleGroup`, plus `LanguagePick_ita_03` - a complete Italian button the developers switched off and moved out to the sibling `Language_Toggle_Panel`. Enabling it alone is not enough: the grid is a `GridLayoutGroup` that only lays out its own children, and the menu indexes its buttons through `LanguageToggleGroup.filterToggle`, a serialized array of exactly nine. So the button is moved back under the grid, appended to that array as index 9, and given the code `pol`, index 9 and the label `Polski`.
+
+**The lookup.** `LanguageToggleGroup.LoadCurLanguage` turns the saved code into an index into that array, and its switch knows only the original nine - an unknown code falls through to 0. With Polish saved, the menu ticks English, and ticking English writes `eng` back over the saved language. One method body is therefore replaced: the compiler's hash switch over nine strings, 447 bytes, becomes a plain if-chain over ten, 234 bytes, padded with nops to exactly the same length so that no other offset in the assembly moves. Nothing else in the file changes.
+
+The same options menu is baked into 33 scene files, one per level, so all 33 are patched. No shader, model or piece of scene geometry is touched, and the nine original languages come through unchanged.
 
 ## Who the files are for
 
@@ -38,34 +44,38 @@ python -m venv .venv
 .venv\Scripts\python.exe games\dread-templar\tools\build.py --game "C:\Games\Dread Templar\DreadTemplar_Data"
 ```
 
-Output: `games/dread-templar/dist/DreadTemplar_Data/` with the patched `resources.assets` and the 33 scene files — about 750 MB, because a scene file has to be shipped whole to change three bytes in it. The `dist` directory is not tracked by Git. `--only level1` patches just one scene, which is enough to pick the language once and much faster to iterate on.
+Output: `games/dread-templar/dist/DreadTemplar_Data/` with the patched `resources.assets`, `Managed/Assembly-CSharp.dll` and the 33 scene files — about 750 MB, because a scene file has to be shipped whole to change seven objects in it. The `dist` directory is not tracked by Git. `--only level1` patches just one scene and is much faster to iterate on.
 
-All 34 source files are pinned by SHA-256 in [`tools/build.py`](tools/build.py); any other version of the game — or an already patched file — is refused, and nothing is written. After a game update the layout has to be re-checked, not just the checksums.
+All 35 source files are pinned by SHA-256 in [`tools/build.py`](tools/build.py); any other version of the game — or an already patched file — is refused, and nothing is written. After a game update the layout has to be re-checked, not just the checksums.
 
-[`tools/extract.py`](tools/extract.py) dumps the English source text and refreshes the review file.
+[`tools/extract.py`](tools/extract.py) dumps the English source text and refreshes the review file. [`tools/scene.py`](tools/scene.py) and [`tools/assembly.py`](tools/assembly.py) hold the scene and assembly surgery; each explains its own reasoning at the top.
+
+For testing on a real installation, [`tools/install.py`](../../tools/install.py) at the repository root copies a build over the game and keeps the originals in `backups/`.
 
 ## Verification
 
 The build checks itself against the untouched originals and refuses to write otherwise:
 
-- every object in `resources.assets` compared by path id — only the text asset differs;
+- every object in `resources.assets` compared by path id - only the text asset differs;
 - the nine original language blocks byte-identical;
 - the Polish block read back from the rebuilt asset equal to `pl.json`, entry for entry;
 - 636 entries in, 636 out, the same keys and the same fields as English;
-- every rich-text tag (`<color=…>`, `<size=…>`, `<sprite=…>`) preserved in the same order as in the source string;
-- in each scene, the changed bytes confined to the three known windows — the active flag, the language code and the label.
+- every rich-text tag (`<color=...>`, `<size=...>`, `<sprite=...>`) preserved in the same order as in the source string;
+- in each scene, exactly seven objects changed - the button, its transform, its language component, its label, the grid's transform, the panel it left and the array that indexes it - and every other object byte-identical;
+- the button confirmed, after the rebuild, to be the tenth child of the grid and the tenth entry of the array;
+- in the assembly, every changed byte inside the one replaced method body, and the file the same size.
 
-## Known problem: Polish letters
+## Polish letters
 
-**The fonts shipped with the game cannot render Polish.** Every font asset was checked: `LiberationSans SDF`, which is the fallback everything else falls back to, has 250 characters — ASCII, Latin-1 and punctuation. That covers French, German, Spanish and Portuguese, and stops exactly one block short of Polish. The decorative fonts are ASCII-only and already lean on the fallback for anything accented.
+They render. The menu shows `Dźwięk`, `Zarządzanie danymi` and `Zatwierdź` correctly, verified in game.
 
-So `ó` renders, and `ą ć ę ł ń ś ź ż` come out as empty boxes. The fix is to extend the `LiberationSans SDF` atlas with 18 glyphs, which is a separate piece of work. Until then, `build.py --no-diacritics` strips the marks and produces readable, if incorrect, Polish.
+This contradicts an earlier reading of the font assets here, which counted the character table of `LiberationSans SDF` - the fallback the decorative fonts lean on - found 250 characters ending at Latin-1, and concluded Polish could not be drawn. Something further down the fallback chain covers it; the large `SourceHanSerifTC` atlas, which carries Latin Extended-A, is the likely source and is a serif, which is why it blends into the menu's own serif. The conclusion was wrong, and only in-game evidence settled it.
 
-`pl.json` always holds properly spelled Polish. The stripping happens at build time and never touches the source text.
+`build.py --no-diacritics` still exists as a fallback for any screen that turns out not to render them. `pl.json` always holds properly spelled Polish; the stripping happens at build time and never touches the source text.
 
 ## Testing status
 
-Structurally verified as above. Nothing has been confirmed in game yet — in particular whether the language index the toggle carries is what picks the text, and whether the in-game pause menu behaves once Polish is selected.
+Polish text loads and the menu renders it, diacritics included — confirmed in game. Not yet confirmed: that the button now appears inside the grid, that the choice survives a restart, and that the in-game pause menu behaves like the title screen's. Nothing beyond the menus has been read in place, so long strings may still overflow their boxes.
 
 ## Game material
 

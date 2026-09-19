@@ -1,37 +1,43 @@
 """Build Polish game files for Dread Templar from an unmodified installation.
 
-Two edits, both of them narrow:
+Three edits:
 
-  resources.assets - the localization TextAsset carries one JSON object keyed by
-  language code. The game ships an empty "pol" block between "rus" and "por";
-  this fills it. The other nine blocks are copied through untouched.
+  resources.assets - all of the game's text lives in one JSON TextAsset keyed by
+  language code. The developers left an empty "pol" block in it; this fills it.
+  The other nine blocks are copied through untouched.
 
-  level* - every scene that contains the options menu carries ten language
-  toggles, one of which, LanguagePick_ita_03, is a disabled leftover Italian
-  button: a complete, working toggle that was switched off. Enabling it, and
-  changing the language code and the label it carries, turns it into the Polish
-  button. All three edits keep the byte length, so the scene files are spliced
-  in place rather than re-serialized.
+  level* - every scene carrying the options menu holds a disabled leftover
+  Italian language button, parked outside the button grid. It becomes the Polish
+  one: reparented into the grid, appended to the array the menu indexes, and
+  given the code "pol", index 9 and the label "Polski". See scene.py.
+
+  Managed/Assembly-CSharp.dll - one method body, LanguageToggleGroup's lookup
+  from saved code to button index, replaced with one that also knows "pol". The
+  rest of the engine already handles Polish. See assembly.py.
 
 Never writes into the game directory; output goes to a separate folder.
 """
 import argparse
 import hashlib
 import json
-import re
+import struct
 import sys
 from pathlib import Path
 import UnityPy
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import assembly
 import game
+import scene as scenes
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = '0.1'
+ASSEMBLY = 'Managed/Assembly-CSharp.dll'
 
 # The build this was made against: GOG, checked 2026-09-19.
 ORIGINAL = {
     'resources.assets': 'c07cd097c654c4c2c4d98149a61d5220ea7198386c2fb32da735b6065154ae3a',
+    ASSEMBLY: '7099377fd381a9f51d668624cb8a3edd6a66c563e99153c2650391afa477423c',
     'level1': '78aeb896a65937128b2e72af20a7efa9877a3cb8af10e23179a97d13879ab41c',
     'level2': '4f60f7bf49b30ff45a3b415fa4f155decfcf426bc6e25101c36c4ab7cc78e55e',
     'level3': '0e35bdaabee973f1f485b6097a2477285784c9bb9351a547a78af718baf0049e',
@@ -66,12 +72,7 @@ ORIGINAL = {
     'level33': '482d152c4e61401d1d5733f57c69b1bd2de59d8a447eeed4ab47acca786baece',
     'level39': '04e8cd649f7feda7cca399c9eeb43af2d08aab026b254ba596e8b299b6d49ed6',
 }
-SCENES = [name for name in ORIGINAL if name != 'resources.assets']
-
-TOGGLE_NAME = b'LanguagePick_ita_03'   # the disabled Italian toggle
-ACTIVE_OFFSET = 22                     # m_IsActive, past the name's padding and m_Tag
-CODE_FROM, CODE_TO = b'\x03\x00\x00\x00ita\x00\x03\x00\x00\x00', b'\x03\x00\x00\x00pol\x00\x03\x00\x00\x00'
-LABEL_FROM, LABEL_TO = b'\x08\x00\x00\x00Italiano', b'\x06\x00\x00\x00Polski\0\0'
+SCENES = [name for name in ORIGINAL if name.startswith('level')]
 
 DIACRITICS = str.maketrans('ąćęłńóśźżĄĆĘŁŃÓŚŹŻ', 'acelnoszzACELNOSZZ')
 
@@ -82,23 +83,6 @@ def check(path, name):
         raise SystemExit(f'{name}: unsupported or already modified file.\n'
                          f'  expected SHA-256 {ORIGINAL[name]}\n'
                          f'  got               {digest}\nNothing was written.')
-
-
-def splice(raw, old, new):
-    """Replace one occurrence of old with new, refusing anything ambiguous."""
-    assert len(old) == len(new), (old, new)
-    assert raw.count(old) == 1, (old, raw.count(old))
-    return raw.replace(old, new)
-
-
-def patch_scene(raw):
-    start = raw.index(TOGGLE_NAME)
-    assert raw.count(TOGGLE_NAME) == 1
-    assert raw[start + ACTIVE_OFFSET] == 0, 'The Italian toggle is already enabled.'
-    out = bytearray(splice(splice(raw, CODE_FROM, CODE_TO), LABEL_FROM, LABEL_TO))
-    out[start + ACTIVE_OFFSET] = 1
-    assert len(out) == len(raw)
-    return bytes(out)
 
 
 def render(polish):
@@ -119,6 +103,48 @@ def render(polish):
     return '\r\n'.join(lines)
 
 
+def verify_scene(original, built):
+    """Everything about the built scene that the patch was supposed to change, and nothing else."""
+    before, after = scenes.Scene(original), scenes.Scene(built)
+    assert before.raw.keys() == after.raw.keys(), 'Objects were lost or added.'
+
+    button = after.find(scenes.TOGGLE_NAME)
+    grid = after.find(scenes.GRID_NAME)
+    grid_transform = after.component(grid, 'RectTransform')
+    transform = after.component(button, 'RectTransform')
+    _, children = after.children_at(grid_transform)
+    assert len(children) == 10 and children[-1] == transform, children
+
+    manager = next(c for c in after.components(grid) if after.objects[c].type.name == 'MonoBehaviour'
+                   and len(after.raw[c]) == 164)
+    count = struct.unpack_from('<i', after.raw[manager], 32)[0]
+    assert count == 10, count
+    toggle = struct.unpack_from('<q', after.raw[manager], 32 + 4 + 12 * 9 + 4)[0]
+    assert toggle in after.components(button), 'The array points outside the Polish button.'
+
+    mapping = next(c for c in after.components(button)
+                   if after.objects[c].type.name == 'MonoBehaviour' and len(after.raw[c]) == 60)
+    assert after.raw[mapping][48:56] == scenes.CODE_TO
+    assert struct.unpack_from('<i', after.raw[mapping], 56)[0] == scenes.POLISH_INDEX
+
+    raw = after.raw[button]
+    at = 4 + 12 * struct.unpack_from('<i', raw, 0)[0] + 4
+    length = struct.unpack_from('<i', raw, at)[0]
+    assert raw[at + 4 + (length + 3 & ~3) + 2] == 1, 'The Polish button is not enabled.'
+
+    label = next(c for kid in after.children_at(transform)[1]
+                 for c in after.components(struct.unpack_from('<q', after.raw[kid], 4)[0])
+                 if after.objects[c].type.name == 'MonoBehaviour' and scenes.LABEL_TO in after.raw[c])
+    old_parent = next(i for i in before.raw
+                      if before.objects[i].type.name == 'RectTransform'
+                      and transform in before.children_at(i)[1])
+
+    differing = {i for i in before.raw if before.raw[i] != after.raw[i]}
+    expected = {button, transform, mapping, label, manager, grid_transform, old_parent}
+    assert differing == expected, sorted(differing ^ expected)
+    return len(differing)
+
+
 def main():
     if not __debug__:
         raise RuntimeError('Run without -O: validation assertions are required.')
@@ -127,18 +153,18 @@ def main():
     parser.add_argument('--output', type=Path, default=ROOT / 'dist', help='Separate output directory, never the game directory')
     parser.add_argument('--only', nargs='*', metavar='SCENE', help='Patch only these scenes (default: all of them)')
     parser.add_argument('--no-diacritics', action='store_true',
-                        help='Strip Polish diacritics; the shipped fonts have no glyphs for them yet')
+                        help='Strip Polish diacritics, for fonts that cannot render them')
     args = parser.parse_args()
 
     source, destination = args.game.resolve(), args.output.resolve()
     if destination == source or (destination / 'DreadTemplar.exe').exists() or destination.name.endswith('_Data'):
         raise SystemExit('Choose an output directory outside the game installation.')
-    scenes = [s for s in SCENES if not args.only or s in args.only]
     if args.only:
         unknown = set(args.only) - set(SCENES)
         assert not unknown, f'Not scenes carrying the options menu: {sorted(unknown)}'
+    chosen = [s for s in SCENES if not args.only or s in args.only]
 
-    for name in ['resources.assets'] + scenes:
+    for name in ['resources.assets', ASSEMBLY] + chosen:
         check(source / name, name)
 
     polish = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
@@ -149,21 +175,24 @@ def main():
                   for c, entries in polish.items()}
 
     out = destination / 'DreadTemplar_Data'
-    out.mkdir(parents=True, exist_ok=True)
+    (out / 'Managed').mkdir(parents=True, exist_ok=True)
 
     # --- the localization JSON ---
     obj, raw, body_at, body, end = game.text_asset(source / 'resources.assets')
     empty = '    "pol": {\r\n\r\n\r\n    }'
     assert body.count(empty) == 1, 'The empty Polish block is not where it was.'
-    patched_body = body.replace(empty, render(polish))
-    assert len(patched_body) > len(body)
-    new_raw = raw[:body_at] + game.write_string(patched_body.encode('utf-8')) + raw[end:]
-    obj.set_raw_data(new_raw)
+    patched = body.replace(empty, render(polish))
+    assert len(patched) > len(body)
+    obj.set_raw_data(raw[:body_at] + game.write_string(patched.encode('utf-8')) + raw[end:])
     (out / 'resources.assets').write_bytes(obj.assets_file.save())
 
-    # --- the language toggle in every scene carrying the options menu ---
-    for name in scenes:
-        (out / name).write_bytes(patch_scene((source / name).read_bytes()))
+    # --- the language button, in every scene carrying the options menu ---
+    for name in chosen:
+        scenes.patch(source / name, out / name)
+
+    # --- the menu's lookup from language code to button index ---
+    rewritten, where = assembly.patch(source / ASSEMBLY)
+    (out / ASSEMBLY).write_bytes(rewritten)
 
     # --- verification, against the untouched originals ---
     before = {o.path_id: o.get_raw_data() for o in UnityPy.load(str(source / 'resources.assets')).objects}
@@ -180,17 +209,12 @@ def main():
     entries = sum(len(built['pol'][c]) for c in game.CATEGORIES)
     assert entries == sum(len(original['eng'][c]) for c in game.CATEGORIES)
 
-    for name in scenes:
-        old, new = (source / name).read_bytes(), (out / name).read_bytes()
-        assert len(old) == len(new), name
-        differing = [i for i in range(len(old)) if old[i] != new[i]]
-        windows = [(old.index(TOGGLE_NAME) + ACTIVE_OFFSET, 1),
-                   (old.index(CODE_FROM), len(CODE_FROM)),
-                   (old.index(LABEL_FROM), len(LABEL_FROM))]
-        assert all(any(at <= i < at + size for at, size in windows) for i in differing), name
-        assert 0 < len(differing) <= sum(size for _, size in windows), (name, len(differing))
-        assert new.count(b'LanguagePick_ita_03') == 1 and b'\x03\x00\x00\x00pol\x00' in new
-        assert b'\x06\x00\x00\x00Polski\0\0' in new and b'\x08\x00\x00\x00Italiano' not in new
+    touched = [verify_scene(source / name, out / name) for name in chosen]
+
+    old, new = (source / ASSEMBLY).read_bytes(), (out / ASSEMBLY).read_bytes()
+    assert len(old) == len(new), 'The assembly changed size.'
+    changed = [i for i, (a, b) in enumerate(zip(old, new)) if a != b]
+    assert all(where['method_at'] <= i < where['method_at'] + where['body_size'] for i in changed)
 
     print(json.dumps({
         'version': VERSION,
@@ -198,7 +222,9 @@ def main():
         'polish_characters': sum(len(str(v)) for c in game.CATEGORIES for e in built['pol'][c].values() for v in e.values()),
         'diacritics': not args.no_diacritics,
         'languages': len(built),
-        'scenes_patched': len(scenes),
+        'scenes_patched': len(chosen),
+        'scene_objects_changed': sorted(set(touched)),
+        'assembly_bytes_changed': len(changed),
         'output': str(out),
     }, ensure_ascii=False))
 
