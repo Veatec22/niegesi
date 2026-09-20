@@ -83,7 +83,17 @@ Po tym teście przetłumaczono całą resztę. **Pełna wersja jest zbudowana i 
 
 ### Otwarta sprawa: flaga
 
-Polski siedzi pod chińską flagą, bo ósmego slotu nie da się dołożyć bez łatania kodu natywnego. Tańsze rozwiązanie kosmetyczne jest w zasięgu: flagi to jeden sprite `sprFlags`, siedem klatek po 100×50 px, wszystkie na stronie tekstur 1 pod znanymi współrzędnymi. Tekstury są w formacie QOI spakowanym BZip2 — `bz2` jest w bibliotece standardowej, a QOI to kilkadziesiąt linii kodu. Przemalowanie klatki chińskiej na polską flagę nie wymaga przesuwania niczego w `data.win`, o ile nowy obrazek zmieści się w tej samej liczbie bajtów.
+Polski siedzi pod chińską flagą. Próba przemalowania jej własnymi narzędziami utknęła, i warto zapisać dokładnie gdzie, żeby nie zaczynać od zera.
+
+Co ustalone i pewne:
+
+- flagi to jeden sprite `sprFlags`, **siedem klatek po 100×50 px**, wszystkie na stronie tekstur 1, pod znanymi współrzędnymi;
+- wpis w chunku TXTR ma siedem liczb: `scaled, mips, długość bloba, szerokość, wysokość, ?, wskaźnik`. **Trzecia to długość skompresowanych danych**, więc podmiana mniejszym blobem i poprawienie tej jednej liczby niczego w pliku nie przesuwa. Wcześniejsza obawa o przesuwanie wskaźników w `data.win` była nietrafiona;
+- strona z flagami ma 8192×8192, czyli 67 mln pikseli — kosztowne, ale to koszt jednorazowy w budowaniu, nie przeszkoda.
+
+Czego **nie** udało się ustalić: **GameMaker nie używa publicznej specyfikacji QOI.** Napisany od zera dekoder rozjeżdża się na wszystkich trzech stronach, a przejście wariantów formatu — pozycja znaczników w bajcie, przesunięcie długości serii, obecność wartowników RGB/RGBA — nie daje ani jednej kombinacji, która odtwarzałaby liczbę pikseli zgodnie z nagłówkiem. Najlepsze dopasowania różnią się dla każdej strony (1,20× / 0,98× / 1,19×), więc to nie jest kwestia jednego parametru, tylko innej konstrukcji formatu.
+
+Droga dalej prowadzi przez **UndertaleModTool**, który ten kodek ma zaimplementowany: podmienić w nim jedną klatkę sprite'a `sprFlags` gotowym obrazkiem [`docs/sprFlags_pl.png`](docs/sprFlags_pl.png) (100×50, w stylu pozostałych flag). To jedna operacja w GUI, bez ruszania reszty pliku.
 
 ## Materiał gry
 
