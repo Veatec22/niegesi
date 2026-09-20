@@ -17,20 +17,6 @@ ASCII z Latin-1 - narysuje "o z kreska", ale juz nie "e z ogonkiem". Chinski jes
 jedynym slotem, ktory dogrywa czcionke z pliku yahei.ttf, a ta ma komplet polskich
 znakow. Flaga w menu pozostaje chinska - to kosmetyka, nie blad.
 
-OPCJONALNIE - POLSKA FLAGA W MENU
-Domyslnie polski siedzi pod chinska flaga i tak zostaje - paczka nie rusza plikow
-gry poza jednym INI. Jesli chcesz zamiast niej polska flage, mozesz to zrobic sam:
-
-1. Zrob kopie data.win.
-2. Otworz data.win w UndertaleModTool (darmowe, github.com/UnderminersTeam/UndertaleModTool).
-3. Znajdz sprite sprFlags. Ma 7 klatek po 100x50 px; podgladarka pokaze, ktora
-   jest chinska.
-4. Podmien ta klatke plikiem sprFlags_pl.png z tej paczki i zapisz.
-
-Nie dolaczamy gotowego data.win, bo waz 15,8 MB i zawiera cala zawartosc gry -
-paczka ma zawierac tylko tlumaczenie. Poza tym taki plik przestaje pasowac po
-kazdej aktualizacji gry, a sam INI nie ma tego problemu.
-
 PRZYWRACANIE
 Wgraj z powrotem swoja kopie OTXO_script_english_zho-CN.ini. Mozna tez zweryfikowac
 pliki gry w GOG Galaxy.

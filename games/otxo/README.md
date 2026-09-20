@@ -81,23 +81,29 @@ Po tym teście slot zmieniono na chiński, bo tylko on rysuje interfejs czcionk�
 
 Po tym teście przetłumaczono całą resztę. **Pełna wersja jest zbudowana i zainstalowana, ale w grze niesprawdzona.** Do obejrzenia zostaje: łamanie dłuższych zdań w opisach trunków i w dzienniku (najdłuższy wpis ma 157 znaków), ekran statystyk po przebiegu, oraz czy wybór języka utrzymuje się między uruchomieniami.
 
-### Otwarta sprawa: flaga
+### Flaga: dlaczego zostaje chińska
 
-Polski siedzi pod chińską flagą. Próba przemalowania jej własnymi narzędziami utknęła, i warto zapisać dokładnie gdzie, żeby nie zaczynać od zera.
+Polski siedzi pod chińską flagą i tak zostaje. Nie dlatego, że zabrakło pomysłu — próba przemalowania jej własnymi narzędziami dojechała do konkretnej ściany i warto zapisać, do której.
 
-Co ustalone i pewne:
+Co ustalone na pewno:
 
 - flagi to jeden sprite `sprFlags`, **siedem klatek po 100×50 px**, wszystkie na stronie tekstur 1, pod znanymi współrzędnymi;
-- wpis w chunku TXTR ma siedem liczb: `scaled, mips, długość bloba, szerokość, wysokość, ?, wskaźnik`. **Trzecia to długość skompresowanych danych**, więc podmiana mniejszym blobem i poprawienie tej jednej liczby niczego w pliku nie przesuwa. Wcześniejsza obawa o przesuwanie wskaźników w `data.win` była nietrafiona;
-- strona z flagami ma 8192×8192, czyli 67 mln pikseli — kosztowne, ale to koszt jednorazowy w budowaniu, nie przeszkoda.
+- wpis w chunku TXTR to siedem liczb: `scaled, mips, długość bloba, szerokość, wysokość, ?, wskaźnik`. **Trzecia to długość skompresowanych danych**, więc podmiana mniejszym blobem i poprawienie tej jednej liczby niczego w pliku nie przesuwa — wcześniejsza obawa o przesuwanie wskaźników w `data.win` była nietrafiona;
+- strona z flagami ma 8192×8192, czyli 67 mln pikseli. To koszt jednorazowy w budowaniu, nie przeszkoda.
 
-Czego **nie** udało się ustalić: **GameMaker nie używa publicznej specyfikacji QOI.** Napisany od zera dekoder rozjeżdża się na wszystkich trzech stronach, a przejście wariantów formatu — pozycja znaczników w bajcie, przesunięcie długości serii, obecność wartowników RGB/RGBA — nie daje ani jednej kombinacji, która odtwarzałaby liczbę pikseli zgodnie z nagłówkiem. Najlepsze dopasowania różnią się dla każdej strony (1,20× / 0,98× / 1,19×), więc to nie jest kwestia jednego parametru, tylko innej konstrukcji formatu.
+Ścianą jest kodek. **GameMaker nie używa publicznej specyfikacji QOI.** Dekoder napisany od zera rozjeżdża się na wszystkich trzech stronach, a przejście wariantów formatu — pozycja dwubitowych znaczników w bajcie, przesunięcie długości serii, obecność wartowników RGB/RGBA — nie daje ani jednej kombinacji zgodnej z liczbą pikseli z nagłówka:
 
-Droga dalej prowadzi przez **UndertaleModTool**, który ten kodek ma zaimplementowany: podmienić w nim jedną klatkę sprite'a `sprFlags` gotowym obrazkiem [`docs/sprFlags_pl.png`](docs/sprFlags_pl.png) (100×50, w stylu pozostałych flag).
+| strona | deklarowane piksele | najlepsze trafienie |
+| --- | --- | --- |
+| 0 | 4 096 | 4 912 (1,20×) |
+| 1 | 67 108 864 | 65 789 785 (0,98×) |
+| 2 | 33 554 432 | 40 018 942 (1,19×) |
 
-**Nie dołączamy jednak gotowego `data.win` do paczki.** Waży 15,8 MB i zawiera całą zawartość gry, więc dołączenie go znaczyłoby redystrybucję cudzych zasobów zamiast samego tłumaczenia — a na tym stoi całe to repozytorium. Łatka binarna nic by nie dała: przekodowanie strony 8192×8192 zmienia cały ośmiomegabajtowy strumień, więc „mała łatka" i tak byłaby danymi gry. Do tego `data.win` przestaje pasować po każdej aktualizacji, a sam plik INI nie ma tego problemu. Podmiana flagi jest więc opisana w [INSTALL.txt](docs/INSTALL.txt) jako **opcjonalny krok dla chętnych**.
+Gdyby chodziło o jeden parametr, wszystkie trzy myliłyby się tak samo. Mylą się różnie, więc to inna konstrukcja formatu, do odczytania z implementacji, nie z danych.
 
-Dla porządku: **żadne z istniejących tłumaczeń OTXO tego nie rozwiązało.** Japoński mod WitheredPoppiMk-4 podmienia dokładnie te same dwa pliki co my, a jego instrukcja instalacji każe sprawdzić, „czy flaga zmieniła się na chińską" — chińska flaga jest u nich wskaźnikiem powodzenia. Turecki zestaw również sprowadza się do podmiany plików w katalogu gry. Wątek o moddingu OTXO na Steamie kończy się wnioskiem, że skompilowany GameMaker nie daje się modować.
+Zrobienie tego przez UndertaleModTool, który ten kodek ma, dałoby zmodyfikowany `data.win` — 15,8 MB zawierającego całą zawartość gry. Dołączenie go do paczki oznaczałoby redystrybucję cudzych zasobów zamiast samego tłumaczenia, a na tym stoi całe to repozytorium. Łatka binarna nic by nie dała, bo przekodowanie strony zmienia cały ośmiomegabajtowy strumień. Do tego `data.win` przestaje pasować po każdej aktualizacji gry, a plik INI nie ma tego problemu.
+
+Dla porządku: **żadne istniejące tłumaczenie OTXO tego nie rozwiązało.** Japoński mod WitheredPoppiMk-4 podmienia dokładnie te same dwa pliki co my, a jego instrukcja instalacji każe sprawdzić, „czy flaga zmieniła się na chińską" — chińska flaga jest u nich wskaźnikiem powodzenia. Turecki zestaw również sprowadza się do podmiany plików w katalogu gry. Wątek o moddingu OTXO na Steamie kończy się wnioskiem, że skompilowany GameMaker nie daje się modować.
 
 ## Materiał gry
 
