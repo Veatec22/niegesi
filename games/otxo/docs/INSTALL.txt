@@ -1,4 +1,4 @@
-OTXO - POLSKIE TLUMACZENIE 0.1 (w toku: menu, opcje, nazwy pieter, samouczek)
+OTXO - POLSKIE TLUMACZENIE 0.1 (pelne: 1364 wpisy)
 
 1. Zamknij gre.
 2. Otworz katalog gry (GOG Galaxy: Zarzadzaj > Pokaz folder).
@@ -22,9 +22,16 @@ Wgraj z powrotem swoja kopie OTXO_script_english_zho-CN.ini. Mozna tez zweryfiko
 pliki gry w GOG Galaxy.
 
 ZAKRES
-52 z 1468 wpisow: ostrzezenie o padaczce, menu glowne, ekrany opcji, nazwy pieter,
-podpowiedzi samouczka. Reszta zostaje po angielsku - plik zawiera komplet kluczy,
-wiec nic nie znika i nic sie nie psuje.
+1364 wpisy, czyli caly tekst gry: menu i ustawienia, samouczek, 102 trunki, dialogi
+wszystkich postaci z plazy, Pismo Bekatuy, caly dziennik bohatera, nazwy broni,
+porady i ekran statystyk. Pozostale 104 klucze sa w oryginale puste lub symboliczne
+i zostaja nietkniete.
+
+UWAGA - CO TEN MOD NAPRAWDE ROBI
+To nie jest dolozenie osmego jezyka, tylko PODMIANA LOKALIZACJI CHINSKIEJ. Po
+instalacji gra nie ma juz chinskiego - pod chinska flaga jest polski. Jesli
+instalujesz polskie tlumaczenie, strata jest zerowa, ale lepiej wiedziec o tym
+przed podmiana pliku. Oryginal wraca przez przywrocenie kopii zapasowej.
 
 ZGODNOSC
 Zbudowane wzgledem wydania GOG z 2026-09. Narzedzie przypina script_english.ini

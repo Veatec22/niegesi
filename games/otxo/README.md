@@ -2,7 +2,7 @@
 
 *Część [Nie gęsi](../../README.md) — polskie tłumaczenia gier, które własnego nigdy nie dostały.*
 
-Nieoficjalne polskie tłumaczenie **OTXO**. W toku: 52 z 1468 wpisów, czyli pionowy plaster na sprawdzenie całej drogi, zanim ruszy reszta tekstu.
+Nieoficjalne polskie tłumaczenie **OTXO**. Komplet: 1364 wpisy, czyli wszystko, co gra ma do powiedzenia — menu, ustawienia, samouczek, 102 trunki, dialogi wszystkich postaci z plaży, lore Pisma Bekatuy, cały dziennik bohatera, nazwy broni i statystyki przebiegu. Pozostałe 104 klucze są w oryginale puste albo symboliczne i zostają nietknięte.
 
 ## Jak to działa
 
@@ -21,6 +21,8 @@ OTXO_script_english_zho-CN.ini        [chinese-simplified]
 Sama podmiana tekstu jest więc trywialna. Problemem jest **ósmy slot, którego nie ma**. OTXO to GameMaker skompilowany do kodu natywnego: w `data.win` nie ma chunków z bytecode'em, a nazwy tych sześciu plików i siedem nazw sekcji to literały wewnątrz `OTXO_Release.exe`. Nie ma czego rozszerzyć bez łatania kodu maszynowego, a dopisanie `script_polish.ini` niczego nie uruchomi, bo nikt go nie szuka.
 
 Polski **przejmuje więc slot chiński** — tą samą drogą poszedł fanowski mod japoński. W menu języka polski jest zatem pod **chińską flagą**.
+
+> **Uwaga o tym, co ten mod naprawdę robi.** To nie jest dołożenie ósmego języka, tylko **podmiana lokalizacji chińskiej**. Po zainstalowaniu gra nie ma już chińskiego — pod chińską flagą jest polski. Dla kogoś, kto instaluje polskie tłumaczenie, strata jest zerowa, ale warto to wiedzieć przed podmianą pliku, a nie po. Oryginał wraca przez przywrócenie kopii zapasowej. Innego wyjścia nie ma: siedem slotów to literały w kodzie natywnym, a chiński jest jedynym, który rysuje interfejs czcionką z pliku, więc jako jedyny umie polskie znaki.
 
 Wybór slotu nie jest dowolny i zdecydowały o nim czcionki, co potwierdził test w grze (patrz *Status testów*). OTXO trzyma 29 wypalonych czcionek w `data.win` i większość z nich nie umie napisać po polsku:
 
@@ -77,7 +79,7 @@ Po tym teście slot zmieniono na chiński, bo tylko on rysuje interfejs czcionk�
 
 **Test w grze, slot chiński (1.106): działa, z pełnymi ogonkami.** Menu wyświetliło *Nowy przebieg*, *Opcje*, *Język*, *Wyjdź do pulpitu* i *ZATWIERDŹ* — `ę`, `ź` i `Ź` narysowały się poprawnie. Potwierdza to, że gra przy chińskim rysuje interfejs czcionką dogrywaną z `yahei.ttf`, a nie wypaloną w `data.win`, i że prosi o zakres znaków obejmujący Latin Extended-A. Droga jest otwarta na pozostałe 1416 wpisów.
 
-Niesprawdzone: łamanie dłuższych polskich zdań w dialogach i opisach trunków, oraz czy wybór języka utrzymuje się między uruchomieniami.
+Po tym teście przetłumaczono całą resztę. **Pełna wersja jest zbudowana i zainstalowana, ale w grze niesprawdzona.** Do obejrzenia zostaje: łamanie dłuższych zdań w opisach trunków i w dzienniku (najdłuższy wpis ma 157 znaków), ekran statystyk po przebiegu, oraz czy wybór języka utrzymuje się między uruchomieniami.
 
 ### Otwarta sprawa: flaga
 
