@@ -93,7 +93,11 @@ Co ustalone i pewne:
 
 Czego **nie** udało się ustalić: **GameMaker nie używa publicznej specyfikacji QOI.** Napisany od zera dekoder rozjeżdża się na wszystkich trzech stronach, a przejście wariantów formatu — pozycja znaczników w bajcie, przesunięcie długości serii, obecność wartowników RGB/RGBA — nie daje ani jednej kombinacji, która odtwarzałaby liczbę pikseli zgodnie z nagłówkiem. Najlepsze dopasowania różnią się dla każdej strony (1,20× / 0,98× / 1,19×), więc to nie jest kwestia jednego parametru, tylko innej konstrukcji formatu.
 
-Droga dalej prowadzi przez **UndertaleModTool**, który ten kodek ma zaimplementowany: podmienić w nim jedną klatkę sprite'a `sprFlags` gotowym obrazkiem [`docs/sprFlags_pl.png`](docs/sprFlags_pl.png) (100×50, w stylu pozostałych flag). To jedna operacja w GUI, bez ruszania reszty pliku.
+Droga dalej prowadzi przez **UndertaleModTool**, który ten kodek ma zaimplementowany: podmienić w nim jedną klatkę sprite'a `sprFlags` gotowym obrazkiem [`docs/sprFlags_pl.png`](docs/sprFlags_pl.png) (100×50, w stylu pozostałych flag).
+
+**Nie dołączamy jednak gotowego `data.win` do paczki.** Waży 15,8 MB i zawiera całą zawartość gry, więc dołączenie go znaczyłoby redystrybucję cudzych zasobów zamiast samego tłumaczenia — a na tym stoi całe to repozytorium. Łatka binarna nic by nie dała: przekodowanie strony 8192×8192 zmienia cały ośmiomegabajtowy strumień, więc „mała łatka" i tak byłaby danymi gry. Do tego `data.win` przestaje pasować po każdej aktualizacji, a sam plik INI nie ma tego problemu. Podmiana flagi jest więc opisana w [INSTALL.txt](docs/INSTALL.txt) jako **opcjonalny krok dla chętnych**.
+
+Dla porządku: **żadne z istniejących tłumaczeń OTXO tego nie rozwiązało.** Japoński mod WitheredPoppiMk-4 podmienia dokładnie te same dwa pliki co my, a jego instrukcja instalacji każe sprawdzić, „czy flaga zmieniła się na chińską" — chińska flaga jest u nich wskaźnikiem powodzenia. Turecki zestaw również sprowadza się do podmiany plików w katalogu gry. Wątek o moddingu OTXO na Steamie kończy się wnioskiem, że skompilowany GameMaker nie daje się modować.
 
 ## Materiał gry
 
