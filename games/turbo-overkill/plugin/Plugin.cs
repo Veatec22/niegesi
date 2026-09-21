@@ -20,7 +20,7 @@ using GameLocale = UnityEngine.Localization.Locale;
 
 namespace NieGesi.TurboOverkill
 {
-    [BepInPlugin(Id, "Nie Gęsi — Turbo Overkill PL", "0.1.0")]
+    [BepInPlugin(Id, "Nie Gęsi — Turbo Overkill PL", "0.2.0")]
     public sealed class Plugin : BasePlugin
     {
         public const string Id = "pl.niegesi.turbooverkill";
@@ -32,13 +32,14 @@ namespace NieGesi.TurboOverkill
         internal static readonly List<AsyncOperationHandle<StringTable>> Handles = new List<AsyncOperationHandle<StringTable>>();
         internal const string Preference = "NieGesi.TurboOverkill.Locale";
         static Harmony harmony;
+        static bool tablesRegistered;
 
         public override void Load()
         {
             Logger = Log;
             try
             {
-                Log.LogInfo("PL 0.1.0; game=" + Application.version + "; Unity=" + Application.unityVersion);
+                Log.LogInfo("PL 0.2.0; game=" + Application.version + "; Unity=" + Application.unityVersion);
                 string folder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                 foreach (var pair in JsonSerializer.Deserialize<Dictionary<string,string>>(File.ReadAllText(Path.Combine(folder, "pl.json"))))
                     Texts.Add(pair.Key, pair.Value);
@@ -47,6 +48,8 @@ namespace NieGesi.TurboOverkill
                 // before it initializes the new locale and notifies UI subscribers.
                 harmony.Patch(AccessTools.Method(typeof(LocalizationSettings), "GetInitializationOperation"),
                     prefix: new HarmonyMethod(typeof(Plugin), nameof(BeforeInitialization)));
+                harmony.Patch(AccessTools.Method(typeof(LocalizationSettings), "SendLocaleChangedEvents"),
+                    prefix: new HarmonyMethod(typeof(Plugin), nameof(BeforeLocaleChanged)));
                 harmony.Patch(AccessTools.Method(typeof(UiLanguageSelector), "Awake"),
                     postfix: new HarmonyMethod(typeof(Plugin), nameof(AfterSelectorAwake)));
                 harmony.Patch(AccessTools.PropertySetter(typeof(Text), "text"),
@@ -85,18 +88,29 @@ namespace NieGesi.TurboOverkill
             try { RegisterTables(); } catch (Exception e) { Disable(e); }
         }
 
+        static void BeforeLocaleChanged()
+        {
+            // The native method clears both table caches before GetInitializationOperation.
+            tablesRegistered = false;
+        }
+
         internal static void RegisterTables()
         {
+            if (tablesRegistered) return;
             var db = LocalizationSettings.StringDatabase;
+            Logger.LogInfo("Registering PL table cache.");
             for (int i = 0; i < Tables.Count; i++)
             {
                 var table = Tables[i];
-                var key = new Il2CppSystem.ValueTuple<LocaleIdentifier, string>(Polish.Identifier, table.TableCollectionName);
-                if (db.TableOperations.ContainsKey(key)) continue;
+                // Never pass ValueTuple<LocaleIdentifier,string> through generic interop.
+                // The captured 0.1.0 crashes terminate inside Dictionary.ContainsKey;
+                // RegisterTableOperation constructs and checks those keys natively.
                 // Retain one root reference; the name and GUID cache own separate refs.
                 Addressables.ResourceManager.Acquire((AsyncOperationHandle)Handles[i]);
                 db.RegisterTableOperation(Handles[i], Polish.Identifier, table.TableCollectionName);
+                Logger.LogInfo("Registered PL table: " + table.TableCollectionName);
             }
+            tablesRegistered = true;
         }
 
         static void AfterSelectorAwake(UiLanguageSelector __instance)
@@ -186,7 +200,7 @@ namespace NieGesi.TurboOverkill
             Plugin.Polish = GameLocale.CreateLocale("pl");
             Plugin.Polish.LocaleName = "Polski";
             var fallback = new UnityEngine.Localization.Metadata.FallbackLocale();
-            fallback.Locale = LocalizationSettings.AvailableLocales.GetLocale(new LocaleIdentifier("en"));
+            fallback.m_Locale = LocalizationSettings.AvailableLocales.GetLocale(new LocaleIdentifier("en"));
             Plugin.Polish.Metadata.AddMetadata(fallback.Cast<UnityEngine.Localization.Metadata.IMetadata>());
             Object.DontDestroyOnLoad(Plugin.Polish);
             int applied = 0, missing = 0;
@@ -235,9 +249,12 @@ namespace NieGesi.TurboOverkill
             foreach (var button in selector.GetComponentsInChildren<Button>(true))
             {
                 bool language = false;
-                for (int i = 0; i < button.onClick.GetPersistentEventCount(); i++)
+                // GetPersistentMethodName calls stripped PersistentCallGroup.GetListener.
+                // The serialized fields still exist and are exposed by IL2CPP bindings.
+                var calls = button.onClick.m_PersistentCalls?.m_Calls;
+                for (int i = 0; calls != null && i < calls.Count; i++)
                 {
-                    string method = button.onClick.GetPersistentMethodName(i);
+                    string method = calls[i].m_MethodName ?? "";
                     if (method.StartsWith("SetLanguage_")) language = true;
                     if (method == "SetLanguage_English") english = button;
                 }
@@ -291,14 +308,29 @@ namespace NieGesi.TurboOverkill
     {
         static Font fallback;
         static readonly Dictionary<int, Tuple<Text, Font>> originals = new Dictionary<int, Tuple<Text, Font>>();
-        internal static void BeforeText(Text __instance, string __0)
-        { try { if (Plugin.IsPolish()) Apply(__instance, __0); } catch (Exception e) { Plugin.Logger.LogWarning("Font: " + e.Message); } }
+        internal static void BeforeText(Text __instance, ref string __0)
+        {
+            try
+            {
+                if (!Plugin.IsPolish()) return;
+                var original = originals.TryGetValue(__instance.GetInstanceID(), out var saved) ? saved.Item2 : __instance.font;
+                // Disket renders lowercase Latin letters as capitals. Preserve that look
+                // when replacing it, without changing rich-text tags or sprite names.
+                if (original != null && original.name.StartsWith("Disket") && __0 != null)
+                    __0 = System.Text.RegularExpressions.Regex.Replace(__0, @"<[^>]*>|\[[^\]]*\]|\{[^}]*\}|[^<\[{]+", m => "<[{".IndexOf(m.Value[0]) >= 0 ? m.Value : m.Value.ToUpperInvariant());
+                Apply(__instance, __0);
+            }
+            catch (Exception e) { Plugin.Logger.LogWarning("Font: " + e.Message); }
+        }
         internal static void AfterFont(LocalizedFont __instance)
         { try { if (Plugin.IsPolish()) { var t = __instance.GetComponent<Text>(); if (t != null) Apply(t,t.text); } } catch (Exception e) { Plugin.Logger.LogWarning("Font: " + e.Message); } }
         internal static void Apply(Text text, string value)
         {
             if (text == null || text.font == null || string.IsNullOrEmpty(value)) return;
-            bool missing = false;
+            // Font.HasCharacter can report OS fallback glyphs as present. These local
+            // font families were checked in their actual cmap and lack Polish glyphs.
+            string name = text.font.name;
+            bool missing = name.StartsWith("Disket") || name.StartsWith("ZeF RAVE") || name == "TapeFont_HighQuality" || name == "TapeFont_LowQuality";
             foreach (char c in value)
                 if ("ąćęłńóśźżĄĆĘŁŃÓŚŹŻ".IndexOf(c) >= 0 && !text.font.HasCharacter(c)) { missing = true; break; }
             if (!missing) return;

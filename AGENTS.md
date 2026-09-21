@@ -22,9 +22,15 @@ Rozmawiamy po polsku.
    Sprawdź widoczność tekstów, polskie znaki i układ UI. Sam poprawny build nie dowodzi,
    że spolszczenie działa; jeśli test wymaga użytkownika, podaj mu konkretne kroki.
 5. **Dopiero po działającym verticalu tłumacz całość.** Zachowuj ton gry, spójną
-   terminologię, placeholdery, znaczniki i formatowanie. Wątpliwe teksty oznacz do korekty.
+   terminologię, placeholdery, znaczniki i formatowanie. Standard pracy opisuje
+   skill `.claude/skills/lokalizacja/`: biblia gry z faktami i źródłami (postacie,
+   płeć, terminy), lista pułapek i raport kontrolny, który tylko podpowiada.
+   Decyzje podejmuj sam, zamiast o nie pytać.
 6. **Przygotuj review i wynik do użycia.** Aktualizuj plik EN/PL, zakres tłumaczenia,
-   status testów oraz instrukcję instalacji i przywrócenia oryginału.
+   status testów oraz instrukcję instalacji i przywrócenia oryginału. Przy oddaniu
+   spisz decyzje w `docs/decyzje-tlumaczenia.md` gry i streść je użytkownikowi:
+   co wybrano, dlaczego, skąd to wiadomo i co sprawdzić w grze. Użytkownik
+   akceptuje albo odsyła poprawki.
 7. **Domknij grę paczką i metadanymi.** Spolszczenie jest gotowe dopiero wtedy, gdy build
    zostawia w `dist/` spakowany ZIP — wszystko do wypakowania w katalogu gry plus
    `READ-ME.txt` z instrukcją — a `games/<gra>/game.yaml` opisuje aktualny stan: wersję,

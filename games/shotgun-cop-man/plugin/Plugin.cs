@@ -21,7 +21,7 @@ namespace NieGesi.ShotgunCopMan
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.shotguncopman";
-        public const string Version = "0.2";
+        public const string Version = "0.3";
 
         internal const string LanguageName = "Polski";
         internal const string LanguageCode = "pl";

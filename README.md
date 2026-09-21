@@ -14,7 +14,7 @@ are built locally from an installed copy and kept in ignored output and backup f
 
 | Game | Coverage | Version | Status |
 | --- | --- | --- | --- |
-| [Shotgun Cop Man](games/shotgun-cop-man/) | 485 entries: UI, controls, tutorials, dialogue, level editor and achievements | 0.1 | Separate Polish language; structurally verified, playtest pending |
+| [Shotgun Cop Man](games/shotgun-cop-man/) | 485 entries: UI, controls, tutorials, dialogue, level editor and achievements | 0.3 | Separate Polish language via plugin; confirmed in-game |
 | [Anger Foot](games/anger-foot/) | 1774/1776 entries: UI, tutorials, dialogue, levels, shoes, achievements and credits | 0.1 | Uses the empty Italian slot; title screen and menu tested |
 | [Dread Templar](games/dread-templar/) | 636 entries: UI, tutorials, dialogue, cutscenes, levels, bosses and runes | 0.1 | Uses the existing empty pol slot, a menu button and a method patch |
 | [SPRAWL](games/sprawl/) | 717/717 entries: UI, HUD, dialogue, codex, tutorials and interactions | 0.2 | Separate Polish language and flag; vertical confirmed, full campaign playtest pending |
@@ -22,7 +22,7 @@ are built locally from an installed copy and kept in ignored output and backup f
 | [Skate Story](games/skate-story/) | 2305/2305 entries: all chapters, epilogue, dialogue, UI, items, objectives and poetry | 0.2 | Full ZIP built and installed; vertical confirmed, full campaign playtest pending |
 | [OTXO](games/otxo/) | 1364 entries: UI, tutorial, 102 drinks, dialogue, lore, journal and statistics | 0.1 | Polish replaces Chinese, the slot that loads an external font |
 | [Labyrinth of the Demon King](games/labyrinth-of-the-demon-king/) | 1120/1120 entries; menus, dialogue, notes, items and maps | 0.2, PAK + minimal IoStore overlay | Vertical confirmed in-game; full campaign review pending |
-| [Turbo Overkill](games/turbo-overkill/) | 2333 source entries extracted, 2316 nonempty | Analysis | Promising BepInEx IL2CPP route; Polish selector, loader and fonts need a vertical |
+| [Turbo Overkill](games/turbo-overkill/) | 2316/2333 entries: menus, HUD, tutorials, objectives, all dialogue, gear, codex, audio logs and level editor | 0.2.0 | Separate Polish language and flag; vertical confirmed, full campaign playtest pending |
 
 Each game's Polish README is a short player-facing description and installation guide.
 Technical findings belong in `docs/technika.md`; `game.yaml` records counts, release

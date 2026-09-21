@@ -40,3 +40,6 @@ games/labyrinth-of-the-demon-king/work/utoc-reference.go
 games/*/work/interop/
 # Turbo Overkill w analizie: zdekompilowany kod gry, biblioteki Unity, zrzuty zasobów.
 games/turbo-overkill/work/
+
+# Tabele innych języków z gier — dowody do biblii, cudza treść.
+games/*/work/ref-*.json

@@ -50,6 +50,13 @@ Sprawdzone na Steamie, wersja gry 1.0.4 (`PlayerSettings.bundleVersion`, build S
 i opisy osiągnięć wyświetlane przez klienta Steam zostają po angielsku — nie są
 częścią tabeli I2.
 
+## Wersja 0.3 — korekta według standardu lokalizacji
+
+Pierwsza gra przejrzana skillem `.claude/skills/lokalizacja/`. Fakty i decyzje:
+[`translations/biblia.yaml`](../translations/biblia.yaml), podsumowanie:
+[`decyzje-tlumaczenia.md`](decyzje-tlumaczenia.md). Zmieniono 2 wpisy (Ofelia, Pedrowi); test w grze 0.3 czeka.
+Tabele innych języków do porównań wyciąga `tools/other_languages.py` (do `work/`, poza gitem).
+
 ## Materiał gry i licencja
 
 Repozytorium zawiera wyłącznie teksty tłumaczenia i narzędzia — żadnych plików gry.

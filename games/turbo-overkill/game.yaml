@@ -1,17 +1,27 @@
 slug: turbo-overkill
 title: Turbo Overkill
-version: '0.0'
-entries: { done: 0, total: 2333 }
-tested: strukturalnie
+version: '0.2.0'
+entries: { done: 2316, total: 2333 }
+tested: czesciowy
 engine: Unity 2021.3.11f1 IL2CPP x64
-approach: Planowany plugin BepInEx IL2CPP z osobnym językiem Polski; bez podmiany zasobów gry.
-scope: menu, dialogi, HUD, przedmioty, bestiariusz, kodeks i infodeks
+approach: Plugin BepInEx IL2CPP dodający osobny język Polski i flagę. Tabele powstają w pamięci, bez podmiany zasobów gry.
+scope: Całość — menu i ustawienia, HUD, samouczki, cele misji, napisy dialogów kampanii, broń i wszczepy, infodeks z bestiariuszem i nagraniami, edytor poziomów i napisy końcowe. 17 wpisów z pustym oryginałem pomija się.
 steam_appid: 1328350
 stores:
   steam: https://store.steampowered.com/app/1328350/
   gog: https://www.gog.com/en/game/turbo_overkill
-download: { kind: none, file: null, bytes: null }
-phase: analysis
-test_notes: Odczytano 2333 wpisy (2316 niepustych), sprawdzono round-trip ośmiu tabel. Plugin, selektor i glify nieprzetestowane; gry nie zmieniano ani nie uruchamiano.
+download:
+  kind: zip
+  file: Turbo-Overkill-PL-0.2.0.zip
+  bytes: 34260048
+phase: full
+tested_on:
+  - store: gog
+    version: "1.0"
+test_notes: Selektor, polskie menu i fonty potwierdzone przez użytkownika na verticalu 0.1.3. Pełne tłumaczenie 0.2.0 zbudowane i zainstalowane lokalnie; dialogi, infodeks i sklep czekają na test w grze.
+build_input:
+  store: gog
+  build_id: '58328218944594138'
+  unity: 2021.3.11f1
 keyart_shot: 1
 year: 2023

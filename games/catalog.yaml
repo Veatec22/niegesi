@@ -31,10 +31,10 @@ testowe:
     otxo: 2026-09-20
     skate-story: 2026-09-21
     sprawl: 2026-09-19
+    turbo-overkill: 2026-09-21
 
 w-trakcie:
   label: w trakcie
   description: Tłumaczenie jeszcze powstaje. Paczka pojawi się, kiedy będzie komplet tekstu.
   tone: accent
-  games:
-    turbo-overkill: 2026-09-21
+  games: {}

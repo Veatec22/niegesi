@@ -1,0 +1,113 @@
+# Biblia tłumaczenia Shotgun Cop Man — fakty ze źródłami. Format: .claude/skills/lokalizacja/BIBLIA.md
+
+zrodla:
+  - id: klucze
+    opis: Klucze I2 — pSpeech* to kwestie bohatera, satanSpeech* Szatana, PedroDLCSpeech* rozmowa z Pedro.
+  - id: ru
+    opis: Rosyjska tabela gry (work/ref-ru.json) — płeć w czasie przeszłym; poszlaka
+  - id: pedro
+    opis: Nasze My Friend Pedro PL (games/my-friend-pedro) — imiona z dodatku Pedro
+  - id: tekst
+    opis: Oryginalny tekst gry
+  - id: uzytkownik
+    opis: Decyzja użytkownika przy akceptacji — nadrzędna wobec pozostałych źródeł
+
+postacie:
+  - id: bohater
+    nazwa: Shotgun Cop Man
+    plec: m
+    klucz: '^pSpeech'
+    rejestr: nadęty policjant z filmów klasy B; formułki policyjne, patos
+    odmiana: nieodmienne („Jesteś Shotgun Cop Man”)
+    zrodlo: [tekst, ru]
+    uwaga: ru „Ты зашёл” w jego kwestiach do Szatana; „Freeze, Satan! You're under arrest!”.
+  - id: szatan
+    nazwa: Szatan
+    plec: m
+    klucz: '^satanSpeech'
+    rejestr: jedno wulgarne zdanie
+    odmiana: Szatana, Szatanie (wołacz)
+    zrodlo: [tekst, ru]
+    uwaga: ru „Ты арестован” w kwestii bohatera do Szatana.
+  - id: pedro
+    nazwa: Pedro
+    plec: m
+    klucz: '^PedroDLCSpeech(2|4|5|7|8|9|11|12)$'
+    mowi_do_gracza: ty
+    odmiana: Pedra, Pedrowi (jak w My Friend Pedro PL)
+    zrodlo: [pedro, ru]
+    uwaga: ru „я попал в Ад”.
+
+terminy:
+  - en: Satan
+    pl: Szatan
+    formy: [szatan]
+    zrodlo: decyzja
+  - en: Ophelia
+    pl: Ofelia
+    formy: [ofeli]
+    zrodlo: pedro
+  - en: Mitch the Butcher
+    pl: Mitch Rzeźnik
+    formy: [rzeźnik]
+    zrodlo: pedro
+  - en: Steam Workshop|workshop
+    pl: Warsztat Steam
+    formy: [warszta]
+    zrodlo: decyzja
+    uwaga: oficjalna nazwa w polskim Steamie.
+  - en: Custom Campaigns?
+    pl: kampanie społeczności
+    formy: [kampani]
+    zrodlo: decyzja
+  - en: Kill All
+    pl: Eliminacje
+    formy: [eliminacj]
+    zrodlo: uzytkownik
+    uwaga: nazwa wyzwania zatwierdzona przez użytkownika (odrzucone „Bez ocalałych”). Nie zmieniać.
+  - en: Try again
+    pl: Ponów
+    formy: [ponów]
+    zrodlo: uzytkownik
+    uwaga: ekran śmierci; zatwierdzone przez użytkownika (odrzucone „Jeszcze raz”). Nie zmieniać.
+  - en: No Damage
+    pl: Bez obrażeń
+    formy: [bez obrażeń]
+    zrodlo: decyzja
+  - en: Speedrun
+    pl: Na czas
+    formy: [na czas]
+    zrodlo: decyzja
+  - en: Piece
+    pl: element
+    formy: [element]
+    zrodlo: decyzja
+    uwaga: klocek edytora poziomów.
+
+bez_tlumaczenia:
+  - Shotgun Cop Man
+  - Shotgun
+  - Cop
+  - Man
+  - Pedro
+  - Denny
+  - My Friend Pedro
+  - Minigun
+  - Laser
+  - Transport
+  - OK
+  - Demo
+  - Steam
+  - VSync
+
+ustawienia:
+  dialog_klucz: '^(pSpeech|satanSpeech|PedroDLCSpeech)'
+  max_wiersz: 42
+
+ignoruj:
+  - sprawdzenie: wielkie_litery
+    klucz: '^(gBoss\d|PedroDLCBoss\d)$'
+    powod: przydomki bossów to nazwy własne („Wściekła Maszyna”, „Mitch Rzeźnik”).
+  - sprawdzenie: spojnosc
+    klucz: '^(tMove|aMove|epMove)$'
+    powod: „Ruch” w samouczku i sterowaniu, „Przesuń” jako polecenie w edytorze.

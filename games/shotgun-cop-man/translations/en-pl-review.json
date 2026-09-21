@@ -2407,7 +2407,7 @@
   {
     "key": "PedroDLCBonusCampaignDesc",
     "english": "An adventure inspired by the game 'My Friend Pedro'. Help your friend Pedro out of hell.",
-    "polish": "Przygoda inspirowana grą „My Friend Pedro”. Pomóż swojemu przyjacielowi Pedro wydostać się z piekła."
+    "polish": "Przygoda inspirowana grą „My Friend Pedro”. Pomóż swojemu przyjacielowi Pedrowi wydostać się z piekła."
   },
   {
     "key": "PedroDLCBoss1",
@@ -2422,6 +2422,6 @@
   {
     "key": "PedroDLCBoss3",
     "english": "Ophelia",
-    "polish": "Ophelia"
+    "polish": "Ofelia"
   }
 ]
