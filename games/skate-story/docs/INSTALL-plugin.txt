@@ -1,0 +1,58 @@
+SKATE STORY PL 0.3 - PELNE TLUMACZENIE
+
+2305/2305 wpisow tekstowych: dialogi wszystkich rozdzialow i epilogu, samouczki,
+menu, ekwipunek, cele, osiagniecia oraz poetyckie podsumowania. Polski jest
+osobnym jezykiem w ustawieniach gry; pozostale jezyki zostaja bez zmian.
+
+Ta paczka NIE PODMIENIA zadnego pliku gry. Polski slot jezykowy istnieje w grze
+od poczatku, tylko jest wylaczony i pusty - plugin wlacza go i wypelnia tekstami
+przy kazdym uruchomieniu. Oryginalne pliki zostaja nietkniete, a weryfikacja
+plikow w GOG Galaxy czy Steamie nie ma czego naprawiac.
+
+INSTALACJA (przy zamknietej grze)
+1. Wypakuj cala zawartosc archiwum do katalogu gry - tego, w ktorym lezy
+   plik "SkateStory.exe".
+2. Uruchom gre normalnie. Pierwsze uruchomienie trwa dluzej, bo dokladka
+   tworzy swoje katalogi.
+3. W ustawieniach wybierz jezyk polski.
+
+USUNIECIE
+Skasuj z katalogu gry: winhttp.dll, doorstop_config.ini, .doorstop_version
+oraz caly katalog BepInEx. To wszystko - plikow gry nie ruszamy, wiec nie ma
+czego przywracac.
+
+CZCIONKI
+Oryginalne kroje gry nie maja polskich znakow, wiec plugin przestawia dziewiec
+referencji czcionek na kroje, ktore gra i tak ze soba niesie i ktore ogonki
+narysuja. Zaden plik czcionki nie jest podmieniany ani dolaczany.
+
+WERSJE GRY I SKLEPY
+Sprawdzone na wydaniu GOG, Unity 6000.0.45f1, 64-bitowym.
+
+Spolszczenie nie jest przypiete do konkretnej wersji gry ani do sklepu - wpina
+sie w system tlumaczen po nazwach, nie po zawartosci plikow. Powinno wiec dzialac
+takze na wersji ze Steama i przezyc aktualizacje gry.
+
+Jesli po aktualizacji czesc tekstow wroci do angielskiego, znaczy to, ze gra
+dostala nowe kwestie, ktorych spolszczenie jeszcze nie zna - reszta dziala dalej.
+Zgloszenie z plikiem BepInEx/LogOutput.log wystarczy, zeby to poprawic.
+
+Paczka zawiera 64-bitowa wersje dokladki. Gdyby trafila sie 32-bitowa wersja gry,
+wystarczy pobrac BepInEx_win_x86 z adresu ponizej i podmienic winhttp.dll oraz
+katalog BepInEx/core.
+
+JESLI COS NIE DZIALA
+Logi z uruchomienia leza w BepInEx/LogOutput.log. Powinna byc tam linia
+"Polski wlaczony jako jezyk 16 z 20". Jesli jej nie ma, przeslij ten plik.
+Niektore antywirusy blokuja winhttp.dll przy pierwszym starcie, bo to sposob,
+w jaki dokladka wchodzi do gry; plik pochodzi z oficjalnego wydania BepInEksa.
+
+STAN PRAC
+Cala tabela tekstow jest przetlumaczona i sprawdzona w plikach. Wczesniejsza,
+mniejsza wersja zostala potwierdzona w grze przez uzytkownika; pelna kampania
+czeka na przejscie. Napisy wypalone w teksturach i modele liter nie sa zmieniane.
+
+LICENCJE
+Spolszczenie i plugin: MIT, tekst w BepInEx/plugins/NieGesiSkateStory/LICENSE-niegesi.txt
+BepInEx: LGPL-2.1, tekst w BepInEx-LICENSE.txt. Zrodla tej konkretnej wersji:
+https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5

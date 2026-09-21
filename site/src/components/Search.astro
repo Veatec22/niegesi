@@ -1,0 +1,74 @@
+---
+interface Props {
+  count: number;
+}
+
+const { count } = Astro.props;
+---
+
+<div class="ng-search">
+  <label class="ng-label ng-search-label" for="szukaj">Szukaj gry</label>
+  <div class="ng-search-field">
+    <svg class="ng-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <circle cx="11" cy="11" r="7"></circle>
+      <path d="M16.5 16.5 21 21"></path>
+    </svg>
+    <input
+      id="szukaj"
+      type="search"
+      data-search-input
+      placeholder="tytuł, silnik, zakres…"
+      autocomplete="off"
+      spellcheck="false"
+    />
+  </div>
+  <p class="ng-meta ng-search-count" data-search-count aria-live="polite">{count} gier</p>
+</div>
+
+<script>
+  const input = document.querySelector<HTMLInputElement>('[data-search-input]');
+  const counter = document.querySelector<HTMLElement>('[data-search-count]');
+  const empty = document.querySelector<HTMLElement>('[data-search-empty]');
+  const cards = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-card]'));
+
+  function fold(value: string) {
+    return value
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '')
+      .replace(/ł/g, 'l');
+  }
+
+  function plural(count: number) {
+    if (count === 1) return '1 gra';
+    const rest = count % 10;
+    const teens = count % 100;
+    if (rest >= 2 && rest <= 4 && (teens < 12 || teens > 14)) return `${count} gry`;
+    return `${count} gier`;
+  }
+
+  if (input && counter && empty) {
+    input.addEventListener('input', () => {
+      const query = fold(input.value.trim());
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const match = query === '' || (card.dataset.search ?? '').includes(query);
+        card.hidden = !match;
+        if (match) visible += 1;
+      });
+
+      counter.textContent = query === '' ? plural(cards.length) : `${plural(visible)} z ${cards.length}`;
+      empty.hidden = visible > 0;
+    });
+
+    input.addEventListener('keydown', (event) => {
+      // Escape czyści pole, ale tylko gdy panel jest zamknięty — tam Escape zamyka.
+      if (event.key === 'Escape' && !document.body.dataset.panelOpen && input.value !== '') {
+        event.stopPropagation();
+        input.value = '';
+        input.dispatchEvent(new Event('input'));
+      }
+    });
+  }
+</script>

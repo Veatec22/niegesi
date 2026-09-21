@@ -1,0 +1,38 @@
+language_name	Polski
+boomerang_x_title	Boomerang X
+new_game	Nowa gra
+continue_game	Kontynuuj
+save_select	Wybór zapisu
+chapter_select	Wybór rozdziału
+new_game_plus_toggle	Nowa gra +
+glossary	Słowniczek
+options	Opcje
+back	Wstecz
+credits	Twórcy
+resume	Wznów
+restart_level	Powtórz etap
+quit_to_main_menu	Menu główne
+quit_to_desktop	Wyjdź z gry
+paused_title	Pauza
+options_language_label	Język:
+options_video_category	Obraz
+options_audio_category	Dźwięk
+options_controls_category	Sterowanie
+options_gameplay_category	Rozgrywka
+options_accessibility_category	Ułatwienia
+options_yes	Tak
+options_no	Nie
+options_default	Domyślne
+options_reset	Przywróć domyślne
+tutorial_name	WYBRZEŻE ENTACCAŃSKIE
+tutorial_plaque_throw_top	Rzut
+tutorial_plaque_throw_bottom	[[throw_control_icon]]
+tutorial_plaque_charge_top	Ładowanie
+tutorial_plaque_charge_bottom	Przytrzymaj[[throw_control_icon]]
+tutorial_plaque_recall_top	Przywołaj bumerang
+tutorial_plaque_recall_bottom	[[recall_control_icon]]
+tutorial_plaque_heal_top	Platformy zdrowia
+tutorial_plaque_heal_bottom	Gdy oberwiesz, stań na platformie zdrowia, by odzyskać tarczę.
+millipede_press_to_talk	[[talk_control_icon]]Rozmowa
+millipede_name	Tepan
+millipede_statue_room_default_1	Ach!|pause| Czym ty jesteś?|pause| Nie należysz do modliszek Yoran!|pause| Skąd ty się tu wziąłeś?

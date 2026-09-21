@@ -1,0 +1,38 @@
+---
+import { keyartFor } from '../lib/keyart';
+import type { Game } from '../lib/games';
+
+interface Props {
+  game: Game;
+  variant: 'card' | 'panel';
+}
+
+const { game, variant } = Astro.props;
+const art = keyartFor(game.slug);
+const className = variant === 'card' ? 'ng-card-art' : 'ng-panel-art';
+---
+
+<div class={className} data-tone={game.tone}>
+  {
+    art ? (
+      <picture>
+        {art.webp && <source srcset={art.webp} type="image/webp" />}
+        <img
+          src={art.src}
+          alt=""
+          width="1600"
+          height="900"
+          loading={variant === 'card' ? 'lazy' : 'eager'}
+          decoding="async"
+        />
+      </picture>
+    ) : (
+      <>
+        <span class="ng-label ng-card-art-label">[keyart]</span>
+        <span class="ng-card-art-initial" aria-hidden="true">
+          {game.title.charAt(0)}
+        </span>
+      </>
+    )
+  }
+</div>

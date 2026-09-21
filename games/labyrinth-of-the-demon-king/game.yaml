@@ -1,0 +1,26 @@
+slug: labyrinth-of-the-demon-king
+title: Labyrinth of the Demon King
+version: '0.2'
+entries:
+  done: 1120
+  total: 1120
+tested: czesciowy
+engine: Unreal Engine 4.27 (PAK v11 + IoStore v3)
+approach: Nakładkowy PAK z tekstami PL oraz minimalny IoStore selektora; oryginalne
+  pliki gry pozostają nietknięte.
+scope: menu, sterowanie, dialogi, opisy przedmiotów i notatki
+source: GOG
+steam_appid: 1804010
+stores:
+  steam: https://store.steampowered.com/app/1804010/
+  gog: https://www.gog.com/en/game/labyrinth_of_the_demon_king
+download:
+  kind: zip
+  file: Labyrinth-of-the-Demon-King-PL-0.2.zip
+  bytes: 83553
+phase: full
+test_notes: 'Użytkownik potwierdził vertical: osobny Polski, przełączanie, zapis wyboru,
+  fonty i próbki w grze. Pełny przekład sprawdzono w plikach; cała kampania i układ
+  długich tekstów czekają na przegląd.'
+install:
+  marker: "Shinigami.exe"

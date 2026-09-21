@@ -1,0 +1,152 @@
+---
+import { getCollection } from 'astro:content';
+import PanelBody from './PanelBody.astro';
+import type { Game } from '../lib/games';
+
+interface Props {
+  games: Game[];
+}
+
+const { games } = Astro.props;
+const docs = await getCollection('gameDocs');
+---
+
+<div class="ng-scrim" data-scrim hidden></div>
+
+<aside class="ng-panel" data-panel aria-label="Szczegóły spolszczenia" hidden>
+  <div class="ng-panel-handle" aria-hidden="true"></div>
+  <button class="ng-panel-close" type="button" data-panel-close aria-label="Zamknij panel">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+      <path d="M5 5l14 14M19 5L5 19" />
+    </svg>
+  </button>
+  {games.map((game) => <PanelBody game={game} doc={docs.find((doc) => doc.id === game.id)} />)}
+</aside>
+
+<script>
+  import { withBase } from '../lib/url';
+
+  const panel = document.querySelector<HTMLElement>('[data-panel]');
+  const scrim = document.querySelector<HTMLElement>('[data-scrim]');
+  const closeButton = document.querySelector<HTMLButtonElement>('[data-panel-close]');
+  const cards = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-card]'));
+
+  if (panel && scrim && closeButton) {
+    const bodies = Array.from(panel.querySelectorAll<HTMLElement>('[data-game]'));
+    const isDrawer = () => window.matchMedia('(max-width: 699px)').matches;
+    let current: string | null = null;
+
+    function open(slug: string, push: boolean) {
+      const target = bodies.find((body) => body.dataset.game === slug);
+      if (!target) return;
+
+      bodies.forEach((body) => (body.hidden = body !== target));
+      cards.forEach((card) => card.setAttribute('aria-current', String(card.dataset.card === slug)));
+
+      panel!.hidden = false;
+      scrim!.hidden = false;
+      // Dwie klatki, żeby przejście ruszyło z pozycji zamkniętej.
+      requestAnimationFrame(() => {
+        panel!.dataset.open = 'true';
+        document.body.dataset.panelOpen = 'true';
+      });
+
+      panel!.setAttribute('aria-modal', String(isDrawer()));
+      if (isDrawer()) document.body.style.overflow = 'hidden';
+      target.scrollTop = 0;
+
+      if (push) history.pushState({ slug }, '', withBase(`/?gra=${slug}`));
+
+      current = slug;
+      closeButton!.focus();
+    }
+
+    function close(fromPopstate: boolean) {
+      if (!current) return;
+      panel!.dataset.open = 'false';
+      delete document.body.dataset.panelOpen;
+      document.body.style.overflow = '';
+      cards.forEach((card) => card.setAttribute('aria-current', 'false'));
+
+      const returnTo = cards.find((card) => card.dataset.card === current);
+      current = null;
+
+      window.setTimeout(() => {
+        if (!current) {
+          panel!.hidden = true;
+          scrim!.hidden = true;
+        }
+      }, 260);
+
+      if (!fromPopstate) history.pushState({}, '', withBase('/'));
+      returnTo?.focus();
+    }
+
+    cards.forEach((card) => {
+      card.addEventListener('click', (event) => {
+        // Modyfikatory zostawiamy przeglądarce: nowa karta, nowe okno, zapis.
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+        event.preventDefault();
+        const slug = card.dataset.card;
+        if (slug) open(slug, true);
+      });
+    });
+
+    closeButton.addEventListener('click', () => close(false));
+    scrim.addEventListener('click', () => close(false));
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && current) close(false);
+      if (event.key !== 'Tab' || !current || !isDrawer()) return;
+
+      const focusable = panel!.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      );
+      const visible = Array.from(focusable).filter((element) => element.offsetParent !== null);
+      if (visible.length === 0) return;
+
+      const first = visible[0]!;
+      const last = visible[visible.length - 1]!;
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    window.addEventListener('popstate', (event) => {
+      const slug = (event.state as { slug?: string } | null)?.slug;
+      if (slug) open(slug, false);
+      else close(true);
+    });
+
+    // Szuflada: zamykanie gestem w dół.
+    let startY: number | null = null;
+    panel.addEventListener(
+      'touchstart',
+      (event) => {
+        startY = isDrawer() ? event.touches[0]!.clientY : null;
+      },
+      { passive: true },
+    );
+    panel.addEventListener(
+      'touchend',
+      (event) => {
+        if (startY === null) return;
+        const delta = event.changedTouches[0]!.clientY - startY;
+        startY = null;
+        if (delta > 90) close(false);
+      },
+      { passive: true },
+    );
+
+    // Wejście z linku /?gra=slug otwiera panel od razu.
+    const requested = new URLSearchParams(window.location.search).get('gra');
+    if (requested) {
+      history.replaceState({ slug: requested }, '', withBase(`/?gra=${requested}`));
+      open(requested, false);
+    }
+  }
+</script>

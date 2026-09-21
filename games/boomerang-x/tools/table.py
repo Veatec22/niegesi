@@ -19,8 +19,8 @@ from pathlib import Path
 
 import dnfile
 
-COLUMNS = ['source', 'english', 'french', 'german', 'spanish', 'russian',
-           'brazilian_portuguese', 'japanese', 'korean',
+COLUMNS = ['english', 'english_asian_source', 'french', 'german', 'spanish',
+           'russian', 'brazilian_portuguese', 'japanese', 'korean',
            'chinese_traditional', 'chinese_simplified']
 
 LDSTR, NEWOBJ, DUP, STELEM_REF = 0x72, 0x73, 0x25, 0xA2
@@ -78,9 +78,9 @@ class Assembly:
                 if entry is None or str(entry.Name) != method_name or entry.Rva == 0:
                     continue
                 at = self.pe.get_offset_from_rva(entry.Rva)
+                if self.data[at] & 3 == 2:               # tiny header: one byte
+                    return at + 1, self.data[at] >> 2
                 flags = struct.unpack_from('<H', self.data, at)[0]
-                if flags & 3 == 2:
-                    return at + 1, flags >> 2
                 size = struct.unpack_from('<I', self.data, at + 4)[0]
                 return at + (flags >> 12) * 4, size
         raise AssertionError(f'{type_name}.{method_name} not found')
@@ -117,13 +117,16 @@ def rows(assembly):
             literal += group.count('s'); number += group.count('n')
             continue
         identifier = assembly.string(literals[literal][1])
-        description = assembly.string(literals[literal + 1][1])
+        description_at, description_token = literals[literal + 1]
+        description = assembly.string(description_token)
         limits = numbers[number + 1:number + 3]
         columns = {}
         for index, column in enumerate(COLUMNS):
             offset, token = literals[literal + 2 + index]
             columns[column] = {'text': assembly.string(token), 'token': token, 'at': offset}
         out.append({'id': identifier, 'description': description,
+                    'description_token': description_token,
+                    'description_at': description_at,
                     'max_char_limit': limits[0], 'asian_char_limit': limits[1],
                     'columns': columns})
         literal += group.count('s'); number += group.count('n')

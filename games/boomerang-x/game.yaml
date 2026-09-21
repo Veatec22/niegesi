@@ -1,0 +1,25 @@
+slug: boomerang-x
+title: Boomerang X
+version: "1.0"
+entries: { done: 359, total: 359 }
+tested: strukturalnie
+engine: Unity 2020.1.17f1
+approach: Tabela tekstów siedzi w kodzie gry. Polski wprowadza się do nieużywanego pola notatek, a trzy drobne poprawki w kodzie każą grze po nie sięgać.
+scope: menu, ustawienia, sterowanie, samouczki, słowniczek, nazwy etapów i wszystkie dialogi Tepana
+source: GOG
+year: 2021
+steam_appid: 1170060
+stores:
+  steam: https://store.steampowered.com/app/1170060/
+quote:
+  text:
+  source:
+download:
+  kind: patch
+  file: Boomerang-X-PL-1.0-latka.zip
+  bytes: 21149
+  patch: Boomerang-X-PL-1.0.patch
+keyart_shot: 1
+test_notes: Próbka potwierdzona w grze. Pełne tłumaczenie zbudowane i odczytane z powrotem z pliku; test w grze czeka. Tabela gry ma jeden powtórzony klucz (difficulty_select_prompt), więc 359 z 360 wierszy.
+install:
+  marker: "BOOMERANG X.exe"

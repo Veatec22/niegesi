@@ -1,0 +1,23 @@
+slug: my-friend-pedro
+title: My Friend Pedro
+version: "0.3"
+entries: { done: 721, total: 721 }
+tested: potwierdzony
+engine: Unity 2017.4.19f1
+approach: Plugin dokłada jedenasty język w czasie działania gry. Żaden plik gry nie jest podmieniany.
+scope: dialogi, menu, samouczki, HUD, wyniki, modyfikatory, odzywki i napisy końcowe
+source: GOG
+year: 2019
+steam_appid: 557340
+stores:
+  steam: https://store.steampowered.com/app/557340/
+quote:
+  text:
+  source:
+download:
+  kind: zip
+  file: My-Friend-Pedro-PL-0.3.zip
+  bytes: 661264
+keyart_shot: 1
+install:
+  marker: "My Friend Pedro - Blood Bullets Bananas.exe"

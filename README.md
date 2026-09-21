@@ -3,71 +3,78 @@
 > *A niechaj narodowie wżdy postronni znają, iż Polacy nie gęsi, iż swój język mają.*
 > — Mikołaj Rej, 1562
 
-Nieoficjalne polskie tłumaczenia gier, które polskiej wersji nie dostały. Jedno repozytorium
-na wszystkie: teksty, narzędzia budujące i dokumentacja instalacji dla każdego tytułu osobno.
+Unofficial Polish translations of indie games. This private working repository holds
+translation sources, build tools, review files and installation instructions for each game.
+Translations are produced with machine assistance and reviewed in-game by the user.
 
-Repozytorium zawiera wyłącznie **teksty tłumaczeń i kod narzędzi**. Nie ma tu plików gier —
-żadnych zasobów, bibliotek ani plików wykonywalnych. Gotowe paczki powstają lokalnie, z twojej
-własnej, legalnie posiadanej kopii gry.
+Versioned sources contain translation text and tooling. Game assets and release packages
+are built locally from an installed copy and kept in ignored output and backup folders.
 
-## Gry
+## Games
 
-| Gra | Zakres | Wersja | Status |
+| Game | Coverage | Version | Status |
 | --- | --- | --- | --- |
-| [Shotgun Cop Man](games/shotgun-cop-man/) | 485 wpisów — menu, sterowanie, samouczek, dialogi, edytor poziomów, osiągnięcia | 0.1 | Polski dodany jako jedenasty język; zweryfikowany strukturalnie, test w grze jeszcze przed nami |
-| [Anger Foot](games/anger-foot/) | 1774 z 1776 wpisów — menu, ustawienia, samouczki, dialogi, nazwy poziomów, buty, osiągnięcia, napisy końcowe | 0.1 | Polski wchodzi w pusty slot włoski; przetestowany ekran tytułowy i menu |
-| [Dread Templar](games/dread-templar/) | 636 wpisów — menu, ustawienia, sterowanie, samouczek, dialogi, przerywniki, nazwy poziomów i bossów, opisy run | 0.1 | Polski wchodzi w pusty slot `pol` zostawiony przez twórców, plus przycisk w menu i łatka na jedną metodę w kodzie |
-| [SPRAWL](games/sprawl/) | 717/717 wpisów — menu, HUD, dialogi, kodeks, samouczki i interakcje | 0.2 | Osobny polski język i flaga; vertical menu i rozgrywki potwierdzony, pełna kampania czeka na test |
-| [OTXO](games/otxo/) | 1364 wpisy — komplet: menu, samouczek, 102 trunki, dialogi, lore, dziennik, statystyki | 0.1 | Kod natywny, brak wolnego slotu — polski przejmuje slot chiński, bo tylko on dogrywa czcionkę z pliku |
+| [Shotgun Cop Man](games/shotgun-cop-man/) | 485 entries: UI, controls, tutorials, dialogue, level editor and achievements | 0.1 | Separate Polish language; structurally verified, playtest pending |
+| [Anger Foot](games/anger-foot/) | 1774/1776 entries: UI, tutorials, dialogue, levels, shoes, achievements and credits | 0.1 | Uses the empty Italian slot; title screen and menu tested |
+| [Dread Templar](games/dread-templar/) | 636 entries: UI, tutorials, dialogue, cutscenes, levels, bosses and runes | 0.1 | Uses the existing empty pol slot, a menu button and a method patch |
+| [SPRAWL](games/sprawl/) | 717/717 entries: UI, HUD, dialogue, codex, tutorials and interactions | 0.2 | Separate Polish language and flag; vertical confirmed, full campaign playtest pending |
+| [My Friend Pedro](games/my-friend-pedro/) | 721/721 entries: dialogue, UI, tutorials, HUD, achievements and barks | 0.2 | Separate Polish language; vertical confirmed, full campaign playtest pending |
+| [Skate Story](games/skate-story/) | 2305/2305 entries: all chapters, epilogue, dialogue, UI, items, objectives and poetry | 0.2 | Full ZIP built and installed; vertical confirmed, full campaign playtest pending |
+| [OTXO](games/otxo/) | 1364 entries: UI, tutorial, 102 drinks, dialogue, lore, journal and statistics | 0.1 | Polish replaces Chinese, the slot that loads an external font |
+| [Labyrinth of the Demon King](games/labyrinth-of-the-demon-king/) | 1120/1120 entries; menus, dialogue, notes, items and maps | 0.2, PAK + minimal IoStore overlay | Vertical confirmed in-game; full campaign review pending |
+| [Turbo Overkill](games/turbo-overkill/) | 2333 source entries extracted, 2316 nonempty | Analysis | Promising BepInEx IL2CPP route; Polish selector, loader and fonts need a vertical |
 
-Szczegóły — jak dana gra trzyma teksty, co dokładnie zostało podmienione i czego nie ruszono —
-opisuje README każdej gry. Instrukcja dla gracza leży w `games/<gra>/docs/INSTALL.txt`.
+Each game's Polish README is a short player-facing description and installation guide.
+Technical findings belong in `docs/technika.md`; `game.yaml` records counts, release
+version, package type and test status, and also supplies the site in `site/`.
 
-## Układ repozytorium
+## Layout
 
 ```
-games/<gra>/
-  README.md          opis tłumaczenia i sposobu, w jaki gra przechowuje teksty
-  docs/INSTALL.txt   instrukcja dla gracza, trafia do paczki jako READ-ME.txt
-  tools/build.py     budowanie plików gry z oryginałów (nigdy nie pisze do katalogu gry)
-  tools/*.py         narzędzia pomocnicze, np. wyciąganie tekstów z oryginału
-  translations/pl.json          polskie teksty, klucz zależny od gry
-  translations/en-pl-review.json  angielski oryginał obok tłumaczenia, do korekty
+games/<slug>/
+  README.md                       player-facing description, in Polish
+  game.yaml                       metadata, coverage, package and test status
+  docs/technika.md                 technical findings and build instructions
+  docs/INSTALL.txt                player instructions, packaged as READ-ME.txt
+  tools/build.py                  builds files and a release ZIP into dist/
+  translations/pl.json            Polish translation source
+  translations/en-pl-review.json English and Polish side by side
 ```
 
-Każda gra jest samodzielna. Narzędzia nie współdzielą kodu — formaty plików i sposoby
-przechowywania tekstu różnią się na tyle, że wspólna warstwa byłaby tylko kosztem.
-Wspólne są: licencja, `requirements.txt` i konwencje opisane w
+Games under investigation may have extraction tools and review scaffolding before a
+release builder exists. A completed translation must include a ZIP containing the game's
+folder layout and `READ-ME.txt`; loose output files alone are not a completed release.
+
+Tools are generally local to each game because storage formats and patching methods vary.
+Shared conventions are documented in [AGENTS.md](AGENTS.md) and
 [docs/dodawanie-gry.md](docs/dodawanie-gry.md).
 
-## Budowanie
+## Building
 
-Wymagania: Python 3.11 i oryginalne pliki danej gry. Żadne narzędzie nie pisze do katalogu gry
-ani jej nie uruchamia. Środowisko zakłada się raz, w katalogu głównym repozytorium:
+Use Python 3.11 and the original game files. Create the environment at the repository root:
 
 ```powershell
 python -m venv .venv
-.venv\Scripts\python.exe -m pip install -r requirements.txt
+.venv/Scripts/python.exe -m pip install -r requirements.txt
 ```
 
-Potem, dla wybranej gry:
+Follow the selected game's technical documentation. For example:
 
 ```powershell
-.venv\Scripts\python.exe games\shotgun-cop-man\tools\build.py --original "D:\Backup\Shotgun Cop Man_Data\resources.assets"
-.venv\Scripts\python.exe games\anger-foot\tools\build.py --game "D:\Backup\Anger Foot_Data"
+.venv/Scripts/python.exe games/shotgun-cop-man/tools/build.py --original "D:/Backup/Shotgun Cop Man_Data/resources.assets"
+.venv/Scripts/python.exe games/anger-foot/tools/build.py --game "D:/Backup/Anger Foot_Data"
 ```
 
-Wynik trafia domyślnie do `games/<gra>/dist/` — katalog nie jest śledzony przez Gita.
-Każdy build sprawdza sumę SHA-256 plików wejściowych i odmawia pracy na innej wersji gry
-albo na pliku już zmodyfikowanym. Po aktualizacji gry trzeba przeanalizować układ danych
-od nowa, samo podbicie sumy kontrolnej nie wystarczy.
+Builds write to the game's local `dist/`, never to its installation. Builders pin the
+supported original files by SHA-256 and refuse modified or unsupported inputs. A game
+update requires inspecting the format again, not merely replacing a checksum.
 
-## Materiał źródłowy gier
+`tools/install.py` is a separate local testing helper. It backs up originals before
+replacing game files and preserves existing backups. Close the game before installation
+or restoration. Agents never launch games: the user tests rendering and gameplay.
 
-Nazwy gier, ich teksty i postacie należą do ich autorów. Te tłumaczenia są nieoficjalne,
-nie są z nikim powiązane ani przez nikogo firmowane. Licencja MIT poniżej obejmuje zawartość
-tego repozytorium — polskie teksty, narzędzia i dokumentację.
+## Game material and license
 
-## Licencja
-
-[MIT](LICENSE).
+Game names, original text and characters belong to their respective creators. These
+translations are unofficial and are not affiliated with or endorsed by the studios.
+The [MIT license](LICENSE) covers this repository's translation text, tools and documentation.

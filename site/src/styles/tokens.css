@@ -1,0 +1,116 @@
+/* notgoose.cc — tokeny projektowe
+   Niezależne od frameworka. Podepnij pod dowolny stack albo przepisz
+   do konfiguracji motywu. Wartości wiążące, opis w DESIGN.md. */
+
+:root {
+  /* --- Kolor ------------------------------------------------------ */
+  --ng-bone: #E9E5DB;           /* tło strony */
+  --ng-paper: #FFFFFF;          /* powierzchnie wyniesione */
+  --ng-ink: #14130F;            /* tekst, ramki, cienie */
+  --ng-accent: #D6341F;         /* czerwień plakatowa, grafika + CTA */
+  --ng-red-deep: #B02510;       /* czerwień pod drobnym białym tekstem */
+  --ng-navy: #003670;           /* status ukończone, tła keyartów */
+  --ng-muted: #57534A;          /* tekst drugorzędny na jasnym */
+  --ng-muted-inverse: #B9B3A4;  /* tekst drugorzędny na --ng-ink */
+  --ng-hairline: #C9C3B4;       /* linie 1 px wewnątrz ramek */
+  --ng-scrim: rgba(20, 19, 15, 0.58);      /* przyciemnienie pod szufladą */
+  --ng-placeholder-mark: rgba(255, 255, 255, 0.13); /* inicjał na keyarcie */
+
+  /* --- Typografia ------------------------------------------------- */
+  --ng-font-display: 'Archivo Black', sans-serif;
+  --ng-font-body: 'Space Grotesk', sans-serif;
+  --ng-font-mono: 'JetBrains Mono', monospace;
+
+  --ng-size-hero: 118px;
+  --ng-size-section: 56px;
+  --ng-size-panel-title: 40px;
+  --ng-size-card-title: 22px;
+  --ng-size-stat: 56px;
+  --ng-size-quote: 21px;
+  --ng-size-body: 16px;
+  --ng-size-label: 12px;
+  --ng-size-meta: 11px;
+
+  --ng-leading-hero: 0.88;
+  --ng-leading-display: 1;
+  --ng-leading-quote: 1.45;
+  --ng-leading-body: 1.6;
+
+  --ng-tracking-hero: -0.035em;
+  --ng-tracking-display: -0.03em;
+  --ng-tracking-label: 0.16em;
+  --ng-tracking-meta: 0.1em;
+
+  /* --- Odstępy ---------------------------------------------------- */
+  --ng-space-1: 4px;
+  --ng-space-2: 8px;
+  --ng-space-3: 12px;
+  --ng-space-4: 16px;
+  --ng-space-5: 20px;
+  --ng-space-6: 24px;
+  --ng-space-7: 28px;
+  --ng-space-8: 32px;
+  --ng-space-10: 40px;
+  --ng-space-12: 48px;
+  --ng-space-16: 64px;
+  --ng-space-18: 72px;
+  --ng-space-20: 80px;
+
+  /* --- Język formy ------------------------------------------------ */
+  --ng-border: 3px solid var(--ng-ink);
+  --ng-border-width: 3px;
+  --ng-radius: 0;
+  --ng-shadow: 8px 8px 0 var(--ng-ink);
+  --ng-shadow-pressed: 4px 4px 0 var(--ng-ink);
+  --ng-shadow-open: 8px 8px 0 var(--ng-accent);
+  --ng-hit-target: 44px;
+
+  /* --- Układ ------------------------------------------------------ */
+  --ng-page-max: 1440px;
+  --ng-gutter: 80px;
+  --ng-gutter-mobile: 20px;
+  --ng-grid-gap: 28px;
+  --ng-panel-width: 560px;
+  --ng-panel-width-tablet: 480px;
+  --ng-drawer-max-height: 88vh;
+  --ng-keyart-ratio: 16 / 9;
+
+  /* --- Ruch ------------------------------------------------------- */
+  --ng-ease: cubic-bezier(0.2, 0, 0, 1);
+  --ng-duration: 240ms;
+}
+
+@media (max-width: 699px) {
+  :root {
+    --ng-size-hero: 46px;
+    --ng-size-section: 30px;
+    --ng-size-panel-title: 28px;
+    --ng-size-card-title: 20px;
+    --ng-size-stat: 38px;
+    --ng-size-quote: 15px;
+    --ng-size-body: 14px;
+    --ng-size-label: 10px;
+    --ng-size-meta: 10px;
+    --ng-leading-hero: 0.9;
+    --ng-shadow: 7px 7px 0 var(--ng-ink);
+    --ng-gutter: var(--ng-gutter-mobile);
+    --ng-grid-gap: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ng-duration: 0ms;
+  }
+}
+
+/* --- Fokus: jeden obrys dla całej strony -------------------------- */
+:focus-visible {
+  outline: var(--ng-border-width) solid var(--ng-accent);
+  outline-offset: 3px;
+}
+
+/* Na powierzchniach czerwonych obrys musi przejść na tusz, żeby był widoczny. */
+.ng-on-accent:focus-visible {
+  outline-color: var(--ng-ink);
+}

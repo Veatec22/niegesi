@@ -6,9 +6,14 @@ string literals inside OTXO_Release.exe. There is no eighth slot to fill and no
 managed code to patch, so Polish has to take one of the seven over. The same
 route the Japanese and Turkish fan translations took.
 
-This build takes the **French** slot: a Latin-script language, so the game keeps
-using notosans.ttf, whose character map carries all eighteen Polish letters.
-In the game's language menu Polish is therefore the French flag.
+This build takes the **Simplified Chinese** slot, and the choice is about fonts,
+not about language. Most of the game's typefaces are baked into data.win with
+ASCII and Latin-1 only: they can draw 'ó' but not 'ę'. Chinese is the one slot
+that loads its face from a file (yahei.ttf), and that face requests a range
+covering Latin Extended-A, so every Polish letter renders. The French slot was
+tried first and confirmed broken in game: 'Język' came out as 'J zyk'.
+In the game's language menu Polish is therefore the Chinese flag - cosmetics,
+not a defect. See README for the glyph tables behind this.
 
 The file is not written from scratch. It is the English file with its section
 header changed and the translated lines spliced in, so anything still untranslated
@@ -21,6 +26,7 @@ import argparse
 import hashlib
 import json
 import sys
+import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -87,6 +93,15 @@ def main():
     assert untouched == source.read_bytes(), 'The template no longer reproduces the original.'
     assert len(built.split(b'\r\n')) == len(source.read_bytes().split(b'\r\n')), 'Line count changed.'
 
+    # --- package: one file to drop in, plus the instructions ---
+    package = destination / f'OTXO-PL-{VERSION}.zip'
+    with zipfile.ZipFile(package, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
+        archive.write(target, target_name)
+        archive.write(ROOT / 'docs/INSTALL.txt', 'READ-ME.txt')
+    with zipfile.ZipFile(package) as archive:
+        assert archive.testzip() is None
+        assert archive.read(target_name) == built, 'The archived file differs from the built one.'
+
     print(json.dumps({
         'version': VERSION,
         'slot': slot,
@@ -98,6 +113,8 @@ def main():
         'sha256': hashlib.sha256(built).hexdigest()[:16],
         'output': str(target),
         'install_as': target_name,
+        'package': str(package),
+        'package_bytes': package.stat().st_size,
     }, ensure_ascii=False))
 
 

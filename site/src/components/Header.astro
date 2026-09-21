@@ -1,0 +1,16 @@
+---
+import GooseMark from './GooseMark.astro';
+import { withBase } from '../lib/url';
+---
+
+<header class="ng-header">
+  <a class="ng-brand" href={withBase("/")}>
+    <GooseMark class="ng-brand-mark" />
+    <span class="ng-brand-name">Nie gęsi</span>
+  </a>
+  <nav class="ng-nav ng-label" aria-label="Główna">
+    <a href={withBase("/#gry")}>Gry</a>
+    <a href={withBase("/jak-to-dziala/")}>Jak to działa</a>
+    <a href="https://github.com/Veatec22/niegesi">GitHub</a>
+  </nav>
+</header>

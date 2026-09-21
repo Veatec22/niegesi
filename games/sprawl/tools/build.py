@@ -2,13 +2,11 @@
 
 The game keeps one .locres per culture under Content/Localization/Game/. Eleven
 were shipped; Polish was not, although the project's own Game.locmeta lists `pl`
-among its 32 target cultures. There is no language selector in the build - the
-engine takes the culture from the operating system - so a Polish Windows asks
-for `pl` already and falls back to English for want of a file.
+among its 32 target cultures. The released game has a flag-based language
+selector. The Polish entry, flag and persistence have passed in-game testing.
 
-So the whole translation is one file: pl/Game.locres. It carries only the keys
-that are translated; the rest fall back to English, exactly as the game's own
-Ukrainian file does with the 46 keys it leaves out.
+The archive includes the full 717-entry pl/Game.locres, the extended locale map
+and a separate Polish flag. All existing languages remain available.
 
 Never writes into the game directory; output goes to a separate folder.
 """
@@ -16,14 +14,17 @@ import argparse
 import hashlib
 import json
 import sys
+import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import locres
 import pak
+import selector
+from validate_translations import validate
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = '0.1'
+VERSION = '0.2'
 CULTURE = 'pl'
 INSIDE = f'Sprawl/Content/Localization/Game/{CULTURE}/Game.locres'
 ARCHIVE = 'Sprawl-WindowsNoEditor_pl_P.pak'
@@ -40,6 +41,8 @@ def main():
     parser.add_argument('--source', type=Path, default=ROOT / 'translations/en.locres',
                         help="The game's own en/Game.locres, extracted from the pak")
     parser.add_argument('--output', type=Path, default=ROOT / 'dist', help='Separate output directory')
+    parser.add_argument('--assets', type=Path, default=ROOT / 'work/assets',
+                        help='Extracted original locale and flag assets for the Polish selector')
     args = parser.parse_args()
 
     digest = hashlib.sha256(args.source.read_bytes()).hexdigest()
@@ -56,6 +59,8 @@ def main():
     assert len(translations) == len(rows), 'Duplicate namespace/key in pl.json.'
     unknown = [k for k in translations if k not in available]
     assert not unknown, f'Keys not present in the English resource: {unknown[:5]}'
+    review = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
+    validate(english, translations, review)
 
     polish = locres.translate(english, translations)
     data = locres.dump(polish)
@@ -78,11 +83,19 @@ def main():
     assert carried <= {h for h, _, _ in english.namespaces}, 'A namespace hash was invented.'
 
     # --- the archive: a packaged build reads its content out of paks, never off disk ---
-    archive = pak.write({INSIDE: data}, seed=PATH_HASH_SEED)
+    files = selector.build_assets(args.assets, args.output.resolve() / 'selector')
+    files[INSIDE] = data
+    assert not any('/en/' in name for name in files), 'English must stay untouched.'
+    archive = pak.write(files, seed=PATH_HASH_SEED)
     bundle = args.output.resolve() / ARCHIVE
     bundle.write_bytes(archive)
     mount, packed = pak.read(archive)
-    assert mount == pak.MOUNT_POINT and packed == {INSIDE: data}, 'The archive does not read back.'
+    assert mount == pak.MOUNT_POINT and packed == files, 'The archive does not read back.'
+
+    release = args.output.resolve() / f'SPRAWL-PL-{VERSION}.zip'
+    with zipfile.ZipFile(release, 'w', compression=zipfile.ZIP_DEFLATED) as package:
+        package.write(bundle, f'Sprawl/Content/Paks/{ARCHIVE}')
+        package.write(ROOT / 'docs/INSTALL.txt', 'READ-ME.txt')
 
     print(json.dumps({
         'version': VERSION,
@@ -96,6 +109,7 @@ def main():
         'locres': str(target),
         'archive': str(bundle),
         'archive_bytes': len(archive),
+        'zip': str(release),
         'install_as': f'Sprawl/Content/Paks/{ARCHIVE}',
     }, ensure_ascii=False))
 

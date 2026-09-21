@@ -1,0 +1,15 @@
+slug: turbo-overkill
+title: Turbo Overkill
+version: '0.0'
+entries: { done: 0, total: 2333 }
+tested: strukturalnie
+engine: Unity 2021.3.11f1 IL2CPP x64
+approach: Planowany plugin BepInEx IL2CPP z osobnym językiem Polski; bez podmiany zasobów gry.
+scope: menu, dialogi, HUD, przedmioty, bestiariusz, kodeks i infodeks
+source: GOG
+steam_appid: 1328350
+stores:
+  steam: https://store.steampowered.com/app/1328350/
+download: { kind: none, file: null, bytes: null }
+phase: analysis
+test_notes: Odczytano 2333 wpisy (2316 niepustych), sprawdzono round-trip ośmiu tabel. Plugin, selektor i glify nieprzetestowane; gry nie zmieniano ani nie uruchamiano.

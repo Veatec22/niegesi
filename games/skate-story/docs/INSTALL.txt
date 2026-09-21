@@ -1,0 +1,43 @@
+SKATE STORY PL — 0.2, PEŁNA TABELA TEKSTÓW
+
+2305/2305 wpisów: menu, ustawienia, samouczki, wszystkie rozdziały, epilog,
+wiersze, przedmioty, osiągnięcia, cele i nazwy lokacji.
+Osobny język Polski, konfiguracja fontów i selektora ze sprawdzonego verticala.
+Tekstury z napisami, modele liter, nagrania i interfejsy platform nie są zmieniane.
+Nazwy własne i nazwy trików częściowo pozostają oryginalne.
+
+INSTALACJA
+Zamknij grę. Zachowaj oryginalny SkateStory_Data/resources.assets.
+Skopiuj folder SkateStory_Data z paczki do katalogu gry i zastąp resources.assets.
+Uruchom grę normalnie i w Settings wybierz Polski.
+Jeśli Polski był już wybrany w verticalu, wystarczy ponowne uruchomienie gry.
+
+Wydanie źródłowe: lokalna kopia GOG, Unity 6000.0.45f1.
+SHA-256 zgodnego oryginału:
+3e65be29272f5879bd907a0d0c7f8134f5b5bd35902263dc65381bb0c3a7a82c
+Po aktualizacji gry trzeba ponownie sprawdzić zgodność pliku źródłowego.
+
+STATUS TESTÓW
+Użytkownik potwierdził działający vertical w grze.
+Pełną paczkę sprawdzono strukturalnie: kompletność, znaczniki, podziały wierszy,
+fonty, ponowny odczyt zasobów i zachowanie pozostałych języków.
+Cała kampania po polsku nie została jeszcze sprawdzona w rozgrywce.
+
+TEST PEŁNEJ WERSJI
+Uruchom grę samodzielnie i kontynuuj zapis; nie trzeba kasować postępu.
+Sprawdź dłuższy dialog, ekwipunek/sklep i opis aktualnego celu.
+Sprawdź polskie znaki, zawijanie tekstu, podpowiedzi i ikony przycisków.
+Przy błędzie wystarczy screen i nazwa rozdziału lub identyfikator wpisu z review.
+
+PRZYWRÓCENIE
+Przy zamkniętej grze zastąp resources.assets kopią oryginału.
+W lokalnym repo oryginał jest w backups/skate-story/resources.assets,
+a sprawdzony vertical w backups/skate-story-vertical/resources.assets.
+Nie usuwaj pliku gry bez przywrócenia kopii.
+
+KOREKTA
+translations/en-pl-review.html: przeszukiwalny podgląd EN/PL.
+translations/en-pl-review.json: identyfikator, oryginał, przekład i uwagi.
+translations/pl.json: teksty używane przez builder.
+Przekład jest maszynowy, z korektą kontekstową przez agenta; korekta użytkownika
+oraz ocena pełnej kampanii nadal przed nami.

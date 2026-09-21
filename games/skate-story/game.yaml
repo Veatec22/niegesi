@@ -1,0 +1,25 @@
+slug: skate-story
+title: Skate Story
+version: "0.2"
+entries: { done: 2305, total: 2305 }
+tested: czesciowy
+engine: Unity 6000.0.45f1
+approach: Włączony istniejący slot polski (indeks 15) razem z czcionkami dla PL. Dostarczane jako łatka różnicowa, bo gra ma wycięty runtime i pluginu nie przyjmie.
+scope: wszystkie rozdziały i epilog, dialogi, menu, samouczki, przedmioty, cele, osiągnięcia i poezja
+source: GOG
+year: 2025
+steam_appid: 1263240
+stores:
+  steam: https://store.steampowered.com/app/1263240/
+quote:
+  text:
+  source:
+download:
+  kind: patch
+  file: Skate-Story-PL-0.2-latka.zip
+  bytes: 84925
+  patch: Skate-Story-PL-0.2.patch
+keyart_shot: 1
+test_notes: Vertical potwierdzony przez użytkownika; pełna tabela zweryfikowana strukturalnie, pełna kampania czeka na test.
+install:
+  marker: "SkateStory.exe"

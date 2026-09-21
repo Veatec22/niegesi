@@ -1,0 +1,2305 @@
+UI/AskDeleteSaveData-btn-Cancel	Anuluj
+UI/AskDeleteSaveData-btn-Delete	Usuń
+UI/AskNewGame-btn-Cancel	Anuluj
+UI/AskNewGame-btn-New Game	Nowa gra
+UI/AskQuit-btn-Cancel	Anuluj
+UI/AskQuit-btn-Confirm	Potwierdź
+UI/Audio-btn-Back	Wstecz
+UI/Audio-btn-Master Volume	Głośność ogólna
+UI/Audio-btn-Music Volume	Głośność muzyki
+UI/Audio-btn-SFX Volume	Głośność efektów
+UI/Audio-header	Dźwięk
+UI/ContractSign-btn-Back	Wstecz
+UI/ContractSign-btn-Sign	Podpisz stronę
+UI/Controls-header	Sterowanie
+UI/Controls/BigPush	Mocne odepchnięcie
+UI/Controls/Continue	dalej
+UI/Controls/DoubleTap	Naciśnij dwukrotnie
+UI/Controls/Hold-Button	PRZYTRZYMAJ
+UI/Controls/HoldLeftOrRight	Przytrzymaj w lewo lub w prawo
+UI/Controls/Look	Rozejrzyj się
+UI/Controls/Push	Odepchnij się
+UI/Controls/ResetCamera	Wycentruj kamerę
+UI/Controls/Skate	Jedź
+UI/Controls/Skate-Walk	Jazda / Chodzenie
+UI/Controls/TurnLeftRight	Skręć w lewo / prawo
+UI/Controls/Walk	Idź
+UI/Gameplay/AutoContinueCutscenes	Automatycznie kontynuuj sceny
+UI/Gameplay/ShowCutsceneUI	Interfejs scen
+UI/Gameplay/ShowSpedometer	Pokaż prędkościomierz
+UI/Gameplay/ShowTutorials	Pokaż samouczki
+UI/Generic/ApplySetting	Zastosuj
+UI/Generic/Back	Wstecz
+UI/Generic/Confirm	Potwierdź
+UI/Generic/Default	Domyślne
+UI/Generic/No	Nie
+UI/Generic/NotYet	Jeszcze nie
+UI/Generic/Setting-Enabled	Włączone
+UI/Generic/Setting-High	Wysoka
+UI/Generic/Setting-Low	Niska
+UI/Generic/Setting-Med	Średnia
+UI/Generic/Setting-Off	Wył.
+UI/Generic/Setting-On	Wł.
+UI/Generic/Take	Weź
+UI/Generic/Yes	Tak
+UI/InteractPrompt-Eat	Zjedz
+UI/InteractPrompt-Enter	Wejdź
+UI/InteractPrompt-Interact	Użyj
+UI/InteractPrompt-Leave	Wyjdź
+UI/InteractPrompt-Look	Spójrz
+UI/InteractPrompt-Open	Otwórz
+UI/InteractPrompt-Take	Weź
+UI/InteractPrompt-Talk	Porozmawiaj
+UI/MainMenu-btn-Continue	Kontynuuj
+UI/MainMenu-btn-Credits	Twórcy
+UI/MainMenu-btn-New Game	Nowa gra
+UI/MainMenu-btn-Quit	Wyjdź
+UI/MainMenu-btn-Settings	Ustawienia
+UI/PauseMenu-btn-Items	Przedmioty
+UI/PauseMenu-btn-Main Menu	Menu główne
+UI/PauseMenu-btn-Quit	Wyjdź
+UI/PauseMenu-btn-Restart Level	Powtórz poziom
+UI/PauseMenu-btn-Resume	Wznów
+UI/PauseMenu-btn-Settings	Ustawienia
+UI/PauseMenu-btn-Skateboard	Deskorolka
+UI/PauseMenu-btn-Skip Cutscene	Pomiń scenę
+UI/Settings-Camera-header	Kamera
+UI/Settings-Debug-btn-Back	Wstecz
+UI/Settings-Display-header	Obraz
+UI/Settings-Gameplay-btn-Auto Continue Dialogue	Automatycznie kontynuuj dialogi
+UI/Settings-Gameplay-btn-Back	Wstecz
+UI/Settings-Gameplay-btn-Show Cutscene UI	Interfejs scen
+UI/Settings-Gameplay-btn-Show Spedometer	Pokaż prędkościomierz
+UI/Settings-Gameplay-btn-Show Tutorials	Pokaż samouczki
+UI/Settings-Gameplay-header	Rozgrywka
+UI/Settings-Graphics-btn-Back	Wstecz
+UI/Settings-Graphics-header	Grafika
+UI/Settings-btn-Accessibility	Dostępność
+UI/Settings-btn-Audio	Dźwięk
+UI/Settings-btn-Back	Wstecz
+UI/Settings-btn-Delete Save Data	Usuń zapisane dane
+UI/Settings-btn-Gameplay	Rozgrywka
+UI/Settings-btn-Graphics	Grafika
+UI/Settings-btn-Screen Shake	Wstrząsy ekranu
+UI/Settings-btn-Vibration	Wibracje
+UI/Settings-header	Ustawienia
+UI/00-seizure-warning-label	Ostrzeżenie zdrowotne
+UI/AskDeleteSaveData-header	Usunąć zapisane dane?
+UI/AskDeleteSaveData-body	Wszystkie zapisane postępy zostaną bezpowrotnie utracone.
+UI/AskNewGame-header	Rozpocząć nową grę?
+UI/AskNewGame-body	Wszystkie zapisane postępy zostaną bezpowrotnie utracone.
+UI/AskQuit-header	Wyjść do pulpitu?
+UI/AskQuit-body	Niezapisane postępy zostaną bezpowrotnie utracone.
+ch1/00-title/intro1-1-seq-08	W ZAMIAN ZA PRAWA DO TWOJEJ DUSZY
+ch1/01/0youareinhell-1-seq-01	W podziemiu demony nie śpią.
+ch1/01/0youareinhell-1-seq-02	Księżyc nie pozwala im zasnąć.
+ch1/01/0youareinhell-1-seq-03	Większość unika ostrego blasku księżyca.
+ch1/01/0youareinhell-1-seq-04	Odpoczywają tyle, ile zdołają.
+ch1/01/0youareinhell-1-seq-05	Pewien demon postanowił wpatrywać się w Księżyc.
+ch1/01/0youareinhell-1-seq-06	Demon ten był głodny i zmęczony.
+ch1/01/0youareinhell-1-seq-07	Demon ten zamierzał zjeść Księżyc.
+ch1/01/1theskateboard-1-seq-01	Demon nie zamierzał dotrzeć na Księżyc pieszo.
+ch1/01/1theskateboard-1-seq-02	Stąd deskorolka.
+ch1/01/1theskateboard-1-seq-03	Za niewielką cenę — czterostronicowy kontrakt.
+ch1/01/Contract-1	W zamian za powrót do żywych
+ch1/01/Contract-2	Zjem każdy Księżyc
+ch1/01/Contract-3	Deskorolka przykuta do Duszy
+ch1/01/Contract-4	Ze szkła zostanę zrodzony
+ch1/01/Contract-4-skateboard-menu-header	Deskorolka drżała z boską częstotliwością.
+ch1/01/firstdeath-1-seq-01	Demony nie mogły umrzeć. Nie były żywe.
+ch1/01/firsthurt-1-seq-01	Piekielne płomienie były zimniejsze niż nicość.
+ch1/04-eyesawake/theeyes-1-seq-01	„Widziałem skejtera!” — powiedziało jedno oko.
+ch1/04-eyesawake/theeyes-1-seq-02	„Tutaj to zabronione!” — powiedziało drugie oko.
+ch1/04-eyesawake/theeyes-1-seq-03	„Co za nieznośny hałas!”
+ch1/04-eyesawake/theeyes-1-seq-04	„Niszczy moją własność!”
+ch1/04-eyesawake/theeyes-1-seq-05	„TRZEBA COŚ Z TYM ZROBIĆ”.
+ch1/05-L0/0INTRO-1-seq-01	Skejter dotarł do Zewnętrznej Osłony Księżyca.
+ch1/05-L0/0INTRO-1-seq-02	Była to bariera nie do przebycia.
+ch1/05-L0/0INTRO-1-seq-03	Przed nim stał lśniący obelisk.
+ch1/05-L0/0INTRO-1-seq-04	Na obelisku wyryto wiadomość.
+ch1/05-L0/1ollieobelisk-1-seq-01	OLLIE
+ch1/05-L0/1ollieobelisk-1-seq-02	Ollie to podstawowy trik, w którym skejter wyskakuje wraz z deskorolką.
+ch1/05-L0/1ollieobelisk-1-seq-03	Ollie wymaga wyczucia i precyzji: podczas skoku skejter wybija deskę tylną stopą.
+ch1/05-L0/1ollieobelisk-1-seq-04	W powietrzu przesuwa przednią stopę, by wypoziomować deskę.
+ch1/05-L0/1ollieobelisk-1-seq-05	Wykonany płynnie ollie unosi w powietrze skejtera i jego deskorolkę.
+ch1/05-L0/1ollieobelisk-1-seq-06	Nauka ollie wymaga wielu ćwiczeń, a opanowanie go do perfekcji — wieczności.
+ch1/05-L0/3crestsappear-1-seq-01	Wokół Skejtera pojawiły się pieczęcie.
+ch1/05-L0/4obeliskexplode-1-seq-01	Obelisk eksplodował, rozrywając Osłonę Księżyca.
+ch1/05-L0/4obeliskexplode-1-seq-02	Z pozostałości obelisku wylały się cząstki duszy.
+ch1/05-L0/4obeliskexplode-1-seq-03	Na krawężnikach przed nim zamigotał portal.
+ch1/05-L0/5ollieoverspikes-1-seq-01	Dzięki ollie Skejter mógł przeskakiwać nad płomieniami.
+ch1/05-L0/6ollietimingtut-1-seq-01	Krótkie naciśnięcie pozwalało wykonać mały ollie. Przytrzymanie — przygotować wyższy skok.
+ch1/05-L0/7bigjump-1-seq-01	Przed nim leżała Pieczęć Diabła.
+ch1/06-mooncore/1soulup-1-seq-01	Dusza Skejtera zamieniła się w czysty pęd.
+ch1/06-mooncore/1soulup-1-seq-02	Skejter przebił się wprost na astralne posłanie Księżyca.
+ch1/06-mooncore/2bedofstars-1-seq-01	Skejter jechał po posłaniu z gwiazd.
+ch1/06-mooncore/2bedofstars-1-seq-02	Na niebie, lecz nadal w podziemiu.
+ch1/06-mooncore/3performedtrick-1-seq-01	W jasnym blasku Księżyca
+ch1/06-mooncore/3performedtrick-1-seq-02	Skejter wykonał trik.
+ch1/06-mooncore/4firstpopshuvitdone-1-seq-01	Triki Skejtera zadawały Księżycowi obrażenia.
+ch1/06-mooncore/4firstpopshuvitdone-1-seq-02	Przy szybkiej jeździe triki zadawały większe obrażenia.
+ch1/06-mooncore/5kickflip-1-seq-01	Gwałtowne rozbłyski szybko gasły.
+ch1/06-mooncore/5kickflip-1-seq-02	Trik powtarzany w kółko robi się <color=red>oklepany</color>.
+ch1/06-mooncore/5kickflip-1-seq-03	Różne triki zachowują <color=green>świeżość</color>.
+ch1/06-mooncore/5kickflip-1-seq-04	Skejter znał idealny trik, by coś zmienić.
+ch1/06-mooncore/5kickflip-1-seq-05	Podstawowy, legendarny klasyk.
+ch1/06-mooncore/6firstkickflipdone-1-seq-01	Legendarny kickflip zadaje większe obrażenia, ale szybko się nudzi.
+ch1/06-mooncore/ranout-1-seq-01	Dusza Skejtera się wyczerpała, więc ta wieczność zaczęła się od nowa.
+ch1/02-rise/intro-1-seq-01	Z PIEKIELNYCH PŁOMIENI\nDEMON ZE SZKŁA I BÓLU
+ch1/05-L0/6ollietimingtut-1-seq-02	Idealnie wyczuty ollie wybija wyżej.\n
+ch1/05-L0/ollie-tut-description	Z obiema stopami na desce\nprzytrzymaj, a następnie puść.
+UI/ArchwayMessage-LEFT	ŁUK
+UI/ArchwayMessage-RIGHT	OTWARTY
+UI/Contract-Addendum-1	Aneks I.
+UI/Contract-Evaluation	Umowa oceny
+UI/Contract-Evaluation-Desc	Podpisując tę umowę, „Oceniający” zobowiązuje się ocenić „Podmiot”.\n\n„Oceniający” zgadza się sprawiedliwie oceniać „Podmiot” przez określony czas („Okres”).
+UI/Controls/Expired	Wygasło
+UI/Controls/Manual	Manual
+UI/Controls/Manual-pronounce	ma·nu·al
+UI/Controls/Manual-tut-desc	Utrzymuj równowagę na dwóch kółkach.
+UI/Controls/MoonVision	Księżycowy Wzrok
+UI/Controls/MoonVision-TwoLine	KSIĘŻYCOWY\nWZROK
+UI/Controls/Ollie	Ollie
+UI/Controls/Powerslide	Powerslide
+UI/Controls/Powerslide-Turn	Skręt\nw lewo lub w prawo
+UI/Controls/Reset-Camera	Wycentruj\nkamerę
+UI/Controls/ResurrectAtMark	Odrodź się przy znaku
+UI/Controls/Revert	Revert
+UI/Controls/SkatersMark	Znak Skejtera
+UI/Controls/Stomp	Tupnij
+UI/Controls/Stomped	Tupnięcie
+UI/Controls/stomp tut 1-header	Kończące tupnięcie
+UI/Controls/stomp tut 2-body 1	Wykonuj triki, by zwiększać *combo*KOMBO*combo*.\n\nZakończ kombo *stomp*TUPNIĘCIEM*stomp*, by zadać obrażenia.
+UI/Controls/stomp tut 3-body 2	Naciśnij w powietrzu, zanim wylądujesz.
+UI/Controls/stomp tut 3-body 3	*blu*Tupnij*blu*, by *blu*zakończyć kombo*blu* i zadać obrażenia.\nIm więcej trików w kombo, tym większe obrażenia.
+UI/Controls/stomp tut 4 hint	Tupnij w projekcję Księżyca, by zadać obrażenia.
+UI/CreditsSplash-body	SKATE STORY powstało dzięki wsparciu moich przyjaciół i rodziny, innych twórców gier, skejterów spotkanych na ulicy, rozmaitych narzędzi open source oraz baristów w kawiarni.\n\nMuzyka: Blood Cultures\nDodatkowe utwory: John Fio\nWydawca: Devolver Digital
+UI/Customize-btn-Deck	Blat
+UI/Customize-btn-Stickers	Naklejki
+UI/Customize-btn-Trucks	Trucki
+UI/Customize-btn-Tune	Regulacja
+UI/Customize-btn-Wheels	Kółka
+UI/DemoFinish-0header	Dzięki za zagranie w demo\nSKATE STORY.
+UI/DemoFinish-1body	To demo zawierało pierwszy z dziewięciu rozdziałów.\n\nMam nadzieję, że ta wczesna wersja ci się spodobała.\n\nZapisz się na listę mailingową,\nby dowiedzieć się o premierze gry.
+UI/DemoSplash-body	To demo zawiera pierwszy rozdział <i>SKATE STORY</i>.\n\nWszystkie elementy są w trakcie prac i mogą się jeszcze zmienić.
+UI/DevourMoon-header	Pożreć Księżyc?
+UI/EternityLock-subtitle-01	Skejter został odesłany z powrotem w Wieczność.
+UI/Gameplay/AutoResetCamera	Automatyczne centrowanie kamery
+UI/Gameplay/CameraDistance	Odległość kamery
+UI/Gameplay/ComboDecay	Spadek kombo
+UI/Gameplay/ComboTimer	Czasomierz kombo
+UI/Gameplay/InvertYAxis	Odwróć oś Y
+UI/Gameplay/LookSensitivity	Czułość rozglądania
+UI/Gameplay/PortalSlomo	Spowolnienie w portalach
+UI/Gameplay/StompSlomo	Wyłącz spowolnienie przy tupnięciu
+UI/Generic/Combo	Kombo
+UI/Generic/Currency-Price	Cena
+UI/Generic/Currency-Soul	Dusza
+UI/Generic/Description	Opis
+UI/Generic/Ender	ZAKOŃCZENIE
+UI/Generic/Runtime	CZAS
+UI/Generic/Setting-ForcedOn	Zawsze włączone
+UI/Generic/Setting-Fullscreen-Exclusive	Pełny ekran
+UI/Generic/Setting-Fullscreen-Maximixed	Zmaksymalizowane okno
+UI/Generic/Setting-Fullscreen-Window	Okno bez ramek
+UI/Generic/Setting-Fullscreen-Windowed	Okno
+UI/Generic/Setting-Ultra	Ultra
+UI/Generic/SoldOut	Wyprzedane
+UI/Generic/SpecialThanks	Specjalne podziękowania
+UI/Highscore-Evaluation	Ocena
+UI/Highscore-Impress	Zaimponuj
+UI/Highscore-Impress-SkatersSoul	Zaimponuj Duszy Skejtera
+UI/Highscore-Maintain	Utrzymuj
+UI/Highscore-Reach	Osiągnij
+UI/InteractPrompt-Memorize	Zapamiętaj
+UI/InteractPrompt-MoonTrial	Księżycowa Plama
+UI/Inventory-Subtitle-Gave	Przekazano
+UI/Inventory-Subtitle-Used	Użyto
+UI/MoonlitSpot	Księżycowa Plama
+UI/MoonlitSpot-body	Zakończ kombo *stomp*tupnięciem*stomp* wewnątrz *red*Księżycowej Plamy*red*, by ją zniszczyć.
+UI/MoonlitSpot-btn-Confirm	Rozpocznij Księżycową Plamę
+UI/MoonlitSpot-desc	Narośla znienawidzonego światła Księżyca.
+UI/PauseMenu-btn-(debug menu)	(menu debugowania)
+UI/PauseMenu-btn-Eject VHS	Wysuń VHS
+UI/PauseMenu-btn-Eject to Skater's Dream	Wróć do Snu Skejtera
+UI/PauseMenu-btn-End Run	Zakończ przejazd
+UI/PauseMenu-btn-Soul Ability	Zdolność duszy
+UI/PurchaseMenu-btn-Buy	Kup
+UI/PurchaseMenu-btn-NotEnoughSoul	Za mało duszy
+UI/Quit-Goodbye	DO WIDZENIA
+UI/SavingNotification-Saved	ZAPISANO
+UI/SavingNotification-Saving	ZAPISYWANIE...\nNIE WYŁĄCZAJ GRY
+UI/SavingNotification-Warning	NIE WYŁĄCZAJ GRY
+UI/Setting-Camera-FieldOfView	Pole widzenia
+UI/Setting-Camera-FocalLength	Ogniskowa
+UI/Settings-Debug-btn-Debug Overlay	Nakładka debugowania
+UI/Settings-Debug-btn-Flags	Flagi
+UI/Settings-Debug-btn-Loc Keys	Klucze lokalizacji
+UI/Settings-Debug-btn-Logger	Dziennik
+UI/Settings-Debug-btn-Vars	Zmienne
+UI/Settings-Debug-header	Debugowanie
+UI/Settings-Gameplay-btn-Auto Reset Camera	Automatyczne centrowanie kamery
+UI/Settings-Gameplay-btn-Camera Distance	Odległość kamery
+UI/Settings-Graphics-btn-Ambient Occlusion	Okluzja otoczenia
+UI/Settings-Graphics-btn-Anisotropic Filtering	Filtrowanie anizotropowe
+UI/Settings-Graphics-btn-ColorBleed	Rozlewanie kolorów
+UI/Settings-Graphics-btn-ColorProfile	Profil kolorów
+UI/Settings-Graphics-btn-Fisheye	Rybie oko
+UI/Settings-Graphics-btn-FramerateCap	Limit klatek
+UI/Settings-Graphics-btn-Gamma	Gamma
+UI/Settings-Graphics-btn-Per-Object Motion Blur	Rozmycie ruchu obiektów
+UI/Settings-Graphics-btn-QualityMode	Tryb jakości
+UI/Settings-Graphics-btn-QualityMode-Fidelity	Jakość
+UI/Settings-Graphics-btn-QualityMode-Performance	Wydajność
+UI/Settings-Graphics-btn-Resolution	Rozdzielczość
+UI/Settings-Graphics-btn-ScreenMode	Tryb ekranu
+UI/Settings-Graphics-btn-Screenspace Global Illumination	Oświetlenie globalne w przestrzeni ekranu
+UI/Settings-Graphics-btn-Screenspace Reflections	Odbicia w przestrzeni ekranu
+UI/Settings-Graphics-btn-Shadow Quality	Jakość cieni
+UI/Settings-Graphics-btn-Sharpness	Ostrość
+UI/Settings-Graphics-btn-Texture Resolution	Rozdzielczość tekstur
+UI/Settings-Graphics-btn-Vsync	Synchronizacja pionowa
+UI/Settings-PlayerHealth	Zdrowie gracza
+UI/Settings-PushOnForwardInput	Odpychanie przy ruchu naprzód
+UI/Settings-PushToggle	Odpychanie przełącznikiem
+UI/Settings-TrickDamage	Obrażenia od trików
+UI/Settings-TrickMode	Tryb trików
+UI/Settings-TrickMode-Auto	Automatyczne triki
+UI/Settings-btn-Camera Handheld	Drgania kamery
+UI/Settings-btn-Camera Tumble	Obracanie kamery przy upadku
+UI/Settings-btn-Debug	Debugowanie
+UI/SignatureField	Podpis
+UI/Soul-Expiry-Timer	DUSZA\n\n\nWAŻNOŚĆ
+UI/Soul-Expiry-Timer-top	DUSZA\n\n\nWAŻNOŚĆ
+UI/Stats-Playtime-Session-Label	Sesja
+UI/Stats-Playtime-Total-Label	Łączny czas gry
+UI/StickerMachine-body	Użyć automatu z naklejkami?
+UI/TrickList-Advanced	Zaawansowane
+UI/TrickList-Basic	Podstawowe
+UI/TrickList-Grinds	Grindy
+UI/TrickList-Header	Lista trików
+UI/Tune-Renew	Odnów
+UI/Tune-Renew-AskRenew-Desc	Wszystkie naklejki i ślady zużycia zostaną usunięte.
+UI/Tune-Renew-AskRenew-Header	Odnowić ten blat?
+UI/Tune-Truck-Loose	Luźne
+UI/Tune-Truck-Tight	Ciasne
+UI/Tune-Truck-Tightness	Dokręcenie
+UI/Tutorial-Spin-Desc	Skręć w lewo lub w prawo i naciśnij dwukrotnie, by wybić się i obrócić.
+UI/Tutorial-Spin-Header	Obroty
+UI/cant-skate-1	Skejter nie odważyłby się tu jeździć.
+UI/NewGamePlus-Ask	Zacznę od nowa.\n\n1. Cały postęp fabuły zostanie utracony.\n2. Odblokowane elementy zostaną zachowane.\n3. Wrogowie staną się silniejsi.
+UI/PauseMenu-btn-Photo Mode	Tryb fotograficzny
+Speaker/???	???
+Speaker/Philoso	Philoso
+Speaker/bagman	Detria
+Speaker/beea	Beea
+Speaker/bloodseer	Krwawy Wieszcz
+Speaker/cafesloucher	Kawiarniany Garbus
+Speaker/coney	Coney
+Speaker/devilpants	Spodnie Diabła
+Speaker/devilrobe	Szata Diabła
+Speaker/deviltail	Ogon Diabła
+Speaker/falsesun	Fałszywe Słońce
+Speaker/forestface	Leśna Twarz
+Speaker/frotue	Frotue
+Speaker/ghosto	Ghosto
+Speaker/happycube	Szczęśliwy Sześcian
+Speaker/headinwall	Oscar
+Speaker/larry	Larry
+Speaker/letterfromdod	List z Departamentu Śmierci
+Speaker/letterfromthedevil	List od Diabła
+Speaker/newscaster	Spiker
+Speaker/penin	Penin
+Speaker/philosopher	filozof
+Speaker/pigeon	Gołąb
+Speaker/rabbie	Rabbie
+Speaker/rocksinner	Skalny Grzesznik
+Speaker/sean	Sean
+Speaker/securitysloucher	Garbus Ochroniarz
+Speaker/shaun	Shaun
+Speaker/shawn	Shawn
+Speaker/shon	Shon
+Speaker/sinsscholar	Badacz Grzechów
+Speaker/skatersstone	Kamień Skejtera
+Speaker/skeleton	Szkielet
+Speaker/sloucher	Garbus
+Speaker/slub	Slub
+Speaker/stareyedrat	Gwiezdnooki Szczur
+Speaker/washingman	Wodd, Pracz
+Trick/modifier-air	W powietrzu
+Trick/modifier-down	W dół
+Trick/modifier-fast	Szybko
+Trick/modifier-fire	Ogień
+Trick/modifier-gap	Przeskok
+Trick/modifier-intoramp	Na rampę
+Trick/modifier-massive	Potężny
+Trick/modifier-offramp	Z rampy
+Trick/modifier-out	Wyjście
+Trick/modifier-outmanual	Wyjście z manuala
+Trick/modifier-over	Ponad
+Trick/modifier-soulbarrier	Bariera
+Trick/modifier-speed	Prędkość
+Trick/modifier-spike	Kolec
+Trick/modifier-spin	Obrót
+Trick/modifier-timing	Wyczucie czasu
+Trick/modifier-up	W górę
+chapters/card-end	KONIEC
+chapters/card-header	ROZDZIAŁ
+chapters/card-menu-btn-exit	Wyjdź do menu głównego
+chapters/card-menu-btn-next	Następny rozdział
+chapters/ch01-title	SZKLANY SKEJTER
+chapters/ch02-title	Ciepłe mleko
+chapters/ch03-title	Pranie Diabła
+chapters/ch04-title	Departament Śmierci
+chapters/ch05-title	Hellsea
+chapters/ch06-title	Godhook
+chapters/ch07-title	Kolacja
+chapters/ch08-title	Najczarniejszy Ogień
+chapters/ch09-title	Wieczna Stonoga
+chapters/ch10-title	Epilog
+chapters/tagline-1	Jesteś demonem
+chapters/tagline-2	Ze szkła i bólu
+chapters/tagline-3	A jednak musisz jeździć
+Levels/ch1-09-lyceum-name	Liceum
+Levels/ch1-10-giftshop-name	Sklep z upominkami
+Levels/ch10-15-slug-name	Pod podziemiem
+Levels/ch10-16-nycsky-name	Niebo nad Nowym Jorkiem
+Levels/ch2-03-bageland-name	Bageland
+Levels/ch2-04-bloodheights-name	Krwawe Wzgórza
+Levels/ch2-05-bloodheights-station-name	Stacja Krwawe Wzgórza
+Levels/ch2-06-sunkenst-name	Ulica Zatopiona
+Levels/ch2-08-telephone-name	Ulica Wrząca
+Levels/ch2-09-archlevel-name	Most Dreadboro
+Levels/ch2-12-boss-bloodlake-name	Krwawe Jezioro
+Levels/ch3-03-laundroma-name	Pralnia
+Levels/ch3-05-languishinsq-name	Plac Udręki
+Levels/ch3-06-flowershop-name	Kwiaty za uczucia
+Levels/ch3-06-meaningslobby-name	Fabryka Znaczeń
+Levels/ch3-07-boss-abyssalterrace-name	Taras Otchłani
+Levels/ch4-03-courtroom-name	Sala rozpraw
+Levels/ch4-05-blighthall-name	Sala Zarazy
+Levels/ch4-07-plazaofregrets-name	Plac Żalu
+Levels/ch4-08-waitinggrounds-name	Poczekalnia
+Levels/ch4-09-boss-marketofarrivals-name	Targ Przybyszów
+Levels/ch4-10-boss-retina-name	Siatkówka Krwawego Wieszcza
+Levels/ch5-05-moultst-name	Ulica Wylinki
+Levels/ch5-06-jewelstore-name	Giełda Jubilerska
+Levels/ch5-07-sludgeway-name	Szlamowy Trakt
+Levels/ch5-08-vaultwrath-name	Skarbiec Gniewu
+Levels/ch5-11-violetmoon-name	Ulica Wylinki
+Levels/ch6-05-glowisland-name	Godhook
+Levels/ch6-06-moonroom-ladder-name	Dom Żółtego Księżyca
+Levels/ch6-09-path-flowerglow-name	Aleja Świetlistego Woalu
+Levels/ch6-10-chainbridge-name	Most Świetlnej Linii
+Levels/ch7-01-banquet-name	Pałac Szczęścia
+Levels/ch8-02-path-bolgia-name	Dziesięć Jarów
+Levels/ch8-04-area-sinslabs-name	Biblioteka Grzechów
+Levels/ch8-06-boss-blackmoon-name	Krater Skamieniałego Ogrodu
+Levels/ch8-09-bosspath-skatersoul-name	Dziesięć Jarów
+Levels/ch8-12-boss-blackmoon-name	Krater Skamieniałego Ogrodu
+Levels/ch8-oblivion-4-name	Ulica Minus Sześćset Sześćdziesiąta Szósta
+Levels/ch9-04-path-skelle-name	Nieskończona Tchawica
+Levels/ch9-05-area-mouth-name	Okousta
+Levels/ch9-05-prelake-name	Głośnia Wiecznej Stonogi
+Levels/ch9-10-bossrush-name	Nieskończony Przewód
+Levels/ch9-path-riversix-name	Przełyk Wieczności
+Levels/depth-prefix	Głębia
+quests/moonvision-goal-DefeatthePhilosopher	Pokonaj Filozofa
+quests/moonvision-goal-Evaluation	Ocena
+quests/moonvision-goal-Exit	Wyjście
+quests/moonvision-goal-FurrowedEyes	Zmarszczone Oczy
+quests/moonvision-goal-GiftBox	Pudełko z upominkiem
+quests/moonvision-goal-GiftShop	Sklep z upominkami
+quests/moonvision-goal-GrindtheLedge	Zrób grind na krawędzi
+quests/moonvision-goal-HangtheLaundry	Rozwieś pranie
+quests/moonvision-goal-Mailbox	Skrzynka pocztowa
+quests/moonvision-goal-MoonProjection	Projekcja Księżyca
+quests/moonvision-goal-PenguinJewels	Klejnoty Pingwina
+quests/moonvision-goal-Philoso	Philoso
+quests/moonvision-goal-PlaceThinkpiece	Umieść Myślokształt
+quests/moonvision-goal-Rabbie	Rabbie
+quests/moonvision-goal-ReachthePhilosopher	Dotrzyj do Filozofa
+quests/moonvision-goal-ReachthePortal	Dotrzyj do portalu
+quests/moonvision-goal-SinsWall	Ściana Grzechów
+quests/moonvision-goal-Statue	Posąg
+boss/AdvancedTrickStudy	Studium zaawansowanych trików
+boss/BloodCrystal	Krwawy Kryształ
+boss/BloodSeer	Krwawy Wieszcz
+boss/BlueMoons	Niebieskie Księżyce
+boss/Eyemouth	Okousta Wiecznej Stonogi
+boss/FalseSun	Fałszywe Słońce
+boss/Fuss Walker	Kroczący Zgiełk
+boss/GreenMoon	Zielony Księżyc
+boss/GreyMoon	Szary Księżyc
+boss/HolyKarat	Święty Karat
+boss/LedgeStudy	Studium krawędzi
+boss/ManualStudy	Studium manuala
+boss/MoonShadow	Cień Księżyca
+boss/MoonlitSpot	Księżycowa Plama
+boss/Philosopher	Filozof
+boss/Red Moon	Czerwony Księżyc
+boss/SKATESPOT	Fioletowy Księżyc
+boss/ShardsSkatersSoul	Odłamki Duszy Skejtera
+boss/SkatersSoul	Dusza Skejtera
+boss/TheMoon	Księżyc
+boss/TongueEternalCentipede	Język Wiecznej Stonogi
+boss/TrashBag	Worek na śmieci
+boss/TwinMoons	Bliźniacze Księżyce
+boss/VioletMoon	Fioletowy Księżyc Hellsea
+tut/05-revert/0-1-seq-01	Skejter wykonał revert.
+tut/05-revert/1-1-seq-01	Wykonaj revert, by zmienić ustawienie nóg z naturalnego na switch lub odwrotnie.
+tut/05-revert/2-1-seq-01	Revert można wykonać w lewo i w prawo.
+tut/05-revert/3-1-seq-01	Revert można wykonać tylko na ziemi.
+tut/05-revert/4-1-seq-01	Revert pozwala szybko podtrzymać kombo.
+tut/05-revert/5-1-seq-01	Niektóre duszokwiaty można ściąć tylko revertem.
+tut/07-grind/01VideoMoon-1-seq-01	O GRINDACH
+tut/07-grind/01VideoMoon-1-seq-02	Grind to podstawa ulicznej jazdy na deskorolce.
+tut/07-grind/01VideoMoon-1-seq-03	Podczas grindu Skejter ślizga się po krawędzi.
+tut/07-grind/01VideoMoon-1-seq-04	Skejter szoruje metalowymi truckami po ostrej krawędzi lub poręczy.
+tut/07-grind/01VideoMoon-1-seq-05	Dla niektórych demonów grind to najpiękniejszy z dźwięków.
+tut/07-grind/01VideoMoon-1-seq-06	Dla innych — najstraszliwszy zgrzyt.
+tut/07-grind/02ledge-1-seq-01	Księżyc odbił wieczną formę idealnej krawędzi.
+tut/07-grind/02ledge-1-seq-02	Skejter wykona na niej grind.
+tut/07-grind/051inspectpop-1-seq-01	I. WYBICIE
+tut/07-grind/051inspectpop-1-seq-02	Najtrudniejsza część. Wybij się tuż przed krawędzią.\nWyląduj prosto na niej.
+tut/07-grind/052inspectgrind-1-seq-01	II. GRIND
+tut/07-grind/052inspectgrind-1-seq-02	Złap równowagę. Jedź po krawędzi. Odpuść sterowanie. Nie przechylaj się na boki.
+tut/07-grind/053inspectdismount-1-seq-01	III. ZEJŚCIE\n
+tut/07-grind/053inspectdismount-1-seq-02	Przechyl się na dowolną stronę.\nAlbo wykonaj trik, wybijając się z krawędzi.
+tut/10-advtricks/01header	Studium zaawansowanych flipów
+tut/10-advtricks/20tricked01-1-seq-01	Skejter wykonał zaawansowany flip.
+tut/10-advtricks/20tricked02-1-seq-01	Kombo zakończone zaawansowanym trikiem zadaje ogromne obrażenia.
+tut/10-advtricks/20tricked03-1-seq-01	Trudniej jednak idealnie wyczuć moment wykonania.
+tut/10-advtricks/20tricked04-1-seq-01	Zaawansowane triki mają niższe wybicie niż prostsze triki.
+poems/ch01-poem-body	Głodny i zmęczony,\ndemon ze szkła i bólu\njechał ku Księżycowi, by go pożreć.\n\nDemon związany paktem z Diabłem,\nz umową owiniętą wokół szyi —\ndusza w dzierżawie na czas tej wyprawy.\n\nOczy drżały od pisku kół na rozpalonej ziemi.\nKamiennogłowi Filozofowie rozważali niewykonalną misję szklanego demona.\n\nSkejter przebił szary Księżyc i połknął go w całości,\nzapłonęło smakowite ciepło, a potem\npęknięte szkło zwymiotowało ciężkim kredowym popiołem.\n\nWieczna Stonoga wykrzyczała kołysankę w niebo ciemnej groty,\ngdy Skejter opadał w sen,\na szklane oczy, załamujące światło, ujrzały wyraźnie\n\nBlask Siedmiu Księżyców.
+poems/ch02-poem-body	Wypite, wessane, otulone, elektryczne delikatesy\nwchłonęły tęskną miłość do przeszłości.\nZapominalska Żaba zaopiekowała się Skejterem.\n\nKubek Mleka zmienił Geometrię Diabła i rozgrzał Skejtera.\nMinął brzęczące ogrodzenia, które miały powstrzymać bezgrzesznych.\nDiabeł nie patrzył. Tylko inne udręczone dusze grymasiły i krzyczały:\n\n„Przepadło! Gdzie nasze porzucone skrzynie wina,\nNasze smugi oddalających się tylnych świateł?\nOdbicia Księżyca umazanego różem?”\n\nSkejter jechał wewnątrz Projekcji Księżyca,\nPotem siedział bez ruchu i chłonął ją. Zapadł się — wygodnie.\nw prześcieradła ze starymi właścicielami splecionymi pojedynczo.\n\nGdy Księżyc pływał w żołądku pełnym Mleka, Skejter wiedział, że zjedzenie\nwszystkich siedmiu Księżyców wypełni tę głodną pustkę,\na wtedy Diabeł uwolni dzierżawioną duszę.
+poems/ch03-poem-body	Bliźniacze Księżyce świeciły, płacząc, Królik leżał we śnie.\n„Zaproszenie od Diabła na dzisiejszą Kolację”,\nczytał Królik sennie z listu spalonego przy łóżku.\n\nPrzebite dwukrotnie, połknięte bez oglądania.\nDwa Księżyce w żołądku dały już Trzy.\n\nW małym mieszkaniu Królik rzekł do Skejtera:\n„Bankiet będzie modny, w czystych ubraniach Diabła.\nŚpij już na tym łożu świeżego śniegu”.\n\nOdpływał, opadał coraz głębiej.\nPęknięcia szkła stawały się znużone i ciemniejsze.\n\nOpadała dusza niczym kamień.
+poems/ch04-poem-body	W Departamencie Śmierci\nżylaste sługi Zgiełku wysuwały cienie\nz kamiennych szaf, by składać święte dokumenty.\n\nDrobny Zgiełk zbudził Skejtera ze snu.\nSnu, który był tu zakazany. Zatem do sądu.\nKtóż szydził ze Skejtera, jeśli nie Krwawy Wieszcz.\n\n„BADANIE TWOJEJ DUSZY\nNIE WYKAZUJE WAŻNEJ UMOWY\nNA POŻERANIE TYCH KSIĘŻYCÓW”.\n\nSkejter odwołał się więc rozwlekłą poezją,\nutkaną z liter w powietrzu, spisaną przez udręczonego gołębia.\nOdwołanie owinęło się wokół siebie w diabelską wstęgę Möbiusa.\n\nPapierowy trik wyciągnął Wieszcza ze strumienia dusz.\nNagłym szarpnięciem Skejter odcisnął się na jego siatkówce,\nłkając flipami i napiętymi grindami.\n\nWbrew poprawnym dokumentom, wewnątrz Wieszcza\nSkejter, już zbieg, pożarł surowo\nKsiężyc kwaśny jak jabłko.\n
+poems/ch05-poem-body	Przeniknąwszy przez czysty sen, Skejter\numykał Zgiełkowi ulicami ciemno połyskującego szlamu.\nTu pingwin napędzany Gniewem miał akt własności Księżyca.\n\nJego dziób wśród płetw snuł niezwykłą opowieść o Świętym Karacie,\nklejnocie z czterdziestu tysięcy sprasowanych dusz,\nwartym jedną wolność w tej mrocznej krainie.\n\nSkejter przedzierał się przez szlam i łodygi,\naż znalazł ten Karat. W pościgu klejnot starł się na pył.\n\nGdy Skejter wrócił pod koniec nocy, gniewny pingwin\nna złość podarł swój Fioletowy Akt na cienkie paski.\nOch, jak Księżyc rozpadł się na smugi i pomknął w powietrze.\n\nKsiężyc rozproszył się, pokrywając szare skały chorobliwie fioletowymi chmurami.\n„Stonoga!” — ostrzegł Królik. „Czuje ten\npył. Chce zjeść Księżyc, tak jak ty, by zasnąć”.\n\nGdy Zgiełk zstępował, by dokonać aresztowania,\nSkejter wciągnął głęboko gęstą noc,\nby wtańczyć kredowy pył Księżyca do szklanych płuc.
+poems/ch06-poem-body	Zgiełk szukał Skejtera w tym raju głupców.\nKraina pod władzą Księżyca nieregularnych prawd,\nku której zstępowała Wieczna Stonoga. \n\nMiraże Fałszywego Słońca śpiewały jeden przez drugi,\n\nDemonie skejterze, połykaczu, trawicielu\nwszystkich Widmowych Księżyców”.\n\n„Czas na Bankiet” — rozbłysło.\nPrawda najpierw uderzyła w żołądek, szorstka w szklanych żyłach,\nspłynęła łzami niżej, ku tłumowi cieni.\n
+poems/ch07-poem-body	Oddał deskę i buty.\nNie było misji ani umowy,\ntylko bezsensowny, nienasycony głód.\n\nJak Księżyce mogłyby być tu prawdziwe?\nZaledwie miraże ze znienawidzonego światła.\nZaledwie wytwory porzuconych żyć.\n\nSkejter był\nZaledwie demonem.\n\nMisja była\nZaledwie pragnieniem.\n\nSkejter siedział, a demony patrzyły.
+poems/ch08-poem-body	Demon siedział w Nieskończonym Przewodzie,\nodarty z Duszy i Księżyców.\n\nObrazy demonów i dusz migały w rzece oleju,\nunoszącej je w coraz ciemniejsze noce.\n\nDeskorolka sięgnęła po Demona\ni rozbiła odłamki jeszcze drobniej, w barwny pył,\naż Dusza Skejtera wykrzyczała wspaniały pożar.\n\nNajczarniejszy Ogień stopił\nchmury w dym,\nkryształy w płomienie.\n\nDemon odrodził się, odprężony.\n\n
+poems/ch09-poem-body	Całe podziemie stanęło, by patrzeć, jak nocne niebo\nkruszy się, gdy ten nieskończenie długi Robak pęka na dwoje.\n\nChoć ogon wciąż był wiecznie długi,\nczerwone oko zapiszczało skończoną liczbą altówek.\n\nSkejter rozorał metalowy pancerz od środka,\nwyrywając Księżyce z trawiennej pustki.\n\nWymiotuj! Wymiotuj!\nKsiężyce wyszły na zewnątrz.\n\nWymiotuj!\nKażda dusza ujrzała —\nZnienawidzone barwy zastąpione,\nbezsens odzyskany.\n\nSkejter wypluł duszę\nna nowo.
+poems/ch10-poem-body	Szorstka sierść Diabła wciąż ciemna,\nnawet u kresu nocy.\n\nKryształowy ślimak sunął\npo posłaniu z gwiazd nad\nNowym Jorkiem.\n\nJeździł na deskorolce,\nchoć był ślimakiem.\n\nPo jeździe\njego sól pokryła dawnych demonicznych przyjaciół.\n\n„Uczta, chodźcie, chodźcie!”\n\nJechali pociągiem ponad niebem,\nwyłaniając się zza\nciemnej strony Księżyca.
+Achievement/ach-01-1name	SZKLANY SKEJTER
+Achievement/ach-01-2desc	Ukończ rozdział 1.
+Achievement/ach-02-1name	CIEPŁE MLEKO
+Achievement/ach-02-2desc	Ukończ rozdział 2.
+Achievement/ach-03-1name	PRANIE DIABŁA
+Achievement/ach-03-2desc	Ukończ rozdział 3.
+Achievement/ach-04-1name	DEPARTAMENT ŚMIERCI
+Achievement/ach-04-2desc	Ukończ rozdział 4.
+Achievement/ach-05-1name	HELLSEA
+Achievement/ach-05-2desc	Ukończ rozdział 5.
+Achievement/ach-06-1name	GODHOOK
+Achievement/ach-06-2desc	Ukończ rozdział 6.
+Achievement/ach-07-1name	KOLACJA
+Achievement/ach-07-2desc	Ukończ rozdział 7.
+Achievement/ach-08-1name	NAJCZARNIEJSZY OGIEŃ
+Achievement/ach-08-2desc	Ukończ rozdział 8.
+Achievement/ach-09-1name	WIECZNA STONOGA
+Achievement/ach-09-2desc	Ukończ rozdział 9.
+Achievement/ach-10-1name	SKATE STORY
+Achievement/ach-10-2desc	Ukończ epilog.
+Achievement/ach-11-1name	Skejter wykonał trik.
+Achievement/ach-11-2desc	Wykonaj 100 trików.
+Achievement/ach-12-1name	W świetle Księżyca...
+Achievement/ach-12-2desc	Wykonaj 1000 trików.
+Achievement/ach-13-1name	Przez kilka wieczności
+Achievement/ach-13-2desc	Wykonaj 10 000 trików.
+Achievement/ach-14-1name	Piekielne płomienie
+Achievement/ach-14-2desc	Zakończ tupnięciem kombo powyżej 20 000.
+Achievement/ach-15-1name	Nie możesz tu jeździć!
+Achievement/ach-15-2desc	Zakończ tupnięciem kombo powyżej 50 000.
+Achievement/ach-16-1name	Czysty pęd
+Achievement/ach-16-2desc	Zakończ tupnięciem kombo powyżej 99 999.
+Achievement/ach-17-1name	JESTEŚ DEMONEM
+Achievement/ach-17-2desc	Roztrzaskaj się przy dużej prędkości 25 razy.
+Achievement/ach-18-1name	ZE SZKŁA I BÓLU
+Achievement/ach-18-2desc	Roztrzaskaj się przy dużej prędkości 100 razy.
+Achievement/ach-19-1name	MUSISZ JEŹDZIĆ
+Achievement/ach-19-2desc	Roztrzaskaj się przy dużej prędkości 500 razy.
+Achievement/ach-20-1name	Kolekcjoner blatów
+Achievement/ach-20-2desc	Zbierz 18 blatów deskorolki.
+Achievement/ach-21-1name	Album z naklejkami
+Achievement/ach-21-2desc	Umieść 100 naklejek.
+Achievement/ach-22-1name	Filozoskejter
+Achievement/ach-22-2desc	Zaszczep miłość do jazdy na deskorolce.
+Achievement/ach-23-1name	Wieczne więzy
+Achievement/ach-23-2desc	Zerwij Łańcuch Żalu.
+Achievement/ach-24-1name	Symetria Diabła
+Achievement/ach-24-2desc	Wykonaj diaboliczną sekwencję.
+Achievement/ach-25-1name	A JEDNAK...
+Achievement/ach-25-2desc	Daj olśniewający popis.
+Achievement/ach-26-1name	Nieświadomość
+Achievement/ach-26-2desc	Znajdź sens w pustce.
+Achievement/ach-27-1name	Platynowe trofeum
+Achievement/ach-27-2desc	Zdobądź wszystkie osiągnięcia.
+__DARKPLACE/01darkplacetut-1-seq-01	Sen Skejtera
+__DARKPLACE/01darkplacetut-1-seq-02	Niewyblakłe asfaltowe wzgórza w lekkim deszczu.
+__DARKPLACE/01darkplacetut-1-seq-03	Tu Skejter znalazł chwilę wytchnienia.
+__DARKPLACE/01darkplacetut-1-seq-04	Ogromne zapadlisko prowadziło z powrotem do podziemia.
+__DARKPLACE/20showskatersmark-1-seq-01	Hej, Skejterze.\nMiło tu, w twojej duszy. Nawet spokojnie.\nTo zapadlisko prowadzi z powrotem do podziemia...\nAle zanim pójdziesz, spójrz tam!
+__DARKPLACE/20showskatersmark-1-seq-02	Ktoś zostawił ci złowieszczy prezent.
+__DARKPLACE/20showskatersmark-1-seq-03	Demoniczne pudełko z upominkiem. Jak miło! Jak troskliwie!
+__DARKPLACE/20showskatersmark-1-seq-04	Nie zapomnij deskorolki!
+__DARKPLACE/21lookgiftskatersmark-1-seq-01	Diaboliczny upominek. Zapewne od Diabła.
+__DARKPLACE/22opengiftskatersmark-1-seq-01	W pudełku był Znak Skejtera.
+__DARKPLACE/23skatersmarkamb1-1-seq-01	W niektórych miejscach Skejter mógł zapalić Znak na ziemi.
+__DARKPLACE/24waitforresurrect-1-seq-01	Skejter mógł szybko odrodzić się przy Znaku.
+__DARKPLACE/24waitforresurrect-1-seq-02	Dzięki temu mógł jeździć w tym samym miejscu raz za razem.
+__DARKPLACE/24waitforresurrect-1-seq-03	Prezent godny Diabła.\nSposób, by umrzeć, by jeździć — a może to powtórzyć.
+ch10/0/coney-1-seq-01	Łał, ślimak!\nHej, mały przyjacielu!\nJak się masz? Widziałeś naszego kumpla?\nTakiego szklanego demona?
+ch10/0/frotue-1-seq-01	Hej, ślimak na desce!\nCześć, mały ślimaku!\nAleż masz jedwabisty olej.\nWidziałeś naszego kumpla Skejtera?\n
+ch10/0/philosopher-1-seq-01	Ciekawe.\nMożna by oczekiwać, że fizyka rozwiąże to inaczej.\nLecz cóż daje większą wolność niż bycie tym, kim się naprawdę jest?
+ch10/0/rabbit-1-seq-01	Och...!\nTu jesteś!\nChodźmy, wszyscy czekają.
+ch10/15-slug/00lookedforskater-1-seq-01	Szukali Skejtera.
+ch10/15-slug/00lookedforskater-1-seq-02	Szukali wszędzie.
+ch10/15-slug/00lookedforskater-1-seq-03	Za Liceum.
+ch10/15-slug/00lookedforskater-1-seq-04	W Departamencie Śmierci.
+ch10/15-slug/00lookedforskater-1-seq-05	Zajrzeli nawet do lodówki w Le Bageland.
+ch10/15-slug/00lookedforskater-1-seq-06	Nie mogli znaleźć Skejtera.
+ch10/15-slug/00lookedforskater-1-seq-07	W końcu weszli więc do nowej rozpadliny w lodowym jeziorze.
+ch10/15-slug/00lookedforskater-1-seq-08	Przejechali pod wodospadem zamarzniętych dusz, by odnaleźć Skejtera.
+ch10/15-slug/00lookedforskater-1-seq-09	Pod lodowym jeziorem, pod dziewięcioma głębiami, pod całym podziemiem.
+ch10/15-slug/00lookedforskater-1-seq-10	A za rozpadliną znaleźli kolejną pustkę.
+ch10/15-slug/00lookedforskater-1-seq-11	Pod tą pustką leżało miasto jaśniejsze od gwiazd.
+ch10/15-slug/01intro-1-seq-01	Wyszli na niebo nad lśniącym miastem, szukając Skejtera.
+ch10/15-slug/01intro-1-seq-02	Ale nie mogli go znaleźć.
+ch10/15-slug/01intro-1-seq-03	Został tylko mały kryształowy ślimak.
+ch10/15-slug/01intro-1-seq-04	Sunący po posłaniu z gwiazd.
+ch10/16-nycsky/01intro-1-seq-01	W najgłębszej głębi, pod miastem, nad gwiazdami, była Wieczna Stonoga.
+ch10/16-nycsky/10coneytalk-1-seq-01	O, cześć, mały ślimaczy kumplu!\nŚlimak na desce!\nJak się masz?\nCo robisz tak głęboko?\nSzukamy przyjaciela... też jeździ na desce, jak ty.\nWiesz, taki ze szkła. Kojarzysz?\nHmm, muszę zajrzeć za tamte gwiazdy.
+ch10/16-nycsky/11philotalk-1-seq-01	Ślimak, który jeździ na desce.\nCiekawe.\nByć może to właśnie czeka za podziemiem.\nZastanówmy się jednak.\nCzy ślimak na desce nadal porusza się ślimaczym tempem?\nOto moje rozważanie.
+ch10/16-nycsky/12rabbietalk-1-seq-01	Och!\nAle mnie zaskoczyłeś!\nŚlimak na deskorolce!\nGdzie znalazłeś tę deskę?\n
+ch10/16-nycsky/12rabbietalk-1-seq-02	Należy do mojego przyjaciela!\nZaraz...\nTo ty?\nSzklany Skejter...\nJest ślimakiem?!
+ch1/07-splitmoon/0piercedmoon-1-seq-01	Dusza Skejtera przebiła Księżyc.
+ch1/07-splitmoon/1dontdothat-1-seq-01	„Skejter rozłupał Księżyc!” — zawołały Oczy.
+ch1/07-splitmoon/1dontdothat-1-seq-02	„Tak nie wolno!” — powiedziały Oczy. „Bez Księżyca dusza mogłaby uciec!”
+ch1/07-splitmoon/1dontdothat-1-seq-03	„Nie możemy do tego dopuścić! Nie, nie, nie”.
+ch1/07-splitmoon/1dontdothat-1-seq-04	„Nie, nie możemy”.
+ch1/07-splitmoon/1dontdothat-1-seq-05	„Schwytać Skejtera”.
+ch1/08-captureskater/0seizingdemon-1-seq-01	„ZATRZYMANIE DEMONA”.
+ch1/08-captureskater/1kneeldemon-1-seq-01	„DEMON SCHWYTANY”
+ch1/08-captureskater/1kneeldemon-1-seq-02	„NA KOLANA, DEMONIE”
+ch1/08-captureskater/1kneeldemon-1-seq-03	„Doszło mnie, że jeździsz na deskorolce”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-01	„Grzech nad grzechy”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-02	„ZAKAZ JAZDY NA DESKOROLCE”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-03	„GRZECH NR 59484”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-04	„DEPORTOWAĆ DEMONA”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-05	„Tak, prawo zakazuje jazdy na deskorolce”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-06	„Jednak ten Demon ma teraz w ciele Księżycowy Wzrok”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-07	„Misja pożarcia Księżyca na mocy umowy. Warta OCENY”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-08	„OCENA ZBĘDNA. GRZECH OZNACZA DEPORTACJĘ. ZAKŁÓCACIE MÓJ SEN”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-09	„Być może, lecz to moja Głębia”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-10	„Uważam ją za konieczną. Tak nakazuje procedura”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-11	„Zatrzymam demona w moim Liceum”.
+ch1/08-captureskater/2sinbeyondsin-1-seq-12	„Wracaj spać. Ten skejter nie będzie ci już przeszkadzał”.
+ch1/09-lyceum/00lyceumintro-1-seq-01	Skejtera zaprowadzono do Liceum.
+ch1/09-lyceum/01lyceum-name	Liceum
+ch1/09-lyceum/01lyceum-subtitle	To miejsce wędrówek i rozmyślań.\nPanaceum podziemia.
+ch1/09-lyceum/11lookblocked-1-seq-01	Zapieczętowane rytuałem.
+ch1/09-lyceum/1philwelcome-1-seq-01	Witaj w moim Liceum.\nTo miejsce wędrówek i rozmyślań.\nPanaceum podziemia.\nZapomnij o tej głupiej misji pożarcia Księżyca.\nOdkrywaj. Rozważaj. Rozmyślaj.\nPozwolę ci nawet „jeździć” po moim świętym betonie.\nChłoń spokojne piękno moich nasyconych duszami włości.\nZ czasem i ty roztopisz się w asfalcie.\nDołączysz do niezliczonych dusz spoczywających w pokoju.\nOczywiście to zalecana możliwość.\nCzymże byłaby wolna wola bez wyboru?\nJeśli pragniesz odejść, mogę na to pozwolić.\nOdejść mogą tylko ci, którzy przejdą OCENĘ.
+ch1/09-lyceum/1philwelcomerepeat-1-seq-01	Jeśli chcesz przejść OCENĘ, przynieś mi po prostu dwa **Myślokształty**.
+ch1/09-lyceum/1philwelcomerepeat-1-seq-02	Umieść **Myślokształty** na Retorycznych Postumentach.
+ch1/09-lyceum/1philwelcomerepeat-1-seq-03	Albo porzuć swą księżycową misję...\nObejrzyj moje ogrody, to miejsce, które zbudowałem.\nZadumaj się nad wspaniałym Sklepem z Upominkami i szczęśliwymi posągowymi obywatelami.
+ch1/09-lyceum/1philwelcomerepeat-1-seq-04	Porzuć tę niemądrą misję. Zostań i rozmyślaj przez wieczność.
+ch1/09-lyceum/2rabbit1pssst-1-seq-01	„Psst! Skejterze!” — Królik czaił się w ukryciu.
+ch1/09-lyceum/2rabbit1pssst-1-seq-02	Gdy rozłupałeś Księżyc, pocałowałeś go?<br>To bardzo, bardzo nielegalne.\nPrzez twoje szklane ciało widzę *blu*Księżycowy Wzrok*blu*.\nTak, nie zamierzałem czekać, aż nas złapią. Teraz jesteś naznaczony...
+ch1/09-lyceum/2rabbit1pssst-1-seq-03	To Liceum ma zmusić cię do myślenia, wiecznego myślenia, przez całą wieczność.\nRaz utknąłem na miesięcznym wykładzie o znaczeniu marchewek.
+ch1/09-lyceum/2rabbit1pssst-1-seq-04	Więc jeśli chcesz pożreć Księżyc... musisz przejść tę głupią OCENĘ Filozofa.
+ch1/09-lyceum/2rabbit1pssst-1-seq-05	Może gdzieś tutaj znajdziesz te dwa Myślokształty...
+ch1/09-lyceum/2rabbit2lookthinkpiece-1-seq-01	Wizerunki Filozofa. Na głowie ma Myślokształt.\nUwielbiają unosić się i rozmyślać.
+ch1/09-lyceum/2rabbit2lookthinkpiece-1-seq-02	Tak czy inaczej, chyba zrobiłem już swoje.\nSpójrz przez swoje ramię — *blu*Księżycowy Wzrok*blu* wskaże ci drogę.\nUmieram z głodu od tego biegania...\nDo jutra, Skejterze.
+ch1/09-lyceum/2rabbit2lookthinkpiece-1-seq-03	Królik zniknął jak obłoczek.
+ch1/09-lyceum/9phildonegotthinkpieces-1-seq-01	Hm. W istocie.\nTe dwa *blu*Myślokształty*blu* wystarczą.\nWejdź do *b*Retorium*b*, a poddam cię OCENIE.\nPrzygotuj się. Czas będzie odmierzany.
+ch1/09-lyceum/FSPOPSHUVITTEXT-1-seq-01	Frontside Pop Shuvit.\n(Znany też jako: FS Pop Shuvit, Front Pop).
+ch1/09-lyceum/FSPOPSHUVITTEXT-1-seq-02	Front Pop to pierwotny Pop Shuvit: Skejter skacze do przodu i obraca deskę.
+ch1/09-lyceum/FSPOPSHUVITTEXT-1-seq-03	Tylną stopą Skejter wybija i podgarnia deskę, obracając ją o 180 stopni.
+ch1/09-lyceum/FSPOPSHUVITTEXT-1-seq-04	Front Pop daje wyższe wybicie niż inne flipy i zamienia miejscami nos oraz ogon deski.
+ch1/09-lyceum/FSPOPSHUVITTEXT-1-seq-05	W porównaniu z Backside Pop Shuvitem wersja Frontside wymaga wolniejszego rytmu.
+ch1/09-lyceum/FSPOPSHUVITTEXT-1-seq-06	Front Pop przydaje się do pokonywania przeszkód w nieco lepszym stylu.
+ch1/09-lyceum/HEELFLIPTEXT-1-seq-01	Heelflip.
+ch1/09-lyceum/HEELFLIPTEXT-1-seq-02	Heelflip to podstawowy flip, często mylony z Kickflipem.
+ch1/09-lyceum/HEELFLIPTEXT-1-seq-03	Heelflip różni się od Kickflipa kierunkiem obrotu.
+ch1/09-lyceum/HEELFLIPTEXT-1-seq-04	Przy Heelflipie Skejter podkręca deskę piętą, wprawiając ją w obrót do przodu.
+ch1/09-lyceum/HEELFLIPTEXT-1-seq-05	Heelflip jest potężny i zadaje większe obrażenia.
+ch1/09-lyceum/HEELFLIPTEXT-1-seq-06	Jednak szybciej traci skuteczność przy powtarzaniu i wymaga wolniejszego rytmu.
+ch1/09-lyceum/happycube0meet-1-seq-01	Święte piekło. Te cholerne GŁOWY!\nCały. Dzień. Gadają i filozofują CAŁY DZIEŃ.\nTe ich śmieszne stoickie rozważania...\nA najgorsze?\nNie potrafię wyrazić niczego poza uśmiechem!\nSłuchaj. Raz przeczytałem jeden z ich **Myślokształtów**.\nI wiesz, co się stało?
+ch1/09-lyceum/happycube0meet-1-seq-02	Patrz!\nPojawiły się tylko wokół mnie te wszystkie *blu*gazowe studzienki*blu*!\nTo takie paskudne!
+ch1/09-lyceum/happycube1reiterate-1-seq-01	Niby się uśmiecham, ale tak naprawdę... Zbiera mi się na wymioty.\nWiesz, co mi powiedzieli?\n„Szczęśliwy Sześcianie, *blu*gazowe studzienki*blu* znikną, jeśli dostatecznie wysoko nad nimi przelecisz...”\nNo dobra. Spójrz na mnie.\nJestem POSĄGIEM! NIE MOGĘ SIĘ RUSZAĆ!\nUgh. Nienawidzę tych *blu*gazowych studzienek*blu*.\nJeśli się ich pozbędziesz... zdradzę ci sekret.
+ch1/09-lyceum/happycube3done-1-seq-01	ŁAŁ.\nChyba twoje skoki nad studzienkami je usunęły! *blu*Wchłonąłeś też te dusze.*blu*\nDobra, zdradzę ci sekret.\nWiesz, ten głupi **Myślokształt** sam gdzieś pognał.
+ch1/09-lyceum/happycube4donereiterate-1-seq-01	Sam tam nie byłem, ale słyszałem...\nPo <b>drugiej stronie Liceum</b>, przy sklepie z upominkami, jest Ściana GRZECHÓW.\nWykonaj kilka trików na tym kwadracie.\nMoże ze trzy?\nOtworzy to piekielną drogę do tego głupiego **Myślokształtu**.
+ch1/09-lyceum/nothinkpiece-1-seq-01	Wymaga Myślokształtu
+ch1/09-lyceum/philoso1questget-1-seq-01	Ten **Myślokształt**. Na mojej głowie.\nKropli nie da gardłu, jak każdy ci powie.\nDusza mi schnie. Zaraz upadnę.\nPragnienie — oto myśli moje dokładne.\nChcesz Myślokształt, by snuć rozważania?\nDaj *blu*Żółciowej Herbaty*blu* do popijania.
+ch1/09-lyceum/philoso2reiterate-1-seq-01	Chcesz Myślokształt, by snuć rozważania?\nDaj *blu*Żółciowej Herbaty*blu* do popijania.
+ch1/09-lyceum/philoso3teaturnin-1-seq-01	Herbata i żółć — to wszystko dla mnie?\nNie duszkiem, a łyczkiem popijam ją ładnie.\nDziewięćdziesiąt dziewięć centów to nie całkiem darmo.\nZa trud twój **Myślokształt** niech będzie zapłatą.
+ch1/09-lyceum/philoso9done-1-seq-01	Łyk, łyk, herbatkę piję.\nZ Myślokształtem myśl ożyje.\nWejdź do **Retorium**, duszę dzierżaw śmiało.\nPrzejdź *gold*OCENĘ*gold*, by się Księżyc zajadało.
+ch1/09-lyceum/philosoviewgoal-1-seq-01	Nad głową Philoso obracał się Myślokształt.
+ch1/09-lyceum/platofires1talk-1-seq-01	Śpię na tym łożu płomieni, obserwując Wieczną Stonogę.\nTo zadumiewające. Pełne... zadumy.\nOch, nad czym podumam dzisiejszej nocy?\nCzy dalej rozważać, jak śpi Stonoga?\nGdy sunie po niebie, czy zastanowię się, czy śni?\nCzy też podumam o tobie, nowym mieszkańcu mego ogrodu pełnego głów?\nOtóż *red*przeleć mi przed oczami*red*... a podumam o tobie.
+ch1/09-lyceum/platofires5done-1-seq-01	Dumam... to zadumiewające.\nAch, teraz widzę.\nDrobna część twojej duszy wraca do ciebie.
+ch1/09-lyceum/rabbieviewgoal-1-seq-01	Królik ukrywał się w pobliżu.
+ch1/09-lyceum/sinswallviewgoal-1-seq-01	Wykonaj trzy triki na kwadracie.
+ch1/09-lyceum/talkhappycube5done-1-seq-01	Zdobyłeś ten głupi *blu*Myślokształt*blu*?\nNie obchodzą mnie *blu*Myślokształty*blu*. Aż mnie trzęsie z obrzydzenia.\nOddaj to piekielne pudełko Filozofowi.
+ch1/09-lyceum/talkplatochessgame-1-seq-01	Ach, jakież to zagadkowe.\nPatrzę, jak sam walczę ze sobą.
+ch1/09-lyceum/talkplatochessgame-1-seq-02	Filozoficzny pojedynek znaczenia z rozumem.\nRozgrywany przez myślącą maszynę wewnątrz jej własnych myśli.\nCzy taki stan byłby możliwy przy dwóch myślicielach?\n
+ch1/09-lyceum/talkplatochessgame-1-seq-03	Jak wyjść z patowej sytuacji z samym sobą?
+ch1/09-lyceum/talkplatodingo-1-seq-01	Pożreć Księżyc? Niedorzeczność. Ciało niebieskie nie jest posiłkiem.\nRozważmy pewną sytuację. Załóżmy, że wszechmocny dingo zjadł ci dziecko.\nCzy nie wpadłbyś w gniew? Czy nie wyszedłbyś z przyjęcia?\nCzy mieszkańcy przybytku nie zbuntowaliby się z lekkim niesmakiem?\nAch, odwieczna kwestia jadalności. Pożywka dla myśli o pożywieniu, o którym myślimy.
+ch1/09-lyceum/talkplatofires-1-seq-01	Dałeś mi wiele do rozważania, gdy leżę i patrzę w niebo.\nZwykle widzę Księżyc lub Stonogę przemykającą przez noc.\nAle twój lot na kawałku drewna daje mi wiele do myślenia.\n\n
+ch1/09-lyceum/talkplatofires-1-seq-02	Widziałem na niebie Księżyc, Deskorolkę i Stonogę.\nCzuję powiązanie...! Mnóstwo do przemyślenia, tak myślę.
+ch1/09-lyceum/talkplatolargehead-1-seq-01	Ta głowa jest za duża, by zmieścić się pod tym łukiem.\nTak, wiem, że jest zamknięty. Ale gdyby był otwarty, moja głowa nadal byłaby za duża.
+ch1/09-lyceum/talkplatolargehead-1-seq-02	Czy powinienem więc przestać rozważać, czy się zmieszczę? To byłoby właściwe.\nCóż za niedola: myśleć nie o tym, co możemy, lecz o tym, czego nie możemy.
+ch1/09-lyceum/talkplatomoonlight-1-seq-01	Księżyc nie jest z sera. Nie jest też pizzą.\nTo powszechne nieporozumienie. Widziałeś go? To Księżyc podziemia.\nKażdą warstwą podziemia włada osobny Księżyc. To on trzyma nas tutaj, bezsennych, pogrążonych w myślach.\nMnie to nie przeszkadza. Przy jego świetle czytamy pisma i rozważamy dawne i obecne grzechy.\nW blasku Księżyca piszę największe dzieła i najpodlejsze tyrady.
+ch1/09-lyceum/theskaterarrived-1-seq-01	Skejter opuścił Liceum.
+ch1/09-lyceum/theskaterarrived-1-seq-02	Liceum stworzono z myślą o wiecznym odkupieniu.
+ch1/09-lyceum/theskaterarrived-1-seq-03	Była to najprzyjemniejsza część podziemia, otoczona trawą z drutu kolczastego.
+ch1/09-lyceum/theskaterarrived-1-seq-04	Głowy błąkały się po asfaltowych wzgórzach, bezsenne.
+ch1/09-lyceum/theskaterarrived-1-seq-05	Nikt nie mógł odejść.
+ch1/09-lyceum/theskaterarrived-1-seq-06	„Grzech nad grzechy” — zadumał się Filozof.
+ch1/09-lyceum/theskaterarrived-1-seq-07	„Rozłupać Księżyc!” — Filozof wyglądał na lekko uradowanego. „Przyznam, że to interesujące”.
+ch1/09-lyceum/theskaterarrived-1-seq-08	„Niemniej jednak grzech”.
+ch1/09-lyceum/theskaterarrived-1-seq-09	„Masz dość wędrowania bez celu? Bez snu? I postanowiłeś się miotać”.
+ch1/09-lyceum/theskaterarrived-1-seq-10	Cóż.
+ch1/09-lyceum/theskaterarrived-1-seq-11	„Chyba że...”
+ch1/09-lyceum/theskaterarrived-1-seq-12	„Jeśli dowiedziesz swego oczytania, może rozważymy to ponownie”.
+ch1/09-lyceum/theskaterarrived-1-seq-13	„Przynieś mi dwa Myślokształty, a zmierzę się z tobą w debacie”.
+ch1/10-giftshop/00introch1-1-seq-01	Sklep z upominkami w Liceum cuchnął starym drewnem i niemytymi książkami.
+ch1/10-giftshop/00introch1-1-seq-02	Witaj, mój obywatelu. Oto upominki stworzone specjalnie dla ciebie.\nMożesz płacić mi gramami *blu*duszy*blu*.\n*blu*Duszę*blu* zdobywasz, jak się zdaje, poprzez „*blu*jazdę na deskorolce*blu*”.\nZa zaledwie kilka minut „jazdy” dokonamy transakcji zaspokajającej twój konsumpcjonizm.
+ch1/10-giftshop/00introch1-1-seq-03	Na półce stała świeża puszka Żółciowej Herbaty.
+ch1/10-giftshop/01talkcashier-1-seq-01	Kasjerem była obsydianowa głowa w okularach o złotych oprawkach.
+ch1/10-giftshop/01talkcashier-1-seq-02	Myśl łagodnie, przyjacielu. Jesteś tu nowy?
+ch1/10-giftshop/01talkcashier-1-seq-03	Oczywiście nie potrzebował odpowiedzi.
+ch1/10-giftshop/01talkcashier-1-seq-04	Tworzymy te upominki na miarę pragnień twojej duszy.\nTo, co widzisz, mój przyjacielu skejterze, wyglądałoby inaczej dla gołębia czy finansisty.\nZa odrobinę swojej (S)duszy(S) weź przedmiot, który odzwierciedla twoją istotę.
+ch1/10-giftshop/01talkcashier-1-seq-05	Chyba brakuje ci (S)dusz(S).\n(S)Dusze(S) są walutą podziemia.\nJak mówi twoja (C)Umowa(C), musisz jeździć, by odzyskać (S)duszę(S).
+ch1/10-giftshop/01talkcashier-1-seq-06	Rozważ to podczas zakupów.
+ch1/10-giftshop/30introch3-1-seq-01	Sklep z upominkami wydawał się już znajomy.
+ch1/10-giftshop/30introch3-1-seq-02	„Co za zagwozdka” — zadumał się kasjer.
+ch1/10-giftshop/inspectlocked-1-seq-01	Zamknięte.
+ch1/10-giftshop/stickermachineoutofservice-1-seq-01	Automat z naklejkami był nieczynny.
+ch1/11-B1/eyesstopyou-1-seq-01	„ZAKAZ JAZDY NA DESKOROLCE!” — Oczy się zmarszczyły.
+ch1/11-B1/eyesstopyou-1-seq-02	Oczy wbiły się gniewnie w ziemię, zasklepiając bramę ogniem.
+ch1/11-B1/gotitem-1-seq-01	Skejter zdobył jeden Myślokształt.
+ch1/12-boss/100bossbegin-1-seq-01	Filozof obserwował ze środka Retorium.
+ch1/12-boss/100bossbegin-1-seq-02	„Kosmiczna misja: pożreć Księżyc”.
+ch1/12-boss/100bossbegin-1-seq-03	„Czy taka misja zasługuje na nasze rozważania?”
+ch1/12-boss/100bossbegin-1-seq-04	„Ustalimy to drogą obserwacji”.
+ch1/12-boss/100bossbegin-1-seq-05	„Staniemy naprzeciw siebie i poddamy się osądowi”.
+ch1/12-boss/100bossbegin-1-seq-06	„Jeśli dowiedziesz słuszności swych przekonań, otrzymasz Księżyc”.
+ch1/12-boss/100bossbegin-1-seq-07	„Jeśli zawiedziesz, możesz dalej cierpieć przez nieskończoność”.
+ch1/12-boss/100bossbegin-1-seq-08	„Szklany Skejterze. Zaczynajmy”.
+ch1/12-boss/100bossbegin-1-seq-09	„Pierwsze pytanie”.
+ch1/12-boss/100bossbegin-1-seq-10	„Czy jazda na deskorolce sięga sfery, w której przebywam?”
+ch1/12-boss/101reachmirror1-1-seq-01	Lustro pomknęło dalej.\n„Za wolno” — zadrwił Filozof.
+ch1/12-boss/102reachmirror2-1-seq-01	„Nadążaj. To dopiero początek”.
+ch1/12-boss/103reachmirror3-1-seq-01	Skejter mimo wszystko dotarł do Lustra.
+ch1/12-boss/104reachmirror4-1-seq-01	„Bardzo ciekawe...” — rzekł Filozof.
+ch1/12-boss/150infernalspikesappear-1-seq-01	„To mnie nudzi” — rzekł Filozof.
+ch1/12-boss/150infernalspikesappear-1-seq-02	Czy dosięgniesz mnie nawet pośród piekielnych płomieni?
+ch1/12-boss/21phase2start-1-seq-01	„W istocie”.
+ch1/12-boss/21phase2start-1-seq-02	„Kontynuujmy”.
+ch1/12-boss/21phase2start-1-seq-03	„Drugie pytanie”.
+ch1/12-boss/21phase2start-1-seq-04	„Jeśli skejter wykona trik i nikt tego nie zobaczy...”
+ch1/12-boss/21phase2start-1-seq-05	„Czy rozlegnie się dźwięk?”
+ch1/12-boss/21phase2start-1-seq-06	Oczy Filozofa otoczyły Skejtera.
+ch1/12-boss/22phase2-1-seq-01	Ehem. W istocie.
+ch1/12-boss/22phase2-1-seq-02	SKEJTER — 1\nFILOZOF — 0
+ch1/12-boss/22phase2-1-seq-03	RUNDA\nII
+ch1/12-boss/22phase2-1-seq-04	Drugie pytanie.
+ch1/12-boss/22phase2-1-seq-05	Jeśli skejter wykona trik i nikt tego nie zobaczy...
+ch1/12-boss/22phase2-1-seq-06	Jak słodki będzie dźwięk?
+ch1/12-boss/23phase2comboexplain-1-seq-01	Pojedyncze triki... ciekawe. Ale to nie wystarczy.
+ch1/12-boss/23phase2comboexplain-1-seq-02	Pokaż więcej trików. Pokaż *gold*kombo*gold*.
+ch1/12-boss/23phase2comboexplain-1-seq-03	*gold*Kombo*gold* to sekwencja trików.
+ch1/12-boss/23phase2comboexplain-1-seq-04	Aby zbudować kombo, Skejter musiał szybko wykonywać triki.
+ch1/12-boss/23phase2comboexplain-1-seq-05	Dwa triki dają kombo z dwóch trików.\nTrzy triki dają kombo z trzech trików.
+ch1/12-boss/23phase2comboexplain-1-seq-06	Kombo kończy się, gdy Skejter przestaje wykonywać triki.
+ch1/12-boss/23phase2comboexplain-1-seq-07	Pokaż mi co najmniej *gold*kombo x4*gold*.
+ch1/12-boss/23phase2goal-1-seq-01	Usuń wszystkie Oczy
+ch1/12-boss/24phase2bigcombo1-1-seq-01	„Ciekawe” — zadumał się Filozof.
+ch1/12-boss/24phase2bigcombo1-1-seq-02	„Pokaż kolejne kombo” — powiedział Filozof. „Jedź szybciej”.
+ch1/12-boss/24phase2bigcombo2-1-seq-01	„Wiele trików jest lepszych niż jeden” — powiedział Filozof.
+ch1/12-boss/24phase2bigcombo2-1-seq-02	„Jak wysokie kombo zdołasz osiągnąć?” — rzucił wyzwanie Filozof.
+ch1/12-boss/24phase2finished-1-seq-01	Filozof wyglądał na ostrożnego.
+ch1/12-boss/24phase2finished-1-seq-02	Widzę, że *gold*kombo*gold* potrafi utrzymać uwagę...\nAch, lecz czy to wszystko? Czy kryje się za tym coś więcej?\n*red*Czy istnieje lepszy sposób, by zakończyć kombo?*red*
+ch1/12-boss/24phase2smallcombo0-1-seq-01	Kombo Skejtera wygasło.
+ch1/12-boss/31phase3intro-1-seq-01	Oczywiście, misja tak błaha...
+ch1/12-boss/31phase3intro-1-seq-02	A jednak zaczynam rozumieć.\nMisja tak kosmiczna... tak niemożliwa... tak boska...
+ch1/12-boss/31phase3intro-1-seq-03	Przejdźmy do ostatniej rundy.
+ch1/12-boss/31phase3intro-1-seq-04	Ostatnie pytanie.
+ch1/12-boss/31phase3intro-1-seq-05	Ostatnie pytanie.
+ch1/12-boss/31phase3intro-1-seq-06	Czy Skejter może narzucić desce swoją wolną wolę?
+ch1/12-boss/32phase3tutorial-1-seq-01	Filozof czuwał nad areną.
+ch1/12-boss/32phase3tutorial-1-seq-02	Jak jazda na deskorolce ma wstrząsnąć kosmosem, skoro nie potrafi wstrząsnąć mną?
+ch1/12-boss/32phase3tutorial-1-seq-03	Skejter się najeżył.
+ch1/12-boss/33phase3goal-1-seq-01	Kończ triki tupnięciem, by zadawać obrażenia.
+ch1/12-boss/9finished-1-seq-01	„OCH”.
+ch1/12-boss/9finished-1-seq-02	Oczy Filozofa były pełne.
+ch1/12-boss/9finished-1-seq-03	„Och, tak. Teraz rozumiem. Rozumiem!”
+ch1/12-boss/9finished-1-seq-05	„Twoja misja... jest piękna”.
+ch1/12-boss/9finished-1-seq-06	„Teraz widzę w tym sens”.
+ch1/12-boss/9finished-1-seq-07	„Jakie to piękne — tak nieosiągalna boska misja”.
+ch1/12-boss/9finished-1-seq-08	„Idź, spróbuj pożreć Księżyc”.
+ch1/12-boss/Youcantgothere-1-seq-01	Nie, nie wolno ci.
+ch1/12-boss/phase2-combo-hint	Zbuduj co najmniej kombo x4.
+ch1/12-boss/phase3amb0-1-seq-01	Filozofowi mogło zaszkodzić tylko *blu*kombo zakończone tupnięciem*blu*.
+ch1/12-boss/stomp1amb0-1-seq-01	Pojedyncze triki nie zadawały Filozofowi obrażeń.
+ch1/12-boss/stomp1amb1-1-seq-01	Skejter musiał zakończyć tupnięciem dłuższe kombo.
+ch1/12-boss/stomp2amb0-1-seq-01	„HM” — Filozof zadrżał.
+ch1/12-boss/stomp2amb1-1-seq-01	„Imponujące” — zadumał się Filozof.
+ch1/12-boss/stomp2amb2-1-seq-01	„Czuję to” — powiedział Filozof.
+ch1/12-boss/stomp2amb3-1-seq-01	„Drgania... sekwencja... boskie”.
+ch1/12-boss/stomp2amb4-1-seq-01	„Dalej” — zagrzmiał Filozof.
+ch1/12-boss/stomp2amb5-1-seq-01	„Hmm...” — Filozof zadrżał.
+ch1/13-eatmoon-diorama/intro-1-seq-01	Księżyc wyglądał smakowicie.
+ch1/14-eatmoon-fin/didyoueat-1-seq-01	Czy właśnie zjadłeś Księżyc?
+ch1/14-eatmoon-fin/didyoueat-1-seq-02	Księżyc smakował kredą, popiołem i skałą.
+ch1/14-eatmoon-fin/didyoueat-1-seq-03	Kaszlesz?
+ch1/14-eatmoon-fin/didyoueat-1-seq-04	Nie służy ci?
+ch1/14-eatmoon-fin/didyoueat-1-seq-05	Naprawdę myślałeś, że dasz sobie radę z Księżycem?
+ch1/14-eatmoon-fin/didyoueat-1-seq-06	Gdy Skejter zapadał w sen,\nszklane oczy, załamujące światło, ujrzały wyraźnie:
+ch1/14-eatmoon-fin/didyoueat-1-seq-07	Blask Siedmiu Księżyców.
+ch2/00-intro/cutscene-1-seq-01	We Śnie Skejtera — obraz Czerwonego Księżyca.
+ch2/00-intro/cutscene-1-seq-02	Aha. Zjadłeś Księżyc i zasnąłeś.\nCzytałeś swoją umowę? Ja tak.
+ch2/00-intro/cutscene-1-seq-03	*red*Dzierżawisz swoją duszę od Diabła.*red*\nPożyczyłeś własną duszę, by jeździć przez podziemie.
+ch2/00-intro/cutscene-1-seq-04	Spójrz na Deskorolkę, którą dobrowolnie przyjąłeś.\n
+ch2/00-intro/cutscene-1-seq-05	To obrazkowa mapa podziemia.\nPożerając tutejsze Księżyce, zapadasz w coraz głębszy sen.
+ch2/00-intro/cutscene-1-seq-06	Pożarłeś Szary Księżyc i opadł on w twym żołądku.\nTeraz obudzisz się w drugiej Głębi.\nMusisz pożreć *red*jeszcze sześć Księżyców*red*, by spotkać Diabła.
+ch2/00-intro/cutscene-1-seq-07	Ach, jakże ożywczą torturę zadał ci Diabeł.\nJakże diabelską. Jakże nieskończoną. Kiczowatą, lecz złą.
+ch2/00-intro/cutscene-1-seq-08	Przejedź przez podziemie.\nPożryj każdy Księżyc.\nOdzyskaj swoją duszę.
+ch2/01-title/0woke-1-seq-01	Skejter obudził się w drugiej Głębi.
+ch2/01-title/0woke-1-seq-02	Było piekielnie gorąco.
+ch2/01-title/0woke-1-seq-03	Nie dało się zasnąć.
+ch2/01-title/0woke-1-seq-04	Przekrwiony Księżyc wpatrywał się gniewnie w Skejtera.
+ch2/01-title/2rabbietalk-1-seq-01	Nie możesz spać, co?\nKsiężyc strasznie świeci.\nMusisz jakoś zasnąć.\n...\nCóż, dobrze trafiłeś.
+ch2/01-title/3showlebageland-1-seq-01	Le Bageland, otwarte całą dobę przez wieczność.
+ch2/01-title/4rabbietalk-1-seq-01	Ta pieczęć prowadzi do sklepu z bajglami.\nParę razy jadłem z ich śmietnika.\nMoże mają coś na sen...
+ch2/02-redstuy/0intro-1-seq-01	Królik otworzył ciąg portali.
+ch2/02-redstuy/0intro-1-seq-02	„Witaj w prawdziwym podziemiu” — powiedział Królik.
+ch2/02-redstuy/0intro-1-seq-03	„Tędy do Bageland”.
+ch2/02-redstuy/1soulfiltertut-1-seq-01	Drogę zagradzały Filtry Dusz.
+ch2/02-redstuy/1soulfiltertut-1-seq-02	Te bariery stworzył Departament Śmierci. Filtrują dusze według ciężaru grzechów.
+ch2/02-redstuy/1soulfiltertut-1-seq-03	„Moja dusza jest dość płynna, by się przecisnąć” — powiedział Królik.
+ch2/02-redstuy/1soulfiltertut-1-seq-04	„Twoja dusza jest zbyt ciężka”.
+ch2/02-redstuy/1soulfiltertut-1-seq-05	„Pędź, bo filtr rozszarpie cię na strzępy”.
+ch2/02-redstuy/201ambientsub-1-seq-01	„Sam nauczyłem się poruszać po tych portalach” — powiedział Królik.
+ch2/02-redstuy/202ambientsub-1-seq-01	„Nikogo to specjalnie nie obchodzi. Prawie nikt o nie nie dba”.
+ch2/02-redstuy/401amb-1-seq-01	Księżyc obserwował Skejtera.
+ch2/02-redstuy/402amb-1-seq-01	Księżyc patrzył, jak Skejter lawiruje wśród kolczastych płomieni.
+ch2/02-redstuy/403amb-1-seq-01	Księżyc patrzył, jak Skejter przebija się przez bariery.
+ch2/02-redstuy/501amb-1-seq-01	Do Le Bageland został tylko jeden portal.
+ch2/02-redstuy/61whiteeyesamb-1-seq-01	„Ty zakłócasz nasz sen!” — zapiszczały Białe Oczy.
+ch2/02-redstuy/61whiteeyesamb-1-seq-02	„Natychmiast przestań!”
+ch2/02-redstuy/61whiteeyesamb-1-seq-03	Białe Oczy płonęły. „Przestań!”
+ch2/02-redstuy/9showbageland-1-seq-01	Piekielna brama otworzyła się,\nuwalniając słodki zapach Le Bageland.
+ch2/03-bageland/0intro-1-seq-01	Wszystkie światła były zapalone, ale Le Bageland świeciło pustkami.
+ch2/03-bageland/1talkfrogwasntsleepin-1-seq-01	O, hej!\nWcale tam nie spałem ani nic.\nCo ci podać?\nCzekaj, znam to spojrzenie!\nNie możesz zasnąć, co?\nWiem, co pomoże...\nCiepłe Mleko!\nŚwietnie wywołuje sen i nostalgię.\nZaczekaj chwilkę!
+ch2/03-bageland/4talkfroghereyago-1-seq-01	Proszę bardzo!\nPij śmiało!
+ch2/03-bageland/5getbagelandsticker-1-seq-01	Na lepkiej podłodze Skejter znalazł nieużywaną naklejkę.
+ch2/04-bloodheights/0introrabbie-1-seq-01	Nienawidzę *b*Krwawych Wzgórz*b*. Namiętność płynie tu strumieniami, a luksus się przelewa.\nPicie z fontanny krwi nie pomoże, ale i tak to robią.
+ch2/04-bloodheights/0introrabbie-1-seq-02	Przypływami krwi kieruje Księżyc.\nJego twarz odbija czerwone morze.
+ch2/04-bloodheights/0introrabbie-1-seq-03	Nadziemne tory prowadziły do Księżyca.
+ch2/04-bloodheights/0introrabbie-1-seq-04	Niedaleko była stacja metra.\nWyglądała jak nowa.
+ch2/04-bloodheights/bagman0hello-1-seq-01	HEJ, jestem GOTOWY!\nO, chwila.\nNie jesteś śmieciarzem, prawda?\nEch. Nigdy mnie nie zabiorą.\nTe **Obeliski** tak śmierdzą.\nZapychają całą zapachoprzestrzeń!\nTo ja mam tu śmierdzieć!\nJeśli pozbędziesz się wszystkich **Obelisków**, mam dla ciebie **skarb**.
+ch2/04-bloodheights/bagman1remind-1-seq-01	Mam w środku MilliCard. Będzie twoja, jeśli pomożesz!\nMuszę śmierdzieć tu najbardziej!\nJeśli śmieciarze mnie nie wyczują... nie zabiorą mnie.\nPozbądź się tych cuchnących *red*Obelisków*red*!
+ch2/04-bloodheights/bagman2bemyguest-1-seq-01	Bez tych cuchnących **Obelisków** od razu lżej się oddycha.\nGdzieś we mnie jest **MilliCard**.\nWchodź, czuj się jak u siebie!
+ch2/04-bloodheights/bagman7enter-1-seq-01	Skejter wszedł do worka na śmieci.
+ch2/04-bloodheights/bagman8gotcard-1-seq-01	Dobra, znalazłeś, tak? Ale tam hałasujesz...\nTo ja pójdę potarzać się we krwi — może wreszcie mnie zabiorą. Dzięki!
+ch2/04-bloodheights/larryquestget-1-seq-01	MMMMMM, MMM, MM.\nKARMIĄ MNIE WIBRACJE.\nJEDŹ DLA MNIE, BESTIO.\nJEDŹ PO MÓJ *blu*FRAGMENT DUSZY*blu*.
+ch2/04-bloodheights/larryquestget-1-seq-02	MOJE KRWAWIĄCE SERCE ZBACZA Z DROGI.\nPRZEBIJ TE ZAZDROSNE *b*BIAŁE OCZY*b*.
+ch2/04-bloodheights/larryquestwin-1-seq-01	TWOJA ENERGIA TAK POTĘŻNA, JAK PĘD NIEUSTANNY!\nMOJA DUSZA WYPCHNIĘTA.\nZSTĘPUJĘ DO KOLEJNEJ GŁĘBI.
+ch2/04-bloodheights/talkpoetofcare-1-seq-01	Tęsknię za Księżycem.\nNie, tym prawdziwym.\nZa jego spokojną bielą.\nKąpałem się w niej w rześkie letnie noce.\nTęsknię za czasami, gdy nie donosił o moich grzechach.\nGdy w jego sekretnym świetle mogłem całować na pożegnanie.
+ch2/04-bloodheights/talkpoetofleave-1-seq-01	Muszę kupić coś ukochanemu, zanim tu trafi.\nTrzeba było to zrobić jeszcze za życia.
+ch2/04-bloodheights/talkpoetofleave-1-seq-02	Kwiaty... czekoladki... kartkę... a może piosenkę?\nCo, twoim zdaniem, zrani go najgłębiej?
+ch2/04-bloodheights/talkpoetoflove-1-seq-01	Dziś w nocy serce krwawiło mi, gdy tam wróciłem.\nNie potrafię już kochać, odkąd paszcza zabrała mi serce.\nZ dala od spojrzeń, po wspólnym bajglu na krawężniku...\nWróciłem pogrzebać jej listy.
+ch2/04-bloodheights/talkpoetoftime-1-seq-01	Och, cóż za zabawa. Jakże smakowita zabawa!\nPożreć serce... skosztować jego krwi...\nAch, dziś w nocy nad Krwawe Jezioro!
+ch2/04-bloodheights/talkpoetoftime-1-seq-02	Tak, tej nocy, jak każdej nocy.\nWyleję tam nadgryzione serca i ścieknę w dół, by szukać własnego, zaginionego. Przednia zabawa!
+ch2/05-bloodheights-station/01intro-1-seq-01	Brama była zamknięta.
+ch2/05-bloodheights-station/01intro-1-seq-02	Ściana ognia? Nieźle się wzięli za gapowiczów.
+ch2/05-bloodheights-station/01intro-1-seq-03	Do jazdy metrem potrzebujesz *gold*MilliCard*gold*.\nMoże znajdziemy jakąś na zewnątrz.
+ch2/05-bloodheights-station/04requiresmillicard-1-seq-01	Skejter potrzebował MilliCard, by otworzyć bramkę.
+ch2/05-bloodheights-station/15lookgarbage-1-seq-01	Puste butelki po winie i pudełka po jedzeniu.
+ch2/05-bloodheights-station/15lookgarbage-1-seq-02	Skejter niczego stąd nie chciał.
+ch2/05-bloodheights-station/15rummaged-1-seq-01	Śmietnik był całkiem pełny.\nOstatnio opróżniano go nigdy.
+ch2/05-bloodheights-station/15rummaged-1-seq-02	Skejter przeszukał śmieci.
+ch2/05-bloodheights-station/21opengate-1-seq-01	Skejter przeciąga MilliCard przez czytnik.
+ch2/05-bloodheights-station/21opengate-1-seq-02	Bramka metra otwiera się ze skrzypnięciem.
+ch2/05-bloodheights-station/23amb-1-seq-01	Metro terkotało, gdy Skejter się zbliżał.
+ch2/05-bloodheights-station/25dodofficer-1-seq-01	Spóźniłem się.\nMiałem dziś pracować.\nAle zakochałem się w *red*Księżycu*red*.\nNie mogę na niego patrzeć. Nie zniosę już jego światła.\nZabierz to ode mnie.
+ch2/05-bloodheights-station/26dodofficer-1-seq-01	Nadal tam jest?\nEch. Kogo ja oszukuję? Oczywiście, że tak.
+ch2/06-sunkenst/01intro-1-seq-01	Skejter wszedł do worka na śmieci.
+ch2/06-sunkenst/01intro-1-seq-02	Wewnątrz rozciągała się ogromna przestrzeń.
+ch2/06-sunkenst/101amb-1-seq-01	Podziemiem rządziła Geometria Diabła.
+ch2/06-sunkenst/102amb-1-seq-01	W tym worku na śmieci kryła się druciana przepaść.
+ch2/06-sunkenst/301amb-1-seq-01	Filtry Dusz były wszędzie.
+ch2/06-sunkenst/302amb-1-seq-01	Nawet w worku<br>Księżyc wyczuwał drogę Skejtera.
+ch2/06-sunkenst/89gotitem-1-seq-01	Skejter znalazł MilliCard na nieograniczoną liczbę przejazdów.
+ch2/06-sunkenst/89gotitem-1-seq-02	MilliCard była piękna, lśniąca<br>i ważna jeszcze przez jedną noc.
+ch2/06-sunkenst/lookmillicard-1-seq-01	Skejter znalazł MilliCard zaplątaną w światło Księżyca.
+ch2/06-sunkenst/lookmillicard-1-seq-02	Unoszący się blask Księżyca prosił, by Skejter przyjrzał się bliżej.
+ch2/07-worldmap/01intro-1-seq-01	Księżyc patrzył gniewnie na metro.
+ch2/07-worldmap/01intro-1-seq-02	Czerwony blask Księżyca rozgrzewał metalowy pancerz pociągu.
+ch2/07-worldmap/101amb-1-seq-01	To był najszybszy sposób podróżowania po podziemiu.
+ch2/07-worldmap/102amb-1-seq-01	Skejter jechał metrem ku Księżycowi.
+ch2/07-worldmap/103amb-1-seq-01	Metro nie chciało już dalej cofać.
+ch2/07-worldmap/104amb-1-seq-01	Ale nie odważyłoby się przejechać na czerwonym świetle.
+ch2/08-telephone/0tooksubway-1-seq-01	Wylądowali na maleńkim peronie.
+ch2/08-telephone/0tooksubway-1-seq-02	Powietrze przy stacji Ulica Wrząca było jak z pieca.
+ch2/08-telephone/1looktelephone-1-seq-01	Na końcu peronu stał pradawny telefon.
+ch2/08-telephone/2telephone-1-seq-01	Skejter podniósł słuchawkę.
+ch2/08-telephone/2telephone-1-seq-02	„Dzień dobry!” — odezwał się wyraźny, profesjonalny głos.
+ch2/08-telephone/2telephone-1-seq-03	„Licha z tej strony, dzwonię z Departamentu Śmierci”.
+ch2/08-telephone/2telephone-1-seq-04	„Szukam... skejtera? Ze... szkła i... bólu?”
+ch2/08-telephone/2telephone-1-seq-05	Skejter nie mógł odpowiedzieć. Tak stara technologia nie przekazałaby skinienia głową.
+ch2/08-telephone/2telephone-1-seq-06	„Hm... cóż” — zawahał się głos w słuchawce.
+ch2/08-telephone/2telephone-1-seq-07	„Dzwonimy w sprawie pańskiej umowy...”
+ch2/08-telephone/2telephone-1-seq-08	„Właśnie ją otrzymałam. Wypaliła się na moim biurku”.
+ch2/08-telephone/2telephone-1-seq-09	„...” — głos zamilkł w oczekiwaniu na odpowiedź.
+ch2/08-telephone/2telephone-1-seq-10	„Cóż... więc... musimy potwierdzić pańską tożsamość, by rozpatrzyć umowę”.
+ch2/08-telephone/2telephone-1-seq-11	„Potrzebujemy zatem aktu zgonu, by potwierdzić pański zgon”.
+ch2/08-telephone/2telephone-1-seq-12	„Proszę oddzwonić pod numer... 212-DEP-ODED”.
+ch2/08-telephone/2telephone-1-seq-13	„Tak, 212... DEP... O... DED”.
+ch2/08-telephone/2telephone-1-seq-14	„Dobrze. Do widzenia”.
+ch2/08-telephone/2telephone-1-seq-15	Połączenie się urywa.
+ch2/09-archlevel/00intro-1-seq-01	„Księżyc ukradł ci sen”.
+ch2/09-archlevel/00introsubway-1-seq-01	Skejter pojechał metrem na Most Dreadboro.
+ch2/09-archlevel/20piercedthruweakfilters-1-seq-01	Pęd Skejtera przebijał słabe Filtry Dusz.
+ch2/09-archlevel/40soulriver-1-seq-01	Rzeka Dusz płynęła gęstszym mrokiem w przeszytym czerwonym świetle.
+ch2/09-archlevel/amb2twisted-1-seq-01	Skejter przemierzał kręte korytarze.
+ch2/09-archlevel/amb3restful-1-seq-01	Księżyc był spokojnie czerwonawy.
+ch2/09-archlevel/amb7moonlight-1-seq-01	Blask Księżyca podpalał tutaj ziemię.
+ch2/10-boss-chase/00intro-1-seq-01	Skejter znajduje jądro Księżyca w tunelu.
+ch2/10-boss-chase/00intro-1-seq-02	Projekcja Księżyca wprawiła zimną ziemię w pomruk.
+ch2/10-boss-chase/amb0-1-seq-01	Skejter tupnął w księżycowy blask.
+ch2/10-boss-chase/amb1-1-seq-01	Znienawidzone światła Księżyca rozbrzmiewały echem minionych żyć.
+ch2/10-boss-chase/amb2-1-seq-01	Księżyc ukrył swoją projekcję.
+ch2/10-boss-chase/amb3-1-seq-01	„Nie wiesz, gdzie świecę” — rozległo się echo Księżyca.
+ch2/10-boss-chase/amb4-1-seq-01	Twarz Księżyca była wyżęta.
+ch2/10-boss-chase/amb5-1-seq-01	Księżyc wydychał opary sczerniałej kredy.
+ch2/10-boss-chase/amb6-1-seq-01	„Kolejny bezimienny demon mnie ściga” — zamigotał Księżyc.
+ch2/10-boss-chase/amb7-1-seq-01	Skejter wstrząsnął jądrem Księżyca. Zaczęło puchnąć.
+ch2/12-boss-bloodlake/00introprojection-1-seq-01	Księżyc wyglądał smakowicie.
+ch2/12-boss-bloodlake/00introprojection-1-seq-02	Księżyc nie miał cienia, lecz miał projekcję.
+ch2/12-boss-bloodlake/01ambmoonprojection-1-seq-01	W atmosferze Księżyca Skejter poczuł kosmiczny mnożnik.
+ch2/12-boss-bloodlake/01ambmoonprojection-1-seq-02	Projekcja Księżyca napełniła Skejtera swym światłem.
+ch2/12-boss-bloodlake/1bossfightbegins-1-seq-01	Księżyc wzniósł się na orbitę.
+ch2/12-boss-bloodlake/1bossfightbegins-1-seq-02	Wypuścił pulsujące fale grawitacyjne.
+ch2/12-boss-bloodlake/1bossfightbegins-1-seq-03	Skejter zamierzał strącić Księżyc z orbity.
+ch2/12-boss-bloodlake/25ambsubtitles-1-seq-01	Skejter spojrzał na Czerwony Księżyc.
+ch2/12-boss-bloodlake/25ambsubtitles-1-seq-02	Był zdecydowanie za duży, by go połknąć.
+ch2/12-boss-bloodlake/25ambsubtitles-1-seq-03	Księżyc warknął, w równych częściach z bólu i ulgi.
+ch2/12-boss-bloodlake/25ambsubtitles-1-seq-04	Demony usłyszały pomruk z odległych wieżowców.
+ch2/12-boss-bloodlake/25ambsubtitles-1-seq-05	Rozgrzana krew wokół Księżyca zaczęła parować.
+ch2/12-boss-bloodlake/25ambsubtitles-1-seq-06	Księżyc czuł mdłości i euforię zarazem.
+ch2/12-boss-bloodlake/26dmgsubtitles-1-seq-01	Skejter tupnął w projekcję Księżyca.
+ch2/12-boss-bloodlake/26dmgsubtitles-1-seq-02	Światło Księżyca odbijało się od gwiaździstego gripu.
+ch2/12-boss-bloodlake/26dmgsubtitles-1-seq-03	Skejter wciąż ścigał ten piękny Krwawy Księżyc, raz za razem.
+ch2/12-boss-bloodlake/26dmgsubtitles-1-seq-04	Karmazynowe ryki wprawiały szklane żyły w drżenie.
+ch2/12-boss-bloodlake/26dmgsubtitles-1-seq-05	Księżyc zaczął pękać.
+ch2/12-boss-bloodlake/27telesubtitles-1-seq-01	Ukryte siły ciążenia Księżyca przenosiły Skejtera błyskiem na sekretne ulice.
+ch2/12-boss-bloodlake/27telesubtitles-1-seq-02	Geometria Diabła działała na Księżyc i Skejtera.
+ch2/12-boss-bloodlake/27telesubtitles-1-seq-03	Tańczyli przez sekretne dzielnice.
+ch2/12-boss-bloodlake/27telesubtitles-1-seq-04	Księżyc wciąż świecił. Demon wciąż jeździł.
+ch2/12-boss-bloodlake/soulexpire-1-seq-01	Dusza Skejtera wygasła, wyrzucona z orbity Księżyca.
+ch2/13-moonbleed/moonbleed-1-seq-01	Księżyc zaczął krwawić.
+ch2/13-moonbleed/moonbleed-1-seq-02	Wylewał się z niego czysty sen.
+ch2/13-moonbleed/moonbleed-1-seq-03	Setki milionów godzin straconego snu, wchłanianego przez całe życia.
+ch2/13-moonbleed/moonbleed-1-seq-04	Sen wypływał, a Księżyc opadał z sił.
+ch2/16-fin/1eatenredmoon-1-seq-01	Smakował pradawnym winem, okruchami róż.
+ch2/16-fin/1eatenredmoon-1-seq-02	Krwawy Księżyc pływał w mlecznym szklanym żołądku.
+ch2/16-fin/1eatenredmoon-1-seq-03	Gdy szklane żyły pękały, mleko pędziło wypełnić szczeliny.
+ch2/16-fin/1eatenredmoon-1-seq-04	Skejter wydał z siebie paskudny odruch wymiotny.
+ch2/16-fin/1eatenredmoon-1-seq-05	Skejter poczuł nadchodzącą senność.
+ch2/16-fin/1eatenredmoon-1-seq-06	Ciepłe mleko zatrzymało Krwawy Księżyc w żołądku.
+ch2/16-fin/1eatenredmoon-1-seq-07	Jeszcze sześć Księżyców wypełni tę głodną pustkę,\na Diabeł uwolni dzierżawioną duszę.
+ch3/00-intro/01cutscene-1-seq-01	Dusza Skejtera opadała.
+ch3/00-intro/01cutscene-1-seq-02	Skejter poczuł podmuch głodu.
+ch3/00-intro/01cutscene-1-seq-03	„Jesz, a jednak nie jesteś syty”.
+ch3/00-intro/01cutscene-1-seq-04	Czerwony Księżyc ujawnił dodatkowe klauzule przemycone do umowy.
+ch3/00-intro/01cutscene-1-seq-05	Skejter musi wyprać Pranie Diabła.
+ch3/00-intro/01cutscene-1-seq-06	Skejter śnił.\nCzerwień stała się błękitem i rozdzieliła na dwoje.
+ch3/01-bedhail/01wakeupintro-1-seq-01	Skejter obudził się na smaganym wiatrem betonie.
+ch3/01-bedhail/01wakeupintro-1-seq-02	Małe usta rozpierzchły się.
+ch3/01-bedhail/01wakeupintro-1-seq-03	Bliźniacze Księżyce świeciły, płacząc, a Królik siedział bezsenny.
+ch3/01-bedhail/01wakeupintro-1-seq-04	Królik czytał sennie z listu spalonego przy łóżku.
+ch3/01-bedhail/01wakeupintro-1-seq-05	Hej, masz zaproszenie od Diabła na dzisiejszy *gold*Bankiet*gold*.\nPrzyszło w *red*Worku na Pranie Diabła*red*.\n
+ch3/01-bedhail/01wakeupintro-1-seq-06	„Pożarcie tych Księżyców wymaga czasu”.\n„Wypierz i wysusz: *red*Ogon Diabła, Szatę Diabła, Spodnie Diabła.*red*”\nNawet Diabeł chce mieć czyste ubrania na okazję tortur.
+ch3/01-bedhail/02inspectfireescapetoohigh-1-seq-01	Drabina była za wysoko.
+ch3/01-bedhail/03baggedlaundry-1-seq-01	Skejter napełnił Worek na Pranie Diabła.
+ch3/01-bedhail/09inspectmailbox-1-seq-01	Skejter musiał dostarczyć czyste Pranie Diabła.
+ch3/01-bedhail/10getpants-1-seq-01	Spodnie Diabła.\nPrzemoczone welurowe dresy, diabelsko obcisłe.
+ch3/01-bedhail/11gettail-1-seq-01	Ogon Diabła.\nPaskudny skórzany pasek o karmazynowym blasku.
+ch3/01-bedhail/12getrobe-1-seq-01	Szata Diabła.\nCuchnący szlafrok z materiału na worki na śmieci.
+ch3/01-bedhail/40laundryrolls-1-seq-01	Pranie Diabła stoczyło się z łóżka.
+ch3/01-bedhail/letter from devil	Z BIURKA DIABŁA\nDO: Szklanego Skejtera\n\nTwoja dusza zostanie uwolniona i zwrócona ci na dzisiejszym Bankiecie.\nPotrzebuję czystych ubrań. Proszę wyprać moje rzeczy i je dostarczyć.\n\n• Ogon\n• Szata\n• Spodnie
+ch3/01-bedhail/viewgoal-1-seq-01	Zbierz Pranie Diabła.
+ch3/02-maldrench/01intro-1-seq-01	Pranie Diabła przetoczyło się przez portale.
+ch3/02-maldrench/01intro-1-seq-02	Zamknęło je za sobą.
+ch3/02-maldrench/81laundroma-1-seq-01	Skejter ruszył za Praniem Diabła.
+ch3/02-maldrench/81laundroma-1-seq-02	Wtoczyło się do pralni.
+ch3/03-laundroma/01intro-1-seq-01	Pralnia cuchnęła benzynowym detergentem.
+ch3/03-laundroma/01intro-1-seq-02	Na maszynach siedział poduszkowaty demon.
+ch3/03-laundroma/02talkwashingman-1-seq-01	To ty robisz *blue*Pranie Diabła*blue*, co?\nJuż próbowałem je doprać.\nPrałem, prałem i prałem.\nZepsuło większość moich pralek.\nA suszarek nie zostało już wcale.\nMoże tobie się poszczęści.\nTak, znów się tu wtoczyło. Pewnie jest w kącie.
+ch3/03-laundroma/10inspectshiveringbag-1-seq-01	Pranie Diabła drżało w kącie.
+ch3/03-laundroma/10inspectshiveringbag-1-seq-02	Nie myśl, że jest takie słodkie. Teraz to jeszcze maleństwo.\nOtwórz pralkę. Będzie szukało wody dusz.
+ch3/03-laundroma/11inspectlaundrymachine-1-seq-01	Pralnia zawsze była pusta.\nW zaświatach rzadko trzeba prać.
+ch3/03-laundroma/11inspectlaundrymachine-1-seq-02	Większość demonów i dusz nie nosiła ubrań.
+ch3/03-laundroma/11inspectlaundrymachine-1-seq-03	Szczękające zęby i tak zdarłyby każdą odzież.
+ch3/03-laundroma/30allmydryersarebroken-1-seq-01	Ten wstrętny worek jest teraz mokry i wściekły.\nWszystkie suszarki są zepsute!\nLepiej wysusz go gdzie indziej.\nPowieś na dworze czy coś. Tak wieje, że zaraz wyschnie. Albo zamarznie.
+ch3/03-laundroma/39gooutside-1-seq-01	Zniszczy moją ostatnią pralkę.\nCóż, przynajmniej potem dadzą mi nową pracę.\nCzekanie nic nie da. Maszyny, jak każdy sprzęt, działają według diabelskiej skali czasu.\nZwykle wychodzę na rundkę wokół bloku. Oczyszcza duszę i plamy.
+ch3/03-laundroma/49yougetitout-1-seq-01	Tak, te łachy są porządnie mokre.\nSam je wyciągnij, to już nie moja robota.
+ch3/04-slushst/01intro-1-seq-01	Wyszli z pralni i weszli do pralki.
+ch3/04-slushst/01intro-1-seq-02	Wysokie, wątłe duszokwiaty pięły się w niebo.
+ch3/04-slushst/01intro-1-seq-03	Cuchnące łodygi grzesznych dusz!\nNic dziwnego, że pralka stanęła.\nPranie Diabła było pełne *red*Wrzecion*red*!\nTe *red*Wrzeciona*red* zapychają pralkę.
+ch3/04-slushst/01intro-1-seq-04	Skejter musiał ściąć te wrzeciona.
+ch3/04-slushst/69done-1-seq-01	Cykl prania dobiegł końca.
+ch3/05-languishinsq/01intro-1-seq-01	PLAC UDRĘKI
+ch3/05-languishinsq/01intro-1-seq-02	Pośrodku placu wisiał sznur na pranie.
+ch3/05-languishinsq/02hungintro-1-seq-01	Skejter rozwiesił pranie na placu.
+ch3/05-languishinsq/03okthemoon-1-seq-01	Pranie Diabła kołysało się na wietrze.
+ch3/05-languishinsq/03okthemoon-1-seq-02	Księżyc wciskał swój blask przez łuk.
+ch3/05-languishinsq/03okthemoon-1-seq-03	Skejter zaczekał chwilę w jego zimnym świetle.
+ch3/05-languishinsq/04thelaundryisgone-1-seq-01	Wtem rozległ się szybki szelest.
+ch3/05-languishinsq/04thelaundryisgone-1-seq-02	Szata Diabła zniknęła.
+ch3/05-languishinsq/04thelaundryisgone-1-seq-03	Ogon Diabła zniknął.
+ch3/05-languishinsq/04thelaundryisgone-1-seq-04	„Przynajmniej Spodnie Diabła zostały”.
+ch3/05-languishinsq/04thelaundryisgone-1-seq-05	Spodni Diabła nie było.
+ch3/05-languishinsq/11pants02runaway-1-seq-01	Spodnie Diabła uciekały.
+ch3/05-languishinsq/11pants03stuck-1-seq-01	Spodnie Diabła podskoczyły i utknęły na sygnalizatorze.
+ch3/05-languishinsq/11pants04getpants-1-seq-01	Skejter uwiązał spodnie.
+ch3/05-languishinsq/13pants10placedpants-1-seq-01	Ponownie uwiązane Spodnie Diabła zadrżały z radości.
+ch3/05-languishinsq/13pants11interact-1-seq-01	Dobra, dobra, masz mnie! Ale była jazda.\nTego mi było trzeba. Wytrzęsło mną prawie do sucha.\nWysusz pozostałe dwie rzeczy, a bardzo ci pomożemy.\n*red*Ogon*red* wbija się w przypadkowy tyłek,\na *blu*Szata*blu* po prostu fruwa.\nPrzypnij Ogon i Szatę, a my *blu*przykujemy Księżyce*blu* dla ciebie.
+ch3/05-languishinsq/13robe31description-1-seq-01	Jeszcze chwila i będzie sucho! Potrzebuję powietrza. Jedź bardzo szybko i grinduj przez trzydzieści sekund. To powinno wystarczyć.
+ch3/05-languishinsq/13robe39done-1-seq-01	Dobra, już dość sucho. Wracam na wieszak.
+ch3/05-languishinsq/13robe40placed-1-seq-01	Skejter przypiął Szatę Diabła.
+ch3/05-languishinsq/13tail01pulltail-1-seq-01	Ała!\nTo boli!\nTo mój ogon!\nNigdy nie puszczę. Musisz *red*go ode mnie odciąć*red*!\nJest jak *red*diabelski kwiat*red* w moim tyłku.\n
+ch3/05-languishinsq/13tail01pulltail-1-seq-02	Oby ten słodziak z *bold*kwiaciarni*bold* mnie tak nie zobaczył.
+ch3/05-languishinsq/13tail02sniptail-1-seq-01	Skejter odciął Ogon Diabła.
+ch3/05-languishinsq/13tail09pin-1-seq-01	Skejter przypiął Ogon Diabła.
+ch3/05-languishinsq/17inspectdevilsprovisionslocked-1-seq-01	Drzwi były zamknięte.
+ch3/05-languishinsq/17inspectdevilsprovisionslocked-1-seq-02	Na tabliczce: „ZAMKNIĘTE Z POWODU DESZCZU”.
+ch3/05-languishinsq/39baguplaundry-1-seq-01	Pranie Diabła było czyste i suche.\nTrzy rzeczy kołysały się teraz spokojniej.
+ch3/05-languishinsq/39baguplaundry-1-seq-02	Skejter wepchnął Pranie Diabła do ohydnego worka.
+ch3/05-languishinsq/87rolledup-1-seq-01	Pranie Diabła przetoczyło się pod Łuk.
+ch3/05-languishinsq/87rolledup-1-seq-02	Przycisnęło się do małej klawiatury i wystukało kombinację.
+ch3/05-languishinsq/88gatewayopens-1-seq-01	Łuk cicho brzęczy.
+ch3/05-languishinsq/88gatewayopens-1-seq-02	Otworzył portal do Księżyca dzięki uprzejmości Diabła.
+ch3/05-languishinsq/89laundryrollsoff-1-seq-01	Pranie wtacza się do portalu.
+ch3/06-flowershop/10talkbea-1-seq-01	Witaj w mojej kwiaciarni!\nTo znaczy, byłaby nią, gdybym miał kwiaty.\nPrzyszedł łysy demon, porwał moje jedyne *blue*nożyce*blue* i *red*ściął*red* ostatni kwiat!\nPotem uciekł z *blu*nożycami*blu* do *b*Fabryki Znaczeń*b*.\nTeraz nie mam ani kwiatów, ani *blu*nożyc*blu*.\nOch, to okropne.\nJak na złość zbliża się święto księżycowych kwiatów...
+ch3/06-flowershop/11getflowershopsticker-1-seq-01	Na parapecie leżała nietknięta naklejka. Wyglądała na błogosławioną.
+ch3/06-flowershop/12inspectpots-1-seq-01	Puste doniczki.\nW szczelinach podłogi zbryliła się ziemia.
+ch3/06-flowershop/30aboutshears-1-seq-01	O, chyba masz te *blu*nożyce*blu*!\nMożesz je zatrzymać.\nJuż sprzedałem część duszy za nową parę.\nAle tej nocy jeszcze nie dotrą...\nSłuchaj, przyniesiesz mi *blu*Księżycowy Kwiat*blu*?\nTymi *blu*Nożycami*blu* możesz ściąć *blu*Księżycowy Kwiat*blu*.\nNa zewnątrz powinny jakieś rosnąć.
+ch3/06-flowershop/40turninmoonflower-1-seq-01	*blu*Księżycowe Kwiaty*blu* kwitną tylko w księżycowym blasku podziemia.\n*red*Diabeł*red* stworzył Księżyce ze znienawidzonych świateł świata żywych...\n*blu*Księżycowe Kwiaty*blu* rosną dzięki światłu naszych podziemnych Księżyców.\nSą piękne, prawda? Nawet tu, gdy tkwimy w nieskończonej nocy... wciąż rosną.\nWeź ten prezent. Zostawił go ktoś taki jak ty, wiele nocy temu.
+ch3/06-flowershop/89talkbeeadone-1-seq-01	Z tym Księżycowym Kwiatem... może dziś zasnę...
+ch3/06-gravestake/01istoletheshears-1-seq-01	UKRADŁEM NOŻYCE, KTÓRYMI MNIE STRZYGLI.
+ch3/06-gravestake/61larryintro-1-seq-01	TY, IDZIESZ ZA MNĄ, TY NAŚLADOWCO.\nŁAPIESZ MÓJ KLIMAT, ŁAPIESZ?\nTYCH *blu*NOŻYC*blu* MI POTRZEBA.\nGŁÓD WCIĄŻ ROŚNIE, JEŚĆ MI TRZEBA.
+ch3/06-gravestake/61larryintro-1-seq-02	CO JESZCZE MAM ZJEŚĆ TYMI ZĘBAMI?
+ch3/06-gravestake/62viewgoal-1-seq-01	Larry'emu imponował tylko grind.
+ch3/06-gravestake/68larrydone-1-seq-01	PASZCZĘ ROZWIERAM!\nZĘBAMI ZGRZYTAM.\nJEDZENIA NIE TYKAM.\nMĘCZARNI UNIKAM.\nNOŻYCE SĄ JUŻ ZBĘDNE MI.\nŁATWO UKRAŚĆ, ŁATWO ZBYĆ.
+ch3/06-gravestake/79gotitem-1-seq-01	Skejter zdobył Nożyce do Prętów.
+ch3/06-meaningslobby/01chasetheguy-1-seq-01	Fabryka Znaczeń miała przepastny hol.\nZ rur płynęły ciekłe dusze do zamglonego basenu.
+ch3/06-meaningslobby/01chasetheguy-1-seq-02	Demon o czaszkowym obliczu rozmawiał z żabą za ladą.
+ch3/06-meaningslobby/01chasetheguy-1-seq-03	TAK JEST, FRO. WIESZ, JAK JEST.\nPRZETNĘ TEN KLIMAT NA PÓŁ TYMI *red*NOŻYCAMI*red*.\n
+ch3/06-meaningslobby/01chasetheguy-1-seq-04	Powodzenia, miłego potępienia!
+ch3/06-meaningslobby/01chasetheguy-1-seq-05	Zaciskał szczęki na nożycach.
+ch3/06-meaningslobby/01chasetheguy-1-seq-06	Popłynął ku windom.
+ch3/06-meaningslobby/11talkfrotue-1-seq-01	O, witaj!\nWyglądasz na zagubionego. Może jakieś Znaczenie?\nFabrykę Znaczeń napędza najnowocześniejsza technologia znużenia.\nPoprowadzi cię drogą wytyczoną przez Geometrię Diabła.\nPo prostu wejdź w tamte drzwi!
+ch3/06-meaningslobby/11talkfrotuerepeat-1-seq-01	Ważne, by mieć Znaczenie, przynajmniej w tej gospodarce.\nPo prostu wejdź w tamte drzwi!
+ch3/07-boss-abyssalterrace/09placelaundry-1-seq-01	Skejter otworzył skrzynkę na Pranie Diabła.
+ch3/07-boss-abyssalterrace/09placelaundry-1-seq-02	Księżyc to zobaczył.
+ch3/07-boss-abyssalterrace/10hatchandfight-1-seq-01	Pranie Diabła wyrwało skrzynkę ze śrub.
+ch3/07-boss-abyssalterrace/10hatchandfight-1-seq-02	Ze skrzynki wystrzeliwuje łańcuch i zaczepia się o Księżyc.
+ch3/07-boss-abyssalterrace/10hatchandfight-1-seq-03	Łańcuch spętał Księżyc.
+ch3/07-boss-abyssalterrace/10hatchandfight-1-seq-04	Potem szarpnął go w dół.
+ch3/07-boss-abyssalterrace/30moonscorpion-1-seq-01	Księżyce ułożyły się w gwiazdozbiór skorpiona.
+ch3/08-cs-moondeath/09endshot-1-seq-01	Bliźniaczych Księżyców już nie było.
+ch3/09-skatechain/01start-1-seq-01	Gdy jądra bliźniaczych Księżyców wreszcie opadły,\nwciąż trzymały je Łańcuchy Diabła.
+ch3/09-skatechain/10moonyanked-1-seq-01	Łańcuch Deskorolki ściągnął jądro Księżyca.
+ch3/09-skatechain/11moonyanked-1-seq-01	Oba Księżyce spętane i ściągnięte w dół.
+ch3/10-outro/01intro-1-seq-01	Brzuszek pełen Księżyca, co?\nNie wierzę, że dali ci takie ładne łóżko.
+ch3/10-outro/05talkrabbie-1-seq-01	Nie za zimno, nie za gorąco.\nMoże wreszcie się wyśpisz.
+ch3/10-outro/09sleep-1-seq-01	Skejter położył się do łóżka.
+ch3/giftshop/30introch3-1-seq-01	Sklep z upominkami wydawał się już znajomy.
+ch3/giftshop/30introch3-1-seq-02	„Co za zagwozdka” — zadumał się kasjer.
+ch4/00-progress/00cutscene-1-seq-01	„Trzy Księżyce w twoim żołądku”.
+ch4/00-progress/00cutscene-1-seq-02	„Najedzony, możesz wreszcie spać”.
+ch4/00-progress/00cutscene-1-seq-03	„Przez chwilę, lecz można spytać... jak długo?”
+ch4/00-progress/00cutscene-1-seq-04	„Jeden czerwony, dwa niebieskie”.
+ch4/00-progress/00cutscene-1-seq-05	„Gdy objadłeś się boskimi owocami...”
+ch4/00-progress/00cutscene-1-seq-06	„Czy poczułeś smak samego życia?”
+ch4/00-progress/00cutscene-1-seq-07	„Każda dusza jest spętana”.
+ch4/00-progress/00cutscene-1-seq-08	„W czwartej głębi grzeszników przykuwa ich chciwość”.
+ch4/00-progress/00cutscene-1-seq-09	„Myślimy, że gdy liczba wzrośnie, będziemy mogli usiąść i odpocząć”.
+ch4/00-progress/00cutscene-1-seq-10	„Czy można cieszyć się odpoczynkiem, nie będąc go świadomym?”
+ch4/02-intro/01sleeping-1-seq-01	Sen...
+ch4/02-intro/01sleeping-1-seq-02	Tak wygodnie.
+ch4/02-intro/01sleeping-1-seq-03	Tak kojąco.
+ch4/02-intro/02coneywake-1-seq-01	HEJ!\nEj, kolego. WSTAWAJ!\nNie możesz tu spać!
+ch4/02-intro/02coneywake-1-seq-02	Co się tu dzieje?
+ch4/02-intro/02coneywake-1-seq-03	ŚPISZ!\nNie wolno tu spać bez zezwolenia.\nPrawo jazdy i dowód rejestracyjny proszę.
+ch4/02-intro/02coneywake-1-seq-04	...Dlaczego nie możemy tu spać?
+ch4/02-intro/02coneywake-1-seq-05	Jasne, że MOŻECIE!\nZ zezwoleniem.\nNie pozwolę wam spać bez widocznego ZEZWOLENIA NA SEN umieszczonego 90–120 centymetrów nad łóżkiem!
+ch4/02-intro/02coneywake-1-seq-06	Kim jesteś?
+ch4/02-intro/02coneywake-1-seq-07	Jestem Coney!\nZe światła gwiazd, pyłu betonowego i porzucenia w dzieciństwie!\nSzef wysłał mnie na patrol!\nWiesz...\nMój szef to... Ten, Który Widzi...\n(na szczęście jest głuchy)\nTAK CZY INACZEJ! To bez znaczenia.\nPotrzebujesz zezwolenia na sen.\nMuszę ci więc wystawić mandat.\nA ty co? Jakiś szczur z klapniętymi uszami?
+ch4/02-intro/02coneywake-1-seq-08	Jestem królikiem.
+ch4/02-intro/02coneywake-1-seq-09	Okej! Super! Uważaj na trutkę!\nSwoją drogą, jeśli też chcesz spać, musisz pokazać zezwolenie!
+ch4/02-intro/02coneywake-1-seq-10	Ja nie potrzebuję snu, ale mój przyjaciel tak.\nSkąd wziąć zezwolenie?
+ch4/02-intro/02coneywake-1-seq-11	Ha, przyznanie się! Więc NIE macie zezwolenia na spanie tutaj.
+ch4/02-intro/02coneywake-1-seq-12	Ech.
+ch4/02-intro/02coneywake-1-seq-13	Za swoje zbrodnie pójdziecie do Departamentu Śmierci!
+ch4/02-intro/02coneywake-1-seq-14	Mamy prawo tu spać!
+ch4/02-intro/02coneywake-1-seq-15	Powiedz to SĘDZIEMU!\nIdziecie do SĄDU!
+ch4/03-courtroom/0apprachedstand-1-seq-01	Królik, Skejter i Coney stanęli przed sądem.
+ch4/03-courtroom/1judgetalk-1-seq-01	Kolejny sprawca śpiący bez zezwolenia.
+ch4/03-courtroom/1judgetalk-1-seq-02	My tylko prześpimy tędy.
+ch4/03-courtroom/1judgetalk-1-seq-03	Nie ma zezwolenia!\nUkarać ich!
+ch4/03-courtroom/1judgetalk-1-seq-04	Nie poinformowano nas o tym prawie.
+ch4/03-courtroom/1judgetalk-1-seq-05	Brak zezwolenia!
+ch4/03-courtroom/1judgetalk-1-seq-06	Spaliśmy nie tak, jak trzeba.
+ch4/03-courtroom/1judgetalk-1-seq-07	BRAK ZEZWOLENIA!
+ch4/03-courtroom/1judgetalk-1-seq-08	CISZA!
+ch4/03-courtroom/1judgetalk-1-seq-09	...
+ch4/03-courtroom/1judgetalk-1-seq-10	Aj.
+ch4/03-courtroom/1judgetalk-1-seq-11	SEN BEZ UPOWAŻNIENIA JEST ZABRONIONY.\nGRZECH NR 108.\nKARA: DEPORTACJA.
+ch4/03-courtroom/1judgetalk-1-seq-12	Mamy was!
+ch4/03-courtroom/1judgetalk-1-seq-13	Nie możecie nas deportować! Jesteśmy tu na mocy umowy z *red*Diabłem*red*.
+ch4/03-courtroom/1judgetalk-1-seq-14	SEN WYMAGA DOKUMENTACJI.\nDOSTARCZYĆ DOKUMENTACJĘ.\nMACIE JEDNĄ NOC.\nROZPRAWA ODROCZONA.
+ch4/03-courtroom/3insidetheeyeseethemoon-1-seq-01	Ciemna źrenica w siatkówce Wieszcza zabłysła,\nKsiężyc zalśnił smakowitą zielenią.
+ch4/04-requireform/01getcomputer-1-seq-01	No to macie przechlapane.
+ch4/04-requireform/01getcomputer-1-seq-02	Dlaczego?
+ch4/04-requireform/01getcomputer-1-seq-03	Musicie złożyć wniosek o zezwolenie na sen...\nI dostać zgodę...\nInaczej was deportują!\nWłaściwie dokąd?\nJuż jesteśmy w czwartej głębi podziemia.
+ch4/04-requireform/01getcomputer-1-seq-04	Są gorsze głębie... na przykład piąta.
+ch4/04-requireform/01getcomputer-1-seq-05	OCH...
+ch4/04-requireform/01getcomputer-1-seq-06	Ale i tak musimy tam dotrzeć.\nMożemy dostać formularz?
+ch4/04-requireform/01getcomputer-1-seq-07	A, standardowy wniosek o zezwolenie na sen?\nMożecie go sobie wydrukować!
+ch4/04-requireform/01getcomputer-1-seq-08	Niby jak?\nNie mamy komputera. Ani drukarki!
+ch4/04-requireform/01getcomputer-1-seq-09	To naprawdę wygodne!\nHm, ostatnio na patrolu chyba widziałem komputer w **Resolute Coffee.**
+ch4/04-requireform/01getcomputer-1-seq-10	**Resolute Coffee**? Gdzie to?
+ch4/04-requireform/01getcomputer-1-seq-11	Przy wejściu na plac!
+ch4/04-requireform/01getcomputer-1-seq-12	Dobrze. Oby ten komputer nadal tam był.
+ch4/05-blighthall/15activatetide-1-seq-01	Jedna z liter tkwiła w plątaninie.
+ch4/05-blighthall/31regretgatelocked-1-seq-01	Wchodzisz? Pokaż żal.\n
+ch4/05-blighthall/31regretgatelocked-1-seq-02	Skejter nie miał żalu do okazania.
+ch4/05-blighthall/31regretgatelocked-1-seq-03	Bez żalu nie wpuszczę.
+ch4/05-blighthall/32regretgateOPEN-1-seq-01	Wchodzisz? Pokaż żal.\nBez żalu nie wpuszczę.
+ch4/05-blighthall/32regretgateOPEN-1-seq-02	Mam żal! Proszę!
+ch4/05-blighthall/32regretgateOPEN-1-seq-03	Coney wsuwa karteczkę za szybę.
+ch4/05-blighthall/32regretgateOPEN-1-seq-04	To napisane odręcznie.\n„Żal, że nie mam lepszej pracy i muszę za nimi łazić?”\nDobra, niech będzie. Wszystko jedno.
+ch4/05-blighthall/33gateswingsopen-1-seq-01	Brama Placu Żalu otwiera się.
+ch4/05-blighthall/34regretgaterepeatdone-1-seq-01	Nie żałuję, że wziąłem tę posadę.\nCo, myślisz, że wolałbym przekładać papiery?
+ch4/05-blighthall/aletterstuckinwires-1-seq-01	Unosząca się litera zaplątana w znienawidziony blask.
+ch4/05-blighthall/broughttodepartment-1-seq-01	Skejtera przyprowadzono do Departamentu Śmierci.
+ch4/05-blighthall/deliverappeal-1-seq-01	Skejter wrzucił odwołanie do skrzynki.
+ch4/05-blighthall/deliverappeal-1-seq-02	Nie musiał nawet czekać całej wieczności.
+ch4/05-blighthall/deliverappeal-1-seq-03	Drzwi się otworzyły.
+ch4/05-blighthall/exitdepartment-1-seq-01	Skejter wyszedł z Departamentu.
+ch4/05-blighthall/exitdepartment-1-seq-02	Tam, ten budynek! Tam jest Resolute Coffee!\nWidziałem tam wcześniej mnóstwo komputerów.\nMoże wydrukujesz tam odwołanie, przestępco!
+ch4/05-blighthall/firstlettergot-1-seq-01	Skejter znalazł wszystkie pięć liter. Tyle wystarczyło.
+ch4/05-blighthall/firstlettergot-1-seq-02	Oto pięcioliterowe słowo.\nZanieśmy je Gołębiowi.
+ch4/05-blighthall/firstletterreiterate-1-seq-01	Ten gołąb ma przyjemną torturę: cały dzień siedzi w kawiarni.\nCzekaj, patrz!
+ch4/05-blighthall/firstletterreiterate-1-seq-02	Unosząca się litera krążyła wokół krzaka.
+ch4/05-blighthall/firstletterreiterate-1-seq-03	O, patrz! Jedna z liter, o których mówił Gołąb.
+ch4/05-blighthall/needsappeal-1-seq-01	Skejter nie miał nic do dostarczenia.
+ch4/05-blighthall/openwgroundsgate-1-seq-01	Łańcuch Deskorolki szarpnął bramę, rozbijając zamek.
+ch4/05-blighthall/openwgroundsgate-1-seq-02	Hej! Zepsułeś drzwi!\nZgłoszę cię! Jak skończę przerwę.
+ch4/05-blighthall/pickupchain-1-seq-01	Szalik Skejtera owinął się wokół zamka.
+ch4/05-blighthall/pickupchain-1-seq-02	DESKOROLKA PRZYKUTA DO BRAMY
+ch4/05-blighthall/secondletterreiterate-1-seq-01	Skejter musiał znaleźć jeszcze dwa słowa.
+ch4/05-blighthall/secondletterreiterate-1-seq-02	Jedno w Poczekalni.
+ch4/05-blighthall/secondletterreiterate-1-seq-03	Drugie na Placu Żalu.
+ch4/05-blighthall/showchain-1-seq-01	Na zamku bramy wisiał mały złoty łańcuch.
+ch4/05-blighthall/showmailboxreiterate-1-seq-01	Ej, kolego, chyba Zgiełk nie jest z ciebie zadowolony!
+ch4/05-blighthall/showmailboxreiterate-1-seq-02	Więcej funkcjonariuszy Zgiełku...\nLepiej już złożyć odwołanie. Inaczej mamy kłopoty!
+ch4/05-blighthall/showmailboxreiterate-1-seq-03	Ja nie mam kłopotów!\nWy macie!
+ch4/05-blighthall/showmailboxreiterate-1-seq-04	Sam dostarcz list!\nDo zobaczenia w środku, szczury!
+ch4/05-blighthall/showmailboxreiterate-1-seq-05	Skrzynka na odwołania była tuż przy drzwiach.
+ch4/05-blighthall/talkwgroundsgatequest-1-seq-01	Przy bramie Poczekalni stał Garbus.
+ch4/05-blighthall/talkwgroundsgatequest-1-seq-02	Brama zamknięta. Mam przerwę. Otworzę, jak wrócę.
+ch4/05-blighthall/talkwgroundsgatequest-1-seq-03	Kiedy kończy się przerwa?
+ch4/05-blighthall/talkwgroundsgatequest-1-seq-04	Kiedy powiem.
+ch4/05-blighthall/talkwgroundsgatequest-1-seq-05	Słuchaj, musimy przejść, tylko na parę minut.
+ch4/05-blighthall/talkwgroundsgatequest-1-seq-06	Ech, to sami otwórzcie. Co mnie to obchodzi?
+ch4/06-resolutecoffee/01firstentry-1-seq-01	Resolute Coffee było maleńkim lokalem pachnącym zgonem.
+ch4/06-resolutecoffee/01firstentry-1-seq-02	Na jednym ze stolików stał komputer.
+ch4/06-resolutecoffee/01firstentry-1-seq-03	Na klawiaturze siedział druciany gołąb.
+ch4/06-resolutecoffee/03pigeonthirsty-1-seq-01	ach!!!! utknąłem!\nnie mogę znaleźć słów.\nwszystko, co piszę, jest do bani.\npo prostu podetnijcie mi skrzydła.\nśmieci. kompletne śmieci.\n...i TAK MI SIĘ CHCE PIĆ!
+ch4/06-resolutecoffee/05cashierfreelatte-1-seq-01	Hej, proszę pana!\nPanie Gołębiu!\n...Och, przepraszam!\nTamten ptaszek zamówił latte i zapomniał odebrać.\nPewnie tkwi w jakiejś dziwnej torturze umysłowej...\nNie wolno mi się stąd ruszać na zmianie.\nProszę! Zanieś mu! Dzięki!
+ch4/06-resolutecoffee/09pigeongetdrink-1-seq-01	kawa!? w tej gospodarce!\n...\nmmmm...\nsłodka sekunda ukojenia...\ndobra, dobra. czego chcecie?
+ch4/06-resolutecoffee/10cashierhi-1-seq-01	Hejka!\nCo podać?
+ch4/06-resolutecoffee/11talkconey-1-seq-01	Mam cię na oku!\nWeź kawę, bo nie chcę widzieć, jak przysypiasz.\nZakaz spania!
+ch4/06-resolutecoffee/12talkbathroomdemon-1-seq-01	Hej, bez kolejki nie wolno! Czekam do toalety.\nJasne, nie mam przewodu pokarmowego.\nAle w toalecie najlepiej rozmyśla mi się o własnej śmierci.
+ch4/06-resolutecoffee/13talksittingdemon-1-seq-01	Mam przerwę obiadową.\nTo najlepsza kawiarnia w zasięgu unoszenia się.\nNie mogę pić kawy, bo nie mam ust.\nAle podoba mi się sama idea.
+ch4/06-resolutecoffee/20pigeontherearewords1-1-seq-01	Pomożesz nam wydrukować formularz?\nMusimy na chwilę pożyczyć komputer.
+ch4/06-resolutecoffee/20pigeontherearewords1-1-seq-02	chętnie, ale jestem zajęty byciem W KROPCE!\nwydrukowałbym wam formularz... gdybym tak nie UTKNĄŁ z RĘKOPISEM!\nNIE MOGĘ ZNALEŹĆ SŁÓW!\nej... chwila.
+ch4/06-resolutecoffee/20pigeontherearewords2-1-seq-01	muszę oddać rękopis\no nie. muszę ODDAĆ RĘKOPIS!\nredaktor oczekuje WERSJI ROBOCZEJ!\nnawet nie chcę wiedzieć, co myśli wydawca.\nmuszę skończyć rękopis...\nale nie mogę ZNALEŹĆ SŁÓW!\njestem tylko pisarzem, marnym pisarzem, nieudacznikiem.\n...
+ch4/06-resolutecoffee/20pigeontherearewords3-1-seq-01	...\nTrzeba było umrzeć jako hydraulik.\nWskakiwać do rur i w ogóle. Brzmi przynajmniej zabawnie.\nA ja grzebię w obskurnej kawiarni, szukając SŁÓW!\nNie mogę złapać tych przeklętych liter. Ciągle fruwają!\nZwykle potrafię, ale teraz wydaje mi się to niemożliwe.\nNie umiem pisać dla nikogo, o niczym.\nNie umiem... Nie umiem...
+ch4/06-resolutecoffee/21moonvisionneedwords-1-seq-01	Gołąb nie mógł znaleźć słów.\nUnosiły się gdzieś na zewnątrz.
+ch4/06-resolutecoffee/25showword1vid-1-seq-01	potrzebuję natchnienia!\nspójrz na ten film. patrz.
+ch4/06-resolutecoffee/25showword1vid-1-seq-02	na zewnątrz fruwają litery!\nczy te deskorolki nie nadają się świetnie do zbierania *blue*latających liter*blue*?\nprzyniesiesz mi jakieś *blue*słowa*blue*?\npomogę wam we wszystkim, jeśli znajdziecie mi ładne pięcioliterowe *blue*słowa*blue*.
+ch4/06-resolutecoffee/30turninfirstword-1-seq-01	Skejter wrócił z pięcioliterowym słowem.
+ch4/06-resolutecoffee/30turninfirstword-1-seq-02	słowo! masz je!\nzobaczmy te litery.
+ch4/06-resolutecoffee/30turninfirstword-1-seq-03	DEMON. ACH!\ntak, tak...
+ch4/06-resolutecoffee/30turninfirstword-1-seq-04	hm.\nwtedy demon zrobił... coś...\nnie, nic z tego nie będzie. potrzebuję więcej słów.
+ch4/06-resolutecoffee/30turninfirstword-1-seq-05	Więcej słów?? Ilu potrzebujesz?
+ch4/06-resolutecoffee/30turninfirstword-1-seq-06	nie wiem! twórczość jest tajemnicza!\n
+ch4/06-resolutecoffee/33reiteratetwowords-1-seq-01	przynieś jeszcze dwa słowa. obiecuję. to wszystko.\n
+ch4/06-resolutecoffee/33reiteratetwowords-1-seq-02	Dobra.
+ch4/06-resolutecoffee/33reiteratetwowords-1-seq-03	jedno słowo jest w *bold*Poczekalni*bold*.\na drugie na *bold*Placu Żalu*bold*.
+ch4/06-resolutecoffee/35moonvisionneed2words-1-seq-01	Skejter potrzebował jeszcze dwóch słów.
+ch4/06-resolutecoffee/41turninallwords-1-seq-01	Wrócili ze słowami.
+ch4/06-resolutecoffee/41turninallwords-1-seq-02	rany, co to był za hałas na dworze?
+ch4/06-resolutecoffee/41turninallwords-1-seq-03	Departamentowi nie spodobała się jazda na deskorolce.
+ch4/06-resolutecoffee/41turninallwords-1-seq-04	dobra, jakie macie słowa?
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-01	Proszę bardzo.
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-02	hmmmm...\ndemon... dom... ser...\nhmm...
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-03	...
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-04	mam!
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-05	Naprawdę?!
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-06	ta, eee...\nDOM DEMONICZNEGO SERA!
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-07	...co?
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-08	NIE!\nDEMON DOMOWEGO SERA! SEROWY DEMON DOMU!
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-09	To nie ma sensu.
+ch4/06-resolutecoffee/42demoncheesehouse-1-seq-10	dajcie mi pracować! pomysły się parzą!
+ch4/06-resolutecoffee/43percolatingaway-1-seq-01	Gołąb pracuje zawzięcie.
+ch4/06-resolutecoffee/43percolatingaway-1-seq-02	„Smakuje kawa?” — spytała Żaba.
+ch4/06-resolutecoffee/43percolatingaway-1-seq-03	„Właściwie nie potrzebujemy jej, by nie zasnąć” — powiedział Królik. „Wciąż czuję Księżyc tej głębi”.
+ch4/06-resolutecoffee/43percolatingaway-1-seq-04	Siedzą.
+ch4/06-resolutecoffee/43percolatingaway-1-seq-05	och tak, tak, tak. genialne, tak!
+ch4/06-resolutecoffee/43percolatingaway-1-seq-06	HEJ! Zakaz spania!
+ch4/06-resolutecoffee/43percolatingaway-1-seq-07	Czekają bez snu.
+ch4/06-resolutecoffee/43percolatingaway-1-seq-08	„Nie... wolno... zasnąć...” — wymamrotał Coney.
+ch4/06-resolutecoffee/43percolatingaway-1-seq-09	„OCH!” — zaćwierkał Gołąb.
+ch4/06-resolutecoffee/43percolatingaway-1-seq-10	gotowe!
+ch4/06-resolutecoffee/43percolatingaway-1-seq-11	Skończyłeś?
+ch4/06-resolutecoffee/43percolatingaway-1-seq-12	właśnie wydrukowałem. najwspanialsze odwołanie w dziejach.
+ch4/06-resolutecoffee/43percolatingaway-1-seq-13	drukarka wypluwa moje arcydzieło.
+ch4/06-resolutecoffee/44print-1-seq-01	Drukarka wypluła dokument.
+ch4/06-resolutecoffee/59takeletter-1-seq-01	Dokument zawinął się w pętlę.
+ch4/06-resolutecoffee/89hasplealetterform-1-seq-01	Dobra, Coney, mamy formularz.
+ch4/06-resolutecoffee/89hasplealetterform-1-seq-02	Hej, nie patrz na mnie!\nPowiedz to WIESZCZOWI.\nNie jestem gońcem. Sam zanieś!
+ch4/06-resolutecoffee/done-1-seq-01	Gołąb dalej stukał dziobem.
+ch4/06-resolutecoffee/done-1-seq-02	Chyba Gołąb złapał rytm.\nNie wiem, w jakim scenariuszu pojawia się „Demon Dom Ser”,<br>ale brzmi to śmierdząco. Tak po francusku.
+ch4/07-plazaofregrets/01firstentry-1-seq-01	Plac Żalu był miejscem, gdzie dusze czekające na rozpatrzenie sprawy dokonywały rachunku przed sądem.
+ch4/07-plazaofregrets/01firstentry-1-seq-02	Dusze odwiedzają tu cztery hole i podliczają salda żalu.
+ch4/07-plazaofregrets/02talkrabbie-1-seq-01	Co za smród! Żałuję, że tu przyszedłem!\nMasz szczęście, że nic nie czujesz.
+ch4/07-plazaofregrets/02talkrabbie-1-seq-02	Zbierz te *blu*litery*blu* i zmywajmy się stąd.\nInaczej zaczniesz myśleć jak te biedne dusze.\n...Z żalem.
+ch4/07-plazaofregrets/11npc1-1-seq-01	Od początku mówił jasno, że chce duszy.\nAle może chciał dwóch?\nMyślałam, że wystarczy jedna, że będę nią ja.\nSpojrzał na mnie, uśmiechnął się, wziął moje serce i nazwał je pięknym. Potem powiedział, że to za mało.\nPoszedł z inną duszą.
+ch4/07-plazaofregrets/11npc2-1-seq-01	Nie mogę oddychać, nie czuję ciała.\nNie kiedy czuję zapach miejsca, z którego wracam...\n
+ch4/07-plazaofregrets/11npc2-1-seq-02	Daj mi poczuć ciężar mojego portfela inwestycyjnego.\nW najczarniejszym dniu oddałem wszystko za chwilę wolności.\nA potem... unosiłem się jak kamień.\nAle żałuję.
+ch4/07-plazaofregrets/11npc3-1-seq-01	Czego żałuję? Och... niech znów podliczę.\nCzy policzyłem już wszystkie żale?\nKiedy wreszcie stąd ruszę?
+ch4/07-plazaofregrets/11npc3-1-seq-02	Tak, przyznaję, żałuję tych czternastu paczek chipsów.\nKażdą paczkę liczyć jako osobny żal?\nNie ma rabatu hurtowego?
+ch4/07-plazaofregrets/11npc4-1-seq-01	Przyjaciele, rodzina, pies.\nNie wiem, dokąd trafili.\nCzy są w podziemiu, czy nie.\nMam ogromne konto, ale bez dostępu.\nNie tutaj. Przepadło.\nPo co więc w ogóle ich sprzedałem?\n
+ch4/07-plazaofregrets/15sidequestcone2-1-seq-01	Nie ma na co patrzeć.\nZwykły pachołek drogowy.\nZostaw mnie!
+ch4/07-plazaofregrets/39sidequestcomplete-1-seq-01	Skejter żałował straconego czasu.
+ch4/07-plazaofregrets/79gotword-1-seq-01	„Chyba mamy wszystkie tutejsze litery” — powiedział Królik.
+ch4/08-waitinggrounds/01firstentry-1-seq-01	Poczekalnia, gdzie dusze czekają na zwrot z inwestycji.\nWokół krążyły Latające Litery.
+ch4/08-waitinggrounds/71gotword-1-seq-01	Układa się w... CHEESE. Czyli SER.\nSer, co...\nEee, nigdy o nim nie słyszałem.\nCo to takiego? Co to ser?\nJest smaczny? Nigdy, przenigdy nie słyszałem o serze.
+ch4/08-waitinggrounds/71gotword-1-seq-02	Co?! Przecież szczury lubią ser!
+ch4/08-waitinggrounds/71gotword-1-seq-03	Tak, owszem, ale ja jestem królikiem... nie szczurem.
+ch4/08-waitinggrounds/89fussappear-1-seq-01	„BADANIE ZGŁOSZENIA”.
+ch4/08-waitinggrounds/89fussappear-1-seq-02	„ZAKAZ JAZDY NA DESKOROLCE W POCZEKALNI”.
+ch4/08-waitinggrounds/89fussappear-1-seq-03	„WYSYŁANIE KROCZĄCEGO ZGIEŁKU”.
+ch4/08-waitinggrounds/89fussappear-1-seq-04	Nie zostaję tu.\nDo zobaczenia, Skejterze. Wybacz.
+ch4/09-boss-marketofarrivals/01intro-1-seq-01	Wewnątrz Targu Przybyszów wisiał ogromny pierścień ekranu.
+ch4/09-boss-marketofarrivals/01intro-1-seq-02	Za szybko, za drobno, za wiele, by przeczytać.
+ch4/09-boss-marketofarrivals/01intro-1-seq-03	U góry wisiał Krwawy Wieszcz, podwieszony na łańcuchach.
+ch4/09-boss-marketofarrivals/05bloodeyeintro-1-seq-01	Patrzy, jak spisują każdą nową duszę podziemia.
+ch4/09-boss-marketofarrivals/05bloodeyeintro-1-seq-02	„Hej, szefie!” — krzyczy Coney.
+ch4/09-boss-marketofarrivals/05bloodeyeintro-1-seq-03	SZEFIE!\nTe szczury mają dokument!
+ch4/09-boss-marketofarrivals/05bloodeyeintro-1-seq-04	Krwawy Wieszcz nie odpowiada.
+ch4/09-boss-marketofarrivals/05bloodeyeintro-1-seq-05	HEJ! SZEFIE!
+ch4/09-boss-marketofarrivals/05bloodeyeintro-1-seq-06	Ach, racja! Hehehe!\nSzef jest głuchy!
+ch4/09-boss-marketofarrivals/05bloodeyeintro-1-seq-07	Pokaż dokument na *b*platformie widokowej*b* tam pośrodku!\nWtedy szef przeczyta odwołanie.
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-01	Skejter położył dokument na podium.
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-02	„SZEFIE!” — krzyknął Coney. „SZCZURY MAJĄ DOKUMENT!”
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-03	Krwawy Wieszcz skupił wzrok na dokumencie.
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-04	„PRZETWARZANIE FORMULARZA”.
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-05	Przez boską soczewkę Wieszcz czytał dokument.
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-06	Wieszcz wciąż obracał dokument.
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-07	„Eee, szefie?”
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-08	Dokument owijał się wokół siebie, nagłówek pożerał jego koniec.
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-09	Krwawy Wieszcz zastygł w pętli czytania.
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-10	Rekurencyjna proza unieruchomiła Wieszcza.
+ch4/09-boss-marketofarrivals/20presentboss-1-seq-11	Łańcuchy Wieszcza zwisały aż do ziemi.
+ch4/09-boss-marketofarrivals/40ripchain01-1-seq-01	Skejter wyrwał jeden z łańcuchów Krwawego Wieszcza.
+ch4/09-boss-marketofarrivals/40ripchain02-1-seq-01	„WIDZĘ CIĘ, NIE MARTW SIĘ” — powiedział Krwawy Wieszcz.
+ch4/09-boss-marketofarrivals/40ripchain03-1-seq-01	Coney uciekł. „Dobra, szefie, rób swoje!”
+ch4/09-boss-marketofarrivals/40ripchain04-1-seq-01	„PRAWO ZMARŁYCH DOTYCZY WSZYSTKICH”.
+ch4/09-boss-marketofarrivals/40ripchain05-1-seq-01	„TWOJĄ SPRAWĘ ROZPATRZYMY W TRYBIE PRZYSPIESZONYM”.
+ch4/09-boss-marketofarrivals/51onechaindone-1-seq-01	Łańcuch Deskorolki wyrwał się z Wieszcza.
+ch4/09-boss-marketofarrivals/51onechaindone-1-seq-02	Krwawy Wieszcz czytał dalej.
+ch4/09-boss-marketofarrivals/61rippedout-1-seq-01	Łańcuchy Krwawego Wieszcza wyrwały się z sufitu.
+ch4/09-boss-marketofarrivals/79chainsetdone-1-seq-01	„ZOSTANIESZ DOSTRZEŻONY”.
+ch4/09-boss-marketofarrivals/79chainsetdone-1-seq-02	Spojrzenie Krwawego Wieszcza pochłonęło targ.
+ch4/09-boss-marketofarrivals/89killspot-1-seq-01	„TWOJA DUSZA JEST UBOGA” — piszczy Krwawy Wieszcz.
+ch4/09-boss-marketofarrivals/89killspot-1-seq-02	„Nie patrz mu prosto w oko!” — mówi Królik.
+ch4/09-boss-marketofarrivals/89killspot-1-seq-03	„Jego wzrok rozerwie ci duszę!”
+ch4/09-boss-marketofarrivals/89killspot-1-seq-04	„ROZPATRZYŁEM TWOJĄ UMOWĘ”.
+ch4/09-boss-marketofarrivals/89killspot-1-seq-05	„ZOSTAJE ODRZUCONA”.
+ch4/10-boss-retina/01intro-1-seq-01	Skejter został pogrzebany.
+ch4/10-boss-retina/01intro-1-seq-02	Ukryty w spojrzeniu Wieszcza —\nZielony Księżyc.
+ch4/11-boss-end/01bloodseercrying-1-seq-01	Krwawy Wieszcz płakał.\nBył przemoczony.
+ch4/11-boss-end/01bloodseercrying-1-seq-02	ARESZTOWAĆ DEMONA!\nDEMON NARUSZYŁ MOJĄ SIATKÓWKĘ.\nZNALAZŁ ZIELONY KSIĘŻYC.
+ch4/11-boss-end/01bloodseercrying-1-seq-03	MUSZĘ SPAĆ.\nARESZTOWAĆ DEMONA. UNIEWAŻNIĆ UMOWĘ. ODWOŁAĆ BANKIET.\nZA WSZELKĄ CENĘ OPÓŹNIĆ DEMONA.\nNIE MOŻEMY POZWOLIĆ, BY NOC SIĘ SKOŃCZYŁA.\n
+ch4/11-boss-end/01bloodseercrying-1-seq-04	*red*WIECZNA STONOGA MUSI SPAĆ.*red*
+ch4/12-cs-devour/01intro-1-seq-01	Wbrew poprawnym dokumentom, w ciele szklistym Krwawego Wieszcza.
+ch4/12-cs-devour/01intro-1-seq-02	Skejter, teraz zbieg, spotkał maleńki Zielony Księżyc.
+ch4/12-cs-devour/10chasemoon01-1-seq-01	Jądro Zielonego Księżyca drżało.
+ch4/12-cs-devour/10chasemoon02-1-seq-01	Było niespokojne, roztrzęsione.
+ch4/12-cs-devour/10chasemoon03-1-seq-01	Powoli Księżyc opadał z sił.
+ch4/13-cs-slouchers/00intro-1-seq-01	Skejter połknął Zielony Księżyc.
+ch4/13-cs-slouchers/01letter-1-seq-01	Zanim Skejter zasnął, dostarczono list.
+ch4/13-cs-slouchers/01letter-1-seq-02	Garbusy wpatrywały się gniewnie w Skejtera.
+ch4/13-cs-slouchers/29inspecttv-1-seq-01	Demon, tak, demon grasuje po okolicy... i zjada Księżyce!\nWielu naocznych świadków widziało tego „Pożeracza Księżyców” w akcji.\nOpisują demona, który stale nosi „kawałek drewna na kółkach”.\nTen podobno „szklany” demon zjadł już cztery Księżyce.\nDepartament Śmierci wszczął dochodzenie.\nW oficjalnym oświadczeniu szef Departamentu wezwał do schwytania tak zwanego „Pożeracza Księżyców”.\nPo utracie Zielonego Księżyca Departament Śmierci zmobilizował oddział poszukiwawczy.\nPozostaje jednak pytanie...\nKim jest ten demon?\nI dlaczego pożera Księżyce?\n
+ch4/13-cs-slouchers/39letter-1-seq-01	Z DEPARTAMENTU ŚMIERCI.
+ch4/13-cs-slouchers/39letter-1-seq-02	Jesteś aresztowany.
+ch4/13-cs-slouchers/39letter-1-seq-03	Natychmiast zaprzestań wszelkiego snu.
+ch4/13-cs-slouchers/39letter-1-seq-04	Niezastosowanie się obudzi *ec*Wieczną Stonogę*ec*.
+ch4/13-cs-slouchers/40sleep-1-seq-01	Skejter zignorował list i zasnął.
+ch5/00-cs-progress/01intro-1-seq-01	Przeniknąwszy przez czysty sen, Skejter\numykał Zgiełkowi ulicami ciemno połyskującego szlamu.
+ch5/00-cs-progress/02wakeupbuddy-1-seq-01	HEJ!
+ch5/00-cs-progress/02wakeupbuddy-1-seq-02	Pobudka, kolego! Czas dostać po dupie!
+ch5/00-cs-progress/03plato-1-seq-01	Departament Śmierci cię szuka, bo twoja umowa wydaje się nieważna.\n
+ch5/00-cs-progress/03plato-1-seq-02	Ale jesteś ze szkła, prawda? Twój faustowski pakt nadal obowiązuje.\nMoże to część próby Diabła...\nTa Głębia jest pełna gniewnych dusz.\nKsiężyc należy do Pingwina, z czystej złośliwości.\nTrzyma go dla okupu w klatce na szczycie budynku.\nPingwin, jak każdy, pragnie posiąść własną duszę...
+ch5/02-penguinintro/01intro-1-seq-01	„Nie posiadam gwiazd ani nieba”.
+ch5/02-penguinintro/01intro-1-seq-02	„Lecz Akt czyni Księżyc moją własnością”.
+ch5/02-penguinintro/01intro-1-seq-03	Gdzieś, kiedyś, ciemnoczerwone podpisy podały sobie ręce,\na dusze zmieniły rzeki.
+ch5/02-penguinintro/01intro-1-seq-04	W podziemiu tablice stanowią prawo.
+ch5/02-penguinintro/01intro-1-seq-05	Wyryto to w kamieniu. Ktoś posiadał Księżyc.
+ch5/02-penguinintro/02themoonismine-1-seq-01	„Hahaha! Księżyc jest mój!”
+ch5/02-penguinintro/02themoonismine-1-seq-02	„To im pokaże... tym plugawym kustoszom...”
+ch5/03-room/01intro-1-seq-01	Skejter obudził się w złowieszczym pokoju.
+ch5/03-room/11inspectbed-1-seq-01	Był zmęczony, ale nie senny.
+ch5/03-room/12inspectwindow-1-seq-01	Fioletowy Księżyc tkwił w klatce na szczycie budynku.
+ch5/03-room/12inspectwindow-1-seq-02	Stale lekko drżał, wypuszczając drobne opary.\nWpatrywanie się w jego głęboki fiolet zburzyłoby spokój każdej duszy.
+ch5/03-room/12inspectwindow-1-seq-03	Wyglądał całkiem smacznie.
+ch5/03-room/13talkphil-1-seq-01	Połknąłeś wiele Księżyców.\nAle dlaczego?\nBoska misja postawiła cię wbrew prawu.\n*red*Zgiełk*red* nie jest zadowolony z twojego pożerania Księżyców.\nDlaczego Diabeł nie interweniował?\nTe Księżyce wirujące w żołądku.<br>Czy dają ci jakąś moc?\nPięć porcji kosmosu w brzuchu.\nZaledwie dwa Księżyce do zjedzenia.\nRozważmy zatem.\nGdy przyjdziesz na *gold*Bankiet Diabła*gold*...<br>Czy będziesz zbyt syty?\nZbyt syty na wolność?<br>Czy to Sztuczka Diabła?
+ch5/03-room/13talkrabbie-1-seq-01	O, już nie śpisz.\nDepartament Śmierci cię szuka.\nAle muszę powiedzieć... jeśli złapie cię *red*Zgiełk*red*...\nJa biorę nogi za pas. Wybacz.\nTak czy inaczej, spójrz na zewnątrz.\nTutejszy Księżyc siedzi na budynku.\nW klatce...\nChyba łatwy łup.
+ch5/03-room/14inspecttv-1-seq-01	Telewizor migocze szumem.
+ch5/03-room/14inspecttv-1-seq-02	„Kup teraz!”
+ch5/04-lobby/11peekdownhallway-1-seq-01	Garbus przeszukiwał drugi korytarz.
+ch5/04-lobby/11peekdownhallway-1-seq-02	Skejter poszedł w przeciwną stronę.
+ch5/05-moultst/01intro-1-seq-01	Mieszkanie mieściło się przy Ulicy Wylinki.
+ch5/05-moultst/01intro-1-seq-02	Powietrze było osmalone węglem.\nZ nieba skradały się ogromne nici.
+ch5/05-moultst/01intro-1-seq-03	Księżyc tkwił w klatce na budynku.
+ch5/05-moultst/01intro-1-seq-04	Skejter zamierzał go pożreć.
+ch5/05-moultst/151talkskelequest1-1-seq-01	HAHAHAHA!\nNIE WIDZISZ, JAK MOŻESZ WIDZIEĆ,<br>W PRZECIWIEŃSTWIE DO MNIE?\nJA NIGDY NIE ZOBACZĘ!<br>NIE PO TYM, CO MI ZROBILI!
+ch5/05-moultst/151talkskelequest1-1-seq-02	SPADAJ!<br>TY OBRZYDLIWY SMRODZIE.
+ch5/05-moultst/159skelequestwin-1-seq-01	HAHAHAHA! Duszą się pod ziemią!
+ch5/05-moultst/15lookclosedstation-1-seq-01	Stację metra zamknięto na rozkaz Departamentu Śmierci.
+ch5/05-moultst/15lookclosedstation-1-seq-02	Nie podoba im się to zjadanie Księżyców.\nPewnie zamknęli stację w ramach blokady.
+ch5/05-moultst/15looksoulbarrier-1-seq-01	Drogę zagradzała bariera dusz. Zdawała się sterowana złośliwością.
+ch5/05-moultst/15npcofcare-1-seq-01	Hahahaha!\nDusza płynie gęściej niż podeszwy.\nPrzemyciłem diament w butach...\nWrzuciłem go w szlam na złość ojcu.\nPewnie gdzieś tam grzebie i szuka.\nNawet nie wie... jak ten diament będzie śmierdział.
+ch5/05-moultst/15npcofdiamond-1-seq-01	Hahahaha!\nPrzemyciłem diament w butach...\nWycisnęliby ze mnie rodzinne pamiątki.\nDusza płynie gęściej niż podeszwy.\nWrzuciłem go w szlam na złość ojcu.\nPewnie gdzieś tam grzebie i szuka.\nNawet nie wie... hahahaha!
+ch5/05-moultst/15npcofleave-1-seq-01	Zabrałem jej naszyjnik... i zmiażdżyłem.\nRzuciłem go z szarych klifów w cuchnący szlam!\nTo była jej ostatnia rzecz na łańcuszku.\nMusiałem to zrobić. Musiałem!
+ch5/05-moultst/15npcofleave-1-seq-02	Dlatego muszę uważać...\nHmm... zjeść tego burgera?\nMuszę uważać...\nMam bardzo konkretne wymagania co do jedzenia. Bardzo. Konkretne.\nJeśli nie ma w nim ogórków... WŚCIEKNĘ SIĘ.
+ch5/05-moultst/15npcoflove-1-seq-01	Kipi we mnie.\nZrobię to.\nNa pewno to zrobię.\nJak? Nie wiem.\nWzięli mój Myślokształt i rozdarli go...\nMyślałem, że mam dobre argumenty!\nJa im... ja im pokażę...\nMoja kipiąca tyrada rozerwie ich na strzępy.
+ch5/05-moultst/15npcoftime-1-seq-01	Czuwam... zaraz się zorientuje.\nWkrótce się dowiedzą, a on się zemści.\nMuszę być czujny.
+ch5/05-moultst/15npcoftime-1-seq-02	Och, zobaczyć go przy kolacji...\nJakże chcę ujrzeć lament tej głupiej czaszki!\nZaraz odkryje, że w burgerze BRAKUJE OGÓRKÓW!
+ch5/05-moultst/19looksludgeway-1-seq-01	Święty Karat leżał za Szlamowym Traktem.
+ch5/05-moultst/20meetconebros-1-seq-01	Betonowy duch chował się pod pachołkiem.
+ch5/05-moultst/21shonmeet-1-seq-01	Co, chcesz przejść? Ha! Przejąłem tę bramę.\nMuszę *red*dokonać zemsty*red* na *red*dawnych przyjaciołach*red*.\nMoich byłych najlepszych kumplach: *red*Shawnie*red*, *blu*Seanie*blu* i *gold*Shaunie*gold*.
+ch5/05-moultst/22shauntoppled-1-seq-01	NIE! Leżę! Pachołek padł, pachołek padł!\nTo TY, *red*Shawn*red*?\nTo jeszcze nie koniec ze mną... Nie...\nCzuję wściekłość...!\nCzuję słabość... Nie!
+ch5/05-moultst/22shawnseanshaun-1-seq-01	Za życia *blu*Sean*blu* mnie zdradził.\nTeraz chowa się jak TCHÓRZ! Obrzydliwy TCHÓRZ!
+ch5/05-moultst/22shawnseanshaun-1-seq-02	Znalazłem miłość życia, ale *gold*Shaun*gold* ją przepędził.\nNajpodlejsza dusza koloru sików, ten *gold*Shaun*gold*.
+ch5/05-moultst/22shawnseanshaun-1-seq-03	A *red*Shawn*red*... to okropna, okropna, OKROPNA dusza.\nNic więcej nie trzeba mówić. *red*Shawn*red* zasługuje na milion śmierci.
+ch5/05-moultst/22shawnseanshaun-1-seq-04	*red*Przewróć ich zdradzieckie łby!*red*
+ch5/05-moultst/290opensludgeway-1-seq-01	Agh! Nie! Ale jestem wściekły...!
+ch5/05-moultst/290opensludgeway-1-seq-02	Droga do Świętego Karatu otwiera się.
+ch5/05-moultst/291myfriendscallfuss-1-seq-01	Jak mogłeś?!\nTo byli moi *red*byli najlepsi przyjaciele*red*!\nFunkcjonariusze! Donoszę: znalazłem Pożeracza Księżyców! Demona, który przewrócił moich byłych najlepszych kumpli!
+ch5/05-moultst/90introbackfromtkarat-1-seq-01	Niektóre dusze, które uciekły z Karatu,\nrozbrzmiewały cichym echem na Ulicy Wylinki.
+ch5/05-moultst/91moonasplode-1-seq-01	Bez wiążącej umowy Księżyc jest niestabilny.
+ch5/05-moultst/91moonasplode-1-seq-02	Zaczyna obijać się o klatkę.
+ch5/05-moultst/91moonasplode-1-seq-03	Szkło pęka.
+ch5/05-moultst/91moonasplode-1-seq-04	Księżyc wybucha.
+ch5/05-moultst/91moonasplode-1-seq-05	Odłamki rozsypują się wokół.
+ch5/05-moultst/91moonasplode-1-seq-06	Powietrze wypełnia drobna mgła.
+ch5/05-moultst/91moonasplode-1-seq-07	Odłamki latają wszędzie. Przyciąga je Skejter.
+ch5/05-moultst/92moonchunkamb-1-seq-01	Pęd Skejtera ściągał fragmenty Księżyca ku sobie.
+ch5/05-moultst/92moonchunkamb-1-seq-02	Im szybciej jechał, tym mocniej fragmenty się skupiały.
+ch5/05-moultst/92moonchunkamb-1-seq-03	Wspólna grawitacja Skejtera i Księżyca zaczęła się chwiać.
+ch5/05-moultst/92moonchunkamb-1-seq-04	Pod gripem rozchodziło się ciepło.
+ch5/05-moultst/92moonchunkamb-1-seq-05	Deskorolka zapłonęła.
+ch5/05-moultst/92moonchunkamb-1-seq-06	Płomienie przypalały ziemię. Skejter stał w ogniu.
+ch5/05-moultst/92moonchunkamb-1-seq-07	Płomienie Skejtera rozdzierały klify.
+ch5/05-moultst/92moonchunkamb-1-seq-08	Ogień pochłonął Zgiełk, paląc jego ciemne druty.
+ch5/05-moultst/92moonchunkamb-1-seq-09	Fragmenty Księżyca płonęły, parując w powietrze.
+ch5/05-moultst/92moonchunkamb-1-seq-10	Płomienie ogarnęły czysty pęd.
+ch5/06-jewelstore/01firstentry-1-seq-01	W sklepie pachniało półką z przyprawami w dyskoncie.
+ch5/06-jewelstore/01firstentry-1-seq-02	„Witam, witam!” — powiedział Pingwin, ledwie podnosząc wzrok.
+ch5/06-jewelstore/01firstentry-1-seq-03	Pingwin oglądał błyskotki pod mikroskopem.
+ch5/06-jewelstore/11inspectcurtain-1-seq-01	Skejter nie mógł wejść do prywatnej kolekcji Pingwina.
+ch5/06-jewelstore/11inspectcurtain-1-seq-02	Przez szparę było widać ogromny fioletowy plakat.
+ch5/06-jewelstore/12inspectkaratposter-1-seq-01	Na ścianie wisiał plakat o Świętym Karacie.
+ch5/06-jewelstore/12inspectkaratposter-1-seq-02	Gdy odpowiednia liczba dusz przejdzie przez nieskończoną stonogę, skupiają się niczym perła w Karat.
+ch5/06-jewelstore/12inspectkaratposter-1-seq-03	Stonoga zrzuca Karaty głęboko w szlam gniewnych wzgórz.
+ch5/06-jewelstore/12inspectkaratposter-1-seq-04	Większość Karatów jest bezwartościowa. Czasami jednak zbijają się szczególnie złośliwe żywoty.
+ch5/06-jewelstore/12inspectkaratposter-1-seq-05	Święty Karat to 40 000 dusz sprasowanych w wirze gniewnej złośliwości w piękny, lśniący klejnot.
+ch5/06-jewelstore/12inspectkaratposter-1-seq-06	Święty Karat wystarczy do odpuszczenia niemal każdego grzechu.
+ch5/06-jewelstore/12inspectkaratposter-1-seq-07	Nie było wątpliwości: Pingwin zrobiłby wszystko, by go zdobyć.
+ch5/06-jewelstore/21penguinmeet-1-seq-01	OCH! Rany.\nAleż lśnisz, skarbie.\nMuszę mieć cię w kolekcji.\nIle za ciebie?
+ch5/06-jewelstore/21penguinmeet-1-seq-02	Skejter nie jest na sprzedaż!
+ch5/06-jewelstore/21penguinmeet-1-seq-03	Podaj cenę.
+ch5/06-jewelstore/21penguinmeet-1-seq-04	Dobrze. Fioletowy Księżyc.
+ch5/06-jewelstore/21penguinmeet-1-seq-05	Fioletowy Księżyc??\nMyślisz, że jesteś wart Fioletowego Księżyca?! HA!\nHAHAHAHAHAHA!\nJestem bogatym przemysłowcem.\n*purple*Fioletowy Księżyc*purple* to największy skarb mojej kolekcji.
+ch5/06-jewelstore/21penguinmeet-1-seq-06	Jak możesz posiadać *purple*Księżyc*purple*? To kosmiczny kamień!
+ch5/06-jewelstore/21penguinmeet-1-seq-07	Widzisz, mój drogi gryzoniu, kamienie to moja specjalność. Szlachetne kamienie.
+ch5/06-jewelstore/21penguinmeet-1-seq-08	Jaka jest cena *purple*Księżyca*purple*?
+ch5/06-jewelstore/21penguinmeet-1-seq-09	Och, dla ciebie? Nie jest na sprzedaż.\nJesteś odrażający. Nienawidzę cię. Nie jest na sprzedaż.
+ch5/06-jewelstore/21penguinmeet-1-seq-10	Ty chwiejący się draniu.
+ch5/06-jewelstore/21penguinmeet-1-seq-11	Ale jest jedna rzecz.\nJedyna, za którą rozważyłbym oddanie *purple*Fioletowego Księżyca*purple*.\nTuż za Szlamowym Traktem...\nW skarbcu... jest *blue*Święty Karat*blue*.\nOddałbym Księżyc za *blue*Święty Karat*blue*...
+ch5/06-jewelstore/22penguinrepeat-1-seq-01	Oddałbym Księżyc za Święty Karat.\nJest tuż za Szlamowym Traktem...\nA jeśli nie, nadal możesz dołączyć do mojej kolekcji.
+ch5/06-jewelstore/50givekarat-1-seq-01	Wreszcie decydujesz się dołączyć do kolekcji?
+ch5/06-jewelstore/50givekarat-1-seq-02	Mamy Karat.
+ch5/06-jewelstore/50givekarat-1-seq-03	Och, na pewno.
+ch5/06-jewelstore/50givekarat-1-seq-04	Proszę.
+ch5/06-jewelstore/51givekarat-1-seq-01	Wysypują kawałki Karatu na ladę.
+ch5/06-jewelstore/51givekarat-1-seq-02	Pingwin wygląda na osłupiałego.
+ch5/06-jewelstore/51givekarat-1-seq-03	Oczy Pingwina robią się krwistoczerwone.
+ch5/06-jewelstore/51givekarat-1-seq-04	Z jego małej głowy unoszą się opary.
+ch5/06-jewelstore/51givekarat-1-seq-05	Biegnie na zaplecze.
+ch5/06-jewelstore/89penguindestroysmoon-1-seq-01	Pingwin pochyla się nad gablotą.
+ch5/06-jewelstore/89penguindestroysmoon-1-seq-02	„Wy... bezczelne... gryzonie!”
+ch5/06-jewelstore/89penguindestroysmoon-1-seq-03	„Zniszczyliście Karat!”
+ch5/06-jewelstore/89penguindestroysmoon-1-seq-04	„Chcecie Księżyc?!”
+ch5/06-jewelstore/89penguindestroysmoon-1-seq-05	Pingwin rozdziera akt własności.
+ch5/06-jewelstore/89penguindestroysmoon-1-seq-06	JUŻ GO NIE MA! HAHAHA!\nTeraz Księżyc wybuchnie na MILION KAWAŁECZKÓW!
+ch5/07-sludgeway/10introamb-1-seq-01	Zgiełk ścigał Skejtera.
+ch5/07-sludgeway/10introamb-1-seq-02	Królik się ukrył, nie chcąc dać się złapać.
+ch5/07-sludgeway/11sludgeamb-1-seq-01	W gęstym szlamie\ndusze dławią się gniewem.
+ch5/07-sludgeway/30vileriversamb-1-seq-01	Skejter przekraczał plugawe rzeki.
+ch5/07-sludgeway/30vileriversamb-1-seq-02	Pod warstwami szlamu bulgotała lawa.
+ch5/07-sludgeway/90exitamb-1-seq-01	Dusze w szlamie usłyszały echo Skejtera.
+ch5/07-sludgeway/90exitamb-1-seq-02	Te dusze nigdy nie uciekły przed krzykiem Karatu.
+ch5/08-vaultwrath/00intro-1-seq-01	Wykopalisko Świętego Karatu wyglądało na nietknięte,\njakby porzucono je poprzedniej nocy.
+ch5/08-vaultwrath/00intro-1-seq-02	Pośrodku wisiał Święty Karat.
+ch5/08-vaultwrath/00intro-1-seq-03	Lśniący klejnot budził w Skejterze niepokój.\nPodtrzymywała go oblepiona osadem maszyneria.
+ch5/08-vaultwrath/01showcosmiclights-1-seq-01	Świetlne refleksy Świętego Karatu tańczyły na oblepionych maszynach.
+ch5/08-vaultwrath/90end-1-seq-01	Święty Karat wirował dysharmonijnie.
+ch5/08-vaultwrath/91backatvault-1-seq-01	Bez blasku Karatu Skejter wyczuwał niepokojącą tonację.
+ch5/08-vaultwrath/91backatvault-1-seq-02	Czekał Pingwin,\nprzy portalu na Ulicę Wylinki.\n
+ch5/09-karatroom/10ponderkarat-1-seq-01	Skejter zadumał się nad Świętym Karatem.
+ch5/10-boss-jewel/01intro-1-seq-01	Święty Karat zadumał się w odpowiedzi.
+ch5/10-boss-jewel/90win-1-seq-01	Święty Karat wybuchł na milion drobnych odłamków.
+ch5/11-centipede-awake/01intro-1-seq-01	40 000 dusz wykrzyczało się w powietrze.
+ch5/11-centipede-awake/01intro-1-seq-02	One wszystkie... były tam uwięzione?\nTo znaczy... że są wolne?
+ch5/11-centipede-awake/01intro-1-seq-03	Krzyki zlały się w jeden,\nwstrząsając podziemiem od środka.
+ch5/11-centipede-awake/01intro-1-seq-04	Głęboko poniżej, w dziewiątej głębi, wiła się Wieczność.
+ch5/11-centipede-awake/90getpieces-1-seq-01	Królik spojrzał na kawałki.
+ch5/11-centipede-awake/90getpieces-1-seq-02	Eee... mnóstwo drobinek.\nChyba nie poskładają się tak jak ty.\nMoże Pingwin nie będzie miał za złe, że to rozbiłeś.\nMusi mieć jakiś... klej do klejnotów, prawda?
+ch5/11-violetmoon/01startfight-1-seq-01	Fioletowy Księżyc krzyczał bez właściciela.
+ch5/11-violetmoon/90intro-1-seq-02	„Orbita Księżyca wkrótce stopi szlam i cię zabetonuje”.
+ch5/11-violetmoon/90intro-1-seq-03	Księżyc krąży coraz szybciej.\nPołknie cię w całości i podrze umowę...\nChyba że *red*dorównasz mu pędem.*red*\nMasz chyba tylko kilka minut, by *red*nabrać rozpędu*red*.\nNie mogę na to patrzeć. Wybacz! Do zobaczenia, skejterze.
+ch5/11-violetmoon/90intro-1-seq-04	Umowa Skejtera się zacisnęła.
+ch5/11-violetmoon/91violetmoonspot-1-seq-01	Fioletowy Księżyc zaczął drżeć.
+ch5/11-violetmoon/91violetmoonspot-1-seq-02	„Pożałujesz wszystkiego, co ktokolwiek kiedykolwiek zrobił” — wysyczał Pingwin.
+ch5/11-violetmoon/91violetmoonspot-1-seq-03	„Pożałujesz, że w ogóle postawiłeś stopę na desce”.
+ch5/11-violetmoon/93reachedscore-1-seq-01	Pęd Skejtera zaczął płonąć.
+ch5/11-violetmoon/93reachedscore-1-seq-02	„Jedź dalej!” — powiedział Królik.
+ch5/11-violetmoon/95bloodground-1-seq-01	Szare klify krwawiły mętnym szlamem.
+ch5/11-violetmoon/shardsadddamage-1-seq-01	Płonące odłamki podpaliły deskorolkę, zwiększając jej obrażenia.
+ch5/11-violetmoon/shardsstartedtofallfromthevioletmoon-1-seq-01	Fioletowy Księżyc kruszył się, odrzucając płonące odłamki.
+ch5/12-sleep-floorplan/01introinhale-1-seq-01	Skejter wciągnął Fioletowy Księżyc z oddechem.
+ch5/12-sleep-floorplan/01introinhale-1-seq-02	Smak wspomnień dodawał otuchy.
+ch5/12-sleep-floorplan/02inspecttv-1-seq-01	Telewizor nie chciał się włączyć. Nie miał włącznika.
+ch6/00-progress/00intro-1-seq-01	„Tak, rozmawiałem ze Skejterem” —\nFilozof mówił przez telefon.
+ch6/00-progress/00intro-1-seq-02	...
+ch6/00-progress/00intro-1-seq-03	Tak, Skejter był w moim sklepie.
+ch6/00-progress/00intro-1-seq-04	...
+ch6/00-progress/00intro-1-seq-05	Nie, nie udzieliłem mu żadnej pomocy materialnej.
+ch6/00-progress/00intro-1-seq-06	...
+ch6/00-progress/00intro-1-seq-07	Tak, słyszałem te 40 000 krzyków.
+ch6/00-progress/00intro-1-seq-08	...
+ch6/00-progress/00intro-1-seq-09	Nie, nie liczyłem ich.
+ch6/00-progress/00intro-1-seq-10	...
+ch6/00-progress/00intro-1-seq-11	...Co?! Na pewno?
+ch6/00-progress/00intro-1-seq-12	...
+ch6/00-progress/00intro-1-seq-13	*red*Krzyki ją obudziły?*red*
+ch6/00-progress/00intro-1-seq-14	„Wiem, że tej nocy się przebudzi”.
+ch6/02-apartment/00intro-1-seq-01	Skejter obudził się w maleńkim mieszkaniu.
+ch6/02-apartment/00intro-1-seq-02	Przy drzwiach wejściowych trzaskał nikły kawałek ognia.
+ch6/02-apartment/02inspectyellowhousepicture-1-seq-01	Obrazek Księżyca przy małej kamienicy.
+ch6/02-apartment/03inspectwindow-1-seq-01	Skejter wyjrzał przez szeroko otwarte okno.
+ch6/02-apartment/03inspectwindow-1-seq-02	Długa złota rzeka wrzała aż po horyzont.
+ch6/02-apartment/20mailappears-1-seq-01	Masz pocztę!\nCiekawe od kogo... koperta dosłownie płonie.\nI ta pieczęć z pentagramem.\nPrzyniósł ją wąż z kozią czaszką, który wpełzł przez podłogę.\nHmm...\nMoże ze skarbówki?
+ch6/02-apartment/21inspectmail-1-seq-01	OD: DIABŁA\nDO: SZKLANEGO SKEJTERA
+ch6/02-apartment/30rabfinalmoon-1-seq-01	Ostatni, Siódmy Księżyc... *gold*Fałszywe Słońce*gold*.\nTutejsi heretycy, oślepieni mgłą, uważają go za niebiańskie słońce.\n*gold*Siódmy Księżyc mieszka w Żółtym Domu*gold*... gdzieś na tej wyspie.\nGdy zdobędziesz ostatni Księżyc... zdążymy akurat na *gold*Bankiet*gold*.
+ch6/02-apartment/letter from devil	Z BIURKA DIABŁA\nDO: Szklanego Skejtera\n\nW załączeniu jeden (1) bilet na dzisiejszy Bankiet.\nPrzynieś wszystkie Siedem Księżyców w żołądku.
+ch6/03-intro/00intro-1-seq-01	Zgiełk szukał Skejtera w tym raju głupców.\nHeretycy czekają tu na zbawienie od Fałszywego Słońca.
+ch6/03-intro/00intro-1-seq-02	Kraina pod władzą Księżyca pozorowanych obrotów i nieregularnych prawd,\ndymiące grobowce nad złotą rzeką stopionych kości.
+ch6/03-intro/00intro-1-seq-03	Mgła ostatnio zgęstniała.\nMimo wszystkich kłamstw Księżyc znał nadchodzącą prawdę.
+ch6/03-intro/01bloodseer-1-seq-01	STONOGA SIĘ ZBUDZIŁA.\nZATRZYMAĆ POŻERACZA KSIĘŻYCÓW.\nNOC NIE MOŻE SIĘ SKOŃCZYĆ.
+ch6/04-path-discontent/01intro-1-seq-01	Księżyc był tuż za drzwiami.
+ch6/04-path-discontent/02whine1-1-seq-01	Księżyc jęknął, gdy Skejter ruszył ku niemu.
+ch6/04-path-discontent/02whine4-1-seq-01	Księżyc otulił Skejtera złotą mgłą.
+ch6/04-path-discontent/10ambchasedmoon-1-seq-01	Skejter ścigał Księżyc.
+ch6/05-glowisland/01introfrompath-1-seq-01	Fałszywe Słońce zaprowadziło Skejtera na ulice pełne mgły.\n
+ch6/05-glowisland/01introfrompath-1-seq-02	Płonące grobowce wyrzucają gęsty musztardowy pył.\n
+ch6/05-glowisland/01introfrompath-1-seq-03	W tej mgle trudno oddychać. Nawet mgła kłamie.\n*gold*Fałszywe Słońce*gold* mieszka w kamienicy na tej wyspie.\nZnajdź właściwą i szybko je zjedz...
+ch6/05-glowisland/11inspecttomb1-1-seq-01	Mgła powstaje z dymu płonących grobowców.
+ch6/05-glowisland/11inspecttomb1-1-seq-02	Coś mruczy wewnątrz grobowca.
+ch6/05-glowisland/11inspecttomb1-1-seq-03	„Wspaniale! Och, co za cudowne uczucie!”
+ch6/05-glowisland/11inspecttomb1-1-seq-04	„Ależ kocham Niebo!”
+ch6/05-glowisland/20inspectyellowhouse-1-seq-01	Na skraju wyspy stała przytulna kamienica.
+ch6/05-glowisland/20inspectyellowhouse-1-seq-02	Z jej miękkich okien emanowało ciepło.
+ch6/05-glowisland/30introfrommiragehouse-1-seq-01	Skejter wyszedł z mirażu.
+ch6/05-glowisland/30introfrommiragehouse-1-seq-02	Halucynacja fałszywego obrazu.
+ch6/05-glowisland/30introfrommiragehouse-1-seq-03	Ulice wypełnia tuzin domów-miraży.
+ch6/05-glowisland/30introfrommiragehouse-1-seq-04	„Czy któryś jest prawdziwy?”
+ch6/05-glowisland/37slugracebegin-1-seq-01	Jeśli zajedziesz za daleko albo użyjesz nieuczciwego skrótu, odwołuję wyścig.\nJuż wystartowaliśmy!\nJAZDA!
+ch6/05-glowisland/38slugracefail-1-seq-01	Za daleko! Co to za oszukańcze skróty!\nZapomnij! Wracam na start.
+ch6/05-glowisland/40finishmiragebusting-1-seq-01	Przy ostatnim mirażu Skejter znajduje prawdziwy dom.
+ch6/05-glowisland/50fogwasclearing-1-seq-01	Mgła ustępowała.
+ch6/05-glowisland/60enemiesshowup-1-seq-01	Reflektory wypatrzyły Skejtera w rzednącej mgle.
+ch6/05-glowisland/80introcutscene-1-seq-01	Skejter wrócił na Świetlistą Wyspę.
+ch6/05-glowisland/80introcutscene-1-seq-02	Mgła całkiem opadła.
+ch6/05-glowisland/80introcutscene-1-seq-03	Księżyc był w domu.
+ch6/05-glowisland/interact-1-seq-01	Można rozbić kombem powyżej 9999.
+ch6/05-glowisland/knockondoor-1-seq-01	Halo?\nHaloooooo?\n...\nWiem, że tam jesteś!
+ch6/05-glowisland/knockondoor-1-seq-02	...
+ch6/05-glowisland/knockondoor-1-seq-03	Halo?
+ch6/05-glowisland/knockondoor-1-seq-04	...\nKto tam?
+ch6/05-glowisland/knockondoor-1-seq-05	Dostawa! Jedzenie przyjechało!
+ch6/05-glowisland/knockondoor-1-seq-06	Och, naprawdę? Wchodź!
+ch6/05-glowisland/knockondoor-1-seq-07	Hehe...\nZawsze działa, zazwyczaj!
+ch6/05-glowisland/miragesdone-1-seq-01	Prawdziwy Żółty Dom lśnił na mirażu Księżyca.
+ch6/05-glowisland/miragesdone-1-seq-02	STOP!\nTylko mgła nas chroni!\nTak bardzo chcesz zacząć *gold*bankiet*gold*??\nDobrze. Czas na podwieczorek.
+ch6/06-moonroom-ladder/02lockeddoor-1-seq-01	Księżyc trzymał drzwi zamknięte.
+ch6/06-moonroom-ladder/09meetmoon-1-seq-01	Witaj!
+ch6/06-moonroom-ladder/09meetmoon-1-seq-02	To jest Księżyc?!
+ch6/06-moonroom-ladder/09meetmoon-1-seq-03	Nie jestem Księżycem. Co u licha...?\nGdzie moje jedzenie?
+ch6/06-moonroom-ladder/09meetmoon-1-seq-04	Szybko, zjedz go!
+ch6/06-moonroom-ladder/09meetmoon-1-seq-05	O cholera!\nPożeracz Księżyców!!
+ch6/06-moonroom-ladder/21moonslinks-1-seq-01	Księżyc wślizguje się pod sufit.
+ch6/06-moonroom-ladder/22inspectceiling-1-seq-01	Księżyc był za wysoko.
+ch6/06-moonroom-ladder/39moveladder1-1-seq-01	Skejter przysunął drabinę pod Księżyc.
+ch6/06-moonroom-ladder/41climbupladder-1-seq-01	Skejter wszedł po drabinie.
+ch6/06-moonroom-ladder/41climbupladder-1-seq-02	Księżyc zabrzęczał cichym śmiechem.
+ch6/06-moonroom-ladder/41climbupladder-1-seq-03	Wywraca się na lewą stronę.
+ch6/06-moonroom-ladder/56talkdonteatthat-1-seq-01	Czekaj, nie jedz tego!\nTo *red*czarna dziura*red*!
+ch6/06-moonroom-ladder/57inspectblackhole-1-seq-01	Czarna dziura tkwiła nieruchomo w suficie.
+ch6/06-moonroom-ladder/58talkblackholeend-1-seq-01	Ta czarna dziura rozciągnęłaby twoje wnętrzności w makaron.\n*gold*Fałszywy księżyc*gold*...\nTa głębia jest pełna kłamstw. Wynośmy się.\n
+ch6/06-moonroom-ladder/59inspectblackhole-1-seq-01	Dymiąca czarna dziura cicho jęczała w suficie.
+ch6/08-foghouse/01intro-1-seq-01	Wyszli z kamienicy.
+ch6/08-foghouse/01intro-1-seq-02	Pośrodku mglistej nicości.
+ch6/08-foghouse/01intro-1-seq-03	Królik kaszlał.
+ch6/08-foghouse/01intro-1-seq-04	Coney wrzeszczał na grobowiec.
+ch6/08-foghouse/22coney2-1-seq-01	HEJ, KOLEGO, WSTAWAJ!\nO, witaj, obywatelu Skejterze.\nMiło, że przestrzegasz PRAWA.\nGdzie twój klapouchy szczur?\nJa tylko patroluję. Zauważyłem tych tutaj.\nWidziałem ich zezwolenia na sen. I co? Fałszywe!\nMuszę *blue*obudzić*blue* tych przeklętych *gold*śpiochów*gold*...
+ch6/08-foghouse/22coney3repeat-1-seq-01	POBUDKA!!!!!!!\nWSTAWAĆ, WSTAWAĆ, WSTAWAĆ!\nŁAMIECIE PRAWO!\n...KOLEGO! WSTA. WAJ.\n...\nMuszę *blue*obudzić*blue* tych przeklętych *gold*śpiochów*gold*...
+ch6/08-foghouse/23SHOWCHAINBELL-1-seq-01	Ze złotego dzwonu zwisał łańcuch.
+ch6/08-foghouse/30bellring-1-seq-01	Dzwon wstrząsnął Grobowcem.
+ch6/08-foghouse/31tombwakeup-1-seq-01	Ach! Co się tam dzieje?
+ch6/08-foghouse/31tombwakeup-1-seq-02	HEJ, KOLEGO. Łamiesz prawo!
+ch6/08-foghouse/31tombwakeup-1-seq-03	W niebie nie ma praw.
+ch6/08-foghouse/31tombwakeup-1-seq-04	Nie możesz tu spać.
+ch6/08-foghouse/31tombwakeup-1-seq-05	Nie śpię!
+ch6/08-foghouse/31tombwakeup-1-seq-06	Ale SPAŁEŚ! Widziałem! A potem cię obudziliśmy.\nTeraz idziesz do Departamentu Śmierci!
+ch6/08-foghouse/31tombwakeup-1-seq-07	Nie, nie. Nie idę.
+ch6/08-foghouse/31tombwakeup-1-seq-08	WŁAŚNIE ŻE IDZIESZ!
+ch6/08-foghouse/31tombwakeup-1-seq-09	Nie... nie idę. Nic złego nie zrobiłem.
+ch6/08-foghouse/31tombwakeup-1-seq-10	...\nNie zmuszaj mnie, żebym cię wyciągnął!\n... SŁYSZYSZ?\n...\nNie zmuszaj mnie, żebym zadzwonił do DEPARTAMENTU!
+ch6/08-foghouse/32tombopens-1-seq-01	Pokrywa grobowca otwiera się.
+ch6/08-foghouse/32tombopens-1-seq-02	Zaglądają do środka.
+ch6/08-foghouse/32tombopens-1-seq-03	W ciemności grobowca był Księżyc.
+ch6/08-foghouse/32tombopens-1-seq-04	„Dobra, kolego, wchodzę! Jesteś aresztowany!”
+ch6/08-foghouse/32tombopens-1-seq-05	Coney wchodzi do grobowca.
+ch6/11-mooncore/01soulup-1-seq-01	„Czekaj!” — powiedział Księżyc.
+ch6/11-mooncore/01soulup-1-seq-02	„Nie jestem gotów na zjedzenie!”
+ch6/11-mooncore/89end-1-seq-01	Czysty pęd przebił kryształową skorupę Fałszywego Słońca.
+ch6/11-mooncore/89end-1-seq-02	Kto by mi uwierzył? Nie mam ci za złe.
+ch6/11-mooncore/89end-1-seq-03	To podziemie jest wszystkim, co masz!\nPrawda??? Chcesz... prawdy???\nDobrze!\n*red*Pokażę ci prawdę.*red*
+ch6/11-mooncore/95eatyellowmoon-1-seq-01	Oto jesteśmy przy Karuzeli.
+ch6/11-mooncore/95eatyellowmoon-1-seq-02	Wypuszczasz Żółty Księżyc w powietrze.
+ch6/11-mooncore/bossambs-1-seq-01	Fałszywe Słońce trzęsło się i śmiało.
+ch6/11-mooncore/bossambs-1-seq-02	„Bez Księżyców nie ma nocy!” — powiedziało Fałszywe Słońce.
+ch6/11-mooncore/bossambs-1-seq-03	Skejter roztrzaskał światło mirażu.
+ch6/11-mooncore/bossambs-1-seq-04	Miraże rozpadały się na opalizujące odłamki, tak jak Skejter.
+ch6/11-mooncore/bossambs-1-seq-05	Fałszywe Słońce śmiało się i płakało.\n„Jesteśmy z tego samego światła, z tego samego szkła!”
+ch6/11-mooncore/bossambs-1-seq-06	Skejter nie ustępował.\nTo był ostatni Księżyc.
+ch6/11-mooncore/bossambs-1-seq-07	Fałszywe Słońce uśmiechnęło się.\n„Ta wieczna noc nie może się skończyć!”
+ch6/11-mooncore/bossambs-1-seq-08	Demony patrzyły z odległych mostów.\nBeztrosko cieszyły się fałszywymi rajami.
+ch6/11-mooncore/bossambs-1-seq-09	Fałszywe niebiosa zadrżały.
+ch6/11-mooncore/bossambs-1-seq-10	Skejter rozbił niebo.
+ch6/11-mooncore/bossambs-1-seq-11	Mgła pękła i ustąpiła.
+ch6/11-mooncore/bossambs-1-seq-12	Skejter tańczył z Fałszywym Słońcem po fałszywych niebiosach.
+ch6/11-mooncore/bossambs-1-seq-13	Demony na mostach ujrzały olśniewające smugi światła.
+ch6/11-mooncore/bossambs-1-seq-14	„Dlaczego mi nie zaufałeś?” — zaśmiało się Fałszywe Słońce.
+ch6/11-mooncore/bossambs-1-seq-15	„Dlaczego nie ufasz swoim uczuciom?” — zapiszczało Fałszywe Słońce.
+ch6/13-end/02EATEN-1-seq-01	Miraże Księżyca śpiewały jeden przez drugi,
+ch6/13-end/02EATEN-1-seq-02	Wśród fałszywych gwiazd — fałszywe słońce...\na prawda przeszywa cię na wskroś.
+ch6/13-end/02EATEN-1-seq-03	Demonie skejterze, połykaczu, trawicielu.\nJestem prawdziwym siódmym Księżycem.
+ch6/cs-devilandgod/00look-1-seq-01	W płonącym grobowcu było miejsce pustki.
+ch6/cs-devilandgod/00look-1-seq-02	Fałszywe Słońce świeciło jak lampa.
+ch6/14-tv/01inspectbed-1-seq-01	Łóżko wyglądało wygodnie, lecz Skejter nie mógł znów zasnąć.
+ch6/14-tv/59sleep-1-seq-01	Skejter próbował spać\nz brzuchem pełnym Księżyca.
+ch6/14-tv/59sleep-1-seq-02	Skejter leżał, czekając na sen.
+ch6/14-tv/TV-1-seq-01	Proszę państwa, nastał kres czasów.\nSkejter zjadł wszystkie siedem barwnych Księżyców.\nSteve, jak wygląda prognoza dla *ec*Wiecznej Stonogi*ec*?
+ch6/14-tv/TV-1-seq-02	Sytuacja jest bardzo ponura.\n*ec*Wieczna Stonoga*ec* z pewnością już się obudziła.\nZ Piątej Głębi napływają liczne zgłoszenia, że widziano, jak „krzyczy”.\nJeden ze świadków twierdzi, że widać już jej przednie oko.
+ch6/14-tv/TV-1-seq-03	Widać oko? Możesz powtórzyć, Steve?
+ch6/14-tv/TV-1-seq-04	Tak, zadzwonił miejscowy szlamopijca.\nTo tylko jedno zgłoszenie, ale oko opisał jako „czerwonogwiezdny laser”.
+ch6/14-tv/TV-1-seq-05	Steve. To niedobrze, Steve.
+ch6/14-tv/TV-1-seq-06	Nie, to niedobrze. Bardzo niedobrze. Wracamy po reklamach.
+ch7/00-apartment/01cantsleep-1-seq-01	„Minęła kolejna wieczność” —\nnarzekało nocne powietrze.
+ch7/00-apartment/01cantsleep-1-seq-02	Skejter czekał.
+ch7/00-apartment/01cantsleep-1-seq-03	Lecz sen nie nadchodził.
+ch7/00-apartment/01cantsleep-1-seq-04	Księżyce burczały w brzuchu Skejtera.
+ch7/00-apartment/01cantsleep-1-seq-05	Skejter wstał.
+ch7/01-banquet/01intro-1-seq-01	W Pałacu Szczęścia trwał całonocny Bankiet, radosne toasty za brutalne prawdy.
+ch7/01-banquet/01intro-1-seq-02	Z przodu siedziała Żaba, mała i jasna.
+ch7/01-banquet/01intro-1-seq-03	O, hej! Witaj, Skejterze!\nMasz rezerwację?
+ch7/01-banquet/02frotue-1-seq-01	O, witaj!\nPoznaję cię! Szklany skejter!\nChyba nie czujesz się najlepiej?\nCóż, zarezerwowano dla ciebie stolik!\nJest dalej, w głównej sali bankietowej.\nMiłej zabawy!
+ch7/01-banquet/02noreservation-1-seq-01	Bez rezerwacji nie wejdziesz.
+ch7/01-banquet/03hasreservation-1-seq-01	„Ach, więc to ty jesteś Pożeraczem Księżyców”.
+ch7/01-banquet/03hasreservation-1-seq-02	„Masz stolik numer 666”.
+ch7/01-banquet/03hasreservation-1-seq-03	„Proszę iść prosto”.
+ch7/01-banquet/111amb-1-seq-01	Ogromne atrium z samotnym fortepianem.
+ch7/01-banquet/112amb-1-seq-01	Królik grał na fortepianie.
+ch7/01-banquet/113amb-1-seq-01	Skejter zbliżył się do sceny.
+ch7/01-banquet/114amb-1-seq-01	Wszyscy odwrócili się w stronę Skejtera.
+ch7/01-banquet/21talkpigeon-1-seq-01	ej, znasz hasło do wi-fi?\no. tak, słucham. muszę tylko skończyć poprawki...\nale to dobre, naprawdę dobre.\ntak, to znaczy przykro mi. dopadli cię.\nale całkiem to ciekawe. czy zbyt przewidywalne? hmm...\nech, dobra, muszę skończyć tę korektę.
+ch7/01-banquet/22talkpenguin-1-seq-01	Chybu, mój drogi szklaczku.\nDziwię się, taki czysty klejnot jak ty.\nNie poradzisz tu sobie, jeśli cię przejrzą.\nTrzeba było ciężko pracować.\nJak ja. Sam się dokolebałem tam, gdzie jestem.
+ch7/01-banquet/23talklarry-1-seq-01	ZAPADNIĘTYMI OCZAMI NIE WIDZĘ,\nJAK ZROBILI Z CIEBIE APOSTOŁA.\nSZCZĘŚCIE JEST DLA POSĘPNYCH.\nCZUŁEM TWÓJ KLIMAT. ALE TERAZ PRAWDA...? ZOBACZYMY.
+ch7/01-banquet/24talkbeea-1-seq-01	Och, och, jakie to dla ciebie straszne.\nPierwszy raz? Przykro mi, kochanie.\nZdarza się najgorszym z nas.\nOstatnio zabrali mi kwiaty.\nPrzywykłem. Może ty też przywykniesz.\nTeraz po prostu to znoszę. Och, jakie straszne... Straszne.\nPrzykro mi, skarbie.
+ch7/01-banquet/25talkwashingman-1-seq-01	Ale syf, stary.\nNie można fałszować Podpisu Diabła.\nZa to cię dorwą.
+ch7/01-banquet/26talkconey-1-seq-01	Nie wierzę! Kolego, jesteś UGOTOWANY.\nTwoja umowa od początku była fałszywa. Podrobiona? Jestem niemal pewny, że tak NIE WOLNO!\n
+ch7/01-banquet/26talkconey-1-seq-02	Wiedziałem, że jesteś oszustem! Chyba dostaniesz KOPA.\nPierwsze przeczucie było słuszne. Nie wiem, jak udało ci się sprawić, że zwątpiłem w PRAWO!
+ch7/01-banquet/51foldingchair-1-seq-01	„Nieźle sobie poradziłem” — pomyślał Skejter.
+ch7/01-banquet/51foldingchair-1-seq-02	„Nie” — powiedział Księżyc.
+ch7/01-banquet/51foldingchair-1-seq-03	„Dotarłem dość daleko” — pomyślał Skejter.
+ch7/01-banquet/51foldingchair-1-seq-04	„Nie” — powiedział Królik.
+ch7/01-banquet/51foldingchair-1-seq-05	„Czy nie umierałem już dość razy?” — pomyślał Skejter.
+ch7/01-banquet/51foldingchair-1-seq-06	„ZA MAŁO” — powiedziało Oko.
+ch7/01-banquet/51foldingchair-1-seq-07	„To niesprawiedliwe” — pomyślał Skejter.
+ch7/01-banquet/51foldingchair-1-seq-08	„Tak” — powiedział Filozof. „Niesprawiedliwe”.
+ch7/02-rabbit-rat/01rabbit-1-seq-01	Królik obrócił swą połyskującą folię,
+ch7/02-rabbit-rat/01rabbit-1-seq-02	Oczy pokryte skorupą niczym deszcz czerwonych kolców.
+ch7/02-rabbit-rat/01rabbit-1-seq-03	Nienawidzę tej części.\nPrzepraszam.\nTeraz już widzisz, prawda?\nNie jestem królikiem. *red*Jestem szczurem.*red*
+ch7/02-rabbit-rat/02centipede-1-seq-01	Wieczna Stonoga zatoczyła szeroki krąg nad sceną.
+ch7/02-rabbit-rat/03rat-1-seq-01	Z Księżycami w środku widzisz, czym naprawdę jestem.\nZmuszono mnie do przyjęcia postaci królika, bym zaprowadził cię do Księżyca.\nTo najgorsza część. Wiem.\nChodzi o to...\n*red*Nie odzyskasz duszy.*red* Już jej nie ma. Została zjedzona.
+ch7/02-rabbit-rat/03rat-1-seq-02	To straszne, ale Diabeł zostawił dla ciebie szczególną torturę.\nWszystko tutaj...\nJa... Księżyce... Umowa... Deskorolka...\n*red*Wszystko miało doprowadzić cię do bólu.*red*\nJa miałem prowadzić cię do Księżyców.\nKsiężyce miały dać ci cel.\nUmowa miała zaszczepić pewność.\nDeskorolka...\nDeskorolka miała dać ci okruch nadziei.\nŻebyś mógł roztrzaskiwać duszę raz za razem.\nŻeby to działo się wciąż od nowa.\nA ból wracał, lecz pchał cię dalej.
+ch7/02-rabbit-rat/03rat-1-seq-03	Cóż... na razie koniec.\nWkrótce roztopisz się i pokryjesz skorupą.\nKsiężyce w żołądku zamrożą twoją duszę.\nPotem ślimaki rozłożą nas w Rzekę Dusz.\nRzeka Dusz spłucze nas w dół, poza siódmą Głębię...\nPrzepłyniemy przez rowy ósmej...\nPowoli opadniemy w dziewiątą głębię, na zamarznięte jezioro.\nTam będziemy leżeć bez snu w lodowych łzach i czekać na wieczność... Na Stonogę.
+ch7/02-rabbit-rat/03rat-1-seq-04	W końcu *ec*Wieczna Stonoga*ec* zejdzie do lodowego jeziora i pożre nasze dusze.\nPrzetrawi nas w swoim *red*Nieskończonym Przewodzie*red*...\nOdzyskają nasze dusze, by tortura zaczęła się od nowa.\n
+ch7/02-rabbit-rat/03rat-1-seq-05	Tak to wygląda.\nTo także moja tortura.\nNie pracuję dla Diabła, choć tak może się wydawać.\nNie oczekuję zrozumienia.\nAle...\n...\nPrzepraszam.
+ch7/03-contractburn/01intro-1-seq-01	Umowa Skejtera zapłonęła.
+ch7/03-contractburn/01intro-1-seq-03	Z BIURKA DIABŁA:
+ch7/03-contractburn/01intro-1-seq-04	Twoja umowa dobiegła końca.
+ch7/03-contractburn/01intro-1-seq-05	Dziękuję za wypełnienie twojej części umowy.\nZebrałeś Księżyce w żołądku.\nPodano do stołu.\nJesteś daniem głównym.
+ch7/03-contractburn/01intro-1-seq-06	Umowa została w pełni wykonana.\n*red*Dług spłacono w całości. Dusza należy teraz do ciebie.*red*\nWieczna Stonoga wkrótce cię pożre.
+ch7/03-contractburn/02theskaterismad-1-seq-01	Podziemie ucichło.
+ch7/03-contractburn/02theskaterismad-1-seq-02	Księżyce stopiły się ponownie w całość.
+ch7/03-lowpoint/01HATESKATE-1-seq-01	„Czy nie umierałem już dość razy?”
+ch7/03-lowpoint/01HATESKATE-1-seq-02	„Myślałem, że zrobiłem dość”.
+ch7/03-lowpoint/01HATESKATE-1-seq-03	„Już próbowałem”.
+ch7/03-lowpoint/01HATESKATE-1-seq-04	„To niesprawiedliwe”.
+ch7/03-lowpoint/01HATESKATE-1-seq-05	„Nienawidzę jazdy na deskorolce”.
+ch7/03-lowpoint/01HATESKATE-1-seq-06	„Nienawidzę jazdy na deskorolce”.
+ch7/03-lowpoint/01HATESKATE-1-seq-07	„Nienawidzę jazdy na deskorolce”.
+ch7/03-lowpoint/01HATESKATE-1-seq-08	„Nienawidzę jazdy na deskorolce”.
+ch7/03-lowpoint/01HATESKATE-1-seq-09	„NIENAWIDZĘ JAZDY NA DESKOROLCE”.
+ch7/03-lowpoint/01HATESKATE-1-seq-10	„NIENAWIDZĘ JAZDY NA DESKOROLCE”.
+ch7/03-lowpoint/01HATESKATE-1-seq-11	„NIENAWIDZĘ JAZDY NA DESKOROLCE”.
+ch7/03-lowpoint/01HATESKATE-1-seq-12	„NIENAWIDZĘ JAZDY NA DESKOROLCE”.
+ch7/03-lowpoint/01HATESKATE-1-seq-14	NIENAWIDZĘ JAZDY NA DESKOROLCE
+ch7/03-lowpoint/01HATESKATE-1-seq-15	NIENAWIDZĘ JAZDY NA DESKOROLCE
+ch7/03-lowpoint/01HATESKATE-1-seq-16	NIENAWIDZĘ JAZDY NA DESKOROLCE
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-02	NIENAWIDZĘ KSIĘŻYCA.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-03	NIENAWIDZĘ DIABŁA.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-04	NIENAWIDZĘ PODZIEMIA.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-05	UMOWA WYPEŁNIONA
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-06	NIENAWIDZĘ TEGO KRZESŁA.\nNIENAWIDZĘ TEGO CIAŁA.\nNIENAWIDZĘ TEGO ŚWIATŁA.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-07	DUSZA\nZWRÓCONA
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-08	To musi się skończyć. To musi się skończyć. To musi się skończyć.\n
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-09	To się skończy. To się skończy. To się skończy.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-10	POŻARTY PRZEZ\nWIECZNĄ\nSTONOGĘ
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-11	Wieczna Stonoga.\nJest wiecznością. Włada końcem.\nJest końcem.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-12	WIECZNA\nSTONOGA\nCIĘ ZJADA
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-13	Wieczna Stonoga jest pustką nieskończoności.\nWieczna Stonoga pożre Księżyce.\nWieczna Stonoga zakończy podziemie.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-14	WIECZNOŚĆ\nDOBIEGŁA KOŃCA
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-15	Dusza opuściła ciało Skejtera.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-16	Już nie ze szkła: Księżyce wypadają z drucianego żołądka.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-17	Duszę Skejtera odarto,\nstrącając przez gardło Stonogi w Zapomnienie.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-18	NAJCZARNIEJSZYM\nOGNIEM
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-19	ZWYMIOTUJ KSIĘŻYC\nW NIESKOŃCZONĄ PUSTKĘ
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-20	WIECZNOŚĆ\nSIĘ SKOŃCZY
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-21	Podpal Wieczną Stonogę.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-22	Spal ją Najczarniejszym Ogniem.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-23	Zwymiotuj Księżyce w nieskończoną pustkę.
+ch7/03-lowpoint/02FUCKDEVIL-1-seq-24	To zakończy podziemie.
+ch7/03-lowpoint/lookinfinitetract-1-seq-01	Komnata Diabła była nieruchoma i ogromna.
+ch7/03-lowpoint/lookinfinitetract-1-seq-02	Dusze napierały na wielką ścianę.
+ch7/03-lowpoint/lookinfinitetract-1-seq-03	Rozdzielająca bariera odgradzała je od zbawienia.
+ch7/03-lowpoint/lookinfinitetract-1-seq-04	Zieją i bez ustanku szarpią ścianę.
+ch7/07-blackmoon-rises/01cutscene-1-seq-02	Białe Oczy budziły się tysiącami.
+ch7/07-blackmoon-rises/01cutscene-1-seq-03	Co to TAKIEGO?\nHej... To nie wygląda dobrze!
+ch7/07-blackmoon-rises/01cutscene-1-seq-04	Krwawy Wieszcz mrugnął.
+ch7/07-blackmoon-rises/01cutscene-1-seq-05	...\nTO JEST...\n...\n
+ch7/07-blackmoon-rises/01cutscene-1-seq-06	CIEŃ KSIĘŻYCA.
+ch7/08-centipede-shadow/01yearn-1-seq-01	Czy odczuwasz czasem tęsknotę?
+ch7/08-centipede-shadow/01yearn-1-seq-02	Tęsknotę? Czy tęsknię?
+ch7/08-centipede-shadow/01yearn-1-seq-03	Tęsknię. Często. Siedzę... i tęsknię.\nCzy kiedykolwiek tęskniłeś?
+ch7/08-centipede-shadow/02serpenteatmoon-1-seq-01	Księżyc był w pełni.
+ch7/08-centipede-shadow/02serpenteatmoon-1-seq-02	Bankiet przyciągnął Wieczną Stonogę.
+ch7/08-centipede-shadow/explaininfinitetract-1-seq-01	Stonoga zjadła Księżyc!\nTo chyba niedobrze.
+ch7/08-centipede-shadow/explaininfinitetract-1-seq-02	Właśnie to ma robić!\nStonoga pożera Księżyc!
+ch7/08-centipede-shadow/explaininfinitetract-1-seq-03	Czy Stonoga nie jest nieskończenie długa?
+ch7/08-centipede-shadow/explaininfinitetract-1-seq-04	Tak! Dlatego nazywa się Wieczna Stonoga, głuptasie!\nAle żołądek nie jest nieskończony. Raczej przewód pokarmowy.\nWięc tak: jest głowa. Głowę znasz.\nPotem paszcza. Prowadzi do żołądka.\nZa żołądkiem jest nieskończony przewód.
+ch7/08-centipede-shadow/explaininfinitetract-1-seq-05	Kiedy Księżyc trafi do nieskończonego przewodu... wtedy koniec.\nZostanie powyginany, zgnieciony i rozciągnięty w makaron.\nCałkiem zniknie. Wiesz, na zawsze.\nTo znaczy, że po nas! Koniec wieczności! Czyż to nie wspaniałe?
+ch7/09-bleedingeyes/01thecentipedeatethemoon-1-seq-01	Całe podziemie patrzyło, jak Stonoga połyka bankiet.
+ch7/09-bleedingeyes/01thecentipedeatethemoon-1-seq-02	Cała scena zniknęła w jej paszczy,\nworek śmieci pochłonięty przez morze.
+ch7/09-bleedingeyes/02eyescrying-1-seq-01	Oczy płakały.
+ch7/09-bleedingeyes/02eyescrying-1-seq-02	Nie mogę... odwrócić wzroku...
+ch7/09-bleedingeyes/03platocrying-1-seq-01	Filozof płakał.
+ch7/09-bleedingeyes/03platocrying-1-seq-02	Widzę, więc... więc krwawię.
+ch7/09-bleedingeyes/04frotuecrying-1-seq-01	Żaba płakała.
+ch7/09-bleedingeyes/04frotuecrying-1-seq-02	Nie... Nie...\nMój dług... mnie utopi...
+ch7/09-bleedingeyes/05officerscrying-1-seq-01	Funkcjonariusze płakali.
+ch7/09-bleedingeyes/05officerscrying-1-seq-02	Czy to... nielegalne?\nTo... to poza jurysdykcją Departamentu.
+ch7/09-bleedingeyes/06coneycrying-1-seq-01	Coney płakał.
+ch7/09-bleedingeyes/06coneycrying-1-seq-02	Nie wierzę... a co z moim awansem...?\nZ moją pracą? Czy Departament będzie...
+ch7/09-bleedingeyes/07larrycrying-1-seq-01	Larry płakał.
+ch7/09-bleedingeyes/07larrycrying-1-seq-02	NIEZMIERZONE WIBRACJE...
+ch7/09-bleedingeyes/07larrycrying-1-seq-03	ODRAŻAJĄCO... NIEODWRACALNIE... PIĘKNIE... STRASZNE.
+ch7/09-bleedingeyes/08subwaycrying-1-seq-01	Nawet Metro płakało.
+ch7/09-bleedingeyes/08subwaycrying-1-seq-02	Patrzyli, jak Stonoga z Księżycem i Skejterem w paszczy sunie w dół, w dół, w dół.
+ch7/09-bleedingeyes/09thecentipedeatethemoon1-1-seq-01	Stonoga spełzła na samo dno podziemia, do zamarzniętego jeziora.
+ch7/09-bleedingeyes/09thecentipedeatethemoon1-1-seq-02	Zwinęła się w nieskończony węzeł na dnie lodowego jeziora.
+ch7/09-bleedingeyes/09thecentipedeatethemoon1-1-seq-03	Tam zasnęła.
+ch7/waitstage/02startperformance-1-seq-01	Światła teatru przycichły.
+ch7/waitstage/02startperformance-1-seq-02	Zaczęła grać muzyka.
+ch7/waitstage/02startperformance-1-seq-03	Zegar na scenie zaczął odliczać.
+ch7/waitstage/89end-1-seq-01	To był piękny występ.
+ch7/waitstage/89end-1-seq-02	Gorące oklaski byłyby głośniejsze, gdyby widownia miała ręce.
+ch7/waitstage/89end-1-seq-03	Daleki skrzek był nieunikniony.
+ch8/01-cs-oblivion/00intro-1-seq-01	Skejter był w zapomnieniu.
+ch8/01-cs-oblivion/10die01-1-seq-01	Skejter umarł.
+ch8/01-cs-oblivion/10die02-1-seq-01	Skejter wrócił.
+ch8/01-cs-oblivion/10die03-1-seq-01	A potem Skejter umarł.
+ch8/01-cs-oblivion/10die04-1-seq-01	A potem Skejter wrócił.
+ch8/01-cs-oblivion/10die05-1-seq-01	Skejter wciąż umierał.
+ch8/01-cs-oblivion/10die06-1-seq-01	Skejter wciąż wracał.
+ch8/01-cs-oblivion/10die07-1-seq-01	Skejter umarł w bólu.
+ch8/01-cs-oblivion/10die08-1-seq-01	Skejter powstał w udręce.
+ch8/01-cs-oblivion/10die09-1-seq-01	Skejter umarł.
+ch8/01-cs-oblivion/10die10-1-seq-01	Skejter powstał.
+ch8/01-cs-oblivion/10die11-1-seq-01	Umarł.
+ch8/01-cs-oblivion/10die12-1-seq-01	Powstań.
+ch8/01-cs-oblivion/10die13-1-seq-01	Umarł.
+ch8/01-cs-oblivion/10die14-1-seq-01	Powstań.
+ch8/01-cs-oblivion/10die15-1-seq-01	UMRZYJ.
+ch8/01-cs-oblivion/10die16-1-seq-01	POWSTAŃ.
+ch8/01-cs-oblivion/10die17-1-seq-01	Skejter poczuł nicość.
+ch8/01-cs-oblivion/10die18-1-seq-01	Wtedy, w jednej chwili...
+ch8/01-cs-oblivion/10die19-1-seq-01	Skejter poczuł wszystkość.
+ch8/01-cs-oblivion/89skyboxend-1-seq-01	W Zapomnieniu Skejter ujrzał początek i koniec.
+ch8/01-cs-oblivion/89skyboxend-1-seq-02	Skejter zajrzał w głąb siebie.
+ch8/01-seekfire/01intro-1-seq-06	Gdy Stonoga strawi Księżyc, wieczność się skończy.
+ch8/01-seekfire/01intro-1-seq-07	Jeśli zechcesz, możesz spróbować zjeść Księżyc pierwszy.
+ch8/02-path-bolgia/05ambblacksteel-1-seq-01	Księżyc był z czarnej stali.
+ch8/02-path-bolgia/demonicglass	Odprężone (demoniczne) szkło
+ch8/02-path-bolgia/meltingpointofglass	Temperatura topnienia szkła
+ch8/02-path-bolgia/temperature	Temperatura /°C
+ch8/04-area-sinslabs/01introwires-1-seq-01	Skejter dotarł do Biblioteki Grzechów.\n
+ch8/04-area-sinslabs/01introwires-1-seq-02	Cień Księżyca spętano drutami.
+ch8/04-area-sinslabs/01introwires-1-seq-03	Siedem Księżyców uciszonych przez Departament Śmierci,\nprzywiązanych kryształowymi palami.
+ch8/04-area-sinslabs/11hornscholarquest01start-1-seq-01	Ciszej! Potrzebuję spokoju.\nPróbuję zapamiętać paragraf 6001.
+ch8/04-area-sinslabs/11hornscholarquest01start-1-seq-02	*red*Róg Grzechu*red* zatrąbi przy każdym *red*grzechu wartym ponad 10 000 punktów.*red* Nie waż się go obudzić.
+ch8/04-area-sinslabs/11hornscholarquest09done-1-seq-01	Róg Grzechu głośno trąbi.
+ch8/04-area-sinslabs/11hornscholarquest09done-1-seq-02	ACH! Straciłem koncentrację!
+ch8/04-area-sinslabs/12treflipscholar01start-1-seq-01	Uczę się grzechów na dzisiejszy egzamin wstępny.\nWyglądasz jak sprawdzian. Hm.\n
+ch8/04-area-sinslabs/12treflipscholar01start-1-seq-02	Paragraf 451... „Powstrzymasz się od *red*360 flipa ze schodów.*red*”\nO, jest gwiazdka: „360 flip nazywany jest też Treflipem”.
+ch8/04-area-sinslabs/12treflipscholar09done-1-seq-01	HEJ! Właśnie tego JEDNEGO zabroniłem!\nPatrz! *red*Budzisz Księżyc!*red*
+ch8/04-area-sinslabs/13musicscholar01start-1-seq-01	Jestem artystą. Muzykiem. A przynajmniej byłem.\nTrafiłem tu za granie rocka. Mówiłem, że to alternatywa, ale tak naprawdę był to plagiat.\n
+ch8/04-area-sinslabs/13musicscholar01start-1-seq-02	Teraz słucham krzyków uczonych.\nMyślę, że możesz zagrać mi coś lepszego.\n
+ch8/04-area-sinslabs/13musicscholar01start-1-seq-03	Daj usłyszeć *red*grind za 15 000 punktów*red*. Słucham.
+ch8/04-area-sinslabs/13musicscholar09done-1-seq-01	Och, jakie muzyczne. Jak cudownie awangardowe.\nŚwietny materiał na sample. Wyśmienity, doprawdy.
+ch8/04-area-sinslabs/13musicscholar09done-1-seq-02	Proszę... weź. To mi przypomniały twoje dźwięki.\nAch, już słyszę rogi...
+ch8/04-area-sinslabs/15ghosto08hint-1-seq-01	To jedzenie, które próbowałem zjeść... przeszło przeze mnie na wylot.\nKupiłem przekąski w *blu*sklepie z upominkami*blu*.\nWziąłem butelkę Syropu Księżycowego. Próbowałem wypić go *blu*za sklepem*blu*.\nPrzeleciał na wylot. Ale chyba naprawdę coś poczułem!\nCzekaj... Może zgubiłem portfel *blu*za sklepem z upominkami!*blu*
+ch8/04-area-sinslabs/15ghosto09done-1-seq-01	Mój portfel!\nMusiał wypaść, gdy wypiłem galon syropu księżycowego.\nDzięki za znalezienie! To ja znikam.\nO! Mam coś dla ciebie.
+ch8/04-area-sinslabs/15ghosto09done-1-seq-02	Fajne, prawda? Do zobaczenia.\nPiekło jest do bani, ale... myśl pozytywnie!
+ch8/04-area-sinslabs/30eyeswake-1-seq-01	„Co to za hałas?!” — Oczy zbudziły się w księżycowym świetle.
+ch8/04-area-sinslabs/30eyeswake-1-seq-02	„Nie możesz tu jeździć!” — Oczy krwawiły.
+ch8/04-area-sinslabs/41fussappear-1-seq-01	„PRZESTAŃ, POŻERACZU KSIĘŻYCÓW”.\nSyreny Zgiełku głośno krwawiły.
+ch8/04-area-sinslabs/61moonbrokefree-1-seq-01	Cień Księżyca wyrwał się z drutów.
+ch8/04-area-sinslabs/61moonbrokefree-1-seq-02	Och, co ja słyszę?\nTen opadający pomruk jest nie do pomylenia.\nCzy płonie *red*Najczarniejszy Ogień*red*?
+ch8/04-area-sinslabs/61moonbrokefree-1-seq-03	Nie wejdę tam. Nie, nie z moimi uszami.
+ch8/04-area-sinslabs/viewgoalburnwires-1-seq-01	Spal Druty Księżyca.
+ch8/04-area-sinslabs/viewgoaldestroyeyes-1-seq-01	Zniszcz wszystkie Oczy
+ch8/04-area-sinslabs/viewgoaldestroyfuss-1-seq-01	Zniszcz cały Zgiełk
+ch8/06-boss-blackmoon/10phase1-1-seq-01	Kruche skorupy zmieniły się w odłamki.
+ch8/06-boss-blackmoon/20phase2-1-seq-01	Skejter stał się czystym pędem.
+ch8/08-preboss-eatsoul/01intro-1-seq-01	ZAPOMNIENIE
+ch8/08-preboss-eatsoul/01intro-1-seq-02	Dusza Skejtera obnażona.
+ch8/08-preboss-eatsoul/01intro-1-seq-03	Demon pomyślał: „Jesteś tylko demonem”.
+ch8/08-preboss-eatsoul/01intro-1-seq-04	Demon siedział na składanym krześle i słuchał.
+ch8/08-preboss-eatsoul/02stonebroken-1-seq-01	Kamień Skejtera skruszył się\nw odłamki lśniącej czerni.
+ch8/08-preboss-eatsoul/20showboss-1-seq-01	Demon znalazł widmowe odłamki skręcone w nieskończonej ziemi.
+ch8/08-preboss-eatsoul/20showboss-1-seq-02	Odłamki Duszy Skejtera.
+ch8/08-preboss-eatsoul/21soulrevealed-1-seq-01	Skejter rozorał poskręcane odłamki duszy.
+ch8/08-preboss-eatsoul/21soulrevealed-1-seq-02	Potem musiał usiąść.
+ch8/08-preboss-eatsoul/22showsoul-1-seq-01	Dusza Skejtera chwiała się i krwawiła pryzmatycznym dymem.
+ch8/08-preboss-eatsoul/FALLSEVENRISEEIGHT-1-seq-01	Demon objął samego siebie.
+ch8/08-preboss-eatsoul/FALLSEVENRISEEIGHT-1-seq-02	„Przejechałem przez piekło.\nPrzedarłem się przez dzielnice bólu.\nSiedem razy połknąłem Księżyc”.
+ch8/08-preboss-eatsoul/FALLSEVENRISEEIGHT-1-seq-03	„Przeczołgam się przez własne szklane odłamki.\nWydrapię radość z tego piekielnego ścieku.\nSpalę ciernie wokół mojej duszy”.
+ch8/08-preboss-eatsoul/FALLSEVENRISEEIGHT-1-seq-04	„Jestem Demonem.\nNie zatrzymam się”.
+ch8/08-preboss-eatsoul/FALLSEVENRISEEIGHT-1-seq-05	„Zwymiotować siedem Księżyców? To pożreć osiem”.
+ch8/08-preboss-eatsoul/FALLSEVENRISEEIGHT-1-seq-06	Ten Demon był głodny i zmęczony.
+ch8/08-preboss-eatsoul/FALLSEVENRISEEIGHT-1-seq-07	Ten Demon zamierzał zjeść własną duszę.
+ch8/08-preboss-eatsoul/breakingamb-1-seq-01	Demon rozbił szkło.
+ch8/08-preboss-eatsoul/breakingamb-1-seq-02	Druty Demona krzyczały pustym bólem.
+ch8/08-preboss-eatsoul/breakingamb-1-seq-03	Rozbite obrazy Skejtera migały niczym syreny.
+ch8/08-preboss-eatsoul/breakingamb-1-seq-04	Demon słyszał, jak Dusza zawodzi w pustkę.
+ch8/08-preboss-eatsoul/breakingamb-1-seq-05	Szkło rozpadło się w pył.
+ch8/08-preboss-eatsoul/breakingamb-1-seq-06	W pyle kryła się niemal niedostrzegalna poświata.
+ch8/08-preboss-eatsoul/breakingamb-1-seq-07	To była Dusza Skejtera.
+ch8/09-bosspath-skatersoul/01intro-1-seq-01	Demon spojrzał na Duszę Skejtera.
+ch8/09-bosspath-skatersoul/01intro-1-seq-02	Ogromne światło na wiecznym niebie.
+ch8/09-bosspath-skatersoul/01intro-1-seq-03	Płonęło jasno, znienawidzonym blaskiem.
+ch8/10-editorvoid/amb-1-seq-01	Demon ujrzał duszę, słońce na niebie.
+ch8/10-editorvoid/amb-1-seq-02	Demon ruszył na desce ku ogromnemu światłu.
+ch8/10-editorvoid/amb-1-seq-03	Gdy się zbliżał, Słońce zaczęło opadać.
+ch8/10-editorvoid/amb-1-seq-04	Gdy ciemność znów go otuliła, Demon zobaczył:
+ch8/10-editorvoid/amb-1-seq-05	Najczarniejsze płomienie wydobywające się z Duszy Skejtera.
+ch8/10-editorvoid/amb-1-seq-06	Demon wszedł w pożar\ni chwycił stałą część duszy.
+ch8/10-editorvoid/amb-1-seq-07	Demon połknął jądro Duszy Skejtera.
+ch8/11-finaldeal/01intro-1-seq-01	Dusza Skejtera wykrwawiała się\nprzez jego druciane gardło.\n
+ch8/11-finaldeal/89done-1-seq-01	Dusza Skejtera zebrała kawałki w klatce ciała Demona.
+ch8/11-finaldeal/89done-1-seq-02	Druty Demona spajały roztrzaskane szczątki.
+ch8/11-finaldeal/89done-1-seq-03	Odłamki odbijały blask Duszy.
+ch8/11-finaldeal/89done-1-seq-04	W blasku wstał połyskujący cień.
+ch8/12-boss-blackmoon/01intromoonshadow-1-seq-01	Dusza Skejtera unosiła się nad pustym ciałem demona.
+ch8/12-boss-blackmoon/01intromoonshadow-1-seq-02	Demon siedział ze szklanymi odłamkami ledwie trzymanymi przez druty.
+ch8/12-boss-blackmoon/01intromoonshadow-1-seq-03	Długie druty sięgały w szyję Demona.
+ch8/12-boss-blackmoon/01intromoonshadow-1-seq-04	Dusza Skejtera prześwietlała Demona z góry.
+ch8/12-boss-blackmoon/01intromoonshadow-1-seq-05	W świetle Duszy ciało Demona rzucało cień.
+ch8/12-boss-blackmoon/01intromoonshadow-1-seq-06	Cień iskrzył się jak czysty gwiezdny pył.
+ch8/12-boss-blackmoon/01intromoonshadow-1-seq-07	Cień trzymał deskę Skejtera.
+ch8/12-boss-blackmoon/14blackestfirestarted-1-seq-01	Najczarniejszy Ogień zaczął płonąć.
+ch8/12-boss-blackmoon/15fireprogress-1-seq-01	Kombo powyżej 9999 rozpaliło płomienie deskorolki.
+ch8/12-boss-blackmoon/15fireprogress-1-seq-02	Cień jeździł na piekielnej desce ognia.
+ch8/12-boss-blackmoon/15fireprogress-1-seq-03	Płomienie deskorolki rozgrzewały odłamki.
+ch8/12-boss-blackmoon/15fireprogress-1-seq-04	Wkrótce osiągną 1400°C,\ntemperaturę topnienia szkła.
+ch8/12-boss-blackmoon/15fireprogress-1-seq-05	Odłamki zaczęły błyszczeć i drżeć.
+ch8/12-boss-blackmoon/15fireprogress-1-seq-06	Przy 1400°C kawałki zaczęły stapiać się w całość.
+ch8/12-boss-blackmoon/15fireprogress-1-seq-07	Cień rzucany przez światło Duszy zaczął blednąć.
+ch8/12-boss-blackmoon/15fireprogress-1-seq-08	Płomienie wymknęły się spod kontroli.\nOgarnęły Demona i Duszę.
+ch8/12-boss-blackmoon/15fireprogress-1-seq-09	Cień zniknął w świetle.
+ch8/12-boss-blackmoon/themeltingpoint-1-seq-01	Temperatura topnienia szkła to 1400°C.
+ch8/13-rise/CUTSCENE-1-seq-01	Z NAJCZARNIEJSZYCH PŁOMIENI
+ch8/13-rise/CUTSCENE-1-seq-02	SKEJTER ZE SZKŁA I BÓLU
+ch8/oblivion-4/03skaterssoulescapes-1-seq-01	Dusza Skejtera słabo migotała.
+ch8/oblivion-4/03skaterssoulescapes-1-seq-02	Opadła ku czarnemu portalowi\nna lodowych falach Zapomnienia.
+ch8/oblivion-4/03skaterssoulescapes-1-seq-03	Demon patrzył, jak jego dusza płynie w paszczę.
+ch8/oblivion-4/03skaterssoulescapes-1-seq-04	Zniknęła bez śladu.
+ch8/oblivion-4/0intro-1-seq-01	Księżyc wisiał na niebie, jasny i smakowity.
+ch8/oblivion-4/0intro-1-seq-02	Dalej siedział Królik, skubiąc resztki duszokwiatów.
+ch8/oblivion-4/blastedthroughportals-1-seq-01	Skejter pędził przez portale podziemia.
+ch8/oblivion-4/eyesintrocantskatehere-1-seq-01	„Nie możesz tu jeździć” — mówią Białe Oczy.
+ch8/oblivion-4/eyesintrocantskatehere-1-seq-02	„Ta głębia służy Bezruchowi”.
+ch8/oblivion-4/moonfinal-1-seq-01	Skejter był tak blisko Księżyca.
+ch8/oblivion-4/oblivion4ambs-1-seq-01	Dusza Skejtera opadała przez Zapomnienie.
+ch8/oblivion-4/oblivion4ambs-1-seq-02	Demon podążył za Duszą Skejtera.
+ch8/oblivion-4/oblivion4ambs-1-seq-03	Demonowi trudno było jeździć.
+ch8/oblivion-4/oblivion4ambs-1-seq-04	Widmowe drzewa szeptały.\n„To była twoja dusza? Wyglądała tak pożywnie”.
+ch8/oblivion-4/oblivion4ambs-1-seq-05	„Jesteśmy blisko wiecznego końca” — odbijało się od wieżowców.
+ch8/oblivion-4/oblivion4ambs-1-seq-06	Demon ruszył ku tej paszczy.
+ch8/oblivion-4/oblivion4ambs-1-seq-07	Czarny portal przerażał Demona.
+ch8/oblivion-4/oblivion4ambs-1-seq-08	Mimo to wszedł.
+ch8/oblivion-4/powerslide1-1-seq-01	Uretanowe kółka Skejtera piszczały w martwym powietrzu.
+ch8/oblivion-4/powerslide2-1-seq-01	Skejter ślizgał się przez klaustrofobiczne zakręty.
+ch8/oblivion-4/rabbitfollowme-1-seq-01	„Za mną” — powiedział Królik.
+ch8/oblivion-4/rabbitknowportals-1-seq-01	„Znam te portale, odkąd nie żyję”.
+ch8/oblivion-4/whiteeyetouched-1-seq-01	Oczy dały Skejterowi prędkość.
+ch8/oblivion-4/whiteeyetouched2-1-seq-01	Skejter przebił się przez oczy.
+ch8/oblivion-chair/02foldingchair-1-seq-01	Skejter siedział w Paszczy Stonogi.
+ch8/oblivion-chair/02foldingchair-1-seq-02	Czekał na pożarcie.
+ch8/oblivion-chair/03thinfilm-1-seq-01	Wzdłuż przewodu płynęła lodowa rzeka oleju.
+ch8/oblivion-chair/03thinfilm-1-seq-02	Cienka warstwa oleju pokrywała podłogę i płynęła powoli w jednym kierunku.
+ch8/oblivion-chair/03thinfilm-1-seq-03	Na końcu Nieskończonego Przewodu był czarny portal.
+ch8/oblivion-chair/03thinfilm-1-seq-04	Gdyby Skejter siedział dość długo,\nZapomnienie przyszłoby bez trudu.
+ch8/oblivion-coney/04coney-1-seq-01	Hej, kolego.\nNadal możesz chodzić!
+ch8/oblivion-path2/09inspectrubberduck-1-seq-01	Gumowa kaczka z nadrukowanym numerem 9999.
+ch8/oblivion-seer/05seertalk-1-seq-01	DEMONIE.\nNADAL MOŻESZ JEŹDZIĆ.
+ch9/01-cs-introskating/01cutscene-1-seq-01	Skejter jechał długo\nw głąb gardła Wiecznej Stonogi.
+ch9/02-cs-subway/outsidesubway-1-seq-01	Metro pędziło ku Wiecznej Stonodze.
+ch9/03-cs-subway/cut1-1-seq-01	Chyba nie powinniśmy jechać *red*do wnętrza Stonogi!*red*
+ch9/03-cs-subway/cut1-1-seq-02	Jakim cudem NADAL TU JESTEŚMY?!
+ch9/03-cs-subway/cut1-1-seq-03	WCIĄŻ ISTNIEJEMY.\nSTONOGA NIE STRAWIŁA KSIĘŻYCA.\nJESTEŚMY PRZERAŻENI, OSZOŁOMIENI, UNIEWAŻNIENI.
+ch9/03-cs-subway/cut1-1-seq-04	Nie. Tego nie da się wiedzieć.\nPodziemie nie skończy się, dopóki wszystkie Księżyce nie zapadną w zapomnienie.\nNie można wiedzieć, kiedy już się nie istnieje.
+ch9/03-cs-subway/cut1-1-seq-05	Eee, błąd, gamoniu! Ja bym wiedział!\nBo wtedy by mnie nie było. No przecież.\n
+ch9/03-cs-subway/cut1-1-seq-06	Coney... gdybyś nie istniał, jak mógłbyś COKOLWIEK wiedzieć?\nKoniec.
+ch9/03-cs-subway/cut1-1-seq-07	Wszystko skończone.
+ch9/03-cs-subway/cut1-1-seq-08	Patrz, jaki Frotue jest mały.\nW zasadzie breloczek.
+ch9/03-cs-subway/cut1-1-seq-09	Nie jest tak źle!
+ch9/04-path-skelle/01introfromsubway-1-seq-01	Metro wylądowało na jednej z łusek Wiecznej Stonogi.
+ch9/04-path-skelle/01introfromsubway-1-seq-02	Jej łuski były poskręcaną mieszaniną miejskiej materii.
+ch9/04-path-skelle/01introfromsubway-1-seq-03	Dalej nie pojedziemy.
+ch9/04-path-skelle/01introfromsubway-1-seq-04	Ale... co, jeśli Skejter nie zdoła się wydostać?
+ch9/04-path-skelle/01introfromsubway-1-seq-05	Co ma nadejść, nadejdzie.
+ch9/05-area-mouth/01intro-1-seq-01	Obrączkowana paszcza Stonogi była z metalu popękanego od zimna.
+ch9/05-area-mouth/01intro-1-seq-02	Skejter ujrzał zamarzniętą bryłę Księżyców przed Nieskończonym Przewodem.
+ch9/05-area-mouth/01intro-1-seq-03	„POMÓŻ MI” — zdawały się krzyczeć Księżyce.
+ch9/05-area-mouth/01intro-1-seq-04	Zamarznięte Księżyce tkwiły w woskowych cierniach.
+ch9/05-area-mouth/89infinitetractopens-1-seq-01	Bryła Księżyców uwolniła się.
+ch9/05-area-mouth/89infinitetractopens-1-seq-02	Stonoga się budziła.
+ch9/05-area-mouth/89infinitetractopens-1-seq-03	Nieskończony Przewód się rozszerzył.
+ch9/05-area-mouth/89infinitetractopens-1-seq-04	Nadszedł ogromny podmuch.
+ch9/05-area-mouth/89infinitetractopens-1-seq-05	Księżyc wpadł do Nieskończonego Przewodu.
+ch9/05-area-mouth/89infinitetractopens-1-seq-06	Wiatr ciągnął Skejtera.
+ch9/05-area-mouth/89infinitetractopens-1-seq-07	Bez palców Skejter nie mógł się utrzymać.
+ch9/05-area-mouth/89infinitetractopens-1-seq-08	Nieskończony Przewód pochłonął Skejtera.
+ch9/05-prelake/01darkicelake-1-seq-01	Skejter obudził się na lodowej równinie.
+ch9/05-prelake/01darkicelake-1-seq-02	To było coś więcej niż zimno.
+ch9/05-prelake/01darkicelake-1-seq-03	Lodowe jezioro migotało drobnymi gwiazdami.
+ch9/05-prelake/01darkicelake-1-seq-04	W lodzie tkwiła Deskorolka.
+ch9/05-prelake/01darkicelake-1-seq-05	Skejter ledwie mógł się ruszyć.
+ch9/05-prelake/02inspectice-1-seq-01	Po powierzchni lodu płynęła cienka warstwa oleju.\n
+ch9/05-prelake/02inspectice-1-seq-02	Miała lekko lepki, pusty aromat.
+ch9/05-prelake/03inspectsouls-1-seq-01	Tuż pod powierzchnią słabo migotały gwiazdki.
+ch9/05-prelake/03inspectsouls-1-seq-02	Lecz to nie były gwiazdy. To były dusze.
+ch9/05-prelake/03inspectsouls-1-seq-03	W lodowym jeziorze pogrzebano niezliczone dusze.
+ch9/05-prelake/03inspectsouls-1-seq-04	Odległość każdej duszy od powierzchni mierzono wiecznościami.
+ch9/05-prelake/03inspectsouls-1-seq-05	Skejter znał ten smutek.
+ch9/05-prelake/21subwaystuck-1-seq-01	Metro utknęło za lodowymi cierniami.
+ch9/05-prelake/21subwaystuck-1-seq-02	HEJ, KOLEGO!\nHmmm... musimy podjechać bliżej!
+ch9/05-prelake/21subwaystuck-1-seq-03	Co to za WŁOSY wszędzie?
+ch9/05-prelake/21subwaystuck-1-seq-04	Dalej nie pojedziemy. Nie dosięgniemy Skejtera.
+ch9/05-prelake/89end-1-seq-01	Skejter próbował chwycić deskę.\nMocno tkwiła w lodzie.\n
+ch9/05-prelake/89end-1-seq-02	Szarpnął raz i drugi.\nAni drgnęła.
+ch9/05-prelake/89end-1-seq-03	Skejter nie ustępował.\nDrapał lód ze wszystkich stron.
+ch9/05-prelake/89end-1-seq-04	Ciało Skejtera gasło.
+ch9/05-prelake/89end-1-seq-05	Pod powierzchnią\ndusza ledwie się tliła.
+ch9/05-prelake/89end-1-seq-06	Z trudem ogrzewała drewniane włókna blatu.
+ch9/05-prelake/89end-1-seq-07	Ta odrobina ciepła wystarczyła.
+ch9/05-prelake/89end-1-seq-08	Deska była wolna.
+ch9/05-prelake/latespring-1-seq-01	czarna pustka<br>wiecznej stonogi.
+ch9/05-prelake/latespring-1-seq-02	gdzie ty... śpisz.
+ch9/05-prelake/latespring-1-seq-03	robak<br>oddycha.
+ch9/05-prelake/latespring-1-seq-04	coś pieczonego:<br>serek śmietankowy.
+ch9/05-prelake/millstone-1-seq-01	Niegdyś tkwiłem w stopionym piaskowcu,<br>niegdyś byłem niepodzielny.
+ch9/05-prelake/millstone-1-seq-02	Niegdyś dźwigałem wszystkie grzechy, za które mnie zesłano,<br>dziś tylko marnieję, czekając na koniec.
+ch9/05-prelake/millstone-1-seq-03	Niegdyś leżałem bez jednego mruknięcia,<br>bo liczyła się dla mnie praca w sklepiku.
+ch9/05-prelake/millstone-1-seq-04	Uwolnij mnie tej nocy.\nTo jezioro dusz jest z grzechu.\nSam jestem źródłem swych cierpień,\nProszę, podpal mnie.<br>Nie mam już nic do odzyskania.
+ch9/06-setitonfire-area/01intro-1-seq-01	Okousta Stonogi pozostawały zamknięte we śnie.
+ch9/06-setitonfire-area/01intro-1-seq-02	Skejter zamierzał podpalić Stonogę.
+ch9/06-setitonfire-area/01intro-1-seq-03	Okousta Stonogi pozostawały zamknięte we śnie.
+ch9/06-setitonfire-area/01intro-1-seq-04	Jedynym wyjściem było ją obudzić.
+ch9/06-setitonfire-area/01intro-1-seq-05	Skejter zamierzał podpalić Stonogę.
+ch9/06-setitonfire-area/02burnthecentipede-1-seq-01	SPAL STONOGĘ
+ch9/06-setitonfire-area/03firestarted-1-seq-01	W ujemnym zimnie Skejter wzniecił ogień.
+ch9/06-setitonfire-area/89win-1-seq-01	Lód topniał od płomieni Skejtera.
+ch9/06-setitonfire-area/89win-1-seq-02	Palące czerwienią okousta Stonogi mrugnęły.
+ch9/06-setitonfire-area/89win-1-seq-03	Księżyce odmarzły z lodu.
+ch9/06-setitonfire-area/ambburning-1-seq-01	Ogromny wiatr podsycił płomienie Skejtera.
+ch9/06-setitonfire-area/ambburning-1-seq-02	Skejter podpalił karmazynowy kryształ.
+ch9/06-setitonfire-area/ambburning-1-seq-03	Zamarznięta krew Stonogi zaczęła topnieć.
+ch9/06-setitonfire-area/ambburning-1-seq-04	Topniejąca krew skapywała na lodowe jezioro.
+ch9/06-setitonfire-area/ambburning-1-seq-05	W zamarzniętej krwi tkwiły fragmenty ulic podziemia.
+ch9/06-setitonfire-area/ambburning-1-seq-06	Skejter przepalił się przez krew.
+ch9/06-setitonfire-area/ambburning-1-seq-07	Księżyce!
+ch9/06-setitonfire-area/ambburning-1-seq-08	Księżyce tkwiły w kryształach krwi niczym perły.
+ch9/06-setitonfire-area/ambburning-1-seq-09	Krew skwierczała.\nLodowe jezioro topniało.
+ch9/06-setitonfire-area/ambburning-1-seq-10	Wierzchnia warstwa lodu zaczęła zamieniać się w cienką warstwę przejrzystego oleju.
+ch9/06-setitonfire-area/ambburning-1-seq-11	Lód był zamarzniętą śliną Stonogi.
+ch9/06-setitonfire-area/ambburning-1-seq-12	Drobiny dusz odmarzały ze śliny.
+ch9/06-setitonfire-area/ambburning-1-seq-13	Księżyce uwolniły się z topniejących kryształów.\nZaczęły krążyć wokół ognia Skejtera.
+ch9/06-setitonfire-area/ambburning-1-seq-14	Nadszedł ogromny podmuch.\nGłęboki, zgrzytliwy metal ziewnął.\n
+ch9/06-setitonfire-area/ambburning-1-seq-15	Wieczna Stonoga się budziła.
+ch9/06-setitonfire-area/ambburning-1-seq-16	Ślina Stonogi zgasiła płomienie Skejtera.
+ch9/06-setitonfire-area/ambburning-1-seq-17	Księżyce zadrżały i zwarły orbitę.
+ch9/06-setitonfire-area/ambburning-1-seq-18	Szczur zeskoczył.
+ch9/06-setitonfire-area/ambburning-1-seq-19	Skejter wbił deskę w lód.
+ch9/06-setitonfire-area/ambburning-1-seq-20	Zaparł się o blat przeciw ogromnemu podmuchowi oddechu.
+ch9/06-setitonfire-area/ambscenedescription-1-seq-01	W lodowym jeziorze wewnątrz paszczy Stonogi tkwiły fragmenty ulic podziemia.
+ch9/06-setitonfire-area/ambscenedescription-1-seq-02	W powierzchnię lodu wrosły karmazynowe kryształy.
+ch9/06-setitonfire-area/ambscenedescription-1-seq-03	Te wysokie czerwone pryzmaty były zamarzniętymi skrzepami krwi.
+ch9/06-setitonfire-area/ambscenedescription-1-seq-04	Stonoga spała. Wdychała lodowatą pustkę.
+ch9/06-setitonfire-area/subtitles-1-seq-01	Lodowe jezioro zimniejsze niż mróz.
+ch9/06-setitonfire-area/subtitles-1-seq-02	W przepastnej paszczy Wiecznej Stonogi.
+ch9/06-setitonfire-area/subtitles-1-seq-03	Płonące drewno płynęło w czerni i zimnie.
+ch9/06-setitonfire-area/subtitles-1-seq-04	Płonąca pryzmatyczna dusza wciąż lśniła.
+ch9/06-setitonfire-area/subtitles-1-seq-05	Lodowe jezioro zaczęło drżeć.
+ch9/06-setitonfire-area/subtitles-1-seq-06	„Cała ta ciemność to twoja wina” — mówiły drgania jeziora.
+ch9/06-setitonfire-area/subtitles-1-seq-07	„Jedź” — pomyślał Skejter.
+ch9/06-setitonfire-area/subtitles-1-seq-08	Skejter jechał dalej.
+ch9/06-setitonfire-area/subtitles-1-seq-09	Stonoga ziewnęła ogromnym wiatrem.
+ch9/06-setitonfire-area/themeltingpointoficeis0C-1-seq-01	Temperatura topnienia lodu to 0°C.
+ch9/06-setitonfire-area/viewgoal-1-seq-01	Zakończ tupnięciem kombo powyżej 9999, by podpalić Stonogę.
+ch9/09-prebossrush/01intro-1-seq-01	Zapierali się przed pulsowaniem ogromnego wiatru.
+ch9/09-prebossrush/01intro-1-seq-02	Szczur przemówił do Skejtera.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-01	Diabeł chciał, żebyś zjadł Księżyc.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-02	To naprawdę smutne.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-03	Podziemie stworzono jako siedzibę Diabła.\nNieskończona noc pod krainą żywych.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-04	Oczywiście w podziemiu niewiele jest światła.\nNie ma tu słońca. Nie ma gwiazd.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-05	Ale jest Księżyc.\nTa wielka, piękna, jasna dziura w głębokim, ciemnym niebie.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-06	Diabeł zapragnął światła Księżyca.\nPostanowił więc go ukraść.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-07	Trudno ukraść tak piękne światło jak Księżyc.\nDiabeł nie mógł patrzeć na niego wprost, bez łez w oczach.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-08	Lecz nadal pragnął Księżyca...\nObmyślił więc plan.\nUkradł go pośrednio.\nUkradł Księżyc przez odłamki szkła.\nPrzez rozbite kieliszki, odbicia w opuszczonych witrynach, zakurzone okna metra...
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-09	Zabierał go wszędzie, gdzie płakali wzgardzeni.\nStęchły blask przesączał się przez pęknięte butelki i porzucone szyby aut... barwione skrawki zbolałego światła.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-10	Tak Diabeł kradł Księżyc, noc po nocy.\n
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-11	Co zrobił ze skradzionymi smugami księżycowego światła?\nZwinął je w mniej więcej kuliste bryły...\n*red*Stworzył własne Księżyce.*red*
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-12	Najmniej skażone, szarawe światła zachował dla Szarego Księżyca.\nReplika, obraz, piękny hołd...\nLecz pusty, niedoskonały wizerunek.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-13	Te Księżyce...\nIch znienawidzone światło pochodziło z okropnych odbić.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-14	Smugi miały tyle barw, że je posortował.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-15	Tanie wino i odjeżdżające auta... zbite w *red*Czerwony Księżyc*red*.\nSmutku było tyle, że powstały dwa *blu*Niebieskie Księżyce*blu*.\nChciwe zielenie... gniewne fiolety...\nI same skrawki fałszywego złotego księżyca.\nTe straszne Księżyce świecą znienawidzonym blaskiem.\nNie dają nam spać.\nNigdy nie przestają świecić.\nWięc noc się nie kończy.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-16	Tak Księżyce więżą Diabła i nas wszystkich na zawsze.\nMuszę przyznać, że to złożony system.\nAle skutecznie nas tu zatrzymuje.
+ch9/09-prebossrush/03explaindevilandmoon-1-seq-17	Jeśli *red*zjesz Księżyce*red*... to znaczy, kiedy *red*w pełni je strawisz*red*...\n*red*Wtedy noc się skończy.*red*
+ch9/09-prebossrush/04herearethemarbles-1-seq-01	Stonoga wciągnęła Księżyce do płuc.
+ch9/09-prebossrush/04herearethemarbles-1-seq-02	Zniknęły w Zapomnieniu.
+ch9/09-prebossrush/interact-1-seq-01	Szczur drżał z boską częstotliwością.
+ch9/09-prebossrush/intro-1-seq-01	Lodowa paszcza Stonogi topniała.
+ch9/09-prebossrush/intro-1-seq-02	Pośrodku Skejter znalazł jej lśniącą siatkówkę.
+ch9/09-prebossvoid/01intro-1-seq-01	W Nieskończonym Przewodzie\nKamień Skejtera drżał.
+ch9/09-prebossvoid/01intro-1-seq-02	Boję się.\nWidziałem koniec.\nWszystko, co znałem, było w tamtym miejscu. Myślałem, że dalej jest tylko pustka.\n
+ch9/09-prebossvoid/01intro-1-seq-03	Ale teraz widzę... że nie potrafię zobaczyć nic poza końcem.\nJeśli zostanę w Nieskończonym Przewodzie Stonogi, czas przestanie istnieć.\n*red*Wieczna Stonoga... mnie strawi*red*.
+ch9/09-prebossvoid/01intro-1-seq-04	Ja... Nie mogę.\nNIE MOGĘ!
+ch9/09-prebossvoid/89startboss-1-seq-01	Boję się.\nWidziałem koniec. Przeraził mnie.\nMyślałem, że wiem...\nAle nie wiedziałem.\nNie wiedziałem, że mnie znajdziesz.\nJa... Chyba jestem gotowy.\n*red*Gdy zaczniemy, nie będzie już powrotu.*red*\nDobrze. Jestem gotowy.
+ch9/10-bossrush/01flybyintro-1-seq-01	Wieczna Stonoga pędziła ku środkowi Podziemia.
+ch9/10-bossrush/bluebossamb-1-seq-01	Bliźniacze Księżyce wirowały\nrazem, raz i dwa.
+ch9/10-bossrush/bluebossamb-1-seq-02	Skejter ślizgał się i zeskrobywał błękit.
+ch9/10-bossrush/bluebossamb-1-seq-03	Bliźniacze Księżyce wyparowały w poranną rosę.
+ch9/10-bossrush/bossrushamb-1-seq-01	Oczy Szczura były portalami.
+ch9/10-bossrush/bossrushamb-1-seq-02	Mknęli żarem przez wieczne ulice.
+ch9/10-bossrush/bossrushamb-1-seq-03	Skejter przedarł się przez Cień Księżyca.
+ch9/10-bossrush/bossrushamb-1-seq-04	Pędzili przez tchawicę Stonogi.
+ch9/10-bossrush/bossrushamb-1-seq-05	Oczy szczura były ultrafioletowym światłem.
+ch9/10-bossrush/bossrushamb-1-seq-06	„Oślepnę od blasku Księżyca” — powiedział Szczur.
+ch9/10-bossrush/bossrushamb-1-seq-07	Szczur otwierał bramę za bramą.
+ch9/10-bossrush/bossrushamb-1-seq-08	Skejter przejeżdżał przez bramę za bramą.
+ch9/10-bossrush/bossrushamb-1-seq-09	Oddechy Stonogi świstały jak wyginające się wieżowce.
+ch9/10-bossrush/bossrushamb-1-seq-10	Barwne światła złączyły się w oślepiający widmowy błysk.
+ch9/10-bossrush/bossrushamb-1-seq-11	Widmowe chmury kłębiły się.\nŚwiatła mieniły się olśniewającymi barwami.
+ch9/10-bossrush/greenbossamb-1-seq-01	Zielony Księżyc miał wiele łańcuchów.
+ch9/10-bossrush/greenbossamb-1-seq-02	Skejter przebrnął przez milę bólu.
+ch9/10-bossrush/greenbossamb-1-seq-03	Szarpnięcie wciągnęło Skejtera na inną płaszczyznę.
+ch9/10-bossrush/greymoonamb-1-seq-01	Wreszcie Szary Księżyc zalśnił blado.
+ch9/10-bossrush/greymoonamb-1-seq-02	Skejter przebił go czystym pędem.
+ch9/10-bossrush/greymoonamb-1-seq-03	Szary Księżyc rozbłysnął jasną bielą.
+ch9/10-bossrush/redbossamb-1-seq-01	Czerwony Księżyc ryczał,\nwykrwawiając światło.
+ch9/10-bossrush/redbossamb-1-seq-02	Tupnięcia Skejtera wstrząsały jądrem Czerwonego Księżyca.
+ch9/10-bossrush/redbossamb-1-seq-03	Stygł jak wygasły luminofor.
+ch9/10-bossrush/violetmoonamb-1-seq-01	Fioletowy Księżyc kipiał gniewem.
+ch9/10-bossrush/violetmoonamb-1-seq-02	Triki Skejtera odbijały jego pęknięcia.
+ch9/10-bossrush/violetmoonamb-1-seq-03	Skejter wirował ku mglistej ścieżce światła.
+ch9/10-bossrush/yellowbossamb-1-seq-01	Fałszywe Słońce miotało się.\n„To nie ty, czy to ty? Skejter tutaj, w Zapomnieniu?”
+ch9/10-bossrush/yellowbossamb-1-seq-02	Zapiszczało: „Rozbita mgła odsłania nowe!”
+ch9/10-bossrush/yellowbossamb-1-seq-03	Fałszywe Słońce promieniowało ciepłym złotem.
+ch9/11-cs-end/01end-1-seq-01	Skejter był czystym pędem.
+ch9/11-cs-end/01end-1-seq-02	Skejter rozciął Wieczną Stonogę.
+ch9/11-moonfreeze/01introsoulup-1-seq-01	Skejter wystrzelił ku widmowej chmurze.
+ch9/11-moonfreeze/01introsoulup-1-seq-02	Światła Księżyców Diabła mieszały się niczym huragan.\nIskrzyły i wybuchały nieświętymi rozbłyskami.
+ch9/11-moonfreeze/11moonhurt0-1-seq-01	Skejter wstrząsnął jądrem Księżyca.
+ch9/11-moonfreeze/11moonhurt1-1-seq-01	Jądro Księżyca było z czystego cienia.
+ch9/11-moonfreeze/11moonhurt2-1-seq-01	W jądrze migotał ciemny płomień.
+ch9/11-moonfreeze/11moonhurt3-1-seq-01	Najczarniejszy Ogień. Zdawał się wieczny.
+ch9/11-moonfreeze/11moonhurt4-1-seq-01	Skejter zrozumiał, że Księżyc nie jest wieczny. Nie tak jak stonoga.
+ch9/11-moonfreeze/11moonhurt5-1-seq-01	Wieczna Stonoga się zbliżała.
+ch9/11-moonfreeze/11moonhurt6-1-seq-01	Cień Księżyca rósł.
+ch9/11-moonfreeze/11moonhurt7-1-seq-01	Jądro Księżyca pękło.\nJego cień zalał gwiazdy.
+ch9/11-moonfreeze/81frozenmoon-1-seq-01	Księżyc zbił się w zamarzniętą kometę.
+ch9/11-moonfreeze/82frozencomment-1-seq-01	Księżyc zamarzł! To... to niedobrze.\nNie zdoła uciec.
+ch9/11-moonfreeze/82frozencomment-1-seq-02	O, kolego, TAK!\nCENTO zaraz pożre Księżyc!
+ch9/11-moonfreeze/82frozencomment-1-seq-03	Coney, nie masz pojęcia, prawda?\nWiesz, co się stanie, gdy Stonoga połknie Księżyc?
+ch9/11-moonfreeze/82frozencomment-1-seq-04	No... tak! Dostanę awans!\nWreszcie będę ZGIEŁKOWYM PIERWSZEJ RANGI!
+ch9/11-moonfreeze/82frozencomment-1-seq-05	Nie, Coney. Gdy Stonoga połknie Księżyc, twoja ranga będzie... żadna.
+ch9/11-moonfreeze/82frozencomment-1-seq-06	Co? Ha, nie ma takiej rangi!
+ch9/11-moonfreeze/82frozencomment-1-seq-07	Właśnie. Nikt nie będzie miał rangi.\nGdy Stonoga połknie Księżyc...\nZostaniesz pozbawiony swojej rangi.
+ch9/11-moonfreeze/82frozencomment-1-seq-08	Nie! To nieprawda!
+ch9/11-moonfreeze/82frozencomment-1-seq-09	Niewiele jest prawdy w tym świecie.\nLecz przepowiadano to i ostrzegano przed tym od narodzin Księżyca.
+ch9/11-moonfreeze/82frozencomment-1-seq-10	Gdy Stonoga zje Księżyc...\nGdy Księżyc wejdzie do jej nieskończonego przewodu...
+ch9/11-moonfreeze/82frozencomment-1-seq-11	*red*Przestaniemy istnieć.*red*
+ch9/12-cs-cdeath/01centipedecrying-1-seq-01	Całe Podziemie stanęło, by patrzeć, jak nocne niebo\nkruszy się, gdy nieskończenie długi Robak pęka na dwoje.
+ch9/12-cs-cdeath/01centipedecrying-1-seq-02	Choć ogon pozostał wiecznie długi,\nczerwone oko zapiszczało skończoną pieśń,
+ch9/12-cs-cdeath/01centipedecrying-1-seq-03	Orkiestry rojów altówek krzyczały poza rytmem.
+ch9/12-cs-cdeath/02aftercry-1-seq-01	Skejter rozorał metalowy pancerz od środka,\nwyrywając Księżyce z trawiennej pustki.
+ch9/12-cs-cdeath/03vomitvomit-1-seq-01	Wymiotuj! Wymiotuj!\nKsiężyce wyszły okiem Stonogi.
+ch9/12-cs-cdeath/04everysoulsaw-1-seq-01	Wymiotuj!\nKażda dusza ujrzała —
+ch9/13-cs-subwayfriends/01outsidesubway-1-seq-01	Ściany żołądka zapadały się.\nUnikali odłamków metalu i pokruszonego asfaltu.
+ch9/13-cs-subwayfriends/01outsidesubway-1-seq-02	Kwas żołądkowy Stonogi\ncuchnął benzyną i spalonym plastikiem.
+ch9/13-cs-subwayfriends/02subwayshardsfell-1-seq-01	Szklane odłamki spadały wszędzie.
+ch9/13-cs-subwayfriends/02subwayshardsfell-1-seq-02	OCH, PATRZ!
+ch9/13-cs-subwayfriends/02subwayshardsfell-1-seq-03	Nie mogę, zasłaniasz mi swoim wielkim łbem!
+ch9/13-cs-subwayfriends/02subwayshardsfell-1-seq-04	Odłamki Skejtera... Patrz!\nSkejter rozbija się raz za razem, raz za razem i...
+ch9/13-cs-subwayfriends/02subwayshardsfell-1-seq-05	Co... Gdzie Skejter?!
+ch9/13-cs-subwayfriends/03theforgottenmultilight-1-seq-01	Wielobarwne światło Księżyca lśniło,\nuwięzione w odłamkach Skejtera.
+ch9/13-cs-subwayfriends/03theforgottenmultilight-1-seq-02	Kawałki rozsiały się po całym podziemiu,\ndrobne płatki szkła powoli opadające w dół.
+ch9/13-cs-subwayfriends/04itsbeautiful-1-seq-01	To... piękne?
+ch9/13-cs-subwayfriends/04itsbeautiful-1-seq-02	POTĘŻNE PIĘKNO.
+ch9/13-cs-subwayfriends/04itsbeautiful-1-seq-03	Tak. Bez wątpienia. To piękne.
+ch9/13-cs-subwayfriends/04itsbeautiful-1-seq-04	Łał...!\nPachnie... tak pięknie!
+ch9/13-preboss-flare/01subway-1-seq-01	Metro wleciało przez rozwarte Okousta.
+ch9/13-preboss-flare/01subway-1-seq-02	WSIADAJ!!!!
+ch9/13-preboss-flare/03skaterstuck-1-seq-01	Język Stonogi owinął się wokół Metra.
+ch9/13-preboss-flare/03skaterstuck-1-seq-02	Metro wiło się, nie mogąc uciec.
+ch9/13-preboss-flare/03skaterstuck-1-seq-03	NIE! MA NAS!
+ch9/13-preboss-flare/03skaterstuck-1-seq-04	Czy w pustce jedynka staje się zerem?
+ch9/13-preboss-flare/03skaterstuck-1-seq-05	Język owinął się wokół Skejtera.
+ch9/13-preboss-flare/03skaterstuck-1-seq-06	Skejter nie mógł się ruszyć.
+ch9/13-preboss-flare/03skaterstuck-1-seq-07	Dusza Skejtera zaczęła parować.
+ch9/13-preboss-flare/10ambhint-1-seq-01	Demon pokrywał się skorupą, powoli wtapiając się w asfalt.
+ch9/13-preboss-flare/10ambhint-1-seq-02	Język wgniatał Demona w ziemię.
+ch9/13-preboss-flare/11ambrepeat-1-seq-01	To była wieczność.
+ch9/13-preboss-flare/11ambrepeat-1-seq-02	Demon nie mógł się ruszyć.
+ch9/13-preboss-flare/11ambrepeat-1-seq-03	Demon nadal mógł śnić.
+ch9/14-burndream/01intro-1-seq-01	A we Śnie Skejtera była Wieczna Stonoga.
+ch9/14-burndream/14flowershop01inspect-1-seq-01	Kwiaciarnia była zamknięta.\nZe środka dobiegał odgłos grzebania w ziemi.
+ch9/14-burndream/17meanings01lockedinteract-1-seq-01	Skejter nie miał jeszcze powodu, by wejść do Fabryki Znaczeń.\nDrzwi więc ani drgnęły.
+ch9/14-burndream/35forestface01talk-1-seq-01	Ach, światło Księżyca.\nJasne i wieczne.\nLecz ludzie nie rozumieją... czyż nie jesteśmy w podziemiu?\nJak dociera do nas światło Księżyca?\nHa! Głupcy.\nNaprawdę sądzicie, że Księżyc może być tak ograniczony?\nJak inaczej na mojej głowie rosłyby *blue*Księżycowe Kwiaty*blue*?
+ch9/14-burndream/35forestface01talk-1-seq-02	Chciałbym, żeby ktoś przyłożył *blue*nożyce*blue* do mojej głowy i *red*odciął*red* ten Księżycowy Kwiat.\nDemony ciągle myślą, że jestem dziewczyną.\nNie jestem dziewczyną. Jestem POSĄGIEM.\nPoza tym kwiat nie czyni cię dziewczyną!
+ch9/14-burndream/35forestface08cutmoonflower-1-seq-01	Skejter ściął Księżycowy Kwiat.
+ch9/14-burndream/36forestfacesnipped-1-seq-01	Dzięki za ścięcie tego kwiatu.\nNie mogę uciec od światła Księżyca, ale choć przez chwilę nie będzie mi nic rosło na głowie.\nZabierz go ode mnie. Obrzydlistwo!
+ch9/14-burndream/37forestface09-1-seq-01	Przynajmniej tej nocy głowa jest bez kwiatów. Korzystam z każdej pociechy.\nAch, ta wieczność. Wiem, że kwiat wróci... ale dziś się nacieszę.\nTwoje zdrowie, towarzyszu niedoli.
+Item/Type/Deck	Blat
+Item/Type/Drink	Napój
+Item/Type/Sticker	Naklejka
+Item/Type/Truck	Truck
+Item/Type/Wheel	Kółko
+Item/deck-antipodal-desc	Świat uśmiecha się do tego, kto jeździ w switchu.
+Item/deck-antipodal-name	Antypody
+Item/deck-apeout-desc	Pierwotna ucieczka, rytmiczna przemoc i szalony jazz.
+Item/deck-apeout-name	Ape Out
+Item/deck-betafeedback-desc	Departamentem Śmierci rządzą kolumny i wiersze. Garbusy przykute do biurek spisują daty zgonów i sortują grzechy, aż paznokcie ścierają im się w pył.
+Item/deck-betafeedback-name	Arkusz kalkulacyjny
+Item/deck-biletea-desc	Oficjalny licencjonowany blat Żółciowej Herbaty. Orzeźwiająco niezdatny do picia. Edycja limitowana.
+Item/deck-biletea-name	Chluśnij Żółciową Herbatą
+Item/deck-blendedbronze-name	Mieszany brąz
+Item/deck-cityscar-desc	Światła podziemnego miasta są ledwie cieniami żywych.
+Item/deck-cityscar-name	Blizna miasta
+Item/deck-coolshark-desc	Zbyt cool na basen.
+Item/deck-coolshark-name	Wyluzowany rekin
+Item/deck-cultofthelamb-desc	Kraina fałszywych proroków i wierna wspólnota leśnych Wyznawców. Jedyny prawdziwy kult.
+Item/deck-cultofthelamb-name	Cult of the Lamb
+Item/deck-deadtypographer-desc	Diabeł wszystko napisał, ukradł i zaprojektował, zanim ledwie zaczął widzieć.
+Item/deck-deadtypographer-name	Martwy typograf
+Item/deck-deathsdoor-desc	Zbieranie dusz zmarłych i odbijanie karty bywa monotonne, ale dla Kruka to uczciwa praca.
+Item/deck-deathsdoor-name	Death's Door
+Item/deck-decagon-desc	Ta krnąbrna bestia uciekła ze swojego świata przez międzywymiarową bramę, by zostać uwięzioną i zakonserwowaną w cienkich warstwach drewna i włókna szklanego.
+Item/deck-decagon-name	Dziesięciokąt
+Item/deck-derheiligen-name	Derheiligen
+Item/deck-desktopdownload-desc	Pobierz, wypchnij, zresetuj, przebazuj.
+Item/deck-desktopdownload-name	Pobierz na pulpit
+Item/deck-devolver-desc	Sponsor podziemia.
+Item/deck-devolver-name	Devolver
+Item/deck-devolverextradigital-desc	Sponsor podziemia.
+Item/deck-devolverextradigital-name	Devolver Extra Digital
+Item/deck-devolverspaghet-desc	Sponsor podziemia.
+Item/deck-devolverspaghet-name	Spaghetti Devolver
+Item/deck-diamond-name	Diament
+Item/deck-discroom-name	Disc Room
+Item/deck-empirestatebuilding-name	Empire Skate
+Item/deck-figure5ingold-desc	Charles Demuth (1928)
+Item/deck-figure5ingold-name	Cyfra 5 w złocie
+Item/deck-fleshmade-desc	„Z krwi i kości! Przy produkcji tej gry nie używano generatywnej AI ani innych wirtualnych dróg na skróty”.
+Item/deck-fleshmade-name	Z krwi i kości
+Item/deck-frankenstein-desc	Pierwszy list Frankensteina.
+Item/deck-frankenstein-name	Literatura
+Item/deck-gumbo-desc	Wielobarwna mieszanka z miejskich skrawków.
+Item/deck-gumbo-name	Gumbo
+Item/deck-hotline-1-name	Hotline 1
+Item/deck-inferno-leaf-desc	Na kilku rycinach widać słynnego dawnego włoskiego poetę.
+Item/deck-inferno-leaf-name	Karta Inferna
+Item/deck-inscryptionblackgoat-name	Inscryption — Czarna Koza
+Item/deck-lab-rabbit-desc	Tajemna nauka rządzi kształtem i postacią zwierząt oraz demonów.
+Item/deck-lab-rabbit-name	Królik laboratoryjny
+Item/deck-lohengrin-name	Lohengrin
+Item/deck-luckypalace-desc	Diabeł przedstawia... blat deskorolki.
+Item/deck-luckypalace-name	Pałac Szczęścia
+Item/deck-mapoftheunderworld-desc	Obrazkowa mapa podziemia.
+Item/deck-mapoftheunderworld-name	Mapa podziemia
+Item/deck-milklake-name	Mleczne jezioro
+Item/deck-nothanksbag-desc	„Nie, dziękuję. Już nie chcę tego, co podajesz. Nie stać mnie na więcej twojej duszy”.
+Item/deck-nothanksbag-name	Nie, dziękuję
+Item/deck-oneway-stop-desc	Inny sposób na jazdę uliczną.
+Item/deck-oneway-stop-name	Przystanek jednokierunkowy
+Item/deck-philosopher-tears-desc	Phil, widziałeś mój czas. Phil, żar w twoich oczach. Kto próbował uciec przed rozumem? Phil, wiesz, dlaczego umarłem.
+Item/deck-philosopher-tears-name	Łzy Phila
+Item/deck-philsgifts-desc	Upominki szyte na miarę klienta według dokumentacji Departamentu. Wymieniaj tam i z powrotem drobne dzierżawione części swojej duszy.
+Item/deck-philsgifts-name	Upominkowy blat Phila
+Item/deck-pikuniku-2-name	Duży Piku
+Item/deck-pikuniku-3-name	Spacer Pikuniku
+Item/deck-pikuniku-name	Pikuniku
+Item/deck-plucky-artia-desc	Bohaterowie książek w dwuwymiarowym świecie.
+Item/deck-plucky-artia-name	Plucky Artia
+Item/deck-plucky-jot-pip-desc	Błysk w jego dziarskim oku!
+Item/deck-plucky-jot-pip-name	Jot Pip
+Item/deck-plucky-moonbeard-desc	Muzyka naprawdę dudniła.
+Item/deck-plucky-moonbeard-name	Moonbeard
+Item/deck-polyptere-son-squelette-name	Polyptere Son Squelette
+Item/deck-pullingtorture-desc	Bogowie są naprawdę okrutni: cierpieć wiecznie pod kręcącymi się kółkami.
+Item/deck-pullingtorture-name	Tortura rozciągania
+Item/deck-sardine-name	Sardynka
+Item/deck-sardine-skeleton-name	Szkielet sardynki
+Item/deck-skull-1-name	Czaszka I
+Item/deck-sludgelife-bigmud-desc	Najlepsze prosto z rur.
+Item/deck-sludgelife-bigmud-name	Big Mud
+Item/deck-sludgelife-ghost-desc	Na upiorne życie.
+Item/deck-sludgelife-ghost-name	Widmowy szlam
+Item/deck-spectro-hub1-name	Na zawsze
+Item/deck-spectro-superman-name	Oficjalne audio
+Item/deck-stripe2-desc	Piękny, zwodniczy błękit.
+Item/deck-stripe2-name	Pas II
+Item/deck-thinkhappy-name	Myśl pozytywnie
+Item/deck-tunnelsketch-name	Tunele nr 3
+Item/deck-verysoft-name	Bardzo miękki
+Item/deck-wigglemaster-name	Mistrz wygibasów
+Item/drink-biletea-desc	Klasyk w przystępnej cenie. Nie pij za dużo.
+Item/drink-biletea-name	Żółciowa Herbata
+Item/drink-darktea-desc	Ten napój kosztuje 90 dolarów. Jesteśmy w piekle.
+Item/drink-darktea-name	Ciemna Herbata
+Item/drink-latte-desc	Bardzo wykwintne!
+Item/drink-latte-name	Latte
+Item/generic-divinewordofblight-desc	Boskie słowo z latających liter. Układają się w DEMON.
+Item/generic-divinewordofblight-name	Boskie Słowo Zarazy
+Item/generic-divinewordofregret-desc	Boskie słowo z Placu Żalu. Układa się w HOUSE, czyli DOM.
+Item/generic-divinewordofregret-name	Boskie Słowo Żalu
+Item/generic-divinewordofwaiting-desc	Boskie słowo z Poczekalni. Układa się w CHEESE, czyli SER.
+Item/generic-divinewordofwaiting-name	Boskie Słowo Oczekiwania
+Item/generic-gondolaticket-desc	Bilet na Bankiet.
+Item/generic-gondolaticket-name	Bilet na Bankiet
+Item/generic-laundrybag-desc	Pusty worek. Cuchnie benzyną.
+Item/generic-laundrybag-name	Worek na pranie
+Item/generic-letterbracelet-desc	Bransoletka ze słowem.
+Item/generic-letterbracelet-name	Bransoletka z liter
+Item/generic-millicard-desc	Lśniąca żółta karta. Pozwala wrócić do metra.
+Item/generic-millicard-name	MilliCard
+Item/generic-moonflower-desc	Świeci tylko w blasku Księżyca.
+Item/generic-moonflower-name	Księżycowy Kwiat
+Item/generic-oilslug-name	Olejowy ślimak
+Item/generic-piecesoftheholykarat-name	Kawałki Świętego Karatu
+Item/generic-plealetter-desc	Rozwlekły wiersz z prośbą o zgodę na sen. Ułożony w pętlę.
+Item/generic-plealetter-name	Odwołanie
+Item/generic-shears-desc	Zardzewiałe nożyce do ścinania skamieniałych roślin. 
+Item/generic-shears-name	Nożyce
+Item/generic-skatersmark-desc	Uświęcony znak, którego można było użyć w wybranych miejscach. Pozwalał Skejterowi szybko odrodzić się w oznaczonym punkcie.
+Item/generic-skatersmark-name	Znak Skejtera
+Item/generic-thedevilsrobe-desc	Aksamitna szata czarna jak lukrecja. Zaskakująco miękka.
+Item/generic-thedevilsrobe-name	Szata Diabła
+Item/generic-thinkpiece-desc	Artefakt pełen zadumy.
+Item/generic-thinkpiece-name	Myślokształt
+Item/generic-yellowslug-name	Żółty ślimak
+Item/sticker-666-name	6.66
+Item/sticker-699-name	Canal Street
+Item/sticker-99c-name	99c
+Item/sticker-Its_not_over_yet-name	To jeszcze nie koniec
+Item/sticker-TRY_HARD-name	Daj z siebie wszystko
+Item/sticker-a_-_z-name	A–Z
+Item/sticker-ace_card-name	As
+Item/sticker-angry_rabbit-name	Wściekły królik
+Item/sticker-angryeye-name	Wściekłe oko
+Item/sticker-apples-name	Jabłka
+Item/sticker-beachball-name	Piłka plażowa
+Item/sticker-bleedingeye-name	Krwawiące oko
+Item/sticker-blue_rabbit-name	Niebieski królik
+Item/sticker-broken-name	Rozbity
+Item/sticker-bunny-name	Króliczek
+Item/sticker-canalstreet-name	Canal Street
+Item/sticker-cool_cat-name	Wyluzowany kot
+Item/sticker-dead-name	Martwy
+Item/sticker-devilver-desc	Oficjalny sponsor Pałacu Szczęścia.
+Item/sticker-devilver-name	Devilver
+Item/sticker-duckchefsticker-desc	Jaskrawożółta kaczka gotowa ugotować cokolwiek, kogokolwiek, kiedykolwiek.
+Item/sticker-duckchefsticker-name	Kaczy kucharz
+Item/sticker-exit-name	Wyjście
+Item/sticker-expiredmillicard-desc	Naklejka przedstawiająca MilliCard. Nawet gdyby była prawdziwa, nie ma na niej środków.
+Item/sticker-expiredmillicard-name	Nieważna MilliCard
+Item/sticker-feeling_sleepy-name	Senność
+Item/sticker-figure5ingold-desc	Wśród deszczu\ni świateł\nzobaczyłem cyfrę 5\nw złocie\nna czerwonym\nwozie strażackim\npędzącym\nw napięciu\nniezauważanym\nprzy biciu gongów\nwyciu syren\ni turkocie kół\nprzez ciemne miasto.\n\nWilliam Carlos Williams
+Item/sticker-figure5ingold-name	Cyfra 5 w złocie
+Item/sticker-fish-name	Ryba
+Item/sticker-fish_brain-name	Rybi mózg
+Item/sticker-get_lucked-name	Daj się uszczęśliwić
+Item/sticker-glasscrown-desc	WIĘKSZOŚĆ SKEJTERÓW ŁAMIE KOŚCI
+Item/sticker-glasscrown-name	Szklana korona
+Item/sticker-good_luck-name	Powodzenia
+Item/sticker-haveaniceday-name	Miłego dnia
+Item/sticker-hazardous-name	Niebezpieczeństwo
+Item/sticker-intellica-name	Pracownik numer jeden
+Item/sticker-jewelwhale-name	Klejnotowy wieloryb
+Item/sticker-lebageland-name	Le Bageland
+Item/sticker-looking-name	Spojrzenie
+Item/sticker-looking_black-name	Czarne spojrzenie
+Item/sticker-luciferno-name	Luciferno
+Item/sticker-luckycat-desc	Naklejka z kotem, który daje szczęście i je odbiera.
+Item/sticker-luckycat-name	Kot szczęścia
+Item/sticker-make_a_game-name	Stwórz grę
+Item/sticker-milk-desc	Ta naklejka nigdy się nie zepsuje.
+Item/sticker-milk-name	Mleko
+Item/sticker-mister_sweets-name	Pan Słodycz
+Item/sticker-moondonoteat-desc	„Nie jeść” — najwspanialsze zaproszenie w dziejach.
+Item/sticker-moondonoteat-name	Pożeracz Czerwonego Księżyca
+Item/sticker-mousecircle-name	Ruchliwa mysz
+Item/sticker-no_baby-name	Bez dzieci
+Item/sticker-no_skate-name	Zakaz jazdy
+Item/sticker-oh_no-name	O nie
+Item/sticker-philosopher-name	Filozof
+Item/sticker-philsgifts-name	Upominki Phila
+Item/sticker-piecethinker-name	Kształtomyśliciel
+Item/sticker-rat-name	Szczur
+Item/sticker-ratbitskeleton-desc	Królik, Szczur, kościsty ogon zwinięty w małym pomponiku.
+Item/sticker-ratbitskeleton-name	Szczur / Królik
+Item/sticker-resolutecoffee-desc	Naukowo udowodniono, że Resolute Coffee to najlepsze miejsce na rozwiązanie kwestii grzechów przy jednym z tych „komputerów przenośnych”.
+Item/sticker-resolutecoffee-name	Rozstrzygnięcie
+Item/sticker-rosies_grenade-name	Granat Rosie
+Item/sticker-shrimpchef-desc	Zajmij się smażeniem albo umieraniem. Gdy budzisz się i myślisz o śmierci, gdy umierasz.
+Item/sticker-shrimpchef-name	Krewetkowy kucharz
+Item/sticker-skatestory-desc	Autor: Sam Eng
+Item/sticker-skatestory-name	SKATE STORY
+Item/sticker-skull-name	Czaszka
+Item/sticker-smiler-name	Uśmiechacz
+Item/sticker-stabbed-name	Przebity
+Item/sticker-thedevilpresents-name	Diabeł przedstawia
+Item/sticker-unicornincaptivity-desc	Jednorożec przykuty do drzewa w małej okrągłej zagrodzie, na tle różnorodnej roślinności.
+Item/sticker-unicornincaptivity-name	Jednorożec w niewoli
+Item/sticker-volvychest-name	Skarb Volvy'ego
+Item/sticker-volvydude1-name	Kumpel Volvy'ego
+Item/sticker-volvydude2-desc	Profesor, lekarz, prawnik i naukowiec.
+Item/sticker-volvydude2-name	Drugi kumpel Volvy'ego
+Item/sticker-volvyhotdog-desc	Mmmm, hot dog.
+Item/sticker-volvyhotdog-name	Lunch Volvy'ego
+Item/sticker-volvyonions-desc	Trzy całkowicie przyjazne cebule bez czerwonych oczu.
+Item/sticker-volvyonions-name	Przekąska Volvy'ego
+Item/sticker-volvypalmtree-desc	Volvy kocha słońce, o ile jest daleko.
+Item/sticker-volvypalmtree-name	Cień Volvy'ego
+Item/sticker-volvypizza-desc	Idealne ze słońcem. Bez niego też!
+Item/sticker-volvypizza-name	Śniadanie Volvy'ego
+Item/sticker-volvysnake-desc	Co za śśśliczne lato na sssmutek.
+Item/sticker-volvysnake-name	Zwierzak Volvy'ego
+Item/sticker-volvystar-desc	Wypowiadam życzenie do gwiazdy, pięknej sponsorowanej gwiazdy.
+Item/sticker-volvystar-name	Sen Volvy'ego
+Item/sticker-volvyvolvy-desc	Ta wielka ręka służy do grania.
+Item/sticker-volvyvolvy-name	Volvy
+Item/sticker-warranty-name	Gwarancja
+Item/truck-antiantitrucks-name	Anty-Anty
+Item/truck-darthstar-name	Darthstar
+Item/truck-dependence-name	Zależność
+Item/truck-greenline-name	Zielona linia
+Item/truck-hollowhearttrucks-desc	Wydrążone przez ghule trucki są lżejsze, lecz mniej wytrzymałe.
+Item/truck-hollowhearttrucks-name	Puste serce
+Item/truck-insatiable-desc	Jadalny metal. Jeśli masz diamentowe zęby.
+Item/truck-insatiable-name	Nienasycony
+Item/truck-lightningtrucks-name	Ptak błyskawic
+Item/truck-ornategold-desc	Wydrążone przez ghule trucki są lżejsze, lecz mniej wytrzymałe.
+Item/truck-ornategold-name	Puste serce
+Item/truck-palesteel-name	Blada stal
+Item/truck-retrograde-name	Wsteczny
+Item/truck-standardtrucks-name	Standard
+Item/truck-tombstone-name	Nagrobek
+Item/truck-tremor-name	Drżenie
+Item/wheel-blue100a-name	Niebieskie 100a
+Item/wheel-blue103a-name	Niebieskie 103a
+Item/wheel-blue80a-name	Niebieskie 80a
+Item/wheel-glass666a-name	Szklane 666a
+Item/wheel-green100a-name	Zielone 100a
+Item/wheel-green104a-name	Zielone 104a
+Item/wheel-green109a-name	Zielone 109a
+Item/wheel-orange100a-name	Pomarańczowe 100a
+Item/wheel-orange75a-name	Pomarańczowe 75a
+Item/wheel-orange80a-name	Pomarańczowe 80a
+Item/wheel-red101awheels-name	Czerwone 101a
+Item/wheel-red102awheels-name	Czerwone 102a
+Item/wheel-red99awheels-name	Czerwone 99a
+Item/wheel-skeleton100a-name	Szkieletowe 100a
+Item/wheel-skeleton105a-name	Szkieletowe 105a
+Item/wheel-skeleton90a-name	Szkieletowe 90a
+Item/wheel-tombstone-name	Nagrobkowe cokoły
+UI/00-seizure-warning-1-header	Ważne informacje dotyczące zdrowia i bezpieczeństwa podczas korzystania z gier komputerowych.
+UI/00-seizure-warning-2-body	 Jeśli występowały u Was ataki epilepsji lub zasłabnięcia, radzimy zasięgnąć opinii lekarskiej, zanim zaczniecie korzystać z dowolnej gry komputerowej.\n \n Gracze powinni też uważać na wszelkie negatywne reakcje na gry lub filmy zawierające błyskające światła lub wzory. W razie wystąpienia poniższych objawów, należy przerwać grę i skontaktować się z lekarzem: konwulsje, drgania mięśni, zaburzenia wzroku, migrena, dezorientacja lub utrata świadomości. \n \n Grać należy w komfortowych warunkach. Pomieszczenie powinno być dobrze oświetlone, oraz należy siedzieć w bezpiecznej odległości od ekranu. Nie powinno się również zbyt długo grać bez przerwy. Co godzinę warto odpocząć przez 15 minut. Jeśli poczujecie zmęczenie lub senność, radzimy przerwać grę ze względów bezpieczeństwa i zdrowotnych.
+UI/language	Polski

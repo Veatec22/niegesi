@@ -1,0 +1,34 @@
+---
+import { entriesLabel, type Game } from '../lib/games';
+import Keyart from './Keyart.astro';
+
+interface Props {
+  game: Game;
+}
+
+const { game } = Astro.props;
+
+/** Haystack dla wyszukiwarki: bez ogonków, żeby „gesi" znalazło „gęsi". */
+const haystack = [game.title, game.engine, game.scope, game.approach, game.lead]
+  .join(' ')
+  .toLowerCase()
+  .normalize('NFD')
+  .replace(/[̀-ͯ]/g, '')
+  .replace(/ł/g, 'l');
+---
+
+<a class="ng-card" href={game.href} data-card={game.slug} data-search={haystack}>
+  <Keyart game={game} variant="card" />
+  <div class="ng-card-body">
+    <h3 class="ng-display ng-card-title">{game.title}</h3>
+    <p class="ng-meta ng-card-meta" style="margin: 0">{entriesLabel(game)} · {game.engine}</p>
+    <div class="ng-card-status">
+      <span class="ng-badge" data-status={game.status}>
+        {game.status === 'ukonczone' ? 'komplet tekstu' : 'w trakcie'}
+      </span>
+      <span class="ng-badge-note">
+        {game.status === 'ukonczone' ? `wersja ${game.version}` : `${game.percent}%`}
+      </span>
+    </div>
+  </div>
+</a>

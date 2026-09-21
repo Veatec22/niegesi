@@ -11,3 +11,32 @@ __pycache__/
 temp.txt
 backups/
 *.locres
+node_modules/
+.astro/
+.playwright-mcp/
+site/dist/
+tools/applier/bin/
+
+# Paczki dla graczy są publikowane przez stronę, więc te akurat trzymamy w repo.
+!site/public/pobierz/*.zip
+
+# Zasoby wyciągnięte z gier do analizy — cudza zawartość, nigdy do repozytorium.
+*.uasset
+*.uexp
+*.ucas
+*.utoc
+*.pak
+games/*/work/*.bin
+games/*/work/*.ini
+games/*/work/cultures/
+games/*/work/iostore/
+games/*/work/assets/
+games/*/work/file-list.txt
+games/*/work/iostore-files.txt
+# Kopie cudzego kodu do podglądu, bez ich licencji.
+games/sprawl/work/UAssetGUI-Program.cs
+games/sprawl/work/CRCGenerator.cs
+games/labyrinth-of-the-demon-king/work/utoc-reference.go
+games/*/work/interop/
+# Turbo Overkill w analizie: zdekompilowany kod gry, biblioteki Unity, zrzuty zasobów.
+games/turbo-overkill/work/

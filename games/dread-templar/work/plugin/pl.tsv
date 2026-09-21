@@ -1,0 +1,797 @@
+t	gametext/Ttr_001	Witaj! Korytarz przed tobą prowadzi do strefy samouczka, gdzie poznasz podstawy sterowania i kilka ważnych mechanik.
+t	gametext/Ttr_002	Podwójne Katany to twoja domyślna broń biała. Naciśnij <color=white>lewy przycisk myszy</color>, żeby ciąć. Spróbuj rozbić skrzynię.
+t	gametext/Ttr_003	<color=white>Prawy przycisk myszy</color> łączy katany w broń miotaną. <color=white>Lewy przycisk myszy</color> je wyrzuca. Spróbuj rozbić skrzynię w ten sposób.
+t	gametext/Ttr_004	Rzut katanami zadaje bardzo duże obrażenia, ale ma czas odnowienia. W tym czasie możesz walczyć gołymi pięściami. Rozbij skrzynię ponownie, gdy rzut się odnowi.
+t	gametext/Ttr_005	Dobrze! Przejdź do następnej sali, aby kontynuować samouczek.
+t	gametext/Ttr_006	Naciśnij 'Spację', aby skoczyć.
+t	gametext/Ttr_007	Przytrzymaj 'Spację', stojąc przodem do drabiny, aby się po niej wspiąć.
+t	gametext/Ttr_008	Przytrzymaj <color=white>L-Ctrl</color>, aby kucnąć i przejść tunelem.
+t	gametext/Ttr_009	Naciśnij <color=white>klawisze ruchu + Shift</color>, aby wykonać doskok. Spróbuj doskoczyć na platformę.
+t	gametext/Ttr_010	Doskok ma krótki czas odnowienia. Możesz go wykonać w powietrzu podczas skoku. Doskok w powietrzu pokonuje większy dystans niż ten na ziemi.
+t	gametext/Ttr_011	Naciśnij 'E', aby pociągnąć dźwignię, otworzyć żelazne wrota i przejść na strzelnicę, gdzie poznasz Spowolniony Czas.
+t	gametext/Ttr_012	Naciśnij <color=white>Z</color>, aby włączyć Spowolniony Czas.
+t	gametext/Ttr_013	Templariusz potrafi w walce włączyć Spowolniony Czas, a energię na niego ładuje, zabijając demony. Spróbuj spowolnić czas i ostrzelać skrzynie. Naciśnij <color=white>lewy przycisk myszy</color>, aby strzelać, i 'R', aby przeładować.
+t	gametext/Ttr_014	Ten portal zaprowadzi cię do kampanii. Powodzenia!
+t	gametext/Ttr_015	Podwójne Pistolety to twoja domyślna broń dystansowa.
+t	gametext/Ttr_016	Ten portal pominie samouczek i przeniesie cię prosto do kampanii Dread Templar. Zdecydowanie zalecamy przejść samouczek choć raz przed rozpoczęciem gry.
+t	gametext/Ttr_017	Naciśnij <color=white>L-Ctrl</color>, aby płynąć w dół.
+t	gametext/Ttr_018	Naciśnij 'Spację', aby płynąć w górę.
+t	gametext/Ttr_019	Ten portal zaprowadzi cię do Mrocznych Krain i poziomu trudności Koszmar. W trybie Koszmar apteczki znajdziesz wyłącznie w sekretnych miejscach.
+t	gametext/Ttr_020	Naciśnij 'E', aby dowiedzieć się o zmianie broni
+t	gametext/Ttr_021	Bronie korzystające z tej samej amunicji należą do tego samego rodzaju i dzielą jeden klawisz. Domyślny klawisz Strzelby Pompki i Dubeltówki to 3. Kliknij prawym przyciskiem myszy albo naciśnij klawisz broni, aby przełączać się między bronią tego samego rodzaju.
+n	gametext/Ttr_021	Zmiana broni
+t	gametext/Ttr_022	Naciśnij 'E', aby dowiedzieć się o Ołtarzu Ulepszeń
+t	gametext/Ttr_023	Ołtarz Ulepszeń to miejsce, w którym postać osadza Runy Templariusza w broni i w sobie samej. Krwawym Klejnotem odblokujesz slot, a przeciągnięcie Runy Templariusza do odpowiedniego slotu uruchamia jej zdolność.
+n	gametext/Ttr_023	Ołtarz Ulepszeń
+t	gametext/Ttr_024	Naciśnij 'E', aby dowiedzieć się o Runach Templariusza
+t	gametext/Ttr_025	Runy Templariusza to szczególne przedmioty wzmacniające broń lub zdolności postaci. Każda runa pasuje tylko do jednego rodzaju broni. Niektóre złote runy potrafią nawet całkowicie zmienić wygląd i działanie broni.
+n	gametext/Ttr_025	Runy Templariusza
+t	gametext/Ttr_026	Naciśnij 'E', aby dowiedzieć się o Krwawym Klejnocie
+t	gametext/Ttr_027	Krwawy Klejnot, zakrzepły z krwi demona, służy do odblokowywania slotów na runy w postaci i w broni przy Ołtarzu Ulepszeń.
+n	gametext/Ttr_027	Krwawy Klejnot
+t	gametext/Ttr_028	Naciśnij 'E', aby dowiedzieć się o Energii Spowolnionego Czasu
+t	gametext/Ttr_029	Energia Spowolnionego Czasu to część Mocy Trwogi. Potrafi znacząco naładować pasek Spowolnionego Czasu.
+n	gametext/Ttr_029	Energia Spowolnionego Czasu
+t	gametext/Ttr_030	Eksplorując obszary poboczne, zdobędziesz lepsze łupy — Runy Templariusza i Krwawe Klejnoty. Ale im większa nagroda, tym większe ryzyko.
+n	gametext/Ttr_030	Obszar poboczny
+t	gametext/Ttr_031	Naciśnij 'E', aby dowiedzieć się o obszarach pobocznych
+t	gametext/Ttr_032	Naciśnij 'E', aby dowiedzieć się o halloweenowym obszarze pobocznym
+t	gametext/Ttr_033	Portal do strefy plugawego Bezgłowego Nekromanty został otwarty. Stawisz czoła wskrzeszonym legionom i położysz je trupem, żeby zdobyć halloweenową runę 'Klątwa Dyni' do Miotacza Pułapek?
+n	gametext/Ttr_033	Halloweenowy obszar poboczny
+t	gametext/Ttr_034	Naciśnij<size=50><sprite=8></size>, aby otworzyć układ pada
+t	gametext/Ttr_002_0	Podwójne Katany to twoja domyślna broń biała. Naciśnij <size=50><sprite=0></size>, żeby ciąć. Spróbuj rozbić skrzynię.
+t	gametext/Ttr_003_0	<size=50><sprite=1></size> łączy katany w broń miotaną. <size=50><sprite=0></size> je wyrzuca. Spróbuj rozbić skrzynię w ten sposób.
+t	gametext/Ttr_006_0	Naciśnij <size=50><sprite=7></size>, aby skoczyć.
+t	gametext/Ttr_007_0	Przytrzymaj <size=50><sprite=7></size>, stojąc przodem do drabiny, aby się po niej wspiąć.
+t	gametext/Ttr_008_0	Przytrzymaj 'L-Ctrl', aby kucnąć i przejść tunelem.
+t	gametext/Ttr_009_0	Naciśnij <size=50><sprite=10></size> + <size=50><sprite=3></size>, aby wykonać doskok. Spróbuj doskoczyć na platformę.
+t	gametext/Ttr_011_0	Naciśnij 'E', aby pociągnąć dźwignię, otworzyć żelazne wrota i przejść na strzelnicę, gdzie poznasz Spowolniony Czas.
+t	gametext/Ttr_012_0	Naciśnij 'Z', aby włączyć Spowolniony Czas.
+t	gametext/Ttr_013_0	Templariusz potrafi w walce włączyć Spowolniony Czas, a energię na niego ładuje, zabijając demony. Spróbuj spowolnić czas i ostrzelać skrzynie. Naciśnij <size=50><sprite=0></size>, aby strzelać, i 'R', aby przeładować.
+t	gametext/Ttr_017_0	Naciśnij 'L-Ctrl', aby płynąć w dół.
+t	gametext/Ttr_018_0	Naciśnij <size=50><sprite=7></size>, aby płynąć w górę.
+t	gametext/Ttr_035	Naciśnij 'E', aby otworzyć panel ulepszeń
+t	gametext/Ttr_036	Naciśnij 'E', aby dowiedzieć się o Trybie Strażnika
+t	gametext/Ttr_037	Tryb Strażnika to nieskończony tryb oparty na falach wrogów. Chroń Niebieski Kryształ na środku areny tak długo, jak zdołasz. Ulepszenia broni, Krwawe Klejnoty i runy zdobyte w kampanii działają w Trybie Strażnika na tym samym poziomie trudności.
+n	gametext/Ttr_037	Tryb Strażnika
+t	gametext/Ttr_038	Naciśnij 'E', aby dowiedzieć się o wzmocnieniach i zaopatrzeniu
+n	gametext/Ttr_038	 
+t	gametext/Ttr_039	Punkty zdobywasz, zabijając potwory i kończąc kolejne fale. Kupno broni i amunicji, leczenie, naprawa kryształu, wzmocnienie obrażeń i przyzywanie obrońców pozwolą ci przetrwać w Trybie Strażnika.
+n	gametext/Ttr_039	Wzmocnienia i zaopatrzenie
+t	gametext/Tps_001	Na większości poziomów są supersekretne miejsca, do których trzeba się dostać, rozwiązując zagadki. Rozglądaj się za wskazówkami.
+t	gametext/Tps_002	Znalezione runy i Krwawe Klejnoty są wspólne dla wszystkich trybów na tym samym poziomie trudności.
+t	gametext/Tps_003	Jeśli przegapiłeś jakieś runy albo Krwawe Klejnoty w kampanii, możesz je zdobyć w trybie wyboru poziomu.
+t	gametext/Tps_004	Część elementów interfejsu można włączyć lub wyłączyć w ustawieniach.
+t	gametext/Tps_005	Jeśli uważasz, że Piekło jest zbyt łatwe, poszukaj w samouczku wejścia do trybu Koszmar.
+t	gametext/Tps_006	A. Włączenie Spowolnionego Czasu kosztuje trochę energii. B. Spowolniony Czas można wyłączyć w dowolnej chwili po włączeniu.
+t	gametext/Tps_007	Te porady można wyłączyć w ustawieniach.
+t	gametext/Tps_008	Jeśli nie możesz przywyknąć do przechyłu obrazu przy krokach w bok, wyłącz go w ustawieniach.
+t	gametext/Tps_009	W tej grze nie ma kibli.
+t	gametext/Tps_010	Rzucone Podwójne Katany przebijają wszystkich wrogów stojących na ich torze lotu.
+t	gametext/Tps_011	Niektóre wyjątkowe runy zdobędziesz wyłącznie przez supersekret.
+t	gametext/Tps_012	PM-y zadają duże obrażenia, ale pożerają amunicję szybciej, niż zdążysz wydać kasę.
+t	gametext/Tps_013	Czarny Łuk to broń ładowana. Naciągnij cięciwę do końca, zanim strzelisz, żeby wycisnąć z niego maksimum obrażeń.
+t	gametext/Tps_014	Miotacz Pułapek sprawdza się zwłaszcza przeciwko dużym grupom wrogów.
+t	gametext/Tps_015	Małe pułapki z Miotacza Pułapek potrafią leżeć bardzo długo, zanim ktoś je uruchomi.
+t	gametext/Tps_016	Czarny Łuk i Rewolwer Inferno zadają dodatkowe obrażenia przy strzale w głowę.
+t	gametext/Tps_017	Rakieta Inferno nie pozwala na rocket jumpy. Nie wierzysz — spróbuj.
+t	gametext/Tps_018	Szczęście bywa naprawdę ważne.
+t	gametext/Tps_019	Rękawica Inferno P jest ładowana i pochłania mnóstwo energii przy każdym użyciu, więc zawsze ładuj ją do pełna przed uderzeniem.
+t	gametext/Tps_020	Żeby runy zadziałały, trzeba je osadzić w slotach.
+t	gametext/Tps_021	Gra sama zapisuje wszystkie znalezione runy, Krwawe Klejnoty i założone umiejętności broni. Jeśli chcesz zacząć "czyste" przejście od zera, użyj przycisku czyszczenia w menu Opcje/Zarządzanie danymi na ekranie startowym.
+t	gametext/Igt_0001	Zamknięte.
+t	gametext/Igt_0002	Sekretne przejście zostało otwarte.
+t	gametext/Igt_0003	Ten przełącznik blokuje jakiś mechanizm.
+t	gametext/Igt_0004	Potrzebuję czerwonej karty.
+t	gametext/Igt_0005	Potrzebuję żółtej karty.
+t	gametext/Igt_0006	Potrzebuję fioletowej karty.
+t	gametext/Igt_0007	Znalazłem sekret.
+t	gametext/Igt_0008	Znalazłem supersekret.
+t	gametext/Igt_0009	Z tej strony się nie otworzy.
+t	gametext/Igt_0010	Zamknięte, przełącznik musi gdzieś być.
+t	gametext/Igt_0011	Nie teraz.
+t	gametext/Igt_0012	Naciśnij 'E', aby opuścić poziom
+t	gametext/Igt_0013	Naciśnij 'E', aby użyć
+t	gametext/Igt_0014	Naciśnij 'E', aby zapisać
+t	gametext/Igt_0015	Wygaszona runa znów działa.
+t	gametext/Igt_0016	Gdzieś otworzyło się sekretne przejście.
+t	gametext/Igt_0017	Naciśnij 'E', aby otworzyć drzwi
+t	gametext/Igt_0018	Naciśnij 'Esc', aby pominąć...
+t	gametext/Igt_0019	* Żeby runy zadziałały, trzeba je osadzić w slotach.
+t	gametext/Igt_0020	Dodaj grę do listy życzeń
+t	gametext/Igt_0021	R.I.P
+t	gametext/Igt_0022	ZGINĄŁEŚ!
+t	gametext/Igt_0023	Naciśnij [R], aby wczytać ostatni zapis.
+t	gametext/Igt_0024	Naciśnij 'Esc' albo 'E', aby zamknąć panel samouczka.
+t	gametext/Igt_0025	Żelazna krata w jeziorze jest już otwarta.
+t	gametext/Igt_0026	Schody przed tobą prowadzą na następny poziom.
+t	gametext/Igt_0027	Zakrwawiona lewa gałka oczna.
+t	gametext/Igt_0028	Zakrwawiona prawa gałka oczna.
+t	gametext/Igt_0029	Po zebraniu obu gałek chyba widzę ścieżki, których wcześniej nie widziałem.
+t	gametext/Igt_0030	"Nie czuję ręki."
+t	gametext/Igt_0031	Kość ramienia, wygląda dość osobliwie.
+t	gametext/Igt_0032	Ubranie mam teraz przesiąknięte krwią.
+t	gametext/Igt_0033	Krew na ubraniu zaschła.
+t	gametext/Igt_0034	Naciśnij 'E', aby stanąć do walki z bossem.
+t	gametext/Igt_0035	To chyba coś znaczy.
+t	gametext/Igt_0036	Cholera!
+t	gametext/Igt_0037	Kurwa! Nie miało tu być sekretnego miejsca?
+t	gametext/Igt_0038	Naciśnij 'E', aby wejść w portal.
+t	gametext/Igt_0039	Dziwne, skąd tu ciężkie wrota?
+t	gametext/Igt_0040	Runa? Coś to chyba znaczy.
+t	gametext/Igt_0041	Plan? Kto by rysował plany w tym przeklętym miejscu?
+t	gametext/Igt_0042	Kolejny plan — to chyba nie przypadek.
+t	gametext/Igt_0043	Kurwa! Jestem templariuszem, nie olimpijskim sprinterem.
+t	gametext/Igt_0044	Niedobrze! Zawsze jak znajdziesz tyle zaopatrzenia, to zaraz jest jakaś pieprzona walka z bossem.
+t	gametext/Igt_0045	A nie mówiłem!
+t	gametext/Igt_0046	O Boże! PIWO?!
+t	gametext/Igt_0047	Cholera, boję się wysokości.
+t	gametext/Igt_0048	Cholera!
+t	gametext/Igt_0049	Świta! Nie miało tu być sekretnego miejsca?
+t	gametext/Igt_0050	Czerwona karta? Świetnie.
+t	gametext/Igt_0051	Żółta karta? Świetnie.
+t	gametext/Igt_0052	Fioletowa karta? Świetnie.
+t	gametext/Igt_0053	Dzięki, nieznajomy.
+t	gametext/Igt_0054	Przesiąknięty krwią szkielet, wygląda na element jakiegoś rytuału.
+t	gametext/Igt_0055	L . W
+t	gametext/Igt_0056	Sekretne przejście w celi na drugim piętrze jest już otwarte.
+t	gametext/Igt_0057	Co?
+t	gametext/Igt_0059	Potrzebuję 
+t	gametext/Igt_0060	dyniowego klucza!
+t	gametext/Igt_0061	Naciśnij 'E', aby przeszukać 
+t	gametext/Igt_0062	Za mało żetonów!
+t	gametext/Igt_0063	Naciśnij 'E', aby opuścić halloweenowy obszar poboczny
+t	gametext/Igt_0064	Tu grunt wygląda na dość luźny.
+t	gametext/Igt_0065	Zdobyto łopatę.
+t	gametext/Igt_0066	Zdobyto klucz ze wzorem księżyca.
+t	gametext/Igt_0067	Co? Supersupersekret?!
+t	gametext/Igt_0068	Chyba potrzebuję jakiejś dźwigni.
+t	gametext/Igt_0069	Zakrzywienie czasu cofa ten obszar do pewnej konkretnej chwili.
+t	gametext/Igt_0070	Najlepsze wyniki:\n\n1.Seven40Seven\t\t171\n\n2.HonfoxX\t 158\n\n3.SugarFreeKnife\t\t147\n\nGitida-P\n\nEndless Challenger\n\nSheepindisguise\n\nkean.mccracken\n\nGiygas\n\nKivi-Kiti\n\nAythadis
+t	gametext/Igt_0071	Naciśnij 'E', aby dotknąć obrazu.
+t	gametext/Igt_0072	Prosto przed siebie na następny poziom.
+t	gametext/Igt_0073	Druga klepsydra? Chyba jest i trzecia.
+t	gametext/Igt_0074	Nieznajomy, pomóż mi wybić wszystkie demony na moim statku, a zabiorę cię, dokąd zechcesz.
+t	gametext/Igt_0075	Chodź tu, do kajuty kapitańskiej, musimy pogadać.
+t	gametext/Igt_0076	Dokądkolwiek płyniesz, przynieś mi tu moją mapę. Jest zakopana pod ziemią, a bez niej wszyscy zginiemy, próbując przepłynąć to morze.
+t	gametext/Igt_0077	Trzymaj się czegoś, nieznajomy! Nie mam obowiązku wyławiać cię z wody.
+t	gametext/Igt_0078	Zdobyto mapę oznaczoną czerwoną klepsydrą.
+t	gametext/Igt_0079	Zdobyto obraz przedstawiający kogoś w czerwieni.
+t	gametext/Igt_0080	Chyba wisiał tu wcześniej obraz.
+t	gametext/Igt_0081	Kuu'wakh dalh e' tuhlu khamorr mohlu' sya wkul
+t	gametext/Igt_0082	Zdobyto kartę z księgi z zaklęciem.
+t	gametext/Igt_0083	Naciśnij 'E', aby oddać mapę — kapitan zabierze cię na następny poziom.
+t	gametext/Igt_0084	Obszar poboczny
+t	gametext/Igt_0085	Znaleziono Evę.
+t	gametext/Igt_0086	Wszędzie były straszne potwory. Tak się boję i tęsknię za Evą. Przyniesiesz mi ją? Chyba zgubiłam ją nad rzeką, daleko stąd.
+t	gametext/Igt_0087	Dziękuję, dobry panie! Tata poszedł szukać Evy... Jeśli go spotkasz, powiedz mu, że jestem już bezpieczna.
+t	gametext/Igt_0088	Zdobyto kartę o dziwnym kształcie.
+t	gametext/Igt_0089	Szczelina
+t	gametext/Igt_0090	Zdobyto pochodnię.
+t	gametext/Igt_0091	Runy, które pieczętowały sekretne wejście w podłodze Sali Czerwonego Księżyca, wypaliły się co do jednej.
+t	gametext/Igt_0093	Nie wiesz, co narobiłeś, spieprzyłeś wszystko...
+t	gametext/Igt_0094	Wszystkie potwory we wsi zginęły, a magia blokująca drzwi na tyłach zniknęła.
+t	gametext/Igt_0095	??
+t	gametext/Igt_0096	Runa fontanny została uruchomiona.
+t	gametext/Igt_0097	Nie zdołałem nic wyciągnąć z ognia.
+t	gametext/Igt_0098	Zdobyto miksturę gaszącą płomienie.
+t	gametext/Igt_0099	Zdobyto pierścień.
+t	gametext/Igt_0100	Zabrano księgę.
+t	gametext/Igt_0101	Zdobyto pełną kartę ze współrzędnymi morskimi.
+t	gametext/Igt_0102	Wybij ich wszystkich, nieznajomy! I uważaj na mój statek!
+t	gametext/Igt_0103	Patrz! Jesteśmy prawie na miejscu, tam z przodu!
+t	gametext/Igt_0104	Skąd masz te współrzędne? ... No dobra, skoro się upierasz, to płyniemy!
+t	gametext/Igt_0105	Zapisałem współrzędne zaznaczonej wyspy.
+t	gametext/Igt_0106	Księga zaklęć, brakuje w niej 4 stron.
+t	gametext/Igt_end	===
+t	gametext/Itt_0001	Na pewno chcesz wczytać ten stan gry?
+t	gametext/Itt_0002	Gdzieś otworzyło się sekretne przejście.
+t	gametext/Itt_0003	Na pewno chcesz nadpisać ten stan gry?
+t	gametext/Itt_0005	Na pewno wyczyścić wszystkie sloty?
+t	gametext/Itt_0006	=====
+t	gametext/Itt_end	===
+t	gametext/Ist_001	Sekret ciemnego księżyca śpi po wieczne czasy pod bystrym szkarłatnym okiem Demona.
+t	gametext/Ist_002	...Potomkowie rodu Hektorów władają Mocą Trwogi przeciwko demonom. Zdolność ta rośnie w siłę wraz z wiekiem...
+t	gametext/Ist_003	...Córka głowy rodu Hektorów zakochała się w myśliwym, uciekła z domu i przepadła bez śladu...
+t	gametext/Ist_004	...Demoniczny Bożek Mrocznych Krain, Beelsebur, napadł na dziedzica Hektorów i zdobywszy Moc Trwogi, wybił niemal cały ród...
+t	gametext/Ist_005	...Drugi syn rodu Hektorów, Roland, pokonał Beelsebura, lecz młodzieniec odniósł ciężkie rany i zaginął...
+t	gametext/Ist_006	W godzinie, gdy ciemność pochłonie wszelki oddech, koronowany zostanie Król Trwogi.
+t	gametext/Ist_007	Góra. Góra. Dół. Dół. Lewo. Prawo. Lewo. Prawo. B. A.
+t	cutscene/cst_0001	Po tych wszystkich mękach i bólu chyba nie zdołam już opuścić tego miejsca.
+t	cutscene/cst_0002	Zresztą to już bez znaczenia. Po tej ostatniej walce należy mi się odpoczynek. Zmęczenie w końcu mnie dopadło.
+t	cutscene/cst_0003	Wkrótce znów się spotkamy, templariuszu.
+t	cutscene/cst_0004	To, co nosisz w środku, będzie wtedy należało do mnie!
+t	cutscene/cst_0005	Odkąd pamiętam, dziadek zawsze był przy mnie. Był dla mnie najważniejszą osobą na świecie. Tamtej nocy, jak zwykle, opowiadał mi bajkę na dobranoc. Wokół naszej chatynki uniosła się czerwona mgła, a wraz z nią przyszedł obrzydliwy smród. Dziadek zesztywniał i pobladł. Szybko otworzył skrzynkę ze strzelbą, wepchnął mnie do ukrytej skrytki w ścianie i ostrzegł, żebym pod żadnym pozorem nie wydał z siebie dźwięku.\n\nBałem się, ale on uśmiechnął się łagodnie. Potem ukryte drzwiczki zatrzasnęły się z hukiem, zasłaniając jego postać...
+n	cutscene/cst_0005	Intro
+t	cutscene/cst_0006	Przez szpary w ścianie widziałem, jak kilka przerażających potworów wyważa drzwi i wpada do środka. Odtrącał ich kły i pazury swoją wierną bronią, wybiegając na zewnątrz. Słyszałem strzały mieszające się z wrzaskiem potworów. Bojowy okrzyk dziadka szybko utonął w ich wyciu z bólu i nienawiści. Nagle wszystkie dźwięki ucichły. Słyszałem już tylko płytki, charczący oddech dziadka, a potem zapadła zupełna cisza. \n\nGłos przesiąknięty śmiercią zbliżał się z oddali. Tego głosu nie zapomnę nigdy.
+n	cutscene/cst_0006	1-2
+t	cutscene/cst_0007	Kiedy wzeszło słońce, wyszedłem z chaty. Ukląkłem przy przesiąkniętym krwią ciele dziadka. Zapadła przytłaczająca cisza, a ja trząsłem się w szoku.\n\nNie wiem, ile czasu minęło, zanim stanął przede mną mężczyzna w czarnej szacie. Nazwał siebie "Panem". Zaproponował mi drogę, na której stanę się ich koszmarem — drogę Dread Templara. Miał podzielić się ze mną swoją krwią, abym mógł władać Mocą Trwogi. Dzięki niej mógłbym wejść do Mrocznych Krain i zabijać demony. Dziesięć dni po Złączeniu miało wystawić mój charakter na próbę, bo ból byłby nie do wyobrażenia. Im bliżej dnia ostatecznej Fuzji, tym większe ryzyko śmierci.\n\nJaka była moja odpowiedź? 
+n	cutscene/cst_0007	2-3
+t	cutscene/cst_0008	Gdy krew Pana weszła w moje ciało, świat w moich oczach spurpurowiał. Miałem omamy i czułem, jakby moje ciało rozszarpywały setki wściekłych wilków. Tamte dziesięć dni ciągnęło się jak wieczność. \n\nOcknąłem się po tej próbie. Krew chyba mnie wybrała. Nie umarłem.\n\nStałem się Dread Templarem.
+n	cutscene/cst_0008	3-4
+t	cutscene/cst_0009	Trzymaj się czegoś, nieznajomy! Nie mam obowiązku wyławiać cię z wody.
+n	cutscene/cst_0009	 
+t	cutscene/cst_0010	Mroczne Krainy — miejsce, gdzie istnieje wszystko, co w prawdziwym świecie zapomniane albo martwe. Nie ma tu poczucia czasu ani niczego żywego, jest tylko chaos. Im głębiej w nie schodziłem, tym ciężej oddychałem, a skórę miałem jak przekłutą tysiącem noży.\n\nCzuję, że jestem już bardzo blisko celu. Bo ten zapach, ten obrzydliwy smród z mojej pamięci, staje się coraz bardziej duszący.
+n	cutscene/cst_0010	4-5
+t	cutscene/cst_0011	Wreszcie koniec. Ten koszmar, który więził mnie przez ostatnie 20 lat, wreszcie się skończył.
+t	cutscene/cst_0012	Podoba ci się miejsce, które dla ciebie zbudowałem?
+t	cutscene/cst_0013	Wyobrażam sobie, jak cudownie będzie przeżyć tamtą niezapomnianą noc raz jeszcze.
+t	cutscene/cst_0014	Nie zabiłem cię wtedy, żeby moc w tobie mogła obudzić się w pełni.
+t	cutscene/cst_0015	Urosła już tak, że czuję jej doskonałość.
+t	cutscene/cst_0016	Wyjdź. Czekałem stanowczo za długo.
+t	cutscene/cst_0017	Moc Trwogi w twoim ciele przyzywa swojego nowego pana.
+t	cutscene/cst_0018	Nieznajomy, jesteśmy prawie na miejscu.
+t	menu/mnt_001	Zagraj prolog
+t	menu/mnt_002	Kampania
+t	menu/mnt_003	Wczytaj grę
+t	menu/mnt_004	Opcje
+t	menu/mnt_005	Wyjdź do pulpitu
+t	menu/mnt_006	Poziom trudności
+t	menu/mnt_007	Łatwy
+t	menu/mnt_008	Normalny
+t	menu/mnt_009	Trudny
+t	menu/mnt_010	Poziom 1
+t	menu/mnt_011	Poziom 2
+t	menu/mnt_012	Poziom 3
+t	menu/mnt_013	Zapisz
+t	menu/mnt_014	Wczytaj
+t	menu/mnt_015	Powrót
+t	menu/mnt_016	Ustawienia gry
+t	menu/mnt_017	Sterowanie
+t	menu/mnt_018	Obraz
+t	menu/mnt_019	Dźwięk
+t	menu/mnt_020	Powrót
+t	menu/mnt_021	Zatwierdź
+t	menu/mnt_022	Przechył obrazu przy krokach w bok
+t	menu/mnt_023	Czułość myszy
+t	menu/mnt_024	Odwróć mysz
+t	menu/mnt_025	Klawiatura i mysz:
+t	menu/mnt_026	Naprzód
+t	menu/mnt_027	W tył
+t	menu/mnt_028	W lewo
+t	menu/mnt_029	W prawo
+t	menu/mnt_030	Strzał/cięcie
+t	menu/mnt_031	Skok/płyń w górę
+t	menu/mnt_032	Kucnij/płyń w dół
+t	menu/mnt_033	Przeładuj
+t	menu/mnt_034	Użyj
+t	menu/mnt_035	Doskok
+t	menu/mnt_036	Spowolniony Czas
+t	menu/mnt_037	Zmień tryb broni
+t	menu/mnt_038	Poprzednia broń/poprzedni rodzaj broni
+t	menu/mnt_039	Szybki zapis
+t	menu/mnt_040	Szybkie wczytanie
+t	menu/mnt_041	Broń — slot 1
+t	menu/mnt_042	Broń — slot 2
+t	menu/mnt_043	Broń — slot 3
+t	menu/mnt_044	Broń — slot 4
+t	menu/mnt_045	Broń — slot 5
+t	menu/mnt_046	Broń — slot 6
+t	menu/mnt_047	Broń — slot 7
+t	menu/mnt_048	Broń — slot 8
+t	menu/mnt_049	Broń — slot 9
+t	menu/mnt_050	Broń — slot 0
+t	menu/mnt_051	Przywróć domyślne sterowanie
+t	menu/mnt_052	Przywróć
+t	menu/mnt_053	Rozdzielczość
+t	menu/mnt_054	Pełny ekran
+t	menu/mnt_055	Pole widzenia
+t	menu/mnt_056	Jasność
+t	menu/mnt_057	Synchronizacja pionowa
+t	menu/mnt_058	Poświata
+t	menu/mnt_059	Rozmiar
+t	menu/mnt_060	Muzyka
+t	menu/mnt_061	Głośność muzyki
+t	menu/mnt_062	Głośność dźwięków
+t	menu/mnt_063	Panel umiejętności
+t	menu/mnt_064	Ekwipunek
+t	menu/mnt_065	Wyjście
+t	menu/mnt_066	Postać
+t	menu/mnt_067	Katany
+t	menu/mnt_068	Pistolety/PM-y
+t	menu/mnt_069	Zakończ grę
+t	menu/mnt_070	Wyczyść wszystko
+t	menu/mnt_071	Wyczyść slot
+t	menu/mnt_072	Rozpocznij poziom
+t	menu/mnt_073	Rozdział 1
+t	menu/mnt_074	Rozdział 2
+t	menu/mnt_075	Na tym poziomie trudności nie odblokowałeś jeszcze żadnej mapy.
+t	menu/mnt_076	Wybór poziomu
+t	menu/mnt_077	Strzelba/dubeltówka
+t	menu/mnt_078	Czarny Łuk
+t	menu/mnt_079	Miotacz Pułapek
+t	menu/mnt_080	Rakiety Inferno
+t	menu/mnt_081	Rewolwer Inferno
+t	menu/mnt_082	Rękawice Inferno
+t	menu/mnt_083	Piekło
+t	menu/mnt_084	Wrogów można powalić kilkoma strzałami.
+t	menu/mnt_085	Wrogowie mają zwykłą wytrzymałość i zadają zwykłe obrażenia.
+t	menu/mnt_086	Wrogowie mają więcej życia, zadają większe obrażenia i są zwinniejsi. Apteczek jest tu mniej.
+t	menu/mnt_087	Wrogowie są groźniejsi niż na poziomie Trudnym, a apteczek prawie tu nie uświadczysz.
+t	menu/mnt_088	Interfejs:
+t	menu/mnt_089	Maks. życie/amunicja
+t	menu/mnt_090	Pasek amunicji
+t	menu/mnt_091	Ikony
+t	menu/mnt_092	Porady
+t	menu/mnt_093	Dalej
+t	menu/mnt_094	Ukończono!
+t	menu/mnt_095	Czas
+t	menu/mnt_096	Zabójstwa
+t	menu/mnt_097	Sekrety
+t	menu/mnt_098	Supersekrety
+t	menu/mnt_099	Wróć do gry
+t	menu/mnt_100	Wyczyść wszystkie dane run, Krwawych Klejnotów i umiejętności broni
+t	menu/mnt_100b	Wyczyść dane ustawień
+t	menu/mnt_101	Naciśnij 'Spację', aby kontynuować
+t	menu/mnt_102	Uwaga! To usunie dane ze wszystkich poziomów trudności. Na pewno chcesz je wyczyścić?
+t	menu/mnt_102b	Uwaga! To usunie plik z ustawieniami, a gra wystartuje z ustawieniami domyślnymi. Na pewno chcesz go usunąć?
+t	menu/mnt_103	Na pewno chcesz skasować ten stan gry?
+t	menu/mnt_104	Usuń wszystkie stany gry
+t	menu/mnt_105	Zarządzanie danymi
+t	menu/mnt_106	Wyczyszczono!
+t	menu/mnt_106b	Usunięto!
+t	menu/mnt_107	Usuń
+t	menu/mnt_108	Naciśnij 'Q', aby opuścić poziom
+t	menu/mnt_109	Opuść poziom
+t	menu/mnt_110	Koszmar
+t	menu/mnt_111	Odwróć rolkę myszy
+t	menu/mnt_112	Kolor
+t	menu/mnt_113	Przezroczystość
+t	menu/mnt_114	Celownik:
+t	menu/mnt_115	Wskaźnik obrażeń:
+t	menu/mnt_116	Wskaźnik obrażeń
+t	menu/mnt_117	Krew na ekranie
+t	menu/mnt_118	Krew na ekranie:
+t	menu/mnt_119	Statystyki poziomu
+t	menu/mnt_121	Rozpoczniesz tu kampanię Nowa Gra+, zachowując cały dotychczasowy dorobek postaci, umiejętności broni, runy i Krwawe Klejnoty. Demonów będzie więcej, a każdy wróg będzie miał więcej życia.
+t	menu/mnt_122	Nowa Gra +
+t	menu/mnt_123	Trzęsienie ekranu przy strzale
+t	menu/mnt_124	Łatwy+
+t	menu/mnt_125	Normalny+
+t	menu/mnt_126	Trudny+
+t	menu/mnt_127	Piekło+
+t	menu/mnt_128	Koszmar+
+t	menu/mnt_129	Rozdział 3
+t	menu/mnt_130	Rozdział 4
+t	menu/mnt_131	Rozdział 5
+t	menu/mnt_132	Rozdział 6
+t	menu/mnt_133	Znacznik trafienia
+t	menu/mnt_134	Obszary poboczne
+t	menu/mnt_135	Wczytaj domyślne ustawienia gry
+t	menu/mnt_136	Na pewno chcesz wczytać ustawienia domyślne?
+t	menu/mnt_137	Przywrócono! Uruchom grę ponownie, aby wszystkie ustawienia domyślne weszły w życie.
+t	menu/mnt_138	Układ pada
+t	menu/mnt_139	Strzał
+t	menu/mnt_140	Poprzednia broń/koło broni (przytrzymaj)
+t	menu/mnt_141	Użyj
+t	menu/mnt_142	Przeładuj/anuluj (menu)
+t	menu/mnt_143	Spowolniony Czas
+t	menu/mnt_144	Skok/zatwierdź (menu)
+t	menu/mnt_145	Rozglądanie\n\nGóra/dół: przewijanie (menu)\n\nLewo/prawo: suwak/wybór (ustawienia)
+t	menu/mnt_146	Broń alternatywna
+t	menu/mnt_147	Doskok
+t	menu/mnt_148	Ruch/nawigacja (menu)
+t	menu/mnt_149	Lewo: poprzedni slot broni\nPrawo: następny slot broni
+t	menu/mnt_150	Układ pada
+t	menu/mnt_151	Menu
+t	menu/mnt_152	Ustaw. pada
+t	menu/mnt_153	Czułość rozglądania w osi X
+t	menu/mnt_154	Czułość rozglądania w osi Y
+t	menu/mnt_155	Rozmiar koła broni
+t	menu/mnt_156	Odwróć oś Y
+t	menu/mnt_157	Kucnij
+t	menu/mnt_158	Nawigacja
+t	menu/mnt_159	Wybierz/pokaż opis
+t	menu/mnt_160	Aktywuj slot/aktywuj runę
+t	menu/mnt_161	Suwak lewo-prawo/wybór lewo-prawo
+t	menu/mnt_162	Anuluj
+t	menu/mnt_163	Przełącz/zatwierdź
+t	menu/mnt_164	Przewijanie
+t	menu/mnt_165	Czułość rozglądania
+t	menu/mnt_166	Czułość przewijania
+t	menu/mnt_167	Wybierz slot
+t	menu/mnt_168	Broń alternatywna
+t	menu/mnt_169	Obrót o 180 stopni
+t	menu/mnt_170	Kucnij/anuluj (menu)
+t	menu/mnt_171	Układ 1
+t	menu/mnt_172	Układ 2
+t	menu/mnt_173	Poprzednia broń (wł.)/poprzedni rodzaj broni (wył.)
+t	menu/mnt_174	Kursor myszy
+t	menu/mnt_175	Poprzednie tryby broni
+t	menu/mnt_176	Rodzaj broni
+t	menu/mnt_177	Tylko kategoria broni
+t	menu/mnt_178	Filtr
+t	menu/mnt_180	Pikseloza
+t	menu/mnt_181	Skala pikselozy
+t	menu/mnt_182	Bez filtra
+t	menu/mnt_183	Zielony Chłopiec
+t	menu/mnt_184	Brąz jest git
+t	menu/mnt_185	Grzech
+t	menu/mnt_186	Psychodela
+t	menu/mnt_187	Stary telewizor
+t	menu/mnt_188	Naciśnij 'E', aby zacząć
+t	menu/mnt_189	Napraw Kryształ
+t	menu/mnt_190	Odzyskaj życie
+t	menu/mnt_191	Przyzwij obrońcę
+t	menu/mnt_192	Większe obrażenia
+t	menu/mnt_193	Następna fala: 
+t	menu/mnt_194	Fala 
+t	menu/mnt_195	Ukończono!
+t	menu/mnt_196	Naciśnij 'E', aby rozpocząć następną falę.
+t	menu/mnt_197	Wytrzymałość Kryształu + 
+t	menu/mnt_198	Życie gracza + 
+t	menu/mnt_199	Wynik + 
+t	menu/mnt_200	Wynik łączny
+t	menu/mnt_201	Wydatki
+t	menu/mnt_202	Zabójstwa
+t	menu/mnt_203	Fala
+t	menu/mnt_204	Poziom trudności
+t	menu/mnt_205	Tryb Strażnika
+t	menu/mnt_206	Naciśnij 'Esc', aby opuścić Tryb Strażnika.
+t	menu/mnt_207	Start
+t	menu/mnt_208	Celownik punktowy
+n	menu/mnt_208	---------------
+t	menu/mnt_209	M1
+t	menu/mnt_210	M2
+t	menu/mnt_211	M3
+t	menu/mnt_212	Wyjdź
+t	menu/mnt_213	Twórcy
+t	menu/mnt_214	Projekt gry, kierownictwo artystyczne, grafika 3D i animacja, projekt poziomów, \nprogramowanie, projekt interfejsu, grafika
+t	menu/mnt_215	Język
+t	menu/mnt_216	--------------
+t	menu/mnt_217	--------------
+t	menu/mnt_218	Tak
+t	menu/mnt_219	Nie
+t	menu/mnt_220	Muzyka\nGłos\nEfekty dźwiękowe\nOkładka\nGrafika przerywników
+t	menu/mnt_221	Muzyka
+t	menu/mnt_222	Głos
+t	menu/mnt_223	Efekty dźwiękowe
+t	menu/mnt_224	Okładka
+t	menu/mnt_225	Grafika przerywników
+t	menu/mnt_226	Podziękowania
+t	menu/mnt_227	* Aby nowy język wczytał się poprawnie, \nuruchom grę ponownie.
+t	menu/mnt_229	Krwawe Klejnoty
+t	menu/mnt_230	Złote Runy
+t	menu/mnt_231	Srebrne Runy
+t	menu/mnt_232	-
+t	menu/9859	Tylko kategoria broni
+t	menu/9489	Tylko kategoria broni
+t	menu/E1M5Boss	Pajęcza Królowa
+t	menu/E2M4Boss	Serce Gomuramu
+t	menu/E2M5Boss	Piekielny Rycerz
+t	menu/E3M2Boss	Djookholu
+t	menu/E3M5Boss	Kurator
+t	menu/E4M6Boss	Annorbysis
+t	menu/E5M4Boss	Beelsebur II
+t	menu/E5MXBoss	To Coś
+t	menu/E1M1Boss	Nekromanta
+t	menu/???	???
+n	menu/E1M1	Początek
+n	menu/E1M2	Więzienie — część 1
+n	menu/E1M3	Więzienie — część 2
+n	menu/E1M4	Znowu pod ziemię
+n	menu/E1M5	Legowisko
+n	menu/E2M1	Mroczny grobowiec
+n	menu/E2M2	Złe przeczucie
+n	menu/E2M3	Wejście
+n	menu/E2M4	Fabryka przetopu dusz
+n	menu/E2M5	Znowu ty
+n	menu/E3M1	Martwe żagle
+n	menu/E3M2	Obcy
+n	menu/E3M3	Skraj świata
+n	menu/E3M4	Wykrzywiony czas
+n	menu/E3M5	Manipulator
+n	menu/E4M1	Piasek czasu
+n	menu/E4M2	Pałac śmierci
+n	menu/E4M3	Kamieniołom
+n	menu/E4M4	Złowroga cisza
+n	menu/E4M5	Prawda czy fałsz
+n	menu/E4M6	Upadły bóg
+n	menu/E5M1	Płonące miasteczko
+n	menu/E5M2	Pełzające zło
+n	menu/E5M3	Tamta noc
+n	menu/E5M4	Koniec
+n	menu/E5MX	Po końcu
+n	menu/E1??	???
+n	menu/E2??	???
+n	menu/E3MX	Dzwony
+n	menu/E4??	???
+n	menu/E5??	???
+t	menu/Weapon11	Podwójne Katany
+n	menu/Weapon11	???
+t	menu/Weapon21	Podwójne Pistolety
+n	menu/Weapon21	???
+t	menu/Weapon22	Podwójne PM-y
+n	menu/Weapon22	???
+t	menu/Weapon31	Strzelba Pompka
+n	menu/Weapon31	???
+t	menu/Weapon32	Dubeltówka
+n	menu/Weapon32	???
+t	menu/Weapon41	Czarny Łuk
+n	menu/Weapon41	???
+t	menu/Weapon51	Miotacz Pułapek
+n	menu/Weapon51	???
+t	menu/Weapon61	Wyrzutnia Rakiet Inferno
+n	menu/Weapon61	???
+t	menu/Weapon62	Potrójna Wyrzutnia Rakiet Inferno
+n	menu/Weapon62	???
+t	menu/Weapon71	Rewolwer Inferno
+n	menu/Weapon71	???
+t	menu/Weapon81	Rękawice Inferno P
+n	menu/Weapon81	???
+t	menu/Weapon82	Rękawice Inferno L
+n	menu/Weapon82	???
+t	emblem/Cha_N_DasCD_Red	Skraca czas odnowienia doskoku. (Poziom 1)
+n	emblem/Cha_N_DasCD_Red	Pęd Templariusza
+t	emblem/Cha_N_MaxHea_Up1	Zwiększa maksymalne zdrowie. (Poziom 1)
+n	emblem/Cha_N_MaxHea_Up1	Hart Templariusza
+t	emblem/Cha_N_MaxHea_Up2	Zwiększa maksymalne zdrowie. (Poziom 2)
+n	emblem/Cha_N_MaxHea_Up2	Hart Templariusza II
+t	emblem/Cha_N_MaxHea_Up3	Zwiększa maksymalne zdrowie. (Poziom 3)
+n	emblem/Cha_N_MaxHea_Up3	Hart Templariusza III
+t	emblem/Cha_N_MaxHea_Up4	Zwiększa maksymalne zdrowie. (Poziom 4).
+n	emblem/Cha_N_MaxHea_Up4	Hart Templariusza IV
+t	emblem/Cha_N_MaxArm_Up1	Zwiększa maksymalny pancerz. (Poziom 1)
+n	emblem/Cha_N_MaxArm_Up1	Tarcza Templariusza
+t	emblem/Cha_N_MaxArm_Up2	Zwiększa maksymalny pancerz. (Poziom 2)
+n	emblem/Cha_N_MaxArm_Up2	Tarcza Templariusza II
+t	emblem/Cha_N_MaxArm_Up3	Zwiększa maksymalny pancerz. (Poziom 3)
+n	emblem/Cha_N_MaxArm_Up3	Tarcza Templariusza III
+t	emblem/Cha_N_BulTim_Up	Wydłuża działanie Spowolnionego Czasu. (Poziom 1)
+n	emblem/Cha_N_BulTim_Up	Klepsydra Templariusza
+t	emblem/Cha_N_BulTim_Up2	Wydłuża działanie Spowolnionego Czasu. (Poziom 2)
+n	emblem/Cha_N_BulTim_Up2	Klepsydra Templariusza II
+t	emblem/Cha_N_DasCD_Red2	Skraca czas odnowienia doskoku. (Poziom 2)
+n	emblem/Cha_N_DasCD_Red2	Pęd Templariusza II
+t	emblem/Cha_N_DasCD_Red3	Skraca czas odnowienia doskoku. (Poziom 3)
+n	emblem/Cha_N_DasCD_Red3	Pęd Templariusza III
+t	emblem/Cha_S_BulTim_Up	Zwiększa ilość Energii Spowolnionego Czasu zdobywanej za zabijanie wrogów.
+n	emblem/Cha_S_BulTim_Up	Spokój Ducha
+t	emblem/Cha_S_Ber	Gdy jesteś o krok od śmierci, wszystkie twoje obrażenia mocno rosną.
+n	emblem/Cha_S_Ber	Berserker
+t	emblem/Cha_S_IroBon	Nieznacznie zmniejsza obrażenia otrzymywane przy każdym trafieniu.
+n	emblem/Cha_S_IroBon	Stalowa Kość
+t	emblem/Cha_S_GooLuc	Podobno czterolistna koniczyna przynosi ludziom szczęście.
+n	emblem/Cha_S_GooLuc	Czterolistna Koniczyna
+t	emblem/Cha_S_InvSlo	Nieznacznie zwiększa szybkość ruchu, a spowolnienia przestają cię dotyczyć.
+n	emblem/Cha_S_InvSlo	Chyżość
+t	emblem/Cha_S_DasGod	W chwili uruchomienia doskoku jesteś odporny na wszelkie obrażenia.
+n	emblem/Cha_S_DasGod	Cień
+t	emblem/iddadfsdfdd2	============
+n	emblem/iddadfsdfdd2	====
+t	emblem/iddssdfdd3	============
+n	emblem/iddssdfdd3	====
+t	emblem/iddsd4d	============
+n	emblem/iddsd4d	====
+t	emblem/Kat_N_CD_Down	Skraca czas odnowienia rzutu katanami. (Poziom 1)
+n	emblem/Kat_N_CD_Down	Skupienie Katany
+t	emblem/Kat_N_CD_Down2	Skraca czas odnowienia rzutu katanami. (Poziom 2)
+n	emblem/Kat_N_CD_Down2	Skupienie Katany II
+t	emblem/Kat_N_CD_Down3	Skraca czas odnowienia rzutu katanami. (Poziom 3)
+n	emblem/Kat_N_CD_Down3	Skupienie Katany II
+t	emblem/Kat_N_Dam_Up	Zwiększa obrażenia od rzutu Podwójnymi Katanami. (Poziom 1)
+n	emblem/Kat_N_Dam_Up	Rzeź Katanami
+t	emblem/Kat_N_Dam_Up2	Zwiększa obrażenia od rzutu Podwójnymi Katanami. (Poziom 2)
+n	emblem/Kat_N_Dam_Up2	Rzeź Katanami II
+t	emblem/Kat_N_Dam_Up3	Zwiększa obrażenia od rzutu Podwójnymi Katanami. (Poziom 3)
+n	emblem/Kat_N_Dam_Up3	Rzeź Katanami II
+t	emblem/Kat_N_SwiDam_Up	Zwiększa obrażenia od cięcia Podwójnymi Katanami. (Poziom 1)
+n	emblem/Kat_N_SwiDam_Up	Okaleczenie Kataną
+t	emblem/Kat_N_SwiDam_Up2	Zwiększa obrażenia od cięcia Podwójnymi Katanami. (Poziom 2)
+n	emblem/Kat_N_SwiDam_Up2	Okaleczenie Kataną II
+t	emblem/Kat_N_SwiDam_Up3	Zwiększa obrażenia od cięcia Podwójnymi Katanami. (Poziom 3)
+n	emblem/Kat_N_SwiDam_Up3	Okaleczenie Kataną II
+t	emblem/Kat_S_Swi_Pro	SP
+n	emblem/Kat_S_Swi_Pro	SP
+t	emblem/Kat_S_ThuKil_Nova	Dodaje obrażenia od błyskawic. Gdy cel zginie od włóczni błyskawic, nastąpi mała eksplozja elektryczna, raniąca i porażająca pobliskich wrogów. (Tylko w trybie miotanym).
+n	emblem/Kat_S_ThuKil_Nova	Włócznia Błyskawic
+t	emblem/Kat_S_Blo_Heal	Zabijanie wrogów Podwójnymi Katanami ładuje Rękawice Inferno. (Tylko w trybie białej broni).
+n	emblem/Kat_S_Blo_Heal	Żądza Krwi
+t	emblem/Kat_S_DasStr_Thunder	Pchnięcie w trakcie doskoku, raniące i porażające wszystkich mijanych wrogów. (Tylko w trybie białej broni).
+n	emblem/Kat_S_DasStr_Thunder	Uderzenie Pioruna
+t	emblem/Kat_S_ThrBac_Random	Po zabiciu demona rzutem Podwójnymi Katanami jest szansa, że czas odnowienia katan skończy się natychmiast. (Tylko w trybie miotanym).
+n	emblem/Kat_S_ThrBac_Random	Przywołanie
+t	emblem/Kat_S_NinMas	Katana Mistrza Ninja
+n	emblem/Kat_S_NinMas	Katana Mistrza Ninja
+t	emblem/Kat_S_KatShe	Gdy trzymasz podwójne katany, obrażenia, które otrzymujesz, mocno maleją.
+n	emblem/Kat_S_KatShe	Ciało do Walki Wręcz
+t	emblem/Kat_S_EasKil	Wrogowie trafieni rzuconymi katanami zostają przeklęci i na krótko tracą część życia.
+n	emblem/Kat_S_EasKil	Słabość
+t	emblem/Pis_N_Dam_Up	Zwiększa obrażenia pistoletów i PM-ów. (Poziom 1)
+n	emblem/Pis_N_Dam_Up	Rzeź Pistoletem
+t	emblem/Pis_N_Dam_Up2	Zwiększa obrażenia pistoletów i PM-ów. (Poziom 2)
+n	emblem/Pis_N_Dam_Up2	Rzeź Pistoletem II
+t	emblem/Pis_N_Dam_Up3	Zwiększa obrażenia pistoletów i PM-ów. (Poziom 3)
+n	emblem/Pis_N_Dam_Up3	Rzeź Pistoletem III
+t	emblem/Pis_N_Mag_Up	Zwiększa maksymalny zapas amunicji do pistoletów i PM-ów. (Poziom 1)
+n	emblem/Pis_N_Mag_Up	Zasobnik Pistoletowy
+t	emblem/Pis_N_Mag_Up2	Zwiększa maksymalny zapas amunicji do pistoletów i PM-ów. (Poziom 2)
+n	emblem/Pis_N_Mag_Up2	Zasobnik Pistoletowy II
+t	emblem/Pis_N_Mag_Up3	Zwiększa maksymalny zapas amunicji do pistoletów i PM-ów. (Poziom 3)
+n	emblem/Pis_N_Mag_Up3	Zasobnik Pistoletowy III
+t	emblem/Pis_N_Rat_Red	Zwiększa szybkostrzelność pistoletów i PM-ów. (Poziom 1)
+n	emblem/Pis_N_Rat_Red	Pęd Pistoletu
+t	emblem/Pis_N_Rat_Red2	Zwiększa szybkostrzelność pistoletów i PM-ów. (Poziom 2)
+n	emblem/Pis_N_Rat_Red2	Pęd Pistoletu II
+t	emblem/Pis_N_Rat_Red3	Zwiększa szybkostrzelność pistoletów i PM-ów. (Poziom 3)
+n	emblem/Pis_N_Rat_Red3	Pęd Pistoletu III
+t	emblem/Pis_S_CanRel	Anuluje przeładowanie pistoletów i PM-ów.
+n	emblem/Pis_S_CanRel	Burza Ołowiu
+t	emblem/Pis_S_SloKil	W Spowolnionym Czasie obrażenia pistoletu rosną gigantycznie i nie kosztują amunicji. (Tylko pistolet).
+n	emblem/Pis_S_SloKil	Neo
+t	emblem/Pis_S_ShoPro	Podwójne Pistolety zmieniają się w Podwójne Piekielne Wrzaski, miotające potężnymi ognistymi pociskami, które przechodzą na wylot przez wroga.
+n	emblem/Pis_S_ShoPro	Piekielny Wrzask
+t	emblem/Pis_S_BulBul	Zwiększa maksymalny zapas amunicji do pistoletów i PM-ów o 200.
+n	emblem/Pis_S_BulBul	Skład Amunicji
+t	emblem/Pis_S_M10Inf	Podwójne PM-y przechodzą w tryb Inferno — z ogromną szybkostrzelnością i większym zapasem amunicji Huragan potrafi w krótkiej chwili zadać wrogowi potworne obrażenia.
+n	emblem/Pis_S_M10Inf	Huragan
+t	emblem/Pis_S_BubGun	Miotaj we wroga zabójczymi bańkami!
+n	emblem/Pis_S_BubGun	Bańkowiec
+t	emblem/Sho_N_Dam_Up	Zwiększa obrażenia strzelby. (Poziom 1)
+n	emblem/Sho_N_Dam_Up	Rzeź Strzelbą
+t	emblem/Sho_N_Dam_Up2	Zwiększa obrażenia strzelby. (Poziom 2)
+n	emblem/Sho_N_Dam_Up2	Rzeź Strzelbą II
+t	emblem/Sho_N_Dam_Up3	Zwiększa obrażenia strzelby. (Poziom 3)
+n	emblem/Sho_N_Dam_Up3	Rzeź Strzelbą III
+t	emblem/Sho_N_Mag_Up	Zwiększa maksymalny zapas amunicji do strzelby. (Poziom 1)
+n	emblem/Sho_N_Mag_Up	Zasobnik Strzelbowy
+t	emblem/Sho_N_Mag_Up2	Zwiększa maksymalny zapas amunicji do strzelby. (Poziom 2)
+n	emblem/Sho_N_Mag_Up2	Zasobnik Strzelbowy II
+t	emblem/Sho_N_Mag_Up3	Zwiększa maksymalny zapas amunicji do strzelby. (Poziom 3)
+n	emblem/Sho_N_Mag_Up3	Zasobnik Strzelbowy III
+t	emblem/Sho_N_Rat_Red	Zwiększa szybkostrzelność strzelby. (Poziom 1)
+n	emblem/Sho_N_Rat_Red	Pęd Strzelby
+t	emblem/Sho_N_Rat_Red2	Zwiększa szybkostrzelność strzelby. (Poziom 2)
+n	emblem/Sho_N_Rat_Red2	Pęd Strzelby II
+t	emblem/Sho_N_Rat_Red3	Zwiększa szybkostrzelność strzelby. (Poziom 3)
+n	emblem/Sho_N_Rat_Red3	Pęd Strzelby III
+t	emblem/Sho_S_IceSlo	Strzelba Pompka przechodzi w tryb Inferno "Mroźna Zjawa", który po trafieniu mocno spowalnia wrogów na krótką chwilę i nieznacznie zwiększa obrażenia strzelby. Działa tylko na Strzelbę Pompkę.
+n	emblem/Sho_S_IceSlo	Mroźna Zjawa
+t	emblem/Sho_S_DouSho_Blood	Dwa naboje w Dubeltówce można wystrzelić osobno.
+n	emblem/Sho_S_DouSho_Blood	Znowu ... ŻYJĘ!
+t	emblem/Sho_S_LonRan_Sniper	Znacząco zmniejsza spadek obrażeń Strzelby Pompki na dystansie i zawęża rozrzut. Działa tylko na Strzelbę Pompkę.
+n	emblem/Sho_S_LonRan_Sniper	Strzelba Snajperska
+t	emblem/Sho_S_RusSho_Tank	Im więcej wrogów wokół postaci, tym większe obrażenia zadaje Dubeltówka. Działa tylko na Dubeltówkę.
+n	emblem/Sho_S_RusSho_Tank	Zelota
+t	emblem/Sho_S_ShoLin	Dubeltówka przechodzi w tryb Inferno "Tnący" i wystrzeliwuje świetlną linię, która przecina wszystkie mijane demony.
+n	emblem/Sho_S_ShoLin	Tnący
+t	emblem/Sho_S_ComSho	Po strzale z dubeltówki natychmiast przełącz się i strzel ze strzelby pompki, a zadasz demonom potworne obrażenia.
+n	emblem/Sho_S_ComSho	Strzał Combo
+t	emblem/Bow_N_Dam_Up	Zwiększa obrażenia Czarnego Łuku. (Poziom 1)
+n	emblem/Bow_N_Dam_Up	Rzeź Czarnym Łukiem
+t	emblem/Bow_N_Dam_Up2	Zwiększa obrażenia Czarnego Łuku. (Poziom 2)
+n	emblem/Bow_N_Dam_Up2	Rzeź Czarnym Łukiem II
+t	emblem/Bow_N_Dam_Up3	Zwiększa obrażenia Czarnego Łuku. (Poziom 3)
+n	emblem/Bow_N_Dam_Up3	Rzeź Czarnym Łukiem III
+t	emblem/Bow_N_Mag_Up	Zwiększa maksymalny zapas strzał. (Poziom 1)
+n	emblem/Bow_N_Mag_Up	Kołczan Czarnego Łuku
+t	emblem/Bow_N_Mag_Up2	Zwiększa maksymalny zapas strzał. (Poziom 2)
+n	emblem/Bow_N_Mag_Up2	Kołczan Czarnego Łuku II
+t	emblem/Bow_N_Mag_Up3	Zwiększa maksymalny zapas strzał. (Poziom 3)
+n	emblem/Bow_N_Mag_Up3	Kołczan Czarnego Łuku III
+t	emblem/Bow_N_CD_Down	Skraca czas odnowienia Czarnego Łuku. (Poziom 1)
+n	emblem/Bow_N_CD_Down	Skupienie Czarnego Łuku
+t	emblem/Bow_N_CD_Down2	Skraca czas odnowienia Czarnego Łuku. (Poziom 2)
+n	emblem/Bow_N_CD_Down2	Skupienie Czarnego Łuku II
+t	emblem/Bow_N_CD_Down3	Skraca czas odnowienia Czarnego Łuku. (Poziom 3)
+n	emblem/Bow_N_CD_Down3	Skupienie Czarnego Łuku III
+t	emblem/Bow_S_KeeSho_Hurt	Po każdym celnym trafieniu postać na chwilę wchodzi w stan "Łucznika", zwiększając obrażenia następnego trafienia. Seria szybkich trafień potrafi zadać ogromne obrażenia.
+n	emblem/Bow_S_KeeSho_Hurt	Łucznik
+t	emblem/Bow_S_LigKil_Hurt	A
+n	emblem/Bow_S_LigKil_Hurt	A
+t	emblem/Bow_S_HelHun	Zwiększa obrażenia Czarnego Łuku przy strzale w głowę, a zabicie wroga strzałem w głowę z Czarnego Łuku włącza krótki Spowolniony Czas.
+n	emblem/Bow_S_HelHun	Piekielne Łowy
+t	emblem/Bow_S_HalKil_HalfHeal	Strzała zadaje dodatkowe obrażenia wrogom, którym zostało mniej niż 50% życia.
+n	emblem/Bow_S_HalKil_HalfHeal	Egzekucja
+t	emblem/Bow_S_NinMas	Zwiększa obrażenia we wszystkich trybach katan i łuku.
+n	emblem/Bow_S_NinMas	Mistrz Ninja: Cios
+t	emblem/Bow_S_ShoBac	Każde celne trafienie ma szansę nie zużyć żadnej strzały
+n	emblem/Bow_S_ShoBac	Szczęśliwy Kołczan
+t	emblem/Bow_S_RamSho	Do strzały dołączony jest mały ładunek — celne trafienie w demona wywoła dodatkowy wybuch raniący wrogów wokół.
+n	emblem/Bow_S_RamSho	Wybuch
+t	emblem/Roc_N_Dam_Up	Zwiększa obrażenia rakiet. (Poziom 1)
+n	emblem/Roc_N_Dam_Up	Rzeź Rakietą Inferno
+t	emblem/Roc_N_Dam_Up2	Zwiększa obrażenia rakiet. (Poziom 2)
+n	emblem/Roc_N_Dam_Up2	Rzeź Rakietą Inferno II
+t	emblem/Roc_N_Dam_Up3	Zwiększa obrażenia rakiet. (Poziom 3)
+n	emblem/Roc_N_Dam_Up3	Rzeź Rakietą Inferno III
+t	emblem/Roc_N_Mag_Up	Zwiększa maksymalny zapas rakiet. (Poziom 1)
+n	emblem/Roc_N_Mag_Up	Zasobnik Rakiet Inferno
+t	emblem/Roc_N_Mag_Up2	Zwiększa maksymalny zapas rakiet. (Poziom 2)
+n	emblem/Roc_N_Mag_Up2	Zasobnik Rakiet Inferno II
+t	emblem/Roc_N_Mag_Up3	Zwiększa maksymalny zapas rakiet. (Poziom 3)
+n	emblem/Roc_N_Mag_Up3	Zasobnik Rakiet Inferno III
+t	emblem/Roc_N_Rad_Up	Zwiększa maksymalny promień wybuchu rakiety. (Poziom 1)
+n	emblem/Roc_N_Rad_Up	Zasięg Rakiet Inferno
+t	emblem/Roc_N_Rad_Up2	Zwiększa maksymalny promień wybuchu rakiety. (Poziom 2)
+n	emblem/Roc_N_Rad_Up2	Zasięg Rakiet Inferno II
+t	emblem/Roc_N_Rad_Up3	Zwiększa maksymalny promień wybuchu rakiety. (Poziom 3)
+n	emblem/Roc_N_Rad_Up3	Zasięg Rakiet Inferno III
+t	emblem/Roc_S_NotHur	Znacząco zmniejsza obrażenia, które Rakieta Inferno zadaje tobie samemu.
+n	emblem/Roc_S_NotHur	Stalowa Tarcza
+t	emblem/Roc_S_PowBul	Po założeniu tej runy wybuchająca beczka prochu z dużym prawdopodobieństwem zostawi amunicję do Rakiet Inferno.
+n	emblem/Roc_S_PowBul	Beczki prochu to nie zabawki
+t	emblem/Roc_S_IceAoe	Sopel po wybuchu zadaje obrażenia na stożkowym obszarze.
+n	emblem/Roc_S_IceAoe	Sopel
+t	emblem/Roc_S_ChaRoc	Potrójna Wyrzutnia wystrzeliwuje 3 małe rakiety samonaprowadzające. Działa tylko na Potrójną Wyrzutnię Rakiet.
+n	emblem/Roc_S_ChaRoc	Ognista Osa
+t	emblem/Roc_S_FivRoc	Potrójna Wyrzutnia wystrzeliwuje teraz 5 małych rakiet.
+n	emblem/Roc_S_FivRoc	Ryk
+t	emblem/Tra_N_Mag_Up	Zwiększa maksymalny zapas amunicji do Miotacza Pułapek. (Poziom 1)
+n	emblem/Tra_N_Mag_Up	Zasobnik Miotacza Pułapek
+t	emblem/Tra_N_Mag_Up2	Zwiększa maksymalny zapas amunicji do Miotacza Pułapek. (Poziom 2)
+n	emblem/Tra_N_Mag_Up2	Zasobnik Miotacza Pułapek II
+t	emblem/Tra_N_Mag_Up3	Zwiększa maksymalny zapas amunicji do Miotacza Pułapek. (Poziom 3)
+n	emblem/Tra_N_Mag_Up3	Zasobnik Miotacza Pułapek III
+t	emblem/Tra_N_Eff_Up	Wzmacnia działanie pułapek. (Poziom 1)
+n	emblem/Tra_N_Eff_Up	Mistrzostwo Miotacza Pułapek
+t	emblem/Tra_N_Eff_Up2	Wzmacnia działanie pułapek. (Poziom 2)
+n	emblem/Tra_N_Eff_Up2	Mistrzostwo Miotacza Pułapek II
+t	emblem/Tra_N_Eff_Up3	Wzmacnia działanie pułapek. (Poziom 3)
+n	emblem/Tra_N_Eff_Up3	Mistrzostwo Miotacza Pułapek III
+t	emblem/Tra_N_Rat_Up	Zwiększa szybkostrzelność Miotacza Pułapek. (Poziom 1)
+n	emblem/Tra_N_Rat_Up	Pęd Miotacza Pułapek
+t	emblem/Tra_N_Rat_Up2	Zwiększa szybkostrzelność Miotacza Pułapek. (Poziom 2)
+n	emblem/Tra_N_Rat_Up2	Pęd Miotacza Pułapek II
+t	emblem/Tra_N_Rat_Up3	Zwiększa szybkostrzelność Miotacza Pułapek. (Poziom 3)
+n	emblem/Tra_N_Rat_Up3	Pęd Miotacza Pułapek III
+t	emblem/Tra_S_ExpTra	Pułapka wybuchowa po uruchomieniu wywołuje serię małych eksplozji.
+n	emblem/Tra_S_ExpTra	Pułapka Wybuchowa
+t	emblem/Tra_S_SumTra	Przyzywa na krótko syna Djookholu, który walczy po twojej stronie. Syn Djookholu miota zabójczymi pociskami lodu we wrogów wokół siebie.
+n	emblem/Tra_S_SumTra	Syn Djookholu
+t	emblem/Tra_S_PumTra	Zwiększa obrażenia Porażenia Błyskawicą i obniża maksymalne zdrowie wrogów. W Halloween efekt jest znacznie silniejszy.
+n	emblem/Tra_S_PumTra	Klątwa Dyni
+t	emblem/Tra_S_DefShe	Gdy stoisz w tarczy ochronnej, obrażenia, które otrzymujesz, są znacznie mniejsze.
+n	emblem/Tra_S_DefShe	Tarcza Ochronna
+t	emblem/Rev_N_Dam_Up	Zwiększa obrażenia Rewolweru Inferno. (Poziom 1)
+n	emblem/Rev_N_Dam_Up	Rzeź Rewolwerem Inferno
+t	emblem/Rev_N_Dam_Up2	Zwiększa obrażenia Rewolweru Inferno. (Poziom 2)
+n	emblem/Rev_N_Dam_Up2	Rzeź Rewolwerem Inferno II
+t	emblem/Rev_N_Dam_Up3	Zwiększa obrażenia Rewolweru Inferno. (Poziom 3)
+n	emblem/Rev_N_Dam_Up3	Rzeź Rewolwerem Inferno III
+t	emblem/Rev_N_Mag_Up	Zwiększa maksymalny zapas amunicji do Rewolweru Inferno. (Poziom 1)
+n	emblem/Rev_N_Mag_Up	Zasobnik Rewolweru Inferno
+t	emblem/Rev_N_Mag_Up2	Zwiększa maksymalny zapas amunicji do Rewolweru Inferno. (Poziom 2)
+n	emblem/Rev_N_Mag_Up2	Zasobnik Rewolweru Inferno II
+t	emblem/Rev_N_Mag_Up3	Zwiększa maksymalny zapas amunicji do Rewolweru Inferno. (Poziom 3)
+n	emblem/Rev_N_Mag_Up3	Zasobnik Rewolweru Inferno III
+t	emblem/Rev_N_Rat_Down	Zwiększa szybkostrzelność Rewolweru Inferno. (Poziom 1)
+n	emblem/Rev_N_Rat_Down	Pęd Rewolweru Inferno
+t	emblem/Rev_N_Rat_Down2	Zwiększa szybkostrzelność Rewolweru Inferno. (Poziom 2)
+n	emblem/Rev_N_Rat_Down2	Pęd Rewolweru Inferno II
+t	emblem/Rev_N_Rat_Down3	Zwiększa szybkostrzelność Rewolweru Inferno. (Poziom 3)
+n	emblem/Rev_N_Rat_Down3	Pęd Rewolweru Inferno III
+t	emblem/Rev_S_RolKil	Każde trafienie ma szansę natychmiast zabić demona.
+n	emblem/Rev_S_RolKil	Wyrok
+t	emblem/Rev_S_DouDam	Zadaje podwójne obrażenia wrogom ogłuszonym lub zamrożonym.
+n	emblem/Rev_S_DouDam	Zabójczy
+t	emblem/Rev_S_ThrSho	Rewolwer Inferno przechodzi w tryb potrójnego strzału.
+n	emblem/Rev_S_ThrSho	Cerber
+t	emblem/Fis_N_Mag_Up	Zwiększa maksymalny zapas amunicji do Rękawic Inferno oraz pistoletów i PM-ów. (Poziom 1)
+n	emblem/Fis_N_Mag_Up	Zasobnik Rękawic Inferno
+t	emblem/Fis_N_Mag_Up2	Zwiększa maksymalny zapas amunicji do Rękawic Inferno oraz pistoletów i PM-ów. (Poziom 2)
+n	emblem/Fis_N_Mag_Up2	Zasobnik Rękawic Inferno II
+t	emblem/Fis_N_Mag_Up3	Zwiększa maksymalny zapas amunicji do Rękawic Inferno oraz pistoletów i PM-ów. (Poziom 3)
+n	emblem/Fis_N_Mag_Up3	Zasobnik Rękawic Inferno III
+t	emblem/Fis_N_Dam_Up	Zwiększa maksymalny promień wybuchu Rękawic Inferno. (Poziom 1)
+n	emblem/Fis_N_Dam_Up	Rzeź Rękawicami Inferno
+t	emblem/Fis_N_Dam_Up2	Zwiększa maksymalny promień wybuchu Rękawic Inferno. (Poziom 2)
+n	emblem/Fis_N_Dam_Up2	Rzeź Rękawicami Inferno II
+t	emblem/Fis_N_Dam_Up3	Zwiększa maksymalny promień wybuchu Rękawic Inferno. (Poziom 3)
+n	emblem/Fis_N_Dam_Up3	Rzeź Rękawicami Inferno III
+t	emblem/Fis_S_AllOut	Znacząco skraca czas ładowania i zużywa całą energię na cios na całość. Obrażenia liczone są od ilości zużytej energii — im więcej energii, tym szybciej rosną obrażenia.
+n	emblem/Fis_S_AllOut	Cios na całość_!!!
+t	emblem/Fis_S_BosKil	Obrażenia zadawane bossom znacząco rosną.
+n	emblem/Fis_S_BosKil	Pogromca Bossów
+t	emblem/Fis_S_ShoDef	Zadawanie demonom obrażeń Rękawicami Inferno przywraca postaci punkty zdrowia.
+n	emblem/Fis_S_ShoDef	Wampir
+t	emblem/===	===
+n	emblem/===	===
+t	add01/a1001	?
+n	add01/a1001	 
+t	add01/a1002	?
+n	add01/a1002	 
+t	add02/a2001	?
+n	add02/a2001	 
+t	add02/a2002	?
+n	add02/a2002	 

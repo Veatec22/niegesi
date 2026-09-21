@@ -1,0 +1,27 @@
+MY FRIEND PEDRO PL 0.2 — PEŁNE TŁUMACZENIE
+
+721/721 rekordów tabeli I2: dialogi, menu, samouczki, odzywki przeciwników,
+HUD, wyniki, modyfikatory, teksty osiągnięć w zasobach i napisy końcowe.
+Osobny jedenasty język Polski. Pozostałe języki zachowane.
+Nie zmienia dubbingu, grafik ani tekstów osiągnięć w kliencie GOG/Steam.
+
+INSTALACJA (przy zamkniętej grze)
+Zachowaj oryginalny resources.assets poza katalogiem gry.
+Wypakuj ZIP do katalogu gry, tak aby plik trafił do:
+My Friend Pedro - Blood Bullets Bananas_Data/resources.assets
+Uruchom grę normalnie i wybierz Options → Language → Polski.
+
+W lokalnej instalacji agenta oryginał jest zachowany w:
+E:/Repos/niegesi/backups/my-friend-pedro/resources.assets
+Działający vertical sprzed pełnej wersji:
+E:/Repos/niegesi/backups/my-friend-pedro-vertical/resources.assets
+
+PRZYWRÓCENIE
+Zamknij grę i zastąp resources.assets oryginałem z kopii zapasowej.
+Nie usuwaj tego pliku bez przywrócenia oryginału.
+Aby wrócić do verticala, użyj kopii z my-friend-pedro-vertical.
+
+ZGODNOŚĆ I TESTY
+Źródło: lokalne wydanie GOG, Unity 2017.4.19f1; narzędzie budujące sprawdza hash.
+Vertical został potwierdzony w grze przez użytkownika. Pełna paczka przeszła
+walidację plików, ale pełna kampania wymaga jeszcze weryfikacji wizualnej.

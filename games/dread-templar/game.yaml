@@ -1,0 +1,23 @@
+slug: dread-templar
+title: Dread Templar
+version: "0.2"
+entries: { done: 636, total: 636 }
+tested: czesciowy
+engine: Unity (resources.assets)
+approach: Plugin wypełnia pusty slot „pol” zostawiony przez twórców i ożywia wyłączony przycisk w menu, w czasie działania gry. Żaden plik gry nie jest podmieniany.
+scope: menu, ustawienia, sterowanie, samouczek, dialogi, przerywniki, nazwy poziomów i bossów, opisy run
+source: GOG
+year: 2023
+steam_appid: 1334730
+stores:
+  steam: https://store.steampowered.com/app/1334730/
+quote:
+  text:
+  source:
+download:
+  kind: zip
+  file: Dread-Templar-PL-0.2.zip
+  bytes: 662082
+keyart_shot: 1
+install:
+  marker: "DreadTemplar.exe"
