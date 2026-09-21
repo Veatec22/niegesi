@@ -1,0 +1,75 @@
+---
+import Icon from './Icon.astro';
+
+/**
+ * Motyw: jasny, ciemny albo systemowy. Wybór leży w localStorage („ng-theme”) i trafia
+ * na <html data-theme>; „system” to brak atrybutu, wtedy decyduje prefers-color-scheme.
+ * Pierwsze ustawienie robi skrypt w <head> (Base.astro), żeby strona nie mignęła jasno.
+ */
+const modes = [
+  { value: 'light', label: 'Jasny', icon: 'sun' },
+  { value: 'system', label: 'Systemowy', icon: 'monitor' },
+  { value: 'dark', label: 'Ciemny', icon: 'moon' },
+] as const;
+---
+
+<div class="ng-theme" role="radiogroup" aria-label="Motyw strony" data-theme-switch>
+  {
+    modes.map((mode) => (
+      <button
+        type="button"
+        class="ng-theme-option"
+        role="radio"
+        aria-checked={String(mode.value === 'system')}
+        aria-label={mode.label}
+        title={mode.label}
+        data-mode={mode.value}
+      >
+        <Icon name={mode.icon} size={18} />
+      </button>
+    ))
+  }
+</div>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-theme-switch]');
+  const buttons = Array.from(root?.querySelectorAll<HTMLButtonElement>('[data-mode]') ?? []);
+
+  function current(): string {
+    try {
+      return localStorage.getItem('ng-theme') ?? 'system';
+    } catch {
+      return document.documentElement.dataset.theme ?? 'system';
+    }
+  }
+
+  function apply(mode: string) {
+    if (mode === 'light' || mode === 'dark') document.documentElement.dataset.theme = mode;
+    else delete document.documentElement.dataset.theme;
+    try {
+      localStorage.setItem('ng-theme', mode);
+    } catch {
+      // Prywatne okno albo zablokowane dane: motyw działa do końca wizyty.
+    }
+    buttons.forEach((button) => {
+      const checked = button.dataset.mode === mode;
+      button.setAttribute('aria-checked', String(checked));
+      button.tabIndex = checked ? 0 : -1;
+    });
+  }
+
+  apply(current());
+
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => apply(button.dataset.mode ?? 'system'));
+    // Strzałki przesuwają wybór jak w grupie radiowej.
+    button.addEventListener('keydown', (event) => {
+      const step = event.key === 'ArrowRight' || event.key === 'ArrowDown' ? 1 : event.key === 'ArrowLeft' || event.key === 'ArrowUp' ? -1 : 0;
+      if (!step) return;
+      event.preventDefault();
+      const next = buttons[(index + step + buttons.length) % buttons.length]!;
+      apply(next.dataset.mode ?? 'system');
+      next.focus();
+    });
+  });
+</script>

@@ -21,6 +21,13 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href={withBase("/favicon.svg")} type="image/svg+xml" />
+    <!-- Motyw przed pierwszym malowaniem, żeby ciemna strona nie mignęła jasno. -->
+    <script is:inline>
+      try {
+        const theme = localStorage.getItem('ng-theme');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

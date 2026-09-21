@@ -3,12 +3,13 @@ import { withBase } from './url';
 
 export type Tone = 'ink' | 'red' | 'graphite';
 
-/** Status z games/statusy.yaml, razem z pozycją w pliku — ta wyznacza kolejność na stronie. */
+/** Status z games/catalog.yaml, razem z pozycją w pliku — ta wyznacza kolejność w filtrze. */
 export type Status = Omit<CollectionEntry<'statuses'>['data'], 'games'> & { id: string; order: number };
 
 export type Game = CollectionEntry<'games'>['data'] & {
   id: string;
   status: Status;
+  added: Date;
   tone: Tone;
   lead: string;
   href: string;
@@ -48,24 +49,26 @@ export async function getStatuses(): Promise<Status[]> {
 }
 
 /**
- * Gra → status według games/statusy.yaml. Build ma się wywrócić, gdy gra nie ma statusu,
- * ma dwa albo plik wymienia slug, którego nie ma w games/ — cicha pomyłka byłaby gorsza.
+ * Gra → status i data dodania według games/catalog.yaml. Build ma się wywrócić, gdy gra
+ * nie ma statusu, ma dwa albo plik wymienia slug, którego nie ma w games/ — cicha pomyłka
+ * byłaby gorsza.
  */
-async function statusBySlug(slugs: string[]): Promise<Map<string, Status>> {
+async function catalogBySlug(slugs: string[]): Promise<Map<string, { status: Status; added: Date }>> {
   const [entries, statuses] = await Promise.all([getCollection('statuses'), getStatuses()]);
-  const assigned = new Map<string, Status>();
+  if (entries.length === 0) throw new Error('games/catalog.yaml: brak pliku albo statusów.');
+  const assigned = new Map<string, { status: Status; added: Date }>();
 
   entries.forEach((entry, index) => {
-    for (const slug of entry.data.games) {
+    for (const [slug, added] of Object.entries(entry.data.games)) {
       const previous = assigned.get(slug);
-      if (previous) throw new Error(`games/statusy.yaml: „${slug}" stoi i w „${previous.id}", i w „${entry.id}".`);
-      if (!slugs.includes(slug)) throw new Error(`games/statusy.yaml: „${slug}" nie ma w games/.`);
-      assigned.set(slug, statuses[index]!);
+      if (previous) throw new Error(`games/catalog.yaml: „${slug}" stoi i w „${previous.status.id}", i w „${entry.id}".`);
+      if (!slugs.includes(slug)) throw new Error(`games/catalog.yaml: „${slug}" nie ma w games/.`);
+      assigned.set(slug, { status: statuses[index]!, added });
     }
   });
 
   const missing = slugs.filter((slug) => !assigned.has(slug));
-  if (missing.length > 0) throw new Error(`games/statusy.yaml: brak statusu dla ${missing.join(', ')}.`);
+  if (missing.length > 0) throw new Error(`games/catalog.yaml: brak statusu dla ${missing.join(', ')}.`);
 
   return assigned;
 }
@@ -73,21 +76,22 @@ async function statusBySlug(slugs: string[]): Promise<Map<string, Status>> {
 export async function getGames(): Promise<Game[]> {
   const [entries, docs] = await Promise.all([getCollection('games'), getCollection('gameDocs')]);
   const leads = new Map(docs.map((doc) => [doc.id, leadFromReadme(doc.body)]));
-  const statuses = await statusBySlug(entries.map((entry) => entry.data.slug));
+  const catalog = await catalogBySlug(entries.map((entry) => entry.data.slug));
 
   return entries
     .map((entry) => {
       return {
         ...entry.data,
         id: entry.id,
-        status: statuses.get(entry.data.slug)!,
+        ...catalog.get(entry.data.slug)!,
         lead: leads.get(entry.id) ?? '',
         // Gra nie ma własnej strony — link otwiera panel i daje się udostępnić.
         href: withBase(`/?gra=${entry.data.slug}`),
         tone: 'ink' as Tone,
       };
     })
-    .sort((a, b) => a.status.order - b.status.order || b.entries.done - a.entries.done)
+    // Domyślnie najnowsze; ten sam dzień rozstrzyga tytuł. Tę samą kolejność daje sorter na stronie.
+    .sort((a, b) => b.added.getTime() - a.added.getTime() || a.title.localeCompare(b.title, 'pl'))
     .map((game, index) => ({ ...game, tone: TONES[index % TONES.length]! }));
 }
 

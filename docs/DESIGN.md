@@ -55,9 +55,26 @@ Tła keyartów rotują między `ink`, `accent` i `graphite`. Wszystkie trzy są
 na tyle ciemne, że etykieta `[KEYART]` w kolorze `bone` jest czytelna na
 każdym z nich.
 
-Tryb ciemny nie jest na razie zaprojektowany. Naturalne odwrócenie to `ink`
-jako tło, `bone` jako tekst i `accent` bez zmian; plakietka „gotowe" przechodzi
-wtedy na `bone` z tekstem `ink`.
+**Motywy.** W nagłówku jest przełącznik: jasny, systemowy (domyślny) i ciemny.
+Wybór zapamiętuje przeglądarka (`localStorage`, klucz `ng-theme`), a skrypt w `<head>`
+ustawia go przed pierwszym malowaniem, żeby ciemna strona nie mignęła jasno.
+
+Ciemny motyw to odwrócenie palety, nie osobne kolory:
+
+| Token | Jasny | Ciemny |
+|---|---|---|
+| `bone` | `#F9F7F3` | `#141414` |
+| `paper` | `#FFFFFF` | `#1C1C1B` |
+| `ink` | `#141414` | `#F9F7F3` |
+| `muted` | `#646362` | `#B4B3B0` (8,8:1 na tle) |
+| `muted-inverse` | `#B4B3B0` | `#646362` |
+| `hairline` | `#D7D5D2` | `#3A3A38` |
+
+Karmin się nie zmienia. Ramki robią się jasne, ale twarde cienie nie — jasny cień
+na ciemnym tle krzyczy, więc w ciemnym motywie cień ma kolor grafitu `#363635`
+(token `shadow-color`). Pasek statystyk
+jasny z ciemnym tekstem, plakietka „gotowe" jasna. Keyarty i ich zastępcze tła
+zostają ciemne w obu motywach (`art-ink`, `art-bone`), bo to zdjęcia, nie interfejs.
 
 ---
 
@@ -195,13 +212,17 @@ elementach, które same są czerwone, więc na CTA obrys przechodzi na `ink`.
 Mono 11 px, wersaliki, wypełnienie pełne, bez ramki i bez promienia.
 `Gotowe` na `ink` z tekstem `bone`, `wersja testowa` jako sama ramka 2 px
 w `ink` z tekstem `ink`, `w trakcie` na `accent` z białym tekstem. Statusy, ich etykiety i kolory
-definiuje `games/statusy.yaml`. Obok plakietki stoi numer wersji („v0.2”) zwykłym
+definiuje `games/catalog.yaml`. Obok plakietki stoi numer wersji („v0.2”) zwykłym
 mono w kolorze `muted`; przy `w trakcie` nie stoi nic — procentów postępu
 nie pokazujemy.
 
-Obok wyszukiwarki stoi filtr statusu: natywny `<select>` w tej samej ramce co pole
-szukania, z ikoną lejka i strzałką z Lucide (ikony obrysowe, kreska 2 px). Opcje pokazują tylko statusy,
-które mają choć jedną grę, z liczbą gier w nawiasie.
+Obok wyszukiwarki stoją filtr statusu i sortowanie (najnowsze, najstarsze, A–Z, Z–A).
+To własne listy rozwijane (`Dropdown.astro`), nie natywny `<select>`, którego rozwiniętej
+listy nie da się ostylować. Przycisk ma tę samą ramkę co pole szukania, ikonę i strzałkę
+z Lucide (obrysowe, kreska 2 px). Rozwinięta lista: tło `paper`, ramka 3 px `ink`,
+twardy cień jak kafelki; opcja pod kursorem lub klawiaturą na `ink` z tekstem `bone`,
+wybrana pogrubiona ze znacznikiem ✓. Filtr pokazuje tylko statusy, które mają choć
+jedną grę, z liczbą gier wyrównaną do prawej. Obsługa klawiatury jak w natywnej liście.
 
 ### Pasek statystyk
 

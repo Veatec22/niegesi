@@ -10,11 +10,14 @@
   --ng-ink: #141414;            /* tekst, ramki, cienie */
   --ng-accent: #DC143C;         /* karmin: grafika, CTA, plakietka „w trakcie" */
   --ng-graphite: #363635;       /* ink rozjaśniony bielą: trzecie tło keyartów */
+  --ng-art-ink: #141414;        /* tło i napis keyartów — zawsze ciemne, w obu motywach */
+  --ng-art-bone: #F9F7F3;
   --ng-muted: #646362;          /* tekst drugorzędny na jasnym */
   --ng-muted-inverse: #B4B3B0;  /* tekst drugorzędny na --ng-ink */
   --ng-hairline: #D7D5D2;       /* linie 1 px wewnątrz ramek */
   --ng-scrim: rgba(20, 20, 20, 0.58);      /* przyciemnienie pod szufladą */
   --ng-placeholder-mark: rgba(255, 255, 255, 0.13); /* inicjał na keyarcie */
+  color-scheme: light;
 
   /* --- Typografia ------------------------------------------------- */
   --ng-font-display: 'Archivo Black', sans-serif;
@@ -60,8 +63,9 @@
   --ng-border: 3px solid var(--ng-ink);
   --ng-border-width: 3px;
   --ng-radius: 0;
-  --ng-shadow: 8px 8px 0 var(--ng-ink);
-  --ng-shadow-pressed: 4px 4px 0 var(--ng-ink);
+  --ng-shadow-color: #141414;   /* w jasnym to ink; w ciemnym osobno, bo jasny cień krzyczy */
+  --ng-shadow: 8px 8px 0 var(--ng-shadow-color);
+  --ng-shadow-pressed: 4px 4px 0 var(--ng-shadow-color);
   --ng-shadow-open: 8px 8px 0 var(--ng-accent);
   --ng-hit-target: 44px;
 
@@ -79,6 +83,36 @@
   --ng-duration: 240ms;
 }
 
+/* --- Ciemny motyw ----------------------------------------------------
+   Odwrócenie palety: `ink` staje się jasny (tekst, ramki, cienie), `bone` i `paper`
+   ciemne, karmin bez zmian. Szarości to dalej mieszanki czerni i złamanej bieli.
+   Ten sam blok dwa razy: dla wyboru „ciemny” i dla „systemowy” przy ciemnym systemie. */
+:root[data-theme="dark"] {
+  --ng-bone: #141414;
+  --ng-paper: #1C1C1B;
+  --ng-ink: #F9F7F3;
+  --ng-muted: #B4B3B0;          /* 8,8:1 na bone */
+  --ng-muted-inverse: #646362;  /* 5,6:1 na ink */
+  --ng-hairline: #3A3A38;
+  --ng-scrim: rgba(0, 0, 0, 0.72);
+  --ng-shadow-color: #363635;   /* grafit zamiast jasnego: głębia bez świecenia */
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ng-bone: #141414;
+    --ng-paper: #1C1C1B;
+    --ng-ink: #F9F7F3;
+    --ng-muted: #B4B3B0;
+    --ng-muted-inverse: #646362;
+    --ng-hairline: #3A3A38;
+    --ng-scrim: rgba(0, 0, 0, 0.72);
+    --ng-shadow-color: #363635;
+    color-scheme: dark;
+  }
+}
+
 @media (max-width: 699px) {
   :root {
     --ng-size-hero: 46px;
@@ -91,7 +125,7 @@
     --ng-size-label: 10px;
     --ng-size-meta: 10px;
     --ng-leading-hero: 0.9;
-    --ng-shadow: 7px 7px 0 var(--ng-ink);
+    --ng-shadow: 7px 7px 0 var(--ng-shadow-color);
     --ng-gutter: var(--ng-gutter-mobile);
     --ng-grid-gap: 20px;
   }

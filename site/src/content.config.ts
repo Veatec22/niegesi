@@ -39,14 +39,14 @@ const gameDocs = defineCollection({
   loader: glob({ pattern: '*/README.md', base: '../games', generateId: slugFromPath }),
 });
 
-/** Statusy spolszczeń i przypisane do nich gry. Kolejność w pliku = kolejność na stronie. */
+/** Katalog: statusy spolszczeń, a pod każdym gry z datą dodania. Kolejność statusów w pliku = kolejność w filtrze. */
 const statuses = defineCollection({
-  loader: file('../games/statusy.yaml'),
+  loader: file('../games/catalog.yaml'),
   schema: z.object({
     label: z.string(),
     description: z.string(),
     tone: z.enum(['ink', 'outline', 'accent']),
-    games: z.array(z.string()).default([]),
+    games: z.record(z.coerce.date()).default({}),
   }),
 });
 

@@ -1,20 +1,19 @@
 ---
 import GooseMark from './GooseMark.astro';
 import Icon from './Icon.astro';
+import ThemeSwitch from './ThemeSwitch.astro';
 import { withBase } from '../lib/url';
 ---
 
 <header class="ng-header">
   <a class="ng-brand" href={withBase("/")}>
     <GooseMark class="ng-brand-mark" />
-    <span class="ng-brand-name">Nie gęsi</span>
+    <span class="ng-brand-name"><span class="ng-brand-not">Not</span> Geese</span>
   </a>
   <nav class="ng-nav ng-label" aria-label="Główna">
-    <a href={withBase("/#gry")}>Gry</a>
-    <a href={withBase("/jak-to-dziala/")}>Jak to działa</a>
-    <a class="ng-nav-github" href="https://github.com/Veatec22/niegesi" aria-label="Repozytorium na GitHubie">
+    <ThemeSwitch />
+    <a class="ng-nav-github" href="https://github.com/Veatec22/niegesi" target="_blank" rel="noopener" aria-label="Repozytorium na GitHubie">
       <Icon name="github" />
-      <span class="ng-nav-github-label">GitHub</span>
     </a>
   </nav>
 </header>

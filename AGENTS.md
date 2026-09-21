@@ -30,7 +30,7 @@ Rozmawiamy po polsku.
    `READ-ME.txt` z instrukcją — a `games/<gra>/game.yaml` opisuje aktualny stan: wersję,
    liczbę wpisów, status testu w grze i rodzaj paczki. Luźne pliki w `dist/` bez archiwum
    to niedokończona robota. Status spolszczenia (gotowe, wersja testowa, w trakcie)
-   ustawia się w jednym miejscu, `games/statusy.yaml`: nowa gra trafia tam od razu
+   ustawia się w jednym miejscu, `games/catalog.yaml`: nowa gra trafia tam od razu
    na listę `w-trakcie`, a na `gotowe` przenosi ją dopiero użytkownik po pełnym ograniu. Zasady dotyczące zawartości paczki opisuje sekcja poniżej.
 
 ## Jak dostarczamy spolszczenie
@@ -145,7 +145,7 @@ do 6.0.0-be.788. Wtedy zostaje podmiana plików.
   `docs/technika.md` na ustalenia techniczne, budowanie, stan testów i notę o materiale
   gry, `game.yaml` na liczby, status testu, linki do sklepów (`stores`) i przetestowaną
   wersję gry (`tested_on`: sklep i wersja z GOG Galaxy lub z menu gry),
-  `games/statusy.yaml` na status spolszczenia. Główny `README.md` repozytorium jest
+  `games/catalog.yaml` na status spolszczenia i datę dodania. Główny `README.md` repozytorium jest
   po angielsku, dla przypadkowego czytelnika z GitHuba.
 - Decyzje otwarte i rozważane warianty trzymamy w `docs/decyzje/`, po jednym pliku
   na temat. Zanim zaproponujesz zmianę sposobu dostarczania spolszczeń, przeczytaj,

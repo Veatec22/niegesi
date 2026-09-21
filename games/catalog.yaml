@@ -1,7 +1,10 @@
-# Statusy spolszczeń — jedyne miejsce, w którym się je ustawia.
+# Katalog gier na stronie: status spolszczenia i data dodania każdej gry.
+# Jedyne miejsce, w którym się je ustawia.
 #
-# Zmiana statusu gry = przeniesienie jej sluga na listę `games` innego statusu.
-# Każda gra z games/<slug>/game.yaml musi stać na dokładnie jednej liście,
+# Każda gra stoi pod swoim statusem jako `slug: data dodania` (RRRR-MM-DD).
+# Zmiana statusu = przeniesienie tej linijki pod inny status; data jedzie razem z nią.
+# Data wyznacza sortowanie „najnowsze” na stronie.
+# Każda gra z games/<slug>/game.yaml musi stać pod dokładnie jednym statusem,
 # inaczej build strony się zatrzyma i powie, której brakuje.
 #
 # Kolejność statusów w tym pliku to kolejność kafelków na stronie i opcji w filtrze.
@@ -13,25 +16,25 @@ gotowe:
   description: Cała gra przetłumaczona i sprawdzona w grze od początku do końca.
   tone: ink
   games:
-    - shotgun-cop-man
+    shotgun-cop-man: 2026-09-19
 
 testowe:
   label: wersja testowa
   description: Cały tekst przetłumaczony, ale w grze sprawdzony tylko częściowo, bez przejścia od początku do końca. Mogą się trafić usterki.
   tone: outline
   games:
-    - anger-foot
-    - boomerang-x
-    - dread-templar
-    - labyrinth-of-the-demon-king
-    - my-friend-pedro
-    - otxo
-    - skate-story
-    - sprawl
+    anger-foot: 2026-09-19
+    boomerang-x: 2026-09-20
+    dread-templar: 2026-09-19
+    labyrinth-of-the-demon-king: 2026-09-21
+    my-friend-pedro: 2026-09-21
+    otxo: 2026-09-20
+    skate-story: 2026-09-21
+    sprawl: 2026-09-19
 
 w-trakcie:
   label: w trakcie
   description: Tłumaczenie jeszcze powstaje. Paczka pojawi się, kiedy będzie komplet tekstu.
   tone: accent
   games:
-    - turbo-overkill
+    turbo-overkill: 2026-09-21

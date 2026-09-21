@@ -13,3 +13,5 @@ stores:
 download: { kind: none, file: null, bytes: null }
 phase: analysis
 test_notes: Odczytano 2333 wpisy (2316 niepustych), sprawdzono round-trip ośmiu tabel. Plugin, selektor i glify nieprzetestowane; gry nie zmieniano ani nie uruchamiano.
+keyart_shot: 1
+year: 2023

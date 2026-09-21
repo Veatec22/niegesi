@@ -27,13 +27,13 @@ const Content = rendered?.Content;
 
   <div class="ng-panel-body">
     <div>
-      <div class="ng-panel-head">
+      <div class="ng-panel-head" style={`--ng-title-len: ${game.title.length}; --ng-stores: ${stores.length}`}>
         <h2 class="ng-display ng-panel-title">{game.title}</h2>
         {
           stores.length > 0 && (
             <div class="ng-panel-stores">
               {stores.map(([store, url]) => (
-                <a class="ng-btn ng-btn--compact" href={url}>
+                <a class="ng-btn ng-btn--compact" href={url} target="_blank" rel="noopener">
                   {hasLogo(store) && <Icon name={store.toLowerCase() as 'steam' | 'gog'} size={20} />}
                   {storeName(store)}
                 </a>
@@ -87,6 +87,8 @@ const Content = rendered?.Content;
         <a
           class="ng-btn ng-btn--square"
           href={`${REPO}/tree/main/games/${game.slug}`}
+          target="_blank"
+          rel="noopener"
           aria-label="Pliki spolszczenia na GitHubie"
           title="Pliki spolszczenia na GitHubie"
         >

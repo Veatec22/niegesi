@@ -99,11 +99,14 @@ def set_scalar(text: str, key: str, value: str) -> str:
 
 
 def set_store(text: str, url: str) -> str:
+    """Ustawia link do Steama, nie ruszając innych sklepów (np. GOG) w bloku `stores`."""
     block = f'stores:\n  steam: {url}'
     if re.search(r'^stores:\s*\{\s*\}\s*$', text, re.MULTILINE):
         return re.sub(r'^stores:\s*\{\s*\}\s*$', block, text, flags=re.MULTILINE)
+    if re.search(r'^  steam:.*$', text, re.MULTILINE):
+        return re.sub(r'^  steam:.*$', f'  steam: {url}', text, count=1, flags=re.MULTILINE)
     if re.search(r'^stores:\s*$', text, re.MULTILINE):
-        return re.sub(r'^stores:\s*$\n(?:  .*\n)*', block + '\n', text, flags=re.MULTILINE)
+        return re.sub(r'^stores:\s*$', block, text, count=1, flags=re.MULTILINE)
     return f'{text.rstrip()}\n{block}\n'
 
 

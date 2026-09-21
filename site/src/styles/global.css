@@ -81,15 +81,32 @@ a { color: inherit; }
   text-transform: uppercase;
 }
 
-.ng-nav { display: flex; gap: var(--ng-space-6); }
+.ng-nav { display: flex; align-items: center; gap: var(--ng-space-6); }
 .ng-nav a { text-decoration: none; }
 .ng-nav a:hover { color: var(--ng-accent); }
 
-.ng-nav-github { display: inline-flex; align-items: center; gap: var(--ng-space-2); }
+.ng-nav-github { display: inline-flex; align-items: center; }
 
-@media (max-width: 699px) {
-  .ng-nav-github-label { display: none; }
+.ng-brand-not { color: var(--ng-accent); }
+
+/* Przełącznik motywu: trzy przyciski w jednej ramce, wybrany wypełniony. */
+.ng-theme { display: inline-flex; border: var(--ng-border-width) solid var(--ng-ink); }
+
+.ng-theme-option {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ng-ink);
+  cursor: pointer;
 }
+
+.ng-theme-option + .ng-theme-option { border-left: var(--ng-border-width) solid var(--ng-ink); }
+.ng-theme-option:hover { color: var(--ng-accent); }
+.ng-theme-option[aria-checked="true"] { background: var(--ng-ink); color: var(--ng-bone); }
 
 .ng-icon { display: block; flex: none; }
 
@@ -210,14 +227,14 @@ a { color: inherit; }
 
 /* --- Wyszukiwarka --------------------------------------------------- */
 
-.ng-search { min-width: 480px; }
+.ng-search { min-width: 660px; }
 /* Pola na wysokość linii tytułu sekcji, żeby stały z nim w jednym rzędzie. */
 .ng-search .ng-search-field { min-height: 56px; }
 .ng-search-row { display: flex; gap: var(--ng-space-3); }
 .ng-search-row > .ng-search-field:first-child { flex: 1; min-width: 200px; }
 
-/* Tytuł i wyszukiwarka z filtrem nie mieszczą się obok siebie na tablecie. */
-@media (max-width: 1099px) {
+/* Tytuł i wyszukiwarka z filtrem i sorterem mieszczą się obok siebie dopiero od ok. 1280 px. */
+@media (max-width: 1279px) {
   .ng-section-head { flex-direction: column; align-items: stretch; }
   .ng-search { min-width: 0; }
 }
@@ -249,28 +266,69 @@ a { color: inherit; }
 .ng-search-field input:focus { outline: none; }
 .ng-search-field input::placeholder { color: var(--ng-muted); }
 
-.ng-filter-field { position: relative; padding-inline-end: 0; }
+.ng-dropdown { position: relative; }
 
-.ng-filter-field select {
-  appearance: none;
-  border: 0;
-  background: none;
-  padding: var(--ng-space-3) calc(var(--ng-space-4) + 22px) var(--ng-space-3) 0;
-  min-height: calc(var(--ng-hit-target) - 2 * var(--ng-border-width));
+/* Stała szerokość pod najdłuższą opcję, żeby pole nie skakało przy zmianie wyboru. */
+[data-status-filter] { width: 230px; flex: none; }
+[data-sort] { width: 190px; flex: none; }
+
+@media (max-width: 699px) {
+  [data-status-filter], [data-sort] { width: auto; }
+}
+
+.ng-dropdown-trigger {
+  width: 100%;
+  cursor: pointer;
   font-family: var(--ng-font-mono);
   font-size: 14px;
   color: var(--ng-ink);
-  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
 }
 
-.ng-filter-field select:focus { outline: none; }
+.ng-dropdown-trigger:focus-visible { outline: var(--ng-border-width) solid var(--ng-accent); outline-offset: 3px; }
+.ng-dropdown-value { flex: 1; }
+.ng-dropdown-chevron { flex: none; transition: transform var(--ng-duration) var(--ng-ease); }
+.ng-dropdown-trigger[aria-expanded="true"] .ng-dropdown-chevron { transform: rotate(180deg); }
 
-.ng-filter-chevron {
+/* Rozwinięta lista: ta sama ramka i twardy cień co kafelki. */
+.ng-dropdown-list {
   position: absolute;
-  right: var(--ng-space-3);
-  pointer-events: none;
-  color: var(--ng-ink);
+  top: calc(100% + var(--ng-space-2));
+  left: 0;
+  z-index: 15;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--ng-paper);
+  border: var(--ng-border);
+  box-shadow: var(--ng-shadow);
 }
+
+.ng-dropdown-list:focus { outline: none; }
+
+.ng-dropdown-option {
+  display: flex;
+  align-items: center;
+  gap: var(--ng-space-3);
+  padding: var(--ng-space-3) var(--ng-space-4);
+  font-family: var(--ng-font-mono);
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+  border-bottom: 1px solid var(--ng-hairline);
+}
+
+.ng-dropdown-option:last-child { border-bottom: 0; }
+.ng-dropdown-option[aria-selected="true"] { font-weight: 700; }
+.ng-dropdown-option[data-active] { background: var(--ng-ink); color: var(--ng-bone); }
+
+.ng-dropdown-check { visibility: hidden; flex: none; }
+.ng-dropdown-option[aria-selected="true"] .ng-dropdown-check { visibility: visible; }
+
+.ng-dropdown-count { margin-left: auto; padding-left: var(--ng-space-4); color: var(--ng-muted); font-weight: 400; }
+.ng-dropdown-option[data-active] .ng-dropdown-count { color: var(--ng-muted-inverse); }
 .ng-search-field input::-webkit-search-cancel-button { cursor: pointer; }
 
 .ng-search-empty {
@@ -304,7 +362,7 @@ a { color: inherit; }
   aspect-ratio: var(--ng-keyart-ratio);
   border-bottom: var(--ng-border);
   overflow: hidden;
-  background: var(--ng-ink);
+  background: var(--ng-art-ink);
 }
 
 .ng-card-art[data-tone="red"] { background: var(--ng-accent); }
@@ -315,7 +373,7 @@ a { color: inherit; }
   position: absolute;
   top: var(--ng-space-3);
   left: var(--ng-space-3);
-  color: var(--ng-bone);
+  color: var(--ng-art-bone);
 }
 
 .ng-card-art-initial {
@@ -502,7 +560,7 @@ a { color: inherit; }
   position: relative;
   aspect-ratio: 21 / 9;
   border-bottom: var(--ng-border);
-  background: var(--ng-ink);
+  background: var(--ng-art-ink);
 }
 
 .ng-panel-art[data-tone="red"] { background: var(--ng-accent); }
@@ -566,15 +624,35 @@ a { color: inherit; }
   letter-spacing: var(--ng-tracking-meta);
 }
 
+/* Tytuł i przyciski sklepów w jednym rzędzie. Długi tytuł zmniejsza się tak, żeby
+   zmieścić się w jednej linii obok przycisków: dostępna szerokość (panel minus
+   przyciski, ok. 124 px na sklep) dzielona przez liczbę znaków razy średnią szerokość
+   wersalika Archivo Black ze spacjami (ok. 0,54 em, liczone 0,58 z zapasem). Nie mniej niż 24 px — skrajnie długi tytuł
+   może wtedy przejść do drugiej linii, ale przyciski i tak zostają obok. */
 .ng-panel-head {
+  container-type: inline-size;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--ng-space-4);
-  flex-wrap: wrap;
 }
 
-.ng-panel-stores { display: flex; gap: var(--ng-space-3); }
+.ng-panel-head .ng-panel-title {
+  min-width: 0;
+  font-size: clamp(
+    24px,
+    (100cqi - var(--ng-stores) * 124px - var(--ng-space-4)) / (var(--ng-title-len) * 0.58),
+    var(--ng-size-panel-title)
+  );
+}
+
+.ng-panel-stores { display: flex; gap: var(--ng-space-3); flex: none; }
+
+/* Telefon: obok tytułu nie ma miejsca, przyciski schodzą pod spód w pełnym rozmiarze tytułu. */
+@media (max-width: 699px) {
+  .ng-panel-head { flex-wrap: wrap; }
+  .ng-panel-head .ng-panel-title { font-size: var(--ng-size-panel-title); }
+}
 
 .ng-panel-actions { display: flex; flex-direction: column; gap: var(--ng-space-3); }
 .ng-panel-actions-row { display: flex; gap: var(--ng-space-4); }
@@ -632,26 +710,14 @@ body[data-panel-open="true"] .ng-scrim { opacity: 1; pointer-events: auto; }
 
 /* --- Stopka -------------------------------------------------------- */
 
-.ng-footer { padding-block: var(--ng-space-16) var(--ng-space-12); }
-.ng-footer-title { font-size: var(--ng-size-panel-title); max-width: 18ch; }
-
-.ng-footer-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--ng-space-10);
-  flex-wrap: wrap;
-  margin-bottom: var(--ng-space-12);
-}
-
-.ng-footer-note { color: var(--ng-muted); max-width: 52ch; }
+/* Sama linijka noty: sekcja z grami nad nią ma już ramkę od dołu. */
+.ng-footer { padding-block: var(--ng-space-8); }
 
 .ng-footer-bottom {
   display: flex;
   justify-content: space-between;
   gap: var(--ng-space-6);
   flex-wrap: wrap;
-  border-top: var(--ng-border);
-  padding-top: var(--ng-space-5);
   color: var(--ng-muted);
 }
 

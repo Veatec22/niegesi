@@ -16,7 +16,8 @@ const haystack = game.title
   .replace(/ł/g, 'l');
 ---
 
-<a class="ng-card" href={game.href} data-card={game.slug} data-status={game.status.id} data-search={haystack}>
+<a class="ng-card" href={game.href} data-card={game.slug} data-status={game.status.id} data-search={haystack}
+  data-added={game.added.toISOString().slice(0, 10)} data-title={game.title}>
   <Keyart game={game} variant="card" />
   <div class="ng-card-body">
     <h3 class="ng-display ng-card-title">{game.title}</h3>

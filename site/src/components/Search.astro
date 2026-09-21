@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import Dropdown from './Dropdown.astro';
 import type { Status } from '../lib/games';
 
 interface Props {
@@ -25,13 +26,29 @@ const { count, statuses } = Astro.props;
         spellcheck="false"
       />
     </div>
-    <div class="ng-search-field ng-filter-field">
-      <Icon name="filter" size={18} class="ng-search-icon" />
-      <select data-status-filter aria-label="Filtruj po statusie">
-        <option value="">wszystkie</option>
-        {statuses.map((status) => <option value={status.id}>{status.label} ({status.count})</option>)}
-      </select>
-      <Icon name="chevron-down" size={18} class="ng-filter-chevron" />
+    <div data-status-filter>
+      <Dropdown
+        id="status"
+        label="Status"
+        icon="filter"
+        options={[
+          { value: '', label: 'wszystkie', count },
+          ...statuses.map((status) => ({ value: status.id, label: status.label, count: status.count })),
+        ]}
+      />
+    </div>
+    <div data-sort>
+      <Dropdown
+        id="sortowanie"
+        label="Kolejność"
+        icon="sort"
+        options={[
+          { value: 'newest', label: 'najnowsze' },
+          { value: 'oldest', label: 'najstarsze' },
+          { value: 'az', label: 'A–Z' },
+          { value: 'za', label: 'Z–A' },
+        ]}
+      />
     </div>
   </div>
   <p class="ng-visually-hidden" data-search-count aria-live="polite">{count} gier</p>
@@ -39,7 +56,9 @@ const { count, statuses } = Astro.props;
 
 <script>
   const input = document.querySelector<HTMLInputElement>('[data-search-input]');
-  const filter = document.querySelector<HTMLSelectElement>('[data-status-filter]');
+  // Korzenie list rozwijanych (Dropdown.astro): wybór w data-value, zmiana jako zdarzenie „change”.
+  const filter = document.querySelector<HTMLElement>('[data-status-filter] [data-dropdown]');
+  const sorter = document.querySelector<HTMLElement>('[data-sort] [data-dropdown]');
   const counter = document.querySelector<HTMLElement>('[data-search-count]');
   const empty = document.querySelector<HTMLElement>('[data-search-empty]');
   const cards = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-card]'));
@@ -60,10 +79,29 @@ const { count, statuses } = Astro.props;
     return `${count} gier`;
   }
 
+  // Kolejność kafelków: przestawiamy te same elementy w siatce, nic nie renderujemy od nowa.
+  const byTitle = (a: HTMLElement, b: HTMLElement) => (a.dataset.title ?? '').localeCompare(b.dataset.title ?? '', 'pl');
+  const byAdded = (a: HTMLElement, b: HTMLElement) => (a.dataset.added ?? '').localeCompare(b.dataset.added ?? '');
+  const orders: Record<string, (a: HTMLElement, b: HTMLElement) => number> = {
+    newest: (a, b) => byAdded(b, a) || byTitle(a, b),
+    oldest: (a, b) => byAdded(a, b) || byTitle(a, b),
+    az: byTitle,
+    za: (a, b) => byTitle(b, a),
+  };
+
+  if (sorter) {
+    const sort = () => {
+      const compare = orders[sorter.dataset.value ?? ''] ?? orders.newest!;
+      const grid = cards[0]?.parentElement;
+      [...cards].sort(compare).forEach((card) => grid?.appendChild(card));
+    };
+    sorter.addEventListener('change', sort);
+  }
+
   if (input && filter && counter && empty) {
     const apply = () => {
       const query = fold(input.value.trim());
-      const status = filter.value;
+      const status = filter.dataset.value ?? '';
       let visible = 0;
 
       cards.forEach((card) => {
@@ -81,8 +119,6 @@ const { count, statuses } = Astro.props;
 
     input.addEventListener('input', apply);
     filter.addEventListener('change', apply);
-    // Przeglądarka potrafi przywrócić wybór w <select> po powrocie na stronę.
-    apply();
 
     input.addEventListener('keydown', (event) => {
       // Escape czyści pole, ale tylko gdy panel jest zamknięty — tam Escape zamyka.
