@@ -1,0 +1,224 @@
+[
+  {
+    "namespace": "LOC_PVD",
+    "key": "apply",
+    "english": "Apply",
+    "polish": "Zastosuj"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "apply_all",
+    "english": "Apply All",
+    "polish": "Zastosuj wszystko"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "new_game_confirm",
+    "english": "Are you sure you want to start a new game? Previous progress will be cleared.",
+    "polish": "Na pewno rozpocząć nową grę? Dotychczasowe postępy zostaną usunięte."
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "audio",
+    "english": "Audio",
+    "polish": "Dźwięk"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "back",
+    "english": "Back",
+    "polish": "Wstecz"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "continue",
+    "english": "Continue",
+    "polish": "Kontynuuj"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "controls",
+    "english": "Controls",
+    "polish": "Sterowanie"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "play_tutorial_prompt",
+    "english": "Do You Want to Play the Tutorial?",
+    "polish": "Chcesz przejść samouczek?"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "Lang_Language",
+    "english": "Language",
+    "polish": "Język"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "new_game",
+    "english": "New Game",
+    "polish": "Nowa gra"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "no",
+    "english": "No",
+    "polish": "Nie"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "quit",
+    "english": "Quit",
+    "polish": "Wyjdź"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "quit_to_desktop",
+    "english": "Quit To Desktop",
+    "polish": "Wyjdź do pulpitu"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "resume",
+    "english": "Resume",
+    "polish": "Wznów"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "sensitivity",
+    "english": "Sensitivity",
+    "polish": "Czułość"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "settings",
+    "english": "Settings",
+    "polish": "Ustawienia"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "video",
+    "english": "Video",
+    "polish": "Obraz"
+  },
+  {
+    "namespace": "LOC_PVD",
+    "key": "yes",
+    "english": "Yes",
+    "polish": "Tak"
+  },
+  {
+    "namespace": "ST_Inputs",
+    "key": "back",
+    "english": "Back",
+    "polish": "Wstecz"
+  },
+  {
+    "namespace": "ST_Inputs",
+    "key": "settings",
+    "english": "Settings",
+    "polish": "Ustawienia"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "settings_apply",
+    "english": "Apply Settings",
+    "polish": "Zastosuj ustawienia"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "settings_audio",
+    "english": "Audio",
+    "polish": "Dźwięk"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "settings_controls",
+    "english": "Controls",
+    "polish": "Sterowanie"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "audio_dialogue_volume",
+    "english": "Dialogue Volume",
+    "polish": "Głośność dialogów"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "audio_music_volume",
+    "english": "Music Volume",
+    "polish": "Głośność muzyki"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "audio_overall_volume",
+    "english": "Overall Volume",
+    "polish": "Głośność ogólna"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "settings_reset",
+    "english": "Reset Settings",
+    "polish": "Przywróć ustawienia"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "audio_soundeffects_volume",
+    "english": "Sound Effects Volume",
+    "polish": "Głośność efektów"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "audio_userinterface_volume",
+    "english": "User Interface Volume",
+    "polish": "Głośność interfejsu"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "settings_video",
+    "english": "Video",
+    "polish": "Obraz"
+  },
+  {
+    "namespace": "ST_Settings",
+    "key": "audio_volumes",
+    "english": "Volumes",
+    "polish": "Głośność"
+  },
+  {
+    "namespace": "ST_Tutorials",
+    "key": "Tutorial_Souls_Description",
+    "english": "Defeated enemies grant souls!",
+    "polish": "Pokonani wrogowie zostawiają dusze!"
+  },
+  {
+    "namespace": "ST_Tutorials",
+    "key": "Tutorial_WeakPoint_Name",
+    "english": "Enemy Weak Points",
+    "polish": "Słabe punkty wrogów"
+  },
+  {
+    "namespace": "ST_Tutorials",
+    "key": "Tutorial_WeakPoint_ShortDescription",
+    "english": "See it. Shoot it. Hurt it more.",
+    "polish": "Wypatrz. Wyceluj. Zaboli mocniej."
+  },
+  {
+    "namespace": "ST_Tutorials",
+    "key": "Tutorial_Souls_Name",
+    "english": "Souls",
+    "polish": "Dusze"
+  },
+  {
+    "namespace": "ST_Tutorials",
+    "key": "Tutorial_StartYourRun_Name",
+    "english": "Starting Your Run",
+    "polish": "Początek wyprawy"
+  },
+  {
+    "namespace": "ST_Tutorials",
+    "key": "Tutorial_StartYourRun_Description",
+    "english": "Step into the portal and face your next challenge!",
+    "polish": "Wejdź w portal i zmierz się z kolejnym wyzwaniem!"
+  }
+]

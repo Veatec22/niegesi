@@ -1,0 +1,9 @@
+etap: vertical
+zrodla:
+  - Lokalny PVD/Content/Localization/Game/en/Game.locres, Steam build 24334618.
+terminy:
+  - {en: run, pl: wyprawa, zrodlo: decyzja — pojedyncze podejście w roguelite}
+  - {en: souls, pl: dusze, zrodlo: ST_Tutorials/Tutorial_Souls_Name}
+  - {en: weak points, pl: słabe punkty, zrodlo: ST_Tutorials/Tutorial_WeakPoint_Name}
+bez_tlumaczenia:
+  - Holy Shoot

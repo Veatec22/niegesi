@@ -43,3 +43,6 @@ games/turbo-overkill/work/
 
 # Tabele innych języków z gier — dowody do biblii, cudza treść.
 games/*/work/ref-*.json
+
+# Holy Shoot: extracted assets and third-party runtime/source used for analysis.
+games/holy-shoot/work/

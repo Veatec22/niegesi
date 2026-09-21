@@ -25,6 +25,7 @@ are built locally from an installed copy and kept in ignored output and backup f
 | [Turbo Overkill](games/turbo-overkill/) | 2316/2333 entries: menus, HUD, tutorials, objectives, all dialogue, gear, codex, audio logs and level editor | 0.2.0 | Separate Polish language and flag; vertical confirmed, full campaign playtest pending |
 | [Void Bastards](games/void-bastards/) | 2480/2480 entries: menus, HUD, comics, B.A.C.S. and pirate dialogue, items, upgrades, star map events, traits, achievements and Tydy DLC | 0.2.0 | Separate Polish language; missing Polish glyphs composed at runtime; vertical confirmed, full playthrough pending |
 | [Wild Bastards](games/wild-bastards/) | 4426/4426 entries: menus, HUD, dialogue, tutorials and hints, outlaws with aces, stunts and weapons, items, planet traits, planet and sector map events, achievements | 0.2.0 | Polish added as an extra I2 language with its own menu button; dynamic font fallback from the game's TTFs; vertical confirmed, full playthrough pending |
+| [Holy Shoot](games/holy-shoot/) | 37/1286 entries: menu, audio settings and tutorial sample | 0.1.3 | Overlay pak with an empty IoStore companion plus UE4SS Lua patch adding Polski to the language selector; vertical confirmed in-game |
 
 Each game's Polish README is a short player-facing description and installation guide.
 Technical findings belong in `docs/technika.md`; `game.yaml` records counts, release
