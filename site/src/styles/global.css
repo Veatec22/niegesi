@@ -71,7 +71,7 @@ a { color: inherit; }
   text-decoration: none;
 }
 
-.ng-brand-mark { width: 34px; height: 34px; flex: none; }
+.ng-brand-mark { width: 34px; height: 34px; flex: none; display: block; }
 
 .ng-brand-name {
   font-family: var(--ng-font-display);
