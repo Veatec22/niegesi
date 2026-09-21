@@ -1,4 +1,5 @@
-# Strona z site/ na GitHub Pages: https://veatec22.github.io/niegesi/
+# Strona z site/ na GitHub Pages z własną domeną: https://notgeese.cc/
+# Domena ustawiona w Settings → Pages; DNS w Cloudflare (rekordy A/AAAA na GitHub Pages).
 # Metadane gier czyta z games/*/game.yaml, paczki leżą w site/public/pobierz.
 name: Strona
 
@@ -31,8 +32,6 @@ jobs:
         working-directory: site
       - run: npm run build
         working-directory: site
-        env:
-          SITE_BASE: /niegesi/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site/dist

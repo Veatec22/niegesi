@@ -25,7 +25,6 @@ export function downloadFor(game: Game) {
     return {
       available: true as const,
       href: withBase(`pobierz/${file}`),
-      label: 'Pobierz spolszczenie',
       // Rozmiar i format stoją w przycisku; jak zainstalować, mówi README gry.
       meta: [size, 'ZIP'].filter(Boolean).join(' · '),
     };

@@ -62,7 +62,6 @@
   /* --- Język formy ------------------------------------------------ */
   --ng-border: 3px solid var(--ng-ink);
   --ng-border-width: 3px;
-  --ng-radius: 0;
   --ng-shadow-color: #141414;   /* w jasnym to ink; w ciemnym osobno, bo jasny cień krzyczy */
   --ng-shadow: 8px 8px 0 var(--ng-shadow-color);
   --ng-shadow-pressed: 4px 4px 0 var(--ng-shadow-color);

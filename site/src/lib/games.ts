@@ -11,37 +11,10 @@ export type Game = CollectionEntry<'games'>['data'] & {
   status: Status;
   added: Date;
   tone: Tone;
-  lead: string;
   href: string;
 };
 
 const TONES: Tone[] = ['ink', 'red', 'graphite'];
-
-/** Pierwszy akapit README gry, bez nagłówka i bez noty „Część Nie gęsi". */
-function leadFromReadme(body: string | undefined): string {
-  if (!body) return '';
-  const paragraph = body
-    .replace(/\r\n/g, '\n') // część README w repo ma końce linii CRLF
-    .split(/\n{2,}/)
-    .map((block) => block.trim())
-    .find(
-      (block) =>
-        block.length > 0 &&
-        !block.startsWith('#') &&
-        !block.startsWith('>') &&
-        !block.startsWith('|') &&
-        !/^\*(Part of|Część)/.test(block),
-    );
-
-  if (!paragraph) return '';
-
-  return paragraph
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // linki → sam tekst
-    .replace(/\*\*([^*]+)\*\*/g, '$1')
-    .replace(/[*`]/g, '')
-    .replace(/\s*\n\s*/g, ' ')
-    .trim();
-}
 
 export async function getStatuses(): Promise<Status[]> {
   const entries = await getCollection('statuses');
@@ -74,8 +47,7 @@ async function catalogBySlug(slugs: string[]): Promise<Map<string, { status: Sta
 }
 
 export async function getGames(): Promise<Game[]> {
-  const [entries, docs] = await Promise.all([getCollection('games'), getCollection('gameDocs')]);
-  const leads = new Map(docs.map((doc) => [doc.id, leadFromReadme(doc.body)]));
+  const entries = await getCollection('games');
   const catalog = await catalogBySlug(entries.map((entry) => entry.data.slug));
 
   return entries
@@ -84,7 +56,6 @@ export async function getGames(): Promise<Game[]> {
         ...entry.data,
         id: entry.id,
         ...catalog.get(entry.data.slug)!,
-        lead: leads.get(entry.id) ?? '',
         // Gra nie ma własnej strony — link otwiera panel i daje się udostępnić.
         href: withBase(`/?gra=${entry.data.slug}`),
         tone: 'ink' as Tone,

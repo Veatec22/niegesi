@@ -595,8 +595,6 @@ a { color: inherit; }
 }
 
 .ng-panel-status { display: flex; align-items: center; gap: var(--ng-space-3); flex-wrap: wrap; }
-.ng-panel-status-note { margin: var(--ng-space-3) 0 0; color: var(--ng-muted); }
-.ng-panel-lead { margin: 0; }
 
 .ng-quote { border: var(--ng-border); padding: var(--ng-space-6); position: relative; }
 

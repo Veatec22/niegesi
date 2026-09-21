@@ -102,7 +102,7 @@ const Content = rendered?.Content;
         <tr><th>Zakres</th><td>{entriesLabel(game)} — {game.scope}</td></tr>
         <tr><th>Sposób</th><td>{game.approach}</td></tr>
         {
-          game.tested_on.length > 0 ? (
+          game.tested_on.length > 0 && (
             <tr>
               <th>Przetestowana wersja</th>
               <td>
@@ -114,8 +114,6 @@ const Content = rendered?.Content;
                 ))}
               </td>
             </tr>
-          ) : (
-            game.source && <tr><th>Przetestowana wersja</th><td>{game.source}</td></tr>
           )
         }
       </tbody>

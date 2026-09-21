@@ -3,7 +3,11 @@ import { file, glob } from 'astro/loaders';
 
 const slugFromPath = ({ entry }: { entry: string }) => entry.split('/')[0];
 
-/** Metadane maszynowe: liczby, statusy, linki. Jedyne źródło dla tabeli w README i dla strony. */
+/**
+ * Metadane gry z game.yaml — tylko pola, których używa strona. Plik ma też pola dla
+ * narzędzi (steam_appid, year, keyart_shot z tools/keyart.py, phase, test_notes);
+ * schemat je pomija.
+ */
 const games = defineCollection({
   loader: glob({ pattern: '*/game.yaml', base: '../games', generateId: slugFromPath }),
   schema: z.object({
@@ -15,13 +19,9 @@ const games = defineCollection({
     engine: z.string(),
     approach: z.string(),
     scope: z.string(),
-    source: z.string().nullable().default(null), // stary zapis, zastępuje go tested_on
     // Na czym spolszczenie sprawdzono: sklep (klucz jak w `stores`) i wersja gry z jej menu
     // albo z PlayerSettings.bundleVersion. Informacja dla gracza, nigdy warunek działania.
     tested_on: z.array(z.object({ store: z.string(), version: z.string() })).default([]),
-    year: z.number().nullable().default(null),
-    steam_appid: z.number().nullable().default(null),
-    keyart_shot: z.number().nullable().default(null), // numer zrzutu ze Steama, patrz tools/keyart.py
     stores: z.record(z.string()).default({}),
     quote: z
       .object({ text: z.string().nullable().default(null), source: z.string().nullable().default(null) })
@@ -34,7 +34,7 @@ const games = defineCollection({
   }),
 });
 
-/** Proza: README gry — krótki opis i instalacja. Renderowane na podstronie, lead trafia do panelu. */
+/** README gry — instrukcja instalacji dla gracza, renderowana w panelu gry. */
 const gameDocs = defineCollection({
   loader: glob({ pattern: '*/README.md', base: '../games', generateId: slugFromPath }),
 });
