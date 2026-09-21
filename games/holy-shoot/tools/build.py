@@ -20,16 +20,19 @@ sys.path.insert(0, str(ROOT / 'tools'))
 import locres
 import pak
 import iostore_empty
+import batch
 
 source = locres.load(ROOT / 'work/en.locres')
-rows = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+# pl.json is the source ({"namespace|key": text}); the review file is generated from
+# it by tools/batch.py and must be in sync, so reviewers never see stale text.
+polish = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+english = {batch.ident(ns, key): text for (ns, key), text in source.texts().items()}
+assert set(polish) <= set(english), sorted(set(polish) - set(english))[:5]
+for name, text in polish.items():
+    batch.check(name, english[name], text)
 review = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
-assert rows == review
-translations = {(r['namespace'], r['key']): r['polish'] for r in rows}
-assert len(translations) == len(rows)
-for row in rows:
-    assert source.texts()[row['namespace'], row['key']] == row['english']
-    assert re.findall(r'\{[^}]+\}', row['english']) == re.findall(r'\{[^}]+\}', row['polish'])
+assert review == batch.review_rows(english, polish), 'run tools/batch.py from-review to sync the review file'
+translations = {tuple(name.split('|', 1)): text for name, text in polish.items()}
 data = locres.dump(locres.translate(source, translations))
 out = ROOT / 'dist'
 out.mkdir(exist_ok=True)
@@ -65,7 +68,7 @@ for script in ('main.lua', 'selector.lua'):
 assert len(payload) == 12
 assert not any(Path(p).suffix in ('.uasset', '.uexp', '.ufont') for p in payload)
 assert len(ucas) < 1024, 'IoStore companion must stay an empty container header'
-release = out / 'Holy-Shoot-PL-0.1.3-vertical.zip'
+release = out / 'Holy-Shoot-PL-0.2.0.zip'
 with zipfile.ZipFile(release, 'w', zipfile.ZIP_DEFLATED) as z:
     for path, body in payload.items():
         z.writestr(path, body)
@@ -73,10 +76,10 @@ with zipfile.ZipFile(release) as z:
     assert z.testzip() is None and set(z.namelist()) == set(payload)
     for path, body in payload.items():
         assert z.read(path) == body
-report = {'version': '0.1.3', 'translated': len(rows), 'total': len(source.texts()),
+report = {'version': '0.2.0', 'translated': len(translations), 'total': len(source.texts()),
           'runtime': 'UE4SS v3.0.1-1140-gf58e8f84 (MIT)',
           'files': {path: hashlib.sha256(body).hexdigest() for path, body in payload.items()},
           'zip_bytes': release.stat().st_size, 'in_game_test': 'pending'}
 (out / 'build-report.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
-print(f'{len(rows)}/{len(source.texts())} entries; verified locres and pak round trips.')
+print(f'{len(translations)}/{len(source.texts())} entries; verified locres and pak round trips.')
 print('Source SHA256:', hashlib.sha256((ROOT / 'work/en.locres').read_bytes()).hexdigest())

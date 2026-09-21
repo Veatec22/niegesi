@@ -42,7 +42,6 @@ class SelectorTests(unittest.TestCase):
         ''')
         self.lua.execute((ROOT / 'plugin/main.lua').read_text(encoding='utf-8'))
         self.create = self.lua.eval('hooks["/Script/UMG.WidgetBlueprintLibrary:Create"]')
-        self.poll = self.lua.eval('loops[1]')
 
     def load(self, *paths):
         for path in paths:
@@ -60,16 +59,14 @@ class SelectorTests(unittest.TestCase):
         self.assertEqual(self.labels(), 3)
         self.assertEqual(self.codes(CDO), 'pl')
         self.assertEqual(self.codes(MAIN), 'pl')
-        self.assertFalse(self.poll(), 'pause template not loaded yet: keep trying')
         self.load(PAUSE)
         self.create()
-        self.assertEqual(self.codes(PAUSE), 'pl')
+        self.assertEqual(self.codes(PAUSE), 'pl', 'pause template patched on a later Create')
         self.assertEqual(self.labels(), 3, 'no duplicate label on repeated calls')
-        self.assertTrue(self.poll(), 'stops once every template is patched')
 
     def test_nothing_loaded_is_harmless(self):
         self.create()
-        self.assertFalse(self.poll())
+        self.assertEqual(self.lua.eval('#loops'), 0)
 
     def test_changed_schema_leaves_originals(self):
         self.load(SWITCHER, CDO, MAIN, PAUSE)

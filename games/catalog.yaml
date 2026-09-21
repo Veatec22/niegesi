@@ -34,10 +34,10 @@ testowe:
     turbo-overkill: 2026-09-21
     void-bastards: 2026-09-21
     wild-bastards: 2026-09-21
+    holy-shoot: 2026-09-21
 
 w-trakcie:
   label: w trakcie
   description: Tłumaczenie jeszcze powstaje. Paczka pojawi się, kiedy będzie komplet tekstu.
   tone: accent
-  games:
-    holy-shoot: 2026-09-21
+  games: {}

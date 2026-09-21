@@ -7,7 +7,7 @@
 -- before a menu is created gives every menu 11 languages, so the saved index 10
 -- resolves to "pl" at startup. Live menus are never touched.
 local plan = require("selector").plan
-local VERSION = "0.1.3"
+local VERSION = "0.2.0"
 local BASE = "/Game/NiceSettingsMenu/UI/Theme_1/"
 local PANELS = {
     BASE .. "WB_T1_PVDSettingsMenu.Default__WB_T1_PVDSettingsMenu_C",
@@ -72,17 +72,8 @@ end
 
 log("Loaded")
 
--- Primary trigger: Blueprints create menus through UWidgetBlueprintLibrary::Create;
--- its prehook runs with the widget class loaded but before the instance exists.
+-- Blueprints create menus through UWidgetBlueprintLibrary::Create; its prehook
+-- runs with the widget class loaded but before the instance exists. Confirmed in
+-- game (0.1.3 log: "Polski at index 10 (Create)" before the first menu).
 local hooked = pcall(RegisterHook, "/Script/UMG.WidgetBlueprintLibrary:Create", function() try("Create") end)
 if not hooked then log("Create Widget hook unavailable") end
-
--- Fallback: poll on the game thread until every template is patched.
-local pending, started = false, os.time()
-LoopAsync(100, function()
-    if done or os.time() - started > 120 then return true end
-    if pending then return false end
-    pending = true
-    ExecuteInGameThread(function() try("poll"); pending = false end)
-    return false
-end)

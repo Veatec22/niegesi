@@ -1,9 +1,166 @@
-etap: vertical
+# Biblia tłumaczenia Holy Shoot — fakty ze źródłami. Format: .claude/skills/lokalizacja/BIBLIA.md
+# Stan: pełne tłumaczenie 0.2.0 (1286/1286).
+
 zrodla:
-  - Lokalny PVD/Content/Localization/Game/en/Game.locres, Steam build 24334618.
+  - id: locres
+    opis: "PVD/Content/Localization/Game/en/Game.locres, Steam build 24334618 (jedyny język gry; innych tabel brak)."
+  - id: tekst
+    opis: "Oryginalny tekst: opisy postaci (he/she), imiona, kontekst kwestii."
+
+postacie:
+  - id: samuel
+    nazwa: "Naddźwiękowy Samuel (Supersonic Samuel)"
+    plec: m
+    klucz: 'SupersonicSamuel_'
+    rejestr: "były sprinter, zadziorny, przechwałki o szybkości"
+    zrodlo: [tekst]
+    uwaga: "„made him a hero”, „his athletic career”."
+  - id: toshiko
+    nazwa: "Toshiko Techno"
+    plec: k
+    klucz: 'ToshikoTechno_'
+    rejestr: "wynalazczyni, żargon informatyczny (debug, patch, restart, 404)"
+    zrodlo: [tekst]
+    uwaga: "„she fused tech with combat”. DashDesc_Toshiko w oryginale ma błędne „his path” — po polsku „swojej drodze”."
+  - id: gracz
+    nazwa: "gracz (Samuel albo Toshiko)"
+    plec: '?'
+    uwaga: "Wszystko, co mówi się do gracza (NPC, bossowie, wróżka, opisy), jest bezrodzajowe."
+  - id: wrozka
+    nazwa: "Wróżka, towarzyszka (Fairy Companion)"
+    plec: k
+    klucz: 'Fairy_'
+    rejestr: "pyskata, złośliwa"
+    zrodlo: decyzja
+    uwaga: "W oryginale „it”; po polsku „wróżka”, więc forma żeńska („Przybyła twoja bohaterka”)."
+  - id: baron
+    nazwa: "Baron Przypalacz (Baron Burnsalot) – Szatan"
+    plec: m
+    klucz: 'BaronBurnsalot_'
+    rejestr: "rozwydrzony bobas: mamusia, smoczek, mleczak"
+    zrodlo: [tekst]
+  - id: lady
+    nazwa: "Lady Miłogeddon (Lady Lovemageddon) – Asmodeusz"
+    plec: k
+    klucz: 'LadyLovemageddon_'
+    rejestr: "uwodzicielska, „kochanie”"
+    zrodlo: [tekst]
+  - id: mammon
+    nazwa: "Komornik (The Debtkeeper) – Mamona"
+    plec: m
+    klucz: 'Mammon_'
+    rejestr: "korporacyjno-finansowy żargon"
+    zrodlo: [tekst]
+  - id: druidka
+    nazwa: "Milka Krasula, Królowa Druidów (Milcah Kow)"
+    plec: k
+    zrodlo: [tekst]
+    uwaga: "Gra słów „milk a cow” → krowa Milka + Krasula."
+  - id: maja
+    nazwa: "Kupulkan, majański duch (Needapu)"
+    plec: m
+    zrodlo: decyzja
+    uwaga: "„Need a poo” → Kukulkan + kupa; kwestia o żartach z imienia działa dalej."
+  - id: spearatrix
+    nazwa: "Spearatrix, spartańska wojowniczka"
+    plec: k
+    zrodlo: decyzja
+    uwaga: "Końcówka -trix; kwestia „byłam numerem 301”."
+
 terminy:
-  - {en: run, pl: wyprawa, zrodlo: decyzja — pojedyncze podejście w roguelite}
-  - {en: souls, pl: dusze, zrodlo: ST_Tutorials/Tutorial_Souls_Name}
-  - {en: weak points, pl: słabe punkty, zrodlo: ST_Tutorials/Tutorial_WeakPoint_Name}
+  - en: runs?
+    pl: "wyprawa"
+    formy: [wypraw]
+    zrodlo: decyzja
+    uwaga: "pojedyncze podejście w roguelite"
+  - en: souls?
+    pl: "dusza"
+    formy: [dusz]
+    zrodlo: [locres]
+  - en: perks?
+    pl: "atut"
+    formy: [atut]
+    zrodlo: decyzja
+    uwaga: "utarte w polskich wydaniach gier (Fallout, Call of Duty)"
+  - en: dash
+    pl: "zryw"
+    formy: [zryw]
+    zrodlo: decyzja
+  - en: companion
+    pl: "towarzyszka"
+    formy: [towarzysz]
+    zrodlo: decyzja
+    uwaga: "towarzyszem jest wróżka"
+  - en: Divine Offerings?
+    pl: "Boskie Datki"
+    formy: [datk, datek]
+    zrodlo: decyzja
+  - en: Glimmering Dust
+    pl: "Migotliwy Pył"
+    formy: [pył]
+    zrodlo: decyzja
+  - en: Healing Basin
+    pl: "Uzdrawiająca Misa"
+    formy: [mis]
+    zrodlo: decyzja
+  - en: Mayhem
+    pl: "Pogrom"
+    formy: [pogrom]
+    zrodlo: decyzja
+  - en: The Challenger
+    pl: "„Wyzywacz”"
+    formy: [wyzywacz]
+    zrodlo: decyzja
+  - en: Order of the Sanctum
+    pl: "Zakon Sanktuarium"
+    formy: [zakon, sanktuari]
+    zrodlo: decyzja
+  - en: Heaven's Light
+    pl: "Światło Niebios"
+    formy: [światł]
+    zrodlo: decyzja
+  - en: Thunder Lance
+    pl: "Włócznia Gromu"
+    formy: [włóczni]
+    zrodlo: decyzja
+  - en: Frozen Grip
+    pl: "Lodowy Uścisk"
+    formy: [uścisk]
+    zrodlo: decyzja
+  - en: Wail of Fear
+    pl: "Lament Trwogi"
+    formy: [lament]
+    zrodlo: decyzja
+  - en: realm
+    pl: "królestwo"
+    formy: [królestw]
+    zrodlo: decyzja
+    uwaga: "Chciwość, Rozpusta, Lenistwo, Gniew"
+
 bez_tlumaczenia:
   - Holy Shoot
+  - Tale Era
+  - Toshiko
+  - Samuel
+  - Techno
+  - Lumen
+  - Gamma
+  - DPS
+  - FPS
+  - Sprint
+  - MENU
+  - Auto
+  - Bomberman
+  - Disco Inferno
+  - Stayin' Alive
+  - Deuteranopia
+  - Protanopia
+  - Tritanopia
+
+ignoruj:
+  - sprawdzenie: angielski
+    klucz: '^[0-9A-F]{32}$'
+    powod: "teksty diagnostyczne twórców bez przestrzeni nazw (Steam Stat Saved, MapOrigin, Use_1) — zostają dosłownie."
+  - sprawdzenie: terminy
+    klucz: '^(Tutorial_ElementalPerks_Description|U_U_PerkSaver_D|Tutorial_SoulboundLantern_Description)$'
+    powod: "„run in fear” to ucieczka, nie wyprawa; „dusz” w dopełniaczu liczby mnogiej."

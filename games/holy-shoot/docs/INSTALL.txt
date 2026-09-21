@@ -1,29 +1,41 @@
-Holy Shoot PL — vertical 0.1.3, wymaga testu w grze
+HOLY SHOOT — NIE GĘSI PL 0.2.0 (PEŁNE TŁUMACZENIE, WERSJA TESTOWA)
 
-1. Zamknij grę. Wypakuj ZIP do katalogu Holy Shoot (tego zawierającego Windows).
-2. Uruchom grę normalnie. Otwórz Settings i wybierz Polski w pozycji Language.
-   Polski jest dopisany na końcu dotychczasowej listy.
-3. Sprawdź menu, ustawienia dźwięku i początek samouczka.
-   Próbka obejmuje tylko część tekstów. Reszta powinna zostać po angielsku.
-4. Przełącz na English i ponownie Polski. Zamknij i uruchom grę ponownie,
-   żeby sprawdzić zapamiętanie wyboru.
-Nie są potrzebne opcje uruchamiania. Jeśli wcześniej dodano -culture=pl,
-usuń ten parametr przed testem.
+Przetłumaczone są wszystkie teksty gry: menu i ustawienia, samouczki, atuty,
+broń i jej cechy, wyzwania, postacie, wprowadzenie fabularne i napisy kwestii
+głosowych. Dubbing zostaje angielski.
 
-Usunięcie: najpierw wybierz English w grze i zamknij ją. Skasuj:
+Paczka NIE PODMIENIA żadnego pliku gry. Polski jest dodatkowym językiem;
+oryginalne języki pozostają dostępne.
+
+INSTALACJA (przy zamkniętej grze)
+1. Wypakuj całą zawartość archiwum do katalogu Holy Shoot — tego, w którym
+   jest folder Windows. W Steamie: Zarządzaj > Przeglądaj pliki lokalne.
+   Jeśli była tu wersja testowa 0.1.x, pozwól nadpisać pliki.
+2. Uruchom grę normalnie. Nie są potrzebne żadne opcje uruchamiania.
+3. Otwórz Settings > Gameplay > Language i wybierz Polski (ostatnia pozycja).
+   Wybór zostaje zapamiętany.
+
+USUNIĘCIE
+Najpierw wybierz w grze English i zamknij grę. Potem skasuj:
 - Windows/PVD/Content/Paks/pakchunk99-NieGesiPL_P.pak, .utoc i .ucas
 - Windows/PVD/Binaries/Win64/dwmapi.dll
-- Windows/PVD/Binaries/Win64/ue4ss (folder dodany przez tę paczkę).
+- Windows/PVD/Binaries/Win64/ue4ss (folder dodany przez tę paczkę)
 Jeśli używasz innych modów UE4SS, zachowaj wspólny loader i usuń tylko
 ue4ss/Mods/NieGesiPL oraz jego wpisy w mods.txt i mods.json.
 Oryginały gry pozostają nietknięte.
 
-Pak zawiera wyłącznie polskie teksty i identyfikatory lokalizacji. Pliki .utoc
-i .ucas to pusty kontener IoStore (bez żadnych zasobów), bez którego silnik
-nie montuje dodatkowego paka. Rozszerzenie
-Lua dokłada język do istniejącego selektora podczas działania gry.
-Paczka zawiera UE4SS v3.0.1-1140-gf58e8f84 na licencji MIT (ue4ss/LICENSE).
-Źródło: https://github.com/UE4SS-RE/RE-UE4SS/tree/f58e8f84
-Log diagnostyczny: Windows/PVD/Binaries/Win64/ue4ss/UE4SS.log.
-Przygotowano na Steam build 24334618, wersja z konfiguracji v.r.1.0.002,
-Unreal Engine 5.7. Nie przetestowano jeszcze w uruchomionej grze.
+CO JEST W PACZCE
+- Pak z polskimi tekstami (pl/Game.locres) i pusty kontener IoStore (.utoc,
+  .ucas, bez żadnych zasobów), bez którego silnik nie montuje dodatkowego paka.
+- UE4SS v3.0.1-1140-gf58e8f84 (MIT, ue4ss/LICENSE) i nasz skrypt Lua, który
+  dopisuje Polski do wyboru języka. Źródło UE4SS:
+  https://github.com/UE4SS-RE/RE-UE4SS/tree/f58e8f84
+
+WERSJE GRY
+Przygotowane na Steam build 24334618 (Unreal Engine 5.7). Spolszczenie nie jest
+przypięte do wersji gry. Nowe teksty po aktualizacji zostaną po angielsku.
+
+JEŚLI COŚ NIE DZIAŁA
+Log: Windows/PVD/Binaries/Win64/ue4ss/UE4SS.log. Powinna w nim być linia
+„[NieGesiPL 0.2.0] Polski at index 10 (Create)”. Prześlij ten plik razem
+ze zrzutem ekranu.

@@ -1,11 +1,20 @@
 # Holy Shoot — analiza 2026-09-21
 
-## Stan: vertical potwierdzony w grze (0.1.3)
+## Stan: pełne tłumaczenie 0.2.0 (1286/1286)
 
-Użytkownik potwierdził na 0.1.2: Polski jest w selektorze od startu gry, wybór
-zostaje po restarcie, próbka 37/1286 tekstów się wyświetla, a brakujące wpisy
-zostają po angielsku. 0.1.3 ma tę samą logikę po usunięciu kodu z nieudanych
-prób. Następny krok to pełne tłumaczenie.
+Vertical potwierdzony w grze na 0.1.2/0.1.3: Polski w selektorze od startu, wybór
+zostaje po restarcie, teksty z paka się wyświetlają. 0.2.0 niesie wszystkie 1286
+wpisów; mechanizm bez zmian poza usunięciem zapasowego odpytywania w Lua (log 0.1.3
+potwierdził, że pierwszy zadziałał prehook `Create`). Pełne przejście gry czeka.
+
+Tłumaczenie: `tools/batch.py` (`show`, `put` plików `przestrzeń|klucz @@ tekst`,
+`from-review`), partie w `work/tsv/` (poza gitem, jak cały `work/`). Źródłem jest
+`translations/pl.json` — mapa `"przestrzeń|klucz": "tekst"`. `en-pl-review.json`
+jest z niej generowany razem z angielskim oryginałem; poprawki wprowadzone w nim
+przenosi `batch.py from-review`, a build odmawia pracy, gdy oba pliki się rozjadą.
+Teksty diagnostyczne twórców bez przestrzeni nazw (`Steam Stat Saved…`, `MapOrigin…`)
+są przepisane dosłownie. Standard: skill `lokalizacja`, biblia `translations/biblia.yaml`,
+decyzje `docs/decyzje-tlumaczenia.md`, raport `work/l10n-report.md`.
 
 ## Jak działa paczka
 
@@ -25,8 +34,7 @@ Trzy części, żadna nie podmienia pliku gry:
    w szablonach `WB_T1_PVDMainMenu` i `WB_T1_PVD_PauseMenu` oraz szablon
    przełącznika `WB_T1_OptionSwitcher_Language` („Option Names”).
    Wyzwalacz: prehook `UWidgetBlueprintLibrary::Create` (blueprinty tworzą nim
-   menu), a zapasowo odpytywanie co 100 ms, aż wszystkie szablony są gotowe.
-   Log podaje, który wyzwalacz zadziałał. Zapis wyboru i zmianę kultury
+   menu); szablon menu pauzy, wczytywany później, łata kolejne wywołanie. Zapis wyboru i zmianę kultury
    robi sama gra (`SetCurrentLanguageAndLocale`, savegame NiceSettings).
 
 ### Czego się nauczyliśmy (żeby nie powtarzać)
@@ -56,7 +64,7 @@ Polskie litery w menu i ustawieniach potwierdzone w grze na próbce.
 
 `.venv/Scripts/python.exe games/holy-shoot/tools/build.py` — sprawdza runtime UE4SS,
 odczyt locres, paka i kontenera IoStore oraz listę 12 plików ZIP bez zasobów gry.
-Wynik: `dist/Holy-Shoot-PL-0.1.3-vertical.zip` i `build-report.json`.
+Wynik: `dist/Holy-Shoot-PL-0.2.0.zip` i `build-report.json`.
 `tools/test_selector.py` (zależność `lupa`) sprawdza logikę Lua na atrapach:
 patch szablonów, brak duplikatów, szablon pauzy wczytany później, zmieniony
 schemat. To nie jest test w grze.
