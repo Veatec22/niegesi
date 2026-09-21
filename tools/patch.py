@@ -11,8 +11,7 @@ nakładanie odmawia pracy na innej wersji gry i nie da się po cichu zepsuć pli
 
 Dane binarne to lista operacji spakowana zwykłym DEFLATE (bez nagłówka zlib),
 który ma każde środowisko: .NET Framework, przeglądarka, Python. Dzięki temu
-tę samą łatkę nakłada `NieGesiPatch.exe` z paczki i guzik „zainstaluj" na stronie,
-bez żadnej biblioteki. Po rozpakowaniu:
+łatkę nakłada `NieGesiPatch.exe` z paczki bez żadnej biblioteki. Po rozpakowaniu:
 
     0x01 <długość> <przesunięcie>   skopiuj bajty z oryginału
     0x02 <długość> <bajty>          wstaw nowe bajty
@@ -20,8 +19,8 @@ bez żadnej biblioteki. Po rozpakowaniu:
 
 Liczby to varinty LEB128. Przesunięcie jest liczone ze znakiem (zigzag) od końca
 poprzedniego kopiowania, więc przy pliku, który tylko się przesunął, wynosi zero.
-Implementacje nakładania: tutaj, `tools/applier/NieGesiPatch.cs`
-i `site/src/lib/install.ts` — zmiana formatu to zmiana we wszystkich trzech.
+Implementacje nakładania: tutaj i `tools/applier/NieGesiPatch.cs` — zmiana formatu
+to zmiana w obu.
 
     python tools/patch.py release --original <plik> --built <plik> --readme <txt> ...
     python tools/patch.py apply   --game <katalog gry> --patch <latka>
@@ -177,7 +176,7 @@ def read_varint(data: bytes, at: int) -> tuple[int, int]:
 
 
 def run(source: bytes, ops: bytes, size: int) -> bytes:
-    """Nakłada operacje na oryginał. Lustro `NieGesiPatch.cs` i `install.ts`."""
+    """Nakłada operacje na oryginał. Lustro `NieGesiPatch.cs`."""
     out = bytearray()
     at = cursor = 0
     while True:

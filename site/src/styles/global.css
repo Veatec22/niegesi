@@ -476,24 +476,6 @@ a { color: inherit; }
 .ng-panel-actions { display: flex; flex-direction: column; gap: var(--ng-space-3); }
 .ng-panel-actions-row { display: flex; gap: var(--ng-space-3); flex-wrap: wrap; }
 
-/* Guzik „zainstaluj" — widoczny tylko tam, gdzie przeglądarka umie zapisać katalog. */
-.ng-install { display: flex; flex-direction: column; gap: var(--ng-space-3); }
-.ng-install[hidden] { display: none; }
-.ng-install .ng-btn[disabled] { cursor: progress; transform: none; box-shadow: none; opacity: 0.7; }
-
-.ng-install-status {
-  margin: 0;
-  color: var(--ng-muted);
-  font-family: var(--ng-font-mono);
-  font-size: var(--ng-size-meta);
-  letter-spacing: var(--ng-tracking-meta);
-  line-height: 1.5;
-}
-
-.ng-install-status code { color: var(--ng-ink); font-family: inherit; font-weight: 700; }
-.ng-install-status[data-tone="ok"] { color: var(--ng-navy); font-weight: 700; }
-.ng-install-status[data-tone="error"] { color: var(--ng-red-deep); font-weight: 700; }
-
 .ng-table { width: 100%; border-collapse: collapse; border: var(--ng-border); }
 
 .ng-table th, .ng-table td {

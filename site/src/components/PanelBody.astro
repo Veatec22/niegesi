@@ -43,32 +43,8 @@ const Content = rendered?.Content;
 
     <div class="ng-panel-actions">
       {
-        download.install && (
-          <div
-            class="ng-install"
-            data-install
-            data-slug={game.slug}
-            data-kind={download.install.kind}
-            data-url={download.install.url}
-            data-marker={download.install.marker}
-            hidden
-          >
-            <button class="ng-btn ng-btn--primary ng-on-accent" type="button" data-install-button>
-              Zainstaluj
-            </button>
-            <p class="ng-install-status" data-install-status aria-live="polite">
-              Wskaż katalog gry — ten, w którym leży <code>{download.install.marker}</code>.
-              {download.install.kind === 'patch'
-                ? ' Łatka sprawdzi twój plik gry, nałoży się na niego i odłoży oryginał obok.'
-                : ' Pliki spolszczenia zapiszą się obok gry.'}
-              {' '}Gier z Program Files przeglądarka nie otworzy — wtedy pobierz paczkę.
-            </p>
-          </div>
-        )
-      }
-      {
         download.available ? (
-          <a class="ng-btn ng-btn--primary ng-on-accent" href={download.href} download data-download>
+          <a class="ng-btn ng-btn--primary ng-on-accent" href={download.href} download>
             Pobierz spolszczenie
           </a>
         ) : (
@@ -110,47 +86,3 @@ const Content = rendered?.Content;
   </div>
 </div>
 
-<script>
-  import { InstallError, installPatch, installSupported, installZip, pickGameFolder } from '../lib/install';
-
-  if (installSupported()) {
-    document.querySelectorAll<HTMLElement>('[data-install]').forEach((block) => {
-      const button = block.querySelector<HTMLButtonElement>('[data-install-button]')!;
-      const status = block.querySelector<HTMLElement>('[data-install-status]')!;
-      const download = block.parentElement?.querySelector<HTMLAnchorElement>('[data-download]');
-      const { slug, kind, url, marker } = block.dataset as Record<string, string>;
-
-      // Z guzikiem „zainstaluj" pobieranie schodzi do roli zapasowej.
-      block.hidden = false;
-      download?.classList.remove('ng-btn--primary', 'ng-on-accent');
-      if (download) download.textContent = 'Pobierz paczkę ZIP';
-
-      const say = (message: string, tone?: 'ok' | 'error') => {
-        status.textContent = message;
-        if (tone) status.dataset.tone = tone;
-        else delete status.dataset.tone;
-      };
-
-      button.addEventListener('click', async () => {
-        button.disabled = true;
-        try {
-          const root = await pickGameFolder(slug!, marker!);
-          const outcome = kind === 'patch' ? await installPatch(root, url!, say) : await installZip(root, url!, say);
-          const saved = outcome.backups.length ? ` Oryginał odłożony obok: ${outcome.backups.join(', ')}.` : '';
-          say(outcome.message + saved, 'ok');
-        } catch (error) {
-          if (error instanceof DOMException && error.name === 'AbortError') {
-            say('Anulowano — nic nie zostało zapisane.');
-          } else if (error instanceof InstallError) {
-            say(error.message, 'error');
-          } else {
-            console.error(error);
-            say(`Nie udało się: ${error instanceof Error ? error.message : String(error)}`, 'error');
-          }
-        } finally {
-          button.disabled = false;
-        }
-      });
-    });
-  }
-</script>

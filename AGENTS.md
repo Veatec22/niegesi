@@ -85,14 +85,11 @@ Skala: Skate Story 275 MB → 78 KB, Boomerang X 1,8 MB → 14 KB.
 
 Format łatki jest przenośny (operacje kopiuj/wstaw spakowane DEFLATE), więc gracz nie
 potrzebuje Pythona: paczka niesie `NieGesiPatch.exe` (`tools/applier/`, ~11 KB, .NET
-Framework z Windowsa), a strona ma guzik „Zainstaluj", który nakłada tę samą łatkę
-w przeglądarce (`site/src/lib/install.ts`). Format ma trzy implementacje — zmieniasz
-jedną, zmieniasz wszystkie. `release` sam buduje aplikator i wkłada go do paczki.
+Framework z Windowsa). Format ma dwie implementacje — `patch.py` i aplikator; zmieniasz
+jedną, zmieniasz obie. `release` sam buduje aplikator i wkłada go do paczki.
 
-**Paczka musi trafić na stronę.** Gotowy ZIP (a przy grze deltowej także sam `.patch`)
-kopiujesz do `site/public/pobierz/` i wpisujesz w `game.yaml` (`download`, a dla guzika
-„Zainstaluj" także `install.marker` — plik, po którym rozpoznajemy katalog gry, zwykle
-jej `.exe`). Strona pokazuje tylko paczki, które tam naprawdę leżą.
+**Paczka musi trafić na stronę.** Gotowy ZIP kopiujesz do `site/public/pobierz/`
+i wpisujesz w `game.yaml` (`download`). Strona pokazuje tylko paczki, które tam naprawdę leżą.
 
 **Znany wyjątek: gry z okrajanym kodem zarządzanym.** Jeśli twórca włączył w Unity
 „managed stripping", z `mscorlib` znikają metody, których gra sama nie używa — między

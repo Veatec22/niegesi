@@ -27,10 +27,7 @@ const games = defineCollection({
       kind: z.enum(['zip', 'patch', 'none']),
       file: z.string().nullable().default(null),
       bytes: z.number().nullable().default(null),
-      patch: z.string().nullable().default(null), // sama łatka, dla guzika „zainstaluj"
     }),
-    // Plik w katalogu gry, po którym guzik „zainstaluj" rozpoznaje, że wskazano właściwy katalog.
-    install: z.object({ marker: z.string() }).nullable().default(null),
   }),
 });
 

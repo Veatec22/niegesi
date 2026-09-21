@@ -1,6 +1,6 @@
 # 1. Jak gracz dostaje spolszczenie
 
-**Stan: zrealizowane 21 września 2026 — wszystkie trzy kroki.** Wynik na końcu
+**Stan: zrealizowane 21 września 2026 — kroki 1 i 2. Krok 3 zbudowany i wycofany.** Wynik na końcu
 dokumentu, w sekcji „Co zrobiliśmy". Reszta to zapis rozważań sprzed decyzji.
 Rozstrzygnięte wcześniej reguły (plugin przed podmianą pliku, łatka przed plikiem)
 są już w `AGENTS.md` i nie są przedmiotem tego dokumentu.
@@ -122,17 +122,21 @@ paczkę do katalogu gry, dwuklik. Sprawdza sumę, odkłada oryginał jako
 na spolszczonej grze pyta o przywrócenie oryginału. Wybrano `.exe` z dwuklikiem;
 parametry (`<katalog gry> [łatka]`, `--przywroc`) działają też z wiersza poleceń.
 
-**3. Guzik „Zainstaluj"** na stronie (`site/src/lib/install.ts`), dla obu rodzajów gier.
-Katalog gry rozpoznaje po pliku `install.marker` z `game.yaml`. Przy pluginowych
-zapisuje pliki z zipa (pomija `READ-ME.txt`; plik już istniejący i różny odkłada obok
-z tym samym dopiskiem), przy deltowych nakłada łatkę jak aplikator.
+**3. Guzik „Zainstaluj" — zbudowany, wycofany tego samego dnia.** Działał na
+File System Access API. Pierwszy test w prawdziwej grze (Shotgun Cop Man) skończył się
+błędem „Name is not allowed" i pokazał, że ta droga jest zamknięta:
 
-### Ograniczenia, które wyszły przy budowie
+- **Chrome i Edge nie dają stronie otworzyć plików `.dll`, `.ini`, `.cfg`, `.manifest`,
+  `.lnk`, `.scf`, `.url`** — ani do zapisu, ani do odczytu. To rozszerzenia oznaczone
+  w Safe Browsing jako `DANGEROUS` (Chromium, `FileSystemAccessManagerImpl::
+  IsSafePathComponent`). BepInEx to `winhttp.dll` i `doorstop_config.ini`, OTXO podmienia
+  `.ini`, łatka Boomerang X celuje w `Assembly-CSharp.dll`. Zostawały 3 gry z 9.
+- **Całe `Program Files` jest zablokowane** (`kBlockAllChildren`), a tam domyślnie
+  instalują Steam i GOG Galaxy.
+- **Firefox i Safari nie mają API w ogóle.**
 
-- **Chrome i Edge nie udostępniają stronom niczego w `Program Files`**, także
-  podkatalogów (lista blokad Chromium, `kBlockAllChildren`). Domyślne biblioteki
-  Steama i GOG Galaxy tam leżą, więc dla sporej części graczy guzik nie zadziała
-  i zostaje pobranie. Strona mówi o tym wprost pod guzikiem.
-- Nieprzetestowane: czy Chrome przy zapisie `winhttp.dll` i pluginu `.dll` przez
-  File System Access nie wstrzyma pliku kontrolą Safe Browsing. Do sprawdzenia
-  przy pierwszym teście gry pluginowej.
+Guzik działający na trzech grach, w jednej rodzinie przeglądarek i poza domyślnymi
+katalogami sklepów nie jest „jednym modelem wszędzie". Usunięty razem z polami
+`install.marker` i `download.patch`. Nie wracać do tematu bez zmiany po stronie
+przeglądarek — zamiast tego zostaje ZIP do wypakowania, a w paczkach deltowych
+`NieGesiPatch.exe`.

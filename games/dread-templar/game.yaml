@@ -19,5 +19,3 @@ download:
   file: Dread-Templar-PL-0.2.zip
   bytes: 662082
 keyart_shot: 1
-install:
-  marker: "DreadTemplar.exe"

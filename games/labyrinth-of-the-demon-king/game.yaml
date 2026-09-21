@@ -22,5 +22,3 @@ phase: full
 test_notes: 'Użytkownik potwierdził vertical: osobny Polski, przełączanie, zapis wyboru,
   fonty i próbki w grze. Pełny przekład sprawdzono w plikach; cała kampania i układ
   długich tekstów czekają na przegląd.'
-install:
-  marker: "Shinigami.exe"

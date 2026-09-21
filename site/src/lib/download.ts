@@ -18,17 +18,10 @@ const published = (file: string | null): file is string => !!file && existsSync(
  * Dzięki temu strona nigdy nie obiecuje pliku, którego nie ma.
  */
 export function downloadFor(game: Game) {
-  const { kind, file, bytes, patch } = game.download;
+  const { kind, file, bytes } = game.download;
   const size = humanSize(bytes);
 
   if ((kind === 'zip' || kind === 'patch') && published(file)) {
-    // Guzik „zainstaluj" bierze zip (gry pluginowe) albo samą łatkę (gry deltowe).
-    const payload = kind === 'zip' ? file : patch;
-    const install =
-      game.install && published(payload)
-        ? { kind, url: withBase(`pobierz/${payload}`), marker: game.install.marker }
-        : null;
-
     return {
       available: true as const,
       href: withBase(`pobierz/${file}`),
@@ -37,7 +30,6 @@ export function downloadFor(game: Game) {
         kind === 'zip'
           ? [size, 'ZIP · rozpakuj do katalogu gry'].filter(Boolean).join(' · ')
           : [size, 'ZIP · rozpakuj do katalogu gry i uruchom NieGesiPatch.exe'].filter(Boolean).join(' · '),
-      install,
     };
   }
 
@@ -47,7 +39,6 @@ export function downloadFor(game: Game) {
       href: null,
       label: 'Jeszcze nie ma paczki',
       note: 'Tłumaczenie w toku — paczka powstanie po ukończeniu.',
-      install: null,
     };
   }
 
@@ -58,6 +49,5 @@ export function downloadFor(game: Game) {
     note: size
       ? `Gotowa paczka waży ${size} i czeka na sposób publikacji.`
       : 'Paczka gotowa lokalnie, czeka na sposób publikacji.',
-    install: null,
   };
 }

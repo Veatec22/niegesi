@@ -20,5 +20,3 @@ download:
   bytes: 30849
 keyart_shot: 1
 test_notes: Menu i polskie znaki potwierdzone w grze; pełny przebieg czeka na przejście. 104 klucze są w oryginale puste i zostają nietknięte.
-install:
-  marker: "OTXO_Release.exe"
