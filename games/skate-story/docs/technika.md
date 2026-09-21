@@ -167,3 +167,32 @@ projektu — decyzja na osobną rozmowę, nie do podjęcia mimochodem.
 Do tego czasu Skate Story zostaje przy podmianie `resources.assets`. Zmierzona łatka
 różnicowa wobec oryginału to **2,4 MB** przy 275 MB pliku (format 1, zstd; od formatu 2 — **78 KB**), więc gdyby wracać do tematu
 publikacji tej gry, to właśnie tamtędy.
+
+---
+
+## Dawne README
+
+Treść, która do 2026-09-21 stała w README gry (nagłówek: „Skate Story — spolszczenie”). README jest teraz
+krótką instrukcją instalacji dla gracza, wyświetlaną na stronie; ustalenia przeniesione
+bez zmian, poza poprawionymi linkami względnymi. Część może być nieaktualna —
+obowiązuje to, co wyżej w tym pliku, i instrukcja w paczce.
+
+Pełne spolszczenie tekstów Skate Story: dialogi wszystkich rozdziałów i epilogu,
+samouczki, menu, ekwipunek, cele, osiągnięcia oraz poetyckie podsumowania.
+Polski jest osobnym językiem w ustawieniach gry.
+
+Przy zamkniętej grze zachowaj oryginalny `SkateStory_Data/resources.assets`,
+a następnie wypakuj [paczkę ZIP](../dist/skate-story-pl-0.2.zip) do katalogu gry.
+Uruchom grę samodzielnie i wybierz **Polski** w ustawieniach.
+Pełna [instrukcja instalacji i przywrócenia](../docs/INSTALL.txt).
+
+Vertical został potwierdzony przez użytkownika. Pełna tabela ma 2305/2305 wpisów;
+cała kampania czeka na sprawdzenie w rozgrywce. Następny krok: kontynuacja zapisu,
+kontrola dłuższych dialogów, sklepu i celów. Tekstury z napisami nie są zmieniane.
+
+[Korekta EN/PL w przeglądarce](../translations/en-pl-review.html) ·
+[JSON EN/PL](../translations/en-pl-review.json) · [Polskie teksty](../translations/pl.json).
+21 wpisów ma uwagi do korekty, przede wszystkim literackiej.
+
+[Szczegóły techniczne, build i kopie zapasowe](../docs/technika.md) ·
+[Metadane](../game.yaml).

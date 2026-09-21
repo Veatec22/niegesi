@@ -111,3 +111,25 @@ Vertical po decyzji użytkownika: start BepInEx IL2CPP, własne „Polski”, pr
 EN/PL, restart, krótki dialog, HUD z tokenem przycisku i długi wpis infodeksu.
 Grę uruchamia użytkownik. Nie stwierdzono blokera, ale nie obiecujemy jeszcze
 działania loadera, selektora ani fontów na tej instalacji.
+
+---
+
+## Dawne README
+
+Treść, która do 2026-09-21 stała w README gry (nagłówek: „Turbo Overkill — analiza spolszczenia”). README jest teraz
+krótką instrukcją instalacji dla gracza, wyświetlaną na stronie; ustalenia przeniesione
+bez zmian, poza poprawionymi linkami względnymi. Część może być nieaktualna —
+obowiązuje to, co wyżej w tym pliku, i instrukcja w paczce.
+
+Kandydat do spolszczenia: 2333 wpisy w ośmiu tabelach, w tym 2316 niepustych.
+Zakres obejmuje menu, dialogi, HUD, przedmioty, bestiariusz i rozbudowany infodeks.
+Werdykt: warto przygotować vertical przez plugin BepInEx IL2CPP.
+
+Nie znaleziono dostępnego spolszczenia. Nie ma jeszcze paczki do instalacji.
+Lokalna gra nie została zmodyfikowana ani uruchomiona przez agenta.
+
+Największe niewiadome to dodanie własnej pozycji „Polski” do selektora,
+polskie znaki w fontach i uruchomienie pluginu na tej kopii GOG. Pierwsza próba
+powinna objąć selektor, restart, menu, dialog i dłuższy wpis infodeksu.
+
+[Analiza i źródła](../docs/technika.md) · [EN/PL do dalszej pracy](../translations/en-pl-review.json).

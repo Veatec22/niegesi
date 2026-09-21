@@ -1,21 +1,10 @@
-# Skate Story — spolszczenie
+# Skate Story PL
 
-Pełne spolszczenie tekstów Skate Story: dialogi wszystkich rozdziałów i epilogu,
-samouczki, menu, ekwipunek, cele, osiągnięcia oraz poetyckie podsumowania.
-Polski jest osobnym językiem w ustawieniach gry.
+## Instalacja
 
-Przy zamkniętej grze zachowaj oryginalny `SkateStory_Data/resources.assets`,
-a następnie wypakuj [paczkę ZIP](dist/skate-story-pl-0.2.zip) do katalogu gry.
-Uruchom grę samodzielnie i wybierz **Polski** w ustawieniach.
-Pełna [instrukcja instalacji i przywrócenia](docs/INSTALL.txt).
+1. Zamknij grę.
+2. Wypakuj całą zawartość archiwum do katalogu gry, czyli tam, gdzie leży plik `.exe` gry. W Steamie trafisz tam przez **Zarządzaj → Przeglądaj pliki lokalne**, w GOG Galaxy przez **Zarządzaj instalacją → Pokaż folder**.
+3. Uruchom dwuklikiem `NieGesiPatch.exe` z paczki. Windows może ostrzec przed nieznanym programem — wybierz **Więcej informacji → Uruchom mimo to**. Program przed zmianą odkłada oryginalne pliki obok, a jeśli gra jest w innej wersji niż ta, dla której powstała łatka, nie zmienia niczego i mówi o tym wprost.
+4. Uruchom grę i w ustawieniach wybierz język **polski**.
 
-Vertical został potwierdzony przez użytkownika. Pełna tabela ma 2305/2305 wpisów;
-cała kampania czeka na sprawdzenie w rozgrywce. Następny krok: kontynuacja zapisu,
-kontrola dłuższych dialogów, sklepu i celów. Tekstury z napisami nie są zmieniane.
-
-[Korekta EN/PL w przeglądarce](translations/en-pl-review.html) ·
-[JSON EN/PL](translations/en-pl-review.json) · [Polskie teksty](translations/pl.json).
-21 wpisów ma uwagi do korekty, przede wszystkim literackiej.
-
-[Szczegóły techniczne, build i kopie zapasowe](docs/technika.md) ·
-[Metadane](game.yaml).
+Żeby wrócić do oryginału, uruchom `NieGesiPatch.exe` jeszcze raz — zapyta, czy przywrócić oryginalny plik. Możesz też zweryfikować pliki gry w GOG Galaxy albo w Steamie.
