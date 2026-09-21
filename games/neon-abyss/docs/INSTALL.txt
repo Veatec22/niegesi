@@ -1,0 +1,31 @@
+NEON ABYSS PL 0.1.0 — WERSJA TESTOWA (VERTICAL)
+
+Próbka tłumaczenia: menu główne, opcje, zapisy, wybór poziomu trudności,
+kilka opisów postaci, samouczków, przedmiotów i pierwsza rozmowa w barze.
+Reszta gry zostaje po angielsku, dopóki nie powstanie pełne tłumaczenie.
+
+Spolszczenie działa jako plugin BepInEx: dokłada język Polski w czasie działania
+gry. Żaden plik gry nie jest zmieniany ani podmieniany. Pozostałe języki zostają.
+
+INSTALACJA (przy zamkniętej grze)
+1. Wypakuj całą zawartość archiwum do katalogu gry, tam gdzie leży NeonAbyss.exe.
+   GOG Galaxy: Zarządzaj instalacją → Pokaż folder.
+   Steam: Zarządzaj → Przeglądaj pliki lokalne.
+2. Uruchom grę. Pierwsze uruchomienie potrwa chwilę dłużej niż zwykle.
+3. Wejdź w OPTIONS → GAMEPLAY → LANGUAGE i wybierz POLSKI.
+   Na Windowsie po polsku gra może od razu wystartować po polsku.
+
+CO JEST W PACZCE
+- winhttp.dll, doorstop_config.ini, .doorstop_version, BepInEx/core — BepInEx 5.4.23.5
+  (licencja LGPL-2.1 w BepInEx-LICENSE.txt; źródła w osobnym archiwum obok paczki),
+- BepInEx/plugins/NieGesiNeonAbyss — plugin, teksty (pl.tsv) i licencja.
+Polskie litery rysują fonty, które gra ma w swoich plikach (Zpix, ModernBrush).
+
+USUNIĘCIE
+Skasuj z katalogu gry folder BepInEx oraz pliki winhttp.dll, doorstop_config.ini
+i .doorstop_version. Gra wróci do stanu sprzed instalacji; zapisy zostają nietknięte.
+
+ZGODNOŚĆ
+Sprawdzone na: GOG, wersja 1.5.0.0 (Unity 2018.4.21). Plugin nie sprawdza wersji gry.
+Po aktualizacji nowe teksty zostaną po angielsku, a jeśli gra zmieni się mocniej,
+plugin wyłączy się i zapisze powód w BepInEx/LogOutput.log.

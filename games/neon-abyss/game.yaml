@@ -1,0 +1,19 @@
+slug: neon-abyss
+title: Neon Abyss
+version: "0.1.0"
+entries: { done: 84, total: 2639 }
+tested: czesciowy
+engine: Unity 2018.4.21f1
+approach: Plugin BepInEx dokłada język Polski do I2 Localization i do przełącznika języka w opcjach; polskie litery z fontów samej gry. Żaden plik gry nie jest podmieniany.
+scope: Vertical — menu, opcje, zapisy, wybór trudności, próbka postaci, samouczków, przedmiotów i dialogu.
+year: 2020
+steam_appid: 788100
+stores:
+  steam: https://store.steampowered.com/app/788100/
+  gog: https://www.gog.com/en/game/neon_abyss
+phase: vertical
+tested_on:
+  - store: gog
+    version: "1.5.0.0"
+download:
+  kind: none

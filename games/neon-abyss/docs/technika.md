@@ -1,0 +1,94 @@
+# Neon Abyss — technika
+
+Ustalenia i instrukcje dla osób, które budują paczkę albo poprawiają teksty.
+Gracz potrzebuje tylko [README](../README.md).
+
+## Istniejące spolszczenia (2026-09-22)
+
+Neon Abyss (2020) nie ma polskiego: API sklepu Steam dla 788100 wymienia angielski,
+chiński uproszczony i tradycyjny, francuski, włoski, niemiecki, hiszpański, japoński
+i rosyjski. Polski ma dopiero Neon Abyss 2 (2235200) — łatwo to pomylić w wynikach
+wyszukiwania. Nie znalazłem dostępnej paczki fanowskiego spolszczenia.
+
+## Gra i silnik
+
+- GOG, wersja 1.5.0.0 (`PlayerSettings.bundleVersion` „1.5.0.0sRC”), Unity 2018.4.21f1, Mono x64.
+- `mscorlib.dll` pełny (4 MB, jest `GetPEKind`) — BepInEx 5.4.23.5 wstaje bez obejść.
+- Teksty: I2 Localization, jedno źródło `LanguageSourceAsset` „I2Languages”,
+  obiekt 3492 w `globalgamemanagers.assets`. 2784 terminy, 10 języków
+  (pierwsza kolumna „Chinese (Mainland China)” bez kodu i wyłączona).
+  Układ binarny: terminy od bajtu 56 (klucz, typ, opis, 10 wartości, flagi,
+  pusta `Languages_Touch`), potem `CaseInsensitiveTerms`, `OnMissingTranslation`,
+  `mTerm_AppName`, lista języków i ustawienia Google (aktualizacja: Never).
+- 2681 terminów tekstowych, 2639 do tłumaczenia (reszta to puste pola, `-----`,
+  nazwy grafik i jedna ścieżka fontu zapisane jako tekst — `RESOURCE` w `tools/batch.py`).
+  Około 17,8 tys. słów angielskich. Kategorie: PuName (przedmioty, 1307), UI, Tips,
+  CheatCode, Boss, Tree, Dialogue, Achieve, Seed, Character, Dead.
+- Znaczniki: `{0}`, `{[k:Interact]}`, `{[UnlockCost]}`, `<br>`, warianty platform
+  `[i2s_PC]`/`[i2s_PS4]`/`[i2s_XBox]` (zachować liczbę i kolejność wariantów).
+  Etykiety `[Active Item]`, `[Passive]` i teksty w `<...>` przy ziarnach to zwykły tekst.
+
+## Przełącznik języka
+
+Lista w opcjach jest zaszyta w kodzie, nie brana z I2:
+
+- `NEON.UI.Base.UIMenuSwitcherLanguageValueSource.Awake` wypełnia `Values` podpisami
+  „ENGLISH”, „РУССКИЙ”… — plugin dopisuje „POLSKI”;
+- `GamePlaySettingsHandler.LanguageReverseMapping(podpis)` → nazwa języka I2,
+  ustawiana w `LocalizationManager.CurrentLanguage` i zapisywana w ustawieniach;
+- `LanguageMapping` — podobne mapowanie z terminów `UI/English`…;
+- `SettingsHandlerBase.InitWithLanguge(switcher, nazwa)` ustawia przełącznik na zapisanym języku.
+
+Plugin łata wszystkie cztery (prefiksy zwracają „Polish” dla „POLSKI”). Klasy gry są
+szukane po nazwach, bez referencji do `Assembly-CSharp` — brak klasy to wpis w logu.
+`SettingsService.Load` przy pierwszym uruchomieniu bierze `GetSupportedLanguage`
+z języka systemu, więc na polskim Windowsie gra może od razu wybrać polski.
+
+## Fonty
+
+Fonty idą przez terminy I2 typu Font: `UI/smallFont` i `UI/BigFont`
+(`Fonts & Materials/<atlas>` w Resources). Stan atlasów TMP:
+
+| Atlas | Tryb | Polskie litery | TTF w grze |
+| --- | --- | --- | --- |
+| EN_12px_PixAntiqua (mały, EN/FR/IT/DE/ES) | statyczny | brak | PixAntiqua — brak |
+| EN_70px_ModernBrush (duży) | statyczny | brak | ModernBrush-Regular — komplet |
+| RU_12px_tahoma, RU_70px_Terry | statyczne | nie sprawdzone | tahomabd, Terry Junior Deluxe — komplet |
+| CHT_12px_Zpix | dynamiczny | dorysuje | Zpix — komplet |
+
+Decyzja verticala: dla polskiego `UI/smallFont` = `CHT_12px_Zpix` (pikselowy, dynamiczny),
+`UI/BigFont` = `EN_70px_ModernBrush`, któremu plugin dokłada dynamiczny atlas zapasowy
+z `_TTF/ModernBrush-Regular` (`TMP_FontAsset.CreateFontAsset`). PixAntiqua dostaje
+zapasowy Zpix, a `TMP_Settings.fallbackFontAssets` — globalny Zpix na teksty z fontem
+ustawionym na sztywno. Wszystko z plików gry, paczka nie niesie fontów.
+
+Do sprawdzenia w grze: czy Zpix w małym tekście wygląda dobrze, czy litery
+z zapasowego ModernBrusha pasują wysokością do statycznego atlasu.
+
+## Budowanie
+
+```powershell
+.venv\Scripts\python.exe games\neon-abyss\tools\extract.py --game "C:\Games\Neon Abyss"
+.venv\Scripts\python.exe games\neon-abyss\tools\batch.py stats
+.venv\Scripts\python.exe games\neon-abyss\tools\build.py --game "C:\Games\Neon Abyss"
+```
+
+`extract.py` przypina SHA-256 `globalgamemanagers.assets`
+(`d342ad45…f563`) i zapisuje `work/source.json` (poza Gitem — dziesięć języków gry).
+`batch.py` trzyma `pl.json` i `en-pl-review.json` w zgodzie. `build.py` sprawdza klucze
+i znaczniki, kompiluje plugin (csc, referencje z `Managed` gry i BepInEksa), składa
+`dist/Neon-Abyss-PL-<wersja>.zip` z BepInEksem 5.4.23.5 i kładzie obok źródła BepInEksa.
+Plugin: teksty z `pl.tsv`, brakujące i nietekstowe terminy (grafiki, przyciski padów)
+z kolumny angielskiej.
+
+## Stan testów
+
+- 2026-09-22: vertical 0.1.0 (84 wpisy) zbudowany i wypakowany do `C:\Games\Neon Abyss`
+  (tylko nowe pliki: BepInEx, winhttp.dll, doorstop, READ-ME.txt). **Test w grze czeka
+  na użytkownika.** Usunięcie: folder `BepInEx`, `winhttp.dll`, `doorstop_config.ini`,
+  `.doorstop_version`, `READ-ME.txt`, `BepInEx-LICENSE.txt`.
+
+## Materiał gry
+
+Paczka niesie wyłącznie BepInEx, nasz plugin i nasze teksty. Tabela I2 i fonty
+są czytane z plików gry w czasie działania.

@@ -46,3 +46,6 @@ games/*/work/ref-*.json
 
 # Holy Shoot: extracted assets and third-party runtime/source used for analysis.
 games/holy-shoot/work/
+
+# Neon Abyss: tabela I2 z gry (dziesięć języków) i build pluginu.
+games/neon-abyss/work/
