@@ -396,7 +396,6 @@ a { color: inherit; }
 }
 
 .ng-card-title { font-size: var(--ng-size-card-title); line-height: 1.05; letter-spacing: 0; }
-.ng-card-meta { color: var(--ng-muted); }
 
 .ng-card-status {
   display: flex;

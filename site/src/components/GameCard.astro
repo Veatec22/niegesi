@@ -1,5 +1,5 @@
 ---
-import { entriesLabel, type Game } from '../lib/games';
+import type { Game } from '../lib/games';
 import Keyart from './Keyart.astro';
 
 interface Props {
@@ -21,7 +21,6 @@ const haystack = game.title
   <Keyart game={game} variant="card" />
   <div class="ng-card-body">
     <h3 class="ng-display ng-card-title">{game.title}</h3>
-    <p class="ng-meta ng-card-meta" style="margin: 0">{entriesLabel(game)} · {game.engine}</p>
     <div class="ng-card-status">
       <span class="ng-badge" data-tone={game.status.tone} title={game.status.description}>{game.status.label}</span>
       {game.status.id !== 'w-trakcie' && <span class="ng-badge-note">v{game.version}</span>}
