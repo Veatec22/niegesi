@@ -6,11 +6,14 @@ tested: potwierdzony
 engine: Unity 2019.4.35f1
 approach: Plugin przejmuje pusty slot włoski i podaje teksty w czasie działania gry. Żaden plik gry nie jest podmieniany.
 scope: menu, ustawienia, samouczki, dialogi, nazwy poziomów, buty, osiągnięcia, napisy końcowe
-source: GOG, 2026-09
+tested_on:
+  - store: gog
+    version: "1.46"
 year: 2024
 steam_appid: 1978590
 stores:
   steam: https://store.steampowered.com/app/1978590/
+  gog: https://www.gog.com/en/game/anger_foot
 quote:
   text:
   source:

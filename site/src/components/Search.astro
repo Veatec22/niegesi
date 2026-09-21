@@ -1,32 +1,45 @@
 ---
+import Icon from './Icon.astro';
+import type { Status } from '../lib/games';
+
 interface Props {
   count: number;
+  /** Statusy, które mają choć jedną grę — pusty wybór w filtrze tylko by mylił. */
+  statuses: (Status & { count: number })[];
 }
 
-const { count } = Astro.props;
+const { count, statuses } = Astro.props;
 ---
 
 <div class="ng-search">
-  <label class="ng-label ng-search-label" for="szukaj">Szukaj gry</label>
-  <div class="ng-search-field">
-    <svg class="ng-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-      <circle cx="11" cy="11" r="7"></circle>
-      <path d="M16.5 16.5 21 21"></path>
-    </svg>
-    <input
-      id="szukaj"
-      type="search"
-      data-search-input
-      placeholder="tytuł, silnik, zakres…"
-      autocomplete="off"
-      spellcheck="false"
-    />
+  <label class="ng-visually-hidden" for="szukaj">Szukaj gry po tytule</label>
+  <div class="ng-search-row">
+    <div class="ng-search-field">
+      <Icon name="search" size={18} class="ng-search-icon" />
+      <input
+        id="szukaj"
+        type="search"
+        data-search-input
+        placeholder="tytuł gry…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+    </div>
+    <div class="ng-search-field ng-filter-field">
+      <Icon name="filter" size={18} class="ng-search-icon" />
+      <select data-status-filter aria-label="Filtruj po statusie">
+        <option value="">wszystkie</option>
+        {statuses.map((status) => <option value={status.id}>{status.label} ({status.count})</option>)}
+      </select>
+      <Icon name="chevron-down" size={18} class="ng-filter-chevron" />
+    </div>
   </div>
-  <p class="ng-meta ng-search-count" data-search-count aria-live="polite">{count} gier</p>
+  <p class="ng-visually-hidden" data-search-count aria-live="polite">{count} gier</p>
 </div>
 
 <script>
   const input = document.querySelector<HTMLInputElement>('[data-search-input]');
+  const filter = document.querySelector<HTMLSelectElement>('[data-status-filter]');
   const counter = document.querySelector<HTMLElement>('[data-search-count]');
   const empty = document.querySelector<HTMLElement>('[data-search-empty]');
   const cards = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-card]'));
@@ -47,20 +60,29 @@ const { count } = Astro.props;
     return `${count} gier`;
   }
 
-  if (input && counter && empty) {
-    input.addEventListener('input', () => {
+  if (input && filter && counter && empty) {
+    const apply = () => {
       const query = fold(input.value.trim());
+      const status = filter.value;
       let visible = 0;
 
       cards.forEach((card) => {
-        const match = query === '' || (card.dataset.search ?? '').includes(query);
+        const match =
+          (query === '' || (card.dataset.search ?? '').includes(query)) &&
+          (status === '' || card.dataset.status === status);
         card.hidden = !match;
         if (match) visible += 1;
       });
 
-      counter.textContent = query === '' ? plural(cards.length) : `${plural(visible)} z ${cards.length}`;
+      const narrowed = query !== '' || status !== '';
+      counter.textContent = narrowed ? `${plural(visible)} z ${cards.length}` : plural(cards.length);
       empty.hidden = visible > 0;
-    });
+    };
+
+    input.addEventListener('input', apply);
+    filter.addEventListener('change', apply);
+    // Przeglądarka potrafi przywrócić wybór w <select> po powrocie na stronę.
+    apply();
 
     input.addEventListener('keydown', (event) => {
       // Escape czyści pole, ale tylko gdy panel jest zamknięty — tam Escape zamyka.

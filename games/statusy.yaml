@@ -1,0 +1,37 @@
+# Statusy spolszczeń — jedyne miejsce, w którym się je ustawia.
+#
+# Zmiana statusu gry = przeniesienie jej sluga na listę `games` innego statusu.
+# Każda gra z games/<slug>/game.yaml musi stać na dokładnie jednej liście,
+# inaczej build strony się zatrzyma i powie, której brakuje.
+#
+# Kolejność statusów w tym pliku to kolejność kafelków na stronie i opcji w filtrze.
+# `label` trafia na plakietkę, `description` do podpowiedzi przy plakietce w panelu gry,
+# `tone` to wygląd plakietki: ink (czarna), outline (sama ramka) albo accent (karminowa).
+
+gotowe:
+  label: gotowe
+  description: Cała gra przetłumaczona i sprawdzona w grze od początku do końca.
+  tone: ink
+  games:
+    - shotgun-cop-man
+
+testowe:
+  label: wersja testowa
+  description: Cały tekst przetłumaczony, ale w grze sprawdzony tylko częściowo, bez przejścia od początku do końca. Mogą się trafić usterki.
+  tone: outline
+  games:
+    - anger-foot
+    - boomerang-x
+    - dread-templar
+    - labyrinth-of-the-demon-king
+    - my-friend-pedro
+    - otxo
+    - skate-story
+    - sprawl
+
+w-trakcie:
+  label: w trakcie
+  description: Tłumaczenie jeszcze powstaje. Paczka pojawi się, kiedy będzie komplet tekstu.
+  tone: accent
+  games:
+    - turbo-overkill

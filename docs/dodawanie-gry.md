@@ -12,7 +12,8 @@ Minimalna zawartość:
 
 | Ścieżka | Zawartość |
 | --- | --- |
-| `README.md` | Co obejmuje tłumaczenie, jak gra trzyma teksty, co build podmienia, czego nie rusza, status testów. Po angielsku — ten plik czyta też studio, jeśli kiedyś zechce wziąć tekst do siebie. |
+| `README.md` | Tylko instalacja dla gracza, po polsku — pokazuje się w panelu gry na stronie. Wzór: `games/shotgun-cop-man/README.md`. |
+| `docs/technika.md` | Co obejmuje tłumaczenie, jak gra trzyma teksty, co build podmienia, czego nie rusza, budowanie, stan testów, nota o materiale gry. |
 | `docs/INSTALL.txt` | Instrukcja dla gracza: instalacja, przywracanie oryginału, zgodność z wersją gry, zakres. Zwykły tekst, trafia do paczki jako `READ-ME.txt`. |
 | `tools/build.py` | Budowanie plików gry z oryginałów. |
 | `translations/pl.json` | Polskie teksty. |

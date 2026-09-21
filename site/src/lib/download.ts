@@ -26,10 +26,8 @@ export function downloadFor(game: Game) {
       available: true as const,
       href: withBase(`pobierz/${file}`),
       label: 'Pobierz spolszczenie',
-      note:
-        kind === 'zip'
-          ? [size, 'ZIP · rozpakuj do katalogu gry'].filter(Boolean).join(' · ')
-          : [size, 'ZIP · rozpakuj do katalogu gry i uruchom NieGesiPatch.exe'].filter(Boolean).join(' · '),
+      // Rozmiar i format stoją w przycisku; jak zainstalować, mówi README gry.
+      meta: [size, 'ZIP'].filter(Boolean).join(' · '),
     };
   }
 
@@ -38,7 +36,6 @@ export function downloadFor(game: Game) {
       available: false as const,
       href: null,
       label: 'Jeszcze nie ma paczki',
-      note: 'Tłumaczenie w toku — paczka powstanie po ukończeniu.',
     };
   }
 
@@ -46,8 +43,5 @@ export function downloadFor(game: Game) {
     available: false as const,
     href: null,
     label: 'Paczka w przygotowaniu',
-    note: size
-      ? `Gotowa paczka waży ${size} i czeka na sposób publikacji.`
-      : 'Paczka gotowa lokalnie, czeka na sposób publikacji.',
   };
 }

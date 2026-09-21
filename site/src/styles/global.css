@@ -2,7 +2,8 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+/* Stałe miejsce na pasek przewijania: blokada przewijania pod panelem nie przesuwa strony. */
+html { -webkit-text-size-adjust: 100%; scrollbar-gutter: stable; }
 
 body {
   margin: 0;
@@ -83,6 +84,14 @@ a { color: inherit; }
 .ng-nav { display: flex; gap: var(--ng-space-6); }
 .ng-nav a { text-decoration: none; }
 .ng-nav a:hover { color: var(--ng-accent); }
+
+.ng-nav-github { display: inline-flex; align-items: center; gap: var(--ng-space-2); }
+
+@media (max-width: 699px) {
+  .ng-nav-github-label { display: none; }
+}
+
+.ng-icon { display: block; flex: none; }
 
 /* --- Hero --------------------------------------------------------- */
 
@@ -182,7 +191,7 @@ a { color: inherit; }
 
 .ng-section-head {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   gap: var(--ng-space-6);
   margin-bottom: var(--ng-space-10);
@@ -190,25 +199,28 @@ a { color: inherit; }
 
 .ng-section-title { font-size: var(--ng-size-section); }
 
-.ng-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--ng-grid-gap); }
-
-@media (max-width: 1099px) { .ng-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 699px) { .ng-grid { grid-template-columns: 1fr; } }
-
-/* Panel otwarty na desktopie zwęża siatkę do dwóch kolumn. */
-@media (min-width: 1100px) {
-  .ng-grid, .ng-shell {
-    transition: grid-template-columns var(--ng-duration) var(--ng-ease),
-                padding-right var(--ng-duration) var(--ng-ease);
-  }
-  body[data-panel-open="true"] .ng-grid { grid-template-columns: repeat(2, 1fr); }
-  body[data-panel-open="true"] .ng-shell { padding-right: calc(var(--ng-panel-width) + var(--ng-space-10)); }
+.ng-grid {
+  /* Tyle kolumn, ile się zmieści przy kafelku od 280 px, ale nie więcej niż trzy.
+     Siatka liczy się z szerokości, jaką faktycznie ma, więc sama reaguje na panel. */
+  --ng-grid-min: max(280px, (100% - 2 * var(--ng-grid-gap)) / 3);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--ng-grid-min)), 1fr));
+  gap: var(--ng-grid-gap);
 }
 
 /* --- Wyszukiwarka --------------------------------------------------- */
 
-.ng-search { display: flex; flex-direction: column; gap: var(--ng-space-2); min-width: 320px; }
-.ng-search-label { color: var(--ng-muted); }
+.ng-search { min-width: 480px; }
+/* Pola na wysokość linii tytułu sekcji, żeby stały z nim w jednym rzędzie. */
+.ng-search .ng-search-field { min-height: 56px; }
+.ng-search-row { display: flex; gap: var(--ng-space-3); }
+.ng-search-row > .ng-search-field:first-child { flex: 1; min-width: 200px; }
+
+/* Tytuł i wyszukiwarka z filtrem nie mieszczą się obok siebie na tablecie. */
+@media (max-width: 1099px) {
+  .ng-section-head { flex-direction: column; align-items: stretch; }
+  .ng-search { min-width: 0; }
+}
 
 .ng-search-field {
   display: flex;
@@ -236,8 +248,30 @@ a { color: inherit; }
 
 .ng-search-field input:focus { outline: none; }
 .ng-search-field input::placeholder { color: var(--ng-muted); }
+
+.ng-filter-field { position: relative; padding-inline-end: 0; }
+
+.ng-filter-field select {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: var(--ng-space-3) calc(var(--ng-space-4) + 22px) var(--ng-space-3) 0;
+  min-height: calc(var(--ng-hit-target) - 2 * var(--ng-border-width));
+  font-family: var(--ng-font-mono);
+  font-size: 14px;
+  color: var(--ng-ink);
+  cursor: pointer;
+}
+
+.ng-filter-field select:focus { outline: none; }
+
+.ng-filter-chevron {
+  position: absolute;
+  right: var(--ng-space-3);
+  pointer-events: none;
+  color: var(--ng-ink);
+}
 .ng-search-field input::-webkit-search-cancel-button { cursor: pointer; }
-.ng-search-count { margin: 0; color: var(--ng-muted); }
 
 .ng-search-empty {
   margin: var(--ng-space-10) 0 0;
@@ -247,8 +281,7 @@ a { color: inherit; }
 }
 
 @media (max-width: 699px) {
-  .ng-section-head { flex-direction: column; align-items: stretch; }
-  .ng-search { min-width: 0; }
+  .ng-search-row { flex-direction: column; }
 }
 
 /* --- Kafelek gry --------------------------------------------------- */
@@ -271,11 +304,11 @@ a { color: inherit; }
   aspect-ratio: var(--ng-keyart-ratio);
   border-bottom: var(--ng-border);
   overflow: hidden;
-  background: var(--ng-navy);
+  background: var(--ng-ink);
 }
 
-.ng-card-art[data-tone="red"] { background: var(--ng-red-deep); }
-.ng-card-art[data-tone="ink"] { background: var(--ng-ink); }
+.ng-card-art[data-tone="red"] { background: var(--ng-accent); }
+.ng-card-art[data-tone="graphite"] { background: var(--ng-graphite); }
 .ng-card-art img { width: 100%; height: 100%; object-fit: cover; }
 
 .ng-card-art-label {
@@ -327,9 +360,45 @@ a { color: inherit; }
   white-space: nowrap;
 }
 
-.ng-badge[data-status="ukonczone"] { background: var(--ng-navy); color: #fff; }
-.ng-badge[data-status="w-trakcie"] { background: var(--ng-red-deep); color: #fff; }
-.ng-badge[data-status="wstrzymane"] { border: 2px solid var(--ng-ink); }
+.ng-badge[data-tone="ink"] { background: var(--ng-ink); color: var(--ng-bone); }
+.ng-badge[data-tone="outline"] { background: transparent; box-shadow: inset 0 0 0 2px var(--ng-ink); color: var(--ng-ink); }
+.ng-badge[data-tone="accent"] { background: var(--ng-accent); color: #fff; }
+
+/* Plakietka w panelu: większa, z ikoną informacji i podpowiedzią po najechaniu lub fokusie. */
+.ng-status { position: relative; display: inline-flex; }
+
+.ng-badge--lg {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ng-space-2);
+  font-size: var(--ng-size-label);
+  letter-spacing: var(--ng-tracking-label);
+  padding: var(--ng-space-2) var(--ng-space-3);
+}
+
+.ng-status-trigger { border: 0; cursor: default; font-family: var(--ng-font-mono); }
+
+.ng-status-tip {
+  position: absolute;
+  top: calc(100% + var(--ng-space-2));
+  left: 0;
+  z-index: 5;
+  width: max-content;
+  max-width: min(320px, 70vw);
+  padding: var(--ng-space-3) var(--ng-space-4);
+  background: var(--ng-ink);
+  color: var(--ng-bone);
+  font-family: var(--ng-font-body);
+  font-size: 14px;
+  line-height: 1.45;
+  box-shadow: var(--ng-shadow-pressed);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--ng-duration) var(--ng-ease), visibility var(--ng-duration);
+}
+
+.ng-status:hover .ng-status-tip,
+.ng-status-trigger:focus-visible + .ng-status-tip { opacity: 1; visibility: visible; }
 
 .ng-badge-note {
   color: var(--ng-muted);
@@ -377,6 +446,29 @@ a { color: inherit; }
 
 .ng-btn--primary:hover { background: var(--ng-accent); color: var(--ng-ink); }
 
+.ng-btn--compact { padding-inline: var(--ng-space-4); }
+
+/* Pobieranie: ikona i napis z lewej, rozmiar i format dosunięte do prawej. */
+.ng-btn--download { flex: 1; justify-content: flex-start; gap: var(--ng-space-3); }
+
+.ng-btn-meta {
+  margin-left: auto;
+  padding-left: var(--ng-space-4);
+  font-family: var(--ng-font-mono);
+  font-size: var(--ng-size-label);
+  font-weight: 700;
+  letter-spacing: var(--ng-tracking-meta);
+  color: #fff; /* drobny tekst na karminie: biały daje 5:1, czarny tylko 3,7:1 */
+  white-space: nowrap;
+}
+
+.ng-btn--square { width: 56px; min-height: 56px; padding: 0; flex: none; }
+
+/* Telefon: rozmiar i format schodzą pod napis zamiast rozpychać przycisk. */
+@media (max-width: 699px) {
+  .ng-btn--download { flex-wrap: wrap; padding-block: var(--ng-space-3); row-gap: var(--ng-space-1); }
+}
+
 .ng-btn[aria-disabled="true"] {
   background: var(--ng-bone);
   color: var(--ng-muted);
@@ -410,11 +502,11 @@ a { color: inherit; }
   position: relative;
   aspect-ratio: 21 / 9;
   border-bottom: var(--ng-border);
-  background: var(--ng-navy);
+  background: var(--ng-ink);
 }
 
-.ng-panel-art[data-tone="red"] { background: var(--ng-red-deep); }
-.ng-panel-art[data-tone="ink"] { background: var(--ng-ink); }
+.ng-panel-art[data-tone="red"] { background: var(--ng-accent); }
+.ng-panel-art[data-tone="graphite"] { background: var(--ng-graphite); }
 .ng-panel-art img { width: 100%; height: 100%; object-fit: cover; }
 
 .ng-panel-close {
@@ -445,6 +537,7 @@ a { color: inherit; }
 }
 
 .ng-panel-status { display: flex; align-items: center; gap: var(--ng-space-3); flex-wrap: wrap; }
+.ng-panel-status-note { margin: var(--ng-space-3) 0 0; color: var(--ng-muted); }
 .ng-panel-lead { margin: 0; }
 
 .ng-quote { border: var(--ng-border); padding: var(--ng-space-6); position: relative; }
@@ -473,8 +566,18 @@ a { color: inherit; }
   letter-spacing: var(--ng-tracking-meta);
 }
 
+.ng-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ng-space-4);
+  flex-wrap: wrap;
+}
+
+.ng-panel-stores { display: flex; gap: var(--ng-space-3); }
+
 .ng-panel-actions { display: flex; flex-direction: column; gap: var(--ng-space-3); }
-.ng-panel-actions-row { display: flex; gap: var(--ng-space-3); flex-wrap: wrap; }
+.ng-panel-actions-row { display: flex; gap: var(--ng-space-4); }
 
 .ng-table { width: 100%; border-collapse: collapse; border: var(--ng-border); }
 
@@ -503,8 +606,6 @@ a { color: inherit; }
 
 body[data-panel-open="true"] .ng-scrim { opacity: 1; pointer-events: auto; }
 
-@media (min-width: 1100px) { .ng-scrim { display: none; } }
-@media (max-width: 1099px) { .ng-panel { width: var(--ng-panel-width-tablet); } }
 
 .ng-panel-handle { display: none; }
 

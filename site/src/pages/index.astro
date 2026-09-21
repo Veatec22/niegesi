@@ -3,10 +3,13 @@ import Base from '../layouts/Base.astro';
 import GameCard from '../components/GameCard.astro';
 import Panel from '../components/Panel.astro';
 import Search from '../components/Search.astro';
-import { getGames, stats } from '../lib/games';
+import { getGames, getStatuses, stats } from '../lib/games';
 
 const games = await getGames();
 const figures = stats(games);
+const statuses = (await getStatuses())
+  .map((status) => ({ ...status, count: games.filter((game) => game.status.id === status.id).length }))
+  .filter((status) => status.count > 0);
 ---
 
 <Base
@@ -46,7 +49,7 @@ const figures = stats(games);
     <div class="ng-shell">
       <div class="ng-section-head">
         <h2 class="ng-display ng-section-title">Spolszczenia</h2>
-        <Search count={games.length} />
+        <Search count={games.length} statuses={statuses} />
       </div>
       <div class="ng-grid">
         {games.map((game) => <GameCard game={game} />)}

@@ -28,36 +28,36 @@ i dominuje w panelu szczegółów nad wszystkim poza tytułem.
 
 ## 2. Kolor
 
-Paleta jest zamknięta. Pięć wartości plus dwie pomocnicze do tekstu.
+Paleta jest zamknięta: czerń, biel i karmin. Każdy inny odcień na stronie
+to ich mieszanka — szarości powstają z `ink` i `bone`, nie ma żadnego
+niebieskiego, beżu ani brązu.
 
 | Token | Hex | Rola |
 |---|---|---|
-| `bone` | `#E9E5DB` | Tło strony. Ciepła neutralna kość słoniowa, bez niebieskiego podbicia. |
+| `bone` | `#F9F7F3` | Tło strony. Złamana biel. |
 | `paper` | `#FFFFFF` | Powierzchnie wyniesione: karty, ramki cytatów, sekcja z siatką. |
-| `ink` | `#14130F` | Tekst, wszystkie ramki, wszystkie cienie, pasek statystyk. |
-| `accent` | `#D6341F` | Czerwień plakatowa. Akcenty graficzne i wypełnienie głównego CTA. |
-| `red-deep` | `#B02510` | Ciemniejsza czerwień. Wyłącznie jako tło pod drobnym białym tekstem. |
-| `navy` | `#003670` | Status „ukończone", tła keyartów, drugi kolor kafelków. |
-| `muted` | `#57534A` | Tekst drugorzędny na jasnym tle. |
-| `muted-inverse` | `#B9B3A4` | Tekst drugorzędny na `ink`. |
-| `hairline` | `#C9C3B4` | Cienkie linie 1 px wewnątrz ramek, np. wiersze tabeli metadanych. |
+| `ink` | `#141414` | Tekst, wszystkie ramki, wszystkie cienie, pasek statystyk, plakietka „gotowe". |
+| `accent` | `#DC143C` | Karmin. Akcenty graficzne, wypełnienie głównego CTA, plakietka „w trakcie". |
+| `graphite` | `#363635` | `ink` rozjaśniony bielą. Trzecie tło keyartów, nic więcej. |
+| `muted` | `#646362` | Tekst drugorzędny na jasnym tle (5,6:1 na `bone`). |
+| `muted-inverse` | `#B4B3B0` | Tekst drugorzędny na `ink` (8,8:1). |
+| `hairline` | `#D7D5D2` | Cienkie linie 1 px wewnątrz ramek, np. wiersze tabeli metadanych. |
 
-**Zasada rozdziału dwóch czerwieni jest istotna i łatwo ją zgubić.** `accent`
-ma kontrast 4,4:1 z czernią, co wystarcza tylko dla tekstu od 18,66 px wzwyż
-w grubym kroju. Dlatego `accent` pojawia się pod dużym napisem CTA
-(Archivo Black 18–20 px) i jako czysta grafika: kwadracik przy nadnagłówku,
-kreska pod nagłówkiem hero, pas przekreślający gęś, znak cudzysłowu. Nigdy nie
-trafia pod drobny tekst. Wszędzie tam, gdzie na czerwieni ma stanąć biała
-etykieta 10–11 px — plakietka „w trakcie", tło keyartu — używa się `red-deep`,
-które daje 5,8:1.
+**Na karminie tekst jest biały albo duży.** Biały na `accent` daje 5,0:1,
+więc drobna biała etykieta 10–11 px — plakietka „w trakcie", `[KEYART]` na
+czerwonym tle — jest czytelna. Czarny na `accent` daje tylko 3,7:1, co
+wystarcza wyłącznie dla tekstu od 18,66 px w grubym kroju: stąd czarny napis
+na CTA (Archivo Black 18–20 px) i nigdzie indziej. Poza tym karmin to czysta
+grafika: kwadracik przy nadnagłówku, kreska pod nagłówkiem hero, pas
+przekreślający gęś, znak cudzysłowu.
 
-Tła keyartów rotują między `navy`, `red-deep` i `ink`. Wszystkie trzy są
-ciemne, więc etykieta `[KEYART]` w kolorze `bone` jest czytelna na każdym
-z nich bez sprawdzania przypadku po przypadku.
+Tła keyartów rotują między `ink`, `accent` i `graphite`. Wszystkie trzy są
+na tyle ciemne, że etykieta `[KEYART]` w kolorze `bone` jest czytelna na
+każdym z nich.
 
-Tryb ciemny nie jest na razie zaprojektowany. Jeśli będzie potrzebny, naturalne
-odwrócenie to `ink` jako tło, `bone` jako tekst i `accent` bez zmian — ale
-wtedy `navy` trzeba rozjaśnić, bo na czerni przestaje być czytelny.
+Tryb ciemny nie jest na razie zaprojektowany. Naturalne odwrócenie to `ink`
+jako tło, `bone` jako tekst i `accent` bez zmian; plakietka „gotowe" przechodzi
+wtedy na `bone` z tekstem `ink`.
 
 ---
 
@@ -157,11 +157,13 @@ nawigacji klawiaturą i dla otwierania w nowej karcie.
 
 ### Panel szczegółów
 
-Desktop: panel o szerokości 560 px wysuwa się z prawej krawędzi, a siatka
-w tym samym ruchu schodzi z trzech kolumn na dwie. Kafelki zostają widoczne,
-więc można przeskakiwać między grami bez zamykania panelu — to była główna
-decyzja i warto jej pilnować przy implementacji, bo najprostsze rozwiązanie
-(modal z przyciemnieniem) tę właściwość zabija.
+Od 700 px w górę panel wjeżdża z prawej jako nakładka nad stroną: szeroki
+na 800 px, najwyżej 92% okna. Strona pod spodem stoi w miejscu i ciemnieje,
+fokus przechodzi do panelu. Kliknięcie w przyciemnione tło, krzyżyk albo
+Escape zamyka panel i cofa się do poprzedniego miejsca w historii przeglądarki —
+panel nie zostawia po sobie wpisu, więc „Wstecz" po zamknięciu nie otwiera go
+ponownie. Wejście prosto z linku `/?gra=…` otwiera panel, a zamknięcie
+zamienia adres na stronę główną.
 
 Kolejność w panelu jest celowa: pasek keyartu, tytuł, status i metadane, cytat
 z gry, krótki opis, przycisk pobierania, przyciski sklepów, tabela metadanych
@@ -171,7 +173,7 @@ przekładu — czyli to, po co ktoś tu przyszedł.
 Przycisk zamykania to kwadrat 44 × 44 px z krzyżykiem, z `aria-label`.
 
 Mobile: ten sam panel wjeżdża od dołu jako szuflada, z uchwytem u góry,
-przyciemnieniem tła `rgba(20,19,15,0.58)` i zamykaniem gestem w dół.
+przyciemnieniem tła `rgba(20,20,20,0.58)` i zamykaniem gestem w dół.
 Wysokość maksymalna około 88% okna, treść w środku przewijalna.
 
 ### Przyciski
@@ -191,9 +193,15 @@ elementach, które same są czerwone, więc na CTA obrys przechodzi na `ink`.
 ### Plakietki statusu
 
 Mono 11 px, wersaliki, wypełnienie pełne, bez ramki i bez promienia.
-`Ukończone` na `navy` z białym tekstem, `w trakcie` na `red-deep` z białym
-tekstem, `wstrzymane` jako sama ramka `ink` na tle karty. Obok plakietki stoi
-numer wersji albo procent postępu, zwykłym mono w kolorze `muted`.
+`Gotowe` na `ink` z tekstem `bone`, `wersja testowa` jako sama ramka 2 px
+w `ink` z tekstem `ink`, `w trakcie` na `accent` z białym tekstem. Statusy, ich etykiety i kolory
+definiuje `games/statusy.yaml`. Obok plakietki stoi numer wersji („v0.2”) zwykłym
+mono w kolorze `muted`; przy `w trakcie` nie stoi nic — procentów postępu
+nie pokazujemy.
+
+Obok wyszukiwarki stoi filtr statusu: natywny `<select>` w tej samej ramce co pole
+szukania, z ikoną lejka i strzałką z Lucide (ikony obrysowe, kreska 2 px). Opcje pokazują tylko statusy,
+które mają choć jedną grę, z liczbą gier w nawiasie.
 
 ### Pasek statystyk
 
@@ -207,17 +215,20 @@ w obu osiach.
 
 | Zakres | Siatka | Panel |
 |---|---|---|
-| ≥ 1100 px | 3 kolumny, po otwarciu panelu 2 | Wysuwany z prawej, 560 px |
-| 700–1099 px | 2 kolumny | Nakładka z prawej, ~480 px, tło przyciemnione |
-| < 700 px | 1 kolumna | Szuflada od dołu |
+| ≥ 700 px | do 3 kolumn, liczone z dostępnej szerokości | Nakładka z prawej, `min(800px, 92vw)`, tło przyciemnione |
+| < 700 px | 1 kolumna | Szuflada od dołu, tło przyciemnione |
 
-Animacja wysuwania i zwężania siatki: 240 ms, `cubic-bezier(0.2, 0, 0, 1)`.
-Obie rzeczy dzieją się w tym samym czasie, inaczej układ wygląda na zepsuty.
+Siatka nie ma sztywnych punktów łamania: kafelek ma minimum 280 px, kolumn
+najwyżej trzy. Strona rezerwuje stałe miejsce na pasek przewijania
+(`scrollbar-gutter: stable`), żeby blokada przewijania pod nakładką jej nie
+przesuwała.
+
+Animacja wysuwania panelu i przyciemniania tła: 240 ms, `cubic-bezier(0.2, 0, 0, 1)`.
 Przy `prefers-reduced-motion` przejścia znikają, panel po prostu się pojawia.
 
-Escape zamyka panel. Na mobile szuflada jest modalna: pułapka na fokus,
-`aria-modal`, tło pod spodem nie przewija się. Na desktopie panel nie jest
-modalny, bo siatka obok zostaje aktywna.
+Panel jest zawsze modalny: pułapka na fokus, `aria-modal`, tło pod spodem
+nie przewija się. Po zamknięciu fokus wraca na kafelek, z którego panel
+otwarto.
 
 ---
 

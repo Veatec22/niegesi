@@ -29,7 +29,9 @@ Rozmawiamy po polsku.
    zostawia w `dist/` spakowany ZIP — wszystko do wypakowania w katalogu gry plus
    `READ-ME.txt` z instrukcją — a `games/<gra>/game.yaml` opisuje aktualny stan: wersję,
    liczbę wpisów, status testu w grze i rodzaj paczki. Luźne pliki w `dist/` bez archiwum
-   to niedokończona robota. Zasady dotyczące zawartości paczki opisuje sekcja poniżej.
+   to niedokończona robota. Status spolszczenia (gotowe, wersja testowa, w trakcie)
+   ustawia się w jednym miejscu, `games/statusy.yaml`: nowa gra trafia tam od razu
+   na listę `w-trakcie`, a na `gotowe` przenosi ją dopiero użytkownik po pełnym ograniu. Zasady dotyczące zawartości paczki opisuje sekcja poniżej.
 
 ## Jak dostarczamy spolszczenie
 
@@ -127,18 +129,24 @@ do 6.0.0-be.788. Wtedy zostaje podmiana plików.
 
 ## Pliki i praktyka
 
-- Każda gra ma katalog `games/<gra>/`. Przy kontynuacji najpierw przeczytaj jego README
-  i sprawdź istniejące teksty oraz narzędzia, żeby podjąć pracę od aktualnego etapu.
+- Każda gra ma katalog `games/<gra>/`. Przy kontynuacji najpierw przeczytaj jego
+  `docs/technika.md` i sprawdź istniejące teksty oraz narzędzia, żeby podjąć pracę
+  od aktualnego etapu.
 - Każda gra musi mieć `translations/en-pl-review.json`: identyfikator wpisu, angielski
   oryginał i polskie tłumaczenie obok siebie, opcjonalnie kontekst lub uwagi.
   Wzór: `games/shotgun-cop-man/translations/en-pl-review.json` (`key`, `english`, `polish`).
   Plik służy użytkownikowi do oceny i poprawiania tłumaczenia automatycznego; utrzymuj go
   w zgodzie z `translations/pl.json`, również po korektach użytkownika.
 - Podział treści w katalogu gry jest sztywny, bo zasila też stronę w `site/`:
-  `README.md` po polsku i krótko — czym jest spolszczenie i jak je zainstalować
-  (jego pierwszy akapit trafia na stronę jako opis gry), `docs/technika.md` na
-  ustalenia techniczne, `game.yaml` na liczby, statusy i linki. Główny `README.md`
-  repozytorium jest po angielsku, dla przypadkowego czytelnika z GitHuba.
+  `README.md` to wyłącznie instrukcja dla gracza, po polsku, wyświetlana w panelu gry
+  na stronie: nagłówek `# <Gra> PL`, sekcja `## Instalacja` z ponumerowanymi krokami
+  i jeden akapit o usunięciu lub przywróceniu. Nic dla dewelopera — wzór:
+  `games/shotgun-cop-man/README.md`. Treść bierze się z instrukcji w aktualnej paczce.
+  `docs/technika.md` na ustalenia techniczne, budowanie, stan testów i notę o materiale
+  gry, `game.yaml` na liczby, status testu, linki do sklepów (`stores`) i przetestowaną
+  wersję gry (`tested_on`: sklep i wersja z GOG Galaxy lub z menu gry),
+  `games/statusy.yaml` na status spolszczenia. Główny `README.md` repozytorium jest
+  po angielsku, dla przypadkowego czytelnika z GitHuba.
 - Decyzje otwarte i rozważane warianty trzymamy w `docs/decyzje/`, po jednym pliku
   na temat. Zanim zaproponujesz zmianę sposobu dostarczania spolszczeń, przeczytaj,
   co już zostało tam rozważone i odrzucone.
@@ -146,7 +154,7 @@ do 6.0.0-be.788. Wtedy zostaje podmiana plików.
   są w `docs/dodawanie-gry.md`; nie rozbudowuj konwencji ani infrastruktury bez potrzeby.
 - Zachowuj oryginały przed podmianą plików gry. Buduj do osobnego katalogu (`dist/`),
   a instalację do testów wykonuj z kopią zapasową umożliwiającą powrót do oryginału.
-- Zapisuj istotne ustalenia i następny krok w README gry. Rozróżniaj weryfikację plików
+- Zapisuj istotne ustalenia i następny krok w `docs/technika.md` gry. Rozróżniaj weryfikację plików
   od faktycznego testu w uruchomionej grze.
 - Nie uruchamiaj gry za użytkownika. Jeśli potrzebujesz feedbacku wizualnego, podaj
   konkretne kroki testu i wskaż, co ma być widoczne na screenach. Użytkownik sam

@@ -4,16 +4,16 @@
 
 :root {
   /* --- Kolor ------------------------------------------------------ */
-  --ng-bone: #E9E5DB;           /* tło strony */
+  /* Trzy kolory: czerń, biel, karmin. Wszystko inne to ich mieszanki. */
+  --ng-bone: #F9F7F3;           /* tło strony, złamana biel */
   --ng-paper: #FFFFFF;          /* powierzchnie wyniesione */
-  --ng-ink: #14130F;            /* tekst, ramki, cienie */
-  --ng-accent: #D6341F;         /* czerwień plakatowa, grafika + CTA */
-  --ng-red-deep: #B02510;       /* czerwień pod drobnym białym tekstem */
-  --ng-navy: #003670;           /* status ukończone, tła keyartów */
-  --ng-muted: #57534A;          /* tekst drugorzędny na jasnym */
-  --ng-muted-inverse: #B9B3A4;  /* tekst drugorzędny na --ng-ink */
-  --ng-hairline: #C9C3B4;       /* linie 1 px wewnątrz ramek */
-  --ng-scrim: rgba(20, 19, 15, 0.58);      /* przyciemnienie pod szufladą */
+  --ng-ink: #141414;            /* tekst, ramki, cienie */
+  --ng-accent: #DC143C;         /* karmin: grafika, CTA, plakietka „w trakcie" */
+  --ng-graphite: #363635;       /* ink rozjaśniony bielą: trzecie tło keyartów */
+  --ng-muted: #646362;          /* tekst drugorzędny na jasnym */
+  --ng-muted-inverse: #B4B3B0;  /* tekst drugorzędny na --ng-ink */
+  --ng-hairline: #D7D5D2;       /* linie 1 px wewnątrz ramek */
+  --ng-scrim: rgba(20, 20, 20, 0.58);      /* przyciemnienie pod szufladą */
   --ng-placeholder-mark: rgba(255, 255, 255, 0.13); /* inicjał na keyarcie */
 
   /* --- Typografia ------------------------------------------------- */
@@ -70,8 +70,7 @@
   --ng-gutter: 80px;
   --ng-gutter-mobile: 20px;
   --ng-grid-gap: 28px;
-  --ng-panel-width: 560px;
-  --ng-panel-width-tablet: 480px;
+  --ng-panel-width: min(800px, 92vw);  /* nakładka z prawej; na telefonie szuflada na całą szerokość */
   --ng-drawer-max-height: 88vh;
   --ng-keyart-ratio: 16 / 9;
 

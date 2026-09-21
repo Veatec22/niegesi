@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 
 const slugFromPath = ({ entry }: { entry: string }) => entry.split('/')[0];
 
@@ -15,7 +15,10 @@ const games = defineCollection({
     engine: z.string(),
     approach: z.string(),
     scope: z.string(),
-    source: z.string().nullable().default(null),
+    source: z.string().nullable().default(null), // stary zapis, zastępuje go tested_on
+    // Na czym spolszczenie sprawdzono: sklep (klucz jak w `stores`) i wersja gry z jej menu
+    // albo z PlayerSettings.bundleVersion. Informacja dla gracza, nigdy warunek działania.
+    tested_on: z.array(z.object({ store: z.string(), version: z.string() })).default([]),
     year: z.number().nullable().default(null),
     steam_appid: z.number().nullable().default(null),
     keyart_shot: z.number().nullable().default(null), // numer zrzutu ze Steama, patrz tools/keyart.py
@@ -36,4 +39,15 @@ const gameDocs = defineCollection({
   loader: glob({ pattern: '*/README.md', base: '../games', generateId: slugFromPath }),
 });
 
-export const collections = { games, gameDocs };
+/** Statusy spolszczeń i przypisane do nich gry. Kolejność w pliku = kolejność na stronie. */
+const statuses = defineCollection({
+  loader: file('../games/statusy.yaml'),
+  schema: z.object({
+    label: z.string(),
+    description: z.string(),
+    tone: z.enum(['ink', 'outline', 'accent']),
+    games: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { games, gameDocs, statuses };

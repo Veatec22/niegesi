@@ -3,6 +3,7 @@ import { render, type CollectionEntry } from 'astro:content';
 import { entriesLabel, type Game } from '../lib/games';
 import { downloadFor } from '../lib/download';
 import Keyart from './Keyart.astro';
+import Icon from './Icon.astro';
 
 interface Props {
   game: Game;
@@ -12,6 +13,11 @@ interface Props {
 const { game, doc } = Astro.props;
 const download = downloadFor(game);
 const stores = Object.entries(game.stores);
+
+const REPO = 'https://github.com/Veatec22/niegesi';
+const STORE_NAMES: Record<string, string> = { steam: 'Steam', gog: 'GOG', epic: 'Epic', itch: 'itch.io' };
+const storeName = (store: string) => STORE_NAMES[store.toLowerCase()] ?? store;
+const hasLogo = (store: string) => ['steam', 'gog'].includes(store.toLowerCase());
 const rendered = doc ? await render(doc) : null;
 const Content = rendered?.Content;
 ---
@@ -21,13 +27,35 @@ const Content = rendered?.Content;
 
   <div class="ng-panel-body">
     <div>
-      <h2 class="ng-display ng-panel-title">{game.title}</h2>
+      <div class="ng-panel-head">
+        <h2 class="ng-display ng-panel-title">{game.title}</h2>
+        {
+          stores.length > 0 && (
+            <div class="ng-panel-stores">
+              {stores.map(([store, url]) => (
+                <a class="ng-btn ng-btn--compact" href={url}>
+                  {hasLogo(store) && <Icon name={store.toLowerCase() as 'steam' | 'gog'} size={20} />}
+                  {storeName(store)}
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </div>
       <div class="ng-panel-status" style="margin-top: var(--ng-space-4)">
-        <span class="ng-badge" data-status={game.status}>
-          {game.status === 'ukonczone' ? 'komplet tekstu' : `w trakcie · ${game.percent}%`}
+        <span class="ng-status">
+          <button
+            class="ng-badge ng-badge--lg ng-status-trigger"
+            type="button"
+            data-tone={game.status.tone}
+            aria-describedby={`status-${game.slug}`}
+          >
+            {game.status.label}
+            <Icon name="info" size={18} />
+          </button>
+          <span class="ng-status-tip" role="tooltip" id={`status-${game.slug}`}>{game.status.description}</span>
         </span>
-        <span class="ng-badge-note">wersja {game.version}</span>
-        <span class="ng-badge-note">{game.testLabel}</span>
+        <span class="ng-badge-note">v{game.version}</span>
       </div>
     </div>
 
@@ -42,37 +70,52 @@ const Content = rendered?.Content;
     }
 
     <div class="ng-panel-actions">
-      {
-        download.available ? (
-          <a class="ng-btn ng-btn--primary ng-on-accent" href={download.href} download>
-            Pobierz spolszczenie
-          </a>
-        ) : (
-          <span class="ng-btn ng-btn--primary" aria-disabled="true">
-            {download.label}
-          </span>
-        )
-      }
-      <span class="ng-badge-note">{download.note}</span>
-      {
-        stores.length > 0 && (
-          <div class="ng-panel-actions-row">
-            {stores.map(([name, url]) => (
-              <a class="ng-btn" href={url}>
-                {name}
-              </a>
-            ))}
-          </div>
-        )
-      }
+      <div class="ng-panel-actions-row">
+        {
+          download.available ? (
+            <a class="ng-btn ng-btn--primary ng-btn--download ng-on-accent" href={download.href} download>
+              <Icon name="download" />
+              <span>Pobierz spolszczenie</span>
+              {download.meta && <span class="ng-btn-meta">{download.meta}</span>}
+            </a>
+          ) : (
+            <span class="ng-btn ng-btn--primary ng-btn--download" aria-disabled="true">
+              {download.label}
+            </span>
+          )
+        }
+        <a
+          class="ng-btn ng-btn--square"
+          href={`${REPO}/tree/main/games/${game.slug}`}
+          aria-label="Pliki spolszczenia na GitHubie"
+          title="Pliki spolszczenia na GitHubie"
+        >
+          <Icon name="github" />
+        </a>
+      </div>
     </div>
 
     <table class="ng-table">
       <tbody>
         <tr><th>Zakres</th><td>{entriesLabel(game)} — {game.scope}</td></tr>
-        <tr><th>Silnik</th><td>{game.engine}</td></tr>
         <tr><th>Sposób</th><td>{game.approach}</td></tr>
-        {game.source && <tr><th>Wersja gry</th><td>{game.source}</td></tr>}
+        {
+          game.tested_on.length > 0 ? (
+            <tr>
+              <th>Przetestowana wersja</th>
+              <td>
+                {game.tested_on.map((tested, index) => (
+                  <>
+                    {index > 0 && <br />}
+                    <strong>{tested.version}</strong> · {storeName(tested.store)}
+                  </>
+                ))}
+              </td>
+            </tr>
+          ) : (
+            game.source && <tr><th>Przetestowana wersja</th><td>{game.source}</td></tr>
+          )
+        }
       </tbody>
     </table>
 
@@ -85,4 +128,3 @@ const Content = rendered?.Content;
     }
   </div>
 </div>
-

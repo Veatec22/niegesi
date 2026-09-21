@@ -9,7 +9,9 @@ engine: Unreal Engine 4.27 (PAK v11 + IoStore v3)
 approach: Nakładkowy PAK z tekstami PL oraz minimalny IoStore selektora; oryginalne
   pliki gry pozostają nietknięte.
 scope: menu, sterowanie, dialogi, opisy przedmiotów i notatki
-source: GOG
+tested_on:
+  - store: gog
+    version: "1.31"
 steam_appid: 1804010
 stores:
   steam: https://store.steampowered.com/app/1804010/

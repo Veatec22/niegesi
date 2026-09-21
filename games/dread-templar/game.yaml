@@ -6,11 +6,14 @@ tested: czesciowy
 engine: Unity (resources.assets)
 approach: Plugin wypełnia pusty slot „pol” zostawiony przez twórców i ożywia wyłączony przycisk w menu, w czasie działania gry. Żaden plik gry nie jest podmieniany.
 scope: menu, ustawienia, sterowanie, samouczek, dialogi, przerywniki, nazwy poziomów i bossów, opisy run
-source: GOG
+tested_on:
+  - store: gog
+    version: "1.0.2b fix"
 year: 2023
 steam_appid: 1334730
 stores:
   steam: https://store.steampowered.com/app/1334730/
+  gog: https://www.gog.com/en/game/dread_templar
 quote:
   text:
   source:
