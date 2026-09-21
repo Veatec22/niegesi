@@ -1,0 +1,26 @@
+slug: wild-bastards
+title: Wild Bastards
+version: '0.2.0'
+entries: { done: 4426, total: 4426 }
+tested: czesciowy
+engine: Unity 2021.3.32f1 (Mono)
+approach: Plugin BepInEx 5 dokłada polski jako kolejny język tabeli I2 w czasie działania gry i przycisk w menu języków. Żaden plik gry nie jest podmieniany.
+scope: Całość — menu i opcje, HUD starć, powiadomienia, samouczki i podpowiedzi, dialogi, banici z asami, popisami i bronią, przedmioty, cechy planet, mapa planety i sektora ze zdarzeniami, Dziura w Murze, wyzwania i osiągnięcia.
+steam_appid: 1660840
+stores:
+  steam: https://store.steampowered.com/app/1660840/
+download:
+  kind: zip
+  file: Wild-Bastards-PL-0.2.0.zip
+  bytes: 736434
+phase: full
+tested_on:
+  - store: steam
+    version: "1.0.0.26658"
+test_notes: Vertical 0.1.1 potwierdzony w grze (przycisk Polski, menu, fonty). Pełne tłumaczenie 0.2.0 zbudowane i zainstalowane; pełne przejście czeka.
+build_input:
+  store: steam
+  build_id: '16213058'
+  version: 1.0.0.26658
+  unity: 2021.3.32f1
+year: 2024

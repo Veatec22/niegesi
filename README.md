@@ -23,6 +23,8 @@ are built locally from an installed copy and kept in ignored output and backup f
 | [OTXO](games/otxo/) | 1364 entries: UI, tutorial, 102 drinks, dialogue, lore, journal and statistics | 0.1 | Polish replaces Chinese, the slot that loads an external font |
 | [Labyrinth of the Demon King](games/labyrinth-of-the-demon-king/) | 1120/1120 entries; menus, dialogue, notes, items and maps | 0.2, PAK + minimal IoStore overlay | Vertical confirmed in-game; full campaign review pending |
 | [Turbo Overkill](games/turbo-overkill/) | 2316/2333 entries: menus, HUD, tutorials, objectives, all dialogue, gear, codex, audio logs and level editor | 0.2.0 | Separate Polish language and flag; vertical confirmed, full campaign playtest pending |
+| [Void Bastards](games/void-bastards/) | 2480/2480 entries: menus, HUD, comics, B.A.C.S. and pirate dialogue, items, upgrades, star map events, traits, achievements and Tydy DLC | 0.2.0 | Separate Polish language; missing Polish glyphs composed at runtime; vertical confirmed, full playthrough pending |
+| [Wild Bastards](games/wild-bastards/) | 4426/4426 entries: menus, HUD, dialogue, tutorials and hints, outlaws with aces, stunts and weapons, items, planet traits, planet and sector map events, achievements | 0.2.0 | Polish added as an extra I2 language with its own menu button; dynamic font fallback from the game's TTFs; vertical confirmed, full playthrough pending |
 
 Each game's Polish README is a short player-facing description and installation guide.
 Technical findings belong in `docs/technika.md`; `game.yaml` records counts, release

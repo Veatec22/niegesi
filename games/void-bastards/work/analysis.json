@@ -1,0 +1,259 @@
+{
+  "unity": "2017.4.21f1",
+  "asset": "resources.assets",
+  "path_id": 14623,
+  "i2_term_description_field": true,
+  "languages": [
+    [
+      "English (United States)",
+      "en-US"
+    ],
+    [
+      "German (Germany)",
+      "de-DE"
+    ],
+    [
+      "French (France)",
+      "fr-FR"
+    ],
+    [
+      "Spanish (Spain)",
+      "es-ES"
+    ],
+    [
+      "Chinese",
+      "zh-CN"
+    ],
+    [
+      "Korean",
+      "ko"
+    ],
+    [
+      "Japanese",
+      "ja"
+    ],
+    [
+      "Russian",
+      "ru"
+    ],
+    [
+      "Portuguese (Brazil)",
+      "pt-BR"
+    ]
+  ],
+  "terms": 2483,
+  "nonempty_en": 2479,
+  "en_characters": 69674,
+  "with_context": 228,
+  "categories": [
+    [
+      "Dialog",
+      174
+    ],
+    [
+      "Key",
+      141
+    ],
+    [
+      "Part",
+      122
+    ],
+    [
+      "Star Map",
+      112
+    ],
+    [
+      "CS",
+      103
+    ],
+    [
+      "Interact",
+      94
+    ],
+    [
+      "UpgradeDescription",
+      93
+    ],
+    [
+      "UpgradeDescriptionAtLevel",
+      93
+    ],
+    [
+      "Star Map Event",
+      92
+    ],
+    [
+      "Upgrade",
+      89
+    ],
+    [
+      "MapPopup",
+      75
+    ],
+    [
+      "Achievement",
+      72
+    ],
+    [
+      "Junk",
+      72
+    ],
+    [
+      "Character Trait",
+      69
+    ],
+    [
+      "Character Trait Tooltip",
+      67
+    ],
+    [
+      "Item",
+      67
+    ],
+    [
+      "Hint",
+      66
+    ],
+    [
+      "Offense",
+      66
+    ],
+    [
+      "Profile",
+      66
+    ],
+    [
+      "Options",
+      55
+    ],
+    [
+      "Map",
+      47
+    ],
+    [
+      "Ship Trait Tooltip",
+      43
+    ],
+    [
+      "Ship Trait",
+      43
+    ],
+    [
+      "Workbench",
+      43
+    ],
+    [
+      "Ship",
+      42
+    ],
+    [
+      "Legend",
+      41
+    ],
+    [
+      "Challenges",
+      40
+    ],
+    [
+      "PauseMenu",
+      39
+    ],
+    [
+      "Module Name",
+      38
+    ],
+    [
+      "NPC",
+      38
+    ],
+    [
+      "Hacked",
+      37
+    ],
+    [
+      "(root)",
+      35
+    ],
+    [
+      "Action",
+      23
+    ],
+    [
+      "Mission",
+      22
+    ],
+    [
+      "Difficulty",
+      18
+    ],
+    [
+      "Log",
+      16
+    ],
+    [
+      "Stat",
+      15
+    ],
+    [
+      "HUD",
+      13
+    ],
+    [
+      "Loadout",
+      12
+    ],
+    [
+      "Debrief",
+      11
+    ],
+    [
+      "UI",
+      11
+    ],
+    [
+      "Component",
+      10
+    ],
+    [
+      "Language",
+      10
+    ],
+    [
+      "Title",
+      10
+    ],
+    [
+      "Campaign Flow",
+      9
+    ],
+    [
+      "Loading",
+      8
+    ],
+    [
+      "DemoDialog",
+      7
+    ],
+    [
+      "ProgressUpgradeDetail",
+      5
+    ],
+    [
+      "DLC",
+      3
+    ],
+    [
+      "RichPresence",
+      3
+    ],
+    [
+      "StartMenu",
+      2
+    ],
+    [
+      "Cutscene",
+      1
+    ]
+  ],
+  "game_modified": false
+}

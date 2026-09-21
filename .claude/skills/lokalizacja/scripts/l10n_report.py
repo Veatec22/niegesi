@@ -64,6 +64,7 @@ def main():
 
     keep = [str(x).lower() for x in bible.get('bez_tlumaczenia') or []]
     keep += [str(p.get('nazwa', '')).lower() for p in bible.get('postacie') or []]
+    keep += [w for phrase in list(keep) if ' ' in phrase for w in phrase.split()]
     stems = [str(f).lower() for t in bible.get('terminy') or [] for f in t.get('formy') or []]
     settings = bible.get('ustawienia') or {}
     dialog_re = re.compile(settings['dialog_klucz']) if settings.get('dialog_klucz') else None
@@ -103,6 +104,8 @@ def main():
             report('typografia', row, 'dywiz zamiast myślnika')
         if re.search(r'\s[?!:;](?:\s|$)', pl):
             report('typografia', row, 'spacja przed znakiem interpunkcyjnym')
+        if (en[:1] == ' ') != (pl[:1] == ' ') or (en[-1:] == ' ') != (pl[-1:] == ' '):
+            report('typografia', row, 'inna spacja na początku/końcu niż w oryginale (doklejana liczba?)')
         if '  ' in pl.strip() and '  ' not in en.strip():
             report('typografia', row, 'podwójna spacja')
 

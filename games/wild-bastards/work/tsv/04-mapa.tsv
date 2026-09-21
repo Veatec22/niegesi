@@ -1,0 +1,479 @@
+InteractionAltButton/Bank @@ Wypłać
+InteractionAltButton/ChowHouse @@ Gotuj
+InteractionAltButton/DataVault @@ Włam się
+InteractionAltButton/GuardPost @@ Przekup
+InteractionAltDescription/ChowHouse @@ Zdobyto: żarcie
+InteractionAltDescription/DataVault @@ Zdobyto: sekret
+InteractionAltDescription/GuardPost @@ Przekup strażników, żeby uciekli. Koszt:
+InteractionAltTitle/ChowHouse @@ Żarcie ugotowane
+InteractionAltTitle/DataVault @@ Włamanie do skarbca danych
+InteractionAltTitle/GuardPost @@ Przekupstwo
+InteractionDescription/AgentRelocator @@ Teleportuj wszystkich konnych wrogów (patrole i obławy) z jednego miejsca w inne.
+InteractionDescription/ArmorPickup @@ Twoja grupa odzyskuje pełny pancerz.
+InteractionDescription/ArmorSpawner @@ Wybierz blokadę, na którą zrzucisz pancerz.
+InteractionDescription/Bank @@ Twoja banda dostaje cramm:
+InteractionDescription/Barricade @@ Patrole, sfory i obławy będą musiały się zatrzymać i poświęcić turę na rozebranie zapory.
+InteractionDescription/BarricadePickup @@ Znaleziono barykadę. Postaw z niej zaporę, żeby spowolnić patrole, sfory i obławy.
+InteractionDescription/BeanPickup @@ Znaleziono puszkę fasoli
+InteractionDescription/BearAlly @@ Wybierz blokadę, przy której staną oswojone grizzly.
+InteractionDescription/Blacksmith @@ Twoja grupa odzyskuje pełny pancerz.
+InteractionDescription/BunchSwapper @@ Zamienia grupy miejscami
+InteractionDescription/ChitsPickup @@ Twoja banda dostaje cramm:
+InteractionDescription/ChowHouse @@ Na jedną turę we wszystkich starciach jest o połowę mniej strażników.
+InteractionDescription/ChowHouse_cook @@ Smoky podaje swoją słynną fasolę. Na trzy tury we wszystkich starciach jest o połowę mniej strażników.
+InteractionDescription/DataVault @@ Odkryto niezbadaną część mapy.
+InteractionDescription/Den @@ W pobliżu wychodzi sfora zwierząt.
+InteractionDescription/DisguisePickup @@ Znaleziono przebranie. Użyj go, żeby minąć patrole, sfory i obławy bez walki.
+InteractionDescription/Distillery @@ Każdy banita dostaje pełen zapas bimbru.
+InteractionDescription/Doctor @@ Twoja grupa odzyskuje pełne zdrowie.
+InteractionDescription/EnemyInfo @@ Zdobyto dane o wrogach.
+InteractionDescription/EstateKeyPickup @@ Zdobyto klucz do posiadłości.
+InteractionDescription/Exterminator @@ Wybierz miejsce ze sforą zwierząt, a zostanie wytropiona i wybita.
+InteractionDescription/Forage @@ Sierżant szuka zapasów: traci ruchy, ale znajduje trochę pancerza.
+InteractionDescription/GoldPickup @@ Twoja banda dostaje błysk:
+InteractionDescription/GritPickup @@ Znalezione asy:
+InteractionDescription/Guesthouse @@ Ciepły ogień i gorący napój. Zdrowie, pancerz i ruchy zostają odnowione.
+InteractionDescription/GunhandAlly @@ Wybierz blokadę, przy której staną najęci rewolwerowcy.
+InteractionDescription/HealthPickup @@ Twoja grupa odzyskuje pełne zdrowie.
+InteractionDescription/HealthSpawner @@ Wybierz blokadę, na którą zrzucisz apteczki.
+InteractionDescription/Herd @@ Stado bawołów pędzi przez mapę i przerzedza po drodze strażników.
+InteractionDescription/InvulnerabilitySpawner @@ Wybierz blokadę, na którą zrzucisz nietykalność.
+InteractionDescription/IroncladAlly @@ Wybierz blokadę, przy której staną najęte żelaźniaki.
+InteractionDescription/ItemPickup @@ Znalezione przedmioty:
+InteractionDescription/ItemThief @@ Wybierz przedmiot na mapie i poślij po niego złodziejaszka.
+InteractionDescription/Jail @@ Uwięzieni banici uwolnieni.
+InteractionDescription/KramPickup @@ Twoja grupa dostaje tabakę:
+InteractionDescription/Lure @@ Strażnicy z wybranego posterunku utworzą patrol i ruszą do wybranego miejsca na drodze.
+InteractionDescription/LurePickup @@ Znaleziono przynętę. Użyj jej, żeby odwrócić uwagę strażników i odciągnąć ich od posterunku.
+InteractionDescription/MachineGunnerAlly @@ Wybierz blokadę, przy której staną najęci korbiarze.
+InteractionDescription/NavPickup @@ Znaleziono nadajnik
+InteractionDescription/NitroPickup @@ Twoja banda dostaje nitro:
+InteractionDescription/OutlawPickup @@ Odzyskano:
+InteractionDescription/PatrolDestroy @@ Wybierz miejsce z patrolami, sforami albo wozami. Wszystkie zostaną zniszczone.
+InteractionDescription/PowerStation @@ Na jedną turę ochrona we wszystkich starciach traci zasilanie.
+InteractionDescription/PowerStation_hack @@ Spike hakuje zasilanie. Na trzy tury ochrona we wszystkich starciach traci zasilanie.
+InteractionDescription/RageSpawner @@ Wybierz blokadę, na którą zrzucisz szał.
+InteractionDescription/RoadblockDestroy @@ Wybierz blokadę do zniszczenia.
+InteractionDescription/RoadblockDestroyGuards @@ Wybierz blokadę, na której zginą wszyscy strażnicy.
+InteractionDescription/RoadblockDestroySecurity @@ Wybierz blokadę, na której zniszczysz całą ochronę.
+InteractionDescription/RoadblockNoArmor @@ Wybierz blokadę, na której zniszczysz cały pancerz wrogów.
+InteractionDescription/RoadblockOneHealth @@ Wybierz blokadę, na której wszyscy wrogowie zostaną z jednym punktem zdrowia.
+InteractionDescription/RoadblockSubvert @@ Wybierz blokadę, na której przejmiesz trzech wrogów.
+InteractionDescription/ShinePickup @@ Każdy banita dostaje pełen zapas bimbru.
+InteractionDescription/ShineSpawner @@ Wybierz blokadę, na którą zrzucisz bimber.
+InteractionDescription/Snowbank @@ Głęboka zaspa pochłania wszystkie pozostałe ruchy.
+InteractionDescription/TelePickup @@ Znaleziono przenośny teleporter. Użyj go, żeby postawić nowy teleporter tam, gdzie stoi twoja grupa.
+InteractionDescription/TurretAlly @@ Wybierz blokadę, na którą zrzucisz sojusznicze lufy.
+InteractionDescription/Vault @@ Wysłano za wami obławę.
+InteractionDescription/Well @@ Twoja banda dostaje nitro:
+InteractionDescription/Whirlpool @@ Twoja grupa wpada do zapadliska i wyłania się gdzie indziej.
+InteractionDescription/WolfAlly @@ Wybierz blokadę, przy której staną oswojone kojoty.
+InteractionModDesc/ItemPickup @@ Losuj ponownie
+InteractionTitle/AgentRelocator @@ Przenośnik konnych wrogów
+InteractionTitle/ArmorPickup @@ Pancerz
+InteractionTitle/ArmorSpawner @@ Zrzut pancerza
+InteractionTitle/Bank @@ Wizyta w banku
+InteractionTitle/BarricadePickup @@ Przenośna barykada
+InteractionTitle/BeanPickup @@ Puszka fasoli
+InteractionTitle/BearAlly @@ Oswój grizzly
+InteractionTitle/Blacksmith @@ Wizyta u kowala
+InteractionTitle/BunchSwapper @@ Zamiana grup
+InteractionTitle/ChitsPickup @@ Cramm
+InteractionTitle/ChowHouse @@ Jadłodajnia
+InteractionTitle/DataVault @@ Dostęp do skarbca danych
+InteractionTitle/Den @@ Legowisko splądrowane
+InteractionTitle/DisguisePickup @@ Przebranie
+InteractionTitle/Distillery @@ Wizyta w gorzelni
+InteractionTitle/Doctor @@ Wizyta u doktora
+InteractionTitle/EnemyInfo @@ Znaleziono dane
+InteractionTitle/EstateKeyPickup @@ Klucz do posiadłości
+InteractionTitle/Forage @@ Szukanie zapasów
+InteractionTitle/GoldPickup @@ Skrytka z błyskiem
+InteractionTitle/GritPickup @@ Asy
+InteractionTitle/Guesthouse @@ Przytulny zajazd
+InteractionTitle/GunhandAlly @@ Najmij rewolwerowców
+InteractionTitle/HealthPickup @@ Zdrowie
+InteractionTitle/HealthSpawner @@ Zrzut apteczek
+InteractionTitle/Herd @@ Szarża stada
+InteractionTitle/InvulnerabilitySpawner @@ Zrzut nietykalności
+InteractionTitle/IroncladAlly @@ Najmij żelaźniaki
+InteractionTitle/ItemPickup @@ Znaleziono przedmiot
+InteractionTitle/ItemThief @@ Złodziejaszek
+InteractionTitle/Jail @@ Odbicie z więzienia
+InteractionTitle/KramPickup @@ Tabaka
+InteractionTitle/LurePickup @@ Przynęta
+InteractionTitle/MachineGunnerAlly @@ Najmij korbiarzy
+InteractionTitle/NavPickup @@ Nadajnik
+InteractionTitle/NitroPickup @@ Nitro
+InteractionTitle/OutlawPickup @@ Znaleziono banitę
+InteractionTitle/PatrolDestroy @@ Niszczyciel jednostek
+InteractionTitle/PowerStation @@ Elektrownia
+InteractionTitle/RageSpawner @@ Zrzut szału
+InteractionTitle/RoadblockDestroy @@ Bombardowanie z orbity
+InteractionTitle/RoadblockDestroyGuards @@ Zrzut zatrutego żarcia
+InteractionTitle/RoadblockDestroySecurity @@ Impuls EM
+InteractionTitle/RoadblockNoArmor @@ Promień cieplny
+InteractionTitle/RoadblockOneHealth @@ Wiązka pionowa
+InteractionTitle/RoadblockSubvert @@ Promień kontroli umysłu
+InteractionTitle/ShinePickup @@ Bimber
+InteractionTitle/ShineSpawner @@ Zrzut bimbru
+InteractionTitle/Snowbank @@ Głęboki śnieg
+InteractionTitle/StormSpawner @@ Generator burz
+InteractionTitle/TelePickup @@ Przenośny teleporter
+InteractionTitle/TurretAlly @@ Sojusznicze lufy
+InteractionTitle/Vault @@ Skarbiec rozbity
+InteractionTitle/Well @@ Wizyta na stacji benzynowej
+InteractionTitle/Whirlpool @@ Zapadlisko
+InteractionTitle/WolfAlly @@ Oswój kojoty
+LocDesc/AgentRelocator @@ Teleportuj patrole i obławy z jednego miejsca w inne.
+LocDesc/ArmorPickup @@ Pełny pancerz dla grupy.
+LocDesc/ArmorSpawner @@ Zrzuć pancerz na blokadę
+LocDesc/Bank @@ Wpłać 500 cramm, a przy następnej wizycie wypłacisz dwa razy tyle.
+LocDesc/BarricadePickup @@ Zabierz barykadę, żeby spowolnić wrogie jednostki.
+LocDesc/BastardPickup @@ hello
+LocDesc/BeanPickup @@ Zbierz fasolę do wykorzystania na Drifterze.
+LocDesc/BearAlly @@ Postaw sojusznicze grizzly przy blokadzie
+LocDesc/Blacksmith @@ Pełny pancerz dla grupy (odnawia się).
+LocDesc/BonusUnlockPickup @@ Zdobądź naładowanego asa
+LocDesc/ChitsPickup @@ Zbierz cramm do wydania w sklepach.
+LocDesc/ChitsPickupFirstPlanet @@ Zbierz cramm do wydania w sklepach.
+LocDesc/ChowHouse @@ Na jedną turę połowa strażników na wszystkich blokadach
+LocDesc/Den @@ Przeszukaj w poszukiwaniu cennego przedmiotu, ale w pobliżu wyjdzie sfora zwierząt.
+LocDesc/DisguisePickup @@ Zdobądź przebranie, żeby minąć patrole, sfory i obławy.
+LocDesc/Distillery @@ Odwiedź miejsce
+LocDesc/Doctor @@ Pełne zdrowie dla grupy (odnawia się).
+LocDesc/ElixirPickup @@ Zdobądź tonik, żeby leczyć rany na Drifterze.
+LocDesc/EnemyInfo @@ Zbierz informacje o wrogach.
+LocDesc/Exit @@ Przenieś wszystkich banitów na Driftera
+LocDesc/ExitLuckyLady @@ Przenieś się na Lucky Lady
+LocDesc/GlintPickup @@ Zbierz błysk
+LocDesc/GoldPickup @@ Odwiedź miejsce
+LocDesc/GuardPost @@ Odwiedź miejsce
+LocDesc/Guesthouse @@ Odpocznij i odnów ruchy, zdrowie oraz pancerz grupy.
+LocDesc/GunhandAlly @@ Najmij sojuszniczych rewolwerowców na blokadę
+LocDesc/HealthPickup @@ Pełne zdrowie dla grupy.
+LocDesc/HealthSpawner @@ Zrzuć apteczki na blokadę
+LocDesc/HelixPickup @@ Zbierz helisę poległego banity, żeby go wskrzesić.
+LocDesc/Herd @@ Wypuść stado bawołów, które zdemoluje wrogie blokady.
+LocDesc/Hideout @@ Blokada skoku zniszczona. Drifter może opuścić układ.
+LocDesc/InherentUnlockPickup @@ Zdobądź podstawowego asa
+LocDesc/InvulnerabilitySpawner @@ Zrzuć nietykalność na blokadę.
+LocDesc/IroncladAlly @@ Najmij sojusznicze żelaźniaki na blokadę
+LocDesc/ItemPickup @@ Przedmiot
+LocDesc/ItemShop @@ Kupuj i sprzedawaj przedmioty
+LocDesc/ItemThief @@ Ukradnij przedmiot z dowolnego miejsca na planecie
+LocDesc/Jail @@ Tu siedzą uwięzieni banici.
+LocDesc/KramPickup @@ Odwiedź miejsce
+LocDesc/LurePickup @@ Odwiedź miejsce
+LocDesc/MachineGunnerAlly @@ Najmij sojuszniczych korbiarzy na blokadę
+LocDesc/MarshalBase @@ Tu wylądują McNeil i reszta książąt.
+LocDesc/NavPickup @@ Zbieraj nadajniki, żeby łatwiej opuścić planetę
+LocDesc/NitroPickup @@ Zbierz nitro, żeby mieć więcej ruchów.
+LocDesc/Node @@ Odwiedź miejsce
+LocDesc/OutlawPickup @@ Odnajdź zaginionego banitę
+LocDesc/PatrolDestroy @@ Wybierz miejsce i zniszcz wszystkie patrole, sfory, wozy i obławy.
+LocDesc/PlaceableBarricade @@ Zabierz barykadę, żeby spowolnić wrogie jednostki.
+LocDesc/PlaceableLure @@ Odwiedź miejsce
+LocDesc/PlaceableTeleporter @@ Skocz do innego odblokowanego teleportera.
+LocDesc/PowerStation @@ Wyłącz ochronę we wszystkich starciach na jedną turę.
+LocDesc/RageSpawner @@ Zrzuć szał na blokadę.
+LocDesc/ResourceShop @@ Wymień niepotrzebne zasoby na niesławę
+LocDesc/RoadblockDestroy @@ Zabij wszystkich strażników na blokadzie.
+LocDesc/RoadblockNoArmor @@ Zniszcz cały pancerz wrogów na blokadzie.
+LocDesc/RoadblockOneHealth @@ Zostaw wszystkim wrogom na blokadzie jeden punkt zdrowia.
+LocDesc/RoadblockSubvert @@ Przejmij wrogów na blokadzie.
+LocDesc/ShardPickup @@ Zbieraj asy, żeby awansować banitę
+LocDesc/ShinePickup @@ Odwiedź miejsce
+LocDesc/ShineSpawner @@ Zrzuć bimber na blokadę
+LocDesc/Shop @@ Kupuj zdrowie, pancerz, nitro i przedmioty.
+LocDesc/Snowbank @@ Grupa ugrzęzła w śniegu i traci wszystkie ruchy.
+LocDesc/TelePickup @@ Zdobądź przenośny teleporter
+LocDesc/Teleporter @@ Skocz do innego odblokowanego teleportera.
+LocDesc/TurretAlly @@ Postaw sojusznicze lufy
+LocDesc/Vault @@ Rozbij, żeby zdobyć cenny przedmiot, ale uważaj na obławę
+LocDesc/Well @@ Zbierz nitro, żeby mieć więcej ruchów (odnawia się).
+LocDesc/Whirlpool @@ Teleport w losowe miejsce.
+LocDesc/WolfAlly @@ Postaw sojusznicze kojoty przy blokadzie
+LocDesc/alreadyFoughtThisTurn @@ Grupa wycofała się w tej turze
+LocDesc/fullArmor @@ Grupa ma pełny pancerz
+LocDesc/fullHealth @@ Grupa ma pełne zdrowie
+LocDesc/fullShine @@ Grupa ma pełen zapas bimbru
+LocDesc/fullyRested @@ Grupa w pełni wypoczęta
+LocDesc/guardsAtChow @@ Strażnicy już jedzą
+LocDesc/hasDeposit @@ Cramm wpłacony
+LocDesc/noStampedeTargets @@ Stado nie ma czego stratować
+LocDesc/noTeleporterTarget @@ Wymaga wolnego odblokowanego teleportera
+LocDesc/notEnoughChits @@ Za mało cramm na wpłatę
+LocDesc/outOfStock @@ Wyprzedane
+LocDesc/powerOff @@ Zasilanie już wyłączone
+LocDesc/restocking @@ Uzupełnianie towaru
+LocSelect/AgentRelocator1 @@ Wybierz miejsce startu
+LocSelect/AgentRelocator2 @@ Wybierz cel
+LocSelect/ArmorSpawner @@ Wybierz blokadę
+LocSelect/Barricade @@ Wybierz drogę
+LocSelect/BearAlly @@ Wybierz blokadę
+LocSelect/BunchSwapper @@ Wybierz grupę do zamiany miejscami.
+LocSelect/Exterminator @@ Łowca zwierząt
+LocSelect/GunhandAlly @@ Wybierz blokadę
+LocSelect/HealthSpawner @@ Wybierz blokadę
+LocSelect/InvulnerabilitySpawner @@ Wybierz blokadę
+LocSelect/IroncladAlly @@ Wybierz blokadę
+LocSelect/ItemThief @@ Wybierz miejsce
+LocSelect/Lure1 @@ Wybierz posterunek
+LocSelect/Lure2 @@ Wybierz cel patrolu
+LocSelect/MachineGunnerAlly @@ Wybierz blokadę
+LocSelect/NoAgents @@ Brak konnych wrogów
+LocSelect/NoArmor @@ Brak opancerzonych wrogów
+LocSelect/NoBunchesDetected @@ Nie wykryto grup
+LocSelect/NoCrittersDetected @@ Nie wykryto zwierząt
+LocSelect/NoPatrolsDetected @@ Brak patrolu, sfory, wozu i obławy
+LocSelect/NoValidTargets @@ Brak celów
+LocSelect/NotARoadblock @@ To nie blokada
+LocSelect/NotAnItemPickup @@ Nie da się ukraść
+LocSelect/PatrolDestroy @@ Wybierz miejsce
+LocSelect/RageSpawner @@ Wybierz blokadę
+LocSelect/RoadblockDestroy @@ Wybierz blokadę
+LocSelect/RoadblockDestroyGuards @@ Wybierz blokadę
+LocSelect/RoadblockDestroySecurity @@ Wybierz blokadę
+LocSelect/RoadblockNoArmor @@ Wybierz blokadę
+LocSelect/RoadblockOneHealth @@ Wybierz blokadę
+LocSelect/RoadblockSubvert @@ Wybierz blokadę
+LocSelect/ShineSpawner @@ Wybierz blokadę
+LocSelect/StormSpawner @@ Wybierz miejsce
+LocSelect/TurretAlly @@ Wybierz blokadę
+LocSelect/WolfAlly @@ Wybierz blokadę
+Location/AgentRelocator @@ Przenośnik
+Location/ArmorPickup @@ Pancerz
+Location/ArmorSpawner @@ Zrzut pancerza
+Location/Bank @@ Bank
+Location/BarricadePickup @@ Barykada
+Location/BastardPickup @@ Bękart
+Location/BeanPickup @@ Puszka fasoli
+Location/BearAlly @@ Poskramiacz grizzly
+Location/Blacksmith @@ Kowal
+Location/BonusUnlockPickup @@ Naładowany as
+Location/BunchSwapper @@ Zamiana grup
+Location/Casino @@ Kasyno
+Location/ChitsPickup @@ Cramm
+Location/ChitsPickupFirstPlanet @@ Cramm
+Location/ChowHouse @@ Jadłodajnia
+Location/DataVault @@ Farma danych
+Location/Den @@ Legowisko
+Location/DisguisePickup @@ Przebranie
+Location/Distillery @@ Gorzelnia
+Location/Doctor @@ Doktor
+Location/ElixirPickup @@ Tonik
+Location/EnemyInfo @@ Skrytka z danymi
+Location/EstateKey @@ Klucz do posiadłości
+Location/EstateKeyPickup @@ Klucz do posiadłości
+Location/EstateKeyPickupA @@ Klucz do posiadłości A
+Location/EstateKeyPickupB @@ Klucz do posiadłości B
+Location/Exit @@ Schody
+Location/Exterminator @@ Łowca sfor
+Location/GlintPickup @@ Błysk
+Location/GoldPickup @@ Złoto
+Location/GuardPost @@ Blokada
+Location/Guesthouse @@ Zajazd
+Location/GunhandAlly @@ Kontrakt z rewolwerowcami
+Location/GunhandAlly_2 @@ Kontrakt z wyszkolonymi rewolwerowcami
+Location/HealthPickup @@ Zdrowie
+Location/HealthSpawner @@ Zrzut apteczek
+Location/HelixPickup @@ Helisa
+Location/Herd @@ Stado bawołów
+Location/Hideout @@ Blokada skoku
+Location/InherentUnlockPickup @@ Podstawowy as
+Location/InvulnerabilitySpawner @@ Zrzut nietykalności
+Location/IroncladAlly @@ Kontrakt z żelaźniakami
+Location/ItemPickup @@ Przedmiot
+Location/ItemPickup_2 @@ Lepszy przedmiot
+Location/ItemPickup_3 @@ Pierwszorzędny przedmiot
+Location/ItemShop @@ Sklep z przedmiotami
+Location/ItemThief @@ Złodziejaszek
+Location/Jail @@ Więzienie
+Location/Junction @@ Skrzyżowanie
+Location/KramPickup @@ Tabaka
+Location/LurePickup @@ Przynęta
+Location/MachineGunnerAlly @@ Kontrakt z korbiarzami
+Location/MarshalBase @@ Chaste i Synowie
+Location/NavPickup @@ Nadajnik
+Location/NitroPickup @@ Nitro
+Location/Node @@ Droga
+Location/OutlawPickup @@ Rozproszony banita
+Location/PatrolDestroy @@ Łowca nagród
+Location/PlaceableBarricade @@ Barykada
+Location/PlaceableLure @@ Przynęta
+Location/PlaceableTeleporter @@ Teleporter
+Location/PowerStation @@ Elektrownia
+Location/RageSpawner @@ Zrzut szału
+Location/Recharging @@ Ładowanie
+Location/ResourceShop @@ Lombard
+Location/RoadblockDestroy @@ Bombardowanie z orbity
+Location/RoadblockNoArmor @@ Żrące nanoboty
+Location/RoadblockOneHealth @@ Promień męki
+Location/RoadblockSubvert @@ Wiązka kontroli umysłu
+Location/ShardPickup @@ Asy
+Location/ShinePickup @@ Bimber
+Location/ShineSpawner @@ Zrzut bimbru
+Location/Shop @@ Sklep
+Location/Snowbank @@ Zaspa
+Location/StormSpawner @@ Generator burz
+Location/TelePickup @@ Teleporter
+Location/Teleporter @@ Teleporter
+Location/TurretAlly @@ Zrzut działek
+Location/UnlockedGuardPost @@ Opuszczona
+Location/Vault @@ Skarbiec
+Location/Well @@ Stacja benzynowa
+Location/Whirlpool @@ Zapadlisko
+Location/WolfAlly @@ Poskramiacz kojotów
+LocationShortDesc/AgentRelocator @@ Przenieś ruchomego wroga
+LocationShortDesc/ArmorSpawner @@ Połóż pancerz na blokadzie
+LocationShortDesc/Bank @@ Wpłać lub wypłać cramm
+LocationShortDesc/BastardPickup @@ Uratuj bękarta
+LocationShortDesc/BeanPickup @@ Godzi zwaśnionych
+LocationShortDesc/BearAlly @@ Postaw sojuszników przy blokadzie
+LocationShortDesc/Blacksmith @@ Zdobądź pancerz
+LocationShortDesc/BonusUnlockPickup @@ Wzmacnia po naładowaniu
+LocationShortDesc/ChitsPickup @@ Do wydania w sklepach
+LocationShortDesc/ChitsPickupFirstPlanet @@ Do wydania w sklepach
+LocationShortDesc/ChowHouse @@ Mniej Karzycieli na blokadach
+LocationShortDesc/DataVault @@ Zdobądź dane o wrogach
+LocationShortDesc/Den @@ Łup strzeżony przez 3 sfory
+LocationShortDesc/DisguisePickup @@ Przebranie do omijania wrogów
+LocationShortDesc/Doctor @@ Zdobądź zdrowie
+LocationShortDesc/ElixirPickup @@ Leczy rany
+LocationShortDesc/EnemyInfo @@ Zdobądź dane o wrogach
+LocationShortDesc/Exit @@ Wróć na Driftera
+LocationShortDesc/Exterminator @@ Zniszcz sforę
+LocationShortDesc/GlintPickup @@ Cenny łup
+LocationShortDesc/Guesthouse @@ Ruchy, zdrowie i pancerz
+LocationShortDesc/GunhandAlly @@ Postaw sojuszników przy blokadzie
+LocationShortDesc/GunhandAlly_2 @@ Postaw sojuszników przy blokadzie
+LocationShortDesc/HealthSpawner @@ Połóż zdrowie na blokadzie
+LocationShortDesc/HelixPickup @@ Szczątki banity
+LocationShortDesc/Herd @@ Wypuść szarżujące stado
+LocationShortDesc/Hideout @@ Zniszczona – Drifter może skoczyć
+LocationShortDesc/InherentUnlockPickup @@ Odblokuj wzmocnienie banity
+LocationShortDesc/InvulnerabilitySpawner @@ Połóż nietykalność na blokadzie
+LocationShortDesc/IroncladAlly @@ Postaw sojuszników przy blokadzie
+LocationShortDesc/ItemPickup @@ Wzmacnia banitę
+LocationShortDesc/ItemPickup_2 @@ Wzmacnia banitę
+LocationShortDesc/ItemPickup_3 @@ Wzmacnia banitę
+LocationShortDesc/ItemShop @@ Szeroki wybór przedmiotów
+LocationShortDesc/ItemThief @@ Kradnij z dowolnego miejsca na planecie
+LocationShortDesc/MachineGunnerAlly @@ Postaw sojuszników przy blokadzie
+LocationShortDesc/MarshalBase @@ Tu przybywają książęta
+LocationShortDesc/NavPickup @@ Do awaryjnego powrotu na statek
+LocationShortDesc/NitroPickup @@ Więcej ruchów
+LocationShortDesc/OutlawPickup @@ Odnajdź rozproszonego banitę
+LocationShortDesc/PatrolDestroy @@ Zniszcz ruchomych wrogów
+LocationShortDesc/PlaceableTeleporter @@ Przenieś się do innego teleportera
+LocationShortDesc/PowerStation @@ Wyłącz ochronę
+LocationShortDesc/RageSpawner @@ Połóż szał na blokadzie
+LocationShortDesc/ResourceShop @@ Zamień zasoby na niesławę
+LocationShortDesc/RoadblockDestroy @@ Zniszcz blokadę
+LocationShortDesc/RoadblockNoArmor @@ Zniszcz pancerz na blokadzie
+LocationShortDesc/RoadblockOneHealth @@ Zbij zdrowie na blokadzie
+LocationShortDesc/RoadblockSubvert @@ Przejmij wrogów na blokadzie
+LocationShortDesc/ShardPickup @@ Awansuj banitę
+LocationShortDesc/ShineSpawner @@ Połóż bimber na blokadzie
+LocationShortDesc/Snowbank @@ Kończy ruch
+LocationShortDesc/TelePickup @@ Zdobądź przenośny teleporter
+LocationShortDesc/Teleporter @@ Przenieś się do innego teleportera
+LocationShortDesc/TurretAlly @@ Postaw sojuszników przy blokadzie
+LocationShortDesc/Vault @@ Łup strzeżony przez obławę
+LocationShortDesc/Well @@ Nitro na więcej ruchów
+LocationShortDesc/Whirlpool @@ Wyjdź w losowym miejscu
+LocationShortDesc/WolfAlly @@ Postaw sojuszników przy blokadzie
+Map/Blacksmith @@ Kowal
+Map/Distillery @@ Gorzelnia
+Map/Jail @@ Więzienie
+Map/Well @@ Studnia
+Planet/Balance @@ Saldo
+Planet/DaysRemaining @@ Pozostałe dni
+Planet/Hideout @@ Blokada skoku
+Planet/Interact @@ Odwiedź
+Planet/InteractContract @@ Najmij
+Planet/InteractDen @@ Plądruj
+Planet/InteractDeposit @@ Wpłać
+Planet/InteractDrop @@ Zrzuć
+Planet/InteractEnter @@ Wejdź
+Planet/InteractExit @@ Wróć na statek
+Planet/InteractGet @@ Weź
+Planet/InteractHeal @@ Lecz
+Planet/InteractHunt @@ Poluj
+Planet/InteractPlace @@ Postaw
+Planet/InteractRelease @@ Uwolnij
+Planet/InteractSteal @@ Ukradnij
+Planet/InteractTeleport @@ Teleportuj
+Planet/InteractUse @@ Użyj
+PlanetDesc/Canyon @@ Strzeliste szczyty i rozległe widoki
+PlanetDesc/Desert @@ Surowe pustkowia pełne głazów
+PlanetDesc/Forest @@ Wysokie drzewa o gęstym listowiu
+PlanetDesc/Moon @@ Zamieszkane kopuły na pustkowiu bez powietrza
+PlanetDesc/Swamp @@ Kwaśne bagna i gęste trzciny
+PlanetDesc/Utopia @@ Wypielęgnowane ogrody i rezydencje
+PlanetSize/FirstPlanet @@ Rozmiar planety: 2x1
+PlanetSize/FiveXFive @@ Rozmiar planety: 5x5
+PlanetSize/FiveXFour @@ Rozmiar planety: 5x4
+PlanetSize/FiveXOne @@ Rozmiar planety: 5x1
+PlanetSize/FiveXTwo @@ Rozmiar planety: 5x2
+PlanetSize/FourXFour @@ Rozmiar planety: 4x4
+PlanetSize/FourXOne @@ Rozmiar planety: 4x1
+PlanetSize/FourXTwo @@ Rozmiar planety: 4x2
+PlanetSize/LargeBoss @@ Rozmiar planety: 3x2
+PlanetSize/Medium @@ Rozmiar planety: 3x3
+PlanetSize/MediumEasy @@ Rozmiar planety: 3x3
+PlanetSize/SevenXOne @@ Rozmiar planety: 7x1
+PlanetSize/SixXOne @@ Rozmiar planety: 6x1
+PlanetSize/Small @@ Rozmiar planety: 2x2
+PlanetSize/SmallEasy @@ Rozmiar planety: 2x2
+PlanetSize/ThreeXOne @@ Rozmiar planety: 3x1
+PlanetSize/ThreeXTwo @@ Rozmiar planety: 3x2
+PlanetSize/Tiny @@ Rozmiar planety: 3x1
+PlanetSize/TwoXOne @@ Rozmiar planety: 2x1
+Scene/Barren @@ Jałowizna
+Scene/C_Ridge @@ Grzbiet
+Scene/S_Bog @@ Trzęsawisko
+Scene/S_Cliffs @@ Klify
+Scene/S_Fen @@ Torfowisko
+Scene/S_Islands @@ Wyspy
+Scene/S_Marsh @@ Mokradła
+Scene/S_Reeds @@ Trzciny
+Scene/S_Stepped @@ Tarasy
+Scene/S_Swamp @@ Bagno
+Scene/S_Town @@ Miasto
+Scene/S_Town_U @@ Miasto
+Scene/S_Trees @@ Drzewa
+Scene/S_Tunnel @@ Tunel
+SectorName/Sector0 @@ Sektor Klęska
+SectorName/Sector1 @@ Sektor Szadrak
+SectorName/Sector10 @@ Sektor Behemot
+SectorName/Sector11 @@ Sektor Kadesz
+SectorName/Sector12 @@ Sektor Dereń
+SectorName/Sector13 @@ Sektor Pąk Róży
+SectorName/Sector14 @@ Sektor Magnolia
+SectorName/Sector15 @@ Sektor Jezabel
+SectorName/Sector16 @@ Sektor Gehenna
+SectorName/Sector17 @@ Sektor Szeol
+SectorName/Sector18 @@ Sektor Golgota
+SectorName/Sector2 @@ Sektor Lament
+SectorName/Sector3 @@ Sektor Czyściec
+SectorName/Sector4 @@ Sektor Jerycho
+SectorName/Sector5 @@ Sektor Kanaan
+SectorName/Sector6 @@ Sektor Ezechiel
+SectorName/Sector7 @@ Sektor Kain
+SectorName/Sector8 @@ Sektor Baal
+SectorName/Sector9 @@ Sektor Gomora
+Time/AM @@ rano
+Time/Day0 @@ pon.
+Time/Day1 @@ wt.
+Time/Day2 @@ śr.
+Time/Day3 @@ czw.
+Time/Day4 @@ pt.
+Time/Day5 @@ sob.
+Time/Day6 @@ niedz.
+Time/Days @@ Dni
+Time/Hours @@ Godziny
+Time/Minutes @@ min
+Time/PM @@ po poł.
+Time/Seconds @@ s

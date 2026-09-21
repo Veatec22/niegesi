@@ -1,0 +1,59 @@
+"""Batch helper for translating: show missing entries, put translations (key<TAB>text).
+
+python work/batch.py show <prefix> [limit]   -> prints missing entries with context
+python work/batch.py put <file.tsv>          -> merges translations into pl.json (\\n = newline)
+python work/batch.py stats
+"""
+import collections
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+REVIEW = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
+PL_PATH = ROOT / 'translations/pl.json'
+
+
+def load():
+    return json.loads(PL_PATH.read_text(encoding='utf-8'))
+
+
+def main():
+    cmd = sys.argv[1]
+    pl = load()
+    if cmd == 'stats':
+        missing = collections.Counter(r['key'].split('/')[0] for r in REVIEW if r['english'].strip() and r['key'] not in pl)
+        print(sum(missing.values()), missing.most_common())
+    elif cmd == 'show':
+        prefixes = tuple(sys.argv[2].split(','))
+        limit = int(sys.argv[3]) if len(sys.argv) > 3 else 10**6
+        n = 0
+        for r in REVIEW:
+            if r['key'].startswith(prefixes) and r['english'].strip() and r['key'] not in pl:
+                ctx = (' |ctx: ' + r['context'].replace('\n', ' ')) if r.get('context') else ''
+                print(r['key'] + '\t' + r['english'].replace('\n', '\\n') + ctx)
+                n += 1
+                if n >= limit:
+                    break
+    elif cmd == 'put':
+        english = {r['key']: r['english'] for r in REVIEW}
+        added = 0
+        for line in Path(sys.argv[2]).read_text(encoding='utf-8').splitlines():
+            if not line.strip():
+                continue
+            key, text = line.split('\t', 1) if '\t' in line else line.split(' @@ ', 1)
+            assert key in english, 'unknown key ' + key
+            # "\\n" in the file = literal backslash-n kept as text; "\n" = real newline.
+            text = text.replace('\\\\n', '\x00').replace('\\n', '\n').replace('\x00', '\\n')
+            assert english[key].count('\n') == text.count('\n'), ('newlines', key)
+            # mirror leading/trailing spaces of the original (the game glues numbers to them)
+            en = english[key]
+            text = en[:len(en) - len(en.lstrip(' '))] + text.strip(' ') + en[len(en.rstrip(' ')):]
+            pl[key] = text
+            added += 1
+        PL_PATH.write_text(json.dumps(pl, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print('added', added, 'total', len(pl))
+
+
+if __name__ == '__main__':
+    main()

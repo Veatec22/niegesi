@@ -1,0 +1,533 @@
+# Raport kontrolny — wild-bastards
+
+Tylko do przejrzenia. Zgłoszenie to miejsce do obejrzenia, nie wyrok.
+
+Wpisy z tekstem: 4426. Biblia: tak.
+
+| Sekcja | Zgłoszenia |
+| --- | ---: |
+| Brak tłumaczenia | 0 |
+| Tokeny i znaczniki | 0 |
+| Płeć mówiącego (według biblii) | 0 |
+| Forma zwracania się | 0 |
+| Terminy z biblii | 0 |
+| Spójność: ten sam oryginał, różne PL | 93 |
+| Angielskie resztki | 6 |
+| Liczebniki przy placeholderach | 10 |
+| Długość (ryzyko ucięcia) | 50 |
+| Wielkie litery | 10 |
+| Typografia | 9 |
+
+## Spójność: ten sam oryginał, różne PL (93)
+
+- `AI/Unknown` — 2 warianty dla tego samego EN
+  - EN: Unknown
+  - PL: Nieznany
+- `Behavior/Missing` — 2 warianty dla tego samego EN
+  - EN: Unknown
+  - PL: Nieznane
+- `AIDescItem/AI Bear 2` — 2 warianty dla tego samego EN
+  - EN: Tough
+  - PL: Twardy
+- `TalentName/GENERIC_TOUGH` — 2 warianty dla tego samego EN
+  - EN: Tough
+  - PL: Twardość
+- `AIDescItem/AI Gunhand L3 1` — 2 warianty dla tego samego EN
+  - EN: Armored
+  - PL: Opancerzony
+- `AIDescItem/AI MachineGunner L2 2` — 2 warianty dla tego samego EN
+  - EN: Armored
+  - PL: Opancerzony
+- `AIDescItem/AI Marshal L2 1` — 2 warianty dla tego samego EN
+  - EN: Armored
+  - PL: Opancerzona
+- `AIDescItem/AI Scorpion L2 2` — 2 warianty dla tego samego EN
+  - EN: Armored
+  - PL: Opancerzony
+- `AIDescItem/AI Turret L3 1` — 2 warianty dla tego samego EN
+  - EN: Armored
+  - PL: Opancerzona
+- `AIDescItem/AI Wolf L3 1` — 2 warianty dla tego samego EN
+  - EN: Armored
+  - PL: Opancerzony
+- `Ach/ACH_DRIFTER_DESC` — 3 warianty dla tego samego EN
+  - EN: Beam up to the Drifter
+  - PL: Przenieś się na Driftera
+- `LocationShortDesc/Exit` — 3 warianty dla tego samego EN
+  - EN: Beam up to the Drifter
+  - PL: Wróć na Driftera
+- `UIPM/BeamUpScreenTitle` — 3 warianty dla tego samego EN
+  - EN: Beam Up to the Drifter
+  - PL: Powrót na Driftera
+- `Ach/ACH_DRIFTER_NAME` — 2 warianty dla tego samego EN
+  - EN: Rescued
+  - PL: Uratowani
+- `EventTitle/AllGoldCollectedTutorial` — 2 warianty dla tego samego EN
+  - EN: Rescued
+  - PL: Uratowani
+- `UIMG/NotificationOutlawRecovered` — 2 warianty dla tego samego EN
+  - EN: Rescued
+  - PL: Uratowany
+- `DamageType/Fire` — 2 warianty dla tego samego EN
+  - EN: Fire
+  - PL: Ogień
+- `Options/Fire` — 2 warianty dla tego samego EN
+  - EN: Fire
+  - PL: Strzał
+- `DamageType/Storm` — 2 warianty dla tego samego EN
+  - EN: Storm
+  - PL: Burza
+- `Introduction/Storm` — 2 warianty dla tego samego EN
+  - EN: Storm
+  - PL: Burza
+- `State/Storms` — 2 warianty dla tego samego EN
+  - EN: Storm
+  - PL: Burze
+- `EventTitle/PatrolSurrenders` — 2 warianty dla tego samego EN
+  - EN: Surrender
+  - PL: Kapitulacja
+- `HUD/Surrender` — 2 warianty dla tego samego EN
+  - EN: Surrender
+  - PL: Poddaj się
+- `UIPM/Injured` — 3 warianty dla tego samego EN
+  - EN: Injured
+  - PL: Rany
+- `InteractionAltButton/ChowHouse` — 2 warianty dla tego samego EN
+  - EN: Cook
+  - PL: Gotuj
+- `TalentName/SMOKY_COOK` — 2 warianty dla tego samego EN
+  - EN: Cook
+  - PL: Kucharz
+- `InteractionTitle/Forage` — 3 warianty dla tego samego EN
+  - EN: Forage
+  - PL: Szukanie zapasów
+- `SME/MixRawhideAButton` — 3 warianty dla tego samego EN
+  - EN: Forage
+  - PL: Zbieraj
+- `SME/MixRawhideBButton` — 3 warianty dla tego samego EN
+  - EN: Forage
+  - PL: Zbieraj
+- `UIPM/Forage` — 3 warianty dla tego samego EN
+  - EN: Forage
+  - PL: Szukaj zapasów
+- `Introduction/Rift` — 2 warianty dla tego samego EN
+  - EN: Backdoor
+  - PL: Furtka
+- `State/Rifts` — 2 warianty dla tego samego EN
+  - EN: Backdoor
+  - PL: Furtki
+- `ItemName/RIFT_TWEAKER` — 2 warianty dla tego samego EN
+  - EN: Backdoor Tweaker
+  - PL: Przestrajacz furtek
+- `TalentName/FLETCH_RIFT_TWEAKER` — 2 warianty dla tego samego EN
+  - EN: Backdoor Tweaker
+  - PL: Przestrojenie furtek
+- `Location/Casino` — 2 warianty dla tego samego EN
+  - EN: Casino
+  - PL: Kasyno
+- `Outlaw/Gambler` — 2 warianty dla tego samego EN
+  - EN: Casino
+  - PL: Casino
+- `SME/MixGamblerBTitle` — 2 warianty dla tego samego EN
+  - EN: Casino
+  - PL: Casino
+- `Location/ItemPickup_2` — 2 warianty dla tego samego EN
+  - EN: Superior Mod
+  - PL: Lepszy przedmiot
+- `TalentRank/1` — 2 warianty dla tego samego EN
+  - EN: Superior Mod
+  - PL: Lepszy
+- `Location/ItemPickup_3` — 2 warianty dla tego samego EN
+  - EN: First Rate Mod
+  - PL: Pierwszorzędny przedmiot
+- `TalentRank/2` — 2 warianty dla tego samego EN
+  - EN: First Rate Mod
+  - PL: Pierwszorzędny
+- `LocationShortDesc/Blacksmith` — 2 warianty dla tego samego EN
+  - EN: Get armor
+  - PL: Zdobądź pancerz
+- `UIPM/ArmorBuy` — 2 warianty dla tego samego EN
+  - EN: Get Armor
+  - PL: Kup pancerz
+- `Name/Preach` — 2 warianty dla tego samego EN
+  - EN: Preach
+  - PL: Kaznodzieja
+- `Outlaw/Preach` — 2 warianty dla tego samego EN
+  - EN: Preach
+  - PL: Kaznodzieja
+- `SME/MixPreachBButton` — 2 warianty dla tego samego EN
+  - EN: Preach
+  - PL: Wygłoś kazanie
+- `SME/MixPreachBTitle` — 2 warianty dla tego samego EN
+  - EN: Preach
+  - PL: Kaznodzieja
+- `Name/Rawhide` — 2 warianty dla tego samego EN
+  - EN: Rawhide
+  - PL: Rawhide
+- `Outlaw/Rawhide` — 2 warianty dla tego samego EN
+  - EN: Rawhide
+  - PL: Rawhide
+- `SME/MixRawhideBTitle` — 2 warianty dla tego samego EN
+  - EN: Rawhide
+  - PL: Rawhide
+- `TalentName/HOPALONG_RAWHIDE` — 2 warianty dla tego samego EN
+  - EN: Rawhide
+  - PL: Surowa skóra
+- `WeaponAccuracy/MachineGunner` — 2 warianty dla tego samego EN
+  - EN: High
+  - PL: Wysoka
+- `WeaponAccuracy/Marksman` — 2 warianty dla tego samego EN
+  - EN: High
+  - PL: Wysoka
+- `WeaponAccuracy/Porcupine` — 2 warianty dla tego samego EN
+  - EN: High
+  - PL: Wysoka
+- `WeaponAccuracy/Rawhide` — 2 warianty dla tego samego EN
+  - EN: High
+  - PL: Wysoka
+- `WeaponAccuracy/Robot` — 2 warianty dla tego samego EN
+  - EN: High
+  - PL: Wysoka
+- `WeaponAccuracy/Sarge` — 2 warianty dla tego samego EN
+  - EN: High
+  - PL: Wysoka
+- `WeaponAccuracy/Snake` — 2 warianty dla tego samego EN
+  - EN: High
+  - PL: Wysoka
+- `WeaponAccuracy/Spike` — 2 warianty dla tego samego EN
+  - EN: High
+  - PL: Wysoka
+- `Options/Reload` — 2 warianty dla tego samego EN
+  - EN: Reload
+  - PL: Przeładuj
+- `UIPM/Reload` — 2 warianty dla tego samego EN
+  - EN: Reload
+  - PL: Przeładowanie
+- `Planet/InteractDen` — 2 warianty dla tego samego EN
+  - EN: Loot
+  - PL: Plądruj
+- `UIMG/Loot` — 2 warianty dla tego samego EN
+  - EN: Loot
+  - PL: Łup
+- `UIMG/PrimaryLoot` — 2 warianty dla tego samego EN
+  - EN: Loot
+  - PL: Łup
+- `SME/MixAstronautBButton` — 3 warianty dla tego samego EN
+  - EN: Trade
+  - PL: Wymień
+- `SME/MixPreachAButton` — 3 warianty dla tego samego EN
+  - EN: Trade
+  - PL: Handluj
+- `SME/MixPreachATitle` — 3 warianty dla tego samego EN
+  - EN: Trade
+  - PL: Handel
+- `SME/MixSargeAButton` — 3 warianty dla tego samego EN
+  - EN: Trade
+  - PL: Wymień
+- `SME/MixSargeATitle` — 3 warianty dla tego samego EN
+  - EN: Trade
+  - PL: Handel
+- `SME/MixBillyAButton` — 2 warianty dla tego samego EN
+  - EN: Draw
+  - PL: Wyciągaj
+- `SME/MixBillyBButton` — 2 warianty dla tego samego EN
+  - EN: Draw
+  - PL: Wyciągaj
+- `UIPM/Draw` — 2 warianty dla tego samego EN
+  - EN: Draw
+  - PL: Dobierz
+- `TalentName/BILLY_DEADLY` — 2 warianty dla tego samego EN
+  - EN: Deadly
+  - PL: Zabójczość
+- `TalentName/FLETCH_DEADLY` — 2 warianty dla tego samego EN
+  - EN: Deadly
+  - PL: Zabójczość
+- `TalentName/GENERIC_DEADLY` — 2 warianty dla tego samego EN
+  - EN: Deadly
+  - PL: Zabójczość
+- `TalentName/HOPALONG_DEADLY` — 2 warianty dla tego samego EN
+  - EN: Deadly
+  - PL: Zabójczość
+- `TalentName/JUDGE_DEADLY` — 2 warianty dla tego samego EN
+  - EN: Deadly
+  - PL: Zabójczość
+- `TalentName/KABOOM_DEADLY` — 2 warianty dla tego samego EN
+  - EN: Deadly
+  - PL: Zabójczość
+- `TalentName/LAIKA_DEADLY` — 2 warianty dla tego samego EN
+  - EN: Deadly
+  - PL: Zabójczość
+- `TalentName/LEGS_DEADLY` — 2 warianty dla tego samego EN
+  - EN: Deadly
+  - PL: Zabójczość
+- … i 13 więcej
+
+## Angielskie resztki (6)
+
+- `AI/AI Bear` — identyczne z oryginałem
+  - EN: Grizzly
+  - PL: Grizzly
+- `Name/Casino` — identyczne z oryginałem
+  - EN: Doc Casino
+  - PL: Doc Casino
+- `StuntName/Legs` — identyczne z oryginałem
+  - EN: Flirt
+  - PL: Flirt
+- `WeaponName/MamaPanic` — identyczne z oryginałem
+  - EN: Las Calaveras .45
+  - PL: Las Calaveras .45
+- `WeaponName/Pistol` — identyczne z oryginałem
+  - EN: Calavera Uno
+  - PL: Calavera Uno
+- `WeaponName/PistolLeft` — identyczne z oryginałem
+  - EN: Calavera Dos
+  - PL: Calavera Dos
+
+## Liczebniki przy placeholderach (10)
+
+- `SME/MissionA1` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Send: {0} for {1} jumps.
+  - PL: Wyślij: {0}. Liczba skoków: {1}.
+- `SME/MissionA2` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Send: {0} and {1} for {2} jumps.
+  - PL: Wyślij: {0} i {1}. Liczba skoków: {2}.
+- `SME/MissionA3` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Send: {0}, {1} and {2} for {3} jumps.
+  - PL: Wyślij: {0}, {1} i {2}. Liczba skoków: {3}.
+- `SME/MixAstronautB` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Trade Beans for Tonics. Beans: -{0} Tonics: +{1} 
+  - PL: Wymień fasolę na toniki. Fasola: -{0} Toniki: +{1} 
+- `SME/MixHopalongB` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Send Hopalong. Hopalong Fatigue: +{0} Beans +{1}
+  - PL: Wyślij Hopalonga. Zmęczenie Hopalonga: +{0}. Fasola +{1}
+- `SME/MixMistMinerB` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Use stealth and dynamite. Kaboom Tired: +{0} Beacons: +{1}
+  - PL: Po cichu i z dynamitem. Zmęczenie Kabooma: +{0}. Nadajniki: +{1}
+- `SME/MixPreachB` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Send Preach to calm their souls with a sermon. Preach Tired +{0} Beans +{1}
+  - PL: Wyślij Kaznodzieję, żeby kazaniem ukoiła ich dusze. Zmęczenie Kaznodziei +{0}. Fasola +{1}
+- `TalentDesc/CUFFS_BADGED` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Next {[TALENT:CUFFS_BADGED]} patrols or posses surrender
+  - PL: Następne patrole lub obławy, które się poddadzą: {[TALENT:CUFFS_BADGED]}
+- `TalentDesc/CUFFS_POISON_SPORES` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Rifter Poison: {[TALENT:CUFFS_POISON_SPORES]} seconds
+  - PL: Trucizna Szczelinatora, sekundy: {[TALENT:CUFFS_POISON_SPORES]}
+- `TalentDesc/CUFFS_STUNNING_TURRETS` — liczba w placeholderze — sprawdź 1 / 2–4 / 5+
+  - EN: Cuff's turrets stun: {[TALENT:CUFFS_STUNNING_TURRETS]} seconds
+  - PL: Działka Cuffs ogłuszają, sekundy: {[TALENT:CUFFS_STUNNING_TURRETS]}
+
+## Długość (ryzyko ucięcia) (50)
+
+- `Ach/ACH_HEADSHOT_KILLS_NAME` — UI 32 zn. vs 19 w EN
+  - EN: Justice Established
+  - PL: Sprawiedliwości stało się zadość
+- `Ach/ACH_MODS_DESC` — UI 27 zn. vs 16 w EN
+  - EN: Collect all mods
+  - PL: Zbierz wszystkie przedmioty
+- `Dialog/Bastard3Recovered_1` — napis 80 zn. vs 54 w EN
+  - EN: Turns out <color=#AB82FD>we did need ‘em all</color>. 
+  - PL: Wychodzi na to, że <color=#AB82FD>jednak potrzebowaliśmy ich wszystkich</color>.
+- `Dialog/Frontier2_9` — napis 74 zn. vs 49 w EN
+  - EN: Yeah, I'm… yeah. I just had an idea i don't like.
+  - PL: Tak, ja… tak. Po prostu wpadł mi do głowy pomysł, który mi się nie podoba.
+- `Dialog/GamblerJailPals_1` — napis 75 zn. vs 52 w EN
+  - EN: Mighty Kind of you to bust me outta that pen friend.
+  - PL: Bardzo to miłe z twojej strony, przyjacielu – wyciągnąć mnie z tej zagrody.
+- `Dialog/PreachMistMinerArg_1` — napis 81 zn. vs 56 w EN
+  - EN: Anyone else think that last planet smelled kinda skunky?
+  - PL: Czy ktoś jeszcze uważa, że na tej ostatniej planecie trochę śmierdziało skunksem?
+- `Dialog/RosaRespArg_2` — napis 101 zn. vs 73 w EN
+  - EN: I would be more strategic with my tone. And when I say "I," I mean "you".
+  - PL: Na twoim miejscu byłabym bardziej strategiczna w doborze tonu. A kiedy mówię „ja”, mam na myśli „ty”.
+- `Dialog/RoswellRespArg_1` — napis 68 zn. vs 46 w EN
+  - EN: I hope that means we'll never speak again...? 
+  - PL: Mam nadzieję, że to znaczy, że już nigdy nie będziemy rozmawiać...? 
+- `Hint/Reload` — UI 29 zn. vs 18 w EN
+  - EN: Press R to reload.
+  - PL: Naciśnij R, żeby przeładować.
+- `InteractionAltTitle/DataVault` — UI 26 zn. vs 15 w EN
+  - EN: Data Vault Hack
+  - PL: Włamanie do skarbca danych
+- `InteractionDescription/BunchSwapper` — UI 24 zn. vs 13 w EN
+  - EN: Swaps Bunches
+  - PL: Zamienia grupy miejscami
+- `InteractionDescription/ItemPickup` — UI 23 zn. vs 12 w EN
+  - EN: Mods found: 
+  - PL: Znalezione przedmioty: 
+- `InteractionTitle/ItemPickup` — UI 20 zn. vs 9 w EN
+  - EN: Mod Found
+  - PL: Znaleziono przedmiot
+- `ItemDescription/GUNHAND_2_ALLY` — UI 36 zn. vs 20 w EN
+  - EN: Trained Gunhand Ally
+  - PL: Sojuszniczy wyszkolony rewolwerowiec
+- `ItemDescription/GUNHAND_3_ALLY` — UI 36 zn. vs 20 w EN
+  - EN: Veteran Gunhand Ally
+  - PL: Sojuszniczy zaprawiony rewolwerowiec
+- `ItemDescription/GUNHAND_ALLY` — UI 25 zn. vs 12 w EN
+  - EN: Gunhand Ally
+  - PL: Sojuszniczy rewolwerowiec
+- `LocDesc/ItemShop` — UI 29 zn. vs 17 w EN
+  - EN: Buy and Sell Mods
+  - PL: Kupuj i sprzedawaj przedmioty
+- `Options/AimAssist` — UI 21 zn. vs 10 w EN
+  - EN: Aim Assist
+  - PL: Wspomaganie celowania
+- `Options/LookDeadzone` — UI 25 zn. vs 13 w EN
+  - EN: Look deadzone
+  - PL: Martwa strefa rozglądania
+- `Options/PushAnyKeyOrEsc` — UI 47 zn. vs 29 w EN
+  - EN: Push Any Key or Esc to Cancel
+  - PL: Naciśnij dowolny klawisz albo Esc, aby anulować
+- `Options/Toggle Aim` — UI 21 zn. vs 10 w EN
+  - EN: Toggle Aim
+  - PL: Przełączane celowanie
+- `Options/ToggleAimDesc` — UI 45 zn. vs 24 w EN
+  - EN: Aim input toggles aiming
+  - PL: Przycisk celowania włącza i wyłącza celowanie
+- `Options/Vsync` — UI 22 zn. vs 5 w EN
+  - EN: Vsync
+  - PL: Synchronizacja pionowa
+- `OutlawExpertise/Cuffs` — UI 42 zn. vs 25 w EN
+  - EN: Spacetime Shifting Lawman
+  - PL: Stróżka prawa przesuwająca czasoprzestrzeń
+- `OutlawFlavour/Judge` — UI 29 zn. vs 16 w EN
+  - EN: Justice Unit 939
+  - PL: Jednostka Sprawiedliwości 939
+- `OutlawWanted/Hopalong` — UI 32 zn. vs 19 w EN
+  - EN: Jaywalking⏎Rustling
+  - PL: Łażenie po jezdni⏎Kradzież bydła
+- `OutlawWanted/Smoky` — UI 31 zn. vs 17 w EN
+  - EN: Paletticide⏎Arson
+  - PL: Podniebienniobójstwo⏎Podpalenie
+- `SME/NegItemsATitle` — UI 21 zn. vs 10 w EN
+  - EN: Mod damage
+  - PL: Uszkodzone przedmioty
+- `SME/PosRandomA` — UI 24 zn. vs 13 w EN
+  - EN: Collect Stash
+  - PL: Zbierz zawartość skrytki
+- `TalentDesc/DOC_BARTERER` — UI 34 zn. vs 21 w EN
+  - EN: Item Sale Return: <d>
+  - PL: Zysk ze sprzedaży przedmiotów: <d>
+- `TalentDesc/DOC_LUCKY_BOUNCE` — UI 27 zn. vs 15 w EN
+  - EN: Armor Save: <p>
+  - PL: Pancerz się nie zużywa: <p>
+- `TalentDesc/FLETCH_ITEM_FLUCTUATION` — UI 47 zn. vs 23 w EN
+  - EN: Reroll Mod Pickups: <d>
+  - PL: Ponowne losowanie znalezionych przedmiotów: <d>
+- `TalentDesc/JUDGE_EXECUTIONER` — UI 35 zn. vs 19 w EN
+  - EN: Fast Reload on Kill
+  - PL: Szybkie przeładowanie po zabójstwie
+- `TalentDesc/JUDGE_SNAPSHOT` — UI 32 zn. vs 19 w EN
+  - EN: Fast Reload on Crit
+  - PL: Szybkie przeładowanie po krytyku
+- `TalentDesc/JUDGE_SNIPER` — UI 44 zn. vs 27 w EN
+  - EN: Instant Reload on Crit: <p>
+  - PL: Natychmiastowe przeładowanie po krytyku: <p>
+- `TalentDesc/KABOOM_SILENT` — UI 25 zn. vs 14 w EN
+  - EN: Moves Silently
+  - PL: Porusza się bezszelestnie
+- `TalentDesc/RADIUM_PREPARED` — UI 36 zn. vs 21 w EN
+  - EN: Found Item Level: <d>
+  - PL: Poziom znalezionych przedmiotów: <d>
+- `TalentDesc/RADIUM_SCROUNGER` — UI 36 zn. vs 22 w EN
+  - EN: Extra Found Items: <d>
+  - PL: Dodatkowe znalezione przedmioty: <d>
+- `TalentDesc/SMOKY_CHOW_BELL` — UI 25 zn. vs 12 w EN
+  - EN: Gunhand Ally
+  - PL: Sojuszniczy rewolwerowiec
+- `TalentDesc/SMOKY_CHOW_BELL_TRAINED` — UI 36 zn. vs 20 w EN
+  - EN: Trained Gunhand Ally
+  - PL: Sojuszniczy wyszkolony rewolwerowiec
+- `TalentDesc/SMOKY_CHOW_BELL_VETERAN` — UI 36 zn. vs 20 w EN
+  - EN: Veteran Gunhand Ally
+  - PL: Sojuszniczy zaprawiony rewolwerowiec
+- `TraitDesc/GoodItems` — UI 29 zn. vs 18 w EN
+  - EN: Better Mod Pickups
+  - PL: Lepsze przedmioty do zebrania
+- `TraitDesc/Unalert` — UI 51 zn. vs 29 w EN
+  - EN: No Guards for First Jailbreak
+  - PL: Brak strażników przy pierwszej ucieczce z więzienia
+- `UIEM/AddBonusAceInstructions` — UI 31 zn. vs 19 w EN
+  - EN: Get new charged ace
+  - PL: Zdobądź nowego naładowanego asa
+- `UIEM/AddInherentInstructions` — UI 31 zn. vs 16 w EN
+  - EN: Get New Core Ace
+  - PL: Zdobądź nowego podstawowego asa
+- `UIMG/EmptyGear` — UI 28 zn. vs 15 w EN
+  - EN: Empty gear slot
+  - PL: Puste miejsce na wyposażenie
+- `UIMG/RightClickDescription` — UI 51 zn. vs 29 w EN
+  - EN: Right click an Outlaw to view
+  - PL: Kliknij banitę prawym przyciskiem, żeby go obejrzeć
+- `UIPM/NoItem` — UI 26 zn. vs 14 w EN
+  - EN: Empty Mod Slot
+  - PL: Puste miejsce na przedmiot
+- `UIPM/NoItems` — UI 30 zn. vs 18 w EN
+  - EN: No Unequipped Mods
+  - PL: Brak niezałożonych przedmiotów
+- `UIPM/NoMods` — UI 27 zn. vs 13 w EN
+  - EN: No Spare Mods
+  - PL: Brak zapasowych przedmiotów
+
+## Wielkie litery (10)
+
+- `Dialog/RawhideRespArg_1` — Title Case przeniesiony z angielskiego?
+  - EN: We do not like the Scrubly, Unskilly Dumb One. 
+  - PL: Nie lubimy Tego Cieniasnego, Nieumiejętnego Głupka. 
+- `Mission/Preach0` — Title Case przeniesiony z angielskiego?
+  - EN: Make a pilgrimage to Our Lady of Black Powder monastery.
+  - PL: Pielgrzymka do klasztoru Matki Boskiej Czarnoprochowej.
+- `Mission/Preach2` — Title Case przeniesiony z angielskiego?
+  - EN: Make a donation to the Precious Souls orphange.
+  - PL: Datek na sierociniec Drogocennych Dusz.
+- `Mission/Spike1` — Title Case przeniesiony z angielskiego?
+  - EN: Detox at the Lonely Rider Halfway House.
+  - PL: Odwyk w ośrodku Samotny Jeździec.
+- `OutlawFlavour/Billy` — Title Case przeniesiony z angielskiego?
+  - EN: AKA William Boswick
+  - PL: Alias William Boswick
+- `OutlawFlavour/Gambler` — Title Case przeniesiony z angielskiego?
+  - EN: AKA Finance Unit 7103
+  - PL: Alias Jednostka Finansowa 7103
+- `OutlawFlavour/MistMiner` — Title Case przeniesiony z angielskiego?
+  - EN: AKA Huyon Li
+  - PL: Alias Huyon Li
+- `OutlawFlavour/Rawhide` — Title Case przeniesiony z angielskiego?
+  - EN: Animal Control Unit 3990
+  - PL: Jednostka Kontroli Zwierząt 3990
+- `OutlawFlavour/Smoky` — Title Case przeniesiony z angielskiego?
+  - EN: AKA Algernon Johnson
+  - PL: Alias Algernon Johnson
+- `OutlawFlavour/Spike` — Title Case przeniesiony z angielskiego?
+  - EN: AKA Randy Argot
+  - PL: Alias Randy Argot
+
+## Typografia (9)
+
+- `Hint/CrouchGamepad` — proste cudzysłowy zamiast „”
+  - EN: Press <sprite name="buttonEast"> to crouch.
+  - PL: Naciśnij <sprite name="buttonEast">, żeby kucnąć.
+- `Hint/CtrlGamepad` — proste cudzysłowy zamiast „”
+  - EN: Use <sprite name="rightShoulder"> and <sprite name="leftShoulder"> to cycle outlaw bunches.
+  - PL: Przełączaj grupy banitów przyciskami <sprite name="rightShoulder"> i <sprite name="leftShoulder">.
+- `Hint/RMBGamepad` — proste cudzysłowy zamiast „”
+  - EN: Hold <sprite name="leftTrigger"> to aim, increasing accuracy.
+  - PL: Przytrzymaj <sprite name="leftTrigger">, żeby celować i strzelać celniej.
+- `Hint/ReloadGamepad` — proste cudzysłowy zamiast „”
+  - EN: Press <sprite name="buttonWest"> to reload.
+  - PL: Naciśnij <sprite name="buttonWest">, żeby przeładować.
+- `Hint/SpiderStuntGamepad` — proste cudzysłowy zamiast „”
+  - EN: Press <sprite name="rightShoulder"> to have Spider Rosa throw a decoy.
+  - PL: Naciśnij <sprite name="rightShoulder">, żeby Pajęcza Rosa rzuciła wabik.
+- `Hint/SprintGamepad` — proste cudzysłowy zamiast „”
+  - EN: Hold <sprite name="leftStickPress"> to sprint. Sprinting alerts nearby enemies.
+  - PL: Przytrzymaj <sprite name="leftStickPress">, żeby biec. Sprint alarmuje pobliskich wrogów.
+- `UIMG/HideToolTips` — proste cudzysłowy zamiast „”
+  - EN: <sprite name="select">Hide Tool Tips
+  - PL: <sprite name="select">Ukryj podpowiedzi
+- `UIMG/ShowToolTips` — proste cudzysłowy zamiast „”
+  - EN: <sprite name="select">Show Tool Tips
+  - PL: <sprite name="select">Pokaż podpowiedzi
+- `UIPM/GamepadDisconnected` — proste cudzysłowy zamiast „”
+  - EN: Controller Disconnected ⏎<sprite name="buttonSouth">
+  - PL: Kontroler odłączony ⏎<sprite name="buttonSouth">

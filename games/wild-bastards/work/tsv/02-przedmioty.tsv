@@ -1,0 +1,374 @@
+ItemDescription/AERODYNAMIC_ROUNDS @@ Obrażenia: <d>, rozrzut: <p2>
+ItemDescription/ALLOY_HORSESHOES @@ Zasięg ruchu na planecie: <d>
+ItemDescription/ALL_BARRELS_EXPLODE @@ Obrażenia: <d>, zniszczone beczki zawsze wybuchają.
+ItemDescription/ALL_PALS @@ Wszyscy banici są kumplami tego banity
+ItemDescription/AMYGDALA_BOMB @@ Wrogowie uciekają w następnym starciu na blokadzie
+ItemDescription/ARMOR_SCANNER @@ Pancerz po zabójstwie: <p>
+ItemDescription/ARMOR_SCANNER_2 @@ Pancerz po zabójstwie: <p>
+ItemDescription/ARMOR_SCANNER_3 @@ Pancerz po zabójstwie: <p>
+ItemDescription/ASSISTANCE_DRONE @@ Pancerz: <d>, zdrowie: <d2>, obrażenia: <d3>
+ItemDescription/AUTO_ARMOR @@ Po starciu odnawia pancerz: <d>
+ItemDescription/AUTO_HEAL @@ Po starciu leczy: <d>
+ItemDescription/BARE_CHEST @@ Pancerz: <d>, zdrowie: <d2>
+ItemDescription/BARREL_LOOT @@ Z beczek wypada bimber, szał albo nietykalność: <p>
+ItemDescription/BEARSKIN_GLOVES @@ Obrażenia: <d>
+ItemDescription/BEAR_2_ALLY @@ Sojusznicze drażliwe grizzly: <d>, u Rawhide'a: <d2>
+ItemDescription/BEAR_ALLY @@ Sojusznicze grizzly: <d>, u Rawhide'a: <d2>
+ItemDescription/BETTER_JETPACK @@ Pozwala latać, odporność na obrażenia w powietrzu: <p>
+ItemDescription/BLAST_DEFLECTOR @@ Odporność na ogień: <p>, u Smoky'ego amunicja: <d2>
+ItemDescription/BLAST_PONCHO @@ Odporność na ogień: <p>, u Smoky'ego amunicja: <d2>
+ItemDescription/BULKY_BREASTPLATE @@ Pancerz: <d>, obrażenia: <d2>
+ItemDescription/BURNING_ROUNDS @@ Obrażenia od ognia: <d2>
+ItemDescription/CASINO_RESIST @@ Odporność na obrażenia: <p>
+ItemDescription/CHOW @@ Leczy: <d>
+ItemDescription/COMPASS_ENHANCER @@ Obrażenia: <d>, najbliższy wróg zaznaczony na kompasie.
+ItemDescription/COYOTESKIN_GLOVES @@ Obrażenia: <d>
+ItemDescription/CRAFTED_IRON_SIGHTS @@ Rozrzut: <p>
+ItemDescription/CRITTER_HUNTER @@ Obrażenia: <d>, obrażenia zwierzętom: <p2>
+ItemDescription/CRIT_ROUNDS @@ Krytyk: <p>, poza Sierżantem przeładowanie: <p2>
+ItemDescription/CRIT_ROUNDS_2 @@ Krytyk: <p>, poza Sierżantem przeładowanie: <p2>
+ItemDescription/CRIT_ROUNDS_3 @@ Krytyk: <p>, poza Sierżantem przeładowanie: <p2>
+ItemDescription/DEADLY_AMULET @@ Nietykalność po zabójstwie, sekundy: <d>
+ItemDescription/DEADLY_TALISMAN @@ Nietykalność po zabójstwie, sekundy: <d>
+ItemDescription/DIAMOND @@ Bezużyteczny. Do sprzedania za <d>
+ItemDescription/EMERALD @@ Bezużyteczny. Do sprzedania za: <d>
+ItemDescription/EM_CLOAK @@ Zasięg wykrycia przez ochronę: <p>
+ItemDescription/ENRAGING_ROUNDS @@ Szansa na rozwścieczenie trafionego wroga: <p>, sekundy: <d2>
+ItemDescription/EVERYTHING @@ Pancerz: <d3>, zdrowie: <d2>, obrażenia: <d>, amunicja: <d4>
+ItemDescription/EXPLODING_BARREL_STUN @@ Wybuchające beczki ogłuszają pobliskich wrogów
+ItemDescription/EXPLOSIVE_AMMO @@ Pociski wybuchają, obrażenia: <d2>
+ItemDescription/EXTRA_BULLETS @@ Seria: <d>
+ItemDescription/FLASK_OF_KRAM @@ Od razu daje losowe asy: <d>
+ItemDescription/FULL_HEAL @@ Po starciu leczy w pełni. Poza Kaznodzieją zdrowie: <d>
+ItemDescription/GOLD_PONCHO @@ Odporność na dźwięk: <p>, pancerz: <d2>
+ItemDescription/GREEN_PONCHO @@ Odporność na protony: <p>, pancerz: <d2>
+ItemDescription/GUARD_HUNTER @@ Obrażenia: <d>, obrażenia strażnikom: <p2>
+ItemDescription/GUNHAND_2_ALLY @@ Sojuszniczy wyszkolony rewolwerowiec
+ItemDescription/GUNHAND_3_ALLY @@ Sojuszniczy zaprawiony rewolwerowiec
+ItemDescription/GUNHAND_ALLY @@ Sojuszniczy rewolwerowiec
+ItemDescription/HEALING_ROUNDS @@ Zadane obrażenia leczą: <p>, u Fletch przebijają pancerz
+ItemDescription/HEALTH_AND_ARMOR @@ Zdrowie: <d>, pancerz: <d2>, poza Sędzią szybkość: <d3>
+ItemDescription/HEALTH_NO_ARMOR @@ Zdrowie: <d2>, poza Kaboomem pancerz: <n>
+ItemDescription/HEALTH_SCANNER @@ Apteczka po zabójstwie: <p>
+ItemDescription/HEALTH_SCANNER_2 @@ Apteczka po zabójstwie: <p>
+ItemDescription/HEALTH_SCANNER_3 @@ Apteczka po zabójstwie: <p>
+ItemDescription/HEFTY_MAGAZINE @@ Amunicja: <d>
+ItemDescription/HELPFUL_DRONE @@ Pancerz: <d>, zdrowie: <d2>, obrażenia: <d3>
+ItemDescription/IMPLANT_SUIT @@ Pancerz: <n>, poza Roswellem zdrowie: <n2>
+ItemDescription/INFAMY_DOUBLER @@ Niesława: <p>, poza Billym obrażenia: <d2>
+ItemDescription/INVULNERABILITY_SCANNER @@ Nietykalność po zabójstwie: <p>
+ItemDescription/IRONCLAD_2_ALLY @@ Sojuszniczy rakietowy żelaźniak
+ItemDescription/IRONCLAD_ALLY @@ Sojuszniczy żelaźniak
+ItemDescription/IRONCLAD_SHINE_SCANNER @@ Bimber po zabiciu żelaźniaka: <p>
+ItemDescription/IRON_SIGHTS @@ Rozrzut: <p>
+ItemDescription/IRRADIATED_ROUNDS @@ Obrażenia od promieniowania: <d2>
+ItemDescription/JACKHAMMER @@ Po schwytaniu sam uciekasz z więzienia
+ItemDescription/JETPACK @@ Przytrzymaj skok, by latać
+ItemDescription/JET_HORSESHOES @@ Zasięg ruchu na planecie: <d>
+ItemDescription/JUMPING_BOOTS @@ Pancerz: <d2>, skok: <p>, brak obrażeń od upadku
+ItemDescription/KILLSHOT_ROUNDS @@ Pierwszy strzał zabija
+ItemDescription/KILLSHOT_ROUNDS_2 @@ Zabójcze pierwsze strzały: <d>
+ItemDescription/KILLSHOT_ROUNDS_3 @@ Zabójcze pierwsze strzały: <d>
+ItemDescription/KNOCKBACK_ROUNDS @@ Odrzut celu: <p>
+ItemDescription/KRAM_ALMANAC @@ Asy do wyboru przy awansie: <d>
+ItemDescription/KRAM_CHARM @@ Tabaka ze starcia: <p>
+ItemDescription/KRAM_HOG @@ Tabaka ze starcia: <p>, tabaka partnera ze starcia: <p2>
+ItemDescription/KRAM_SCANNER @@ Tabaka po zabójstwie: <p>
+ItemDescription/KRAM_SUPER_CHARM @@ Tabaka ze starcia: <p>
+ItemDescription/LARGE_CALIBER_ROUNDS @@ Obrażenia: <p>, rozrzut: <p2>
+ItemDescription/LEVITATION_BOOTS @@ Szybkość: <d>, odporność na truciznę: <p2>
+ItemDescription/LIME_PONCHO @@ Odporność na protony: <p>, pancerz: <d2>
+ItemDescription/LUCKY_DICE @@ Dodatkowe życie. U Casino jedno użycie więcej.
+ItemDescription/LUCKY_DICE_2 @@ Dodatkowe życia: <d>. U Casino jedno użycie więcej.
+ItemDescription/LUCKY_ESCAPE @@ Odporność na obrażenia: <p>
+ItemDescription/MACHINE_GUNNER_2_ALLY @@ Sojuszniczy ciężki korbiarz
+ItemDescription/MACHINE_GUNNER_ALLY @@ Sojuszniczy korbiarz
+ItemDescription/MAGAZINE @@ Amunicja: <d>
+ItemDescription/MARKSMAN_2_ALLY @@ Sojuszniczy zabójczy łowca
+ItemDescription/MARKSMAN_3_ALLY @@ Sojuszniczy skryty łowca
+ItemDescription/MARKSMAN_ALLY @@ Sojuszniczy łowca
+ItemDescription/MARSHAL_ROUNDS @@ Obrażenia: <d>, obrażenia książętom: <p2>
+ItemDescription/MOTTLED_GREEN_PONCHO @@ Odporność na protony: <p>, odporność na lasery: <p2>
+ItemDescription/MULE @@ Maks. bimbru: <d>
+ItemDescription/NITRO_SCANNER @@ Nitro po zabójstwie: <p>
+ItemDescription/NITRO_SYPHON @@ Dodatkowe nitro co turę: <d>
+ItemDescription/OUTLAWED_AMMUNITION @@ Seria: <d2>, obrażenia: <d3>, amunicja: <d4>
+ItemDescription/PAINFUL_BREASTPLATE @@ Pancerz: <d>, zdrowie: <d2>
+ItemDescription/PAINFUL_TONIC @@ Od razu rani cię za <d>, potem zdrowie: <d2>
+ItemDescription/PANIC_ROUNDS @@ Panika po trafieniu: <p>, u Pajęczej Rosy: <p2>
+ItemDescription/PENETRATING_ROUNDS @@ Strzały przebijają pancerz
+ItemDescription/PLANET_VISION_ENHANCER @@ Zasięg widzenia na planecie: <p>
+ItemDescription/PLUTONIUM_BREASTPLATE @@ Pancerz: <d>
+ItemDescription/PLUTONIUM_BULLETS @@ Obrażenia: <p>
+ItemDescription/POISON_BOTH @@ Obrażenia od trucizny: <d2>, odporność na truciznę: <p3>
+ItemDescription/POISON_ROUNDS @@ Obrażenia od trucizny: <d2>
+ItemDescription/PRESCRIBED_AMMUNITION @@ Strzały same szukają celu, obrażenia: <p>
+ItemDescription/PROJECTILE_SPEED @@ Odrzuca cel do tyłu
+ItemDescription/PUNCH_PACKING_AMMO @@ Odrzut celu: <p>
+ItemDescription/PURPLE_PONCHO @@ Odporność na truciznę: <p>, pancerz: <d2>
+ItemDescription/RAD_DEFLECTOR @@ Odporność na promieniowanie: <p>
+ItemDescription/RAGE_SCANNER @@ Szał po zabójstwie: <p>
+ItemDescription/RANDOM_SCANNER @@ Losowa znajdźka po zabójstwie: <p>, u Casino: <p2>
+ItemDescription/RAPID_FIRE @@ Szybkostrzelność: <p>
+ItemDescription/RAPID_RELOAD @@ Przeładowanie: <p>
+ItemDescription/REBREATHER @@ Tlen się nie wyczerpuje, po starciu leczy: <d>
+ItemDescription/RED_PONCHO @@ Odporność na lasery: <p>, pancerz: <d2>
+ItemDescription/RESIST_WHILE_MOVING @@ Odporność na obrażenia w ruchu: <p>, u Hopalonga: <p2>
+ItemDescription/RIFT_BLOCKER @@ Opóźnienie wrogów z furtek, sekundy: <d>
+ItemDescription/RIFT_HACKER @@ Sojuszniczy rewolwerowiec. Z furtek wychodzą sojusznicy
+ItemDescription/RIFT_HUNTER @@ Tabaka ze starcia przy otwartej furtce: <p>
+ItemDescription/RIFT_TWEAKER @@ Z furtek wychodzą tylko rewolwerowcy
+ItemDescription/ROBOT_HUNTER @@ Obrażenia: <d>, obrażenia ochronie: <p2>
+ItemDescription/ROCKET_HORSESHOES @@ Zasięg ruchu na planecie: <d>
+ItemDescription/RUBY @@ Bezużyteczny. Do sprzedania za: <d>
+ItemDescription/SADDLEBAGS @@ Maks. bimbru: <d>
+ItemDescription/SAPPHIRE @@ Bezużyteczny. Do sprzedania za: <d>
+ItemDescription/SCARLET_PONCHO @@ Odporność na lasery: <p>, pancerz: <d2>
+ItemDescription/SECRET @@ Pełne leczenie, pełny pancerz, tylko Pajęcza Rosa
+ItemDescription/SHINE_FLASK @@ Szansa, że popis nie zużyje bimbru: <p>
+ItemDescription/SHINE_SCANNER @@ Bimber po zabójstwie: <p>
+ItemDescription/SHOVEL @@ Po schwytaniu sam uciekasz z więzienia
+ItemDescription/SHREDDING_ROUNDS @@ Szatkowanie pancerza: <d>
+ItemDescription/SHREDDING_ROUNDS_2 @@ Szatkowanie pancerza: <d>
+ItemDescription/SMALL_CALIBER_ROUNDS @@ Obrażenia: <p>, amunicja: <d2>, przeładowanie: <p>
+ItemDescription/SMART_TRACKING_ROUNDS @@ Strzały same szukają celu
+ItemDescription/SMOKY_PONCHO @@ Odporność na ogień: <p>, u Smoky'ego amunicja: <d2>
+ItemDescription/STEEL_BREASTPLATE @@ Pancerz: <d>
+ItemDescription/STEEL_BULLETS @@ Obrażenia: <p>
+ItemDescription/STORM_HEAL @@ Zdrowie: <d>, piorun z burzy leczy w pełni
+ItemDescription/STORM_RESISTANCE @@ Pancerz: <d>, pioruny z burzy nie szkodzą
+ItemDescription/STUN_ROUNDS @@ Szansa na ogłuszenie: <p>, sekundy: <d2>
+ItemDescription/SUPER_AUTO_ARMOR @@ Po starciu odnawia pancerz: <d>
+ItemDescription/SUPER_AUTO_HEAL @@ Po starciu leczy: <d>
+ItemDescription/SUPER_EM_CLOAK @@ Zasięg wykrycia przez ochronę: <p>
+ItemDescription/SUPER_TOUGH_CLOAK @@ Zdrowie: <d>
+ItemDescription/TARGETED_SHINE_SCANNER @@ Bimber po zabójstwie krytycznym: <p>
+ItemDescription/TELESCOPIC_SIGHTS @@ Rozrzut: <p>, przybliżenie: <p2>
+ItemDescription/THROW_FORCE @@ Siła rzutu: <p>, poza Spike'em niesława: <p2>
+ItemDescription/TOUGH_CLOAK @@ Zdrowie: <d>
+ItemDescription/URANIUM_BREASTPLATE @@ Pancerz: <d>
+ItemDescription/URANIUM_BULLETS @@ Obrażenia: <p>
+ItemDescription/VAMPIRE_BOOTS @@ Szybkość: <d>, szybkość nocą: <d2>
+ItemDescription/VAMPIRE_CLOAK @@ Zdrowie: <d2>, odporność na obrażenia nocą: <p>
+ItemDescription/VAMPIRE_ROUNDS @@ Obrażenia: <d2>, zadane nocą obrażenia leczą: <p>
+ItemDescription/VERY_TOUGH_CLOAK @@ Zdrowie: <d>
+ItemDescription/VIOLET_PONCHO @@ Odporność na truciznę: <p>, pancerz: <d2>
+ItemDescription/WOLFSKIN_GLOVES @@ Obrażenia: <d>
+ItemDescription/WOLF_2_ALLY @@ Sojusznicze niestabilne kojoty: <d>, u Rawhide'a: <d2>
+ItemDescription/WOLF_3_ALLY @@ Sojusznicze opancerzone kojoty: <d>, u Rawhide'a: <d2>
+ItemDescription/WOLF_ALLY @@ Sojusznicze kojoty: <d>, u Rawhide'a: <d2>
+ItemDescription/YELLOW_PONCHO @@ Odporność na dźwięk: <p>, pancerz: <d2>
+ItemEffect/AUTO_ARMOR @@ Pancerz
+ItemEffect/AUTO_HEAL @@ Zdrowie
+ItemEffect/FULL_HEAL @@ Zdrowie
+ItemEffect/REBREATHER @@ Zdrowie
+ItemEffect/SUPER_AUTO_ARMOR @@ Pancerz
+ItemEffect/SUPER_AUTO_HEAL @@ Zdrowie
+ItemName/AERODYNAMIC_ROUNDS @@ Naboje strzałkowe
+ItemName/ALLOY_HORSESHOES @@ Podkowy ze stopu
+ItemName/ALL_BARRELS_EXPLODE @@ Detonator beczek
+ItemName/ALL_PALS @@ Dozownik feromonów
+ItemName/AMYGDALA_BOMB @@ Bomba na ciało migdałowate
+ItemName/ARMOR_SCANNER @@ Skaner pancerza
+ItemName/ARMOR_SCANNER_2 @@ Superskaner pancerza
+ItemName/ARMOR_SCANNER_3 @@ Ultraskaner pancerza
+ItemName/ASSISTANCE_DRONE @@ Dron wsparcia
+ItemName/AUTO_ARMOR @@ Autopłatnerz
+ItemName/AUTO_HEAL @@ Autokonował
+ItemName/BARE_CHEST @@ Goła klata
+ItemName/BARREL_LOOT @@ Skaner beczek
+ItemName/BEARSKIN_GLOVES @@ Ultraładownik
+ItemName/BEAR_2_ALLY @@ Drażliwy towarzysz
+ItemName/BEAR_ALLY @@ Towarzysz grizzly
+ItemName/BETTER_JETPACK @@ Osłonięty plecak odrzutowy
+ItemName/BLAST_DEFLECTOR @@ Ognisty deflektor
+ItemName/BLAST_PONCHO @@ Płonące poncho
+ItemName/BULKY_BREASTPLATE @@ Nieporęczny napierśnik
+ItemName/BURNING_ROUNDS @@ Naboje zapalające
+ItemName/CASINO_RESIST @@ Krawat bolo Casino
+ItemName/CHOW @@ Żarcie
+ItemName/COMPASS_ENHANCER @@ Ulepszony kompas
+ItemName/COYOTESKIN_GLOVES @@ Ładownik kul
+ItemName/CRAFTED_IRON_SIGHTS @@ Kalibrowane przyrządy celownicze
+ItemName/CRITTER_HUNTER @@ Luneta na zwierzynę
+ItemName/CRIT_ROUNDS @@ Naboje z pustym czubkiem
+ItemName/CRIT_ROUNDS_2 @@ Naboje dum-dum
+ItemName/CRIT_ROUNDS_3 @@ Super naboje dum-dum
+ItemName/DEADLY_AMULET @@ Pas czarnej dziury
+ItemName/DEADLY_TALISMAN @@ Odznaka czarnej dziury
+ItemName/DIAMOND @@ Diament
+ItemName/EMERALD @@ Szmaragd
+ItemName/EM_CLOAK @@ Kamizelka z mylaru
+ItemName/ENRAGING_ROUNDS @@ Naboje szału
+ItemName/EVERYTHING @@ Dron amunicyjny
+ItemName/EXPLODING_BARREL_STUN @@ Ogłuszające beczki
+ItemName/EXPLOSIVE_AMMO @@ Naboje wybuchowe
+ItemName/EXTRA_BULLETS @@ Naboje odłamkowe
+ItemName/FLASK_OF_KRAM @@ Piersiówka tabaki
+ItemName/FULL_HEAL @@ Biblia ognia i siarki
+ItemName/GOLD_PONCHO @@ Tłumik dźwięku
+ItemName/GREEN_PONCHO @@ Poncho protonowe
+ItemName/GUARD_HUNTER @@ Luneta na ludzi
+ItemName/GUNHAND_2_ALLY @@ Wyszkolony towarzysz
+ItemName/GUNHAND_3_ALLY @@ Zaprawiony towarzysz
+ItemName/GUNHAND_ALLY @@ Towarzysz rewolwerowiec
+ItemName/HEALING_ROUNDS @@ Krwiopijcze naboje
+ItemName/HEALTH_AND_ARMOR @@ Ołowiany prochowiec
+ItemName/HEALTH_NO_ARMOR @@ Strój Adama
+ItemName/HEALTH_SCANNER @@ Skaner zdrowia
+ItemName/HEALTH_SCANNER_2 @@ Superskaner zdrowia
+ItemName/HEALTH_SCANNER_3 @@ Ultraskaner zdrowia
+ItemName/HEFTY_MAGAZINE @@ Pojemny magazynek
+ItemName/HELPFUL_DRONE @@ Pomocny dron
+ItemName/IMPLANT_SUIT @@ Skafander
+ItemName/INFAMY_DOUBLER @@ Niesławny garnitur
+ItemName/INVULNERABILITY_SCANNER @@ Skaner nietykalności
+ItemName/IRONCLAD_2_ALLY @@ Rakietowy towarzysz
+ItemName/IRONCLAD_ALLY @@ Towarzysz żelaźniak
+ItemName/IRONCLAD_SHINE_SCANNER @@ Żelazny skaner bimbru
+ItemName/IRON_SIGHTS @@ Przyrządy celownicze
+ItemName/IRRADIATED_ROUNDS @@ Naboje radioaktywne
+ItemName/JACKHAMMER @@ Wytrych
+ItemName/JETPACK @@ Plecak odrzutowy
+ItemName/JET_HORSESHOES @@ Odrzutowe podkowy
+ItemName/JUMPING_BOOTS @@ Rakietowe buty
+ItemName/KILLSHOT_ROUNDS @@ Zabójczy nabój
+ItemName/KILLSHOT_ROUNDS_2 @@ Dwa zabójcze naboje
+ItemName/KILLSHOT_ROUNDS_3 @@ Trzy zabójcze naboje
+ItemName/KNOCKBACK_ROUNDS @@ Naboje odrzucające
+ItemName/KRAM_ALMANAC @@ Almanach tabaki
+ItemName/KRAM_CHARM @@ Wzmacniacz tabaki
+ItemName/KRAM_HOG @@ Tabaczny obżartuch
+ItemName/KRAM_SCANNER @@ Skaner tabaki
+ItemName/KRAM_SUPER_CHARM @@ Superwzmacniacz tabaki
+ItemName/LARGE_CALIBER_ROUNDS @@ Naboje dużego kalibru
+ItemName/LEVITATION_BOOTS @@ Buty lewitacyjne
+ItemName/LIME_PONCHO @@ Deflektor protonów
+ItemName/LUCKY_DICE @@ Szczęśliwe kości
+ItemName/LUCKY_DICE_2 @@ Superszczęśliwe kości
+ItemName/LUCKY_ESCAPE @@ Królicza łapka
+ItemName/MACHINE_GUNNER_2_ALLY @@ Ciężki towarzysz
+ItemName/MACHINE_GUNNER_ALLY @@ Towarzysz korbiarz
+ItemName/MAGAZINE @@ Magazynek
+ItemName/MARKSMAN_2_ALLY @@ Zabójczy towarzysz
+ItemName/MARKSMAN_3_ALLY @@ Skryty towarzysz
+ItemName/MARKSMAN_ALLY @@ Towarzysz łowca
+ItemName/MARSHAL_ROUNDS @@ Luneta na książąt
+ItemName/MOTTLED_GREEN_PONCHO @@ Poncho kombi
+ItemName/MULE @@ Robomuł
+ItemName/NITRO_SCANNER @@ Skaner nitro
+ItemName/NITRO_SYPHON @@ Syfon nitro
+ItemName/OUTLAWED_AMMUNITION @@ Zakazane naboje
+ItemName/PAINFUL_BREASTPLATE @@ Wszczepiany napierśnik
+ItemName/PAINFUL_TONIC @@ Cudowny specyfik
+ItemName/PANIC_ROUNDS @@ Pajęcze naboje
+ItemName/PENETRATING_ROUNDS @@ Naboje przeciwpancerne
+ItemName/PLANET_VISION_ENHANCER @@ Kapelusz z szerokim rondem
+ItemName/PLUTONIUM_BREASTPLATE @@ Plutonowy napierśnik
+ItemName/PLUTONIUM_BULLETS @@ Plutonowe naboje
+ItemName/POISON_BOTH @@ Gruczoł grzechotnika
+ItemName/POISON_ROUNDS @@ Toksyczne naboje
+ItemName/PRESCRIBED_AMMUNITION @@ Naboje naprowadzane
+ItemName/PROJECTILE_SPEED @@ Rakietowe naboje
+ItemName/PUNCH_PACKING_AMMO @@ Amunicja hiperkinetyczna
+ItemName/PURPLE_PONCHO @@ Poncho antytoksyczne
+ItemName/RAD_DEFLECTOR @@ Osłona antyradiacyjna
+ItemName/RAGE_SCANNER @@ Skaner szału
+ItemName/RANDOM_SCANNER @@ Skaner szczęścia
+ItemName/RAPID_FIRE @@ Smar nanopolimerowy
+ItemName/RAPID_RELOAD @@ Szybkoładowacz
+ItemName/REBREATHER @@ Aparat oddechowy
+ItemName/RED_PONCHO @@ Poncho laserowe
+ItemName/RESIST_WHILE_MOVING @@ Deflektor kinetyczny
+ItemName/RIFT_BLOCKER @@ Blokada furtek
+ItemName/RIFT_HACKER @@ Haker furtek
+ItemName/RIFT_HUNTER @@ Łupieżca furtek
+ItemName/RIFT_TWEAKER @@ Przestrajacz furtek
+ItemName/ROBOT_HUNTER @@ Luneta na syntoidy
+ItemName/ROCKET_HORSESHOES @@ Rakietowe podkowy
+ItemName/RUBY @@ Rubin
+ItemName/SADDLEBAGS @@ Juki
+ItemName/SAPPHIRE @@ Szafir
+ItemName/SCARLET_PONCHO @@ Deflektor laserów
+ItemName/SECRET @@ Sekret
+ItemName/SHINE_FLASK @@ Piersiówka bimbru
+ItemName/SHINE_SCANNER @@ Skaner bimbru
+ItemName/SHOVEL @@ Nanołopata
+ItemName/SHREDDING_ROUNDS @@ Naboje szatkujące
+ItemName/SHREDDING_ROUNDS_2 @@ Super naboje szatkujące
+ItemName/SMALL_CALIBER_ROUNDS @@ Naboje małego kalibru
+ItemName/SMART_TRACKING_ROUNDS @@ Inteligentne naboje naprowadzane
+ItemName/SMOKY_PONCHO @@ Fartuch Smoky'ego
+ItemName/STEEL_BREASTPLATE @@ Kevlarowy napierśnik
+ItemName/STEEL_BULLETS @@ Naboje na zamówienie
+ItemName/STORM_HEAL @@ Wysokonapięciowa apteczka
+ItemName/STORM_RESISTANCE @@ Czapka z folii aluminiowej
+ItemName/STUN_ROUNDS @@ Tępe naboje
+ItemName/SUPER_AUTO_ARMOR @@ Superautopłatnerz
+ItemName/SUPER_AUTO_HEAL @@ Superautokonował
+ItemName/SUPER_EM_CLOAK @@ Kamizelka Faradaya
+ItemName/SUPER_TOUGH_CLOAK @@ Prochowiec ze skóry grizzly
+ItemName/TARGETED_SHINE_SCANNER @@ Precyzyjny skaner bimbru
+ItemName/TELESCOPIC_SIGHTS @@ Celownik teleskopowy
+ItemName/THROW_FORCE @@ Podstępne sterydy
+ItemName/TOUGH_CLOAK @@ Wytrzymały prochowiec
+ItemName/URANIUM_BREASTPLATE @@ Uranowy napierśnik
+ItemName/URANIUM_BULLETS @@ Uranowe naboje
+ItemName/VAMPIRE_BOOTS @@ Buty północy
+ItemName/VAMPIRE_CLOAK @@ Płaszcz północy
+ItemName/VAMPIRE_ROUNDS @@ Wampirze naboje
+ItemName/VERY_TOUGH_CLOAK @@ Prochowiec z kojota
+ItemName/VIOLET_PONCHO @@ Przetwornik trucizn
+ItemName/WOLFSKIN_GLOVES @@ Hiperładownik
+ItemName/WOLF_2_ALLY @@ Niestabilny towarzysz
+ItemName/WOLF_3_ALLY @@ Opancerzony towarzysz
+ItemName/WOLF_ALLY @@ Towarzysz kojot
+ItemName/YELLOW_PONCHO @@ Dźwiękoszczelne poncho
+ItemPower/1 @@ Podstawowy
+ItemPower/2 @@ Lepszy
+ItemPower/3 @@ Pierwszorzędny
+ItemRarity/COMMON @@ Zwykły
+ItemRarity/RARE @@ Epicki
+ItemRarity/UNCOMMON @@ Rzadki
+ItemType/GEAR @@ Wyposażenie
+ItemType/HORSE @@ Wyposażenie
+ItemType/OUTFIT @@ Strój
+ItemType/UNUSABLE @@ Bezużyteczne
+ItemType/WEAPON @@ Uzbrojenie
+Resource/AceBuffs @@ Wzmocnienia asów
+Resource/Bastard @@ Bękart
+Resource/BeanPickup @@ Fasola
+Resource/Beans @@ Fasola
+Resource/BonusUnlock @@ Naładowany as
+Resource/ChitPickup @@ Cramm
+Resource/Chits @@ Cramm
+Resource/Disguises @@ Przebrania
+Resource/EatBeans @@ Podziel się fasolą
+Resource/Elixir @@ Tonik
+Resource/ElixirPickup @@ Tonik
+Resource/Elixirs @@ Toniki
+Resource/EquipItem @@ Załóż przedmiot
+Resource/Glint @@ Błysk
+Resource/Gold @@ Złoto
+Resource/Helix @@ Helisa
+Resource/Infamy @@ Niesława
+Resource/InherentUnlock @@ Podstawowy as
+Resource/InherentUnlocks @@ Podstawowe asy
+Resource/Item @@ Przedmiot
+Resource/Items @@ Przedmioty
+Resource/JailedOutlaws @@ Uwięziony banita
+Resource/Kram @@ Tabaka
+Resource/NavPickup @@ Nadajnik
+Resource/Navs @@ Nadajniki
+Resource/Shard @@ Asy
+Resource/ShardPickup @@ Asy
+Resource/Shards @@ Asy
+Resource/Shine @@ Bimber
+Resource/ShowOutlaws @@ Pokaż banitów
+Resource/Teleporters @@ Teleportery
+Resource/UseDisguise @@ Użyj przebrania
+Resource/UseElixir @@ Użyj toniku
+Resource/UseNav @@ Użyj nadajnika
+Resource/UseTeleporter @@ Użyj teleportera
+Resource/UseWater @@ Użyj nitro
+Resource/Water @@ Nitro

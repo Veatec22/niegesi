@@ -1,0 +1,346 @@
+# Biblia tłumaczenia Wild Bastards — fakty ze źródłami. Format: .claude/skills/lokalizacja/BIBLIA.md
+# Stan: pełne tłumaczenie 0.2.0 (4426/4426).
+
+zrodla:
+  - id: klucze
+    opis: "Klucze I2 z wariantami rodzajowymi (np. HUD/Dead i HUD/DeadFem, UIMG/Injured i UIMG/InjuredFem)."
+  - id: tekst
+    opis: "Oryginalny tekst gry (samouczki i dialogi mówią o banitach „he”/„her”, „Miss”, „ma'am”)."
+  - id: fr
+    opis: "Francuska tabela gry (work/ref-fr.json) — płeć w przymiotnikach i imiesłowach (archère, sûre, ange-gardienne)."
+  - id: it
+    opis: "Włoska tabela gry (work/ref-it.json) — płeć w rzeczownikach (sacerdotessa, pistolera, arciera)."
+  - id: ru
+    opis: "Rosyjska tabela gry jest pusta (2 wpisy) — nie nadaje się na źródło płci."
+  - id: vb
+    opis: "Nasze Void Bastards PL (games/void-bastards) — ten sam twórca, pokrewne żarty i słownictwo"
+
+postacie:
+  - id: billy
+    nazwa: "Billy"
+    plec: m
+    rejestr: "chłopak z prowincji, gwara, „panie Casino”, „panie Bum”; kałamarnica (czułki)"
+    zrodlo: [tekst, fr]
+  - id: rosa
+    nazwa: "Pajęcza Rosa (Spider Rosa)"
+    plec: k
+    rejestr: "chłodna, wyniosła, bez gwary; „Matrona klanu”; inni mówią do niej „panno Roso”, McNeil „Robaczyco” (Bug Lady)"
+    zrodlo: [tekst, it]
+  - id: casino
+    nazwa: "Casino (Doc Casino)"
+    plec: m
+    rejestr: "robot-hazardzista, gwara, „przyjacielu”, „kolego” (pard); odmiana: nieodmienne „Casino” (Doca Casino)"
+    zrodlo: [fr, tekst]
+  - id: kaboom
+    nazwa: "Kaboom („pan Bum”, „Boom”)"
+    plec: m
+    rejestr: "gazowy górnik, gwara, przekleństwa"
+    zrodlo: [tekst]
+  - id: roswell
+    nazwa: "Roswell („Roz”, „Ros”)"
+    plec: m
+    rejestr: "obcy pod kopułą, wyniosły, naukowy, bez gwary"
+    zrodlo: [tekst]
+  - id: spike
+    nazwa: "Spike"
+    plec: m
+    rejestr: "cockney („stary” = mate), nałóg bimbru"
+    zrodlo: [tekst]
+  - id: fletch
+    nazwa: "Fletch"
+    plec: k
+    rejestr: "łuczniczka podróżująca w czasie; „psze pani”/„panienko” w dialogach to zwykle ona"
+    uwaga: "Dorosła wersja trzeciego bękarta (Młoda). Bastard1Recovered_2 po francusku „ange-gardienne”."
+    zrodlo: [tekst, fr, it]
+  - id: preach
+    nazwa: "Kaznodzieja (Preach, Esther O'Neil)"
+    plec: k
+    rejestr: "kaznodziejka z gatlingiem, biblijne wtręty, gwara"
+    odmiana: "„Kaznodzieja” jak rzeczownik męski na -a, ale z żeńską składnią („Kaznodzieja dała”)"
+    zrodlo: [it, tekst]
+  - id: judge
+    nazwa: "Sędzia (The Judge)"
+    plec: m
+    rejestr: "robot-snajper, język prawniczy („Przychylam się”), gwara"
+    zrodlo: [tekst, fr]
+  - id: sarge
+    nazwa: "Sierżant (Sarge)"
+    plec: m
+    rejestr: "stary koń bojowy (cyborg-koń), gwara wojskowa"
+    zrodlo: [tekst, fr]
+  - id: hopalong
+    nazwa: "Hopalong („Hop”, Vansak Largo)"
+    plec: m
+    rejestr: "człowiek-wąż, farmer, gwara, kocha zwierzęta"
+    zrodlo: [tekst, fr]
+  - id: smoky
+    nazwa: "Smoky („Kuchcik” u Spike'a)"
+    plec: m
+    rejestr: "robot-kucharz; zdenerwowany mówi WERSALIKAMI — zachowane"
+    zrodlo: [tekst]
+  - id: rawhide
+    nazwa: "Rawhide"
+    plec: m
+    rejestr: "robot z rojem p-wiewiórek; mówi „my” i dziecinnie („Ten Billy potrzebuje wielu pomocy”); przedimki angielskie oddane jako „Ten/Ta”"
+    zrodlo: [tekst, fr]
+  - id: bekarty
+    nazwa: "Mały Jeb (m), Jeb Junior (m), Młoda (k)"
+    zrodlo: [tekst]
+    uwaga: "„She got a fin on her” — trzeci bękart to dziewczynka."
+  - id: ksiazeta
+    nazwa: "McNeil (m), Francisco (k), Barrabas (m), Jebediah Chaste (m)"
+    zrodlo: [tekst]
+    uwaga: "Francisco jest kobietą („her younger brother”, „Chaste's daughter”)."
+  - id: gracz
+    nazwa: "banici ogólnie"
+    plec: '?'
+    uwaga: >
+      Gra ma osobne wpisy „Fem” tam, gdzie forma zależy od płci banity (Ranny/Ranna).
+      Gdzie takiego wariantu nie ma, a zdanie dotyczy dowolnego banity — formy bezrodzajowe
+      (np. kwestie „…Pals”, „…JailPals” bez rodzaju ratującego).
+
+terminy:
+  - en: outlaws?
+    pl: "banita"
+    formy: [banit, banic]
+    zrodlo: decyzja
+  - en: stunts?
+    pl: "popis"
+    formy: [popis, numer]
+    zrodlo: decyzja
+    uwaga: "specjalna akcja banity (rewolwerowe sztuczki). W dialogu „stunt you pulled” = „numer”."
+  - en: juice
+    pl: "bimber"
+    formy: [bimb]
+    zrodlo: decyzja
+    uwaga: "klucze to „Shine” (moonshine) — zasila popisy."
+  - en: showdowns?
+    pl: "starcie"
+    formy: [starci, starć]
+    zrodlo: decyzja
+  - en: aces?
+    pl: "as"
+    formy: [as, asy, asów]
+    zrodlo: decyzja
+  - en: pals?
+    pl: "kumpel"
+    formy: [kump, koleg]
+    zrodlo: decyzja
+  - en: backdoors?
+    pl: "furtka"
+    formy: [furt]
+    zrodlo: decyzja
+    uwaga: "portal wypuszczający wrogów; gra słów backdoor = tylna furtka."
+  - en: Glint
+    pl: "błysk"
+    formy: [błysk]
+    zrodlo: decyzja
+  - en: beans
+    pl: "fasola"
+    formy: [fasol]
+    zrodlo: decyzja
+  - en: beacons?
+    pl: "nadajnik"
+    formy: [nadajni]
+    zrodlo: decyzja
+  - en: snuff
+    pl: "tabaka"
+    formy: [tabak, tabacz]
+    zrodlo: decyzja
+    uwaga: "klucze „Kram”; zasób inny niż cramm (waluta)."
+  - en: Chasteners?
+    pl: "Karzyciel"
+    formy: [karzyciel]
+    zrodlo: decyzja
+    uwaga: "gra słów Chaste + chasten (karcić); wielką literą jak w oryginale."
+  - en: Homestead
+    pl: "Ostoja"
+    formy: [osto]
+    zrodlo: decyzja
+    uwaga: "raj, do którego leci Drifter; francuska wersja „Bercail”."
+  - en: Wild Bastards
+    pl: "Dzikie Bękarty"
+    formy: [bękart, wild bastards]
+    zrodlo: decyzja
+    uwaga: "nazwa bandy w dialogach; tytuł gry zostaje po angielsku. „Bastards” to też nieślubne dzieci Chaste'a — bękart łączy oba znaczenia."
+  - en: Princes?
+    pl: "książę"
+    formy: [książ, księżn, księci, księcia]
+    zrodlo: decyzja
+  - en: bunch(es)?
+    pl: "grupa"
+    formy: [grup]
+    zrodlo: decyzja
+    uwaga: "oddział banitów na mapie planety; „gang” = banda."
+  - en: roadblocks?
+    pl: "blokada"
+    formy: [blokad]
+    zrodlo: decyzja
+  - en: posses?
+    pl: "obława"
+    formy: [obław]
+    zrodlo: decyzja
+  - en: mods?
+    pl: "przedmiot"
+    formy: [przedmiot]
+    zrodlo: decyzja
+    uwaga: "ekwipunek banity; „mod” brzmiałby po polsku jak modyfikacja gry."
+  - en: infamy
+    pl: "niesława"
+    formy: [niesław]
+    zrodlo: decyzja
+  - en: Hole in the Wall
+    pl: "Dziura w Murze"
+    formy: [dziur]
+    zrodlo: decyzja
+    uwaga: "nawiązanie do kryjówki bandy Butcha Cassidy'ego."
+  - en: helix
+    pl: "helisa"
+    formy: [helis]
+    zrodlo: decyzja
+  - en: tonics?
+    pl: "tonik"
+    formy: [tonik]
+    zrodlo: decyzja
+  - en: stairway
+    pl: "schody"
+    formy: [schod]
+    zrodlo: decyzja
+  - en: jump lock
+    pl: "blokada skoku"
+    formy: [blokad]
+    zrodlo: decyzja
+  - en: gunhands?
+    pl: "rewolwerowiec"
+    formy: [rewolwerow]
+    zrodlo: decyzja
+  - en: yellowbell(y|ies)
+    pl: "cykor"
+    formy: [cykor]
+    zrodlo: decyzja
+    uwaga: "yellowbelly = tchórz; wróg chowający się za tarczą."
+  - en: crankers?
+    pl: "korbiarz"
+    formy: [korbiar]
+    zrodlo: decyzja
+    uwaga: "strzelec z gatlingiem na korbę."
+  - en: gunbarrels?|gunbuckets?|gun buckets?
+    pl: "lufa"
+    formy: [luf]
+    zrodlo: decyzja
+    uwaga: "wieżyczka udająca beczkę; nazwa z verticalu."
+  - en: jackbox(es)?
+    pl: "skrzynka-pułapka"
+    formy: [skrzyn]
+    zrodlo: decyzja
+  - en: kyotes?
+    pl: "kojot"
+    formy: [kojot]
+    zrodlo: decyzja
+  - en: bushwhackers?
+    pl: "czatownik"
+    formy: [czatowni]
+    zrodlo: decyzja
+  - en: morticians?
+    pl: "grabarz"
+    formy: [grabar]
+    zrodlo: decyzja
+  - en: ironclads?
+    pl: "żelaźniak"
+    formy: [żelaźnia]
+    zrodlo: decyzja
+  - en: blasters?
+    pl: "wysadzacz"
+    formy: [wysadzacz]
+    zrodlo: decyzja
+  - en: stingers?
+    pl: "żądłak"
+    formy: [żądła]
+    zrodlo: decyzja
+  - en: Cruxmas
+    pl: "Gwiazdka Cruxa"
+    formy: [gwiazdk]
+    zrodlo: decyzja
+    uwaga: "Jorge Crux to tutejszy Jezus; imię zostaje."
+  - en: Stitch
+    pl: "Szew"
+    formy: [szew]
+    zrodlo: decyzja
+
+bez_tlumaczenia:
+  - Billy
+  - Rosa
+  - Kaboom
+  - Roswell
+  - Spike
+  - Casino
+  - Hopalong
+  - Fletch
+  - Smoky
+  - Rawhide
+  - Cuffs
+  - Legs
+  - Radium
+  - Barrabas
+  - Francisco
+  - McNeil
+  - Chaste
+  - Clancy
+  - Eugene
+  - Drifter
+  - Lucky Lady
+  - Jorge Crux
+  - cramm
+  - Calaveras
+  - Calavera
+  - Liza Jane
+  - Tempus Fugit
+  - Kicker
+  - Magnum
+  - Gatling
+  - Lasso
+  - Laser
+  - Proton
+  - Patrol
+  - Bank
+  - Teleporter
+  - Nitro
+  - Warp
+  - Plan
+  - Sierra
+  - Amigo
+  - Hombre de Acero
+  - Ironman
+  - Ultra
+  - Demo
+  - Start
+  - Super
+  - OK
+  - FOV
+  - Gamma
+  - Sprint
+  - Surround
+  - Menu
+  - Wild Bastards
+  - '[BLANK]'
+  - Blah
+  - hello
+  - <deprecated>
+
+ustawienia:
+  dialog_klucz: '^Dialog/'
+  max_wiersz: 42
+
+ignoruj:
+  - sprawdzenie: spojnosc
+    klucz: '^(HUD/Dead|UIMG/Injured|Options/(AccelerationOne|Normal|StandardResponse|AccelerationTwo|High|Q2))(Fem)?$'
+    powod: "warianty rodzajowe gry (Fem) i zgoda z rzeczownikiem ustawienia (przyspieszenie, jakość, krzywa)."
+  - sprawdzenie: terminy
+    klucz: '^(Hint/(CasinoStunt|Gambler)|TalentDesc/(KABOOM_SNEAKY|LAIKA_CHARGE_SHIELDING))$'
+    powod: "słowo „stunt” zastąpione nazwą popisu (Ruletka, Odpalenie, niewidzialność)."
+  - sprawdzenie: terminy
+    klucz: '^Dialog/(RosaInitArg_2|DogwoodSector_6|Frontier_2|AstronautJudgeArg_1)$'
+    powod: "w dialogu „stunt” = numer, „shine” = lśnić, „pal” = kolego — nie terminy gry."
+  - sprawdzenie: terminy
+    klucz: '^(TalentRank/\d|TraitName/GoodItems|Location/ItemShop|InteractionDescription/Barricade|Hint/ScatterFind)$'
+    powod: ranga asa bez słowa „mod”; świadome synonimy (łupy, handlarz, zapora, ci, którzy znajdą).

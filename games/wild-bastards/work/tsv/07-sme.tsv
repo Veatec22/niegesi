@@ -1,0 +1,228 @@
+SME/CarePackage @@ Dziura w Murze
+SME/CarePackageA @@ Niesława zamienia się w nagrody
+SME/CarePackageAButton @@ Wejdź
+SME/CarePackageATitle @@ Nagrody
+SME/CarePackageDesc @@ Roboty, ksenosi i inni niepożądani dają towary w zamian za niesławę zdobytą zabijaniem Karzycieli.
+SME/CatAsteroid @@ Placówka
+SME/CatCarePackage @@ Dziura w Murze
+SME/CatDebris @@ Szczątki
+SME/CatDescAsteroid @@ Odległa planetoida bez prawa. Często można tu zdobyć fasolę, ale nie brakuje też zagrożeń.
+SME/CatDescCarePackage @@ Kryjówka, w której pomagają ściganym przez Chaste'a.
+SME/CatDescDebris @@ Szczątki zatopionego albo wyrzuconego ze statku ładunku. Może źródło zasobów, a może zwykły złom.
+SME/CatDescNebula @@ Złowieszcza mgławica, w której wirują groźne i nieprzewidywalne energie.
+SME/CatDescPirate @@ Piraci
+SME/CatDescSaloon @@ Stacja w próżni, schronienie dla znużonych podróżnych i możliwe źródło zaskakujących okazji.
+SME/CatDescSpaceship @@ Opuszczony wrak. Abordaż narazi bandę na niebezpieczeństwa, ale może uda się coś uratować.
+SME/CatDescStagecoach @@ Niezidentyfikowany statek, pewnie inny podróżny, który omija ścisłą kontrolę Chaste'a w tym sektorze – a może coś innego.
+SME/CatDescStash @@ Skrytka w czarnej dziurze
+SME/CatNebula @@ Mgławica
+SME/CatPirate @@ Piraci
+SME/CatSaloon @@ Stacja
+SME/CatSpaceship @@ Opuszczony statek
+SME/CatStagecoach @@ Statek
+SME/CatStash @@ Skrytka
+SME/Mission @@ Okazja do misji
+SME/MissionA1 @@ Wyślij: {0}. Liczba skoków: {1}.
+SME/MissionA2 @@ Wyślij: {0} i {1}. Liczba skoków: {2}.
+SME/MissionA3 @@ Wyślij: {0}, {1} i {2}. Liczba skoków: {3}.
+SME/MissionAButton @@ Wyślij
+SME/MissionATitle @@ Wyślij banitów
+SME/MissionB @@ Nie wysyłaj banitów na tę misję.
+SME/MissionBButton @@ Odmów
+SME/MissionBTitle @@ Odrzuć misję
+SME/MissionDesc @@ Bez nagrody.
+SME/MissionDescAces @@ Nagroda: asy – {0}.
+SME/MissionDescCharged @@ Nagroda: naładowany as – {0}.
+SME/MissionDescCore @@ Nagroda: podstawowy as – {0}.
+SME/MixAstronaut @@ Głodni handlarze
+SME/MixAstronautA @@ Przykro mi, nie mam fasoli. Losowy banita ranny.
+SME/MixAstronautAButton @@ OK
+SME/MixAstronautATitle @@ Brak fasoli
+SME/MixAstronautB @@ Wymień fasolę na toniki. Fasola: -{0} Toniki: +{1}
+SME/MixAstronautBButton @@ Wymień
+SME/MixAstronautBTitle @@ Wymień fasolę
+SME/MixAstronautC @@ „Znam te istoty”. Zmęczenie Roswella: +{0}: Toniki +{1}
+SME/MixAstronautCButton @@ Negocjuj
+SME/MixAstronautCTitle @@ Roswell
+SME/MixAstronautDesc @@ Ci handlarze z ubogiej w fasolę części galaktyki pewnie się wściekną, jeśli ich nie zadowolisz.
+SME/MixBilly @@ Turniej szybkiego wyciągania
+SME/MixBillyA @@ Wyślij losowego banitę. Szansa na rany: {0}%. Szansa na cramm +{1}: {2}%
+SME/MixBillyAButton @@ Wyciągaj
+SME/MixBillyATitle @@ Losowy
+SME/MixBillyB @@ Wyślij Billy'ego. Zmęczenie Billy'ego +{0}. Cramm +{1}
+SME/MixBillyBButton @@ Wyciągaj
+SME/MixBillyBTitle @@ Billy
+SME/MixBillyDesc @@ Najszybsi rewolwerowcy w sektorze przyjeżdżają tu sprawdzić, ile są warci.
+SME/MixFletch @@ Ukryta kieszeń czasoprzestrzeni
+SME/MixFletchA @@ Nadajniki +{0}
+SME/MixFletchAButton @@ Weź
+SME/MixFletchATitle @@ Nadajniki
+SME/MixFletchB @@ Zmęczenie Fletch +{0}. Nadajniki +{1} i wyleczenie wszystkich ran.
+SME/MixFletchBTitle @@ Fletch
+SME/MixFletchDesc @@ Ten obszar kosmosu obfituje w surowce potrzebne do produkcji nadajników.
+SME/MixGambler @@ Gra o wysoką stawkę
+SME/MixGamblerA @@ Szansa na utratę całego cramm: {0}%. Szansa na podwojenie cramm: {1}%
+SME/MixGamblerAButton @@ Graj
+SME/MixGamblerATitle @@ Zaryzykuj
+SME/MixGamblerB @@ Wyślij Casino. Zmęczenie Casino: +{0}. Podwój cramm w skrytce!
+SME/MixGamblerBButton @@ Graj
+SME/MixGamblerBTitle @@ Casino
+SME/MixGamblerDesc @@ Dobra okazja, żeby szybko zarobić – albo stracić.
+SME/MixHopalong @@ Fasolowe ranczo
+SME/MixHopalongA @@ Wyślij losowego banitę. Szansa na rany: {0}%. Szansa na fasolę +{1}: {2}%
+SME/MixHopalongAButton @@ Zbieraj fasolę
+SME/MixHopalongATitle @@ Losowy
+SME/MixHopalongB @@ Wyślij Hopalonga. Zmęczenie Hopalonga: +{0}. Fasola +{1}
+SME/MixHopalongBButton @@ Zbieraj fasolę
+SME/MixHopalongBTitle @@ Hopalong
+SME/MixHopalongDesc @@ Po rzadko odwiedzanym fasolowym ranczu grasują dzikie jeżozwierze.
+SME/MixJudge @@ Klinika z czarnego rynku
+SME/MixJudgeA @@ Odwiedź klinikę i wylecz losowe rany.
+SME/MixJudgeAButton @@ Odwiedź
+SME/MixJudgeATitle @@ Losowy
+SME/MixJudgeB @@ Wyślij Sędziego, żeby porozmawiał o praktyce lekarskiej bez licencji. Zmęczenie Sędziego +{0}. Wylecz wszystkie rany.
+SME/MixJudgeBTitle @@ Sędzia
+SME/MixJudgeDesc @@ Ta nielegalna klinika obsługuje obcych, roboty, a w potrzebie nawet ludzi.
+SME/MixMamaPanic @@ Dryfujący pajęczy statek
+SME/MixMamaPanicA @@ Oddaj pająkom wszystkie niezałożone przedmioty.
+SME/MixMamaPanicATitle @@ Strata przedmiotów
+SME/MixMamaPanicB @@ Zdobądź losowy przedmiot. Zmęczenie Pajęczej Rosy: +{0}
+SME/MixMamaPanicBTitle @@ Losowy przedmiot
+SME/MixMamaPanicC @@ Zamień losowy przedmiot ze skrytki w losowy przedmiot wyższego poziomu. Zmęczenie Pajęczej Rosy: +{0}
+SME/MixMamaPanicCTitle @@ Przemiana
+SME/MixMamaPanicDesc @@ Pajęczy obcy polują na przedmioty i odbiorą je siłą – chyba że zdołasz się z nimi dogadać.
+SME/MixMistMiner @@ Punkt kontrolny Chaste i Synowie
+SME/MixMistMinerA @@ Wejdź z bronią w ręku. Szansa na rany u każdego banity: {0}%. Nadajniki: +{1}
+SME/MixMistMinerAButton @@ Atakuj
+SME/MixMistMinerATitle @@ Losowy
+SME/MixMistMinerB @@ Po cichu i z dynamitem. Zmęczenie Kabooma: +{0}. Nadajniki: +{1}
+SME/MixMistMinerBButton @@ Zakradnij się
+SME/MixMistMinerBTitle @@ Kaboom
+SME/MixMistMinerDesc @@ Przez ten punkt kontrolny trzeba się przebić ogniem – ale może też być źródłem nadajników.
+SME/MixPreach @@ Obóz pielgrzymów
+SME/MixPreachA @@ Pohandluj z pielgrzymami. Cramm -{0}. Fasola: +{1}
+SME/MixPreachAButton @@ Handluj
+SME/MixPreachATitle @@ Handel
+SME/MixPreachB @@ Wyślij Kaznodzieję, żeby kazaniem ukoiła ich dusze. Zmęczenie Kaznodziei +{0}. Fasola +{1}
+SME/MixPreachBButton @@ Wygłoś kazanie
+SME/MixPreachBTitle @@ Kaznodzieja
+SME/MixPreachDesc @@ Ci chciwi pielgrzymi odpoczywają w drodze do ziemi obiecanej. Mają fasolę, ale pożądają cramm.
+SME/MixRawhide @@ Dzika fasola
+SME/MixRawhideA @@ Wyślij wszystkich banitów na zbiór dzikiej fasoli. Zmęczenie wszystkich banitów: +{0}. Fasola: +{1}
+SME/MixRawhideAButton @@ Zbieraj
+SME/MixRawhideATitle @@ Wyślij wszystkich
+SME/MixRawhideB @@ Wyślij Rawhide'a – on wie, co robi. Zmęczenie Rawhide'a +{0}. Fasola +{1}
+SME/MixRawhideBButton @@ Zbieraj
+SME/MixRawhideBTitle @@ Rawhide
+SME/MixRawhideDesc @@ Na tej żyznej asteroidzie fasola rośnie dziko.
+SME/MixSarge @@ Stary szpital polowy
+SME/MixSargeA @@ Wymień cramm na toniki. Cramm -{0}. Tonik: +{1}
+SME/MixSargeAButton @@ Wymień
+SME/MixSargeATitle @@ Handel
+SME/MixSargeB @@ Wyślij Sierżanta na wymianę wojennych opowieści. Zmęczenie Sierżanta +{0}. Tonik +{1}.
+SME/MixSargeBButton @@ Snuj opowieść
+SME/MixSargeBTitle @@ Sierżant
+SME/MixSargeC @@ Wyślij Sierżanta na wymianę wojennych opowieści. Zmęczenie Sierżanta +{0}. Tonik +{1}.
+SME/MixSargeCButton @@ Snuj opowieść
+SME/MixSargeCTitle @@ Sierżant
+SME/MixSargeDesc @@ Ten prowadzony przez roboty szpital polowy wciąż działa, choć wojna dawno się skończyła. Cywile płacą słono.
+SME/MixSmoky @@ Płonący wrak
+SME/MixSmokyA @@ Wyślij losowego banitę. Szansa na rany: {0}%. Zdobądź pierwszorzędny przedmiot.
+SME/MixSmokyAButton @@ Abordaż
+SME/MixSmokyATitle @@ Losowy
+SME/MixSmokyB @@ Wyślij Smoky'ego. Zmęczenie Smoky'ego: +{0}. Zdobądź pierwszorzędny przedmiot.
+SME/MixSmokyBButton @@ Abordaż
+SME/MixSmokyBTitle @@ Smoky
+SME/MixSmokyDesc @@ Ten wrak płonie, ale pewnie wciąż da się z niego wyciągnąć cenne przedmioty.
+SME/MixSpike @@ Zbuntowany automat z nadajnikami
+SME/MixSpikeA @@ Jeśli oddasz mu cały cramm, wypluje nadajnik. Cramm -{0}. Nadajniki: +{1}
+SME/MixSpikeAButton @@ Użyj
+SME/MixSpikeATitle @@ Zapłać cramm
+SME/MixSpikeB @@ Spike wie, jak się do nich włamać. Zmęczenie Spike'a +{0}. Nadajniki: +{1}
+SME/MixSpikeBButton @@ Spike
+SME/MixSpikeBTitle @@ Włam się
+SME/MixSpikeC @@ Spike wie, jak się do nich włamać. Zmęczenie Spike'a +{0}. Nadajniki: +{1}
+SME/MixSpikeCTitle @@ Spike
+SME/MixSpikeDesc @@ Automat obsługuje robot, który bardzo nalega na zapłatę.
+SME/NegAffinity @@ Burza psychiczna
+SME/NegAffinityA @@ Dwóch banitów się kłóci.
+SME/NegAffinityAButton @@ OK
+SME/NegAffinityATitle @@ Waśń
+SME/NegAffinityDesc @@ Psychiczne wiatry wiejące w tym rejonie wywołują wybuchy gniewu.
+SME/NegFatigue @@ Pustkowia
+SME/NegFatigueA @@ Zmęczenie wszystkich banitów: +{0}
+SME/NegFatigueAButton @@ OK
+SME/NegFatigueATitle @@ Zmęczenie
+SME/NegFatigueDesc @@ Przez silne promieniowanie podróż przez ten rejon jest wyczerpująca.
+SME/NegInjFatigue @@ Burza szczątków
+SME/NegInjFatigueA @@ Szansa na rany u każdego banity w burzy: {0}%. Zmęczenie pozostałych banitów: +{0}
+SME/NegInjFatigueAButton @@ OK
+SME/NegInjFatigueATitle @@ Banici poturbowani
+SME/NegInjFatigueDesc @@ Przelot przez to pole szczątków będzie ryzykowny
+SME/NegInjury @@ Pole asteroid
+SME/NegInjuryA @@ Szansa na rany u każdego banity: {0}%
+SME/NegInjuryAButton @@ OK
+SME/NegInjuryATitle @@ Rany
+SME/NegInjuryDesc @@ Groźne asteroidy mogą przebić osłony Driftera i spowodować rany.
+SME/NegItems @@ Rój nanobotów
+SME/NegItemsA @@ Szansa na zniszczenie każdego przedmiotu: {0}%
+SME/NegItemsAButton @@ OK
+SME/NegItemsATitle @@ Uszkodzone przedmioty
+SME/NegItemsDesc @@ Nanoboty pożerają ten wrak. Drifterowi nie zaszkodzą, ale mogą uszkodzić przedmioty.
+SME/NoEvent @@ Brak zdarzenia
+SME/NoEventDesc @@ Brak opisu zdarzenia
+SME/Pirates @@ Piraci
+SME/PiratesA @@ Oddaj im cały cramm.
+SME/PiratesATitle @@ Zapłać
+SME/PiratesB @@ Walcz i ryzykuj rany banitów w zamian za szansę na piracki łup. {0}/{0}
+SME/PiratesBTitle @@ Walcz
+SME/PiratesC @@ Uciekaj. Szansa na rany u każdego banity: {0}%
+SME/PiratesCTitle @@ Uciekaj
+SME/PiratesDesc @@ Po tych wodach krążą krwiożerczy piraci.
+SME/PosBeans @@ Zagubiony goniec
+SME/PosBeansA @@ Fasola +{0}
+SME/PosBeansATitle @@ Podarunek
+SME/PosBeansDesc @@ Zagubiony goniec hojnie wynagrodzi wskazanie drogi.
+SME/PosChits @@ Juki
+SME/PosChitsA @@ Cramm +{0}
+SME/PosChitsAButton @@ Weź
+SME/PosChitsATitle @@ Juki
+SME/PosChitsDesc @@ Jakiś nieszczęsny podróżny zostawił chyba swoje juki.
+SME/PosElixirs @@ Wędrowny kaznodzieja
+SME/PosElixirsA @@ Tonik: +{0}
+SME/PosElixirsAButton @@ Weź
+SME/PosElixirsATitle @@ Darmowy tonik
+SME/PosElixirsDesc @@ Ten wędrowny kaznodzieja rozdaje ze swojego statku modlitwy i wodę święconą.
+SME/PosFatigue @@ Orbitalny saloon
+SME/PosFatigueA @@ Wszyscy banici są w pełni naładowani.
+SME/PosFatigueAButton @@ Pij
+SME/PosFatigueATitle @@ Napij się
+SME/PosFatigueDesc @@ W tym pozaziemskim barze świetnie się odpoczywa: można wypić i pozbyć się nagromadzonego zmęczenia.
+SME/PosInjuries @@ Wędrowny lazaret
+SME/PosInjuriesA @@ Szansa na wyleczenie ran każdego banity: {0}%
+SME/PosInjuriesAButton @@ Lecz
+SME/PosInjuriesATitle @@ Losowe leczenie
+SME/PosInjuriesDesc @@ Nieludzcy konowałowie muszą pracować w prowizorycznych wędrownych lazaretach. Pomagają swoim.
+SME/PosItems @@ Dryfujące zwłoki
+SME/PosItemsA @@ Przedmioty: +{0}
+SME/PosItemsAButton @@ Weź
+SME/PosItemsATitle @@ Przedmioty
+SME/PosItemsDesc @@ Ten biedak znalazł się po złej stronie śluzy.
+SME/PosNavs @@ Skrytka z nadajnikami
+SME/PosNavsA @@ Nadajniki +{0}
+SME/PosNavsAButton @@ Weź
+SME/PosNavsATitle @@ Nadajniki
+SME/PosNavsDesc @@ Nadajniki wzywają statek, który zabiera z planety. Te ktoś chyba wyrzucił za burtę w panice.
+SME/PosRandom @@ Dryfujący ładunek
+SME/PosRandomA @@ Zbierz zawartość skrytki
+SME/PosRandomAButton @@ Weź
+SME/PosRandomATitle @@ Skrytka
+SME/PosRandomDesc @@ Jakiś inny banita chyba zakończył żywot w tym sektorze, zostawiając przypadkową zbieraninę rzeczy
+SME/Stash @@ Skrytka w czarnej dziurze
+SME/StashA @@ Dodaj wszystkie przedmioty ze skrytki do czarnej dziury (TODO)
+SME/StashATitle @@ Dodaj przedmioty
+SME/StashB @@ Odzyskaj wszystkie przedmioty z czarnej dziury (TODO)
+SME/StashBTitle @@ Odzyskaj
+SME/StashDesc @@ Przechowaj wszystkie niezałożone przedmioty i odzyskaj je po resecie
+SME/Unset @@ Nieustawione
+SME/UnsetDesc @@ Brak opisu

@@ -1,0 +1,20 @@
+AIDescItem/AI BalloonBomber 3 @@ Ucieka przed flankowaniem
+AIDescItem/AI Bushwhacker 3 @@ Ucieka przed flankowaniem
+AIDescItem/AI Grenadier 3 @@ Ucieka przed flankowaniem
+AIDescItem/AI ShieldBearer 3 @@ Ucieka przed flankowaniem
+AIDescItem/AI Marksman L3 2 @@ Da się przygwoździć ogniem
+AIShortDesc/BalloonBomber @@ Okultysta
+AIShortDesc/Marksman @@ Czujny strzelec
+Location/ItemShop @@ Handlarz
+ItemName/AMYGDALA_BOMB @@ Bomba migdałowata
+ItemName/STORM_RESISTANCE @@ Czapka z folii
+ItemName/RAD_DEFLECTOR @@ Tarcza antyrad
+WeaponSpecial/Charged @@ Egzekucja gotowa
+OutlawWanted/Hopalong @@ Łażenie po jezdni\nKradzież bydła
+TalentName/DOC_LUCKY_FIND @@ Szczęśliwy traf
+TalentName/DOC_LUCKY_FIND_RARE @@ Szczęśliwy traf+
+TraitName/GoodItems @@ Najlepsze łupy
+TraitDesc/GoodItems @@ Lepsze przedmioty do zebrania
+UIMG/UseBeansOverlayAutoButton @@ Rozdziel automatycznie
+InteractionTitle/Den @@ Legowisko złupione
+State/HealthPickups @@ Zrzut apteczek

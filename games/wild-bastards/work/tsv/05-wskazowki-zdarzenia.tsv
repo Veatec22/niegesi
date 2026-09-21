@@ -1,0 +1,369 @@
+Ach/ACH_ALL_CHALLENGES_DESC @@ Ukończ wszystkie wyzwania
+Ach/ACH_ALL_CHALLENGES_NAME @@ Jeszcze dzikszy bękart
+Ach/ACH_ASSASSIN_DESC @@ Zabij regenerującego się zabójcę
+Ach/ACH_ASSASSIN_NAME @@ I leż
+Ach/ACH_BANK_DESC @@ Wypłać cramm z banku
+Ach/ACH_BANK_NAME @@ Bankier
+Ach/ACH_BARRABAS_DESC @@ Znokautuj Barrabasa
+Ach/ACH_BARRABAS_NAME @@ Diabelski pomiot
+Ach/ACH_BESTIARY_DESC @@ Zbierz dane o wszystkich wrogach
+Ach/ACH_BESTIARY_NAME @@ Badacz
+Ach/ACH_CHALLENGE_DESC @@ Ukończ wyzwanie
+Ach/ACH_CHALLENGE_NAME @@ Wio!
+Ach/ACH_COMPLETE_DESC @@ Ukończ grę
+Ach/ACH_COMPLETE_NAME @@ Dziki bękart
+Ach/ACH_DRIFTER_DESC @@ Przenieś się na Driftera
+Ach/ACH_DRIFTER_NAME @@ Uratowani
+Ach/ACH_DYNAMITE_DESC @@ Zabij trzech wrogów jedną laską bum
+Ach/ACH_DYNAMITE_NAME @@ Fajerwerki
+Ach/ACH_FRANCISCO_DESC @@ Znokautuj Francisco
+Ach/ACH_FRANCISCO_NAME @@ Dopuszczalna strata
+Ach/ACH_GANG_DESC @@ Zbierz Dzikie Bękarty
+Ach/ACH_GANG_NAME @@ Banda znów w komplecie
+Ach/ACH_HARD_DESC @@ Ukończ grę na poziomie trudnym
+Ach/ACH_HARD_IRONMAN_DESC @@ Ukończ grę na poziomie bardzo trudnym w trybie ironman
+Ach/ACH_HARD_IRONMAN_NAME @@ Hombre de Acero
+Ach/ACH_HARD_NAME @@ Twardy bękart
+Ach/ACH_HARD_SUPER_DESC @@ Ukończ grę na poziomie bardzo trudnym w trybie super ironman
+Ach/ACH_HARD_SUPER_NAME @@ Super Hombre de Acero
+Ach/ACH_HEADSHOT_KILLS_DESC @@ Zabij 10 wrogów strzałami w głowę w jednym starciu
+Ach/ACH_HEADSHOT_KILLS_NAME @@ Sprawiedliwości stało się zadość
+Ach/ACH_HELP_DESC @@ Niech kumpel pomoże w starciu
+Ach/ACH_HELP_NAME @@ Amigo
+Ach/ACH_INFAMY_DESC @@ Zdobądź 2000 niesławy w jednym sektorze
+Ach/ACH_INFAMY_NAME @@ Okryty niesławą
+Ach/ACH_IRONCLAD_DESC @@ Zabij żelaźniaka
+Ach/ACH_IRONCLAD_NAME @@ Co u licha?
+Ach/ACH_IRONMAN_DESC @@ Ukończ grę na poziomie normalnym w trybie ironman
+Ach/ACH_IRONMAN_NAME @@ Ironman
+Ach/ACH_LEVEL_DESC @@ Awansuj banitę na poziom 7
+Ach/ACH_LEVEL_NAME @@ Asy w górę
+Ach/ACH_MCNEIL_DESC @@ Znokautuj McNeila
+Ach/ACH_MCNEIL_NAME @@ Tatusiu, ratuj
+Ach/ACH_MODS_DESC @@ Zbierz wszystkie przedmioty
+Ach/ACH_MODS_NAME @@ Kolekcjoner
+Ach/ACH_PEACEMAKER_DESC @@ Wygraj starcie z co najmniej 10 wrogami bez oddania strzału
+Ach/ACH_PEACEMAKER_NAME @@ Rozjemca
+Ach/ACH_PROCEDURAL_DESC @@ Ukończ kampanię proceduralną
+Ach/ACH_PROCEDURAL_NAME @@ Jakiś losowy bękart
+Ach/ACH_SMOKY_DESC @@ Wskrześ Smoky'ego
+Ach/ACH_SMOKY_NAME @@ Ano, fasola!
+Ach/ACH_SUPER_DESC @@ Ukończ grę na poziomie normalnym w trybie super ironman
+Ach/ACH_SUPER_NAME @@ Super ironman
+Ach/ACH_VERY_HARD_DESC @@ Ukończ grę na poziomie bardzo trudnym
+Ach/ACH_VERY_HARD_NAME @@ Twardy hombre
+Activity/Campaign @@ Kampania
+Activity/Challenge @@ Wyzwanie
+Challenge/1 @@ Wio!
+Challenge/10 @@ Podróż bohaterów
+Challenge/11 @@ Hej, rozrzutniku
+Challenge/12 @@ Samotny kowboj
+Challenge/13 @@ Wielkie niebo
+Challenge/14 @@ Rozpętać burzę
+Challenge/2 @@ Zwaśnieni kompani
+Challenge/3 @@ Samotny jeździec
+Challenge/4 @@ Głodnyś?
+Challenge/5 @@ Toksyczna sytuacja
+Challenge/6 @@ Na wzniesieniu
+Challenge/7 @@ Asesinos
+Challenge/8 @@ Gówno widać
+Challenge/9 @@ Podwójna kara
+DifficultyDesc/Easy @@ Dla tych, którzy nie grają w strzelanki FPP albo chcą łatwiejszej rozgrywki
+DifficultyDesc/Hard @@ Dla weteranów strzelanek FPP, którzy szukają wyzwania
+DifficultyDesc/Normal @@ Dla tych, którzy grali już w strzelanki FPP i chcą wyważonej rozgrywki
+DifficultyDesc/VeryEasy @@ Dla tych, którzy chcą poznać fabułę przy minimalnym wyzwaniu
+DifficultyDesc/VeryHard @@ Dla zatwardziałych graczy FPP, którzy chcą największego wyzwania
+EventDescription/AllEstateKeysCollected @@ Zebrano wszystkie klucze do posiadłości. Ruszaj na następną planetę.
+EventDescription/AllGoldCollected @@ Znaleziono helisę poległego Dzikiego Bękarta! Chyba czas zmykać z powrotem na Driftera.
+EventDescription/AllGoldCollectedTutorial @@ Drifter proponuje zabrać bandę z tej planety. Dotrzyj do schodów, żeby się na niego przenieść.
+EventDescription/AllResourcesCollected @@ Banda zgarnęła cały łup z tej planety. Lepiej zmykać, zanim będzie za późno!
+EventDescription/AmygdalaBomb @@ Bomba przeciąża układ limbiczny wrogów. Przerażeni rzucają się do ucieczki.
+EventDescription/BreakOutCasino @@ Włam się do więzienia i uwolnij Doca Casino.
+EventDescription/BunchTutorial @@ Otwórz ekran grup, żeby zamieniać banitów stojących w tym samym miejscu między grupami.
+EventDescription/ChasteEncounter @@ Jebediah Chaste dopadł twoją grupę. Nie da się go pokonać, więc wszyscy banici są ranni.
+EventDescription/ChasteWarning @@ Jebediah Chaste jest w drodze. Nie da się go pokonać.
+EventDescription/CrittersFlee @@ Dzięki umiejętnościom Hopalonga jedno zwierzę zostaje oswojone i będzie walczyć po stronie banitów.
+EventDescription/CrittersSurrender @@ Hopalong zagania i zabija jedną grupę zwierząt z blokady.
+EventDescription/EnoughGoldCollected @@ Banda ma dość błysku, żeby zwerbować kolejnego banitę. Może już zmykać albo zostać i szukać asów, nadajników i fasoli.
+EventDescription/GuardPostAbandoned @@ Blokada została opuszczona.
+EventDescription/GuardpostFlees @@ Twoi groźni banici przepłoszyli strażników blokady!
+EventDescription/GuardpostSurrenders @@ Pajęcza Rosa przekonała jednego ze strażników blokady – przechodzi na stronę banitów i będzie dla nich walczyć.
+EventDescription/HelixTutorial @@ Helisa jest krucha i przepadnie, jeśli wszyscy banici zostaną ranni. Dotrzyj do schodów albo użyj nadajnika!
+EventDescription/HopalongEvade @@ Dzięki woltyżerce Hopalonga udaje się umknąć wrogom!
+EventDescription/LootTutorial @@ Nie musisz walczyć ze wszystkimi wrogami. Możesz po prostu odejść z łupem!
+EventDescription/MarshalEncounter @@ Natrafiasz na obławę.
+EventDescription/MarshalSurrenders @@ Zastraszona obława się poddaje.
+EventDescription/MutagenicChange @@ Przez silne promieniowanie na tej planecie wszyscy wrogowie mutują.
+EventDescription/OutlawsHealed @@ Ranni banici odzyskują 50% zdrowia.
+EventDescription/PackEncounter @@ Natrafiasz na sforę zwierząt.
+EventDescription/PatrolEncounter @@ Natrafiasz na patrol strażników.
+EventDescription/PatrolFlees @@ Przerażony patrol ucieka.
+EventDescription/PatrolSurrenders @@ Zastraszony patrol się poddaje.
+EventDescription/PlanetOver @@ Przybył sam Jebediah Chaste. Nie da się go pokonać, więc Drifter awaryjnie ściąga wszystkich na pokład. Wszyscy banici na planecie są ranni.
+EventDescription/PosseEncounter @@ Natrafiasz na obławę.
+EventDescription/Restock @@ Wszystkie miejsca uzupełniają zasoby.
+EventDescription/RestorePower @@ Ochrona znów ma zasilanie
+EventDescription/ReturnGuards @@ Po jedzeniu wszyscy strażnicy wracają na posterunki.
+EventDescription/StageCoachEncounter @@ Napadasz na wóz.
+EventDescription/StageCoachExit @@ Wóz dotarł do celu i opuścił planetę.
+EventDescription/StageCoachSpawn @@ Przybył wóz z cennym łupem i jedzie przez planetę.
+EventDescription/WantedIncrease1 @@ Przybył McNeil. Jest bardzo groźny, więc czas zgarnąć, co się da, i zmykać do schodów. Nie daj mu się złapać!
+EventDescription/WantedIncrease2 @@ Przybyła córka Chaste'a, Francisco. Jest jeszcze groźniejsza niż McNeil!
+EventDescription/WantedIncrease3 @@ Przybył najstarszy syn Chaste'a, Barrabas. To najgroźniejszy z trojga książąt!
+EventDescription/WantedIncrease4 @@ Przybył sam Chaste. Nie da się go pokonać, więc opuść planetę jak najszybciej!
+EventTitle/AllEstateKeysCollected @@ Klucze do posiadłości
+EventTitle/AllGoldCollected @@ Helisa zebrana
+EventTitle/AllGoldCollectedTutorial @@ Uratowani
+EventTitle/AllResourcesCollected @@ Wszystko zebrane
+EventTitle/AmygdalaBomb @@ Bomba odpalona
+EventTitle/BreakOutCasino @@ Uwolnij Casino
+EventTitle/BunchTutorial @@ Grupy banitów
+EventTitle/ChasteEncounter @@ Jebediah Chaste
+EventTitle/ChasteWarning @@ Uwaga
+EventTitle/CrittersFlee @@ Zwierzęta oswojone
+EventTitle/CrittersSurrender @@ Zagonione
+EventTitle/EnoughGoldCollected @@ Cel błysku osiągnięty
+EventTitle/GuardPostAbandoned @@ Strażnicy uciekają!
+EventTitle/GuardpostFlees @@ Blokada ucieka
+EventTitle/GuardpostSurrenders @@ Strażnicy się poddają
+EventTitle/HelixTutorial @@ Helisa odzyskana
+EventTitle/HopalongEvade @@ Woltyżerka
+EventTitle/LootTutorial @@ Łupienie
+EventTitle/MarshalEncounter @@ Starcie
+EventTitle/MarshalSurrenders @@ Obława się poddaje
+EventTitle/MutagenicChange @@ Mutacja
+EventTitle/OutlawsHealed @@ Dotarto do blokady skoku
+EventTitle/PackEncounter @@ Starcie
+EventTitle/PatrolEncounter @@ Starcie
+EventTitle/PatrolFlees @@ Patrol ucieka
+EventTitle/PatrolSurrenders @@ Kapitulacja
+EventTitle/PlanetOver @@ Chaste przybywa
+EventTitle/PosseEncounter @@ Starcie
+EventTitle/QuestCompletion @@ Zadanie wykonane
+EventTitle/QuestProgress @@ Postęp zadania
+EventTitle/Restock @@ Nowy tydzień
+EventTitle/RestorePower @@ Zasilanie przywrócone
+EventTitle/ReturnGuards @@ Koniec jedzenia
+EventTitle/StageCoachEncounter @@ Napad na wóz
+EventTitle/StageCoachExit @@ Wóz odjechał
+EventTitle/StageCoachSpawn @@ Wóz przybył
+EventTitle/WantedIncrease @@ Książę przybywa
+EventTitle/WantedIncrease1 @@ McNeil przybywa
+EventTitle/WantedIncrease2 @@ Francisco przybywa
+EventTitle/WantedIncrease3 @@ Barrabas przybywa
+EventTitle/WantedIncrease4 @@ Chaste przybywa
+Helped/Astronaut @@ Roswell dał pancerz
+Helped/Billy @@ Billy osłabił trzech wrogów
+Helped/Cuffs @@ Cuffs pomogła
+Helped/Fletch @@ Fletch dała kumplowi nietykalność
+Helped/Gambler @@ Casino dał znajdźkę
+Helped/Hopalong @@ Hopalong strzelił z bicza
+Helped/Judge @@ Sędzia włączył czas kuli
+Helped/Legs @@ Legs pomogła
+Helped/MamaPanic @@ Rosa rzuciła wabik
+Helped/MistMiner @@ Kaboom zrobił kumpla niewidzialnym
+Helped/Preach @@ Kaznodzieja dała apteczkę
+Helped/Radium @@ Radium pomógł
+Helped/Rawhide @@ Rawhide przyzwał kojoty
+Helped/Sarge @@ Sierżant przyzwał rewolwerowca
+Helped/Smoky @@ Smoky spalił kilku wrogów
+Helped/Spike @@ Spike rozstawił lufę
+Hint/Aces @@ Gdy banita awansuje, wybierasz mu jednego z trzech nowych asów.
+Hint/Armor @@ Pancerz pochłania obrażenia z jednego trafienia.
+Hint/Backdoor @@ Z furtek z czasem wychodzą nowi wrogowie. Jeśli podejdziesz blisko, możesz je zamknąć.
+Hint/Banks @@ Niektóre miejsca, np. kuźnie, z czasem się odnawiają i można do nich wracać.
+Hint/BeamLimit @@ Na planetę możesz zabrać tylu banitów, na ilu pozwala limit transportu – albo mniej.
+Hint/BeamUp @@ Gdy jeden banita wraca na statek, reszta wraca razem z nim.
+Hint/Beans @@ Fasola może zakończyć waśń albo zrobić z dwóch banitów kumpli.
+Hint/Bestiary @@ Dane o wrogach zawierają informacje o przeciwnikach. Otworzysz je z menu pauzy.
+Hint/BonusAce @@ Naładowane asy działają tylko wtedy, gdy banita jest naładowany (niezmęczony).
+Hint/Bounty @@ Przy każdym warpie niesława zamienia się w nagrody w Dziurze w Murze.
+Hint/Bunches @@ W grupie mogą być tylko dwaj banici. Banitów stojących w tym samym miejscu możesz przenosić między grupami na ekranie grup.
+Hint/Casino @@ Strzelba Casino dostaje inną premię w każdym starciu.
+Hint/CasinoStunt @@ Ruletka Casino wysadza jednego losowego wroga. Świetna na ostatniego groźnego przeciwnika.
+Hint/Charge @@ Banita zostaje naładowany, gdy zdobywa nowego naładowanego asa.
+Hint/Cloaks @@ Awaryjne nadajniki pozwalają bezpiecznie opuścić planetę, gdy nie da się dotrzeć do schodów.
+Hint/CoreAce @@ Podstawowe asy odblokowują banicie nowe stałe wzmocnienia.
+Hint/Crit @@ Trafienia krytyczne zadają podwójne obrażenia i omijają pancerz wroga.
+Hint/Crouch @@ Naciśnij C, żeby kucnąć.
+Hint/CrouchGamepad @@ Naciśnij <sprite name="buttonEast">, żeby kucnąć.
+Hint/Ctrl @@ Jeśli chcesz przesunąć grupę na pole innej grupy albo ruchomego wroga, przytrzymaj Ctrl.
+Hint/CtrlGamepad @@ Przełączaj grupy banitów przyciskami <sprite name="rightShoulder"> i <sprite name="leftShoulder">.
+Hint/DamageTypes @@ Rodzaje obrażeń zadawanych przez wrogów widać na ekranie wczytywania.
+Hint/Escape @@ Banici mogą się wycofać ze starcia, ale tracą turę.
+Hint/Fatigue @@ Przy każdym skoku Driftera banici są mniej zmęczeni.
+Hint/FeudCause @@ Nie powstrzymasz banitów przed wszczynaniem nowych waśni. Możesz je jednak zażegnać fasolą.
+Hint/Feuds @@ Skłóceni banici nie mogą razem zejść na planetę
+Hint/Flee @@ Wróg, który ucieka, opuszcza starcie.
+Hint/Fletch @@ Strzały Fletch same lecą za jej celem.
+Hint/Gambler @@ Ruletka Casino wysadza jednego losowego wroga. Świetna na ostatniego groźnego przeciwnika.
+Hint/GetFatigue @@ Banici męczą się przy powrocie na statek, ale tylko wtedy, gdy walczyli w starciu.
+Hint/Hand @@ Każda paczka znalezionych asów awansuje banitę i daje wybór wzmocnień.
+Hint/Headshot @@ Strzelaj wrogom w głowę albo w słaby punkt, żeby trafiać krytycznie.
+Hint/HealBeamUp @@ Banici w pełni się leczą przy każdym powrocie na statek, chyba że są ranni.
+Hint/Hideout @@ Po zejściu na planetę banici zniszczą blokadę skoku, a Drifter będzie mógł skoczyć.
+Hint/Hopalong @@ Hopalong świetnie radzi sobie z pojedynczymi groźnymi wrogami, ale słabo z dużymi grupami.
+Hint/Judge @@ Sędzia najlepiej sprawdza się w otwartym terenie z dalekim polem widzenia.
+Hint/JumpLock @@ Wszystkie planety w tej części galaktyki mają blokadę skoku. Musisz zejść na planetę i ją złamać, zanim odskoczysz.
+Hint/Kaboom @@ Kaboom rzuca dalej, gdy celuje.
+Hint/KillAll @@ Zabij wszystkich wrogów, żeby wygrać starcie.
+Hint/Laser @@ Lufy, łowcy i skrzynki-pułapki używają broni laserowej.
+Hint/Leave @@ Nie musisz łupić wszystkiego na planecie. W każdej chwili możesz odejść schodami.
+Hint/Marshals @@ Na planecie masz ograniczoną liczbę tur, zanim przybędą książęta, żeby cię dopaść.
+Hint/MistMiner @@ Kaboom rzuca dalej, gdy celuje
+Hint/Mods @@ Przedmioty można dać dowolnemu banicie, ale nie można ich potem przenieść i przepadają przy warpie Driftera.
+Hint/Night @@ Nocą wrogowie widzą mniej (ty też).
+Hint/OutlawOrder @@ Kolejność banitów w grupie ustawisz przyciskiem grupy.
+Hint/OutlawOrderGamepad @@ Kolejność banitów w grupie ustawisz na ekranie grup.
+Hint/OutlawStunt @@ Każdy banita ma własny, wyjątkowy popis zasilany bimbrem.
+Hint/Pals @@ Banita pomoże kumplowi, gdy ten oberwie w starciu.
+Hint/Patrol @@ Najedź myszą na patrol, sforę albo obławę, żeby zobaczyć ich przewidywany następny ruch.
+Hint/PatrolGamepad @@ Najedź kursorem na patrol, sforę albo obławę, żeby zobaczyć ich przewidywany następny ruch.
+Hint/Pawn @@ W lombardzie wymienisz zasoby, które przepadłyby przy warpie, na niesławę (ta przechodzi do następnego sektora).
+Hint/Poison @@ Trucizna z czasem rani banitów, ale nie wtedy, gdy są wymienieni.
+Hint/PoisonCure @@ Truciznę leczą apteczki.
+Hint/Preach @@ Gatling Kaznodziei potrzebuje czasu, żeby się rozkręcić, więc zacznij strzelać, zanim wrogowie pojawią się w polu widzenia.
+Hint/Proton @@ Większość Karzycieli, łącznie z rewolwerowcami, używa broni protonowej.
+Hint/RMB @@ Przytrzymaj prawy przycisk myszy, żeby celować i strzelać celniej.
+Hint/RMBGamepad @@ Przytrzymaj <sprite name="leftTrigger">, żeby celować i strzelać celniej.
+Hint/Rage @@ Popisy szału i nietykalności zasilają osobne znajdźki.
+Hint/RageState @@ Gdy banita jest w szale, jego trafienia są krytyczne i ogłuszają cel.
+Hint/Rawhide @@ Karabin dźwiękowy Rawhide'a przebija wszystkie tarcze energetyczne.
+Hint/Reload @@ Naciśnij R, żeby przeładować.
+Hint/ReloadGamepad @@ Naciśnij <sprite name="buttonWest">, żeby przeładować.
+Hint/RiftInfamy @@ Zabijanie wrogów z furtek nie zwiększa niesławy.
+Hint/Scatter @@ Przy zejściu na planetę banici czasem się rozpraszają. Dotrzyj do rozproszonego banity, żeby znów się połączyć.
+Hint/ScatterFind @@ Rozproszony banita zaprzyjaźni się bardziej z jednym z tych, którzy go znajdą.
+Hint/Security @@ Nie musisz niszczyć ochrony (luf ani skrzynek-pułapek), żeby wygrać starcie
+Hint/Sell @@ Niezałożone przedmioty możesz sprzedać w sklepach.
+Hint/Shine @@ Popisy banitów zasila bimber. Znajdziesz go w każdym starciu.
+Hint/Smoky @@ Czasem lepiej zwabić wrogów w ogień Smoky'ego, niż celować w nich wprost.
+Hint/Smoky2 @@ Smoky rzuca ogniem dalej, gdy celuje.
+Hint/Sneak @@ Hopalong i Kaboom poruszają się bezszelestnie i nie alarmują wrogów sprintem.
+Hint/Sonic @@ Obrażenia dźwiękowe omijają pancerz. Kojoty i czatownicy strzelają dźwiękiem.
+Hint/Speech @@ Gdy wróg się odzywa, jego położenie pojawia się na kompasie.
+Hint/SpiderRosa @@ Pajęcza Rosa może przeładowywać drugą parą rąk w trakcie strzelania.
+Hint/SpiderStunt @@ Naciśnij E, żeby Pajęcza Rosa rzuciła wabik.
+Hint/SpiderStuntGamepad @@ Naciśnij <sprite name="rightShoulder">, żeby Pajęcza Rosa rzuciła wabik.
+Hint/Spike @@ Spike jest zabójczy, gdy działa po cichu, ale w otwartej wymianie ognia bywa mu ciężko.
+Hint/Spike2 @@ Spike rzuca dalej, gdy celuje.
+Hint/Sprint @@ Przytrzymaj Shift, żeby biec. Sprint alarmuje pobliskich wrogów.
+Hint/SprintGamepad @@ Przytrzymaj <sprite name="leftStickPress">, żeby biec. Sprint alarmuje pobliskich wrogów.
+Hint/Stairway @@ Gdy jeden banita wraca na statek schodami, wracają z nim wszyscy banici z planety.
+Hint/Storms @@ Burze są groźne – i dla ciebie, i dla wrogów.
+Hint/Stunt @@ Szczegóły popisu każdego banity znajdziesz na ekranie banity.
+Hint/Suspicious @@ Wrogowie strzelają w podejrzane dźwięki, więc bądź cicho, gdy kryjesz się w trzcinach albo w listowiu.
+Hint/SwapOutlaws @@ Z grupy może naraz walczyć tylko jeden banita.
+Hint/Tired @@ <deprecated>
+Hint/Tonics @@ Toniki leczą rannych banitów i znów ich ładują.
+Hint/Uncollected @@ Niezebrane znajdźki zbierasz automatycznie, gdy wygrasz starcie.
+Hint/Warp @@ Warp niszczy wszystkie przedmioty, cramm, toniki, nadajniki i fasolę. Asy zostają.
+Mission/Astronaut0 @@ Sprawdzić plotkę o obcym podobnym do Roswella.
+Mission/Astronaut1 @@ Posłuchać kosmicznego promieniowania tła.
+Mission/Astronaut2 @@ Przejechać się dla frajdy kapsułą ratunkową Driftera.
+Mission/Billy0 @@ Wytropić pierwsze wydanie „Jechał po wysokich graniach”.
+Mission/Billy1 @@ Poćwiczyć potrójny młynek rewolwerem.
+Mission/Billy2 @@ Pojedynek z zabójcą, który twierdzi, że najszybciej w sektorze wyciąga broń.
+Mission/Fletch0 @@ Posiedzieć na plaży.
+Mission/Fletch1 @@ Popływać na pobliskim wodnym świecie.
+Mission/Fletch2 @@ Pomedytować w kapsule ratunkowej.
+Mission/Gambler0 @@ Uzbierać trochę cramm na spłatę starego długu karcianego.
+Mission/Gambler1 @@ Zdobyć bardzo potrzebny smar z czarnego rynku.
+Mission/Gambler2 @@ Odwiedzić starych kumpli od pokera i ich oskubać.
+Mission/Hopalong0 @@ Obejrzeć farmę na sprzedaż.
+Mission/Hopalong1 @@ Złapać na lasso rozszalałego byczka.
+Mission/Hopalong2 @@ Zabawiać sztuczkami z liną osierocone robodzieci.
+Mission/Judge0 @@ Przywrócić sprawiedliwość w miasteczku terroryzowanym przez rzezimieszków.
+Mission/Judge1 @@ Wystrzelać nowy celownik na strzelnicy.
+Mission/Judge2 @@ Powiesić słynnego Karzyciela schwytanego przez robobuntowników.
+Mission/MamaPanic0 @@ Rosa chce zapolować na coś do jedzenia. Lepiej nie wnikać w szczegóły.
+Mission/MamaPanic1 @@ Znaleźć odpowiedniego żywiciela do wysiadywania larw.
+Mission/MamaPanic2 @@ Wytropić dawnego wroga i sprawić, żeby pożałował, że wystawił Rosę.
+Mission/MistMiner0 @@ Dopracować recepturę na większe bum.
+Mission/MistMiner1 @@ Kopać diamenty na krystalicznym świecie.
+Mission/MistMiner2 @@ Płukać złoto.
+Mission/Preach0 @@ Pielgrzymka do klasztoru Matki Boskiej Czarnoprochowej.
+Mission/Preach1 @@ Studiowanie Biblii.
+Mission/Preach2 @@ Datek na sierociniec Drogocennych Dusz.
+Mission/Rawhide0 @@ Zdobyć zapasową matrycę wibracyjną do Starego Wrzaskuna.
+Mission/Rawhide1 @@ Odnaleźć wiewiórkę, która została w tyle.
+Mission/Rawhide2 @@ Zbierać żołędzie na świecie sekwoi.
+Mission/Sarge0 @@ Postrugać patyki.
+Mission/Sarge1 @@ Poszwendać się.
+Mission/Sarge2 @@ Nie twój interes.
+Mission/Smoky0 @@ Wystawić fasolę w konkursie kulinarnym.
+Mission/Smoky1 @@ Nazbierać papryczek szaleństwa do specjalnego sosu Smoky'ego.
+Mission/Smoky2 @@ Poopalać się przy gwieździe klasy O.
+Mission/Spike0 @@ Wypić mnóstwo lagera i starać się nie myśleć o bimbrze.
+Mission/Spike1 @@ Odwyk w ośrodku Samotny Jeździec.
+Mission/Spike2 @@ Nowa osełka.
+Mutator/AllElite @@ Same elitarne planety
+Mutator/AllStorms @@ Zawsze burza
+Mutator/AlwaysNight @@ Zawsze noc
+Mutator/DoubleDamage @@ Podwójne obrażenia
+Mutator/DoubleInfamy @@ Podwójna niesława
+Mutator/FastPrince @@ Książęta przybywają szybciej
+Mutator/Jetpacks @@ Same plecaki odrzutowe
+Mutator/LargePlanets @@ Duże planety
+Mutator/LotsOfAces @@ Mnóstwo asów
+Mutator/LotsOfTonics @@ Mnóstwo toników
+Mutator/ManyNebulas @@ Wiele mgławic
+Mutator/MaxThreat @@ Maksymalne zagrożenie
+Mutator/StartingFeuds @@ Wszyscy są skłóceni
+Prompt/AllMovesUsed @@ Koniec ruchów
+Prompt/ControllerAllMovesUsed @@ Koniec ruchów
+Prompt/ControllerMoveBunch @@ – potwierdź ruch
+Prompt/ControllerPlanMove @@ – wskaż cel
+Prompt/MoveBunch @@ Kliknij ponownie, żeby potwierdzić ruch
+Prompt/PlanMove @@ Kliknij cel lewym przyciskiem
+QuestDescription/CUFFS_JAIL_RESCUE @@ Uwolnij banitów z więzienia
+QuestDescription/DOC_EXPLODE_IRONCLADS @@ Wysadź żelaźniaki Ruletką
+QuestDescription/DOC_GET_CHITS @@ Zdobądź cramm
+QuestDescription/HOPALONG_ARMADILLO_KILL @@ Zabij jeżozwierza
+QuestDescription/HOPALONG_DENS @@ Splądruj legowiska
+QuestDescription/JUDGE_BULLET_TIME_KILL_STREAK @@ Zabójstwa w czasie kuli
+QuestDescription/JUDGE_HEADSHOT_STREAK @@ Seria krytyków
+QuestDescription/KABOOM_DYNAMITE_DOUBLE_KILL @@ Podwójne zabójstwo dynamitem
+QuestDescription/KABOOM_DYNAMITE_NO_VIS_KILL @@ Zabij niewidocznego wroga
+QuestDescription/KABOOM_DYNAMITE_YELLOWBELLY_KILL @@ Zabij cykora dynamitem
+QuestDescription/LAIKA_EXPLORE @@ Zbadaj planetę
+QuestDescription/LAIKA_RIFT_CLOSE @@ Zamknij furtki
+QuestDescription/MAMA_DATA_VAULTS @@ Włam się do farm danych i wykradnij sekrety
+QuestDescription/MAMA_DECOY_KILL @@ Zabij wrogów zajętych wabikiem
+QuestDescription/PREACH_IRONCLAD_KILL @@ Zabij żelaźniaki
+QuestDescription/PREACH_TAKE_DAMAGE @@ Przyjmij obrażenia
+QuestDescription/SMOKY_CHOWHOUSE @@ Gotuj posiłki w jadłodajniach
+QuestDescription/SMOKY_STUNT_BURN @@ Podpal wrogów Grillowaniem
+QuestDescription/SMOKY_WIN_NO_SHOOT @@ Wygraj starcie, nie strzelając do wroga
+Resolve @@ Rozstrzygnij
+SKUDesc/BEANS @@ Jedna puszka fasoli
+SKUDesc/BUNCH_FULL_ARMOR @@ Pełny pancerz dla grupy
+SKUDesc/BUNCH_FULL_HEALTH @@ Pełne zdrowie dla grupy
+SKUDesc/ELIXIR @@ Jeden tonik
+SKUDesc/GANG_FIFTY_HEALTH @@ Po 50 zdrowia dla całej bandy
+SKUDesc/GANG_FULL_ARMOR @@ Pełny pancerz dla bandy
+SKUDesc/GANG_FULL_HEALTH @@ Pełne zdrowie dla bandy
+SKUDesc/GANG_FULL_SHINE @@ Pełen zapas bimbru dla bandy
+SKUDesc/GANG_ONE_ARMOR @@ Po jednym pancerzu dla bandy
+SKUDesc/GANG_ONE_DISGUISE @@ Jedno przebranie
+SKUDesc/GANG_ONE_NITRO @@ Jedno nitro
+SKUDesc/GANG_ONE_SHINE @@ Po jednym bimbrze dla bandy
+SKUDesc/GANG_ONE_TELEPORTER @@ Jeden przenośny teleporter
+SKUDesc/NAV @@ Jeden nadajnik
+SKUDesc/ONE_HUNDRED_CHITS @@ 100 cramm
+SKUDesc/OUTLAW_ONE_ARMOR @@ Pełny pancerz
+SKUDesc/OUTLAW_ONE_HEALTH @@ Pełne zdrowie
+SKUDesc/OUTLAW_TWO_ARMOR @@ Pełny pancerz
+SKUDesc/OUTLAW_TWO_HEALTH @@ Pełne zdrowie
+Tutorial/InfamyItems1 @@ Masz nowe przedmioty! Przydziel je na ekranie wyposażenia.
+Tutorial/NewAces1 @@ Twój banita zdobył nowe asy i awansował!
+Tutorial/NewAces2 @@ Wybierz asa, który na stałe wzmocni banitę.
+Tutorial/NewBonusAce1 @@ Twój banita zdobył naładowanego asa! Naładowane asy działają, gdy banita jest w pełni naładowany.
+Tutorial/NewBonusAce2 @@ Banici tracą naładowanie przy powrocie z planety na statek – jeśli walczyli na niej w starciu.
+Tutorial/NewBonusAce3 @@ Odzyskują jedno naładowanie za każdym razem, gdy Drifter przenosi się do nowego układu.
+Tutorial/NewInherent1 @@ Twój banita zdobył nowego podstawowego asa! Podstawowe asy dają banicie stałe wzmocnienia.
+Tutorial/Quest1 @@ Na planetach mogą czekać zadania dla banitów.
+Tutorial/Quest2 @@ Wykonanie zadania odblokuje banicie podstawowego asa!
+Tutorial/Reset @@ Drifter cofnął się warpem na początek sektora. Warp wyleczył rany, ale zniszczył też wszystkie zasoby poza asami i niesławą.
+Tutorial/Restart @@ Drifter cofnął się warpem na początek sektora. Warp wyleczył rany, ale zniszczył też wszystkie zasoby poza asami i niesławą.
+Tutorial/SectorComplete @@ Drifter przeniósł się warpem do nowego sektora. Warp wyleczył rany, ale zniszczył też wszystkie zasoby poza asami i niesławą.

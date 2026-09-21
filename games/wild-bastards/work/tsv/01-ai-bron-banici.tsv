@@ -1,0 +1,748 @@
+AI/AI Armadillo @@ Pancernik
+AI/AI Assassin @@ Zabójca
+AI/AI Assassin L2 @@ Regenerujący się zabójca
+AI/AI Balloon @@ Duch
+AI/AI Balloon L2 @@ Zawzięty duch
+AI/AI BalloonBomber @@ Grabarz
+AI/AI BalloonBomber L2 @@ Płodny grabarz
+AI/AI Bear @@ Grizzly
+AI/AI Bear L2 @@ Drażliwy grizzly
+AI/AI Bushwhacker @@ Czatownik
+AI/AI Bushwhacker L2 @@ Cichy czatownik
+AI/AI Bushwhacker L3 @@ Podstępny czatownik
+AI/AI Grenadier @@ Wysadzacz
+AI/AI Grenadier L2 @@ Kasetowy wysadzacz
+AI/AI Grenadier L3 @@ Atomowy wysadzacz
+AI/AI Guard @@ Rewolwerowiec
+AI/AI Gunhand @@ Rewolwerowiec
+AI/AI Gunhand L2 @@ Wyszkolony rewolwerowiec
+AI/AI Gunhand L3 @@ Zaprawiony rewolwerowiec
+AI/AI Ironclad @@ Żelaźniak
+AI/AI Ironclad L2 @@ Rakietowy żelaźniak
+AI/AI MachineGunner @@ Korbiarz
+AI/AI MachineGunner L2 @@ Ciężki korbiarz
+AI/AI Marksman @@ Łowca
+AI/AI Marksman L2 @@ Zabójczy łowca
+AI/AI Marksman L3 @@ Skryty łowca
+AI/AI Marshal @@ McNeil
+AI/AI Marshal L2 @@ Francisco
+AI/AI Marshal L3 @@ Barrabas
+AI/AI Marshal L4 @@ Jebediah Chaste
+AI/AI Porcupine @@ Jeżozwierz
+AI/AI Porcupine L2 @@ Mściwy jeżozwierz
+AI/AI Robot @@ Skrzynka-pułapka
+AI/AI Robot L2 @@ Ruchoma skrzynka-pułapka
+AI/AI Scorpion @@ Żądłak
+AI/AI Scorpion L2 @@ Nieuchronny żądłak
+AI/AI Servant @@ Parobek
+AI/AI ShieldBearer @@ Cykor
+AI/AI ShieldBearer L2 @@ Umocniony cykor
+AI/AI Snake @@ Grzechotnik
+AI/AI Snake L2 @@ Grzechotnik wodny
+AI/AI Turret @@ Lufa
+AI/AI Turret L2 @@ Lufa powtarzalna
+AI/AI Turret L3 @@ Opancerzona lufa
+AI/AI Wolf @@ Kojot
+AI/AI Wolf L2 @@ Niestabilny kojot
+AI/AI Wolf L3 @@ Opancerzony kojot
+AI/AI Wolf L4 @@ Nieustępliwy kojot
+AI/Unknown @@ Nieznany
+AIDesc/AI Assassin @@ Jednym z niewielu sposobów na tych zabójców jest dopaść ich w trakcie teleportacji.
+AIDesc/AI Assassin L2 @@ Zabijaj tę elitę szybko, zanim zdąży się zregenerować.
+AIDesc/AI BalloonBomber @@ Szybko wytrop tych okultystów, zanim przywołają więcej duchów.
+AIDesc/AI BalloonBomber L2 @@ Ich mnożące się duchy sprzątniesz bronią szybkostrzelną albo wybuchową.
+AIDesc/AI BalloonBomber L3 @@ Płochliwi grabarze to weterani, którzy nauczyli się co jakiś czas zmieniać pozycję, żeby nikt ich nie wytropił po duchach.
+AIDesc/AI Bear @@ Walcz z daleka, żeby mieć czas na unik przed ich wybuchowymi pociskami z cramm.
+AIDesc/AI Bear L2 @@ Rozwścieczonym schodź z drogi. Szał mija po 5 sekundach.
+AIDesc/AI Bushwhacker @@ Idź ostrożnie i nasłuchuj wizgu ich strzelb.
+AIDesc/AI Bushwhacker L2 @@ Nadstaw uszu, żeby usłyszeć ich wytłumioną broń.
+AIDesc/AI Bushwhacker L3 @@ Ścigaj ich ostrożnie, żeby nie wejść na minę.
+AIDesc/AI Grenadier @@ Bądź gotów się ruszyć, gdy ich dynamit spadnie w pobliżu.
+AIDesc/AI Grenadier L2 @@ Podejdź blisko, żeby zdjąć im kamuflaż. Od ich dynamitu trzymaj się dalej niż zwykle, bo rozrzuca bomby.
+AIDesc/AI Grenadier L3 @@ Nie wchodź w promieniowanie, zanim się nie rozwieje, i nie licz, że osłoni cię pancerz.
+AIDesc/AI Gunhand @@ Najemni strzelcy, których spotkasz prawie wszędzie. Doskonale trzymają parobków w ryzach, ale doświadczonemu banicie nie dorównują.
+AIDesc/AI Gunhand L2 @@ Twardsi i groźniejsi. Po odrobinie szkolenia myślą, że są panami na grzędzie.
+AIDesc/AI Gunhand L3 @@ Brutalni weterani, którym się zdaje, że pancerz zapewni im bezpieczeństwo. Broń szybkostrzelna wyprowadzi ich z błędu.
+AIDesc/AI Gunhand L4 @@ Sprytni rewolwerowcy to najwyższy poziom tego wroga. Są groźniejsi i twardsi od słabszych kolegów, a do tego po prostu bystrzejsi.\n\nSprytni rewolwerowcy zwracają uwagę na strzały banitów i chowają głowy, gdy ktoś do nich strzela. Nie wyskoczą wprost pod grad kul – trzeba przerwać ogień i podstępem zmusić ich do wychylenia się. To mocno utrudnia Kaznodziei walkę z nimi.\n\nDo tego sprytni rewolwerowcy reagują na granaty i inne ładunki wybuchowe i uciekają przed nimi. Kaboomowi i paru innym banitom mocno to utrudnia życie, ale pozwala też wykurzać ich materiałami wybuchowymi zza osłon. Bądź wtedy gotów przełączyć się na innego banitę (najlepiej strzelającego na wprost) i dorwać ich w biegu.
+AIDesc/AI Ironclad @@ Trzymaj się z daleka od tych osiłków i szatkuj im pancerz bronią szybkostrzelną.
+AIDesc/AI Ironclad L2 @@ Na dystans uważaj na ich rakiety.
+AIDesc/AI MachineGunner @@ Nasłuchuj, jak rozkręcają broń, i kryj się, dopóki nie opróżnią magazynka.
+AIDesc/AI MachineGunner L2 @@ Przed ich wybuchową amunicją chroni tylko solidna osłona.
+AIDesc/AI MachineGunner L3 @@ Nocni korbiarze to specjaliści wyszkoleni – co za niespodzianka – do akcji nocnych. Dzięki goglom termowizyjnym są po zmroku groźnymi przeciwnikami. W miarę możliwości walcz z nimi za dnia.
+AIDesc/AI Marksman @@ Zostań w osłonie albo ruszaj się, gdy przeładowują, żeby podejść bliżej tych groźnych łowców zwierzyny.
+AIDesc/AI Marksman L2 @@ Staraj się nie dać tym zabójcom złapać na otwartym terenie.
+AIDesc/AI Marksman L3 @@ Pod silnym ostrzałem ostrożnie trzymają się osłon. W ostateczności uciekają pod osłoną dymu.
+AIDesc/AI Marshal @@ Młody McNeil to niedoświadczony podlec, który chce się wykazać przed ojcem.
+AIDesc/AI Marshal L2 @@ Francisco jest ostrożniejsza, sprytniejsza i twardsza od młodszego brata.
+AIDesc/AI Marshal L3 @@ Barrabas to brutal z bezwzględnie skutecznym laserowym wizjerem dużej mocy.
+AIDesc/AI Porcupine @@ Walcz z dystansu, żeby móc unikać kolców, albo użyj materiałów wybuchowych, żeby w ogóle ich nie wypuścić. Trafienia krytyczne nie wyzwalają kolców.
+AIDesc/AI Porcupine L2 @@ Ich szybkich kolców unikniesz tylko z dobrym refleksem.
+AIDesc/AI Robot @@ Nie trać czasu na ostrzał, dopóki nie wysuną broni i nie odsłonią środkowej części.
+AIDesc/AI Robot L2 @@ Uważaj, te ruchome modele będą cię ścigać.
+AIDesc/AI Scorpion @@ Są małe i trudno w nie trafić – próbuj dopaść je, gdy przebiegają między osłonami. Trucizna zadaje obrażenia z czasem, ale nie wtedy, gdy banita jest wymieniony.
+AIDesc/AI Scorpion L2 @@ Przed ich naprowadzanymi strzałami potrzebujesz dobrej osłony.
+AIDesc/AI ShieldBearer @@ Ich tarcza z pola siłowego chroni przed wszystkim poza strzałami dźwiękowymi. Najlepiej zajść ich z flanki albo przerzucić nad tarczą dynamit.
+AIDesc/AI ShieldBearer L2 @@ Ich broń dźwiękowa jest tak silna, że odpycha przeciwników, przez co trudniej ich oflankować.
+AIDesc/AI ShieldBearer L3 @@ Trzylufowe cykory noszą budzący grozę potrójny uszorwacz. Tę potężną broń opracowano do walk na światach Sierry: przebija pola siłowe i odbiera osłonę wrogom, którzy chowają się za tamtejszymi drzewami z pola siłowego. To, że cykory zaczęły potem strzelać z niej, kryjąc się za tarczami, okazało się dla Karzycieli zbawienne.\n\nPotrójny uszorwacz wystrzeliwuje naraz trzy pociski. Jest nieco mniej celny od jednolufowego poprzednika, ale nadrabia to ilością. \n\nWarto wiedzieć, że pociski dźwiękowe potrójnego uszorwacza są wolniejsze od zwykłych, więc szybcy banici z dobrym refleksem mogą ich uniknąć albo zdążyć się ukryć.\n\nTrzylufowe cykory są też lepiej wyszkolone, więc wyłączają tarcze i zmieniają pozycję niemal bez zwłoki.
+AIDesc/AI Snake @@ Nasłuchuj, jak się zakopują, i wypatruj bryzgów ziemi, gdy wyłażą. Trucizna zadaje obrażenia z czasem, ale nie wtedy, gdy banita jest wymieniony.
+AIDesc/AI Snake L2 @@ W wodzie są u siebie, ale groźne są wszędzie.
+AIDesc/AI Snake L3 @@ Jadowity grzechotnik wodny przystosował się do życia w toksycznej, skażonej cramm wodzie ze światów bagiennych, a w mniejszych ilościach także z paru innych planet. Jeśli zakładasz, że nie wyskoczy z jeziora albo strumienia, czeka cię przykra niespodzianka.\n\nPrzez to przystosowanie grzechotnik wodny stał się jednak podatny na ogień.
+AIDesc/AI Turret @@ Nieruchoma konstrukcja obronna. Jeśli ją rozpoznasz, zniszcz ją z daleka.
+AIDesc/AI Turret L2 @@ Te powtarzalne modele strzegą cennych miejsc i są zabójcze.
+AIDesc/AI Turret L3 @@ Z dodatkowym pancerzem tych luf najlepiej unikać.
+AIDesc/AI Wolf @@ Pilnuj flanek i bądź gotów sprzątnąć te tchórzliwe szuje, gdy idą za przywódcą.
+AIDesc/AI Wolf L2 @@ Wybuchowa obroża odpada po śmierci.
+AIDesc/AI Wolf L3 @@ Nawet trochę pancerza robi z tych zwierzaków spore zagrożenie.
+AIDescItem/AI Assassin 1 @@ Teleportuje się
+AIDescItem/AI Assassin 2 @@ Seria dwóch strzałów
+AIDescItem/AI Assassin L2 1 @@ Regeneruje się
+AIDescItem/AI Assassin L2 2 @@ Seria czterech strzałów
+AIDescItem/AI BalloonBomber 1 @@ Przywołuje mściwe duchy
+AIDescItem/AI BalloonBomber 2 @@ Duchy ścigają i wybuchają
+AIDescItem/AI BalloonBomber 3 @@ Ucieka, gdy zajdziesz go z flanki
+AIDescItem/AI BalloonBomber L2 1 @@ Zniszczone duchy się dzielą
+AIDescItem/AI Bear 1 @@ Wolne, wybuchowe strzały
+AIDescItem/AI Bear 2 @@ Twardy
+AIDescItem/AI Bear L2 1 @@ Ranny wpada w szał
+AIDescItem/AI Bushwhacker 1 @@ Zasadzka z bliska
+AIDescItem/AI Bushwhacker 2 @@ Słyszalna broń
+AIDescItem/AI Bushwhacker 3 @@ Ucieka, gdy zajdziesz go z flanki
+AIDescItem/AI Bushwhacker L2 1 @@ Wytłumiona broń
+AIDescItem/AI Bushwhacker L2 2 @@ Szybsza reakcja
+AIDescItem/AI Bushwhacker L3 1 @@ Rozstawia miny
+AIDescItem/AI Bushwhacker L3 2 @@ Ucieka przed granatami
+AIDescItem/AI Grenadier 1 @@ Rzuca zza osłony
+AIDescItem/AI Grenadier 2 @@ Dynamit leci łukiem
+AIDescItem/AI Grenadier 3 @@ Ucieka, gdy zajdziesz go z flanki
+AIDescItem/AI Grenadier L2 1 @@ Dynamit kasetowy
+AIDescItem/AI Grenadier L2 2 @@ Płaszcz maskujący
+AIDescItem/AI Grenadier L3 1 @@ Radioaktywny dynamit
+AIDescItem/AI Grenadier L3 2 @@ Obrażenia omijają osłonę
+AIDescItem/AI Grenadier L3 3 @@ Obrażenia omijają pancerz
+AIDescItem/AI Gunhand 1 @@ Wychyla się zza osłony
+AIDescItem/AI Gunhand 2 @@ Nie walczy na dystans
+AIDescItem/AI Gunhand L2 1 @@ Seria dwóch strzałów
+AIDescItem/AI Gunhand L2 2 @@ Czasem wychyla się bez strzału
+AIDescItem/AI Gunhand L3 1 @@ Opancerzony
+AIDescItem/AI Gunhand L3 2 @@ Przenosi się za inną osłonę
+AIDescItem/AI Ironclad 1 @@ Ciężki pancerz
+AIDescItem/AI Ironclad 2 @@ Bardzo szybki ogień
+AIDescItem/AI Ironclad 3 @@ Krótki zasięg
+AIDescItem/AI Ironclad L2 1 @@ Dodatkowa wyrzutnia rakiet
+AIDescItem/AI MachineGunner 1 @@ Szybki ogień
+AIDescItem/AI MachineGunner 2 @@ Opróżnia magazynek
+AIDescItem/AI MachineGunner L2 1 @@ Wybuchowe kule
+AIDescItem/AI MachineGunner L2 2 @@ Opancerzony
+AIDescItem/AI Marksman 1 @@ Bardzo celny
+AIDescItem/AI Marksman 2 @@ Wolno strzela
+AIDescItem/AI Marksman 3 @@ Ucieka przed walką z bliska
+AIDescItem/AI Marksman L2 1 @@ Szybciej przeładowuje
+AIDescItem/AI Marksman L2 2 @@ Przenosi się za inną osłonę
+AIDescItem/AI Marksman L3 1 @@ Bomba dymna
+AIDescItem/AI Marksman L3 2 @@ Można go przygwoździć ogniem
+AIDescItem/AI Marshal 1 @@ Szybko jeździ wierzchem
+AIDescItem/AI Marshal 2 @@ Naprowadzane strzały
+AIDescItem/AI Marshal 3 @@ Co jakiś czas strzela serią
+AIDescItem/AI Marshal 4 @@ Ogłuszony po serii
+AIDescItem/AI Marshal L2 1 @@ Opancerzona
+AIDescItem/AI Marshal L3 1 @@ Wybuchowe naprowadzane strzały
+AIDescItem/AI Porcupine 1 @@ Trafiony wypuszcza naprowadzane kolce
+AIDescItem/AI Porcupine 2 @@ Krytyki nie wyzwalają kolców
+AIDescItem/AI Porcupine 3 @@ Wolny, słaby strzał
+AIDescItem/AI Porcupine L2 1 @@ Szybsze, groźniejsze kolce
+AIDescItem/AI Robot 1 @@ Zamknięta jest nietykalna
+AIDescItem/AI Robot 2 @@ Słaby punkt pośrodku
+AIDescItem/AI Robot L2 1 @@ Może się przemieścić
+AIDescItem/AI Scorpion 1 @@ Trujący strzał
+AIDescItem/AI Scorpion 2 @@ Mały i nieuchwytny
+AIDescItem/AI Scorpion 3 @@ Strzela ogonem zza osłony
+AIDescItem/AI Scorpion L2 1 @@ Naprowadzany strzał
+AIDescItem/AI Scorpion L2 2 @@ Opancerzony
+AIDescItem/AI ShieldBearer 1 @@ Tarcza z pola siłowego
+AIDescItem/AI ShieldBearer 2 @@ Strzał dźwiękowy przebija pancerz i pola siłowe
+AIDescItem/AI ShieldBearer 3 @@ Ucieka, gdy zajdziesz go z flanki
+AIDescItem/AI ShieldBearer L2 1 @@ Szybszy ogień
+AIDescItem/AI ShieldBearer L2 2 @@ Strzał odrzucający
+AIDescItem/AI Snake 1 @@ Trujący strzał
+AIDescItem/AI Snake 2 @@ Zakopuje się
+AIDescItem/AI Snake 3 @@ Hałasuje, gdy wyłazi
+AIDescItem/AI Snake L2 1 @@ Atak serią
+AIDescItem/AI Snake L2 2 @@ Szybciej się zakopuje
+AIDescItem/AI Snake L2 3 @@ Odporny na truciznę
+AIDescItem/AI Turret 1 @@ Wygląda jak beczka
+AIDescItem/AI Turret 2 @@ Otwiera się do walki
+AIDescItem/AI Turret L2 1 @@ Seria trzech strzałów
+AIDescItem/AI Turret L3 1 @@ Opancerzona
+AIDescItem/AI Wolf 1 @@ Strzał dźwiękowy przebija pancerz i pola siłowe
+AIDescItem/AI Wolf 2 @@ Atakuje z flanki
+AIDescItem/AI Wolf 3 @@ Działa w sforze
+AIDescItem/AI Wolf L2 1 @@ Niestabilny: po śmierci zostawia bombę
+AIDescItem/AI Wolf L3 1 @@ Opancerzony
+AIMany/AI Armadillo @@ Pancerniki
+AIMany/AI Assassin @@ Zabójcy
+AIMany/AI Assassin L2 @@ Regenerujący się zabójcy
+AIMany/AI Balloon @@ Duchy
+AIMany/AI Balloon L2 @@ Zawzięte duchy
+AIMany/AI BalloonBomber @@ Grabarze
+AIMany/AI BalloonBomber L2 @@ Płodni grabarze
+AIMany/AI Bear @@ Grizzly
+AIMany/AI Bear L2 @@ Drażliwe grizzly
+AIMany/AI Bushwhacker @@ Czatownicy
+AIMany/AI Bushwhacker L2 @@ Cisi czatownicy
+AIMany/AI Bushwhacker L3 @@ Podstępni czatownicy
+AIMany/AI Grenadier @@ Wysadzacze
+AIMany/AI Grenadier L2 @@ Kasetowi wysadzacze
+AIMany/AI Grenadier L3 @@ Atomowi wysadzacze
+AIMany/AI Guard @@ Rewolwerowcy
+AIMany/AI Gunhand @@ Rewolwerowcy
+AIMany/AI Gunhand L2 @@ Wyszkoleni rewolwerowcy
+AIMany/AI Gunhand L3 @@ Zaprawieni rewolwerowcy
+AIMany/AI Ironclad @@ Żelaźniaki
+AIMany/AI Ironclad L2 @@ Rakietowe żelaźniaki
+AIMany/AI MachineGunner @@ Korbiarze
+AIMany/AI MachineGunner L2 @@ Ciężcy korbiarze
+AIMany/AI Marksman @@ Łowcy
+AIMany/AI Marksman L2 @@ Zabójczy łowcy
+AIMany/AI Marksman L3 @@ Skryci łowcy
+AIMany/AI Marshal @@ McNeil
+AIMany/AI Marshal L2 @@ Francisco
+AIMany/AI Marshal L3 @@ Barrabas
+AIMany/AI Porcupine @@ Jeżozwierze
+AIMany/AI Porcupine L2 @@ Mściwe jeżozwierze
+AIMany/AI Robot @@ Skrzynki-pułapki
+AIMany/AI Robot L2 @@ Ruchome skrzynki-pułapki
+AIMany/AI Scorpion @@ Żądłaki
+AIMany/AI Scorpion L2 @@ Nieuchronne żądłaki
+AIMany/AI Servant @@ Parobkowie
+AIMany/AI ShieldBearer @@ Cykory
+AIMany/AI ShieldBearer L2 @@ Umocnione cykory
+AIMany/AI Snake @@ Grzechotniki
+AIMany/AI Snake L2 @@ Grzechotniki wodne
+AIMany/AI Turret @@ Lufy
+AIMany/AI Turret L2 @@ Lufy powtarzalne
+AIMany/AI Turret L3 @@ Opancerzone lufy
+AIMany/AI Wolf @@ Kojoty
+AIMany/AI Wolf L2 @@ Niestabilne kojoty
+AIMany/AI Wolf L3 @@ Opancerzone kojoty
+AIMany/Unknown @@ Nieznani
+AIShortDesc/Assassin @@ Teleportujący się zabójca
+AIShortDesc/Assassin L2 @@ Trudny do zabicia
+AIShortDesc/BalloonBomber @@ Okultystyczny przywoływacz
+AIShortDesc/BalloonBomber L2 @@ Dzielące się duchy
+AIShortDesc/Bear @@ Bestia z ostrzałem
+AIShortDesc/Bear L2 @@ Ranny wpada w szał
+AIShortDesc/Bushwhacker @@ Strzelba z zasadzki
+AIShortDesc/Bushwhacker L2 @@ Cicha zasadzka
+AIShortDesc/Bushwhacker L3 @@ Rozstawia miny
+AIShortDesc/Grenadier @@ Miotacz dynamitu
+AIShortDesc/Grenadier L2 @@ Wiele wybuchów
+AIShortDesc/Grenadier L3 @@ Radioaktywny dynamit
+AIShortDesc/Gunhand @@ Taktyczny strzelec
+AIShortDesc/Gunhand L2 @@ Seria dwóch strzałów
+AIShortDesc/Gunhand L3 @@ Opancerzony zbir
+AIShortDesc/Ironclad @@ Opancerzony osiłek
+AIShortDesc/Ironclad L2 @@ Strzela rakietami
+AIShortDesc/MachineGunner @@ Strzelec seriami
+AIShortDesc/MachineGunner L2 @@ Wybuchowe kule
+AIShortDesc/Marksman @@ Czujny strzelec wyborowy
+AIShortDesc/Marksman L2 @@ Szybki ogień
+AIShortDesc/Marksman L3 @@ Bomba dymna
+AIShortDesc/Porcupine @@ Kolczasty odwet
+AIShortDesc/Porcupine L2 @@ Szybkie kolce
+AIShortDesc/Robot @@ Nietykalna, gdy nieaktywna
+AIShortDesc/Robot L2 @@ Ruchomy wartownik
+AIShortDesc/Scorpion @@ Trujący drobiazg
+AIShortDesc/Scorpion L2 @@ Naprowadzane strzały
+AIShortDesc/ShieldBearer @@ Tchórz z tarczą
+AIShortDesc/ShieldBearer L2 @@ Większa tarcza
+AIShortDesc/Snake @@ Trujący kopacz
+AIShortDesc/Snake L2 @@ Ogień seriami
+AIShortDesc/Turret @@ Groźna beczka
+AIShortDesc/Turret L2 @@ Ogień seriami
+AIShortDesc/Turret L3 @@ Opancerzona beczka
+AIShortDesc/Wolf @@ Atakuje z flanki w stadzie
+AIShortDesc/Wolf L2 @@ Wybuchowa obroża
+AIShortDesc/Wolf L3 @@ Opancerzony szkodnik
+Behavior/Activate @@ Aktywacja
+Behavior/AimWhileMoving @@ Celuje
+Behavior/Deactivate @@ Dezaktywacja
+Behavior/DirectAttack @@ Atakuje
+Behavior/Enrage @@ Aktywacja
+Behavior/FleeAfterAttacking @@ Wycofuje się
+Behavior/Follow @@ Ściga
+Behavior/FollowLOFIfEnraged @@ Flankuje
+Behavior/JumpOutAndShoot @@ Atakuje
+Behavior/LongShoot @@ Atakuje
+Behavior/Missing @@ Nieznane
+Behavior/MoveRandomly @@ Kręci się
+Behavior/None @@ Bezczynny
+Behavior/PokeOutAndShoot @@ Atakuje
+Behavior/PopUpAndShoot @@ Atakuje
+Behavior/RepoFollowPlayer @@ Flankuje
+Behavior/RepoIfHurt @@ Wycofuje się
+Behavior/RepoIfSpotted @@ Kryje się
+Behavior/RepoIfTooClose @@ Cofa się
+Behavior/RepoOnGrenade @@ Zmyka
+Behavior/RepoOnLightning @@ Zmyka
+Behavior/RepoStandard @@ Kryje się
+Behavior/RobotAttack @@ Atakuje
+Behavior/RobotFollow @@ Ściga
+Behavior/RobotIdle @@ Bezczynny
+Behavior/SecondaryShoot @@ Atakuje
+Behavior/Shoot @@ Atakuje
+Behavior/ShootBurst @@ Atakuje
+Behavior/SlideOutAndShoot @@ Atakuje
+Behavior/SpinUpAndShoot @@ Atakuje
+Behavior/TurretAim @@ Celuje
+Behavior/TurretAttack @@ Atakuje
+Behavior/Wander @@ Kręci się
+State/ArmorPickups @@ Zrzut pancerza
+State/BearAlly @@ Oswojone grizzly
+State/GuardsAtChow @@ Pora żarcia
+State/GunhandAlly @@ Najęci rewolwerowcy
+State/HealthPickups @@ Zrzut zdrowia
+State/InvulnerabilityPickups @@ Zrzut nietykalności
+State/IroncladAlly @@ Najęte żelaźniaki
+State/MachineGunnerAlly @@ Najęci korbiarze
+State/NoArmor @@ Bez pancerza
+State/OneHealth @@ Jeden punkt zdrowia
+State/PowerOff @@ Brak zasilania
+State/RagePickups @@ Zrzut szału
+State/Reinforced @@ Posiłki
+State/Rifts @@ Furtki
+State/ShinePickups @@ Zrzut bimbru
+State/Storms @@ Burze
+State/Subverted @@ Pod kontrolą umysłu
+State/Trampled @@ Stratowani
+State/TurretAlly @@ Sojusznicze lufy
+State/WolfAlly @@ Oswojone kojoty
+Crit/AI Assassin @@ Głowa
+Crit/AI Assassin L2 @@ Głowa
+Crit/AI Balloon @@ Brak
+Crit/AI Balloon L2 @@ Brak
+Crit/AI BalloonBomber @@ Głowa
+Crit/AI BalloonBomber L2 @@ Głowa
+Crit/AI Bear @@ Pysk
+Crit/AI Bear L2 @@ Pysk
+Crit/AI Bushwhacker @@ Głowa
+Crit/AI Bushwhacker L2 @@ Głowa
+Crit/AI Bushwhacker L3 @@ Głowa
+Crit/AI Grenadier @@ Głowa
+Crit/AI Grenadier L2 @@ Głowa
+Crit/AI Grenadier L3 @@ Głowa
+Crit/AI Gunhand @@ Głowa
+Crit/AI Gunhand L2 @@ Głowa
+Crit/AI Gunhand L3 @@ Głowa
+Crit/AI Ironclad @@ Wizjer
+Crit/AI Ironclad L2 @@ Wizjer
+Crit/AI MachineGunner @@ Głowa
+Crit/AI MachineGunner L2 @@ Głowa
+Crit/AI Marksman @@ Głowa
+Crit/AI Marksman L2 @@ Głowa
+Crit/AI Marksman L3 @@ Głowa
+Crit/AI Marshal @@ Wizjer
+Crit/AI Marshal L2 @@ Wizjer
+Crit/AI Marshal L3 @@ Wizjer
+Crit/AI Porcupine @@ Pysk
+Crit/AI Porcupine L2 @@ Pysk
+Crit/AI Robot @@ Brak
+Crit/AI Robot L2 @@ Brak
+Crit/AI Scorpion @@ Pysk
+Crit/AI Scorpion L2 @@ Pysk
+Crit/AI ShieldBearer @@ Głowa
+Crit/AI ShieldBearer L2 @@ Głowa
+Crit/AI Snake @@ Pysk
+Crit/AI Snake L2 @@ Pysk
+Crit/AI Turret @@ Brak
+Crit/AI Turret L2 @@ Brak
+Crit/AI Turret L3 @@ Brak
+Crit/AI Wolf @@ Pysk
+Crit/AI Wolf L2 @@ Pysk
+Crit/AI Wolf L3 @@ Brak
+DamageType/Acid @@ Kwas
+DamageType/Bullet @@ Pocisk
+DamageType/Explosion @@ Wybuch
+DamageType/Falling @@ Upadek
+DamageType/Fire @@ Ogień
+DamageType/Laser @@ Laser
+DamageType/PlayerExplosion @@ Wybuch
+DamageType/Poison @@ Trucizna
+DamageType/Proton @@ Proton
+DamageType/Radiation @@ Promieniowanie
+DamageType/Sonic @@ Dźwięk
+DamageType/Storm @@ Burza
+DamageType/Strangle @@ Duszenie
+Weapon/Bow @@ Łuk
+Weapon/Charge @@ Działko ładowane
+Weapon/DualPistol @@ Dwa pistolety
+Weapon/Flamethrower @@ Miotacz ognia
+Weapon/Gatling @@ Gatling
+Weapon/Grenade @@ Dynamit
+Weapon/Knife @@ Nóż
+Weapon/Lasso @@ Lasso
+Weapon/Pistol @@ Pistolet
+Weapon/Rifle @@ Karabin
+Weapon/Shotgun @@ Strzelba
+Weapon/Sniper @@ Karabin snajperski
+Weapon/SonicRifle @@ Karabin dźwiękowy
+WeaponAccuracy/Assassin @@ Niska
+WeaponAccuracy/Astronaut @@ Średnia
+WeaponAccuracy/BalloonBomber @@ Naprowadzana
+WeaponAccuracy/Bear @@ Średnia
+WeaponAccuracy/Billy @@ Niska
+WeaponAccuracy/Bushwhacker @@ Niska
+WeaponAccuracy/Cuffs @@ Średnia
+WeaponAccuracy/Fletch @@ Naprowadzana
+WeaponAccuracy/Gambler @@ Bardzo niska
+WeaponAccuracy/Grenadier @@ n/d
+WeaponAccuracy/Gunhand @@ Niska
+WeaponAccuracy/Hopalong @@ n/d
+WeaponAccuracy/Ironclad @@ Niska
+WeaponAccuracy/Judge @@ Bardzo wysoka
+WeaponAccuracy/Legs @@ Niska
+WeaponAccuracy/MachineGunner @@ Wysoka
+WeaponAccuracy/MamaPanic @@ Niska
+WeaponAccuracy/Marksman @@ Wysoka
+WeaponAccuracy/Marshal @@ Średnia
+WeaponAccuracy/MistMiner @@ n/d
+WeaponAccuracy/Porcupine @@ Wysoka
+WeaponAccuracy/Preach @@ Niska
+WeaponAccuracy/Radium @@ n/d
+WeaponAccuracy/Rawhide @@ Wysoka
+WeaponAccuracy/Robot @@ Wysoka
+WeaponAccuracy/Sarge @@ Wysoka
+WeaponAccuracy/Scorpion @@ Naprowadzana
+WeaponAccuracy/ShieldBearer @@ Średnia
+WeaponAccuracy/Smoky @@ n/d
+WeaponAccuracy/Snake @@ Wysoka
+WeaponAccuracy/Spike @@ Wysoka
+WeaponAccuracy/Turret @@ Niska
+WeaponAccuracy/Wolf @@ Niska
+WeaponDesc/AI Assassin @@ Pistolet średniego zasięgu – seria dwóch strzałów
+WeaponDesc/AI Assassin L2 @@ Pistolet średniego zasięgu – seria czterech strzałów
+WeaponDesc/AI BalloonBomber @@ Przywołuje wybuchowe duchy z zaświatów
+WeaponDesc/AI BalloonBomber L2 @@ Przywołuje wybuchowe duchy z zaświatów
+WeaponDesc/AI BalloonBomber L3 @@ Brak
+WeaponDesc/AI Bear @@ Wybuchowa rakieta
+WeaponDesc/AI Bear L2 @@ Wybuchowa rakieta
+WeaponDesc/AI Bushwhacker @@ Strzelba ładowana krótkiego zasięgu, strzela seriami
+WeaponDesc/AI Bushwhacker L2 @@ Wytłumiona strzelba ładowana krótkiego zasięgu, strzela seriami
+WeaponDesc/AI Bushwhacker L3 @@ Wytłumiona strzelba ładowana krótkiego zasięgu, strzela seriami
+WeaponDesc/AI Grenadier @@ Rzucany ładunek o dużym promieniu wybuchu
+WeaponDesc/AI Grenadier L2 @@ Rzucany ładunek, który rozrzuca dodatkowe bomby
+WeaponDesc/AI Grenadier L3 @@ Rzucany ładunek, który zostawia trwałe skażenie promieniotwórcze
+WeaponDesc/AI Gunhand @@ Pistolet średniego zasięgu.
+WeaponDesc/AI Gunhand L2 @@ Pistolet średniego zasięgu – seria dwóch strzałów
+WeaponDesc/AI Gunhand L3 @@ Pistolet średniego zasięgu – seria dwóch strzałów
+WeaponDesc/AI Gunhand L4 @@ Pistolet średniego zasięgu – seria dwóch strzałów
+WeaponDesc/AI Ironclad @@ Szybkostrzelny gatling krótkiego zasięgu
+WeaponDesc/AI Ironclad L2 @@ Gatling z dodatkową wyrzutnią rakiet
+WeaponDesc/AI MachineGunner @@ Gatling krótkiego zasięgu, strzela seriami
+WeaponDesc/AI MachineGunner L2 @@ Gatling krótkiego zasięgu z wybuchową amunicją, strzela seriami
+WeaponDesc/AI MachineGunner L3 @@ Brak
+WeaponDesc/AI Marksman @@ Bardzo celny karabin jednostrzałowy
+WeaponDesc/AI Marksman L2 @@ Szybko ładowany karabin jednostrzałowy
+WeaponDesc/AI Marksman L3 @@ Szybko ładowany karabin jednostrzałowy
+WeaponDesc/AI Marshal @@ Naprowadzany laser średniego zasięgu, seria trzech strzałów
+WeaponDesc/AI Marshal L2 @@ Naprowadzany laser średniego zasięgu, seria trzech strzałów
+WeaponDesc/AI Marshal L3 @@ Naprowadzane pociski wybuchowe
+WeaponDesc/AI Porcupine @@ Wolny trujący glut
+WeaponDesc/AI Porcupine L2 @@ Wolny trujący glut
+WeaponDesc/AI Robot @@ Szybki laser
+WeaponDesc/AI Robot L2 @@ Szybki laser
+WeaponDesc/AI Scorpion @@ Trująca seria trzech glutów
+WeaponDesc/AI Scorpion L2 @@ Naprowadzana trująca seria
+WeaponDesc/AI ShieldBearer @@ Pistolet dźwiękowy średniego zasięgu
+WeaponDesc/AI ShieldBearer L2 @@ Ogłuszający pistolet dźwiękowy średniego zasięgu
+WeaponDesc/AI ShieldBearer L3 @@ Ogłuszający pistolet dźwiękowy średniego zasięgu, strzela seriami
+WeaponDesc/AI Snake @@ Wolny trujący glut
+WeaponDesc/AI Snake L2 @@ Szybki trujący glut
+WeaponDesc/AI Snake L3 @@ Szybki trujący glut
+WeaponDesc/AI Turret @@ Szybki laser
+WeaponDesc/AI Turret L2 @@ Szybkostrzelny laser
+WeaponDesc/AI Turret L3 @@ Szybkostrzelny laser
+WeaponDesc/AI Wolf @@ Fala dźwiękowa krótkiego zasięgu
+WeaponDesc/AI Wolf L2 @@ Fala dźwiękowa krótkiego zasięgu
+WeaponDesc/AI Wolf L3 @@ Fala dźwiękowa krótkiego zasięgu
+WeaponDesc/AI Wolf L4 @@ Fala dźwiękowa krótkiego zasięgu
+WeaponDesc/Astronaut @@ Szybkostrzelny pistolet energetyczny, który nie wymaga przeładowania. Przy ciągłym ogniu może się przegrzać.
+WeaponDesc/Billy @@ Dwa sześciostrzałowce. Oddaje dwa strzały jeden po drugim.
+WeaponDesc/Cuffs @@ Przenosi cel przez szczelinę do Cuffs, a przy celowaniu – od niej.
+WeaponDesc/Fletch @@ Przytrzymaj strzał, by naciągnąć łuk, i puść, gdy zechcesz. Strzała leci za podświetlonym wrogiem.
+WeaponDesc/Gambler @@ Strzela dużym snopem śrutu. W każdym starciu ciągnie kartę. Karo zmniejsza rozrzut, kier dodaje przebicie, pik podwaja amunicję, trefl nie robi nic.
+WeaponDesc/Hopalong @@ Łapie wrogów na lasso i unieruchamia. Przytrzymaj, by dusić.
+WeaponDesc/Judge @@ Jednostrzałowy długi karabin. Trafienia krytyczne budują szafot. Gdy będzie gotowy, następny strzał zabija na miejscu.
+WeaponDesc/Legs @@ Duży kaliber podrzuca lufę do góry i odrzuca cel do tyłu.
+WeaponDesc/MamaPanic @@ Dwa pięciostrzałowce. Z każdego można strzelać i przeładowywać go osobno.
+WeaponDesc/MistMiner @@ Rzuca odbijającą się laskę dynamitu, która wybucha przy zetknięciu z wrogiem.
+WeaponDesc/Preach @@ Potrzebuje czasu, żeby się rozkręcić do pełnej szybkostrzelności. Przeładowuje cały magazynek naraz.
+WeaponDesc/Radium @@ Rzuca fiolkę radioaktywnej cieczy. Promieniowanie przenika każdą osłonę i zadaje obrażenia z czasem.
+WeaponDesc/Rawhide @@ Wystrzeliwuje pocisk dźwiękowy, który przebija pancerz i pola siłowe. Seria trzech strzałów.
+WeaponDesc/Sarge @@ Celna długa broń.
+WeaponDesc/Smoky @@ Wystrzeliwuje płonący glut ognia, który przywiera do celu.
+WeaponDesc/Spike @@ Rzuca nożem, który zadaje zwierzętom i strażnikom obrażenia krytyczne. Po zabójstwie daje pięć sekund niewidzialności.
+WeaponName/AI Assassin @@ Rewolwer marynarki
+WeaponName/AI Assassin L2 @@ Rewolwer wojskowy
+WeaponName/AI BalloonBomber @@ Przywoływacz duchów
+WeaponName/AI BalloonBomber L2 @@ Przywoływacz duchów
+WeaponName/AI BalloonBomber L3 @@ Brak
+WeaponName/AI Bear @@ Kula cramm
+WeaponName/AI Bear L2 @@ Kula cramm
+WeaponName/AI Bushwhacker @@ Strzelba kal. 12
+WeaponName/AI Bushwhacker L2 @@ Wytłumiona strzelba kal. 20
+WeaponName/AI Bushwhacker L3 @@ Wytłumiona strzelba kal. 28
+WeaponName/AI Grenadier @@ Dynamit
+WeaponName/AI Grenadier L2 @@ Dynamit kasetowy
+WeaponName/AI Grenadier L3 @@ Dynamit atomowy
+WeaponName/AI Gunhand @@ Rewolwer .32
+WeaponName/AI Gunhand L2 @@ Rewolwer .40
+WeaponName/AI Gunhand L3 @@ Rewolwer .45
+WeaponName/AI Gunhand L4 @@ Rewolwer .45 Magnum
+WeaponName/AI Ironclad @@ Gatling taśmowy
+WeaponName/AI Ironclad L2 @@ Gatling z rakietą
+WeaponName/AI MachineGunner @@ Gatling taśmowy
+WeaponName/AI MachineGunner L2 @@ Wybuchowy gatling
+WeaponName/AI MachineGunner L3 @@ Wybuchowy gatling
+WeaponName/AI Marksman @@ Jednostrzałowy karabin z lunetą
+WeaponName/AI Marksman L2 @@ Powtarzalny karabin z lunetą
+WeaponName/AI Marksman L3 @@ Karabin '73 z lunetą
+WeaponName/AI Marshal @@ Laserowy wizjer
+WeaponName/AI Marshal L2 @@ Laserowy wizjer
+WeaponName/AI Marshal L3 @@ Wybuchowy wizjer
+WeaponName/AI Porcupine @@ Trująca plwocina
+WeaponName/AI Porcupine L2 @@ Trująca plwocina
+WeaponName/AI Robot @@ Laser ochrony
+WeaponName/AI Robot L2 @@ Ciężki laser ochrony
+WeaponName/AI Scorpion @@ Seryjna trująca plwocina
+WeaponName/AI Scorpion L2 @@ Myśląca trująca plwocina
+WeaponName/AI ShieldBearer @@ Rewolwer akustyczny
+WeaponName/AI ShieldBearer L2 @@ Rewolwer uszorwacz
+WeaponName/AI ShieldBearer L3 @@ Potrójny uszorwacz
+WeaponName/AI Snake @@ Trująca plwocina
+WeaponName/AI Snake L2 @@ Szybka trująca plwocina
+WeaponName/AI Snake L3 @@ Szybka trująca plwocina
+WeaponName/AI Turret @@ Laser ochrony
+WeaponName/AI Turret L2 @@ Laser impulsowy
+WeaponName/AI Turret L3 @@ Ciężki laser impulsowy
+WeaponName/AI Wolf @@ Szczek
+WeaponName/AI Wolf L2 @@ Szczek
+WeaponName/AI Wolf L3 @@ Szczek
+WeaponName/AI Wolf L4 @@ Szczek
+WeaponName/Astronaut @@ Promień mezonowy
+WeaponName/Billy @@ Bliźniaki
+WeaponName/BillyPistol @@ Ślubna
+WeaponName/BillyPistolLeft @@ Liza Jane
+WeaponName/Bow @@ Tempus Fugit
+WeaponName/Charge @@ Promień mezonowy
+WeaponName/Cuffs @@ Szczelinator
+WeaponName/Flamethrower @@ Sos do skórowania
+WeaponName/Fletch @@ Tempus Fugit
+WeaponName/Gambler @@ Kicker .00
+WeaponName/Gatling @@ Kazanie .58
+WeaponName/Grenade @@ Laska bum
+WeaponName/Hopalong @@ Laserowe lasso
+WeaponName/Judge @@ WYROK .50
+WeaponName/Knife @@ Otwieracz do ludzi
+WeaponName/Lasso @@ Laserowe lasso
+WeaponName/Legs @@ Pieprzniczka
+WeaponName/MamaPanic @@ Las Calaveras .45
+WeaponName/MistMiner @@ Laska bum
+WeaponName/Pepperbox @@ Pieprzniczka
+WeaponName/Pistol @@ Calavera Uno
+WeaponName/PistolLeft @@ Calavera Dos
+WeaponName/Preach @@ Kazanie .58
+WeaponName/RadGrenade @@ Probówka
+WeaponName/Radium @@ Probówka
+WeaponName/Rawhide @@ Stary Wrzaskun
+WeaponName/Rifle @@ Emeryt 10 mm
+WeaponName/Rifter @@ Szczelinator
+WeaponName/Sarge @@ Emeryt 10 mm
+WeaponName/Shotgun @@ Kicker .00
+WeaponName/Smoky @@ Sos do skórowania
+WeaponName/Sniper @@ WYROK .50
+WeaponName/SonicRifle @@ Stary Wrzaskun
+WeaponName/Spike @@ Otwieracz do ludzi
+WeaponSpecial/Charged @@ Strzał egzekucyjny gotowy
+WeaponSpecial/Club @@ Bez premii
+WeaponSpecial/Diamond @@ Połowa rozrzutu
+WeaponSpecial/Headshots @@ Krytyki
+WeaponSpecial/Heart @@ Przebicie
+WeaponSpecial/Spade @@ Podwójna amunicja
+Agent/Pack @@ Sfora
+Agent/Patrol @@ Patrol
+Agent/Posse @@ Obława
+Agent/StageCoach @@ Wóz
+Agent/Stampede @@ Szarża stada
+Agent/Wagon @@ Posiłki
+Introduction/Pack @@ Sfora
+Introduction/Patrol @@ Patrol
+Introduction/Rift @@ Furtka
+Introduction/Stagecoach @@ Dyliżans
+Introduction/Storm @@ Burza
+Introduction/Wagon @@ Posiłki
+IntroductionDesc/Pack @@ Wędrowne grupy zwierząt
+IntroductionDesc/Patrol @@ Powoli maszerujący Karzyciele
+IntroductionDesc/Rift @@ Szczelina w przestrzeni, z której wychodzą Karzyciele, dopóki jej nie zamkniesz
+IntroductionDesc/Stagecoach @@ Szybki pojazd z łupem, który przemierza planetę
+IntroductionDesc/Storm @@ Dryfujące zaburzenie atmosferyczne, które ściąga pioruny
+IntroductionDesc/Wagon @@ Wędrowny wóz, który przywozi posiłki
+Name/Barrabas @@ Barrabas
+Name/Bastard1 @@ Mały Jeb
+Name/Bastard2 @@ Jeb Junior
+Name/Bastard3 @@ Młoda
+Name/Billy @@ Billy
+Name/Casino @@ Doc Casino
+Name/Chaste @@ Jebediah Chaste
+Name/Chastener @@ Karzyciel
+Name/Cuffs @@ Cuffs
+Name/Fletch @@ Fletch
+Name/Francisco @@ Francisco
+Name/Hopalong @@ Hopalong
+Name/Judge @@ Sędzia
+Name/Kaboom @@ Kaboom
+Name/Legs @@ Legs
+Name/McNeil @@ McNeil
+Name/Preach @@ Kaznodzieja
+Name/Radium @@ Radium
+Name/Rawhide @@ Rawhide
+Name/Rosa @@ Pajęcza Rosa
+Name/Roswell @@ Roswell
+Name/Sarge @@ Sierżant
+Name/ShopKeeper @@ Clancy
+Name/ShopKeeperA @@ Eugene
+Name/Smoky @@ Smoky
+Name/Spike @@ Spike
+Outlaw/Astronaut @@ Roswell
+Outlaw/Billy @@ Billy
+Outlaw/Cuffs @@ Cuffs
+Outlaw/Fletch @@ Fletch
+Outlaw/Gambler @@ Casino
+Outlaw/Hopalong @@ Hopalong
+Outlaw/Judge @@ Sędzia
+Outlaw/Legs @@ Legs
+Outlaw/MamaPanic @@ Pajęcza Rosa
+Outlaw/MistMiner @@ Kaboom
+Outlaw/Preach @@ Kaznodzieja
+Outlaw/Radium @@ Radium
+Outlaw/Rawhide @@ Rawhide
+Outlaw/Sarge @@ Sierżant
+Outlaw/Smoky @@ Smoky
+Outlaw/Spike @@ Spike
+OutlawEpitaph/Astronaut @@ <i>„Mówiłem, że jest ich za dużo”.</i>
+OutlawEpitaph/Billy @@ <i>„Powiedzcie mamie, że przepraszam”.</i>
+OutlawEpitaph/Cuffs @@ Epitafium Cuffs
+OutlawEpitaph/Fletch @@ <i>„Tempus edax rerum”.</i>
+OutlawEpitaph/Gambler @@ <i>„Alea iacta est”</i>
+OutlawEpitaph/Hopalong @@ <i>„Dogląda wielkiej farmy w niebie”.</i>
+OutlawEpitaph/Judge @@ <i>„Wyłączam się z orzekania”.</i>
+OutlawEpitaph/Legs @@ Epitafium Legs
+OutlawEpitaph/MamaPanic @@ <i>„Najedzcie się do syta”</i>
+OutlawEpitaph/MistMiner @@ <i>„Pochowajcie mnie w kapeluszu i z ładownicą”.</i>
+OutlawEpitaph/Preach @@ <i>„Zasiada po prawicy Pana Najwyższego”.</i>
+OutlawEpitaph/Radium @@ Epitafium Radium
+OutlawEpitaph/Rawhide @@ <i>„Spoczywamy”.</i>
+OutlawEpitaph/Sarge @@ <i>„Robiłem, co mogłem. Widać nie starczyło”.</i>
+OutlawEpitaph/Smoky @@ <i>„Tam na górze też trza coś jeść”.</i>
+OutlawEpitaph/Spike @@ <i>„Na co się gapisz?”</i>
+OutlawExpertise/Astronaut @@ Kosmiczny szybkostrzelec
+OutlawExpertise/Bastard1 @@ Wyszczekany urwis
+OutlawExpertise/Bastard2 @@ Miłośnik tortur
+OutlawExpertise/Bastard3 @@ Dziwnie znajoma
+OutlawExpertise/Billy @@ Artysta od dwóch spluw
+OutlawExpertise/Cuffs @@ Stróżka prawa przesuwająca czasoprzestrzeń
+OutlawExpertise/Fletch @@ Łuczniczka nie z tego świata
+OutlawExpertise/Gambler @@ Hazardzista ze strzelbą
+OutlawExpertise/Hopalong @@ Zabójczy mistrz lassa
+OutlawExpertise/Judge @@ Bezlitosny metalowy snajper
+OutlawExpertise/Legs @@ Zabójczyni z derringerem
+OutlawExpertise/MamaPanic @@ Czterorąka rewolwerowczyni
+OutlawExpertise/MistMiner @@ Spec od gazowych wybuchów
+OutlawExpertise/Preach @@ Duchowna z gatlingiem
+OutlawExpertise/Radium @@ Radioaktywny eksperymentator
+OutlawExpertise/Rawhide @@ Ogłuszający łowca zwierząt
+OutlawExpertise/Sarge @@ Opancerzony weteran strzelec
+OutlawExpertise/Smoky @@ Straszliwy kucharz podpalacz
+OutlawExpertise/Spike @@ Zabójczy miotacz noży
+OutlawFlavour/Astronaut @@ Niezarejestrowany ksenos
+OutlawFlavour/Bastard1 @@ Najmłodszy potomek Chaste'a
+OutlawFlavour/Bastard2 @@ Ulubieniec Chaste'a
+OutlawFlavour/Bastard3 @@ Mieszaniec z rybą
+OutlawFlavour/Billy @@ Alias William Boswick
+OutlawFlavour/Cuffs @@ Opis banity
+OutlawFlavour/Fletch @@ Tożsamość nieznana
+OutlawFlavour/Gambler @@ Alias Jednostka Finansowa 7103
+OutlawFlavour/Hopalong @@ Alias Vansak Largo
+OutlawFlavour/Judge @@ Jednostka Sprawiedliwości 939
+OutlawFlavour/Legs @@ Opis banity
+OutlawFlavour/MamaPanic @@ Pajęczakowata ksenos
+OutlawFlavour/MistMiner @@ Alias Huyon Li
+OutlawFlavour/Preach @@ Alias Esther O'Neil
+OutlawFlavour/Radium @@ Opis banity
+OutlawFlavour/Rawhide @@ Jednostka Kontroli Zwierząt 3990
+OutlawFlavour/Sarge @@ Żołnierz eksperymentalny 4035
+OutlawFlavour/Smoky @@ Alias Algernon Johnson
+OutlawFlavour/Spike @@ Alias Randy Argot
+OutlawHelp/Astronaut @@ Rzuca trzy pancerze
+OutlawHelp/Billy @@ Zbija zdrowie trzech wrogów do jednego punktu
+OutlawHelp/Cuffs @@ Zadowolona Cuffs zrobi X dla partnera w starciu.
+OutlawHelp/Fletch @@ Daje partnerowi nietykalność
+OutlawHelp/Gambler @@ Rzuca trzy losowe znajdźki
+OutlawHelp/Hopalong @@ Ogłusza wszystkich wrogów
+OutlawHelp/Judge @@ Rzuca nietykalność i szał
+OutlawHelp/Legs @@ Zadowolona Legs zrobi X dla partnera w starciu.
+OutlawHelp/MamaPanic @@ Rzuca wabik
+OutlawHelp/MistMiner @@ Robi partnera niewidzialnym
+OutlawHelp/Preach @@ Rzuca trzy apteczki
+OutlawHelp/Radium @@ Zadowolony Radium zrobi X dla partnera w starciu.
+OutlawHelp/Rawhide @@ Przyzywa trzy sojusznicze kojoty
+OutlawHelp/Sarge @@ Przyzywa sojuszniczego rewolwerowca
+OutlawHelp/Smoky @@ Podpala trzech wrogów
+OutlawHelp/Spike @@ Przyzywa sojuszniczą lufę
+OutlawWanted/Astronaut @@ Nielegalna morfologia\nUcieczka z aresztu
+OutlawWanted/Billy @@ Głowobójstwo\nMorderstwo
+OutlawWanted/Cuffs @@ Skażenie zarodnikami\nNadużycie jurysdykcji
+OutlawWanted/Fletch @@ Chronowandalizm\nWałęsanie się
+OutlawWanted/Hopalong @@ Przechodzenie w niedozwolonym miejscu\nKradzież bydła
+OutlawWanted/Judge @@ Utrudnianie wymiaru sprawiedliwości
+OutlawWanted/Legs @@ Mieszanie ras\nZerwanie kontraktu
+OutlawWanted/MistMiner @@ Niekontrolowane detonacje\nAutostop
+OutlawWanted/Preach @@ Apostazja\nHandel cudownymi eliksirami
+OutlawWanted/Radium @@ Zaniedbanie subatomowe
+OutlawWanted/Rawhide @@ Zakłócanie ciszy\nKłusownictwo
+OutlawWanted/Sarge @@ Porzucenie posterunku\nZdrada
+OutlawWanted/Smoky @@ Podniebienniobójstwo\nPodpalenie
+OutlawWanted/Spike @@ Posiadanie tabaki\nStawianie oporu przy zatrzymaniu
+OutlawWanted/Title @@ Poszukiwany za:
+StuntDesc/Astronaut @@ Raz po raz wystrzeliwuje Roswella w niebo w podmuchu ognia, raniąc wszystkich w pobliżu. Lądowanie ogłusza i rani wszystkich w okolicy.
+StuntDesc/Billy @@ Każde pociągnięcie spustu wypuszcza celną nawałnicę kul, a po niej błyskawiczne przeładowanie. Czas trwania: <color=#FFFFFF><d> s</color>.
+StuntDesc/Cuffs @@ Rozstawia sojusznicze działko.
+StuntDesc/Fletch @@ Wystrzeliwuje w każdego wroga śmiertelną samonaprowadzającą strzałę
+StuntDesc/Gambler @@ Wysadza losowych wrogów: <color=#FFFFFF><d></color>
+StuntDesc/Hopalong @@ Ogłusza wszystkich wrogów: 10 sekund
+StuntDesc/Judge @@ Spowalnia czas dla reszty świata. Czas trwania: <color=#FFFFFF><d> s</color>.
+StuntDesc/Legs @@ Przejmuje najsłabszego strażnika.
+StuntDesc/MamaPanic @@ Rzuca wabik, który odciąga uwagę wrogów.
+StuntDesc/MistMiner @@ Staje się niewidzialny. Czas trwania: <color=#FFFFFF><d> s</color>.
+StuntDesc/Preach @@ Każda kula, która rani wroga, leczy też Kaznodzieję. Czas trwania: <color=#FFFFFF><d> s</color>.
+StuntDesc/Radium @@ Wszyscy napromieniowani wrogowie dostają potężny impuls promieniowania.
+StuntDesc/Rawhide @@ Przejmuje najbliższe zwierzę. Jeśli go nie ma, przyzywa trzy przejęte kojoty.
+StuntDesc/Sarge @@ Podnosi przed sobą tarczę odbijającą pociski. Czas trwania: <color=#FFFFFF><d> s</color>.
+StuntDesc/Smoky @@ Podpala wrogów: <color=#FFFFFF><d></color>.
+StuntDesc/Spike @@ Przejmuje trzy najbliższe lufy albo skrzynki-pułapki. Jeśli ich nie ma, rozstawia przejętą lufę.
+StuntName/Astronaut @@ Odpalenie
+StuntName/Billy @@ Szybki ogień
+StuntName/Cuffs @@ Postaw działko
+StuntName/Fletch @@ Burza strzał
+StuntName/Gambler @@ Ruletka
+StuntName/Hopalong @@ Trzask bicza
+StuntName/Judge @@ Czas sądu
+StuntName/Legs @@ Flirt
+StuntName/MamaPanic @@ Wabik
+StuntName/MistMiner @@ Postać mgły
+StuntName/Preach @@ Potępienie
+StuntName/Radium @@ Impuls alfa
+StuntName/Rawhide @@ Zew natury
+StuntName/Sarge @@ Umocnienie
+StuntName/Smoky @@ Grillowanie
+StuntName/Spike @@ Hakowanie ochrony
+Wild Bastards @@ Wild Bastards

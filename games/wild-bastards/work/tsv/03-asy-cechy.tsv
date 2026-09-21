@@ -1,0 +1,650 @@
+TalentDesc/BILLY_CLOUD_OF_INK @@ Po otrzymaniu obrażeń nietykalność, sekundy: <d>
+TalentDesc/BILLY_DEADLY @@ Obrażenia: <d>
+TalentDesc/BILLY_DUELER @@ Zawsze krytycznie trafia zabójców, odporność na zabójców: <p>
+TalentDesc/BILLY_GIANT_SLAYER @@ Zawsze krytycznie trafia książąt, odporność na książąt: <p>
+TalentDesc/BILLY_JUST_A_KID @@ Tury do przybycia księcia: <d>
+TalentDesc/BILLY_QUICK @@ Przeładowanie, sekundy: <d>
+TalentDesc/BILLY_SHOOTER @@ Amunicja: <d>
+TalentDesc/BILLY_SOMETHING_TO_PROVE @@ Obrażenia w starciach powyżej zagrożenia 1: <p>
+TalentDesc/BILLY_TENACIOUS @@ Po nokaucie nietykalność, razy na starcie: <d>
+TalentDesc/CUFFS_BADGED @@ Następne patrole lub obławy, które się poddadzą: {[TALENT:CUFFS_BADGED]}
+TalentDesc/CUFFS_DEADLY_TURRETS @@ Poziom działek Cuffs: <d>
+TalentDesc/CUFFS_INSIDER @@ Strażnicy i zwierzęta w fortach: <p>
+TalentDesc/CUFFS_POISON_SPORES @@ Trucizna Szczelinatora, sekundy: {[TALENT:CUFFS_POISON_SPORES]}
+TalentDesc/CUFFS_STUNNING_TURRETS @@ Działka Cuffs ogłuszają, sekundy: {[TALENT:CUFFS_STUNNING_TURRETS]}
+TalentDesc/DOC_BARTERER @@ Zysk ze sprzedaży przedmiotów: <d>
+TalentDesc/DOC_CASHED_UP @@ Cramm przy zejściu na planetę: <d>
+TalentDesc/DOC_CHARMED @@ Odporność na obrażenia: <p>
+TalentDesc/DOC_GIFTED @@ Losowe znajdźki na starcie: <d>
+TalentDesc/DOC_INVESTOR @@ 100 cramm za zabicie Karzyciela: <p>
+TalentDesc/DOC_LUCKY_BOUNCE @@ Pancerz się nie zużywa: <p>
+TalentDesc/DOC_LUCKY_ESCAPE @@ Szansa, że nokautujący cios nie zada obrażeń: <p>
+TalentDesc/DOC_LUCKY_FIND @@ Zawsze znajduje rzadsze przedmioty
+TalentDesc/DOC_LUCKY_FIND_RARE @@ Zawsze znajduje rzadkie przedmioty
+TalentDesc/DOC_LUCKY_SHOT @@ Zawsze wyrzuca maksymalne obrażenia
+TalentDesc/DOC_QUICK @@ Przeładowanie magazynka, sekundy: <d>
+TalentDesc/DOC_SHOT_SIZE @@ Obrażenia: <d>, przeładowanie magazynka, sekundy: <d2>
+TalentDesc/DOC_SLEIGHT_OF_HAND @@ Szansa na darmowy zakup: <p>
+TalentDesc/DOC_WINNER @@ Dodatkowe zabójstwa popisem: <d>
+TalentDesc/FLETCH_ALTER_REALITY @@ Losuje od nowa strażników blokady
+TalentDesc/FLETCH_DEADLY @@ Obrażenia: <d>
+TalentDesc/FLETCH_EXPLODER @@ Wybuchowa strzała, obrażenia: <d>
+TalentDesc/FLETCH_EXPOSE_WEAKNESS @@ Blah
+TalentDesc/FLETCH_GRIT_FINDER @@ Asy w starciach na pustkowiu: <p>
+TalentDesc/FLETCH_ITEM_FLUCTUATION @@ Ponowne losowanie znalezionych przedmiotów: <d>
+TalentDesc/FLETCH_MIND_MODIFIER @@ Przejęcie po trafieniu: <p>
+TalentDesc/FLETCH_MIX_TIMELINES @@ Dodatkowy as jest losowy
+TalentDesc/FLETCH_PERCEIVE_WEAKNESS @@ Obrażenia Karzycielom: <p>
+TalentDesc/FLETCH_RIFT_TWEAKER @@ Wrogowie z furtek są przejęci: <p>
+TalentDesc/FLETCH_SCALED @@ Zdrowie: <d>, pancerz: <d2>
+TalentDesc/FLETCH_TALENT_FLUCTUATION @@ Ponowne losowanie asów do wyboru: <d>
+TalentDesc/FLETCH_TIME_WALKER @@ Po nokaucie wraca do walki, razy na starcie: <d>
+TalentDesc/GENERIC_ACCURATE @@ Rozrzut strzałów: <p>
+TalentDesc/GENERIC_BRUTAL @@ Strzały w serii: <d>
+TalentDesc/GENERIC_BULLETPROOF @@ Pancerz: <d>
+TalentDesc/GENERIC_DEADLY @@ Obrażenia: <p>
+TalentDesc/GENERIC_EAGLE_EYED @@ Przybliżenie broni: <p>, obrażenia przy celowaniu: <p2>
+TalentDesc/GENERIC_FARSIGHTED @@ Zasięg widzenia na planecie: <d>
+TalentDesc/GENERIC_FAST_RIDER @@ Ruchy na planecie: <d>
+TalentDesc/GENERIC_FEARSOME @@ Ucieczka wrogów z blokady: <p>
+TalentDesc/GENERIC_FORCEFUL @@ Odrzut celu: <p>
+TalentDesc/GENERIC_HIGH_VELOCITY @@ Prędkość pocisku: <p>
+TalentDesc/GENERIC_INNOCENT @@ Tury do przybycia księcia: <d>
+TalentDesc/GENERIC_LASER_RESIST @@ Odporność na lasery: <p>, zdrowie: <d2>
+TalentDesc/GENERIC_PENETRATING @@ Strzały przebijają pancerz
+TalentDesc/GENERIC_POISON_RESIST @@ Odporność na truciznę: <p>, zdrowie: <d2>
+TalentDesc/GENERIC_POWERFUL @@ +10% obszaru popisu
+TalentDesc/GENERIC_PROTON_RESIST @@ Odporność na protony: <p>, zdrowie: <d2>
+TalentDesc/GENERIC_QUICK @@ Czas przeładowania: <p>
+TalentDesc/GENERIC_RAPID_FIRE @@ Szybkostrzelność: <p>
+TalentDesc/GENERIC_RESOLUTE @@ Czas trwania popisu: <p>
+TalentDesc/GENERIC_SHOOTER @@ Amunicja: <d>
+TalentDesc/GENERIC_SHREDDER @@ Szatkowanie pancerza: <d>
+TalentDesc/GENERIC_SLAYER @@ Obrażenia krytyczne: <p>
+TalentDesc/GENERIC_SONIC_RESIST @@ Odporność na dźwięk: <p>, zdrowie: <d2>
+TalentDesc/GENERIC_SPEEDY @@ Szybkość w starciu: <d>
+TalentDesc/GENERIC_STRONG @@ Siła rzutu: <p>
+TalentDesc/GENERIC_THUNDERCLAP @@ Ogłuszenie, sekundy: <d>
+TalentDesc/GENERIC_TOUGH @@ Zdrowie: <d>
+TalentDesc/HOPALONG_CARNIVORE @@ Szansa na apteczkę po zabiciu zwierzęcia: <p>
+TalentDesc/HOPALONG_COWBOY @@ Obrażenia zwierzętom: <d>
+TalentDesc/HOPALONG_DEADLY @@ Obrażenia: <d>
+TalentDesc/HOPALONG_DETERMINED @@ Odporność na obrażenia podczas duszenia: <p>
+TalentDesc/HOPALONG_LONER @@ Niesława ze starcia w pojedynkę: <p>
+TalentDesc/HOPALONG_LONG_REACH @@ Zasięg lassa: <d>
+TalentDesc/HOPALONG_RAWHIDE @@ Czas ogłuszenia Trzaskiem bicza: <p>
+TalentDesc/HOPALONG_REGENERATOR @@ Leczenie co turę na planecie: <d>
+TalentDesc/HOPALONG_RESOLUTE @@ Czas trwania popisu: <d>
+TalentDesc/HOPALONG_ROUNDUP @@ Szansa, że jedna grupa zwierząt zginie przed starciem na blokadzie: <p>
+TalentDesc/HOPALONG_SONIC_BOOM @@ Czas ogłuszenia Trzaskiem bicza: <d>
+TalentDesc/HOPALONG_TRICK_RIDER @@ Ucieczka przed patrolem, sforą lub obławą: <p>
+TalentDesc/JUDGE_DEADLY @@ Obrażenia: <d>
+TalentDesc/JUDGE_DEATH_SENTENCE @@ Każde zabójstwo przedłuża popis, sekundy: <d>
+TalentDesc/JUDGE_DOUBLE_JEOPARDY @@ Obrażenia w czasie kuli: <p>
+TalentDesc/JUDGE_EXECUTIONER @@ Szybkie przeładowanie po zabójstwie
+TalentDesc/JUDGE_FOCUS @@ Obrażenia: <d>, zdrowie: <d2>
+TalentDesc/JUDGE_HEAVY_PLATE @@ Pancerz: <d>, szybkość w starciu: <d2>
+TalentDesc/JUDGE_IMPLACABLE @@ Szansa na powrót do walki po zabiciu wroga: <p>
+TalentDesc/JUDGE_JUSTICE @@ Leczenie po zabójstwie: <d>
+TalentDesc/JUDGE_METALLIC @@ Pancerz: <d>, odnowa pancerza po starciu: <d2>
+TalentDesc/JUDGE_SNAPSHOT @@ Szybkie przeładowanie po krytyku
+TalentDesc/JUDGE_SNIPER @@ Natychmiastowe przeładowanie po krytyku: <p>
+TalentDesc/JUDGE_STAGGER @@ Ogłuszenie: <d>
+TalentDesc/KABOOM_BLAST_WAVE @@ Odrzut od wybuchu: <p>
+TalentDesc/KABOOM_BUOYANT @@ Unosi się na wodzie
+TalentDesc/KABOOM_DEADLY @@ Obrażenia: <d>
+TalentDesc/KABOOM_DEMOLISHER @@ Bomby w dynamicie: <d>
+TalentDesc/KABOOM_EXPLODER @@ Promień wybuchu dynamitu: <p>
+TalentDesc/KABOOM_FLOATING @@ Brak obrażeń od upadku
+TalentDesc/KABOOM_GLINT_MINER @@ Znajduje błysk w kopalniach
+TalentDesc/KABOOM_GOLD_BUG @@ Dodatkowy błysk w każdym miejscu: <p>
+TalentDesc/KABOOM_MINER @@ Losowe znajdźki w kopalniach: <d>
+TalentDesc/KABOOM_PROSPECTOR @@ Błysk: <d>
+TalentDesc/KABOOM_REACTIVE @@ Wybucha po trafieniu, obrażenia: <d>
+TalentDesc/KABOOM_REACTIVE_STUN @@ Wybucha po trafieniu, obrażenia: <d>, ogłuszenie, sekundy: <d>
+TalentDesc/KABOOM_RESOLUTE @@ Czas trwania popisu, sekundy: <d>
+TalentDesc/KABOOM_SHOCK_PROOF @@ Odporność na ogień: <p>
+TalentDesc/KABOOM_SHOCK_WAVE @@ Dynamit i bomby ogłuszają, sekundy: <d>
+TalentDesc/KABOOM_SHORT_FUSE @@ Dynamit wybucha w zetknięciu z wrogiem
+TalentDesc/KABOOM_SILENT @@ Porusza się bezszelestnie
+TalentDesc/KABOOM_SNEAKY @@ Rzut dynamitem nie przerywa niewidzialności
+TalentDesc/KABOOM_VAPOROUS @@ Odporność na obrażenia: <p>
+TalentDesc/LAIKA_BRITTLE_SHIELDING @@ Pancerz: <d>, zdrowie: <d2>
+TalentDesc/LAIKA_CHARGE_ENGINEER @@ Nagrzewanie: <p>
+TalentDesc/LAIKA_CHARGE_SHIELDING @@ Nietykalność podczas Odpalenia
+TalentDesc/LAIKA_DEADLY @@ Obrażenia: <d>
+TalentDesc/LAIKA_DROP_TECHNICIAN @@ Użycia miejsc zrzutu: <d>
+TalentDesc/LAIKA_ENTRY_TECHNICIAN @@ Rozproszeni banici na planetę: <d>
+TalentDesc/LAIKA_FLYER @@ Przytrzymaj skok, by latać
+TalentDesc/LAIKA_HIGH_ENERGY @@ Obrażenia: <d>, nagrzewanie: <p2>
+TalentDesc/LAIKA_HIGH_FREQUENCY @@ Strzały przebijają pancerz
+TalentDesc/LAIKA_LEAPER @@ Wysokość skoku: <p>, brak obrażeń od upadku
+TalentDesc/LAIKA_MULTI_CHARGE @@ Seria: <d>, obrażenia: <d2>
+TalentDesc/LAIKA_ORBITAL_SURVEY @@ Odkrywa mapę okolicy na planecie
+TalentDesc/LAIKA_RIFT_LOCATER @@ Położenie furtek widać na kompasie
+TalentDesc/LAIKA_SHINE_SUPPLIER @@ Bimber na starcie: <d2>
+TalentDesc/LAIKA_TRAVELLER @@ Może się teleportować do innych banitów
+TalentDesc/LEGS_CHARMING @@ Odbicie obrażeń od strażników: <p>
+TalentDesc/LEGS_CITY_SLICKER @@ Przejęci strażnicy w starciu w mieście: <d>
+TalentDesc/LEGS_DEADLY @@ Obrażenia: <d>
+TalentDesc/LEGS_HORMONE_HARVESTER @@ Szał po zabiciu strażnika: <p>
+TalentDesc/LEGS_ORGAN_HARVESTER @@ Nietykalność po zabiciu strażnika: <p>
+TalentDesc/LEGS_RINGLEADER @@ Obrażenia przejętych strażników: <p>
+TalentDesc/MAMA_BACKSTABBER @@ Strzały w plecy są krytyczne
+TalentDesc/MAMA_DEADLY @@ Obrażenia: <d>
+TalentDesc/MAMA_DECEIVER @@ Przejęcie losowego strażnika po zabójstwie: <p>
+TalentDesc/MAMA_GUNBUCKET_HIDE @@ Niewidzialna dla luf
+TalentDesc/MAMA_HARVESTER @@ Szał po zabiciu Karzyciela: <p>
+TalentDesc/MAMA_JACKBOX_HIDE @@ Niewidzialna dla skrzynek-pułapek
+TalentDesc/MAMA_LOW_PROFILE @@ Zasięg wykrycia przez ochronę: <p>
+TalentDesc/MAMA_MAGNUM @@ Obrażenia: <d>, rozrzut strzałów: <p2>
+TalentDesc/MAMA_MESMERISING @@ Szansa, że patrol się podda: <p>
+TalentDesc/MAMA_NEGOTIATOR @@ Ostatni wróg ucieka
+TalentDesc/MAMA_PERSUASIVE @@ Przejęcie strażnika przed starciem
+TalentDesc/MAMA_QUICK @@ Przeładowanie magazynka, sekundy: <d>
+TalentDesc/MAMA_REAPER @@ Apteczka po zabiciu Karzyciela: <p>
+TalentDesc/MAMA_RESOLUTE @@ Czas trwania wabika, sekundy: <d>
+TalentDesc/MAMA_SINISTER @@ Postrzelony wróg ucieka: <p>
+TalentDesc/MAMA_TROUBLEMAKER @@ Obrażenia dla wrogów na początku starcia: <d>
+TalentDesc/MAMA_UNSTABLE_DECOY @@ Wabik odbija strzały
+TalentDesc/PREACH_BARTENDER @@ Bimber dla innych banitów po starciu: <d>
+TalentDesc/PREACH_BENEFICENT @@ Gdy Kaznodzieja leczy się w walce, partner też się leczy
+TalentDesc/PREACH_BLESSED_GATLING @@ Leczenie popisem: <p>
+TalentDesc/PREACH_BRIMSTONE @@ Obrażenia od ognia: <d2>
+TalentDesc/PREACH_DEADLY @@ Obrażenia: <d>
+TalentDesc/PREACH_FAITH @@ Pancerz: <d>, zdrowie: <d2>
+TalentDesc/PREACH_FRIEND @@ Leczenie banitów w grupie co turę na planecie: <d>
+TalentDesc/PREACH_GUIDED @@ Znajduje apteczki w kościołach
+TalentDesc/PREACH_HEALER @@ Leczenie siebie i partnera po starciu: <d>
+TalentDesc/PREACH_POWERED_GATLING @@ Czas rozkręcania: <d>
+TalentDesc/PREACH_PROTECTED @@ Szansa na apteczkę po trafieniu: <p>
+TalentDesc/PREACH_QUICK @@ Przeładowanie magazynka, sekundy: <d>
+TalentDesc/PREACH_RESOLUTE @@ Czas trwania popisu: <d>
+TalentDesc/PREACH_RETRIBUTION @@ Po trafieniu rani też strzelca: <p>
+TalentDesc/PREACH_SHARDING @@ Wybuch po trafieniu, obrażenia: <d>
+TalentDesc/PREACH_SHOOTER @@ Amunicja: <d>
+TalentDesc/PREACH_TINKERER @@ Pancerz dla innych banitów po starciu: <d>
+TalentDesc/PREACH_VENGEFUL @@ Przy zdrowiu <r> lub niższym obrażenia: <p2>
+TalentDesc/RADIUM_CARAPACE @@ Odnowa pancerza co turę na planecie: <d>
+TalentDesc/RADIUM_INTENSE @@ Odstęp obrażeń od promieniowania: <d>
+TalentDesc/RADIUM_NITRO_POWERED @@ Po użyciu nitro leczenie: <d>, pancerz: <d>, bimber: <d>
+TalentDesc/RADIUM_OPTIMISER @@ Po użyciu nitro zdrowie: <d>, pancerz: <d2>, bimber: <d3>
+TalentDesc/RADIUM_PREPARED @@ Poziom znalezionych przedmiotów: <d>
+TalentDesc/RADIUM_RADIOACTIVE @@ Napromieniowani wrogowie na starcie: <d>
+TalentDesc/RADIUM_SCROUNGER @@ Dodatkowe znalezione przedmioty: <d>
+TalentDesc/RAWHIDE_DEADLY @@ Obrażenia: <d>
+TalentDesc/RAWHIDE_GRIZZLY_WHISPERER @@ Sojusznicze grizzly
+TalentDesc/RAWHIDE_KYOTE_WHISPERER @@ Sojusznicze kojoty: <d2>
+TalentDesc/RAWHIDE_KYOTE_WHISPERER_ARMORED @@ Sojusznicze opancerzone kojoty: <d2>
+TalentDesc/RAWHIDE_MULTI_SHOT @@ Seria: <d>, obrażenia: <d2>
+TalentDesc/RAWHIDE_PACK_LEADER @@ Obrażenia przejętych zwierząt: <p>
+TalentDesc/RAWHIDE_SNARER @@ Przejęcie zwierzęcia przed starciem
+TalentDesc/RAWHIDE_SONIC_ENGINEER @@ Szybkość chłodzenia karabinu dźwiękowego: <p>
+TalentDesc/RAWHIDE_STORM_CHASER @@ W czasie burzy wrogowie zaczynają z 1 punktem zdrowia
+TalentDesc/RAWHIDE_THUNDERCLAP @@ Ogłuszenie, sekundy: <d>
+TalentDesc/RAWHIDE_TRAPPER @@ NIEUŻYWANE
+TalentDesc/SARGE_BRONCO @@ Ruchy na planecie: <d>
+TalentDesc/SARGE_DEADLY @@ Obrażenia: <d>
+TalentDesc/SARGE_FORAGER @@ Wydaj ruchy (<d>), by znaleźć pancerz na drodze: <d>
+TalentDesc/SARGE_FRISKY @@ Ruchy po odwiedzeniu miejsca: <d>
+TalentDesc/SARGE_KILLER @@ Szansa na krytyka poza słabym punktem: <p>
+TalentDesc/SARGE_RECYCLER @@ Pancerz po zabiciu opancerzonego wroga: <d>
+TalentDesc/SARGE_SURVIVOR @@ Pancerz po starciu: <d>
+TalentDesc/SARGE_TACTICIAN @@ Może działać po odwrocie ze starcia
+TalentDesc/SARGE_VETERAN @@ Przejęcie korbiarzy przed starciem: <p>
+TalentDesc/SARGE_X_RAY @@ Widzi informacje o wrogach przez przeszkody
+TalentDesc/SMOKY_ALREADY_BURNING @@ Odporność na ogień: <p>
+TalentDesc/SMOKY_BEANANZA @@ Więcej fasoli na każdej odwiedzonej planecie
+TalentDesc/SMOKY_CHOW_BELL @@ Sojuszniczy rewolwerowiec
+TalentDesc/SMOKY_CHOW_BELL_TRAINED @@ Sojuszniczy wyszkolony rewolwerowiec
+TalentDesc/SMOKY_CHOW_BELL_VETERAN @@ Sojuszniczy zaprawiony rewolwerowiec
+TalentDesc/SMOKY_COOK @@ Tury działania jadłodajni: <d>
+TalentDesc/SMOKY_DEADLY @@ Obrażenia: <d>
+TalentDesc/SMOKY_FIERY @@ Zdrowie: <d>, podwójne obrażenia od trucizny
+TalentDesc/SMOKY_FRIENDLY @@ Na planecie wszyscy banici są kumplami
+TalentDesc/SMOKY_LEFTOVERS @@ Wycofane
+TalentDesc/SMOKY_ON_FIRE @@ Odporność na ogień: <p>
+TalentDesc/SMOKY_PANIC @@ Wróg ucieka po zabójstwie: <p>
+TalentDesc/SMOKY_PURE_FLAME @@ Zdrowie: <d>, podatność na wodę: <p2>
+TalentDesc/SMOKY_RADIANT @@ Śnieg go nie spowalnia
+TalentDesc/SMOKY_RAPID_FIRE @@ Szybkostrzelność: <p>
+TalentDesc/SMOKY_SUPERHEATED @@ Odstęp obrażeń od ognia, sekundy: <d>
+TalentDesc/SMOKY_TAKE_OUT @@ Apteczki na starcie: <d2>
+TalentDesc/SMOKY_TERRIFYING @@ Wycofane
+TalentDesc/SPIKE_DEADLY @@ Obrażenia: <d>
+TalentDesc/SPIKE_KRAM_ADDICT @@ Leczenie po podniesieniu bimbru: <d>
+TalentDesc/SPIKE_KRAM_MINER @@ Wycofane
+TalentDesc/SPIKE_NIGHTFIGHTER @@ Obrażenia nocą: <p>
+TalentDesc/SPIKE_POWER_HACKER @@ Tury działania elektrowni: <d>
+TalentDesc/SPIKE_QUICK @@ Przeładowanie, sekundy: <d>
+TalentDesc/SPIKE_SECURITY_HACKER @@ Ochrona przejmowana samoczynnie na starcie: <d>
+TalentDesc/SPIKE_VANDAL @@ NIEUŻYWANE
+TalentEffect/JUDGE_METALLIC @@ Pancerz
+TalentEffect/JUDGE_METALLIC_2 @@ Pancerz
+TalentEffect/PREACH_HEALER @@ Zdrowie
+TalentEffect/PREACH_HEALER_2 @@ Zdrowie
+TalentEffect/PREACH_HEALER_3 @@ Zdrowie
+TalentEffect/PREACH_TINKERER @@ Pancerz
+TalentEffect/SARGE_SURVIVOR @@ Pancerz
+TalentEffect/SARGE_SURVIVOR_2 @@ Pancerz
+TalentName/BILLY_CLOUD_OF_INK @@ Chmura atramentu
+TalentName/BILLY_DEADLY @@ Zabójczość
+TalentName/BILLY_DUELER @@ Pojedynkowicz
+TalentName/BILLY_GIANT_SLAYER @@ Pogromca olbrzymów
+TalentName/BILLY_JUST_A_KID @@ Tylko dzieciak
+TalentName/BILLY_QUICK @@ Szybkie ręce
+TalentName/BILLY_SHOOTER @@ Zapas kul
+TalentName/BILLY_SOMETHING_TO_PROVE @@ Coś do udowodnienia
+TalentName/BILLY_TENACIOUS @@ Nieustępliwość
+TalentName/CUFFS_BADGED @@ Odznaka
+TalentName/CUFFS_DEADLY_TURRETS @@ Zabójcze działka
+TalentName/CUFFS_INSIDER @@ Wtyczka
+TalentName/CUFFS_POISON_SPORES @@ Trujące zarodniki
+TalentName/CUFFS_STUNNING_TURRETS @@ Ogłuszające działka
+TalentName/DOC_BARTERER @@ Handlarz
+TalentName/DOC_CASHED_UP @@ Przy forsie
+TalentName/DOC_CHARMED @@ W czepku urodzony
+TalentName/DOC_GIFTED @@ Dar losu
+TalentName/DOC_INVESTOR @@ Księgowy
+TalentName/DOC_LUCKY_BOUNCE @@ Szczęśliwy rykoszet
+TalentName/DOC_LUCKY_ESCAPE @@ Szczęśliwa ucieczka
+TalentName/DOC_LUCKY_FIND @@ Szczęśliwe znalezisko
+TalentName/DOC_LUCKY_FIND_RARE @@ Szczęśliwe znalezisko+
+TalentName/DOC_LUCKY_SHOT @@ Szczęśliwy strzał
+TalentName/DOC_QUICK @@ Szybkie ręce
+TalentName/DOC_SHOT_SIZE @@ Ładunek 000
+TalentName/DOC_SLEIGHT_OF_HAND @@ Sztuczka
+TalentName/DOC_WINNER @@ Zwycięzca
+TalentName/FLETCH_ALTER_REALITY @@ Zmiana rzeczywistości
+TalentName/FLETCH_DEADLY @@ Zabójczość
+TalentName/FLETCH_EXPLODER @@ Wybuchowa strzała
+TalentName/FLETCH_EXPOSE_WEAKNESS @@ Dostrzeżenie słabości
+TalentName/FLETCH_GRIT_FINDER @@ Tropicielka hartu
+TalentName/FLETCH_ITEM_FLUCTUATION @@ Fluktuacja przedmiotów
+TalentName/FLETCH_MIND_MODIFIER @@ Modyfikator umysłu
+TalentName/FLETCH_MIX_TIMELINES @@ Pomieszanie linii czasu
+TalentName/FLETCH_PERCEIVE_WEAKNESS @@ Wypatrzenie słabości
+TalentName/FLETCH_RIFT_TWEAKER @@ Przestrojenie furtek
+TalentName/FLETCH_SCALED @@ Łuski
+TalentName/FLETCH_TALENT_FLUCTUATION @@ Fluktuacja asów
+TalentName/FLETCH_TIME_WALKER @@ Spacer w czasie
+TalentName/GENERIC_ACCURATE @@ Celność
+TalentName/GENERIC_BRUTAL @@ Brutalność
+TalentName/GENERIC_BULLETPROOF @@ Kuloodporność
+TalentName/GENERIC_DEADLY @@ Zabójczość
+TalentName/GENERIC_EAGLE_EYED @@ Sokole oko
+TalentName/GENERIC_FARSIGHTED @@ Dalekowzroczność
+TalentName/GENERIC_FAST_RIDER @@ Szybka jazda
+TalentName/GENERIC_FEARSOME @@ Groza
+TalentName/GENERIC_FORCEFUL @@ Impet
+TalentName/GENERIC_HIGH_VELOCITY @@ Duża prędkość
+TalentName/GENERIC_INNOCENT @@ Skrytość
+TalentName/GENERIC_LASER_RESIST @@ Odporność na lasery
+TalentName/GENERIC_PENETRATING @@ Przebicie
+TalentName/GENERIC_POISON_RESIST @@ Odporność na truciznę
+TalentName/GENERIC_POWERFUL @@ Moc
+TalentName/GENERIC_PROTON_RESIST @@ Odporność na protony
+TalentName/GENERIC_QUICK @@ Szybkie ręce
+TalentName/GENERIC_RAPID_FIRE @@ Szybki ogień
+TalentName/GENERIC_RESOLUTE @@ Na bimbrze
+TalentName/GENERIC_SHOOTER @@ Zapas kul
+TalentName/GENERIC_SHREDDER @@ Szatkownica
+TalentName/GENERIC_SLAYER @@ Rzeź
+TalentName/GENERIC_SONIC_RESIST @@ Odporność na dźwięk
+TalentName/GENERIC_SPEEDY @@ Chyżość
+TalentName/GENERIC_STRONG @@ Krzepa
+TalentName/GENERIC_THUNDERCLAP @@ Grom
+TalentName/GENERIC_TOUGH @@ Twardość
+TalentName/HOPALONG_CARNIVORE @@ Mięsożerca
+TalentName/HOPALONG_COWBOY @@ Kowboj
+TalentName/HOPALONG_DEADLY @@ Zabójczość
+TalentName/HOPALONG_DETERMINED @@ Determinacja
+TalentName/HOPALONG_LONER @@ Samotnik
+TalentName/HOPALONG_LONG_REACH @@ Długi zasięg
+TalentName/HOPALONG_RAWHIDE @@ Surowa skóra
+TalentName/HOPALONG_REGENERATOR @@ Regeneracja
+TalentName/HOPALONG_RESOLUTE @@ Wytrwałość
+TalentName/HOPALONG_ROUNDUP @@ Spęd
+TalentName/HOPALONG_SONIC_BOOM @@ Huk dźwiękowy
+TalentName/HOPALONG_TRICK_RIDER @@ Woltyżer
+TalentName/JUDGE_DEADLY @@ Zabójczość
+TalentName/JUDGE_DEATH_SENTENCE @@ Wyrok śmierci
+TalentName/JUDGE_DOUBLE_JEOPARDY @@ Podwójna kara
+TalentName/JUDGE_EXECUTIONER @@ Kat
+TalentName/JUDGE_FOCUS @@ Skupienie
+TalentName/JUDGE_HEAVY_PLATE @@ Heavy metal
+TalentName/JUDGE_IMPLACABLE @@ Nieubłagany
+TalentName/JUDGE_JUSTICE @@ Sprawiedliwość
+TalentName/JUDGE_METALLIC @@ Metal
+TalentName/JUDGE_SNAPSHOT @@ Strzał z biodra
+TalentName/JUDGE_SNIPER @@ Snajper
+TalentName/JUDGE_STAGGER @@ Zachwianie
+TalentName/KABOOM_BLAST_WAVE @@ Fala uderzeniowa
+TalentName/KABOOM_BUOYANT @@ Pływalność
+TalentName/KABOOM_DEADLY @@ Zabójczość
+TalentName/KABOOM_DEMOLISHER @@ Burzyciel
+TalentName/KABOOM_EXPLODER @@ Wybuchowiec
+TalentName/KABOOM_FLOATING @@ Unoszenie
+TalentName/KABOOM_GLINT_MINER @@ Górnik błysku
+TalentName/KABOOM_GOLD_BUG @@ Gorączka błysku
+TalentName/KABOOM_MINER @@ Górnik
+TalentName/KABOOM_PROSPECTOR @@ Poszukiwacz
+TalentName/KABOOM_REACTIVE @@ Reaktywność
+TalentName/KABOOM_REACTIVE_STUN @@ Reaktywność+
+TalentName/KABOOM_RESOLUTE @@ Na bimbrze
+TalentName/KABOOM_SHOCK_PROOF @@ Ognioodporność
+TalentName/KABOOM_SHOCK_WAVE @@ Fala wstrząsowa
+TalentName/KABOOM_SHORT_FUSE @@ Krótki lont
+TalentName/KABOOM_SILENT @@ Cisza
+TalentName/KABOOM_SNEAKY @@ Skrytość
+TalentName/KABOOM_VAPOROUS @@ Opar
+TalentName/LAIKA_BRITTLE_SHIELDING @@ Osłona
+TalentName/LAIKA_CHARGE_ENGINEER @@ Chłodzenie cieczą
+TalentName/LAIKA_CHARGE_SHIELDING @@ Osłona startowa
+TalentName/LAIKA_DEADLY @@ Zabójczość
+TalentName/LAIKA_DROP_TECHNICIAN @@ Technik zrzutu
+TalentName/LAIKA_ENTRY_TECHNICIAN @@ Technik wejścia
+TalentName/LAIKA_FLYER @@ Lotnik
+TalentName/LAIKA_HIGH_ENERGY @@ Wysoka energia
+TalentName/LAIKA_HIGH_FREQUENCY @@ Wysoka częstotliwość
+TalentName/LAIKA_LEAPER @@ Skoczek
+TalentName/LAIKA_MULTI_CHARGE @@ Rozszczepienie
+TalentName/LAIKA_ORBITAL_SURVEY @@ Rozpoznanie z orbity
+TalentName/LAIKA_RIFT_LOCATER @@ Lokalizator furtek
+TalentName/LAIKA_SHINE_SUPPLIER @@ Dostawca bimbru
+TalentName/LAIKA_TRAVELLER @@ Podróżnik
+TalentName/LEGS_CHARMING @@ Urok osobisty
+TalentName/LEGS_CITY_SLICKER @@ Miastowa
+TalentName/LEGS_DEADLY @@ Zabójczość
+TalentName/LEGS_HORMONE_HARVESTER @@ Zbieraczka hormonów
+TalentName/LEGS_ORGAN_HARVESTER @@ Zbieraczka narządów
+TalentName/LEGS_RINGLEADER @@ Prowodyrka
+TalentName/MAMA_BACKSTABBER @@ Cios w plecy
+TalentName/MAMA_DEADLY @@ Zabójczość
+TalentName/MAMA_DECEIVER @@ Zastraszanie
+TalentName/MAMA_GUNBUCKET_HIDE @@ Przepustka u luf
+TalentName/MAMA_HARVESTER @@ Żniwa
+TalentName/MAMA_JACKBOX_HIDE @@ Przepustka u skrzynek
+TalentName/MAMA_LOW_PROFILE @@ Dyskrecja
+TalentName/MAMA_MAGNUM @@ Magnum
+TalentName/MAMA_MESMERISING @@ Hipnoza
+TalentName/MAMA_NEGOTIATOR @@ Negocjacje
+TalentName/MAMA_PERSUASIVE @@ Perswazja
+TalentName/MAMA_PERSUASIVE_2 @@ Perswazja+
+TalentName/MAMA_QUICK @@ Szybkie ręce
+TalentName/MAMA_REAPER @@ Głód
+TalentName/MAMA_RESOLUTE @@ Na bimbrze
+TalentName/MAMA_SINISTER @@ Złowrogość
+TalentName/MAMA_TROUBLEMAKER @@ Zadymiara
+TalentName/MAMA_UNSTABLE_DECOY @@ Mściwy wabik
+TalentName/PREACH_BARTENDER @@ Barmanka
+TalentName/PREACH_BENEFICENT @@ Dobroczynność
+TalentName/PREACH_BLESSED_GATLING @@ Błogosławiony gatling
+TalentName/PREACH_BRIMSTONE @@ Siarka
+TalentName/PREACH_DEADLY @@ Zabójczość
+TalentName/PREACH_FAITH @@ Wiara
+TalentName/PREACH_FRIEND @@ Przyjaźń
+TalentName/PREACH_GUIDED @@ Opatrzność
+TalentName/PREACH_HEALER @@ Uzdrowicielka
+TalentName/PREACH_POWERED_GATLING @@ Gatling z napędem
+TalentName/PREACH_PROTECTED @@ Ochrona
+TalentName/PREACH_QUICK @@ Szybkie ręce
+TalentName/PREACH_RESOLUTE @@ Na bimbrze
+TalentName/PREACH_RETRIBUTION @@ Odpłata
+TalentName/PREACH_SHARDING @@ Odłamki
+TalentName/PREACH_SHOOTER @@ Zapas kul
+TalentName/PREACH_TINKERER @@ Majsterkowiczka
+TalentName/PREACH_VENGEFUL @@ Mściwość
+TalentName/RADIUM_CARAPACE @@ Skorupa
+TalentName/RADIUM_INTENSE @@ Intensywność
+TalentName/RADIUM_NITRO_POWERED @@ Na nitro
+TalentName/RADIUM_OPTIMISER @@ Optymalizator
+TalentName/RADIUM_PREPARED @@ Przezorność
+TalentName/RADIUM_RADIOACTIVE @@ Radioaktywność
+TalentName/RADIUM_SCROUNGER @@ Szperacz
+TalentName/RAWHIDE_DEADLY @@ Zabójczość
+TalentName/RAWHIDE_GRIZZLY_WHISPERER @@ Zaklinacz grizzly
+TalentName/RAWHIDE_KYOTE_WHISPERER @@ Zaklinacz kojotów
+TalentName/RAWHIDE_KYOTE_WHISPERER_ARMORED @@ Zaklinacz kojotów+
+TalentName/RAWHIDE_MULTI_SHOT @@ Wielostrzał
+TalentName/RAWHIDE_PACK_LEADER @@ Przywódca stada
+TalentName/RAWHIDE_SNARER @@ Poskramiacz zwierząt
+TalentName/RAWHIDE_SONIC_ENGINEER @@ Inżynier dźwięku
+TalentName/RAWHIDE_STORM_CHASER @@ Łowca burz
+TalentName/RAWHIDE_THUNDERCLAP @@ Grom
+TalentName/RAWHIDE_TRAPPER @@ Traper
+TalentName/SARGE_BRONCO @@ Mustang
+TalentName/SARGE_DEADLY @@ Zabójczość
+TalentName/SARGE_FORAGER @@ Zbieracz
+TalentName/SARGE_FRISKY @@ Wigor
+TalentName/SARGE_KILLER @@ Zabójca
+TalentName/SARGE_RECYCLER @@ Recykling
+TalentName/SARGE_SURVIVOR @@ Przetrwanie
+TalentName/SARGE_TACTICIAN @@ Taktyka
+TalentName/SARGE_VETERAN @@ Weteran
+TalentName/SARGE_X_RAY @@ Optyka rentgenowska
+TalentName/SMOKY_ALREADY_BURNING @@ Już płonie
+TalentName/SMOKY_BEANANZA @@ Fasolowa bonanza
+TalentName/SMOKY_CHOW_BELL @@ Dzwonek na obiad
+TalentName/SMOKY_CHOW_BELL_TRAINED @@ Dzwonek na obiad+
+TalentName/SMOKY_CHOW_BELL_VETERAN @@ Dzwonek na obiad++
+TalentName/SMOKY_COOK @@ Kucharz
+TalentName/SMOKY_DEADLY @@ Zabójczość
+TalentName/SMOKY_FIERY @@ Ognistość
+TalentName/SMOKY_FRIENDLY @@ Swojskość
+TalentName/SMOKY_LEFTOVERS @@ Resztki
+TalentName/SMOKY_ON_FIRE @@ W ogniu
+TalentName/SMOKY_PANIC @@ Panika
+TalentName/SMOKY_PURE_FLAME @@ Czysty płomień
+TalentName/SMOKY_RADIANT @@ Żar
+TalentName/SMOKY_RAPID_FIRE @@ Szybki ogień
+TalentName/SMOKY_SUPERHEATED @@ Przegrzanie
+TalentName/SMOKY_TAKE_OUT @@ Na wynos
+TalentName/SMOKY_TERRIFYING @@ Groza
+TalentName/SPIKE_DEADLY @@ Zabójczość
+TalentName/SPIKE_KRAM_ADDICT @@ Bimbrowy nałóg
+TalentName/SPIKE_KRAM_MINER @@ Wycofane
+TalentName/SPIKE_NIGHTFIGHTER @@ Nocny wojownik
+TalentName/SPIKE_POWER_HACKER @@ Haker zasilania
+TalentName/SPIKE_QUICK @@ Szybkie ręce
+TalentName/SPIKE_SECURITY_HACKER @@ Haker ochrony
+TalentName/SPIKE_VANDAL @@ Wandal
+TalentRank/0 @@ Podstawowy
+TalentRank/1 @@ Lepszy
+TalentRank/2 @@ Pierwszorzędny
+TalentRank/3 @@ Legendarny
+TraitDesc/Accessible @@ Bez rozproszenia
+TraitDesc/Alerted @@ Blokada więzienia wyższego poziomu
+TraitDesc/AlwaysNight @@ Brak tur dziennych
+TraitDesc/AssassinBounty @@ Więcej niesławy za każdego zabitego zabójcę
+TraitDesc/Baking @@ Podwójna utrata naładowania
+TraitDesc/Balmy @@ Brak utraty naładowania
+TraitDesc/Barrabas @@ Barrabas wyląduje jako pierwszy z książąt
+TraitDesc/Beans @@ Dużo fasoli do zebrania
+TraitDesc/BlasterBounty @@ Więcej niesławy za każdego zabitego wysadzacza
+TraitDesc/BonusKram @@ Więcej tabaki w znajdźkach
+TraitDesc/Bounty @@ Nagrody w cramm za zabicie:
+TraitDesc/BushwhackerBounty @@ Więcej niesławy za każdego zabitego czatownika
+TraitDesc/Calm @@ Brak burz
+TraitDesc/Civilized @@ Brak zwierząt na blokadach
+TraitDesc/Corrupt @@ Strażników blokad można przekupić
+TraitDesc/CrankerBounty @@ Więcej niesławy za każdego zabitego korbiarza
+TraitDesc/Crowded @@ Więcej miejsc
+TraitDesc/Deadly @@ Wszystkie obrażenia są podwojone
+TraitDesc/Desolate @@ Brak miast
+TraitDesc/Developed @@ Dużo teleporterów
+TraitDesc/EnemyStrengthHidden @@ Siła wrogów ukryta
+TraitDesc/Francisco @@ Francisco wyląduje jako pierwsza z książąt
+TraitDesc/Frontier @@ Brak teleporterów
+TraitDesc/GoodItems @@ Lepsze przedmioty w znajdźkach
+TraitDesc/GrizzlyBounty @@ Więcej niesławy za każdego zabitego grizzly
+TraitDesc/GunhandAllies @@ W każdym starciu są sojuszniczy rewolwerowcy
+TraitDesc/GunhandBounty @@ Więcej niesławy za każdego zabitego rewolwerowca
+TraitDesc/Hard @@ Twardzi wrogowie, więcej łupów
+TraitDesc/Heroic @@ Pojedynczy potężni wrogowie
+TraitDesc/HollowedOut @@ Dużo zapadlisk, brak teleporterów
+TraitDesc/Holy @@ Rany zamieniają się w utratę naładowania
+TraitDesc/HunterBounty @@ Więcej niesławy za każdego zabitego łowcę
+TraitDesc/IllStarred @@ Banici nie mogą się łączyć w grupy
+TraitDesc/Inaccessible @@ Wszyscy banici poza jednym się rozpraszają
+TraitDesc/Insecure @@ Brak ochrony na blokadach
+TraitDesc/Invigorating @@ Każdy banita dostaje dodatkowego asa
+TraitDesc/IroncladBounty @@ Więcej niesławy za każdego zabitego żelaźniaka
+TraitDesc/Itinerant @@ Brak blokad, dużo patroli i sfor
+TraitDesc/KyoteAllies @@ W każdym starciu są sojusznicze kojoty
+TraitDesc/KyoteBounty @@ Więcej niesławy za każdego zabitego kojota
+TraitDesc/Lawless @@ Brak patroli i sfor
+TraitDesc/LockedDown @@ Dużo patroli
+TraitDesc/LongTime @@ Książę przybywa później
+TraitDesc/LowGravity @@ Wszystko spada wolniej
+TraitDesc/ManyChitLocations @@ Więcej cramm niż na większości planet
+TraitDesc/ManyDropLocations @@ Dużo miejsc zrzutu
+TraitDesc/ManyItems @@ Więcej przedmiotów niż na większości planet
+TraitDesc/ManyPacks @@ Dużo sfor
+TraitDesc/ManyRifts @@ We wszystkich starciach są furtki
+TraitDesc/ManyStagecoaches @@ Dużo wozów
+TraitDesc/MorticianBounty @@ Więcej niesławy za każdego zabitego grabarza
+TraitDesc/Mutagenic @@ Wrogowie zmieniają się co turę
+TraitDesc/Navs @@ Dużo nadajników do zebrania
+TraitDesc/NightOwls @@ Mniej strażników za dnia, nie nocą
+TraitDesc/NoArmor @@ Wszyscy zaczynają bez pancerza
+TraitDesc/NoAssassin @@ [BLANK]
+TraitDesc/NoBear @@ [BLANK]
+TraitDesc/NoBomber @@ [BLANK]
+TraitDesc/NoBushwhacker @@ [BLANK]
+TraitDesc/NoGrenadier @@ [BLANK]
+TraitDesc/NoGunhand @@ [BLANK]
+TraitDesc/NoIronclad @@ [BLANK]
+TraitDesc/NoMachineGunner @@ [BLANK]
+TraitDesc/NoMarksman @@ [BLANK]
+TraitDesc/NoNight @@ Brak tur nocnych
+TraitDesc/NoPorcupine @@ [BLANK]
+TraitDesc/NoScorpion @@ [BLANK]
+TraitDesc/NoShieldBearer @@ [BLANK]
+TraitDesc/NoSnake @@ [BLANK]
+TraitDesc/NoWolf @@ [BLANK]
+TraitDesc/Paved @@ Podwójny zasięg ruchu
+TraitDesc/Poor @@ Mniej błysku do zebrania
+TraitDesc/Populous @@ Wszystkie blokady są w miastach
+TraitDesc/PorcupineBounty @@ Więcej niesławy za każdego zabitego jeżozwierza
+TraitDesc/RadiationRoads @@ Grupy kończące ruch na drodze otrzymują obrażenia.
+TraitDesc/RattlerBounty @@ Więcej niesławy za każdego zabitego grzechotnika
+TraitDesc/ReinforcementWagon @@ Planetę patroluje wóz straży
+TraitDesc/Rubes @@ Niskie ceny w sklepach
+TraitDesc/Salubrious @@ Wszyscy banici są kumplami
+TraitDesc/Secure @@ Dużo ochrony
+TraitDesc/Shards @@ Dużo asów do zebrania
+TraitDesc/ShinedUp @@ Dużo bimbru, trudniejsze blokady
+TraitDesc/ShortDay @@ Jedna tura dnia, po niej jedna tura nocy
+TraitDesc/ShortTime @@ Książę przybywa szybciej
+TraitDesc/Shuffled @@ Losowe dodatkowe asy
+TraitDesc/StingerBounty @@ Więcej niesławy za każdego zabitego żądłaka
+TraitDesc/Stormy @@ W starciach walą pioruny
+TraitDesc/Swindlers @@ Wysokie ceny w sklepach
+TraitDesc/ThickFogOfWar @@ Grupy widzą mniej
+TraitDesc/ThinAir @@ W starciach trzeba pilnować tlenu
+TraitDesc/Unalert @@ Brak strażników przy pierwszej ucieczce z więzienia
+TraitDesc/VeryHard @@ Twardzi wrogowie
+TraitDesc/Wealthy @@ Więcej błysku do zebrania
+TraitDesc/Wild @@ Brak strażników na blokadach
+TraitDesc/YellowbellyBounty @@ Więcej niesławy za każdego zabitego cykora
+TraitName/Accessible @@ Dostępna
+TraitName/Alerted @@ W pogotowiu
+TraitName/AlwaysNight @@ Bez dnia
+TraitName/AssassinBounty @@ Nagroda za zabójców
+TraitName/Baking @@ Surowa
+TraitName/Balmy @@ Łagodna
+TraitName/Barrabas @@ Barrabas
+TraitName/Beans @@ Gastronomiczna
+TraitName/BlasterBounty @@ Nagroda za wysadzaczy
+TraitName/BonusKram @@ Tabaczna
+TraitName/Bounty @@ Nagrody
+TraitName/BushwhackerBounty @@ Nagroda za czatowników
+TraitName/Calm @@ Spokojna
+TraitName/Civilized @@ Cywilizowana
+TraitName/Corrupt @@ Skorumpowana
+TraitName/CrankerBounty @@ Nagroda za korbiarzy
+TraitName/Crowded @@ Zatłoczona
+TraitName/Deadly @@ Zabójcza
+TraitName/Desolate @@ Opustoszała
+TraitName/Developed @@ Rozwinięta
+TraitName/EnemyStrengthHidden @@ Bez rozpoznania
+TraitName/Francisco @@ Francisco
+TraitName/Frontier @@ Pogranicze
+TraitName/GoodItems @@ Najlepsze przedmioty
+TraitName/GrizzlyBounty @@ Nagroda za grizzly
+TraitName/GunhandAllies @@ Buntownicy
+TraitName/GunhandBounty @@ Nagroda za rewolwerowców
+TraitName/Hard @@ Elitarna
+TraitName/HasEstateKeys @@ Ma klucze do posiadłości
+TraitName/Heroic @@ Heroiczna
+TraitName/HollowedOut @@ Wydrążona
+TraitName/Holy @@ Lecznicze wody
+TraitName/HunterBounty @@ Nagroda za łowców
+TraitName/IllStarred @@ Choleryczna
+TraitName/Inaccessible @@ Niedostępna
+TraitName/Insecure @@ Niestrzeżona
+TraitName/Invigorating @@ Pobudzona
+TraitName/IroncladBounty @@ Nagroda za żelaźniaki
+TraitName/Itinerant @@ Wędrowna
+TraitName/KyoteAllies @@ Kumple Rawhide'a
+TraitName/KyoteBounty @@ Nagroda za kojoty
+TraitName/LargePlanet @@ Duża planeta
+TraitName/Lawless @@ Cicha
+TraitName/LockedDown @@ Zamknięta
+TraitName/LongTime @@ Powolny książę
+TraitName/LowGravity @@ Niska grawitacja
+TraitName/ManyChitLocations @@ Dostatnia
+TraitName/ManyDropLocations @@ Kosmiczna
+TraitName/ManyItems @@ Wiele przedmiotów
+TraitName/ManyPacks @@ Zwierzęta
+TraitName/ManyRifts @@ Otwarte drzwi
+TraitName/ManyStagecoaches @@ Handlowa
+TraitName/MorticianBounty @@ Nagroda za grabarzy
+TraitName/Mutagenic @@ Mutagenna
+TraitName/Navs @@ Węzeł nawigacyjny
+TraitName/NightOwls @@ Nocne marki
+TraitName/NoArmor @@ Żrąca
+TraitName/NoAssassin @@ Bez zabójców
+TraitName/NoBear @@ Bez grizzly
+TraitName/NoBomber @@ Bez grabarzy
+TraitName/NoBushwhacker @@ Bez czatowników
+TraitName/NoGrenadier @@ Bez wysadzaczy
+TraitName/NoGunhand @@ Bez rewolwerowców
+TraitName/NoIronclad @@ Bez żelaźniaków
+TraitName/NoMachineGunner @@ Bez korbiarzy
+TraitName/NoMarksman @@ Bez łowców
+TraitName/NoNight @@ Bez nocy
+TraitName/NoPorcupine @@ Bez jeżozwierzy
+TraitName/NoScorpion @@ Bez żądłaków
+TraitName/NoScorpions @@ Bez żądłaków
+TraitName/NoShieldBearer @@ Bez cykorów
+TraitName/NoSnake @@ Bez grzechotników
+TraitName/NoWolf @@ Bez kojotów
+TraitName/Paved @@ Utwardzone drogi
+TraitName/Poor @@ Biedna
+TraitName/Populous @@ Ludna
+TraitName/PorcupineBounty @@ Nagroda za jeżozwierze
+TraitName/RadiationRoads @@ Radioaktywne drogi
+TraitName/RattlerBounty @@ Nagroda za grzechotniki
+TraitName/ReinforcementWagon @@ Wóz
+TraitName/Rubes @@ Prowincjonalna
+TraitName/Salubrious @@ Kraina miodem płynąca
+TraitName/Secure @@ Strzeżona
+TraitName/Shards @@ Węzeł asów
+TraitName/ShinedUp @@ Pijacka
+TraitName/ShortDay @@ Krótki dzień
+TraitName/ShortTime @@ Szybki książę
+TraitName/Shuffled @@ Przetasowana
+TraitName/SmallPlanet @@ Mała planeta
+TraitName/StingerBounty @@ Nagroda za żądłaki
+TraitName/Stormy @@ Burzowa
+TraitName/Swindlers @@ Wytworna
+TraitName/ThickFogOfWar @@ Gęsta mgła
+TraitName/ThinAir @@ Rzadkie powietrze
+TraitName/TinyPlanet @@ Maleńka planeta
+TraitName/Unalert @@ Nieczujna
+TraitName/VeryHard @@ Elitarna
+TraitName/Wealthy @@ Bogata
+TraitName/Wild @@ Dzika
+TraitName/YellowbellyBounty @@ Nagroda za cykory

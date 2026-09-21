@@ -1,0 +1,563 @@
+UIEM/AcesDesc @@ Wybierane przy awansie, na stałe wzmacniają banitę.
+UIEM/ActiveTalents @@ Asy
+UIEM/AddAce @@ Dodaj asa
+UIEM/AddAceInstructions @@ Wybierz nowego asa
+UIEM/AddBonusAceInstructions @@ Zdobądź nowego naładowanego asa
+UIEM/AddInherentInstructions @@ Zdobądź nowego podstawowego asa
+UIEM/ArmorDesc @@ Ile trafień pochłonie pancerz banity
+UIEM/AwayHelp @@ Banita wyruszył w własnej sprawie.
+UIEM/Bestiary @@ Dane o wrogach
+UIEM/CollectionInstructions @@ Kliknij asa, żeby usunąć go z ręki
+UIEM/CollectionInstructionsPlanet @@ Na planecie nie można zmieniać talii.
+UIEM/CoreAcesDesc @@ Po odblokowaniu na stałe wzmacniają banitę.
+UIEM/Deck @@ Talia
+UIEM/Difficulty @@ Poziom trudności
+UIEM/Dislike @@ Waśń
+UIEM/DislikeEffects @@ Nie mogą razem zejść na planetę
+UIEM/Done @@ Gotowe
+UIEM/DrawFromDeck @@ Dobierz asa z talii
+UIEM/EquipMods @@ Załóż przedmiot
+UIEM/FeudHelp @@ Skłóceni banici nie mogą razem zejść na planetę.
+UIEM/Feuds @@ Waśnie
+UIEM/FeudsDesc @@ Skłóceni banici nie mogą razem zejść na planetę. Podzielcie się fasolą, żeby ich pogodzić i zrobić z nich kumpli.
+UIEM/FindBeans @@ Znajdź fasolę, żeby zwiększyć lojalność
+UIEM/FireResistHelp @@ Szansa na odparcie obrażeń od ognia
+UIEM/FreshAcesDesc @@ Ten as działa, gdy banita jest naładowany.
+UIEM/FreshHelp @@ Naładowany as działa.
+UIEM/Genesis @@ Geneza
+UIEM/Hand @@ Poziom
+UIEM/Handheld @@ W ręku
+UIEM/Happy @@ Życzliwość
+UIEM/HappyHelp @@ Życzliwy banita będzie na następnej planecie kumplem wszystkich pozostałych.
+UIEM/HealthDesc @@ Ile obrażeń zniesie banita
+UIEM/InOrbit @@ Na orbicie
+UIEM/InjuredHelp @@ Ranni banici nie mogą zejść na planetę. Rany leczą toniki.
+UIEM/LaserResistHelp @@ Szansa na odparcie obrażeń od lasera
+UIEM/LeavePlanet @@ Opuść planetę
+UIEM/LevelDesc @@ Banici awansują dzięki znalezionym asom. Każdy poziom to wybór kolejnego asa.
+UIEM/Like @@ Kumple
+UIEM/LikeEffects @@ Gdy kumpel oberwie trzy razy:
+UIEM/LikesHelp @@ Kumple pomagają, gdy partner oberwie trzy razy.
+UIEM/Loyalties @@ Waśnie
+UIEM/LoyaltiesHeading @@ Waśnie i kumple
+UIEM/LoyaltiesIntro @@ Wybierz banitę
+UIEM/LoyaltiesNewFeud @@ Dwóch banitów się skłóciło.
+UIEM/LoyaltiesNewNeutral @@ Dwóch banitów przestało być kumplami.
+UIEM/LoyaltiesNewNoFeud @@ Dwóch banitów zakończyło waśń.
+UIEM/LoyaltiesNewPal @@ Dwóch banitów zostało kumplami.
+UIEM/LoyaltiesSelectOutlawPrompt @@ Wybierz banitę, któremu dasz puszkę fasoli
+UIEM/MainMenu @@ Menu główne
+UIEM/MakeLike @@ Kliknij, żeby zyskać lojalność
+UIEM/MakeNeutral @@ Kliknij, żeby zakończyć waśń
+UIEM/MaxLoyalty @@ Fasola niepotrzebna
+UIEM/ModsDesc @@ Założone przedmioty wzmacniają banitę. Przepadają przy warpie.
+UIEM/ModsLoyalties @@ Przedmioty i waśnie
+UIEM/MovesDesc @@ Jak daleko banita dojdzie na mapie planety
+UIEM/Navigate @@ Nawiguj
+UIEM/Neutral @@ Obojętność
+UIEM/NeutralHelp @@ Ten banita nie ma z nikim waśni.
+UIEM/NewInherent @@ Zdobyto podstawowego asa
+UIEM/NewTalents @@ Odblokowano nowe asy
+UIEM/Next @@ Dalej
+UIEM/None @@ Brak
+UIEM/OKHelp @@ Bez ran
+UIEM/OnPlanet @@ Na planecie
+UIEM/Outlaws @@ Banici
+UIEM/Pal @@ Pomoc kumpla
+UIEM/PoisonResistHelp @@ Szansa na odparcie obrażeń od trucizny
+UIEM/Previous @@ Wstecz
+UIEM/ProtonResistHelp @@ Szansa na odparcie obrażeń od protonów
+UIEM/QuestCompleted @@ Zadanie wykonane
+UIEM/QuitConfirm @@ Na pewno wyjść z gry? Postęp zapisuje się automatycznie.
+UIEM/RemoveAceInstructions @@ Kliknij asa, żeby usunąć go z ręki
+UIEM/ResolveIncrease @@ Znalezione asy
+UIEM/SelectFewerTalents @@ Usuń asa z ręki
+UIEM/SelectMoreTalents @@ Dodaj asa do ręki
+UIEM/SonicResistHelp @@ Szansa na odparcie obrażeń od dźwięku
+UIEM/SpeedDesc @@ Jak szybko banita porusza się w walce
+UIEM/Start @@ Start
+UIEM/Status @@ Stan
+UIEM/TiredHelp @@ Zmęczenie: naładowany as nie działa. Przy każdym ruchu Driftera banici są mniej zmęczeni.
+UIEM/UnlockItems @@ Odblokowania
+UIEM/UseBeans @@ Podziel się fasolą
+UIEM/UseBeansHelp @@ Podzielcie się fasolą, żeby zakończyć waśń albo zostać kumplami
+UIEM/UseBeansNeutralHelp @@ Podzielcie się fasolą, żeby ten banita został kumplem pozostałych.
+UIMG/AceSummaryTitle @@ Asy zebrane w poprzednim sektorze
+UIMG/AcesFor @@ Asy dla:
+UIMG/All @@ Wszystko
+UIMG/AllChallengesComplete @@ Wszystkie wyzwania ukończone!
+UIMG/AllOutlawsInjuredError @@ Wszyscy banici są ranni
+UIMG/AlreadyPals @@ Już są kumplami
+UIMG/BastardInNextSector @@ Bękart w następnym sektorze:
+UIMG/BeamDown @@ Zejdź na planetę
+UIMG/BeanTargetInstruction @@ Wybierz banitę, z którym podzielisz się fasolą
+UIMG/BeansHelp @@ Fasola: kończy waśnie, łączy kumpli
+UIMG/BecomeNeutral @@ Zakończy waśń
+UIMG/BecomePals @@ Zostaną kumplami
+UIMG/Bio @@ Życiorys
+UIMG/BuffsDesc @@ Działa po naładowaniu
+UIMG/CancelNav @@ Anuluj nawigację
+UIMG/Canyon @@ Sierra
+UIMG/CanyonDesc @@ Zimne góry
+UIMG/CanyonPlanet @@ Planeta górska
+UIMG/ChallengeEnemiesTitle @@ Główni wrogowie
+UIMG/ChallengeEnemyDifficultyTitle @@ Trudność wrogów
+UIMG/ChallengeInfamy @@ Niesława na następne wyzwanie
+UIMG/ChallengeLengthTitle @@ Długość
+UIMG/ChallengeMutatorsTitle @@ Zasady specjalne
+UIMG/ChallengeOutlawsRecoverTitle @@ Uwięzieni banici
+UIMG/ChallengeOutlawsTitle @@ Banici na start
+UIMG/ChallengeResultTitle @@ Wynik wyzwania
+UIMG/ChargedAceFor @@ Naładowany as dla:
+UIMG/Chest @@ Skrzynia
+UIMG/ChitHelp @@ Cramm: kupuj w sklepach
+UIMG/Choose @@ Wybierz
+UIMG/ChooseOutlaws @@ Wybierz banitów do zejścia na planetę
+UIMG/ChooseOutlaws2 @@ Wybierz <color=#FF64EF>2</color> banitów do zejścia na <i><s></i>
+UIMG/ChooseOutlaws3 @@ Wybierz <color=#FF64EF>3</color> banitów do zejścia na <i><s></i>
+UIMG/ChooseOutlaws4 @@ Wybierz <color=#FF64EF>4</color> banitów do zejścia na <i><s></i>
+UIMG/ChooseOutlaws5 @@ Wybierz <color=#FF64EF>5</color> banitów do zejścia na <i><s></i>      -
+UIMG/ChooseOutlaws6 @@ Wybierz <color=#FF64EF>6</color> banitów do zejścia na <i><s></i>      -
+UIMG/ClickToCureFatigue @@ Kliknij, żeby usunąć zmęczenie
+UIMG/ClickToCureInjury @@ Kliknij, żeby wyleczyć rany
+UIMG/Cloak @@ Nadajnik
+UIMG/CloakHelp @@ Nadajniki: bezpieczne opuszczenie planety
+UIMG/CollectAll @@ Zbierz wszystko
+UIMG/Collection @@ Nowe asy
+UIMG/CollectionDesc @@ Nieużyte asy
+UIMG/ConfirmBeamDown @@ Możesz wybrać więcej banitów do zejścia na tę planetę. Na pewno schodzić?
+UIMG/ConfirmNextPlanet @@ Masz już dość błysku, żeby zwerbować kolejnego banitę. Na pewno chcesz zamiast tego lecieć na następną planetę?
+UIMG/ConfirmReplaceItem @@ Zastąpić założony przedmiot (zostanie przerobiony na cramm)?
+UIMG/Congratulations @@ Gratulacje
+UIMG/CoreAceFor @@ Podstawowy as dla:
+UIMG/Deck @@ Talia
+UIMG/DeckDesc @@ Wybierane przy awansie
+UIMG/DemoEnd @@ DZIĘKUJEMY ZA GRĘ W WILD BASTARDS\nPREMIERA W 2024\nDODAJ DO LISTY ŻYCZEŃ!
+UIMG/DemoEndFullGame @@ PEŁNA WERSJA WE WRZEŚNIU 2024
+UIMG/DemoEndPoint1 @@ 13 DZIKICH BANITÓW
+UIMG/DemoEndPoint2 @@ 41 BRUTALNYCH WROGÓW
+UIMG/DemoEndPoint3 @@ 6 OBCYCH BIOMÓW
+UIMG/DemoEndPoint4 @@ KAMPANIA FABULARNA
+UIMG/DemoEndPoint5 @@ KAMPANIA PROCEDURALNA
+UIMG/DemoEndPoint6 @@ 14 WYZWAŃ
+UIMG/DemoEndTitle @@ Dziękujemy za grę w demo Wild Bastards
+UIMG/DemoEndWishlist @@ Lista życzeń
+UIMG/Desert @@ Pustynia
+UIMG/DesertDesc @@ Suche, jałowe krajobrazy
+UIMG/DesertPlanet @@ Planeta pustynna
+UIMG/Detail @@ Szczegóły
+UIMG/ElixirModeDescription @@ Kliknij banitę, żeby podać mu tonik
+UIMG/EmptyArmament @@ Puste miejsce na uzbrojenie
+UIMG/EmptyGear @@ Puste miejsce na wyposażenie
+UIMG/EmptyOutfit @@ Puste miejsce na strój
+UIMG/End @@ Koniec
+UIMG/EndOfRunOverlayBastardRecoverFailure @@ Bękart nieuratowany – przeniesiono go na nową planetę
+UIMG/EndOfRunOverlayDescriptionBastardRecoverSuccess @@ Bękart uratowany – ruszaj do następnego sektora
+UIMG/EndOfRunOverlayDescriptionHelixRetrievalSuccess @@ Helisa odzyskana – ruszaj do następnego sektora
+UIMG/EndOfRunOverlayGlintRetrievalFailed @@ Błysk niezdobyty. Wyzwanie nieudane.
+UIMG/EndOfRunOverlayHelixRetrievalFailure @@ Helisy nie odzyskano – przeniesiono ją na nową planetę
+UIMG/EndOfRunOverlayOutlawRecoverFailure @@ Banita nieuratowany – przeniesiono go na nową planetę
+UIMG/Epitaph @@ Epitafium
+UIMG/Event @@ Zdarzenie
+UIMG/FeudsHelp @@ Ten banita jest skłócony z:
+UIMG/FirstAffinityChange @@ Relacje banitów się zmieniły. Kliknij przycisk lojalności, żeby zobaczyć zmiany.
+UIMG/FirstPlanet @@ Średnia
+UIMG/FiveXOne @@ 5x1
+UIMG/FiveXTwo @@ 5x2
+UIMG/Forest @@ Sekwoje
+UIMG/ForestDesc @@ Głębokie, ciemne lasy
+UIMG/ForestPlanet @@ Planeta leśna
+UIMG/FourXOne @@ 4x1
+UIMG/FourXTwo @@ 4x2
+UIMG/Fresh @@ Naładowanie
+UIMG/FreshHelp @@ Dostaje naładowanego asa przy zejściu na planetę
+UIMG/FreshHelpPlanet @@ Ma naładowanego asa
+UIMG/GangSize2 @@ Ciasne ogrodzenie orbitalne. Na planetę może zejść 2 banitów.
+UIMG/GangSize3 @@ Ciasne ogrodzenie orbitalne. Na planetę może zejść 3 banitów.
+UIMG/GangSize4 @@ Na planetę może zejść 4 banitów.
+UIMG/GangSize5 @@ Słabe ogrodzenie orbitalne. Na planetę może zejść 5 banitów.
+UIMG/GangSize6 @@ Słabe ogrodzenie orbitalne. Na planetę może zejść 6 banitów.
+UIMG/GlintDesc @@ Najcenniejsza postać cramm, warta małą fortunę.
+UIMG/GoldToRecruit @@ Błysk do werbunku:
+UIMG/HandHelp @@ banici dostają nowego asa przy każdym awansie.
+UIMG/HasPendingUpgrade @@ Banita ma nowe asy. Kliknij go, żeby dodać asy do kolekcji.
+UIMG/HideToolTips @@ <sprite name="select">Ukryj podpowiedzi
+UIMG/InfamyForNextChallenge @@ Spróbuj wyzwania jeszcze raz z zebraną niesławą.
+UIMG/InfamyHelp @@ Niesława: na początku sektora wymieniana na nagrody
+UIMG/InfamyScreen @@ Dziura w Murze
+UIMG/Inherents @@ Podstawowe asy
+UIMG/InherentsDesc @@ Odblokowywane po kolei
+UIMG/InjuredHelp @@ Nie może zejść na planetę.
+UIMG/Jailed @@ W więzieniu:
+UIMG/Jump @@ Skok
+UIMG/JustWarp @@ Po prostu warp
+UIMG/KeysCollected @@ Zebrane klucze
+UIMG/Landing @@ Lądowanie
+UIMG/LeavePlanet @@ Opuść planetę
+UIMG/LikesHelp @@ Ten banita kumpluje się z:
+UIMG/LocationDebug @@ Debug miejsca
+UIMG/Loot @@ Łup
+UIMG/Medium @@ 3x3
+UIMG/MediumEasy @@ 3x3
+UIMG/Mod @@ Przedmiot
+UIMG/Modifiers @@ Modyfikatory
+UIMG/Moon @@ Wroga
+UIMG/MoonDesc @@ Martwe skały pełne cramm
+UIMG/MoonPlanet @@ Wroga planeta
+UIMG/NavScreenTitle @@ Wybierz cel
+UIMG/Needed @@ Potrzebny
+UIMG/NeededHelp @@ Ten banita jest potrzebny do uratowania bękarta na ostatniej planecie.
+UIMG/NeededOnBoss @@ Nie może zejść – jest potrzebny do uratowania bękarta
+UIMG/New @@ Nowe
+UIMG/NewEnemy @@ Nowy wróg
+UIMG/NewTalent @@ Nowy!
+UIMG/NoBonusAce @@ Premia nieaktywna
+UIMG/NoNavsDesc @@ Podróż skończy się ranami
+UIMG/NoNavsTitle @@ Brak nadajników
+UIMG/NoTonicRequired @@ Banita nie jest ranny
+UIMG/NoTonics @@ Brak toników
+UIMG/NotNeededOnBoss @@ Nie może zejść – niepotrzebny do uratowania bękarta
+UIMG/Notification @@ Powiadomienie
+UIMG/NotificationAreFeuding @@ <s1> i <s2> poróżnili się
+UIMG/NotificationAreFeudingMultiple @@ Banici się poróżnili
+UIMG/NotificationArePals @@ <s1> i <s2> dogadują się
+UIMG/NotificationBastardRecovered @@ Bękart uratowany
+UIMG/NotificationGlintRecovered @@ Błysk zdobyty
+UIMG/NotificationNewAce @@ Awans
+UIMG/NotificationNewFreshAce @@ Nowy naładowany as
+UIMG/NotificationNewInherent @@ Nowy podstawowy as
+UIMG/NotificationOutlawMissionEnded @@ Powrót
+UIMG/NotificationOutlawRecovered @@ Uratowany
+UIMG/NotificationOutlawRecruited @@ Wskrzeszenie
+UIMG/OnPlanet @@ Na planecie
+UIMG/Open @@ Otwórz
+UIMG/OutlawAtLarge @@ Banita w sektorze
+UIMG/OutlawHelixInNextSector @@ Helisa banity w następnym sektorze:
+UIMG/Outlaws @@ Banici
+UIMG/PalHelp @@ Pomoc kumpla:
+UIMG/PlanetQuest @@ Zadanie na planecie
+UIMG/PlanetSize @@ Rozmiar planety
+UIMG/Planets @@ Planety
+UIMG/PrimaryLoot @@ Łup
+UIMG/ProgressNextChallenge @@ Odblokowano nowe wyzwanie!
+UIMG/RecoverableInThisSector @@ Banita siedzi w więzieniu w tym sektorze
+UIMG/Recruited @@ Banita zwerbowany
+UIMG/RepeatBonus @@ Premia za powtórzenie sektora!
+UIMG/RightClickDescription @@ Kliknij banitę prawym przyciskiem, żeby go obejrzeć
+UIMG/SectorMapAllInjured @@ Wszyscy banici ranni – potrzebny warp
+UIMG/SectorMapAllInjuredIronman @@ Wszyscy banici ranni – koniec gry
+UIMG/SectorMapBastardFailureTitle @@ Bękart przeniesiony
+UIMG/SectorMapBastardRecoverFailure @@ Bękarta nie uratowano i Chaste przeniósł go na nową planetę. Drifter musi cofnąć się warpem, żeby go odnaleźć.
+UIMG/SectorMapBastardRecoverSuccess @@ Bękart uratowany, Drifter jest gotów do warpu w nowy sektor.
+UIMG/SectorMapBastardSuccessTitle @@ Bękart uratowany
+UIMG/SectorMapBeamLimit @@ Limit transportu
+UIMG/SectorMapCantJumpEvent @@ Nie można skoczyć przed odblokowaniem bieżącego zdarzenia.
+UIMG/SectorMapCantJumpPlanet @@ Nie można skoczyć przed odblokowaniem bieżącej planety.
+UIMG/SectorMapChallengeEndDesc @@ Wyzwanie nieudane
+UIMG/SectorMapChallengeResetDesc @@ Wyzwanie nieudane
+UIMG/SectorMapEmptySpace @@ Próżnia
+UIMG/SectorMapEmptySpaceDesc @@ Nie ma tu nic do roboty.\nJedź dalej.
+UIMG/SectorMapEndMission @@ Misja zakończona. Odbierz nowe asy!
+UIMG/SectorMapEndMissionTitle @@ Misja wykonana
+UIMG/SectorMapEventSkipped @@ Zdarzenie ominięte
+UIMG/SectorMapEventVisited @@ Zdarzenie zakończone
+UIMG/SectorMapFailure @@ Porażka
+UIMG/SectorMapGlintFailureTitle @@ Błysk niezdobyty
+UIMG/SectorMapGlintRetrievalFailed @@ Nie zdobyto błysku. Koniec wyzwania. Zdobyta niesława przejdzie na kolejną próbę!
+UIMG/SectorMapHelixFailureTitle @@ Helisa przeniesiona
+UIMG/SectorMapHelixRetrievalFailure @@ Helisy banity nie odzyskano i Chaste przeniósł ją na nową planetę. Drifter musi cofnąć się warpem, żeby ją odnaleźć.
+UIMG/SectorMapHelixRetrievalSuccess @@ Zaginiony banita odzyskany, Drifter jest gotów do warpu w nowy sektor.
+UIMG/SectorMapHelixSuccessTitle @@ Banita wskrzeszony
+UIMG/SectorMapIronmanReset @@ Koniec
+UIMG/SectorMapIronmanResetDesc @@ Kampania przegrana
+UIMG/SectorMapJumpLocked @@ Skok zablokowany
+UIMG/SectorMapJumpUnlocked @@ Skok odblokowany
+UIMG/SectorMapNavDesc @@ Użyj nadajnika, żeby ominąć to miejsce
+UIMG/SectorMapNavTitle @@ Omiń
+UIMG/SectorMapNotVisible @@ Niewidoczne
+UIMG/SectorMapNotificationTitle @@ Uwaga
+UIMG/SectorMapOutOfRange @@ Poza zasięgiem skoku
+UIMG/SectorMapOutlawFailureTitle @@ Banita przeniesiony
+UIMG/SectorMapOutlawRecoverFailure @@ Banity nie uratowano i Chaste przeniósł go na nową planetę. Drifter musi cofnąć się warpem, żeby go odnaleźć.
+UIMG/SectorMapOutlawSelectDesc @@ Zejdź na planetę, żeby ją złupić i złamać blokadę skoku.
+UIMG/SectorMapOutlawSelectTitle @@ Złam blokadę
+UIMG/SectorMapPlanetSkipped @@ Planeta ominięta
+UIMG/SectorMapPlanetVisited @@ Planeta odwiedzona
+UIMG/SectorMapShopLeaveConfirm @@ Niewydana niesława przepadnie. Mimo to opuścić Dziurę w Murze?
+UIMG/SectorMapSkipDesc @@ Omiń to miejsce.
+UIMG/SectorMapSkipTitle @@ Pomiń
+UIMG/SectorMapSuccess @@ Sukces
+UIMG/SectorMapTooFar @@ Poza zasięgiem skanera
+UIMG/SectorMapTravelDesc @@ Leć do tego układu.
+UIMG/SectorMapTravelTitle @@ Skok
+UIMG/SectorMapWarpBackDesc @@ Wróć na początek sektora.
+UIMG/SectorMapWarpDesc @@ Ruszaj do następnego sektora.
+UIMG/SectorMapWarpFirstSector @@ Warp
+UIMG/SectorMapWarpFirstSectorDesc @@ Opuść ten nędzny sektor.
+UIMG/SectorMapWarpRecruited @@ Warp
+UIMG/SectorMapWarpReset @@ Warp wstecz
+UIMG/SectorMapWarpRestart @@ Warp wstecz
+UIMG/SectorMapWarpRestartToRecover @@ Warp wstecz
+UIMG/SelectFewerOutlaws @@ Wybierz mniej banitów
+UIMG/SelectMoreOutlaws @@ Wybierz więcej banitów
+UIMG/SelectOutlaws @@ Wybierz banitów
+UIMG/Selected @@ wybr.
+UIMG/SevenXOne @@ 7x1
+UIMG/ShowToolTips @@ <sprite name="select">Pokaż podpowiedzi
+UIMG/SixXOne @@ 6x1
+UIMG/Small @@ 2x2
+UIMG/SmallEasy @@ 2x2
+UIMG/StartInfo @@ Pokonaj to wyzwanie, żeby odblokować kolejne
+UIMG/Stash @@ Skrytka
+UIMG/Swamp @@ Moczary
+UIMG/SwampDesc @@ Mgliste, tajemnicze bagna
+UIMG/SwampPlanet @@ Planeta bagienna
+UIMG/TerrainType @@ Rodzaj terenu:
+UIMG/ThreeXOne @@ 3x1
+UIMG/ThreeXTwo @@ 3x2
+UIMG/Tiny @@ Maleńka
+UIMG/Tired @@ Zmęczenie
+UIMG/TiredHelp @@ Nie dostanie naładowanego asa przy zejściu na planetę
+UIMG/TonicHelp @@ Toniki: leczą rany
+UIMG/TryHarderChallenge @@ Spróbuj trudniejszego wyzwania
+UIMG/TwoXOne @@ 2x1
+UIMG/Unaffected @@ Bez zmian
+UIMG/UnidentifiedItem @@ Nierozpoznany przedmiot
+UIMG/UnidentifiedItem2 @@ Nierozpoznany lepszy przedmiot
+UIMG/UnidentifiedItem3 @@ Nierozpoznany pierwszorzędny przedmiot
+UIMG/UnidentifiedResource @@ Nierozpoznany łup
+UIMG/Uninjured @@ Bez ran
+UIMG/Unlock @@ Odblokuj
+UIMG/Unlocked @@ Odblokowane
+UIMG/UseBeansOverlayAutoButton @@ Rozdziel fasolę automatycznie
+UIMG/UseBeansOverlayDescription @@ Fasola przepadnie przy warpie. Lepiej podzielić się nią teraz.
+UIMG/UseBeansOverlayFeudsButton @@ Podziel się fasolą
+UIMG/UseBeansOverlayTitle @@ Podzielić fasolę przed warpem?
+UIMG/UseTonic @@ Użyj toniku
+UIMG/Utopia @@ Posiadłość
+UIMG/UtopiaDesc @@ Starannie urządzone ogrody bogaczy
+UIMG/UtopiaPlanet @@ Planeta posiadłości
+UIMG/View @@ Pokaż
+UIMG/Warp @@ Warp
+UIMG/WarpOutlawsHealed @@ Stan banitów przywrócony
+UIMG/WarpResourcesDecomposing @@ Ładunek się rozpada
+UIMG/Warping @@ Warp w toku
+UIPM/AITurn @@ Ruch wroga
+UIPM/Accuracy @@ Rozrzut
+UIPM/AceDesc @@ Asy: wzmacniają banitę
+UIPM/AcesAndMods @@ Działanie asów i przedmiotów
+UIPM/Actions @@ Działania
+UIPM/All @@ wszystko
+UIPM/Ammo @@ Amunicja
+UIPM/Armor @@ Pancerz
+UIPM/ArmorBuy @@ Kup pancerz
+UIPM/ArmorHelp @@ Pancerz pochłania jedno trafienie
+UIPM/ArmorNotNeeded @@ Pełny pancerz
+UIPM/At @@ W
+UIPM/BastardDesc @@ Bękart: jeden z potomków Chaste'a
+UIPM/BastardRetrieved @@ Bękart zabezpieczony
+UIPM/BeaconButtonDesc @@ Użyj nadajnika, żeby bezpiecznie opuścić planetę
+UIPM/BeamDownScreenTitle @@ Schodzenie na planetę
+UIPM/BeamUpFirstScreenTitle @@ Ucieczka na Driftera
+UIPM/BeamUpScreenTitle @@ Powrót na Driftera
+UIPM/BeansDesc @@ Fasola: kończy waśnie, łączy kumpli
+UIPM/BonusAce @@ Naładowany as
+UIPM/BonusAces @@ Naładowane asy
+UIPM/Bunch @@ Grupa
+UIPM/BunchEditHeading @@ Grupy banitów
+UIPM/BunchEditHelp @@ Podziel banitów stojących w tym samym miejscu na grupy
+UIPM/BunchEditJoin @@ Dołącz
+UIPM/BunchEditSwap @@ Zamień
+UIPM/BunchInjured @@ Grupa ranna
+UIPM/Cancel @@ Anuluj
+UIPM/CantEquip @@ Nie można założyć
+UIPM/ChooseOneAce @@ Wybierz asa do aktywacji
+UIPM/CloakDesc @@ Nadajniki: bezpieczne opuszczenie planety
+UIPM/CollectingPickups @@ Zbieranie znajdziek ze starcia.
+UIPM/Comma @@ ,
+UIPM/ConfirmEndTurnNotMoved @@ Jedna z grup jeszcze się nie ruszyła. Na pewno zakończyć turę?
+UIPM/ConfirmLeaveGoldRemain @@ Na planecie został niezebrany błysk. Na pewno zmykać?
+UIPM/ConfirmLeaveJailedOutlaws @@ W więzieniu wciąż siedzi banita. Na pewno wrócić schodami na statek?
+UIPM/ConfirmLeaveNoBastard @@ Bękart jeszcze niezabezpieczony. Na pewno wrócić schodami na statek?
+UIPM/ConfirmLeaveNoGlint @@ Błysk jeszcze niezabezpieczony. Na pewno wrócić schodami na statek?
+UIPM/ConfirmLeaveNoHelix @@ Helisa jeszcze niezabezpieczona. Na pewno wrócić schodami na statek?
+UIPM/ConfirmLeavePlanet @@ Wrócić schodami na statek?
+UIPM/ConfirmLeavePlanetWithoutExit @@ Wrócić na statek bez schodów? Wszyscy banici zostaną ranni.\n
+UIPM/ConfirmSurrender @@ Na pewno się poddać? Wszyscy banici w grupie zostaną ranni.
+UIPM/ConfirmUseBeacon @@ Użyć awaryjnego nadajnika, żeby wrócić na statek?
+UIPM/CoreAcesCollected @@ Zebrane podstawowe asy
+UIPM/Count @@ Zabójstwa
+UIPM/Crit @@ Strefa krytyczna
+UIPM/Critters @@ Zwierzęta
+UIPM/Damage @@ Obrażenia
+UIPM/DamageType @@ Rodzaj obrażeń
+UIPM/DamageUp @@ Obrażenia
+UIPM/Day @@ Dzień
+UIPM/Defeat @@ Porażka
+UIPM/Degrees @@ °
+UIPM/DisguiseDesc @@ Unikaj ruchomych wrogów przez jedną turę
+UIPM/Draw @@ Dobierz
+UIPM/DrawAces @@ Dobierz asy z talii
+UIPM/DrawingAcesFromDeck @@ Dobieranie asów
+UIPM/EditBunches @@ Edytuj grupy
+UIPM/Empty @@ Pusto
+UIPM/EndTurn @@ Zakończ turę
+UIPM/Enemy @@ Wróg
+UIPM/EnemyData @@ Dane
+UIPM/Equip @@ Załóż
+UIPM/ExtraPickups @@ Pozostałe znajdźki
+UIPM/Fight @@ Walcz
+UIPM/FireResist @@ Odp. na ogień
+UIPM/Forage @@ Szukaj zapasów
+UIPM/Found @@ Na miejscu
+UIPM/GamepadDisconnected @@ Kontroler odłączony \n<sprite name="buttonSouth">
+UIPM/Gear @@ Wyposażenie
+UIPM/GlintDesc @@ Błysk: najcenniejsza postać cramm
+UIPM/GlintRetrieved @@ Błysk zebrany
+UIPM/Got @@ Zdobyto
+UIPM/GritCollected @@ Zebrane asy
+UIPM/Guards @@ Karzyciele
+UIPM/Health @@ Zdrowie
+UIPM/HealthAndArmor @@ Zdrowie i pancerz
+UIPM/HealthBuy @@ Lecz
+UIPM/HealthHelp @@ Banita zostaje ranny, gdy zdrowie spadnie do zera
+UIPM/HealthNotNeeded @@ Pełne zdrowie
+UIPM/HealthUp @@ Zdrowie
+UIPM/HelixDesc @@ Helisa: esencja poległego banity
+UIPM/HelixRetrieved @@ Helisa zebrana
+UIPM/InfamyBonus @@ Premia
+UIPM/Infinity @@ Bez limitu
+UIPM/InherentDesc @@ Odłamki podstawowych asów: dają nowe podstawowe asy
+UIPM/Injured @@ Rany
+UIPM/ItemDesc @@ Niezałożone przedmioty
+UIPM/ItemsCollected @@ Zebrane przedmioty
+UIPM/Jailed @@ W celi
+UIPM/LaserResist @@ Odp. na lasery
+UIPM/Level @@ Poziom
+UIPM/LevelBonus @@ Premia za poziom
+UIPM/LevelHelp @@ Ile asów ma banita
+UIPM/LevelShort @@ POZ.
+UIPM/LevelUp @@ Awans
+UIPM/LevelsUp @@ Awansuje
+UIPM/LikeEffects @@ Pomoc w starciach
+UIPM/Loading @@ Początek starcia
+UIPM/Loot @@ Żyła złota
+UIPM/LootExplanation @@ Wszystkie pozostałe znajdźki zebrano automatycznie
+UIPM/Map @@ Mapa
+UIPM/ModCollection @@ Kolekcja przedmiotów
+UIPM/Mods @@ Przedmiot
+UIPM/MoreAces @@ Więcej asów
+UIPM/Move @@ Ruch
+UIPM/Moves @@ Ruchy
+UIPM/MovesDesc @@ Ruchy grupy pozostałe w tej turze
+UIPM/NewBunch @@ Nowa grupa
+UIPM/Next @@ Dalej
+UIPM/Night @@ Noc
+UIPM/NightFallIn @@ Zmrok za
+UIPM/NightHelp @@ Jest noc
+UIPM/NightfallHelp @@ Tury do zmroku
+UIPM/NitroDesc @@ Dodatkowe ruchy
+UIPM/NitroHelp @@ Daje grupie dodatkowe ruchy
+UIPM/No @@ Nie
+UIPM/NoArmament @@ Brak uzbrojenia
+UIPM/NoFreshAce @@ Brak
+UIPM/NoGear @@ Brak wyposażenia
+UIPM/NoItem @@ Puste miejsce na przedmiot
+UIPM/NoItems @@ Brak niezałożonych przedmiotów
+UIPM/NoMods @@ Brak zapasowych przedmiotów
+UIPM/NoOutfit @@ Brak stroju
+UIPM/NoTooltips @@ Bez podpowiedzi
+UIPM/NotScattered @@ U celu
+UIPM/NumberOfEnemies @@ Liczba wrogów
+UIPM/OK @@ OK
+UIPM/OnCanyonRoad @@ NA ZAMARZNIĘTEJ ŚCIEŻCE
+UIPM/OnForestRoad @@ NA SPLĄTANYM SZLAKU
+UIPM/OnMoonRoad @@ NA SPALONEJ DRODZE
+UIPM/OnRoad @@ NA ZAKURZONYM TRAKCIE
+UIPM/OnSwampRoad @@ NA BŁOTNISTEJ GROBLI
+UIPM/Outfit @@ Strój
+UIPM/Outlaw @@ Banita
+UIPM/OutlawWeapon @@ Broń
+UIPM/PackDefeated @@ Sfora pokonana!
+UIPM/PalHelp @@ Banita jest kumplem swojego partnera
+UIPM/PalsBonus @@ Premia kumpli
+UIPM/PatrolDefeated @@ Patrol pokonany!
+UIPM/PerSecond @@ /s
+UIPM/Pickups @@ Tabaka ze znajdziek
+UIPM/Plan @@ Plan
+UIPM/PlanetLost @@ Wszyscy banici ranni
+UIPM/PlanetLostDesc @@ Wszyscy banici są ranni.
+UIPM/PlanetResources @@ Planeta
+UIPM/PlanetTraits @@ Cechy planety
+UIPM/PlayerTurn @@ Nowa tura
+UIPM/PoisonResist @@ Odp. na truciznę
+UIPM/PosseArrives1 @@ McNeil przybywa
+UIPM/PosseArrives2 @@ Francisco przybywa
+UIPM/PosseArrives3 @@ Barrabas przybywa
+UIPM/PosseArrives4 @@ Chaste przybywa
+UIPM/PosseArrives5 @@ Chaste na planecie
+UIPM/PosseDefeated @@ Obława pokonana!
+UIPM/PosseHelp @@ Tury do przybycia księcia albo Chaste'a na planetę
+UIPM/PosseTurns @@ Tury do obławy
+UIPM/PosseTurns1 @@ Książę McNeil przybędzie za
+UIPM/PosseTurns2 @@ Księżna Francisco przybędzie za
+UIPM/PosseTurns3 @@ Książę Barrabas przybędzie za
+UIPM/PosseTurns4 @@ Chaste przybędzie za
+UIPM/PosseTurns5 @@ Chaste na planecie
+UIPM/ProtonResist @@ Odp. na protony
+UIPM/Quest @@ Zadanie
+UIPM/ROF @@ Szybkostrzelność
+UIPM/Recycle @@ Przerób na cramm:
+UIPM/Reload @@ Przeładowanie
+UIPM/Replace @@ Zastąp
+UIPM/Resistances @@ Odporności
+UIPM/Retreat @@ Odwrót
+UIPM/RoadOpened @@ Droga otwarta!
+UIPM/Round @@ runda
+UIPM/Scattered @@ Rozproszenie
+UIPM/Seconds @@ Sekundy
+UIPM/SecondsAbbreviation @@ S
+UIPM/Security @@ Ochrona
+UIPM/Select @@ Wybierz
+UIPM/SelectItem @@ Wybierz przedmiot do założenia
+UIPM/SelectSlot @@ Wybierz miejsce na przedmiot
+UIPM/SelectedBunch @@ Wybrana grupa
+UIPM/SharedLoot @@ Znajdźki
+UIPM/ShopBuy @@ Kup
+UIPM/ShopBuyTitle @@ Nasze towary
+UIPM/ShopSell @@ Sprzedaj
+UIPM/ShopSellResourcesTitle @@ Sprzedaj zasoby
+UIPM/ShopSellTitle @@ Sprzedaj przedmioty
+UIPM/SoloBonus @@ Premia w pojedynkę
+UIPM/SonicResist @@ Odp. na dźwięk
+UIPM/SpareMods @@ Zapasowe przedmioty
+UIPM/Speed @@ Szybkość
+UIPM/Stats @@ Statystyki
+UIPM/SteamOverlayOpen @@ Otwarto nakładkę Steam
+UIPM/Stunt @@ Popis
+UIPM/Sum @@ Niesława
+UIPM/TalentReroll @@ Dobierz ponownie
+UIPM/Teleport @@ Teleportuj
+UIPM/TeleporterDesc @@ Postaw teleporter
+UIPM/Threat @@ Zagrożenie
+UIPM/TonicDesc @@ Toniki: leczą rany
+UIPM/TooManyBunches @@ Nie można tam przejść, jest tam już za dużo grup.
+UIPM/TooManyOutlaws @@ Za dużo banitów
+UIPM/Total @@ Razem
+UIPM/Turn @@ Tura
+UIPM/TurnHelp @@ Tury, które upłynęły na planecie
+UIPM/Turns @@ Tury
+UIPM/UnequippedMods @@ Kolekcja przedmiotów <color=white>Może je założyć każdy banita</color>
+UIPM/Unknown @@ Brak danych
+UIPM/Used @@ Zużyte
+UIPM/Uses @@ Użycia
+UIPM/UsesRemaining @@ Pozostałe użycia
+UIPM/Value @@ Wartość
+UIPM/Victory @@ Zwycięstwo
+UIPM/VisitGuardPost @@ Wygraj starcie, żeby otworzyć drogę
+UIPM/VisitLocation @@ Odwiedź miejsce
+UIPM/Wanted @@ Poszukiwany
+UIPM/Weapon @@ Przedmiot
+UIPM/Yes @@ Tak
+UIPM/ZoomedSpread @@ Rozrzut przy celowaniu
+UIPM/comfirmEndTurnWithMoves @@ Jedna z grup ma jeszcze ruchy. Na pewno zakończyć turę?
