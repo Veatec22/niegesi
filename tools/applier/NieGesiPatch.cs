@@ -5,9 +5,9 @@
 // Wszystko z .NET Framework 4, który jest na każdym Windowsie od lat — żadnej biblioteki.
 //
 // Użycie:
-//   NieGesiPatch.exe                          szuka łatki obok siebie, gra = katalog programu
-//   NieGesiPatch.exe <katalog gry> [łatka]
-//   NieGesiPatch.exe --przywroc [katalog gry] [łatka]
+//   NieGesiPatch.exe                          nakłada wszystkie łatki obok siebie, gra = katalog programu
+//   NieGesiPatch.exe <katalog gry> [łatka...]
+//   NieGesiPatch.exe --przywroc [katalog gry] [łatka...]
 //
 // Kod celowo w C# 5, żeby kompilował go także csc.exe dołączony do samego Windowsa.
 
@@ -65,95 +65,129 @@ static class NieGesiPatch
         return code;
     }
 
+    // Jedna łatka = jeden plik gry. Paczka może nieść kilka; nakładamy wszystkie albo żadnej.
+    class Job
+    {
+        public string PatchPath;
+        public Dictionary<string, string> Header;
+        public byte[] Payload;
+        public string Target;
+        public string Backup { get { return Target + BackupSuffix; } }
+        public bool Installed;
+    }
+
     static int Run(List<string> args)
     {
         bool restore = args.Remove("--przywroc");
         string here = AppDomain.CurrentDomain.BaseDirectory;
 
-        string patchPath = args.Count > 1 ? args[1] : FindPatch(here);
-        Dictionary<string, string> header;
-        byte[] payload;
-        ReadPatch(File.ReadAllBytes(patchPath), out header, out payload);
-        Console.WriteLine("Łatka:  " + Path.GetFileName(patchPath));
+        string[] patchPaths = args.Count > 1 ? args.GetRange(1, args.Count - 1).ToArray() : FindPatches(here);
+        List<Job> jobs = new List<Job>();
+        foreach (string patchPath in patchPaths)
+        {
+            Job job = new Job { PatchPath = patchPath };
+            ReadPatch(File.ReadAllBytes(patchPath), out job.Header, out job.Payload);
+            jobs.Add(job);
+        }
 
         string gameDir = args.Count > 0 ? args[0] : here;
-        string relative = header["file"].Replace('/', Path.DirectorySeparatorChar);
-        string target = Path.Combine(gameDir, relative);
-        if (!File.Exists(target) && args.Count == 0)
+        if (args.Count == 0 && !File.Exists(TargetIn(gameDir, jobs[0])))
         {
-            Console.WriteLine("Nie widzę " + relative + " obok programu. Wskaż katalog gry.");
-            gameDir = AskForFolder(header["file"]);
-            target = Path.Combine(gameDir, relative);
+            Console.WriteLine("Nie widzę plików gry obok programu. Wskaż katalog gry.");
+            gameDir = AskForFolder(jobs[0].Header["file"]);
         }
-        if (!File.Exists(target))
-            throw new Failure("Nie znalazłem pliku gry: " + target +
-                              "\nWypakuj paczkę do katalogu gry albo podaj go jako parametr.");
-        Console.WriteLine("Plik:   " + target);
+        foreach (Job job in jobs)
+        {
+            job.Target = TargetIn(gameDir, job);
+            if (!File.Exists(job.Target))
+                throw new Failure("Nie znalazłem pliku gry: " + job.Target +
+                                  "\nWypakuj paczkę do katalogu gry albo podaj go jako parametr.");
+            Console.WriteLine("Łatka " + Path.GetFileName(job.PatchPath) + " -> " + job.Header["file"]);
+        }
         Console.WriteLine();
 
-        string backup = target + BackupSuffix;
         if (restore)
-            return Restore(target, backup, header);
+            return Restore(jobs);
 
-        Console.WriteLine("Sprawdzam sumę kontrolną…");
-        byte[] source = File.ReadAllBytes(target);
-        string digest = Sha256(source);
-        if (digest == header["target-sha256"])
+        // Najpierw sprawdzamy wszystkie pliki, dopiero potem cokolwiek zapisujemy.
+        Console.WriteLine("Sprawdzam sumy kontrolne…");
+        foreach (Job job in jobs)
+        {
+            string digest = Sha256(File.ReadAllBytes(job.Target));
+            job.Installed = digest == job.Header["target-sha256"];
+            if (!job.Installed && digest != job.Header["source-sha256"])
+                throw new Failure("Plik " + job.Header["file"] + " nie jest tym, pod który zrobiono łatkę.\n" +
+                                  "  oczekiwano " + job.Header["source-sha256"] + "\n" +
+                                  "  jest       " + digest + "\n" +
+                                  "Jeśli gra dostała aktualizację, potrzebna jest nowa łatka.");
+        }
+
+        if (jobs.TrueForAll(delegate(Job job) { return job.Installed; }))
         {
             Console.WriteLine("Spolszczenie jest już wgrane.");
-            if (Console.IsInputRedirected || !File.Exists(backup))
+            if (Console.IsInputRedirected || !jobs.TrueForAll(delegate(Job job) { return File.Exists(job.Backup); }))
                 return 0;
             Console.Write("Przywrócić oryginał gry? [t/N] ");
             string answer = (Console.ReadLine() ?? "").Trim().ToLowerInvariant();
-            return answer == "t" || answer == "tak" ? Restore(target, backup, header) : 0;
+            return answer == "t" || answer == "tak" ? Restore(jobs) : 0;
         }
-        if (digest != header["source-sha256"])
-            throw new Failure("Ten plik gry nie jest tym, pod który zrobiono łatkę.\n" +
-                              "  oczekiwano " + header["source-sha256"] + "\n" +
-                              "  jest       " + digest + "\n" +
-                              "Jeśli gra dostała aktualizację, potrzebna jest nowa łatka.");
 
-        Console.WriteLine("Nakładam łatkę…");
-        byte[] result = Apply(source, Inflate(payload), long.Parse(header["target-size"]));
-        if (Sha256(result) != header["target-sha256"])
-            throw new Failure("Odtworzony plik ma inną sumę kontrolną niż powinien.");
+        foreach (Job job in jobs)
+        {
+            if (job.Installed)
+                continue;
+            Console.WriteLine("Nakładam łatkę na " + job.Header["file"] + "…");
+            byte[] result = Apply(File.ReadAllBytes(job.Target), Inflate(job.Payload), long.Parse(job.Header["target-size"]));
+            if (Sha256(result) != job.Header["target-sha256"])
+                throw new Failure("Odtworzony plik " + job.Header["file"] + " ma inną sumę kontrolną niż powinien.");
 
-        // Najpierw kopia oryginału, potem zapis do pliku tymczasowego i dopiero podmiana —
-        // przerwanie w połowie nie zostawia w grze uszkodzonego pliku.
-        if (!File.Exists(backup))
-            File.Copy(target, backup);
-        string temporary = target + ".niegesi-tmp";
-        File.WriteAllBytes(temporary, result);
-        File.Delete(target);
-        File.Move(temporary, target);
+            // Najpierw kopia oryginału, potem zapis do pliku tymczasowego i dopiero podmiana —
+            // przerwanie w połowie nie zostawia w grze uszkodzonego pliku.
+            if (!File.Exists(job.Backup))
+                File.Copy(job.Target, job.Backup);
+            string temporary = job.Target + ".niegesi-tmp";
+            File.WriteAllBytes(temporary, result);
+            File.Delete(job.Target);
+            File.Move(temporary, job.Target);
+            Console.WriteLine("  kopia oryginału: " + job.Backup);
+        }
 
         Console.WriteLine();
         Console.WriteLine("Gotowe. Spolszczenie wgrane.");
-        Console.WriteLine("Kopia oryginału: " + backup);
         return 0;
     }
 
-    static int Restore(string target, string backup, Dictionary<string, string> header)
+    static string TargetIn(string gameDir, Job job)
     {
-        if (!File.Exists(backup))
-            throw new Failure("Nie ma kopii oryginału (" + backup + ").\n" +
-                              "Zweryfikuj pliki gry w Steamie albo GOG Galaxy.");
-        if (Sha256(File.ReadAllBytes(backup)) != header["source-sha256"])
-            throw new Failure("Kopia " + backup + " nie jest oryginałem, pod który zrobiono łatkę.");
-        File.Copy(backup, target, true);
-        File.Delete(backup);
+        return Path.Combine(gameDir, job.Header["file"].Replace('/', Path.DirectorySeparatorChar));
+    }
+
+    static int Restore(List<Job> jobs)
+    {
+        foreach (Job job in jobs)
+        {
+            if (!File.Exists(job.Backup))
+                throw new Failure("Nie ma kopii oryginału (" + job.Backup + ").\n" +
+                                  "Zweryfikuj pliki gry w Steamie albo GOG Galaxy.");
+            if (Sha256(File.ReadAllBytes(job.Backup)) != job.Header["source-sha256"])
+                throw new Failure("Kopia " + job.Backup + " nie jest oryginałem, pod który zrobiono łatkę.");
+        }
+        foreach (Job job in jobs)
+        {
+            File.Copy(job.Backup, job.Target, true);
+            File.Delete(job.Backup);
+        }
         Console.WriteLine("Przywrócono oryginał.");
         return 0;
     }
 
-    static string FindPatch(string directory)
+    static string[] FindPatches(string directory)
     {
         string[] found = Directory.GetFiles(directory, "*.patch");
-        if (found.Length == 1)
-            return found[0];
         if (found.Length == 0)
             throw new Failure("Nie ma pliku .patch obok programu. Wypakuj całą paczkę razem.");
-        throw new Failure("Obok programu jest kilka plików .patch — zostaw jeden albo podaj go jako parametr.");
+        Array.Sort(found, StringComparer.OrdinalIgnoreCase);
+        return found;
     }
 
     static string AskForFolder(string relative)

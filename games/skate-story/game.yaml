@@ -17,6 +17,6 @@ quote:
 download:
   kind: patch
   file: Skate-Story-PL-0.2-latka.zip
-  bytes: 84839
+  bytes: 85637
 keyart_shot: 1
 test_notes: Vertical potwierdzony przez użytkownika; pełna tabela zweryfikowana strukturalnie, pełna kampania czeka na test.

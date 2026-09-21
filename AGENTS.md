@@ -83,7 +83,7 @@ Nagłówek łatki jest tekstowy i niesie sumy kontrolne obu stron, więc nakład
 pracy na innej wersji gry albo na pliku już spolszczonym. Błędny plik nigdy nie powstaje.
 Skala: Skate Story 275 MB → 78 KB, Boomerang X 1,8 MB → 14 KB.
 
-Format łatki jest przenośny (operacje kopiuj/wstaw spakowane DEFLATE), więc gracz nie
+Format łatki jest przenośny (operacje kopiuj/wstaw spakowane DEFLATE, po jednej łatce na plik), więc gracz nie
 potrzebuje Pythona: paczka niesie `NieGesiPatch.exe` (`tools/applier/`, ~11 KB, .NET
 Framework z Windowsa). Format ma dwie implementacje — `patch.py` i aplikator; zmieniasz
 jedną, zmieniasz obie. `release` sam buduje aplikator i wkłada go do paczki.

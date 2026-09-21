@@ -93,12 +93,20 @@ do istniejących literałów, dopełniane spacjami.
 
 Paczka z całym plikiem ważyłaby 580 KB, ale byłaby w całości cudzym kodem z naszymi
 napisami w środku — czyli dokładnie tym, czego zabrania zasada z `AGENTS.md`.
-Dlatego wysyłamy **łatkę różnicową: 18,8 KB, jeden procent pliku**.
+Dlatego wysyłamy **łatki różnicowe: 14 KB na kod i 753 B na czcionki**.
 
 ```powershell
 .venv\Scripts\python.exe games\boomerang-x\tools\build.py --source backups\boomerang-x\BOOMERANG X_Data\Managed\Assembly-CSharp.dll
-.venv\Scripts\python.exe tools\patch.py release --original "backups\boomerang-x\BOOMERANG X_Data\Managed\Assembly-CSharp.dll" --built "games\boomerang-x\dist\BOOMERANG X_Data\Managed\Assembly-CSharp.dll" --readme games\boomerang-x\docs\INSTALL-patch.txt --out-dir games\boomerang-x\dist --game-name boomerang-x --relative "BOOMERANG X_Data/Managed/Assembly-CSharp.dll" --package-name Boomerang-X --version 1.0
+.venv\Scripts\python.exe games\boomerang-x\tools\fonts.py --source backups\boomerang-x
+.venv\Scripts\python.exe tools\patch.py release --original "backups\boomerang-x\BOOMERANG X_Data\Managed\Assembly-CSharp.dll" --built "games\boomerang-x\dist\BOOMERANG X_Data\Managed\Assembly-CSharp.dll" --relative "BOOMERANG X_Data/Managed/Assembly-CSharp.dll" --original "backups\boomerang-x\BOOMERANG X_Data\resources.assets" --built "games\boomerang-x\dist\BOOMERANG X_Data\resources.assets" --relative "BOOMERANG X_Data/resources.assets" --readme games\boomerang-x\docs\INSTALL-patch.txt --out-dir games\boomerang-x\dist --game-name boomerang-x --package-name Boomerang-X --version 1.0
 ```
 
 `build.py` nie składa już archiwum — od paczki jest `tools/patch.py release`,
 ten sam dla wszystkich gier dostarczanych łatką.
+
+**Paczka ma dwie łatki i obie są konieczne.** Kod z `build.py` przestawia polski
+na krój rosyjski, ale przyciski kategorii w opcjach zostają na `Dead Stock SDF`
+i `Abys-Regular SDF`, które mają z polskich liter tylko `ł ó`. Bez fallbacku
+z `fonts.py` (w `resources.assets`) są tam kwadraty. Wyszło 21.09, gdy pierwsze
+wydanie z samym DLL-em trafiło na czystą grę: wcześniejsze testy szły
+z `resources.assets` już przerobionym przez `fonts.py` i to maskowało brak.

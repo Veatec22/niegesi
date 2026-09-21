@@ -25,8 +25,9 @@ to zmiana w obu.
     python tools/patch.py release --original <plik> --built <plik> --readme <txt> ...
     python tools/patch.py apply   --game <katalog gry> --patch <latka>
 
-`release` to jedno polecenie dla całej gry: buduje łatkę, sprawdza ją przez
-ponowne nałożenie i składa paczkę z łatką, aplikatorem i instrukcją.
+`release` to jedno polecenie dla całej gry: buduje łatki (po jednej na plik,
+parametry pliku można powtórzyć), sprawdza je przez ponowne nałożenie i składa
+paczkę z łatkami, aplikatorem i instrukcją.
 """
 
 from __future__ import annotations
@@ -92,9 +93,16 @@ def common_length(a: memoryview, a_at: int, b: memoryview, b_at: int, limit: int
 def diff(source: bytes, target: bytes) -> bytes:
     """Lista operacji odtwarzających `target` z `source`, jeszcze nieskompresowana."""
     src, dst = memoryview(source), memoryview(target)
+    # Indeks bloków budujemy dopiero przy pierwszej potrzebie: plik, który tylko
+    # się przesunął, przechodzi w całości przez zgadywanie i indeksu nie potrzebuje.
     index: dict[int, int] = {}
-    for at in range(len(source) - BLOCK, -1, -BLOCK):
-        index[hash(src[at:at + BLOCK].tobytes())] = at
+    indexed = False
+
+    def build_index() -> None:
+        nonlocal indexed
+        for position in range(len(source) - BLOCK, -1, -BLOCK):
+            index[hash(src[position:position + BLOCK].tobytes())] = position
+        indexed = True
 
     ops = bytearray()
     cursor = 0          # koniec ostatniego kopiowania w oryginale
@@ -129,6 +137,8 @@ def diff(source: bytes, target: bytes) -> bytes:
 
         found = None
         if at + BLOCK <= end:
+            if not indexed:
+                build_index()
             candidate = index.get(hash(dst[at:at + BLOCK].tobytes()))
             if candidate is not None and src[candidate:candidate + BLOCK] == dst[at:at + BLOCK]:
                 found = candidate
@@ -290,26 +300,34 @@ def applier() -> Path:
     return exe
 
 
-def release(original: Path, built: Path, readme: Path, out_dir: Path,
-            game: str, relative: str, name: str, version: str) -> dict:
-    """Łatka plus paczka gotowa dla gracza — jedno polecenie na grę."""
-    patch = out_dir / f'{name}-PL-{version}.patch'
-    result = build(original, built, patch, game, relative)
+def release(files: list[tuple[Path, Path, str]], readme: Path, out_dir: Path,
+            game: str, name: str, version: str) -> dict:
+    """Łatki plus paczka gotowa dla gracza — jedno polecenie na grę.
+
+    `files` to trójki (oryginał, wynik builda, ścieżka w katalogu gry). Każdy plik
+    dostaje własną łatkę; aplikator nakłada wszystkie łatki leżące obok niego.
+    """
+    patches, results = [], []
+    for original, built, relative in files:
+        suffix = '' if len(files) == 1 else '-' + Path(relative).stem
+        patch = out_dir / f'{name}-PL-{version}{suffix}.patch'
+        results.append(build(original, built, patch, game, relative))
+        patches.append(patch)
     exe = applier()
 
     package = out_dir / f'{name}-PL-{version}-latka.zip'
     with zipfile.ZipFile(package, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
-        archive.write(patch, patch.name)
+        for patch in patches:
+            archive.write(patch, patch.name)
         archive.write(exe, exe.name)
         archive.write(readme, 'READ-ME.txt')
 
     with zipfile.ZipFile(package) as archive:
         assert archive.testzip() is None
-        assert archive.read(patch.name) == patch.read_bytes(), 'łatka w archiwum się różni'
+        for patch in patches:
+            assert archive.read(patch.name) == patch.read_bytes(), 'łatka w archiwum się różni'
 
-    result['package'] = str(package)
-    result['package_bytes'] = package.stat().st_size
-    return result
+    return {'patches': results, 'package': str(package), 'package_bytes': package.stat().st_size}
 
 
 def main() -> int:
@@ -324,12 +342,14 @@ def main() -> int:
     make.add_argument('--relative', required=True, help='ścieżka pliku wewnątrz katalogu gry')
 
     ship = commands.add_parser('release', help='zbuduj łatkę i złóż paczkę dla gracza')
-    ship.add_argument('--original', type=Path, required=True)
-    ship.add_argument('--built', type=Path, required=True)
+    ship.add_argument('--original', type=Path, action='append', required=True,
+                      help='można powtórzyć; n-ty --original, --built i --relative tworzą parę')
+    ship.add_argument('--built', type=Path, action='append', required=True)
     ship.add_argument('--readme', type=Path, required=True)
     ship.add_argument('--out-dir', type=Path, required=True)
     ship.add_argument('--game-name', required=True, help='slug gry, np. skate-story')
-    ship.add_argument('--relative', required=True, help='ścieżka pliku wewnątrz katalogu gry')
+    ship.add_argument('--relative', action='append', required=True,
+                      help='ścieżka pliku wewnątrz katalogu gry')
     ship.add_argument('--package-name', required=True, help='nazwa paczki, np. Skate-Story')
     ship.add_argument('--version', required=True)
 
@@ -343,8 +363,10 @@ def main() -> int:
     if args.command == 'build':
         result = build(args.original, args.built, args.out, args.game_name, args.relative)
     elif args.command == 'release':
-        result = release(args.original, args.built, args.readme, args.out_dir,
-                         args.game_name, args.relative, args.package_name, args.version)
+        if not len(args.original) == len(args.built) == len(args.relative):
+            parser.error('--original, --built i --relative muszą wystąpić tyle samo razy')
+        result = release(list(zip(args.original, args.built, args.relative)), args.readme,
+                         args.out_dir, args.game_name, args.package_name, args.version)
     else:
         result = apply(args.game, args.patch, args.backup)
     print(json.dumps(result, ensure_ascii=False, indent=2))

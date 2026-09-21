@@ -7,9 +7,10 @@ klucz, wiec 359 wierszy to caly jej tekst.
 DLACZEGO LATKA, A NIE GOTOWY PLIK
 Spolszczenie mieszka w pliku z kodem gry - w polu, ktore tabela tekstow juz ma,
 a ktorego gra normalnie nie czyta. Caly ten plik to 1,7 MB cudzego kodu, w ktorym
-nasze sa same napisy, wiec go nie rozpowszechniamy. Latka niesie sama roznice:
-14 KB. Reszte sklada sie z pliku, ktory juz masz na dysku. Wynik jest dokladnie
-taki sam, co do bajta.
+nasze sa same napisy, wiec go nie rozpowszechniamy. Druga latka dotyka czcionek
+w resources.assets (836 MB). Obie niosa sama roznice: 14 KB i niecaly 1 KB.
+Reszte sklada sie z plikow, ktore juz masz na dysku. Wynik jest dokladnie taki
+sam, co do bajta.
 
 CO BEDZIE POTRZEBNE
 Nic. Latke naklada NieGesiPatch.exe z tej paczki: jeden maly program, bez
@@ -20,10 +21,11 @@ INSTALACJA (przy zamknietej grze)
 1. Wypakuj cala paczke do katalogu gry - tam, gdzie lezy plik .exe gry.
 2. Uruchom NieGesiPatch.exe dwuklikiem.
 
-   Program sprawdza sume kontrolna pliku BOOMERANG X_Data\Managed\Assembly-CSharp.dll
-   i odmawia pracy, jesli gra jest w innej wersji albo spolszczenie jest juz
-   wgrane. Przed podmiana odklada oryginal obok, z dopiskiem
-   ".przed-spolszczeniem". Bledny plik nigdy nie powstaje.
+   Program naklada obie latki: na BOOMERANG X_Data\Managed\Assembly-CSharp.dll
+   i na BOOMERANG X_Dataesources.assets. Najpierw sprawdza sumy kontrolne
+   obu plikow i odmawia pracy, jesli gra jest w innej wersji. Przed podmiana
+   odklada oryginaly obok, z dopiskiem ".przed-spolszczeniem" - kopia
+   resources.assets zajmuje okolo 840 MB. Bledny plik nigdy nie powstaje.
 
    Jesli wypakujesz paczke gdzie indziej, program zapyta o katalog gry.
    Windows moze ostrzec przed nieznanym programem ("Wiecej informacji" ->
@@ -32,7 +34,7 @@ INSTALACJA (przy zamknietej grze)
 
 PRZYWRACANIE
 Uruchom NieGesiPatch.exe jeszcze raz. Gdy zobaczy wgrane spolszczenie, zapyta,
-czy przywrocic oryginal, i wgra odlozona kopie Assembly-CSharp.dll.
+czy przywrocic oryginal, i wgra odlozone kopie obu plikow.
 Mozna tez zweryfikowac pliki gry w GOG Galaxy albo w Steamie.
 
 JAK TO DZIALA
@@ -40,10 +42,14 @@ Gra ma dziesiec jezykow i nie ma miejsca na jedenasty - ksztalt tabeli tekstow
 jest ustalony w kodzie. Polski wprowadza sie wiec do pola, ktore tabela juz ma
 i ktorego nikt nie czyta: notatki tworcow przy kazdym wierszu. Trzy drobne
 poprawki w kodzie kaza grze po nie siegac, a jedna z nich podstawia kroj rosyjski,
-jako jedyny z polskimi znakami. Plik nie zmienia przy tym rozmiaru ani o bajt.
+jako jedyny z polskimi znakami. Plik z kodem nie zmienia przy tym rozmiaru ani o bajt.
 
 CZCIONKI
-Polski korzysta z kroju rosyjskiego, bo kroje wypalone w grze nie maja ogonkow.
+Kroje wypalone w grze prawie nie maja ogonkow. Polski korzysta z kroju
+rosyjskiego, a dwa kroje przyciskow (Abys-Regular i Dead Stock) dostaja
+w resources.assets zapasowy kroj "beer money", jedyny w grze z kompletem
+polskich liter. Zapasowy kroj dziala tylko dla brakujacych znakow, wiec
+w innych jezykach nic sie nie zmienia.
 
 ZGODNOSC
 Zbudowane na wydaniu GOG, Unity 2020.1.17f1. Latka jest przypieta do tej wersji
