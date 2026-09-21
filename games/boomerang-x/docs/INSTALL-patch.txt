@@ -1,4 +1,4 @@
-BOOMERANG X PL 1.0 - PELNE TLUMACZENIE (latka roznicowa)
+BOOMERANG X PL 1.1 - PELNE TLUMACZENIE (latka roznicowa)
 
 359 wpisow tabeli tekstow: menu, ustawienia, sterowanie, samouczki, slowniczek
 mocy, nazwy etapow i wszystkie dialogi Tepana. Tabela gry ma jeden powtorzony
@@ -22,10 +22,14 @@ INSTALACJA (przy zamknietej grze)
 2. Uruchom NieGesiPatch.exe dwuklikiem.
 
    Program naklada obie latki: na BOOMERANG X_Data\Managed\Assembly-CSharp.dll
-   i na BOOMERANG X_Dataesources.assets. Najpierw sprawdza sumy kontrolne
+   i na BOOMERANG X_Data
+esources.assets. Najpierw sprawdza sumy kontrolne
    obu plikow i odmawia pracy, jesli gra jest w innej wersji. Przed podmiana
    odklada oryginaly obok, z dopiskiem ".przed-spolszczeniem" - kopia
    resources.assets zajmuje okolo 840 MB. Bledny plik nigdy nie powstaje.
+
+   Jesli masz wgrana starsza wersje spolszczenia, program sam ja zaktualizuje
+   z odlozonej kopii oryginalu.
 
    Jesli wypakujesz paczke gdzie indziej, program zapyta o katalog gry.
    Windows moze ostrzec przed nieznanym programem ("Wiecej informacji" ->
@@ -41,15 +45,14 @@ JAK TO DZIALA
 Gra ma dziesiec jezykow i nie ma miejsca na jedenasty - ksztalt tabeli tekstow
 jest ustalony w kodzie. Polski wprowadza sie wiec do pola, ktore tabela juz ma
 i ktorego nikt nie czyta: notatki tworcow przy kazdym wierszu. Trzy drobne
-poprawki w kodzie kaza grze po nie siegac, a jedna z nich podstawia kroj rosyjski,
-jako jedyny z polskimi znakami. Plik z kodem nie zmienia przy tym rozmiaru ani o bajt.
+poprawki w kodzie kaza grze po nie siegac, a jedna z nich kaze uzyc krojow
+angielskich. Plik z kodem nie zmienia przy tym rozmiaru ani o bajt.
 
 CZCIONKI
-Kroje wypalone w grze prawie nie maja ogonkow. Polski korzysta z kroju
-rosyjskiego, a dwa kroje przyciskow (Abys-Regular i Dead Stock) dostaja
-w resources.assets zapasowy kroj "beer money", jedyny w grze z kompletem
-polskich liter. Zapasowy kroj dziala tylko dla brakujacych znakow, wiec
-w innych jezykach nic sie nie zmienia.
+Polski korzysta z tych samych krojow co angielski. Maja one tylko "o" i "l"
+z ogonkami, wiec kazdy dostaje w resources.assets zapasowy kroj "beer money",
+jedyny w grze z kompletem polskich liter. Zapasowy kroj dziala tylko dla
+brakujacych znakow, wiec w innych jezykach nic sie nie zmienia.
 
 ZGODNOSC
 Zbudowane na wydaniu GOG, Unity 2020.1.17f1. Latka jest przypieta do tej wersji

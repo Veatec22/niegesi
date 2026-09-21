@@ -98,15 +98,45 @@ Dlatego wysyłamy **łatki różnicowe: 14 KB na kod i 753 B na czcionki**.
 ```powershell
 .venv\Scripts\python.exe games\boomerang-x\tools\build.py --source backups\boomerang-x\BOOMERANG X_Data\Managed\Assembly-CSharp.dll
 .venv\Scripts\python.exe games\boomerang-x\tools\fonts.py --source backups\boomerang-x
-.venv\Scripts\python.exe tools\patch.py release --original "backups\boomerang-x\BOOMERANG X_Data\Managed\Assembly-CSharp.dll" --built "games\boomerang-x\dist\BOOMERANG X_Data\Managed\Assembly-CSharp.dll" --relative "BOOMERANG X_Data/Managed/Assembly-CSharp.dll" --original "backups\boomerang-x\BOOMERANG X_Data\resources.assets" --built "games\boomerang-x\dist\BOOMERANG X_Data\resources.assets" --relative "BOOMERANG X_Data/resources.assets" --readme games\boomerang-x\docs\INSTALL-patch.txt --out-dir games\boomerang-x\dist --game-name boomerang-x --package-name Boomerang-X --version 1.0
+.venv\Scripts\python.exe tools\patch.py release --original "backups\boomerang-x\BOOMERANG X_Data\Managed\Assembly-CSharp.dll" --built "games\boomerang-x\dist\BOOMERANG X_Data\Managed\Assembly-CSharp.dll" --relative "BOOMERANG X_Data/Managed/Assembly-CSharp.dll" --original "backups\boomerang-x\BOOMERANG X_Data\resources.assets" --built "games\boomerang-x\dist\BOOMERANG X_Data\resources.assets" --relative "BOOMERANG X_Data/resources.assets" --readme games\boomerang-x\docs\INSTALL-patch.txt --out-dir games\boomerang-x\dist --game-name boomerang-x --package-name Boomerang-X --version 1.1
 ```
 
 `build.py` nie składa już archiwum — od paczki jest `tools/patch.py release`,
 ten sam dla wszystkich gier dostarczanych łatką.
 
-**Paczka ma dwie łatki i obie są konieczne.** Kod z `build.py` przestawia polski
-na krój rosyjski, ale przyciski kategorii w opcjach zostają na `Dead Stock SDF`
-i `Abys-Regular SDF`, które mają z polskich liter tylko `ł ó`. Bez fallbacku
-z `fonts.py` (w `resources.assets`) są tam kwadraty. Wyszło 21.09, gdy pierwsze
-wydanie z samym DLL-em trafiło na czystą grę: wcześniejsze testy szły
-z `resources.assets` już przerobionym przez `fonts.py` i to maskowało brak.
+**Paczka ma dwie łatki i obie są konieczne.** Fonty gry prawie nie mają polskich
+liter, więc bez fallbacku z `fonts.py` (w `resources.assets`) są kwadraty. Wyszło
+21.09, gdy pierwsze wydanie z samym DLL-em trafiło na czystą grę: wcześniejsze testy
+szły z `resources.assets` już przerobionym przez `fonts.py` i to maskowało brak.
+
+## Wersja 1.1 — zestaw fontów łaciński zamiast rosyjskiego (21 września 2026)
+
+W 1.0 polskie litery w menu były o połowę za małe („WYBóR", „KOńCA"). Przyczyna
+leży w foncie, nie w zamianie na wielkie litery (TMP używa `char.ToUpper`, które
+polskie litery obsługuje). Przycisk zestawu rosyjskiego, `Abys-Regular SDF`, ma
+**same wersaliki**: `a` i `A` to ten sam kształt. Polskich liter nie ma wcale,
+więc wszystkie brał z fallbacku `beer money` jako prawdziwe minuskuły. Wysokość
+względem stopnia pisma:
+
+| Font | A | a / o | polskie |
+| --- | --- | --- | --- |
+| Abys-Regular (przyciski RU) | 0,76 | 0,76 (wersaliki) | brak |
+| Dead Stock (przyciski EN) | 0,86 | 0,55 / 0,46 | Ó 0,96, ó 0,65, Ł, ł własne |
+| Sure Shot (tekst EN) | 0,71 | 0,39 / 0,38 | Ó, ó, Ł, ł własne |
+| beer money (fallback) | 0,57 | 0,35 / 0,35 | wszystkie |
+
+Od 1.1 `get_font` daje polskiemu **zestaw łaciński**, ten sam co angielski.
+Menu wygląda jak angielskie (Dead Stock: wersaliki plus kapitaliki), `ó ł` są
+z samego fontu, a reszta z fallbacku ma rozmiar zbliżony do kapitalików. Fallbacki
+z `fonts.py`: Dead Stock → beer money SDF, obie warstwy Sure Shot - title →
+odpowiednie warstwy beer money - title. `Sure Shot SDF` ma `beer money SDF`
+w fallbackach od twórców.
+
+Nie da się zwiększyć samych polskich znaków w `beer money SDF` (`TMP_Character.m_Scale`),
+bo ten sam font jest fallbackiem zwykłego tekstu, gdzie rozmiar już pasuje. Gdyby
+ą ę ś przy przyciskach dalej wyglądały na małe, droga to osobna kopia beer money
+tylko dla Dead Stock, ze skalą ok. 1,5.
+
+Aplikator od 1.1 aktualizuje starszą wersję spolszczenia: jeśli plik gry nie jest
+oryginałem, ale leży obok odłożona kopia oryginału o właściwej sumie, łatka idzie
+na kopię. Sprawdzone na grze z wgraną 1.0.

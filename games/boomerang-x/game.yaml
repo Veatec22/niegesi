@@ -1,6 +1,6 @@
 slug: boomerang-x
 title: Boomerang X
-version: "1.0"
+version: "1.1"
 entries: { done: 359, total: 359 }
 tested: strukturalnie
 engine: Unity 2020.1.17f1
@@ -16,7 +16,7 @@ quote:
   source:
 download:
   kind: patch
-  file: Boomerang-X-PL-1.0-latka.zip
-  bytes: 22988
+  file: Boomerang-X-PL-1.1-latka.zip
+  bytes: 23129
 keyart_shot: 1
 test_notes: Próbka potwierdzona w grze. Pełne tłumaczenie zbudowane i odczytane z powrotem z pliku; test w grze czeka. Tabela gry ma jeden powtórzony klucz (difficulty_select_prompt), więc 359 z 360 wierszy.

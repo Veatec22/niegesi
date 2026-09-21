@@ -10,8 +10,8 @@ then make the game reach for it:
      "LOCALIZATION ERROR". Overwritten with `return row.description`, so any
      language past the ninth is Polish. Exactly sixteen bytes, padded with nops.
   2. font_manager.get_font - its default arm returns null. One byte of the
-     branch offset points it at russian_font_set instead, the only set whose
-     glyphs cover ąćęłńóśźż. Russian keeps its own arm of the switch.
+     branch offset points it at the Latin set that English uses. Its fonts carry
+     ł ó themselves and fonts.py gives them fallbacks for the rest.
   3. options_screen.on_reading_save_complete - two literal tens bound the loops
      that fill the language dropdown. Eleven now, so index 10 gets an entry.
 
@@ -35,9 +35,9 @@ HERE = Path(__file__).resolve().parent
 GAME = HERE.parent
 ORIGINAL = '1c0ac29aad888faa7439ec57ea7da4976a74c6936aefd7b388a3e9fe904e0b40'
 RELATIVE = Path('BOOMERANG X_Data') / 'Managed' / 'Assembly-CSharp.dll'
-VERSION = '1.0'
+VERSION = '1.1'
 
-RUSSIAN = 5                       # language.russian, read from the enum's constants
+ENGLISH = 0                       # language.english; French, German and Spanish share its arm
 DESCRIPTION = 0x04001F62          # Data::description
 
 NOP, LDARG_1, LDFLD, RET, BR_S, SWITCH, LDC_I4_S, BLT_S = \
@@ -70,14 +70,22 @@ def patch_get_translation(image, out):
 
 
 def patch_get_font(image, out):
-    """The default arm falls into the Russian set, the only one with Polish glyphs."""
+    """The default arm falls into the Latin set - the one English, French, German and Spanish use.
+
+    The Russian set was the first choice, for its text font. But its button font,
+    `Abys-Regular SDF`, is capitals only and has no Polish letter at all, so every
+    Polish letter came from the lowercase of the fallback, at half the height of
+    the capitals around it. The Latin fonts carry `Ó ó Ł ł` themselves and take
+    the rest from `beer money` fallbacks of nearly matching size (see fonts.py).
+    """
     start, size = image.method('font_manager', 'get_font')
     body = image.data[start:start + size]
     branch, default, targets = switch_arms(body)
     assert body[default] == 0x14, 'default arm is not `ldnull`'
-    russian = targets[RUSSIAN]
-    assert russian != default and body[russian] == 0x02, 'Russian arm is not `ldarg.0`'
-    offset = russian - (branch + 2)
+    latin = targets[ENGLISH]
+    assert latin != default and body[latin] == 0x02, 'English arm is not `ldarg.0`'
+    assert targets[:4] == [latin] * 4, 'English, French, German and Spanish no longer share an arm'
+    offset = latin - (branch + 2)
     assert -128 <= offset <= 127
     out[start + branch + 1] = offset & 0xFF
     return {'method': 'font_manager.get_font', 'at': start + branch + 1,

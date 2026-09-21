@@ -1,21 +1,33 @@
-"""Give two fonts a fallback so Polish letters have somewhere to come from.
+"""Give the Latin font set fallbacks so Polish letters have somewhere to come from.
 
 Every font in the game is a static atlas, so a glyph it does not carry renders
-as a box. Only the `beer money SDF` family covers `ąćęłńóśźżĄĆĘŁŃÓŚŹŻ`, and the
-button slot of the Russian set - the set Polish borrows - is `Abys-Regular SDF`,
-which carries none of them. The observed build also leaves the category buttons
-on the Latin set's `Dead Stock SDF`, which carries only `ł ó Ł Ó`, so both get
-the same treatment.
+as a box. Only the `beer money` family covers `ąćęłńóśźżĄĆĘŁŃÓŚŹŻ`.
+
+Polish uses the Latin set, the one English uses (build.py points the font
+switch there). Its fonts carry `ł ó Ł Ó` and nothing else Polish, so each gets
+the `beer money` font that matches its role:
+
+  Dead Stock SDF                    buttons, trick notifications -> beer money SDF
+  Sure Shot SDF - title background  arena title, back layer     -> beer money SDF - title background
+  Sure Shot SDF - title foreground  arena title, front layer    -> beer money SDF - title foreground
+
+`Sure Shot SDF`, the text font, already falls back to `beer money SDF` in the
+game as shipped. The sizes match closely: a lowercase `o` is 0.38 of the point
+size in Sure Shot and 0.35 in beer money.
+
+The Russian set was tried first and dropped: its button font `Abys-Regular SDF`
+is capitals only and has no Polish letter at all, so every Polish letter came
+from the fallback's lowercase at half the height of the capitals around it.
 
 A fallback is only consulted for characters the font itself does not have, and
-neither of these two has a fallback list today. So nothing any other language
+none of these three has a fallback list today. So nothing any other language
 renders can change: the characters this adds are the ones that are boxes now.
 It is also the game's own idiom - `Sure Shot SDF` already falls back to
 JejuHallasan, beer money, ardclaowaisongg30 and 851CHIKARA so that a Latin menu
 can show CJK.
 
-This rewrites resources.assets, which is 836 MB, so it is slow and it is a
-separate step from `build.py`. Run it once; the text lives in the DLL.
+This rewrites resources.assets, which is 836 MB, so it is a separate step from
+`build.py`. The text lives in the DLL.
 """
 import argparse
 import hashlib
@@ -32,8 +44,11 @@ DATA = Path('BOOMERANG X_Data')
 RELATIVE = DATA / 'resources.assets'
 ORIGINAL = 'f663c3c3ba23f7534572f35cf5e8e38fa30846a5d7203aba04b8eb69418dd247'
 UNITY = '2020.1.17f1'
-PROVIDER = 'beer money SDF'
-NEEDY = ('Abys-Regular SDF', 'Dead Stock SDF')
+FALLBACKS = {
+    'Dead Stock SDF': 'beer money SDF',
+    'Sure Shot SDF - title background': 'beer money SDF - title background',
+    'Sure Shot SDF - title foreground': 'beer money SDF - title foreground',
+}
 POLISH = 'ąćęłńóśźżĄĆĘŁŃÓŚŹŻ'
 
 
@@ -81,23 +96,23 @@ def main():
 
     environment = UnityPy.load(str(source))
     table = fonts(environment.objects, nodes)
-    assert PROVIDER in table, f'{PROVIDER} is not in {source}'
-    provider, provider_tree = table[PROVIDER]
-    missing = [c for c in POLISH
-               if ord(c) not in {e['m_Unicode'] for e in provider_tree['m_CharacterTable']}]
-    assert not missing, f'{PROVIDER} cannot supply {"".join(missing)}'
-
     changed = []
-    for name in NEEDY:
+    for name, provider_name in FALLBACKS.items():
         assert name in table, f'{name} is not in {source}'
+        assert provider_name in table, f'{provider_name} is not in {source}'
+        provider, provider_tree = table[provider_name]
+        missing = [c for c in POLISH
+                   if ord(c) not in {e['m_Unicode'] for e in provider_tree['m_CharacterTable']}]
+        assert not missing, f'{provider_name} cannot supply {"".join(missing)}'
+
         obj, tree = table[name]
         entry = {'m_FileID': 0, 'm_PathID': provider.path_id}
         had = list(tree['m_FallbackFontAssetTable'])
-        assert entry not in had, f'{name} already falls back to {PROVIDER}'
+        assert entry not in had, f'{name} already falls back to {provider_name}'
         tree['m_FallbackFontAssetTable'] = had + [entry]
         obj.save_typetree(tree, nodes)
         assets = obj.assets_file
-        changed.append({'font': name, 'path_id': obj.path_id,
+        changed.append({'font': name, 'path_id': obj.path_id, 'fallback': provider_name,
                         'fallbacks_before': len(had), 'fallbacks_after': len(had) + 1})
 
     target = args.out / RELATIVE
@@ -119,7 +134,6 @@ def main():
     print(json.dumps({'built': str(target),
                       'bytes': os.path.getsize(target),
                       'source_bytes': os.path.getsize(source),
-                      'provider': {'font': PROVIDER, 'path_id': provider.path_id},
                       'changed': changed}, indent=2, ensure_ascii=False))
 
 

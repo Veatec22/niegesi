@@ -74,6 +74,7 @@ static class NieGesiPatch
         public string Target;
         public string Backup { get { return Target + BackupSuffix; } }
         public bool Installed;
+        public string Source;   // skąd czytamy oryginał: sam plik gry albo odłożona kopia
     }
 
     static int Run(List<string> args)
@@ -115,7 +116,16 @@ static class NieGesiPatch
         {
             string digest = Sha256(File.ReadAllBytes(job.Target));
             job.Installed = digest == job.Header["target-sha256"];
-            if (!job.Installed && digest != job.Header["source-sha256"])
+            job.Source = job.Target;
+            // Starsza wersja spolszczenia: plik gry jest już zmieniony, ale obok leży
+            // odłożony oryginał. Nakładamy nową łatkę na niego — to jest aktualizacja.
+            if (!job.Installed && digest != job.Header["source-sha256"] && File.Exists(job.Backup)
+                && Sha256(File.ReadAllBytes(job.Backup)) == job.Header["source-sha256"])
+            {
+                job.Source = job.Backup;
+                Console.WriteLine("  " + job.Header["file"] + ": inna wersja spolszczenia, aktualizuję z kopii oryginału");
+            }
+            else if (!job.Installed && digest != job.Header["source-sha256"])
                 throw new Failure("Plik " + job.Header["file"] + " nie jest tym, pod który zrobiono łatkę.\n" +
                                   "  oczekiwano " + job.Header["source-sha256"] + "\n" +
                                   "  jest       " + digest + "\n" +
@@ -137,7 +147,7 @@ static class NieGesiPatch
             if (job.Installed)
                 continue;
             Console.WriteLine("Nakładam łatkę na " + job.Header["file"] + "…");
-            byte[] result = Apply(File.ReadAllBytes(job.Target), Inflate(job.Payload), long.Parse(job.Header["target-size"]));
+            byte[] result = Apply(File.ReadAllBytes(job.Source), Inflate(job.Payload), long.Parse(job.Header["target-size"]));
             if (Sha256(result) != job.Header["target-sha256"])
                 throw new Failure("Odtworzony plik " + job.Header["file"] + " ma inną sumę kontrolną niż powinien.");
 
