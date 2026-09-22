@@ -2,15 +2,19 @@
 import { render, type CollectionEntry } from 'astro:content';
 import { entriesLabel, type Game } from '../lib/games';
 import { downloadFor } from '../lib/download';
+import { gameTitle } from '../lib/seo';
 import Keyart from './Keyart.astro';
 import Icon from './Icon.astro';
 
 interface Props {
   game: Game;
   doc?: CollectionEntry<'gameDocs'>;
+  /** Panel otwarty już w HTML-u, na stronie /<slug>/ — tytuł gry jest wtedy nagłówkiem strony. */
+  active?: boolean;
 }
 
-const { game, doc } = Astro.props;
+const { game, doc, active = false } = Astro.props;
+const Title = active ? 'h1' : 'h2';
 const download = downloadFor(game);
 const stores = Object.entries(game.stores);
 
@@ -22,13 +26,13 @@ const rendered = doc ? await render(doc) : null;
 const Content = rendered?.Content;
 ---
 
-<div class="ng-panel-scroll" data-game={game.slug} hidden>
+<div class="ng-panel-scroll" data-game={game.slug} data-page-title={gameTitle(game.title)} hidden={!active}>
   <Keyart game={game} variant="panel" />
 
   <div class="ng-panel-body">
     <div>
       <div class="ng-panel-head" style={`--ng-title-len: ${game.title.length}; --ng-stores: ${stores.length}`}>
-        <h2 class="ng-display ng-panel-title">{game.title}</h2>
+        <Title class="ng-display ng-panel-title"><span class="ng-visually-hidden">Spolszczenie </span>{game.title}</Title>
         {
           stores.length > 0 && (
             <div class="ng-panel-stores">

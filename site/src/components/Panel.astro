@@ -3,23 +3,38 @@ import { getCollection } from 'astro:content';
 import PanelBody from './PanelBody.astro';
 import Icon from './Icon.astro';
 import type { Game } from '../lib/games';
+import { HOME_TITLE } from '../lib/seo';
 
 interface Props {
   games: Game[];
+  /** Slug gry na stronie /<slug>/: panel jest otwarty w HTML-u i ma tylko tę grę. */
+  active?: string;
 }
 
-const { games } = Astro.props;
+const { games, active } = Astro.props;
+// Na stronie gry inne gry w ukrytym panelu tylko rozmywałyby, o czym jest strona —
+// ich kafelki prowadzą wtedy zwyczajnie na ich własne strony.
+const bodies = active ? games.filter((game) => game.slug === active) : games;
 const docs = await getCollection('gameDocs');
 ---
 
-<div class="ng-scrim" data-scrim hidden></div>
+<div class="ng-scrim" data-scrim hidden={!active}></div>
 
-<aside class="ng-panel" data-panel aria-label="Szczegóły spolszczenia" hidden>
+<aside
+  class="ng-panel"
+  data-panel
+  data-active={active}
+  data-open={active ? 'true' : undefined}
+  data-home-title={HOME_TITLE}
+  aria-label="Szczegóły spolszczenia"
+  aria-modal={active ? 'true' : undefined}
+  hidden={!active}
+>
   <div class="ng-panel-handle" aria-hidden="true"></div>
   <button class="ng-panel-close" type="button" data-panel-close aria-label="Zamknij panel">
     <Icon name="x" />
   </button>
-  {games.map((game) => <PanelBody game={game} doc={docs.find((doc) => doc.id === game.id)} />)}
+  {bodies.map((game) => <PanelBody game={game} doc={docs.find((doc) => doc.id === game.id)} active={game.slug === active} />)}
 </aside>
 
 <script>
@@ -70,7 +85,8 @@ const docs = await getCollection('gameDocs');
       document.body.style.overflow = 'hidden';
       target.scrollTop = 0;
 
-      if (push) history.pushState({ slug }, '', withBase(`/?gra=${slug}`));
+      if (push) history.pushState({ slug }, '', withBase(`/${slug}/`));
+      document.title = target.dataset.pageTitle ?? document.title;
       pushed = push;
 
       current = slug;
@@ -96,8 +112,9 @@ const docs = await getCollection('gameDocs');
 
       if (!fromPopstate) {
         if (pushed) history.back();
-        else history.replaceState({}, '', withBase('/')); // wejście prosto z linku /?gra=…
+        else history.replaceState({}, '', withBase('/')); // wejście prosto na stronę gry
       }
+      document.title = panel!.dataset.homeTitle ?? document.title;
       pushed = false;
       returnTo?.focus();
     }
@@ -117,9 +134,12 @@ const docs = await getCollection('gameDocs');
       card.addEventListener('click', (event) => {
         // Modyfikatory zostawiamy przeglądarce: nowa karta, nowe okno, zapis.
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
-        event.preventDefault();
         const slug = card.dataset.card;
-        if (slug) open(slug, true);
+        // Panel tej gry jest na stronie — otwieramy go w miejscu. Jeśli nie (strona innej
+        // gry), link prowadzi zwyczajnie na stronę gry.
+        if (!slug || !bodies.some((body) => body.dataset.game === slug)) return;
+        event.preventDefault();
+        open(slug, true);
       });
     });
 
@@ -173,11 +193,19 @@ const docs = await getCollection('gameDocs');
       { passive: true },
     );
 
-    // Wejście z linku /?gra=slug otwiera panel od razu.
-    const requested = new URLSearchParams(window.location.search).get('gra');
-    if (requested) {
-      history.replaceState({ slug: requested }, '', withBase(`/?gra=${requested}`));
-      open(requested, false);
+    // Strona gry /<slug>/ przychodzi z otwartym panelem w HTML-u — skrypt tylko przejmuje stan.
+    const active = panel.dataset.active;
+    if (active) {
+      current = active;
+      history.replaceState({ slug: active }, '');
+      document.body.dataset.panelOpen = 'true';
+      document.body.style.overflow = 'hidden';
+      cards.forEach((card) => card.setAttribute('aria-current', String(card.dataset.card === active)));
+      warm(active);
     }
+
+    // Stare linki /?gra=slug prowadzą na stronę gry.
+    const requested = new URLSearchParams(window.location.search).get('gra');
+    if (requested) window.location.replace(withBase(`/${requested}/`));
   }
 </script>

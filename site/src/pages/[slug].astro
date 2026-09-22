@@ -1,0 +1,14 @@
+---
+import Home from '../components/Home.astro';
+import { getGames } from '../lib/games';
+
+/** Każda gra ma własny adres /<slug>/: ta sama strona co główna, z otwartym panelem gry. */
+export async function getStaticPaths() {
+  const games = await getGames();
+  return games.map((game) => ({ params: { slug: game.slug }, props: { game } }));
+}
+
+const { game } = Astro.props;
+---
+
+<Home active={game} />

@@ -56,8 +56,8 @@ export async function getGames(): Promise<Game[]> {
         ...entry.data,
         id: entry.id,
         ...catalog.get(entry.data.slug)!,
-        // Gra nie ma własnej strony — link otwiera panel i daje się udostępnić.
-        href: withBase(`/?gra=${entry.data.slug}`),
+        // Własna strona gry; na stronie z tym panelem kafelek otwiera go bez przeładowania.
+        href: withBase(`/${entry.data.slug}/`),
         tone: 'ink' as Tone,
       };
     })
