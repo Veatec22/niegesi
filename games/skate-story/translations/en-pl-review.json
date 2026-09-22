@@ -520,7 +520,7 @@
   {
     "key": "Item/deck-deadtypographer-desc",
     "english": "The Devil wrote, stole, and designed it all, before he was barely able to see.",
-    "polish": "Diabeł wszystko napisał, ukradł i zaprojektował, zanim ledwie zaczął widzieć.",
+    "polish": "Diabeł wszystko napisał, ukradł i zaprojektował, zanim niemal oślepł.",
     "context": "",
     "status": "translated"
   },
@@ -674,7 +674,7 @@
   {
     "key": "Item/deck-frankenstein-desc",
     "english": "The first letter of Frankenstein.",
-    "polish": "Pierwszy list Frankensteina.",
+    "polish": "Pierwszy list z „Frankensteina”.",
     "context": "",
     "status": "translated"
   },
@@ -4571,7 +4571,7 @@
   {
     "key": "__DARKPLACE/24waitforresurrect-1-seq-03",
     "english": "It was a fitting gift from the Devil.\nA method to die, to skate, perchance to repeat.",
-    "polish": "Prezent godny Diabła.\nSposób, by umrzeć, by jeździć — a może to powtórzyć.",
+    "polish": "Prezent godny Diabła.\nSposób, by umrzeć, jeździć — powtarzać może.",
     "context": "\"to die to sleep, perchance to dream\" - hamlet sollioquy",
     "status": "translated"
   },
@@ -4788,14 +4788,14 @@
   {
     "key": "ch1/01/0youareinhell-1-seq-06",
     "english": "This demon was hungry and tired.",
-    "polish": "Demon ten był głodny i zmęczony.",
+    "polish": "Ten demon był głodny i zmęczony.",
     "context": "",
     "status": "translated"
   },
   {
     "key": "ch1/01/0youareinhell-1-seq-07",
     "english": "This demon was going to eat the Moon.",
-    "polish": "Demon ten zamierzał zjeść Księżyc.",
+    "polish": "Ten demon zamierzał zjeść Księżyc.",
     "context": "",
     "status": "translated"
   },
@@ -5582,7 +5582,7 @@
   {
     "key": "ch1/09-lyceum/philoso9done-1-seq-01",
     "english": "Sip, sip, I sip the tea.\nOne may think with that piece.\nEnter the **Rhetorium** and put your soul on a lease.\nPass *gold*EVALUATION*gold*to start your Moon feast.",
-    "polish": "Łyk, łyk, herbatkę piję.\nZ Myślokształtem myśl ożyje.\nWejdź do **Retorium**, duszę dzierżaw śmiało.\nPrzejdź *gold*OCENĘ*gold*, by się Księżyc zajadało.",
+    "polish": "Łyk, łyk, herbatkę piję.\nZ Myślokształtem myśl ożyje.\nWejdź do **Retorium**, duszę dzierżaw śmiało.\nPrzejdź *gold*OCENĘ*gold*, a Księżyca zjesz niemało.",
     "context": "",
     "status": "review_requested",
     "notes": "Do korekty literackiej: rymowana wypowiedź Philoso, swobodny przekład rytmu i gry słownej Thinkpiece. Myślokształt jest nazwą przedmiotu."
@@ -8118,7 +8118,7 @@
   {
     "key": "ch3/05-languishinsq/13tail01pulltail-1-seq-02",
     "english": "I hope that cutie from the *bold*Flowershop*bold* doesn't see me like this.",
-    "polish": "Oby ten słodziak z *bold*kwiaciarni*bold* mnie tak nie zobaczył.",
+    "polish": "Oby ta ślicznotka z *bold*kwiaciarni*bold* mnie tak nie zobaczyła.",
     "context": "",
     "status": "translated"
   },
@@ -8202,7 +8202,7 @@
   {
     "key": "ch3/06-flowershop/10talkbea-1-seq-01",
     "english": "Welcome to my flowershop!\nWell, it would be one, if I had any flowers.\nA bald demon came here, grabbed my only *blue*shears*blue*, and *red*snipped*red* my last flower!\nAnd then they ran off with my *blu*shears*blu* into the *b*Meanings Factory*b*.\nSo now I have no flowers, and no *blu*shears*blu*.\nOh, it's horrible.\nAnd just my luck, the Moonflower festival is coming up...",
-    "polish": "Witaj w mojej kwiaciarni!\nTo znaczy, byłaby nią, gdybym miał kwiaty.\nPrzyszedł łysy demon, porwał moje jedyne *blue*nożyce*blue* i *red*ściął*red* ostatni kwiat!\nPotem uciekł z *blu*nożycami*blu* do *b*Fabryki Znaczeń*b*.\nTeraz nie mam ani kwiatów, ani *blu*nożyc*blu*.\nOch, to okropne.\nJak na złość zbliża się święto księżycowych kwiatów...",
+    "polish": "Witaj w mojej kwiaciarni!\nTo znaczy, byłaby nią, gdybym miała kwiaty.\nPrzyszedł łysy demon, porwał moje jedyne *blue*nożyce*blue* i *red*ściął*red* ostatni kwiat!\nPotem uciekł z *blu*nożycami*blu* do *b*Fabryki Znaczeń*b*.\nTeraz nie mam ani kwiatów, ani *blu*nożyc*blu*.\nOch, to okropne.\nJak na złość zbliża się święto księżycowych kwiatów...",
     "context": "",
     "status": "translated"
   },
@@ -8223,7 +8223,7 @@
   {
     "key": "ch3/06-flowershop/30aboutshears-1-seq-01",
     "english": "Oh, it looks like you've found the *blu*shears*blu*!\nYou can keep them.\nI've already sold part of my soul for a new pair.\nBut my new shears won't arrive tonight...\nSay, can you get me a *blu*Moonflower*blu*?\nYou can use those *blu*Shears*blu* to cut off a *blu*Moonflower*blu*.\nYou should be able to find some outside.",
-    "polish": "O, chyba masz te *blu*nożyce*blu*!\nMożesz je zatrzymać.\nJuż sprzedałem część duszy za nową parę.\nAle tej nocy jeszcze nie dotrą...\nSłuchaj, przyniesiesz mi *blu*Księżycowy Kwiat*blu*?\nTymi *blu*Nożycami*blu* możesz ściąć *blu*Księżycowy Kwiat*blu*.\nNa zewnątrz powinny jakieś rosnąć.",
+    "polish": "O, chyba masz te *blu*nożyce*blu*!\nMożesz je zatrzymać.\nJuż sprzedałam część duszy za nową parę.\nAle tej nocy jeszcze nie dotrą...\nSłuchaj, przyniesiesz mi *blu*Księżycowy Kwiat*blu*?\nTymi *blu*Nożycami*blu* możesz ściąć *blu*Księżycowy Kwiat*blu*.\nNa zewnątrz powinny jakieś rosnąć.",
     "context": "",
     "status": "translated"
   },
@@ -9588,7 +9588,7 @@
   {
     "key": "ch4/07-plazaofregrets/11npc1-1-seq-01",
     "english": "He was clear from the beginning that he wanted a soul.\nBut that perhaps he wanted two?\nI thought perhaps it would be just one, that it would be me.\nHe saw me, smiled, held my heart, said it was beautiful. Then he said it wasn't enough.\nHe went with the other soul.",
-    "polish": "Od początku mówił jasno, że chce duszy.\nAle może chciał dwóch?\nMyślałam, że wystarczy jedna, że będę nią ja.\nSpojrzał na mnie, uśmiechnął się, wziął moje serce i nazwał je pięknym. Potem powiedział, że to za mało.\nPoszedł z inną duszą.",
+    "polish": "Od początku mówił jasno, że chce duszy.\nAle może chciał dwóch?\nMyślałem, że wystarczy jedna, że będę nią ja.\nSpojrzał na mnie, uśmiechnął się, wziął moje serce i nazwał je pięknym. Potem powiedział, że to za mało.\nPoszedł z inną duszą.",
     "context": "",
     "status": "translated"
   },
@@ -10730,7 +10730,7 @@
   {
     "key": "ch5/06-jewelstore/21penguinmeet-1-seq-10",
     "english": "You wobbly bastard.",
-    "polish": "Ty chwiejący się draniu.",
+    "polish": "Ty chybotliwy draniu.",
     "context": "",
     "status": "translated"
   },
@@ -10975,7 +10975,7 @@
   {
     "key": "ch5/11-centipede-awake/01intro-1-seq-01",
     "english": "40,000 souls screamed into the air.",
-    "polish": "40 000 dusz wykrzyczało się w powietrze.",
+    "polish": "Powietrze rozdarł krzyk 40 000 dusz.",
     "context": "",
     "status": "translated"
   },
@@ -11101,7 +11101,7 @@
   {
     "key": "ch5/12-sleep-floorplan/01introinhale-1-seq-01",
     "english": "The Skater inhaled the Violet Moon.",
-    "polish": "Skejter wciągnął Fioletowy Księżyc z oddechem.",
+    "polish": "Skejter wciągnął Fioletowy Księżyc jednym wdechem.",
     "context": "",
     "status": "translated"
   },
@@ -12165,7 +12165,7 @@
   {
     "key": "ch7/01-banquet/24talkbeea-1-seq-01",
     "english": "Oh, oh, this is horrible for you.\nIs this your first time? I'm sorry, honey.\nIt happens to the worst of us.\nLast time, they stripped me of my flowers.\nI got used to it. Maybe you will too.\nI just take it now. Oh, how terrible... It's terrible.\nI'm sorry, dear.",
-    "polish": "Och, och, jakie to dla ciebie straszne.\nPierwszy raz? Przykro mi, kochanie.\nZdarza się najgorszym z nas.\nOstatnio zabrali mi kwiaty.\nPrzywykłem. Może ty też przywykniesz.\nTeraz po prostu to znoszę. Och, jakie straszne... Straszne.\nPrzykro mi, skarbie.",
+    "polish": "Och, och, jakie to dla ciebie straszne.\nPierwszy raz? Przykro mi, kochanie.\nZdarza się najgorszym z nas.\nOstatnio zabrali mi kwiaty.\nPrzywykłam. Może ty też przywykniesz.\nTeraz po prostu to znoszę. Och, jakie straszne... Straszne.\nPrzykro mi, skarbie.",
     "context": "",
     "status": "translated"
   },
@@ -13103,7 +13103,7 @@
   {
     "key": "ch8/01-seekfire/01intro-1-seq-07",
     "english": "If you so choose, you may attempt to eat the Moon first.",
-    "polish": "Jeśli zechcesz, możesz spróbować zjeść Księżyc pierwszy.",
+    "polish": "Jeśli zechcesz, możesz spróbować zjeść Księżyc przed nią.",
     "context": "",
     "status": "translated"
   },
@@ -13691,7 +13691,7 @@
   {
     "key": "ch8/12-boss-blackmoon/15fireprogress-1-seq-04",
     "english": "Soon it would reach 1400°C,\nthe melting point of glass.",
-    "polish": "Wkrótce osiągną 1400°C,\ntemperaturę topnienia szkła.",
+    "polish": "Wkrótce osiągną 1400 °C,\ntemperaturę topnienia szkła.",
     "context": "",
     "status": "translated"
   },
@@ -13705,7 +13705,7 @@
   {
     "key": "ch8/12-boss-blackmoon/15fireprogress-1-seq-06",
     "english": "At 1400°C, the pieces started melting back together.",
-    "polish": "Przy 1400°C kawałki zaczęły stapiać się w całość.",
+    "polish": "Przy 1400 °C kawałki zaczęły stapiać się w całość.",
     "context": "",
     "status": "translated"
   },
@@ -13733,7 +13733,7 @@
   {
     "key": "ch8/12-boss-blackmoon/themeltingpoint-1-seq-01",
     "english": "The melting point of glass is 1400°C.",
-    "polish": "Temperatura topnienia szkła to 1400°C.",
+    "polish": "Temperatura topnienia szkła to 1400 °C.",
     "context": "",
     "status": "translated"
   },
@@ -14706,7 +14706,7 @@
   {
     "key": "ch9/06-setitonfire-area/themeltingpointoficeis0C-1-seq-01",
     "english": "The melting point of ice is 0°C.",
-    "polish": "Temperatura topnienia lodu to 0°C.",
+    "polish": "Temperatura topnienia lodu to 0 °C.",
     "context": "",
     "status": "translated"
   },

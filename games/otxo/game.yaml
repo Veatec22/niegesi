@@ -1,6 +1,6 @@
 slug: otxo
 title: OTXO
-version: "0.1"
+version: "0.2"
 entries: { done: 1364, total: 1364 }
 tested: potwierdzony
 engine: GameMaker (kod natywny)
@@ -19,7 +19,7 @@ quote:
   source:
 download:
   kind: zip
-  file: OTXO-PL-0.1.zip
-  bytes: 30849
+  file: OTXO-PL-0.2.zip
+  bytes: 30847
 gallery: [1, 2, 3, 4, 5]
 test_notes: Menu i polskie znaki potwierdzone w grze; pełny przebieg czeka na przejście. 104 klucze są w oryginale puste i zostają nietknięte.

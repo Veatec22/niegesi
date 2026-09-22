@@ -1057,7 +1057,7 @@
   {
     "key": "1095",
     "english": "Killing an enemy during Focus rolls a slot; get 3 of a kind for a prize.",
-    "polish": "Zabicie wroga w Skupieniu kręci jednobrękiem; trzy takie same dają nagrodę."
+    "polish": "Zabicie wroga w Skupieniu to zakręcenie jednorękim bandytą; trzy takie same symbole dają nagrodę."
   },
   {
     "key": "1096",
@@ -1687,7 +1687,7 @@
   {
     "key": "2017",
     "english": "The doors in the Mansion are locked, even to your adversaries who patrol it.",
-    "polish": "Drzwi w Rezydencji są zamknięte, nawet dla tych, którzy tam patrolują."
+    "polish": "Drzwi w Rezydencji są zamknięte, nawet dla tych, którzy ją patrolują."
   },
   {
     "key": "2018",
@@ -1727,7 +1727,7 @@
   {
     "key": "2025",
     "english": "If you're out of magazines you'll have to find a new gun. Or kick your enemies to death.",
-    "polish": "Gdy skończą się magazynki, musisz znaleźć nową broń. Albo zakopać wrogów na śmierć."
+    "polish": "Gdy skończą się magazynki, musisz znaleźć nową broń. Albo skopać wrogów na śmierć."
   },
   {
     "key": "2026",
@@ -3430,7 +3430,7 @@
   {
     "key": "4032",
     "english": "My apologies sir, I can't serve you unless you're unarmed.",
-    "polish": "Wybacz pan, ale nie obsłużę uzbrojonego."
+    "polish": "Przepraszam, ale uzbrojonych nie obsługuję."
   },
   {
     "key": "4040",
@@ -3440,7 +3440,7 @@
   {
     "key": "4041",
     "english": "Your bill is ",
-    "polish": "Twój rachunek to "
+    "polish": "Rachunek w monetach: "
   },
   {
     "key": "4042",
@@ -3450,7 +3450,7 @@
   {
     "key": "4043",
     "english": " coins.",
-    "polish": " monet."
+    "polish": "."
   },
   {
     "key": "4044",
@@ -3610,7 +3610,7 @@
   {
     "key": "4515",
     "english": "The Church of Steel smiles upon such rigorous devotion, and as such have permitted me to grant you a new tool.",
-    "polish": "Kościół Stali uśmiecha się na takie oddanie i pozwolił mi obdarować cię nowym narzędziem."
+    "polish": "Kościół Stali uśmiecha się do takiego oddania i pozwolił mi obdarować cię nowym narzędziem."
   },
   {
     "key": "4516",
@@ -3670,7 +3670,7 @@
   {
     "key": "4527",
     "english": "Deadliness is next to godliness, as we say.",
-    "polish": "Śmiercionośność to cnota, jak to mawiamy."
+    "polish": "Śmiercionośność jest bliska świętości, jak to mawiamy."
   },
   {
     "key": "4528",
@@ -4108,12 +4108,12 @@
   {
     "key": "6508",
     "english": "You know, maybe we can help each other. The importing cost is quite high, higher than I would be able to pay alone.",
-    "polish": "Wiesz, może moglibyśmy sobie nawzajem pomóc. Koszt sprowadzenia jest wysoki, wyższy, niż sam udźwignę."
+    "polish": "Wiesz, może moglibyśmy sobie nawzajem pomóc. Koszt sprowadzenia jest wysoki, wyższy, niż sama udźwignę."
   },
   {
     "key": "6509",
     "english": "If you could bankroll some of the importation fees, I'd be able to find some more drinks to import for you.",
-    "polish": "Gdybyś dołożył się do opłat importowych, mógłbym znaleźć dla ciebie więcej trunków."
+    "polish": "Gdybyś dołożył się do opłat importowych, mogłabym znaleźć dla ciebie więcej trunków."
   },
   {
     "key": "6510",
@@ -5409,7 +5409,7 @@
   {
     "key": "9158",
     "english": "I'll finish this, even if I have to crawl.",
-    "polish": "Skończę to, choćbym miał czołgać się na czworakach."
+    "polish": "Skończę to, choćbym miał się czołgać."
   },
   {
     "key": "9159",
@@ -5549,7 +5549,7 @@
   {
     "key": "9186",
     "english": "But now that I've tried the mansion for some time, I took a look around the exterior.",
-    "polish": "Ale skoro próbowałem rezydencji już jakiś czas, rozejrzałem się po okolicy."
+    "polish": "Ale skoro od jakiegoś czasu szturmuję rezydencję, rozejrzałem się po okolicy."
   },
   {
     "key": "9187",
@@ -5599,7 +5599,7 @@
   {
     "key": "9196",
     "english": "I've been attempting the mansion every day but my earlier thoughts of progress seem to have been with fault.",
-    "polish": "Próbuję rezydencji codziennie, ale moje wcześniejsze wrażenie postępu chyba było złudne."
+    "polish": "Codziennie szturmuję rezydencję, ale moje wcześniejsze wrażenie postępu chyba było złudne."
   },
   {
     "key": "9197",
@@ -7093,12 +7093,12 @@
   {
     "key": "11001",
     "english": "IN ",
-    "polish": "W "
+    "polish": "MIEJSCE: "
   },
   {
     "key": "11002",
     "english": "FIGHTING ",
-    "polish": "WALKA Z "
+    "polish": "PRZECIWNIK: "
   },
   {
     "key": "11003",

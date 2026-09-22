@@ -57,6 +57,19 @@ Pierwsza gra przejrzana skillem `.claude/skills/lokalizacja/`. Fakty i decyzje:
 [`decyzje-tlumaczenia.md`](decyzje-tlumaczenia.md). Zmieniono 2 wpisy (Ofelia, Pedrowi); test w grze 0.3 czeka.
 Tabele innych języków do porównań wyciąga `tools/other_languages.py` (do `work/`, poza gitem).
 
+## Poprawka 0.3.1 — licznik nachodzący na tekst
+
+Na ekranie oceny poziomu „Otrzymane trafienia:” miało licznik narysowany na pierwszych
+literach. Gra skleja w `RatingScreenScript.TriggerRatingScreen` jeden napis:
+tłumaczenie `mHitsTaken` + `"  "` + liczba. `build_plugin.py` zapisywał `pl.tsv`
+z końcami CRLF, a plugin dzielił plik po `
+`, więc każdy tekst kończył się ``.
+TextMeshPro po `` cofa pióro na początek linii, a doklejona liczba rysowała się
+na tekście. Poprawka jak w Void Bastards 0.2.1: zapis z `newline='
+'`
+i `TrimEnd('')` przy wczytywaniu. Błąd był od początku, widać go tylko tam,
+gdzie gra dokleja coś po tłumaczeniu.
+
 ## Materiał gry i licencja
 
 Repozytorium zawiera wyłącznie teksty tłumaczenia i narzędzia — żadnych plików gry.

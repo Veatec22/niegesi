@@ -20,7 +20,7 @@ namespace NieGesi.AngerFoot
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.angerfoot";
-        public const string Version = "0.2";
+        public const string Version = "0.3";
 
         internal const string TermsFile = "pl.tsv";
         internal const string LanguageName = "Polski";

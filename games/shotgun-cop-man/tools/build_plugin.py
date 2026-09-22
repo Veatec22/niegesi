@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
 
-VERSION = '0.3'
+VERSION = '0.3.1'
 DATA = 'Shotgun Cop Man_Data'
 PLUGIN_FOLDER = 'NieGesiShotgunCopMan'
 
@@ -63,7 +63,9 @@ def write_terms(destination: Path) -> int:
     for key, value in terms.items():
         assert '\t' not in key and '\t' not in value, f'tabulator w {key}'
         lines.append(f'{key}\t' + value.replace('\n', '\\n'))
-    destination.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    # newline='\n': bez tego Python na Windowsie zapisuje CRLF, a \r trafia na koniec
+    # każdego tekstu w grze (TextMeshPro cofa po nim pióro — napisy nakładały się).
+    destination.write_text('\n'.join(lines) + '\n', encoding='utf-8', newline='\n')
     return len(lines)
 
 

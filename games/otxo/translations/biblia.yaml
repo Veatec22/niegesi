@@ -1,0 +1,140 @@
+# Biblia tłumaczenia OTXO — fakty ze źródłami. Format: .claude/skills/lokalizacja/BIBLIA.md
+# Przegląd wstecz (2026-09-22): tłumaczenie powstało przed skillem, biblia spisuje to, co już przyjęto.
+# Klucze gry to same numery, bez mówiącego; postacie przypisane z bloków numerów i treści.
+
+zrodla:
+  - id: ru
+    opis: Rosyjski plik gry (OTXO_script_english_rus.ini) — płeć w czasie przeszłym; zrzut work/ref-extract.py → work/ref-all.json.
+  - id: fr
+    opis: Francuski plik gry — druga poszlaka płci.
+  - id: dziennik
+    opis: Dziennik bohatera (9071–9359) — fakty o postaciach z plaży i baru.
+
+postacie:
+  - id: otxo
+    nazwa: Otxo (bohater, autor dziennika)
+    plec: m
+    mowi_do_gracza: '-'
+    rejestr: dziennik ojca szukającego syna; w obłędzie małe litery i powtórzenia
+    zrodlo: [ru, dziennik]
+    uwaga: inni mówią do niego na „ty”; „otxo” małą literą jako gatunek, „Otxo” jako zwrot.
+  - id: ogrodnik
+    nazwa: Ogrodnik (2000–2147)
+    plec: m
+    mowi_do_gracza: ty
+    rejestr: ciepły, pogodzony z losem
+    zrodlo: [ru]
+  - id: zeglarz
+    nazwa: Żeglarz (3500–3573)
+    plec: m
+    mowi_do_gracza: ty („wilku morski”, „chłopcze”)
+    rejestr: marynarski, archaizmy („Hej-ho”, „szczur lądowy”)
+    zrodlo: [ru]
+  - id: barman
+    nazwa: Barman (4000–4059)
+    plec: m
+    mowi_do_gracza: pan przy pierwszej wizycie (4010–4013), potem ty
+    zrodlo: decyzja
+    uwaga: >
+      EN „sir” pojawia się też przy zakazie broni i w pojedynczych ofertach — tam formy
+      bezosobowe („Przepraszam, ale uzbrojonych nie obsługuję”), żeby nie mieszać „pan” i „ty”.
+  - id: zakonnica
+    nazwa: Zakonnica Kościoła Stali (4500–4536)
+    plec: k
+    mowi_do_gracza: ty („dziecko moje”)
+    rejestr: kaznodziejski
+    zrodlo: [ru]
+  - id: importerka
+    nazwa: dziewczyna z baru, importerka trunków (6500–6522)
+    plec: k
+    mowi_do_gracza: ty
+    zrodlo: [dziennik]
+    uwaga: >
+      Dziennik 9174 — „The girl at the bar has rewarded me with new drinks”; w Różanej Sali są
+      tylko barman i ona. RU nie rozstrzyga, FR daje „Désolé” (męskie). Decyzja: żeńska.
+  - id: odmieniec
+    nazwa: Odmieniec (8000–8039)
+    plec: m
+    zrodlo: [ru, dziennik]
+  - id: pan-rezydencji
+    nazwa: Pan Rezydencji, człowiek w czerwonej masce (6000–6031)
+    plec: m
+    zrodlo: [ru]
+  - id: bekatua
+    nazwa: Bekatua
+    plec: k
+    zrodlo: decyzja
+    uwaga: w EN „it”; po polsku żeńska za „istota” — konsekwentnie w Piśmie Bekatuy i „Jej woli” (9532).
+
+terminy:
+  - en: Mansion
+    pl: Rezydencja
+    formy: [rezydencj]
+    zrodlo: decyzja
+    uwaga: wielką literą w dialogach, małą w dzienniku — tak jak w oryginale.
+  - en: Focus
+    pl: Skupienie
+    formy: [skupieni]
+    zrodlo: decyzja
+  - en: combo
+    pl: kombo
+    formy: [kombo]
+    zrodlo: decyzja
+  - en: (?<!\w)roll
+    pl: unik
+    formy: [unik]
+    zrodlo: decyzja
+  - en: Liquors?
+    pl: trunek
+    formy: [trunk, drink]
+    zrodlo: decyzja
+  - en: Misplaced Chambers?
+    pl: Zagubiona Komnata
+    formy: [zagubion]
+    zrodlo: decyzja
+  - en: The Rose Room
+    pl: Różana Sala
+    formy: [różan]
+    zrodlo: decyzja
+  - en: Church of Steel
+    pl: Kościół Stali
+    formy: [kości]
+    zrodlo: decyzja
+  - en: husks?
+    pl: powłoka
+    formy: [powłok]
+    zrodlo: decyzja
+  - en: LMGs?
+    pl: RKM
+    formy: [rkm]
+    zrodlo: decyzja
+  - en: SMGs?
+    pl: PM
+    formy: [pm]
+    zrodlo: decyzja
+
+bez_tlumaczenia:
+  - Otxo
+  - otxo
+  - Bekatua
+  - Roxy
+  - Cvnka
+  - Wick
+  - Jormungandr
+  - Hayabusa
+  - Prestissimo
+  - Tachypsychia
+  - KUNAI
+  - Esc
+  - Enter
+
+ignoruj:
+  - sprawdzenie: angielski
+    klucz: '^(1002|1010|1012|1032|1050|1054|1056|1072|1082|1084|1090|1096|1100|1140|1144|1150|1154|1186|30\d\d|70\d\d|110(1\d|2\d)|504|506|9331|10524|10531|10532|11010|2048|2097|2116|3505|3551|3558|4045|6012|8000|8012|9538)$'
+    powod: nazwy własne broni, atutów, figurek i bossów, onomatopeje
+  - sprawdzenie: typografia
+    klucz: '^5[0-7]$'
+    powod: złożenia „Naciśnij [klawisz], aby…” — przecinek zamiast spacji jest celowy
+  - sprawdzenie: wielkie_litery
+    klucz: '.'
+    powod: nazwy własne świata (Zagubiona Komnata, Kościół Stali, Różana Sala, Ukryta Warstwa)

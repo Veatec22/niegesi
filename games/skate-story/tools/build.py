@@ -125,7 +125,7 @@ def main():
                 assert old[2][col] == new[2][col] and old[3][col] == new[3][col]
                 if old[4]:
                     assert old[4][col] == new[4][col]
-    package = ROOT / 'dist/skate-story-pl-0.2.zip'
+    package = ROOT / 'dist/skate-story-pl-0.3.zip'
     with zipfile.ZipFile(package, 'w', zipfile.ZIP_DEFLATED) as archive:
         archive.write(target, 'SkateStory_Data/resources.assets')
         archive.write(ROOT / 'docs/INSTALL.txt', 'READ-ME.txt')

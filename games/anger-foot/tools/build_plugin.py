@@ -27,7 +27,7 @@ REPO = ROOT.parents[1]
 sys.path.insert(0, str(TOOLS))
 from build import SLOT, parse_entry, rd  # ten sam parser co przy metodzie z podmianą pliku
 
-VERSION = '0.2'
+VERSION = '0.3'
 DATA = 'Anger Foot_Data'
 PLUGIN_FOLDER = 'NieGesiAngerFoot'
 

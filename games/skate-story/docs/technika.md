@@ -1,5 +1,28 @@
 # Skate Story — technika i stan prac
 
+## Wersja 0.3 — przegląd skillem lokalizacji (2026-09-22)
+
+Tłumaczenie przeszło standard `.claude/skills/lokalizacja`: biblia
+(`translations/biblia.yaml`), raport (`work/l10n-report.md`), lektura całej narracji
+i dialogów, spis decyzji w `docs/decyzje-tlumaczenia.md`. Zmieniono 19 wpisów.
+Fonty, format i sposób dostarczania bez zmian.
+
+Tabela I2 ma kolumny TYPE (mówiący, np. `Dialogue: Rabbie`), NOTES i 17 języków.
+`work/ref-extract.py` zrzuca je do `work/ref-all.json` (poza gitem), a
+`work/plec-ru.py` porównuje formy rodzajowe RU z PL — tak znalazły się Beea
+i szkielet z Placu Żalu:
+
+```powershell
+.venv\Scripts\python.exe games\skate-story\work\ref-extract.py backups\skate-story\resources.assets
+.venv\Scripts\python.exe games\skate-story\work\plec-ru.py
+```
+
+Wynik 0.3: SHA-256 pliku
+`d4998be2e0cfca842f833577e7b86ffd092ad0288d88901e88f2fdfecea28994`, łatka 78 KB,
+paczka `Skate-Story-PL-0.3-latka.zip`. Łatkę nałożoną na kopię oryginału sprawdzono
+bajtowo z buildem. Aplikator aktualizuje 0.2 z odłożonego oryginału. W grze 0.3 nie
+testowano — zmiany są wyłącznie tekstowe.
+
 ## Wersja 0.2
 
 2305/2305 wpisów tekstowych ma docelową wartość PL: 2302 opracowane przez agenta

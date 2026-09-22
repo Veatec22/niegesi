@@ -1,5 +1,26 @@
 # Anger Foot — technika i stan prac
 
+## Wersja 0.3 — przegląd skillem lokalizacji (2026-09-22)
+
+Tłumaczenie przeszło standard `.claude/skills/lokalizacja`: biblia
+(`translations/biblia.yaml`), raport kontrolny (`work/l10n-report.md`) i spis decyzji
+(`docs/decyzje-tlumaczenia.md`). Zmieniono 210 wpisów, metoda dostarczania bez zmian.
+
+Tabela gry podaje przy każdej kwestii mówiącego i adresata z płcią, np.
+`NPC (Female)` > `Player`. `work/ref-extract.py` zrzuca je razem z rosyjskim,
+francuskim, niemieckim i hiszpańskim do `work/ref-all.json` (poza gitem, treść wydawcy):
+
+```powershell
+.venv\Scripts\python.exe games\anger-foot\work\ref-extract.py "C:\Games\Anger Foot\Anger Foot_Data\resources.assets"
+```
+
+`tools/review.py` składa z tego i z `pl.json` plik `translations/en-pl-review.json`
+w formacie repo (`key`, `english`, `polish`, `context`), z kluczem
+`<ścieżka> [mówiący > adresat]` — po nim raport sprawdza płeć. Źródłem prawdy dalej
+jest `pl.json`; review po każdej zmianie regeneruje się tym skryptem.
+
+Test w grze wersji 0.3: nie robiony, zmiany są wyłącznie tekstowe.
+
 ## Wersja 0.2 — metoda pluginowa
 
 1774 z 1776 wpisów tekstowych po polsku; pozostałe dwa są puste również w oryginale.
@@ -61,7 +82,7 @@ metodzie, więc korekty językowe działają bez zmian.
 ```
 
 Build sprawdza, czy wszystkie przetłumaczone wpisy znalazły swój GUID, czy GUID-y się
-nie powtarzają i czy do archiwum nie wpadł żaden plik gry. Wynik: `dist/Anger-Foot-PL-0.2.zip`
+nie powtarzają i czy do archiwum nie wpadł żaden plik gry. Wynik: `dist/Anger-Foot-PL-0.3.zip`
 oraz archiwum źródeł BepInEksa obok, wymagane przez LGPL.
 
 Plugin nie ma przypiętej sumy kontrolnej gry — wiąże się po nazwach klas, więc

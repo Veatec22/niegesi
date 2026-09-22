@@ -1,6 +1,6 @@
 slug: skate-story
 title: Skate Story
-version: "0.2"
+version: "0.3"
 entries: { done: 2305, total: 2305 }
 tested: czesciowy
 engine: Unity 6000.0.45f1
@@ -19,7 +19,7 @@ quote:
   source:
 download:
   kind: patch
-  file: Skate-Story-PL-0.2-latka.zip
-  bytes: 85724
+  file: Skate-Story-PL-0.3-latka.zip
+  bytes: 86531
 gallery: [1, 2, 3, 4, 5]
 test_notes: Vertical potwierdzony przez użytkownika; pełna tabela zweryfikowana strukturalnie, pełna kampania czeka na test.

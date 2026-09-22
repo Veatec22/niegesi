@@ -1,6 +1,6 @@
 slug: shotgun-cop-man
 title: Shotgun Cop Man
-version: "0.3"
+version: "0.3.1"
 entries: { done: 485, total: 485 }
 tested: potwierdzony
 engine: Unity 2022.3.47f1
@@ -18,7 +18,7 @@ quote:
   source:
 download:
   kind: zip
-  file: Shotgun-Cop-Man-PL-0.3.zip
-  bytes: 653641
+  file: Shotgun-Cop-Man-PL-0.3.1.zip
+  bytes: 653627
 gallery: [1, 2, 3, 4, 5]
-test_notes: Wybór języka i teksty potwierdzone w grze na 0.2; 0.3 ujednolica imiona z dodatku Pedro z My Friend Pedro PL (Ofelia, Pedrowi) — pełne przejście czeka.
+test_notes: Wybór języka i teksty potwierdzone w grze; 0.3 ujednolica imiona z dodatku Pedro z My Friend Pedro PL (Ofelia, Pedrowi), 0.3.1 usuwa nakładanie się licznika trafień na tekst na ekranie oceny — pełne przejście czeka.

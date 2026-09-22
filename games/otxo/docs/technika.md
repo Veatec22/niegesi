@@ -1,5 +1,21 @@
 # OTXO — technika i stan prac
 
+## Wersja 0.2 — przegląd skillem lokalizacji (2026-09-22)
+
+Tłumaczenie przeszło standard `.claude/skills/lokalizacja`: biblia
+(`translations/biblia.yaml`), raport (`work/l10n-report.md`), lektura wszystkich
+1364 wpisów i spis decyzji w `docs/decyzje-tlumaczenia.md`. Zmieniono 15 wpisów.
+
+Pozostałe języki gry leżą obok jako zwykłe INI. `work/ref-extract.py` zrzuca je
+do `work/ref-all.json` (poza gitem) — rosyjski posłużył do sprawdzenia płci
+i do potwierdzenia, które teksty gra skleja z nazwami (`В: `, `СРАЖАЕТСЯ С: `):
+
+```powershell
+.venv\Scripts\python.exe games\otxo\work\ref-extract.py "C:\Games\OTXO"
+```
+
+Test w grze 0.2: nie robiony, zmiany są wyłącznie tekstowe.
+
 ## Wersja 0.1
 
 1364 wpisy, czyli wszystko, co gra ma do powiedzenia: menu, ustawienia, samouczek,
@@ -80,7 +96,7 @@ Build sprawdza się względem oryginału i bez tego nie zapisze pliku:
 
 Źródłowy `script_english.ini` jest przypięty sumą SHA-256; inna wersja gry zostaje
 odrzucona i nic się nie zapisuje. Wynik: `dist/OTXO_script_english_zho-CN.ini` (72 KB)
-oraz `dist/OTXO-PL-0.1.zip` (30 KB) z tym plikiem i `READ-ME.txt`.
+oraz `dist/OTXO-PL-0.2.zip` (30 KB) z tym plikiem i `READ-ME.txt`.
 
 Paczka zawiera **wyłącznie nasz tekst** — żadnego bajtu z gry, żadnej biblioteki
 obcego autorstwa. To najczystszy przypadek w całym repo.

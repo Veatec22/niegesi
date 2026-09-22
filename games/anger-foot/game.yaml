@@ -1,6 +1,6 @@
 slug: anger-foot
 title: Anger Foot
-version: "0.2"
+version: "0.3"
 entries: { done: 1774, total: 1774 }
 tested: potwierdzony
 engine: Unity 2019.4.35f1
@@ -19,7 +19,7 @@ quote:
   source:
 download:
   kind: zip
-  file: Anger-Foot-PL-0.2.zip
-  bytes: 708419
+  file: Anger-Foot-PL-0.3.zip
+  bytes: 708370
 gallery: [1, 2, 3, 4, 5]
 test_notes: Przycisk języka i podmiana tekstów potwierdzone w grze; pełna kampania czeka na przejście. Dwa wpisy tabeli są puste również w oryginale.

@@ -33,7 +33,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import script_ini
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = '0.1'
+VERSION = '0.2'
 SLOTS = {                      # slot -> section header the game looks for
     'zho-CN': 'chinese-simplified',
     'fre-FR': 'french',

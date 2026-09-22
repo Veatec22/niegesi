@@ -1,4 +1,4 @@
-OTXO - POLSKIE TLUMACZENIE 0.1 (pelne: 1364 wpisy)
+OTXO - POLSKIE TLUMACZENIE 0.2 (pelne: 1364 wpisy)
 
 1. Zamknij gre.
 2. Otworz katalog gry (GOG Galaxy: Zarzadzaj > Pokaz folder).
