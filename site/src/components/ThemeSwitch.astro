@@ -2,38 +2,26 @@
 import Icon from './Icon.astro';
 
 /**
- * Motyw: jasny, ciemny albo systemowy. Wybór leży w localStorage („ng-theme”) i trafia
- * na <html data-theme>; „system” to brak atrybutu, wtedy decyduje prefers-color-scheme.
- * Pierwsze ustawienie robi skrypt w <head> (Base.astro), żeby strona nie mignęła jasno.
+ * Motyw: systemowy, jasny albo ciemny, przełączane po kolei jednym przyciskiem.
+ * Wybór leży w localStorage („ng-theme”) i trafia na <html data-theme>; „system” to brak
+ * atrybutu, wtedy decyduje prefers-color-scheme. Pierwsze ustawienie robi skrypt w <head>
+ * (Base.astro), a ikona bierze się z CSS po data-theme, więc nic nie mignie przy wczytaniu.
  */
 const modes = [
-  { value: 'light', label: 'Jasny', icon: 'sun' },
-  { value: 'system', label: 'Systemowy', icon: 'monitor' },
-  { value: 'dark', label: 'Ciemny', icon: 'moon' },
+  { value: 'system', icon: 'monitor' },
+  { value: 'light', icon: 'sun' },
+  { value: 'dark', icon: 'moon' },
 ] as const;
 ---
 
-<div class="ng-theme" role="radiogroup" aria-label="Motyw strony" data-theme-switch>
-  {
-    modes.map((mode) => (
-      <button
-        type="button"
-        class="ng-theme-option"
-        role="radio"
-        aria-checked={String(mode.value === 'system')}
-        aria-label={mode.label}
-        title={mode.label}
-        data-mode={mode.value}
-      >
-        <Icon name={mode.icon} size={18} />
-      </button>
-    ))
-  }
-</div>
+<button type="button" class="ng-nav-button ng-theme-toggle" aria-label="Motyw strony: systemowy" title="Motyw strony: systemowy" data-theme-toggle>
+  {modes.map((mode) => <span class="ng-theme-icon" data-mode={mode.value}><Icon name={mode.icon} size={18} /></span>)}
+</button>
 
 <script>
-  const root = document.querySelector<HTMLElement>('[data-theme-switch]');
-  const buttons = Array.from(root?.querySelectorAll<HTMLButtonElement>('[data-mode]') ?? []);
+  const button = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+  const order = ['system', 'light', 'dark'];
+  const labels: Record<string, string> = { system: 'systemowy', light: 'jasny', dark: 'ciemny' };
 
   function current(): string {
     try {
@@ -51,25 +39,16 @@ const modes = [
     } catch {
       // Prywatne okno albo zablokowane dane: motyw działa do końca wizyty.
     }
-    buttons.forEach((button) => {
-      const checked = button.dataset.mode === mode;
-      button.setAttribute('aria-checked', String(checked));
-      button.tabIndex = checked ? 0 : -1;
-    });
+    const label = `Motyw strony: ${labels[mode] ?? labels.system}`;
+    button?.setAttribute('aria-label', label);
+    button?.setAttribute('title', label);
   }
 
-  apply(current());
+  let mode = current();
+  apply(mode);
 
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', () => apply(button.dataset.mode ?? 'system'));
-    // Strzałki przesuwają wybór jak w grupie radiowej.
-    button.addEventListener('keydown', (event) => {
-      const step = event.key === 'ArrowRight' || event.key === 'ArrowDown' ? 1 : event.key === 'ArrowLeft' || event.key === 'ArrowUp' ? -1 : 0;
-      if (!step) return;
-      event.preventDefault();
-      const next = buttons[(index + step + buttons.length) % buttons.length]!;
-      apply(next.dataset.mode ?? 'system');
-      next.focus();
-    });
+  button?.addEventListener('click', () => {
+    mode = order[(order.indexOf(mode) + 1) % order.length]!;
+    apply(mode);
   });
 </script>

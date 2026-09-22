@@ -1,7 +1,9 @@
 """Buduje NieGesiPatch.exe — aplikator łatek dokładany do paczek deltowych.
 
 Wynik trafia do `tools/applier/bin/` (ignorowane przez Gita). `tools/patch.py release`
-woła ten skrypt sam, gdy pliku .exe brakuje albo jest starszy od źródła.
+woła ten skrypt sam, gdy pliku .exe brakuje albo jest starszy od źródła lub ikony,
+i wkłada go do paczki pod nazwą `<Nazwa>-PL-<wersja>.exe`. Ikona `icon.ico` to logo
+strony (`site/public/favicon.svg`) w rozmiarach 16–256 px.
 
     .venv\\Scripts\\python.exe tools\\applier\\build.py
 """
@@ -13,6 +15,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SOURCE = HERE / 'NieGesiPatch.cs'
+ICON = HERE / 'icon.ico'
 OUT = HERE / 'bin' / 'NieGesiPatch.exe'
 
 COMPILERS = [
@@ -39,6 +42,7 @@ def main() -> None:
         '/optimize+',
         '/langversion:5',
         '/codepage:65001',
+        f'/win32icon:{ICON}',
         f'/r:{FRAMEWORK / "System.Windows.Forms.dll"}',
         f'/out:{OUT}',
         str(SOURCE),

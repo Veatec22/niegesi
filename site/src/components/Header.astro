@@ -11,9 +11,24 @@ import { withBase } from '../lib/url';
     <span class="ng-brand-name"><span class="ng-brand-not">Not</span> Geese</span>
   </a>
   <nav class="ng-nav ng-label" aria-label="Główna">
+    <a class="ng-nav-button" href={withBase("/#faq")} data-faq-link aria-label="Częste pytania" title="Częste pytania">
+      <Icon name="info" size={18} />
+    </a>
     <ThemeSwitch />
-    <a class="ng-nav-github" href="https://github.com/Veatec22/niegesi" target="_blank" rel="noopener" aria-label="Repozytorium na GitHubie">
-      <Icon name="github" />
+    <a class="ng-nav-button" href="https://github.com/Veatec22/niegesi" target="_blank" rel="noopener" aria-label="Repozytorium na GitHubie">
+      <Icon name="github" size={18} />
     </a>
   </nav>
 </header>
+
+<script>
+  // Przewija do FAQ bez dopisywania #faq do adresu. Samo href zostaje na wypadek braku JS.
+  const link = document.querySelector<HTMLAnchorElement>('[data-faq-link]');
+  link?.addEventListener('click', (event) => {
+    const faq = document.getElementById('faq');
+    if (!faq) return;
+    event.preventDefault();
+    const smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    faq.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto' });
+  });
+</script>

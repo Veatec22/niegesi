@@ -1,0 +1,160 @@
+# Biblia Katana ZERO — fakty i decyzje dla tłumaczenia.
+# Mówiący nie jest zapisany przy wpisie (tablice mają tylko tekst), więc płeć
+# w czasie przeszłym bierzemy z rosyjskiej wersji tej samej kwestii.
+
+zrodla:
+  - id: ru
+    opis: Rosyjska wersja tej samej kwestii (slot, który zajmujemy) — płeć w czasie przeszłym i formy zwracania się
+  - id: kontekst
+    opis: Sąsiednie kwestie w init_lines, czytane w kolejności gry
+  - id: gra
+    opis: Znajomość fabuły Katana ZERO (Askiisoft, 2019)
+
+postacie:
+  - id: zero
+    nazwa: Zero
+    plec: m
+    mowi_do_gracza: '-'
+    rejestr: lakoniczny, chłodny, krótkie zdania; wybory odpowiedzi gracza
+    odmiana: Zero nieodmienne („z Zero”), jak w rosyjskim „Ноль” odmienianym — po polsku zostawiamy nieodmienne
+    zrodlo: [ru, gra]
+  - id: psychiatra
+    nazwa: psychiatra (Therapist)
+    plec: m
+    mowi_do_gracza: ty
+    rejestr: kliniczny, uprzejmy z wierzchu, manipulacyjny; przeklina tylko w złości
+    zrodlo: [ru, gra]
+  - id: dziewczynka
+    nazwa: dziewczynka (The Girl)
+    plec: k
+    mowi_do_gracza: ty
+    rejestr: dziecięcy, wesoły, gadatliwy; zabawy w detektywa
+    zrodlo: [ru, gra]
+  - id: smok
+    nazwa: Smok (The Dragon, Piętnasty)
+    plec: m
+    zrodlo: [ru, gra]
+  - id: v
+    nazwa: V
+    plec: m
+    rejestr: kpiarski, zadufany
+    odmiana: nieodmienne
+    zrodlo: [ru, gra]
+  - id: snow
+    nazwa: Snow
+    plec: k
+    odmiana: nieodmienne
+    zrodlo: [gra, ru]
+  - id: recepcjonistka
+    nazwa: recepcjonistka (hotel Murdower, Ośrodek Badań Synergicznych)
+    plec: k
+    mowi_do_gracza: pan
+    rejestr: entuzjastyczna fanka anime, uprzejma
+    zrodlo: [ru]
+  - id: kissyface
+    nazwa: Kissyface
+    plec: m
+    odmiana: nieodmienne („panie Kissyface”)
+    zrodlo: [ru, kontekst]
+  - id: komedia
+    nazwa: Komedia
+    plec: m
+    rejestr: potoczny, złośliwy chichot „hi hi hiiii”
+    zrodlo: [ru]
+  - id: tragedia
+    nazwa: Tragedia
+    plec: '?'
+    rejestr: archaiczny, poetycki („błędne serce”)
+    zrodlo: [kontekst]
+
+terminy:
+  - en: the Dragon
+    pl: Smok
+    formy: [smok, smoka, smokiem, smoku]
+    zrodlo: decyzja
+    uwaga: chiński smok, przydomek zabójcy; rosyjskie „Змей” to ich wybór, polskie „Smok” jest dosłowne i naturalne
+  - en: Chronos
+    pl: Chronos
+    formy: [chronos]
+    zrodlo: decyzja
+    uwaga: nazwa leku, odmieniana jak rzeczownik męski („Chronosu”, „Chronosem”)
+  - en: 'NULL'
+    pl: 'NULL'
+    formy: ['null']
+    zrodlo: decyzja
+    uwaga: nazwa programu żołnierzy, zostaje wersalikami; „Gamma NULL” bez zmian
+  - en: New Mecca
+    pl: Nowa Mekka
+    formy: [nowa mekk, nowej mekk, nową mekk]
+    zrodlo: decyzja
+  - en: (3rd|Third) District
+    pl: Trzecia Dzielnica
+    formy: [dzielnic]
+    zrodlo: decyzja
+  - en: Juncture
+    pl: Juncture
+    formy: [juncture]
+    zrodlo: decyzja
+    uwaga: nazwa władz, zostaje w oryginale i nieodmienna („władze Juncture”)
+  - en: dossier
+    pl: teczka
+    formy: [teczk, teczce]
+    zrodlo: decyzja
+    uwaga: „teczka” brzmi naturalnie w mowie; w interfejsie „Otwórz teczkę”
+  - en: precognition
+    pl: dar przewidywania
+    formy: [przewidywan]
+    zrodlo: decyzja
+  - en: '\*Hang up\*'
+    pl: '*Rozłącz się*'
+    formy: [rozłącz]
+    zrodlo: decyzja
+  - en: Behemoth
+    pl: Behemot
+    formy: [behemot]
+    zrodlo: decyzja
+  - en: Leviathan
+    pl: Lewiatan
+    formy: [lewiatan]
+    zrodlo: decyzja
+  - en: cromags?
+    pl: kroman
+    formy: [kroman]
+    zrodlo: decyzja
+    uwaga: wojenny epitet od Cro-Magnon; rosyjski ma „унтерменш”
+  - en: withdrawal
+    pl: głód
+    formy: [głod, głód]
+    zrodlo: decyzja
+  - en: PRESS TO EJECT
+    pl: WYSUŃ KASETĘ
+    formy: [wysuń]
+    zrodlo: uzytkownik
+    uwaga: odrzucone „NACIŚNIJ, ABY WYSUNĄĆ” i „NACIŚNIJ, ABY WYJĄĆ KASETĘ” (za długie na małe pole)
+  - en: Strong Terry
+    pl: Silny Terry
+    formy: [siln, terr]
+    zrodlo: decyzja
+
+bez_tlumaczenia:
+  - Zero
+  - V
+  - Snow
+  - Pinkachu
+  - Kissyface
+  - Electrohead
+  - Webflix
+  - Katana ZERO
+  - ASKIISOFT
+  - Ludowic
+  - Bill Kiley
+  - Al-Qasim
+  - Dawoud Bey
+  - Josh Rose
+  - Fa Yuan
+  - Leon von Alvensleben
+  - Shinju Sakamura
+  - Murdower
+  - Juncture
+  - Chronos
+  - 'NULL'

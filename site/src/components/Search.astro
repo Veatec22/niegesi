@@ -89,44 +89,92 @@ const { count, statuses } = Astro.props;
     za: (a, b) => byTitle(b, a),
   };
 
-  if (sorter) {
-    const sort = () => {
-      const compare = orders[sorter.dataset.value ?? ''] ?? orders.newest!;
-      const grid = cards[0]?.parentElement;
-      [...cards].sort(compare).forEach((card) => grid?.appendChild(card));
-    };
-    sorter.addEventListener('change', sort);
+  // Stronicowanie: kafelki są w HTML-u wszystkie, skrypt pokazuje tylko bieżącą stronę
+  // spośród pasujących. Bez JS widać całą listę naraz.
+  const PAGE_SIZE = 12;
+  const grid = cards[0]?.parentElement;
+  const section = document.getElementById('gry');
+  const pager = document.querySelector<HTMLElement>('[data-pager]');
+  const pagerPages = pager?.querySelector<HTMLElement>('[data-pager-pages]');
+  const pagerPrev = pager?.querySelector<HTMLButtonElement>('[data-pager-prev]');
+  const pagerNext = pager?.querySelector<HTMLButtonElement>('[data-pager-next]');
+  let page = 0;
+
+  function matches(card: HTMLElement) {
+    const query = fold(input?.value.trim() ?? '');
+    const status = filter?.dataset.value ?? '';
+    return (
+      (query === '' || (card.dataset.search ?? '').includes(query)) &&
+      (status === '' || card.dataset.status === status)
+    );
   }
 
-  if (input && filter && counter && empty) {
-    const apply = () => {
-      const query = fold(input.value.trim());
-      const status = filter.dataset.value ?? '';
-      let visible = 0;
+  function render() {
+    if (!grid) return;
+    const ordered = Array.from(grid.querySelectorAll<HTMLElement>('[data-card]'));
+    const matching = ordered.filter(matches);
+    const pages = Math.max(1, Math.ceil(matching.length / PAGE_SIZE));
+    page = Math.min(page, pages - 1);
+    const shown = new Set(matching.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE));
+    cards.forEach((card) => (card.hidden = !shown.has(card)));
 
-      cards.forEach((card) => {
-        const match =
-          (query === '' || (card.dataset.search ?? '').includes(query)) &&
-          (status === '' || card.dataset.status === status);
-        card.hidden = !match;
-        if (match) visible += 1;
-      });
+    const narrowed = (input?.value.trim() ?? '') !== '' || (filter?.dataset.value ?? '') !== '';
+    if (counter) counter.textContent = narrowed ? `${plural(matching.length)} z ${cards.length}` : plural(cards.length);
+    if (empty) empty.hidden = matching.length > 0;
 
-      const narrowed = query !== '' || status !== '';
-      counter.textContent = narrowed ? `${plural(visible)} z ${cards.length}` : plural(cards.length);
-      empty.hidden = visible > 0;
-    };
-
-    input.addEventListener('input', apply);
-    filter.addEventListener('change', apply);
-
-    input.addEventListener('keydown', (event) => {
-      // Escape czyści pole, ale tylko gdy panel jest zamknięty — tam Escape zamyka.
-      if (event.key === 'Escape' && !document.body.dataset.panelOpen && input.value !== '') {
-        event.stopPropagation();
-        input.value = '';
-        input.dispatchEvent(new Event('input'));
-      }
-    });
+    if (pager && pagerPages && pagerPrev && pagerNext) {
+      pager.hidden = pages < 2;
+      pagerPrev.disabled = page === 0;
+      pagerNext.disabled = page === pages - 1;
+      pagerPages.replaceChildren(
+        ...Array.from({ length: pages }, (_, index) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'ng-pager-button';
+          button.textContent = String(index + 1);
+          button.setAttribute('aria-label', `Strona ${index + 1}`);
+          if (index === page) button.setAttribute('aria-current', 'page');
+          button.addEventListener('click', () => goTo(index));
+          return button;
+        }),
+      );
+    }
   }
+
+  function goTo(index: number) {
+    if (index === page) return;
+    page = index;
+    render();
+    const smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    section?.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto' });
+  }
+
+  // Każda zmiana wyszukiwania, filtra albo kolejności wraca na pierwszą stronę.
+  const restart = () => {
+    page = 0;
+    render();
+  };
+
+  pagerPrev?.addEventListener('click', () => goTo(page - 1));
+  pagerNext?.addEventListener('click', () => goTo(page + 1));
+
+  sorter?.addEventListener('change', () => {
+    const compare = orders[sorter!.dataset.value ?? ''] ?? orders.newest!;
+    [...cards].sort(compare).forEach((card) => grid?.appendChild(card));
+    restart();
+  });
+
+  input?.addEventListener('input', restart);
+  filter?.addEventListener('change', restart);
+
+  input?.addEventListener('keydown', (event) => {
+    // Escape czyści pole, ale tylko gdy panel jest zamknięty — tam Escape zamyka.
+    if (event.key === 'Escape' && !document.body.dataset.panelOpen && input!.value !== '') {
+      event.stopPropagation();
+      input!.value = '';
+      input!.dispatchEvent(new Event('input'));
+    }
+  });
+
+  render();
 </script>

@@ -19,16 +19,19 @@ Rozmawiamy po polsku.
    Daj krótki werdykt: czy warto ruszać, jak to zrobić i co pozostaje niepewne.
 4. **Po pozytywnym werdykcie zrób vertical.** Przetłumacz małą, reprezentatywną próbkę
    i przeprowadź cały proces: ekstrakcja → tłumaczenie → build → instalacja → test w grze.
+   Próbka musi obejmować przynajmniej część menu (główne i ustawienia) oraz sam
+   początek rozgrywki — pierwsze kwestie, samouczek, HUD — tak, żeby użytkownik po
+   uruchomieniu gry zobaczył polski tekst w pierwszych minutach, bez przechodzenia dalej.
    Sprawdź widoczność tekstów, polskie znaki i układ UI. Sam poprawny build nie dowodzi,
    że spolszczenie działa; jeśli test wymaga użytkownika, podaj mu konkretne kroki.
 5. **Dopiero po działającym verticalu tłumacz całość.** Zachowuj ton gry, spójną
    terminologię, placeholdery, znaczniki i formatowanie. Standard pracy opisuje
-   skill `.claude/skills/lokalizacja/`: biblia gry z faktami i źródłami (postacie,
+   skill `.claude/skills/localization/`: biblia gry z faktami i źródłami (postacie,
    płeć, terminy), lista pułapek i raport kontrolny, który tylko podpowiada.
    Decyzje podejmuj sam, zamiast o nie pytać.
 6. **Przygotuj review i wynik do użycia.** Aktualizuj plik EN/PL, zakres tłumaczenia,
    status testów oraz instrukcję instalacji i przywrócenia oryginału. Przy oddaniu
-   spisz decyzje w `docs/decyzje-tlumaczenia.md` gry i streść je użytkownikowi:
+   spisz decyzje w `docs/translation-decisions.md` gry i streść je użytkownikowi:
    co wybrano, dlaczego, skąd to wiadomo i co sprawdzić w grze. Użytkownik
    akceptuje albo odsyła poprawki.
 7. **Domknij grę paczką i metadanymi.** Spolszczenie jest gotowe dopiero wtedy, gdy build
@@ -36,7 +39,7 @@ Rozmawiamy po polsku.
    `READ-ME.txt` z instrukcją — a `games/<gra>/game.yaml` opisuje aktualny stan: wersję,
    liczbę wpisów, status testu w grze i rodzaj paczki. Luźne pliki w `dist/` bez archiwum
    to niedokończona robota. Do domknięcia należy też okładka i galeria na stronę:
-   `tools/keyart.py --game <gra>` (szczegóły w `docs/dodawanie-gry.md`) — gra bez nich
+   `tools/keyart.py --game <gra>` (szczegóły w `docs/adding-a-game.md`) — gra bez nich
    stoi na stronie jako zastępczy kafelek. Status spolszczenia (gotowe, wersja testowa, w trakcie)
    ustawia się w jednym miejscu, `games/catalog.yaml`: nowa gra trafia tam od razu
    na listę `w-trakcie`, a na `gotowe` przenosi ją dopiero użytkownik po pełnym ograniu. Zasady dotyczące zawartości paczki opisuje sekcja poniżej.
@@ -94,8 +97,8 @@ pracy na innej wersji gry albo na pliku już spolszczonym. Błędny plik nigdy n
 Skala: Skate Story 275 MB → 78 KB, Boomerang X 1,8 MB → 14 KB.
 
 Format łatki jest przenośny (operacje kopiuj/wstaw spakowane DEFLATE, po jednej łatce na plik), więc gracz nie
-potrzebuje Pythona: paczka niesie `NieGesiPatch.exe` (`tools/applier/`, ~11 KB, .NET
-Framework z Windowsa). Format ma dwie implementacje — `patch.py` i aplikator; zmieniasz
+potrzebuje Pythona: paczka niesie aplikator nazwany jak paczka, `<Nazwa>-PL-<wersja>.exe`
+(`tools/applier/`, ~85 KB z ikoną logo, .NET Framework z Windowsa). Format ma dwie implementacje — `patch.py` i aplikator; zmieniasz
 jedną, zmieniasz obie. `release` sam buduje aplikator i wkłada go do paczki.
 
 Format 3 pozwala łatce **utworzyć nowy plik** z wycinków plików gry (`sources`,
@@ -126,7 +129,7 @@ podmiany plików w katalogu `Managed` gry, czyli łamie zasadę powyżej.
 BepInEksa i pomija to wywołanie — działa, ale odsłania kolejne braki: najpierw
 `System.Linq.IGrouping` w `System.Core` (to akurat da się podstawić), potem konstruktor
 `AmbiguousMatchException` w `mscorlib`, którego wymaga Harmony. To nie jeden brakujący
-element, tylko cały wycięty runtime. Szczegóły w `games/boomerang-x/docs/technika.md`.
+element, tylko cały wycięty runtime. Szczegóły w `games/boomerang-x/docs/technical.md`.
 
 Zanim zaczniesz robić plugin, sprawdź dwie rzeczy w `<gra>_Data/Managed` — bez
 uruchamiania gry i bez pisania linijki kodu:
@@ -142,7 +145,7 @@ do 6.0.0-be.788. Wtedy zostaje podmiana plików.
 ## Pliki i praktyka
 
 - Każda gra ma katalog `games/<gra>/`. Przy kontynuacji najpierw przeczytaj jego
-  `docs/technika.md` i sprawdź istniejące teksty oraz narzędzia, żeby podjąć pracę
+  `docs/technical.md` i sprawdź istniejące teksty oraz narzędzia, żeby podjąć pracę
   od aktualnego etapu.
 - Każda gra musi mieć `translations/en-pl-review.json`: identyfikator wpisu, angielski
   oryginał i polskie tłumaczenie obok siebie, opcjonalnie kontekst lub uwagi.
@@ -154,19 +157,19 @@ do 6.0.0-be.788. Wtedy zostaje podmiana plików.
   na stronie: nagłówek `# <Gra> PL`, sekcja `## Instalacja` z ponumerowanymi krokami
   i jeden akapit o usunięciu lub przywróceniu. Nic dla dewelopera — wzór:
   `games/shotgun-cop-man/README.md`. Treść bierze się z instrukcji w aktualnej paczce.
-  `docs/technika.md` na ustalenia techniczne, budowanie, stan testów i notę o materiale
+  `docs/technical.md` na ustalenia techniczne, budowanie, stan testów i notę o materiale
   gry, `game.yaml` na liczby, status testu, linki do sklepów (`stores`) i przetestowaną
   wersję gry (`tested_on`: sklep i wersja z GOG Galaxy lub z menu gry),
   `games/catalog.yaml` na status spolszczenia i datę dodania. Główny `README.md` repozytorium jest
   po angielsku, dla przypadkowego czytelnika z GitHuba.
-- Decyzje otwarte i rozważane warianty trzymamy w `docs/decyzje/`, po jednym pliku
+- Decyzje otwarte i rozważane warianty trzymamy w `docs/decisions/`, po jednym pliku
   na temat. Zanim zaproponujesz zmianę sposobu dostarczania spolszczeń, przeczytaj,
   co już zostało tam rozważone i odrzucone.
 - Korzystaj z istniejących narzędzi i układu katalogów, gdy pasują. Szczegóły techniczne
-  są w `docs/dodawanie-gry.md`; nie rozbudowuj konwencji ani infrastruktury bez potrzeby.
+  są w `docs/adding-a-game.md`; nie rozbudowuj konwencji ani infrastruktury bez potrzeby.
 - Zachowuj oryginały przed podmianą plików gry. Buduj do osobnego katalogu (`dist/`),
   a instalację do testów wykonuj z kopią zapasową umożliwiającą powrót do oryginału.
-- Zapisuj istotne ustalenia i następny krok w `docs/technika.md` gry. Rozróżniaj weryfikację plików
+- Zapisuj istotne ustalenia i następny krok w `docs/technical.md` gry. Rozróżniaj weryfikację plików
   od faktycznego testu w uruchomionej grze.
 - Nie uruchamiaj gry za użytkownika. Jeśli potrzebujesz feedbacku wizualnego, podaj
   konkretne kroki testu i wskaż, co ma być widoczne na screenach. Użytkownik sam

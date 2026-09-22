@@ -81,32 +81,34 @@ a { color: inherit; }
   text-transform: uppercase;
 }
 
-.ng-nav { display: flex; align-items: center; gap: var(--ng-space-6); }
-.ng-nav a { text-decoration: none; }
-.ng-nav a:hover { color: var(--ng-accent); }
-
-.ng-nav-github { display: inline-flex; align-items: center; }
+.ng-nav { display: flex; align-items: center; gap: var(--ng-space-3); }
 
 .ng-brand-not { color: var(--ng-accent); }
 
-/* Przełącznik motywu: trzy przyciski w jednej ramce, wybrany wypełniony. */
-.ng-theme { display: inline-flex; border: var(--ng-border-width) solid var(--ng-ink); }
-
-.ng-theme-option {
-  display: grid;
-  place-items: center;
-  width: 38px;
+/* Przyciski w nagłówku: FAQ, motyw i GitHub — same ikony, jedna ramka, jeden rozmiar. */
+.ng-nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
   height: 38px;
   padding: 0;
-  border: 0;
+  border: var(--ng-border-width) solid var(--ng-ink);
   background: none;
   color: var(--ng-ink);
+  font: inherit;
+  line-height: 1;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.ng-theme-option + .ng-theme-option { border-left: var(--ng-border-width) solid var(--ng-ink); }
-.ng-theme-option:hover { color: var(--ng-accent); }
-.ng-theme-option[aria-checked="true"] { background: var(--ng-ink); color: var(--ng-bone); }
+.ng-nav-button:hover { background: var(--ng-ink); color: var(--ng-bone); }
+
+/* Przycisk motywu pokazuje ikonę bieżącego trybu; tryb czyta z <html data-theme>. */
+.ng-theme-icon { display: none; }
+:root:not([data-theme]) .ng-theme-icon[data-mode="system"],
+:root[data-theme="light"] .ng-theme-icon[data-mode="light"],
+:root[data-theme="dark"] .ng-theme-icon[data-mode="dark"] { display: block; }
 
 .ng-icon { display: block; flex: none; }
 
@@ -181,7 +183,8 @@ a { color: inherit; }
   border-left: var(--ng-border-width) solid var(--ng-bone);
 }
 
-.ng-stat:first-child { border-left: 0; }
+/* Pierwsza kolumna zaczyna się tam, gdzie tekst strony (margines .ng-shell), a nie przy krawędzi. */
+.ng-stat:first-child { border-left: 0; padding-left: var(--ng-gutter); }
 
 .ng-stat-value {
   font-family: var(--ng-font-display);
@@ -195,7 +198,7 @@ a { color: inherit; }
   .ng-stats-inner { grid-template-columns: repeat(2, 1fr); }
   .ng-stat { padding: var(--ng-space-6); }
   .ng-stat:nth-child(3), .ng-stat:nth-child(4) { border-top: var(--ng-border-width) solid var(--ng-bone); }
-  .ng-stat:nth-child(3) { border-left: 0; }
+  .ng-stat:nth-child(3) { border-left: 0; padding-left: var(--ng-gutter); }
 }
 
 /* --- Sekcja z siatką ---------------------------------------------- */
@@ -224,6 +227,37 @@ a { color: inherit; }
   grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--ng-grid-min)), 1fr));
   gap: var(--ng-grid-gap);
 }
+
+/* Stronicowanie pod siatką: kwadraty jak przyciski w nagłówku, bieżąca strona wypełniona. */
+.ng-pager {
+  display: flex;
+  justify-content: center;
+  gap: var(--ng-space-3);
+  margin-top: var(--ng-space-12);
+}
+
+.ng-pager-pages { display: flex; gap: var(--ng-space-3); }
+
+.ng-pager-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--ng-hit-target);
+  height: var(--ng-hit-target);
+  padding: 0 var(--ng-space-2);
+  border: var(--ng-border-width) solid var(--ng-ink);
+  background: var(--ng-paper);
+  color: var(--ng-ink);
+  font-family: var(--ng-font-mono);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ng-pager-button:hover:not(:disabled) { background: var(--ng-ink); color: var(--ng-bone); }
+.ng-pager-button[aria-current="page"] { background: var(--ng-ink); color: var(--ng-bone); cursor: default; }
+.ng-pager-button:disabled { opacity: 0.35; cursor: default; }
 
 /* --- Wyszukiwarka --------------------------------------------------- */
 
@@ -763,6 +797,65 @@ body[data-panel-open="true"] .ng-scrim { opacity: 1; pointer-events: auto; }
     margin: var(--ng-space-3) auto;
     flex: none;
   }
+}
+
+/* --- FAQ ----------------------------------------------------------- */
+
+/* Na tle strony, pod białą sekcją z grami. Pytania to zwykłe <details>, bez JS. */
+.ng-faq {
+  border-bottom: var(--ng-border);
+  padding-block: var(--ng-space-16) var(--ng-space-20);
+  scroll-margin-top: var(--ng-space-4);
+}
+
+.ng-faq .ng-section-title { margin-bottom: var(--ng-space-10); text-align: center; }
+
+.ng-faq-list { display: grid; gap: var(--ng-space-4); max-width: 900px; margin-inline: auto; }
+
+.ng-faq-item {
+  background: var(--ng-paper);
+  border: var(--ng-border);
+  transition: box-shadow var(--ng-duration) var(--ng-ease);
+}
+
+.ng-faq-item[open] { box-shadow: var(--ng-shadow-open); }
+
+.ng-faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ng-space-4);
+  min-height: var(--ng-hit-target);
+  padding: var(--ng-space-4) var(--ng-space-5);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.35;
+  cursor: pointer;
+  list-style: none;
+}
+
+.ng-faq-question::-webkit-details-marker { display: none; }
+.ng-faq-question:hover { color: var(--ng-accent); }
+.ng-faq-question:focus-visible { outline: var(--ng-border-width) solid var(--ng-accent); outline-offset: 3px; }
+
+.ng-faq-chevron { flex: none; transition: transform var(--ng-duration) var(--ng-ease); }
+.ng-faq-item[open] .ng-faq-chevron { transform: rotate(180deg); }
+
+.ng-faq-answer {
+  border-top: 1px solid var(--ng-hairline);
+  padding: var(--ng-space-4) var(--ng-space-5) var(--ng-space-5);
+  max-width: 72ch;
+}
+
+.ng-faq-answer p { margin: 0; }
+.ng-faq-answer p + p { margin-top: var(--ng-space-3); }
+.ng-faq-answer code { font-family: var(--ng-font-mono); font-size: 14px; background: var(--ng-bone); padding: 2px 5px; }
+.ng-faq-answer a { text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.ng-faq-answer a:hover { color: var(--ng-accent); }
+
+@media (max-width: 699px) {
+  .ng-faq-question { font-size: 16px; padding-inline: var(--ng-space-4); }
+  .ng-faq-answer { padding-inline: var(--ng-space-4); }
 }
 
 /* --- Stopka -------------------------------------------------------- */

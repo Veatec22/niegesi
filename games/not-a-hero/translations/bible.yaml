@@ -1,0 +1,166 @@
+zrodla:
+  - id: pliki
+    opis: Src/talk.ini (odprawy), Src/ENDS.ini (omówienia), Src/chat.ini (kwestie w poziomach), Src/LEVELS/SETTINGS.ini oraz grafiki Assets.dat instalacji GOG.
+  - id: obce
+    opis: Oficjalne talk/ENDS -fre, -ger, -ita, -spa tej samej gry. Nie mają pul losowanych słów, zdania są stałe.
+  - id: sklep
+    url: https://www.gog.com/en/game/not_a_hero
+    opis: BunnyLord jest kandydatem na burmistrza i zleca oczyszczenie miasta.
+  - id: font
+    opis: Atlas 5873 (font okna dialogowego) ma w komórce '*' fioletową głowę BunnyLorda — gra nią cenzuruje przekleństwa.
+
+postacie:
+  - id: bunnylord
+    nazwa: BunnyLord
+    plec: m
+    klucz: '^Src/(talk|ENDS)\.ini\|'
+    mowi_do_gracza: wy w odprawach (drużyna), ty w omówieniach (jeden agent, płeć nieznana)
+    rejestr: absurdalny polityk z przyszłości, entuzjastyczny, wulgarny, bez hamulców
+    odmiana: BunnyLord, BunnyLorda, BunnyLordowi (z wielkiej litery w tekście wersalikami bez znaczenia)
+    zrodlo: [pliki, sklep]
+  - id: agent
+    nazwa: $NAME$ (Steve, Cletus, Samantha, Ronald, Clive, Mike, Jesus, Kimmy, Stanley)
+    plec: '?'
+    mowi_do_gracza: '-'
+    rejestr: postać wybrana przez gracza; wśród agentów są kobiety (Samantha, Kimmy)
+    uwaga: >-
+      Formy do agenta i agenta o sobie bezosobowe lub neutralne: „poszło ci”, „dałoby się”,
+      „umrę”, nigdy „zrobiłeś/zrobiłaś”. Dotyczy ENDS.ini, sekcji wstępu [111111111],
+      [12121213430] i chat.ini. Wyjątek: telefony CELLPHONE do Steve'a (męskie).
+    zrodlo: [pliki]
+  - id: ruby
+    nazwa: ciocia Ruby
+    plec: k
+    zrodlo: [pliki]
+  - id: akemi
+    nazwa: Akemi Unagi
+    plec: k
+    zrodlo: [pliki]
+  - id: bogdan
+    nazwa: Bogdan Nabatov
+    plec: m
+    zrodlo: [pliki]
+  - id: upgraydd
+    nazwa: Upgraydd
+    plec: m
+    zrodlo: [pliki]
+
+terminy:
+  - en: THE SHOOTORIAL
+    pl: STRZELOUCZEK
+    formy: [strzeloucz]
+    zrodlo: decyzja
+    uwaga: Gra słów strzelanie + samouczek, odpowiada shoot + tutorial.
+  - en: slide
+    pl: wślizg
+    formy: [wślizg]
+    zrodlo: [pliki]
+  - en: critical hit
+    pl: trafienie krytyczne
+    formy: [krytycz]
+    zrodlo: decyzja
+  - en: execution
+    pl: egzekucja
+    formy: [egzekuc]
+    zrodlo: [pliki]
+  - en: milkshake
+    pl: koktajl
+    formy: [koktajl]
+    zrodlo: decyzja
+    uwaga: Naturalne, odmienne, krótkie; BunnyLord pije je w każdym omówieniu.
+  - en: BUNNYWAGON
+    pl: KRÓLIKOWÓZ
+    formy: [królikow]
+    zrodlo: decyzja
+  - en: BUNNYCOPTER
+    pl: KRÓLIKOPTER
+    formy: [królikopter]
+    zrodlo: decyzja
+  - en: BUNNYLORD FUN CLUB
+    pl: FUN KLUB BUNNYLORDA
+    formy: [fun klub]
+    zrodlo: decyzja
+    uwaga: Zachowuje grę słów fan club / fun club.
+  - en: DOOD
+    pl: MORDO
+    formy: [mordo]
+    zrodlo: decyzja
+    uwaga: Potoczne wołanie neutralne płciowo, pasuje do agentek.
+  - en: mayor
+    pl: burmistrz
+    formy: [burmistrz]
+    zrodlo: [pliki]
+  - en: GLOBAL MEGALORD
+    pl: MEGALORD ŚWIATA
+    formy: [megalord]
+    zrodlo: decyzja
+    uwaga: Grafika postępu wyborów ma 127 px — GLOBALNY MEGALORD się nie mieści; ta sama forma w dialogach.
+  - en: TRIAD YAKUZA
+    pl: TRIADA YAKUZA
+    formy: [triad]
+    zrodlo: decyzja
+    uwaga: Celowo pomieszane nazwy gangów — żart oryginału.
+  - en: TWEETSIES
+    pl: ĆWIERKACZ
+    formy: [ćwierkacz]
+    zrodlo: decyzja
+  - en: GET TO THE CHOPPA
+    pl: DO HELIKOPTERA
+    formy: [helikopter]
+    zrodlo: decyzja
+    uwaga: Utarty polski cytat z „Predatora”.
+  - en: payphone
+    pl: budka telefoniczna
+    formy: [budk]
+    zrodlo: decyzja
+  - en: powerup
+    pl: wzmocnienie
+    formy: [wzmocni]
+    zrodlo: decyzja
+  - en: kill streak
+    pl: seria zabójstw
+    formy: [seri]
+    zrodlo: decyzja
+  - en: briefing / debrief
+    pl: odprawa / omówienie
+    formy: [odpraw, omówieni]
+    zrodlo: decyzja
+
+bez_tlumaczenia: [BunnyLord, BUNNYLORD, Steve, Cletus, Samantha, Ronald, Clive, Mike, Jesus, Kimmy, Stanley, Vodkaville, Bredrin Park, Sushicentral, Upgraydd, Akemi, Unagi, Bogdan, Nabatov, RESET, NINJA, SUSHI, RASCLAT, BUMBACLAT, SAMMY, DALLAS, RASMUS, SOUTH WEDINSTONE, DOJO A GOGO, MANIPULATOR, MECHANOID, MEGA, SUPER, ULTRA, ROBOT, TERROR, WOMBAT, MMMMMMMMM]
+
+losowanie:
+  zasada: >-
+    Oficjalne FR/DE/IT/ES usunęły pule. Po polsku pule przymiotnikowe zamieniono na
+    przysłówki, bo przysłówek się nie odmienia: „JEST $AWESOME$”, „$TERRIBLE$ ZŁY WRÓG”,
+    „BĘDZIE $FUCKING$ $TERRIBLE$”. Pule rzeczowników i czasowników zastąpiono stałymi
+    słowami. Zostają znaczniki związane z obrazem lub grą, w mianowniku.
+  przyslowki: [FUCKING, ANFUCKING, AWESOME, ANAWESOME, TERRIBLE, ANTERRIBLE, MEDIOCRE, ANMEDIOCRE, DESCRIPTION, ANDESCRIPTION, ADJECTIVE, ANADJECTIVE]
+  orzecznik_mi: DISSAPOINTED — „JEST MI $DISSAPOINTED$” (SMUTNO, PRZYKRO…)
+  okolicznik: QUANTITIES — nieodmienne okoliczniki czasu
+  wykrzyknik: FUCK — tylko jako samodzielny wykrzyknik; INSULTS tylko po „CO ZA”
+  mianownik: [SUBJECTOBJECT, SCENEOBJECT, THESCENEOBJECT, NAME]
+  uwaga: $SUBJECTOBJECTS$ (angielski dopisuje S) zastąpiony $SUBJECTOBJECT$ w cudzysłowie.
+
+ustawienia:
+  dialog_klucz: '^Src/(talk|ENDS)\.ini\|\d'
+  max_wiersz: 170
+
+ignoruj:
+  - sprawdzenie: angielski
+    klucz: '\|(111111111|12121213430)\|5$|^Src/ENDS\.ini\|10\|8$'
+    powod: Kwestie z samych przysłówków z puli — tekst po polsku jest ten sam co po angielsku.
+  - sprawdzenie: spojnosc
+    klucz: '\|(AN)?(TERRIBLE|DESCRIPTION)\|'
+    powod: Różne pule mają osobne słowniki; DREADFUL w TERRIBLE i DESCRIPTION celowo różnią się synonimem.
+  - sprawdzenie: dlugosc
+    klucz: '\|VERBE?D?\|'
+    powod: Pule czasowników nie są używane w polskich zdaniach.
+  - sprawdzenie: tokeny
+    klucz: '^menu\|controller_detected$'
+    powod: Nawiasy klamrowe oznaczają biały kolor słów w grafice (tools/menus.py), nie tekst.
+  - sprawdzenie: terminy
+    klucz: '^exe\|0x305d34$'
+    powod: Etykieta klawisza w EXE ma 11 bajtów — WŚLIZG = BTN (12) się nie mieści, zostaje ŚLIZG.
+  - sprawdzenie: spojnosc
+    klucz: '^(menu\|(main|election|election_day)|exe\|0x303978|card\|\d+)$'
+    powod: Ten sam angielski napis w miejscach o różnej szerokości albo o postaci innej płci (SZYBKI/SZYBKA).

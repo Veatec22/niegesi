@@ -1,6 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import GameCard from './GameCard.astro';
+import Icon from './Icon.astro';
+import Faq from './Faq.astro';
 import Panel from './Panel.astro';
 import Search from './Search.astro';
 import { getGames, getStatuses, stats, type Game } from '../lib/games';
@@ -65,11 +67,22 @@ const Hero = active ? 'p' : 'h1';
       <div class="ng-grid">
         {games.map((game) => <GameCard game={game} />)}
       </div>
+      <nav class="ng-pager" data-pager aria-label="Strony listy gier" hidden>
+        <button type="button" class="ng-pager-button" data-pager-prev aria-label="Poprzednia strona">
+          <Icon name="chevron-left" size={18} />
+        </button>
+        <div class="ng-pager-pages" data-pager-pages></div>
+        <button type="button" class="ng-pager-button" data-pager-next aria-label="Następna strona">
+          <Icon name="chevron-right" size={18} />
+        </button>
+      </nav>
       <p class="ng-search-empty" data-search-empty hidden>
         Nic takiego tu nie ma — na razie. Jeśli ta gra nie ma polskiej wersji, może być następna.
       </p>
     </div>
   </section>
+
+  <Faq />
 
   <Panel games={games} active={active?.slug} />
 </Base>

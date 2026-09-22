@@ -1,0 +1,130 @@
+# Biblia tłumaczenia Neon Abyss — fakty ze źródłami. Format: .claude/skills/localization/BIBLE.md
+# Stan: pełne tłumaczenie 0.2.0 (2639/2639).
+
+zrodla:
+  - id: klucze
+    opis: "Klucze I2 w work/source.json, np. Dialogue1004_7_Secretary — mówiący na końcu klucza."
+  - id: ru
+    opis: "Rosyjska kolumna tej samej tabeli I2 (globalgamemanagers.assets, obiekt 3492) — płeć w czasie przeszłym."
+  - id: tekst
+    opis: "Angielski oryginał: zaimki he/she w opisach, kontekst kwestii."
+
+postacie:
+  - id: hades
+    nazwa: Hades
+    plec: m
+    klucz: '_Hades$'
+    mowi_do_gracza: ty
+    rejestr: "szef baru, skąpy cwaniak, narzeka na budżet"
+    zrodlo: [ru, tekst]
+    uwaga: "RU „Недавно я ездил”, „я все понял”."
+  - id: lans
+    nazwa: Lans (inwestor)
+    plec: m
+    klucz: '_Lans$'
+    mowi_do_gracza: '-'
+    rejestr: "apodyktyczny inwestor, mówi do Hadesa per ty"
+    zrodlo: [tekst]
+    uwaga: "Hades: „The stupid investor... What does he expect”, Sekretarka: „What does he want this time?”. RU nie rozstrzyga."
+  - id: sekretarka
+    nazwa: Sekretarka
+    plec: k
+    klucz: '_Secretary(_0\d)?$'
+    mowi_do_gracza: ty
+    rejestr: "korporacyjna służbistka, straszy obcinaniem pensji"
+    zrodlo: [ru, tekst]
+    uwaga: "RU „Должна сказать”, Hades: „Talk to her”. Gracz to „Pracownik nr 233”; bez czasu przeszłego o graczu."
+  - id: programista
+    nazwa: Programista (Sir Żarłocelot)
+    plec: m
+    klucz: '_[Pp]rogrammer$'
+    mowi_do_gracza: wy
+    rejestr: "niezdarny samochwała"
+    zrodlo: [ru, tekst]
+    uwaga: "RU „чуть не забыл”, zwraca się „вы”, „Hello strangers”."
+  - id: stylistka
+    nazwa: Stylistka
+    plec: k
+    klucz: '_Stylist$'
+    mowi_do_gracza: ty
+    zrodlo: [ru, tekst]
+    uwaga: "RU „я была графическим дизайнером”, Sekretarka: „she's good with computers”."
+  - id: barmanka
+    nazwa: Barmanka
+    plec: k
+    zrodlo: [tekst]
+  - id: gracz
+    nazwa: "gracz (Anna, Amir, James, Saya, Lucas, Matt, Ming, R-6, Wade, Zack)"
+    plec: '?'
+    uwaga: "Postacie obu płci — wszystko, co mówi się do gracza, jest bezrodzajowe (bez „zrobiłeś”, „gotowy”)."
+  - id: zwierzaki
+    nazwa: zwierzaki
+    plec: '?'
+    uwaga: "Oryginał daje he/she, a polska nazwa ma własny rodzaj (KAKTUSIK vs „she”) — opisy bez zaimków."
+
+terminy:
+  - {en: Abyss, pl: Otchłań, formy: [otchłan], zrodlo: decyzja, uwaga: "tytuł gry zostaje Neon Abyss"}
+  - {en: Cerberus Bar, pl: bar „Cerber”, formy: [cerber], zrodlo: decyzja}
+  - {en: faith gem, pl: klejnot wiary, formy: [klejnot], zrodlo: decyzja}
+  - {en: neon coin, pl: neonowa moneta, formy: [neonow], zrodlo: decyzja}
+  - {en: crystal, pl: kryształ, formy: [kryształ, krysztal], zrodlo: decyzja}
+  - {en: heart container, pl: pojemnik na serce, formy: [pojemnik], zrodlo: decyzja}
+  - {en: shield, pl: tarcza, formy: [tarcz], zrodlo: decyzja}
+  - {en: pet, pl: zwierzak, formy: [zwierzak], zrodlo: decyzja}
+  - {en: pickup, pl: znajdźka, formy: [znajdź], zrodlo: decyzja}
+  - {en: seed, pl: ziarno, formy: [ziarn], zrodlo: decyzja, uwaga: "jak w polskim Minecrafcie"}
+  - {en: cheat code, pl: kod, formy: [kod], zrodlo: decyzja}
+  - {en: Angry Sprite, pl: wściekły duszek, formy: [duszk, duszek], zrodlo: decyzja, uwaga: "RU „злые феи”; „duszek” krótszy od „wróżki” i bez rodzaju żeńskiego"}
+  - {en: Guardian Sprite, pl: duszek strażnik, formy: [duszk, duszek], zrodlo: decyzja}
+  - {en: Rage, pl: Furia, formy: [furi], zrodlo: decyzja}
+  - {en: Wisdom, pl: Mądrość, formy: [mądroś], zrodlo: decyzja}
+  - {en: Violence, pl: Przemoc, formy: [przemoc], zrodlo: decyzja}
+  - {en: Treasury, pl: Skarbiec, formy: [skarbc, skarbiec], zrodlo: decyzja}
+  - {en: Jump Mark, pl: znacznik skoku, formy: [znacznik], zrodlo: decyzja}
+  - {en: Manager, pl: menedżer, formy: [menedżer], zrodlo: decyzja, uwaga: "bossowie-zarządcy Otchłani"}
+  - {en: Titan Group, pl: Grupa Tytan, formy: [grup], zrodlo: decyzja}
+  - {en: New Gods, pl: Nowi Bogowie, formy: [now], zrodlo: decyzja}
+  - {en: Grim Squad, pl: Mroczny Oddział, formy: [mroczn], zrodlo: decyzja}
+  - {en: run, pl: podejście, formy: [podejś], zrodlo: decyzja}
+  - {en: dungeon, pl: loch, formy: [loch], zrodlo: decyzja}
+  - {en: '\[Active Item\]', pl: "[Przedmiot aktywny]", formy: [przedmiot aktywny], zrodlo: decyzja}
+  - {en: '\[Passive\]', pl: "[Pasywne]/[Aktywne]", formy: [pasywne], zrodlo: decyzja, uwaga: "działanie broni"}
+  - {en: Sir Eat-alot, pl: Sir Żarłocelot, formy: [żarłocelot], zrodlo: decyzja, uwaga: "gra słów z Lancelotem; RU ma podobną („Жралахад”)"}
+
+bez_tlumaczenia:
+  - Neon Abyss
+  - Chrono Trap
+  - Smirk Co.
+  - HAL
+  - Argus
+  - Mjolnir
+  - Silmaril
+  - Big Daddy
+  - Fin Funnel
+  - Black Friday
+  - Maneki-Neko
+  - League of Heroes
+  - Nintendo eShop
+  - Discord
+  - Twitter
+  - DLC
+  - BACK
+  - OPENDOOR
+  - Wade Tech
+  - Git gud
+  - Pay to win
+  - Mamba forever
+  - Rock and roll
+  - Another one bites the dust
+  - I Believe I Can Fly
+  - Sherlock
+  - OLA
+
+ustawienia:
+  dialog_klucz: '^Dialogue/'
+  max_wiersz: 60
+
+ignoruj:
+  - sprawdzenie: plec
+    klucz: 'Dialogue1019_0_Lans'
+    powod: "Lans jest mężczyzną (patrz postacie)."

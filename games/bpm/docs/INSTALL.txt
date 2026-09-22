@@ -13,7 +13,7 @@ miejscem na japonski - polski zajmuje wlasnie to miejsce i w menu nazywa sie
 DLACZEGO LATKA, A NIE GOTOWY PAK
 Pak niesie dwa kroje gry z dorysowanymi polskimi literami (MotorBlock i Runy
 Tunes) oraz plik podpisu, bez ktorego gra nie wczyta dodatkowego paka. To pliki
-wydawcy i autorow krojow, wiec ich nie rozpowszechniamy: NieGesiPatch.exe sklada
+wydawcy i autorow krojow, wiec ich nie rozpowszechniamy: BPM-PL-1.0.exe sklada
 je na Twoim dysku z plikow gry, ktore juz masz. Paczka niesie tylko nasze teksty
 i to, co dorysowalismy.
 
@@ -21,7 +21,7 @@ INSTALACJA (przy zamknietej grze)
 1. Wypakuj cala paczke do katalogu gry - tam, gdzie lezy BPMGame.exe
    (w GOG Galaxy: Wiecej -> Zarzadzaj instalacja -> Pokaz folder, potem
    WindowsNoEditor).
-2. Uruchom NieGesiPatch.exe dwuklikiem. Program sprawdzi pliki gry i utworzy
+2. Uruchom BPM-PL-1.0.exe dwuklikiem. Program sprawdzi pliki gry i utworzy
    w BPM\Content\Paks dwa pliki: BPM-PL_P.pak i BPM-PL_P.sig.
 
    Jesli wypakujesz paczke gdzie indziej, program zapyta o katalog gry.
@@ -31,7 +31,7 @@ INSTALACJA (przy zamknietej grze)
    Zatwierdz przez "Save & Apply".
 
 USUWANIE
-Uruchom NieGesiPatch.exe jeszcze raz i potwierdz przywrocenie - usunie oba pliki.
+Uruchom BPM-PL-1.0.exe jeszcze raz i potwierdz przywrocenie - usunie oba pliki.
 Mozna tez recznie skasowac BPM-PL_P.pak i BPM-PL_P.sig z BPM\Content\Paks.
 Przed usunieciem przelacz w grze jezyk na inny.
 

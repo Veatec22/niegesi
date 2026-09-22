@@ -11,13 +11,13 @@ wiec wysylamy tylko roznice: 78 KB. Reszte sklada sie z pliku, ktory juz masz
 na dysku. Wynik jest dokladnie taki sam, co do bajta.
 
 CO BEDZIE POTRZEBNE
-Nic. Latke naklada NieGesiPatch.exe z tej paczki: jeden maly program, bez
+Nic. Latke naklada Skate-Story-PL-0.3.exe z tej paczki: jeden maly program, bez
 instalacji, korzysta z .NET Framework wbudowanego w Windows. Kod zrodlowy
 lezy w repozytorium projektu (tools/applier/NieGesiPatch.cs).
 
 INSTALACJA (przy zamknietej grze)
 1. Wypakuj cala paczke do katalogu gry - tam, gdzie lezy plik .exe gry.
-2. Uruchom NieGesiPatch.exe dwuklikiem.
+2. Uruchom Skate-Story-PL-0.3.exe dwuklikiem.
 
    Program sprawdza sume kontrolna pliku SkateStory_Data
 esources.assets
@@ -31,7 +31,7 @@ esources.assets
 3. Uruchom gre i w ustawieniach wybierz jezyk polski.
 
 PRZYWRACANIE
-Uruchom NieGesiPatch.exe jeszcze raz. Gdy zobaczy wgrane spolszczenie, zapyta,
+Uruchom Skate-Story-PL-0.3.exe jeszcze raz. Gdy zobaczy wgrane spolszczenie, zapyta,
 czy przywrocic oryginal, i wgra odlozona kopie resources.assets.
 Mozna tez zweryfikowac pliki gry w GOG Galaxy albo w Steamie.
 

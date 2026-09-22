@@ -212,7 +212,7 @@ def main():
 
     # Paczki nie składa ten build: plik z kodem gry jest w całości cudzy, więc
     # graczowi wysyłamy samą różnicę. Robi to `tools/patch.py release`, opis
-    # polecenia w docs/technika.md.
+    # polecenia w docs/technical.md.
     print(json.dumps({'built': str(target), 'sha256': hashlib.sha256(bytes(out)).hexdigest(),
                       'translated': len(polish), 'rows': len(rows),
                       'borrowed_room': borrowed, 'patches': patches},

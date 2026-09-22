@@ -11,7 +11,7 @@ nakładanie odmawia pracy na innej wersji gry i nie da się po cichu zepsuć pli
 
 Dane binarne to lista operacji spakowana zwykłym DEFLATE (bez nagłówka zlib),
 który ma każde środowisko: .NET Framework, przeglądarka, Python. Dzięki temu
-łatkę nakłada `NieGesiPatch.exe` z paczki bez żadnej biblioteki. Po rozpakowaniu:
+łatkę nakłada aplikator z paczki (`<Nazwa>-PL-<wersja>.exe`) bez żadnej biblioteki. Po rozpakowaniu:
 
     0x01 <długość> <przesunięcie>   skopiuj bajty z oryginału
     0x02 <długość> <bajty>          wstaw nowe bajty
@@ -344,7 +344,8 @@ def applier() -> Path:
     """Aplikator .exe dla gracza; budowany z `tools/applier`, gdy go jeszcze nie ma."""
     exe = APPLIER / 'bin' / 'NieGesiPatch.exe'
     source = APPLIER / 'NieGesiPatch.cs'
-    if not exe.exists() or exe.stat().st_mtime < source.stat().st_mtime:
+    icon = APPLIER / 'icon.ico'
+    if not exe.exists() or exe.stat().st_mtime < max(source.stat().st_mtime, icon.stat().st_mtime):
         import subprocess
         subprocess.run([sys.executable, str(APPLIER / 'build.py')], check=True)
     return exe
@@ -373,7 +374,8 @@ def release(files: list[tuple], readme: Path, out_dir: Path,
     with zipfile.ZipFile(package, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
         for patch in patches:
             archive.write(patch, patch.name)
-        archive.write(exe, exe.name)
+        # Program w paczce nosi nazwę gry i wersję, żeby gracz wiedział, co uruchamia.
+        archive.write(exe, f'{name}-PL-{version}.exe')
         archive.write(readme, 'READ-ME.txt')
 
     with zipfile.ZipFile(package) as archive:

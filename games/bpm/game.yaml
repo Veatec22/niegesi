@@ -20,7 +20,7 @@ quote:
 download:
   kind: patch
   file: BPM-PL-1.0-latka.zip
-  bytes: 45573
+  bytes: 116101
 phase: full
 build_input:
   store: gog

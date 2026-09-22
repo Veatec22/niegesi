@@ -20,6 +20,6 @@ quote:
 download:
   kind: patch
   file: Boomerang-X-PL-1.1-latka.zip
-  bytes: 23129
+  bytes: 94488
 gallery: [1, 2, 3, 4, 5]
 test_notes: Próbka potwierdzona w grze. Pełne tłumaczenie zbudowane i odczytane z powrotem z pliku; test w grze czeka. Tabela gry ma jeden powtórzony klucz (difficulty_select_prompt), więc 359 z 360 wierszy.

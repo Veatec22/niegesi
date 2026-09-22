@@ -30,9 +30,12 @@ are built locally from an installed copy and kept in ignored output and backup f
 | [BPM: Bullets Per Minute](games/bpm/) | 859/859 entries: menus and settings, HUD, hints, latency test, items, trials, enemies, valkyries and credits | 1.0 | Overlay pak in the unused Japanese slot, renamed Polski; Polish letters added to two game fonts; delivered as creating patches built from the player's own paks; vertical confirmed, full playthrough pending |
 
 | [Somber Echoes](games/somber-echoes/) | 111/1507 extracted entries: menu, opening narration and selected tutorials | 0.1 vertical | Text-only overlay pak using English; built and installed, in-game test pending |
+| [Katana ZERO](games/katana-zero/) | 2851/2851 entries: menus and settings, startup screens, UI, target dossiers, all dialogue, TV news and credits | 0.2.0 | GameMaker YYC: Polish takes the Russian slot via a new exe section; Polish glyphs added to the sprite fonts in data.win with a second TPAG chunk; delivered as difference patches; vertical confirmed, full playthrough pending |
+
+| [NOT A HERO](games/not-a-hero/) | Technical investigation: external dialogue INIs, raster menu localization and embedded UI strings; text count pending | — | GOG / Chowdren; Polish glyph support and asset mapping unresolved, no build or in-game test |
 
 Each game's Polish README is a short player-facing description and installation guide.
-Technical findings belong in `docs/technika.md`; `game.yaml` records counts, release
+Technical findings belong in `docs/technical.md`; `game.yaml` records counts, release
 version, package type and test status, and also supplies the site in `site/`.
 
 ## Layout
@@ -41,7 +44,7 @@ version, package type and test status, and also supplies the site in `site/`.
 games/<slug>/
   README.md                       player-facing description, in Polish
   game.yaml                       metadata, coverage, package and test status
-  docs/technika.md                 technical findings and build instructions
+  docs/technical.md                 technical findings and build instructions
   docs/INSTALL.txt                player instructions, packaged as READ-ME.txt
   tools/build.py                  builds files and a release ZIP into dist/
   translations/pl.json            Polish translation source
@@ -54,7 +57,7 @@ folder layout and `READ-ME.txt`; loose output files alone are not a completed re
 
 Tools are generally local to each game because storage formats and patching methods vary.
 Shared conventions are documented in [AGENTS.md](AGENTS.md) and
-[docs/dodawanie-gry.md](docs/dodawanie-gry.md).
+[docs/adding-a-game.md](docs/adding-a-game.md).
 
 ## Building
 

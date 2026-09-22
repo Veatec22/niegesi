@@ -1,7 +1,7 @@
 """Build BPM's Polish overlay pak.
 
 Polish rides in the game's unused `ja` culture: the language list in C++ has a slot for
-Japanese but the game ships no Japanese text (docs/technika.md). The pak carries:
+Japanese but the game ships no Japanese text (docs/technical.md). The pak carries:
 
   BPM/Content/Localization/Game/ja/Game.locres   ours: English resource, Polish where translated
   BPM/Content/Fonts/MotorBlockFinalCyr.ufont       game font + 16 Polish letters (fonts_pl.py)
