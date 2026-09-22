@@ -21,4 +21,4 @@ download:
   kind: zip
   file: My-Friend-Pedro-PL-0.3.zip
   bytes: 661264
-keyart_shot: 1
+gallery: [1, 2, 3, 4, 5]

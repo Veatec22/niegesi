@@ -1,16 +1,23 @@
-"""Keyarty i metadane gier ze Steama.
+"""Okładki, galerie i metadane gier ze Steama.
 
-Dla każdej gry z `games/<gra>/game.yaml` szuka wpisu w sklepie Steam, pobiera
-zrzut ekranu i przycina go do 1600x900 (WebP + JPG) w `site/public/keyart/`.
-Przy okazji uzupełnia w game.yaml `steam_appid`, `year` i link do sklepu.
+Dla każdej gry z `games/<gra>/game.yaml` pobiera ze Steama kapsułę sklepu
+(grafika z logo, 616×353 albo 1232×706) i wybrane zrzuty ekranu, a potem zapisuje
+je w `site/public/keyart/<slug>/` jako AVIF z zapasowym WebP:
 
-    .venv\\Scripts\\python.exe tools\\keyart.py                 wszystkie gry
-    .venv\\Scripts\\python.exe tools\\keyart.py --game otxo     jedna gra
-    .venv\\Scripts\\python.exe tools\\keyart.py --game otxo --shot 3   inny zrzut
-    .venv\\Scripts\\python.exe tools\\keyart.py --list-shots otxo      podgląd listy
+    cover-<szer>.avif/.webp     okładka kafelka i pierwszy slajd panelu
+    shot-<n>-1600.avif/.webp    slajdy karuzeli w panelu, kadr 16:9
 
-Zrzuty i grafiki promocyjne należą do autorów gier — używamy ich jako ilustracji
-przy opisie spolszczenia, nie jako własnych materiałów.
+Które zrzuty trafią do galerii, mówi pole `gallery` w game.yaml (numery z
+`--list-shots`, w kolejności slajdów); bez niego bierze pierwsze pięć.
+Przy okazji uzupełnia w game.yaml `steam_appid`, `year`, `gallery` i link do sklepu.
+
+    .venv\\Scripts\\python.exe tools\\keyart.py --game otxo          jedna gra
+    .venv\\Scripts\\python.exe tools\\keyart.py --all                wszystkie gry
+    .venv\\Scripts\\python.exe tools\\keyart.py --list-shots otxo    podgląd zrzutów
+
+Grafiki trzymamy w repo, bez linkowania do serwerów Steama. Kapsuły i zrzuty
+to materiały promocyjne twórców — używamy ich jako ilustracji przy opisie
+spolszczenia, nie jako własnych materiałów.
 """
 
 from __future__ import annotations
@@ -19,8 +26,10 @@ import argparse
 import io
 import json
 import re
+import shutil
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -32,17 +41,39 @@ ROOT = Path(__file__).resolve().parent.parent
 GAMES = ROOT / 'games'
 KEYART = ROOT / 'site' / 'public' / 'keyart'
 
-WIDTH, HEIGHT = 1600, 900
+SHOT_WIDTH, SHOT_HEIGHT = 1600, 900
+COVER_RATIO = 616 / 353
+GALLERY_DEFAULT = 5
+# Jakość (AVIF, WebP) dobrana na oko na kilku grach. Okładka ma logo i drobny tekst,
+# więc dostaje więcej; zrzuty przy AVIF 40 tracą tylko najdrobniejszą fakturę, a ważą
+# 80–100 KB zamiast 150+. WebP to zapas dla starych przeglądarek, więc może być słabszy.
+COVER_QUALITY, SHOT_QUALITY = (55, 78), (40, 60)
+
 SEARCH = 'https://steamcommunity.com/actions/SearchApps/{}'
 DETAILS = 'https://store.steampowered.com/api/appdetails?appids={}&l=english'
 STORE = 'https://store.steampowered.com/app/{}/'
-USER_AGENT = 'niegesi-keyart/1.0 (+https://github.com/Veatec22/niegesi)'
+ASSETS = 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{}/'
+USER_AGENT = 'niegesi-keyart/2.0 (+https://github.com/Veatec22/niegesi)'
+# Bez tych ciasteczek strona sklepu części gier pokazuje bramkę wieku zamiast grafik.
+STORE_COOKIES = 'birthtime=0; wants_mature_content=1; lastagecheckage=1-0-1990'
 
 
-def fetch(url: str) -> bytes:
-    request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+def fetch(url: str, cookies: str | None = None) -> bytes:
+    headers = {'User-Agent': USER_AGENT}
+    if cookies:
+        headers['Cookie'] = cookies
+    request = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(request, timeout=30) as response:
         return response.read()
+
+
+def try_fetch(url: str) -> bytes | None:
+    try:
+        return fetch(url)
+    except urllib.error.HTTPError as error:
+        if error.code == 404:
+            return None
+        raise
 
 
 def normalise(name: str) -> str:
@@ -70,25 +101,63 @@ def app_details(appid: int) -> dict:
     return entry['data']
 
 
-def to_keyart(raw: bytes, slug: str) -> None:
-    """Kadr 16:9 ze środka, bez zniekształceń. Zrzuty są zwykle 1920x1080."""
-    image = Image.open(io.BytesIO(raw)).convert('RGB')
-    target = WIDTH / HEIGHT
+def capsule_urls(appid: int, details: dict) -> list[str]:
+    """Kandydaci na okładkę, od najlepszego.
+
+    Nowsze gry trzymają kapsułę pod ścieżką z hashem, której API nie podaje —
+    zna ją tylko strona sklepu. Starsze mają ją pod zwykłą ścieżką. Wersja `_2x`
+    istnieje nie wszędzie. Ostatni zapas to `header.jpg` (460×215, szerszy kadr).
+    """
+    base = ASSETS.format(appid)
+    found = [f'{base}capsule_616x353.jpg']
+    try:
+        page = fetch(STORE.format(appid), cookies=STORE_COOKIES).decode('utf-8', 'replace')
+        # Sklep podaje adresy z różnych CDN (akamai, fastly); bierzemy samą ścieżkę.
+        match = re.search(rf'/steam/apps/{appid}/([^"\s?]*?capsule_616x353\.jpg)', page)
+        if match and base + match.group(1) not in found:
+            found.insert(0, base + match.group(1))
+    except urllib.error.URLError:
+        pass
+
+    urls = []
+    for url in found:
+        urls += [url.replace('capsule_616x353.jpg', 'capsule_616x353_2x.jpg'), url]
+    return urls + [(details.get('header_image') or f'{base}header.jpg').split('?')[0]]
+
+
+def crop_to(image: Image.Image, ratio: float) -> Image.Image:
+    """Kadr o zadanych proporcjach ze środka, bez zniekształceń."""
     width, height = image.size
-
-    if width / height > target:
-        crop = int(height * target)
+    if width / height > ratio:
+        crop = round(height * ratio)
         left = (width - crop) // 2
-        image = image.crop((left, 0, left + crop, height))
-    else:
-        crop = int(width / target)
-        top = (height - crop) // 2
-        image = image.crop((0, top, width, top + crop))
+        return image.crop((left, 0, left + crop, height))
+    crop = round(width / ratio)
+    top = (height - crop) // 2
+    return image.crop((0, top, width, top + crop))
 
-    image = image.resize((WIDTH, HEIGHT), Image.LANCZOS)
-    KEYART.mkdir(parents=True, exist_ok=True)
-    image.save(KEYART / f'{slug}.webp', 'WEBP', quality=82, method=6)
-    image.save(KEYART / f'{slug}.jpg', 'JPEG', quality=86, optimize=True, progressive=True)
+
+def save(image: Image.Image, stem: Path, quality: tuple[int, int]) -> None:
+    image.save(stem.with_name(f'{stem.name}.avif'), 'AVIF', quality=quality[0], speed=4)
+    image.save(stem.with_name(f'{stem.name}.webp'), 'WEBP', quality=quality[1], method=6)
+
+
+def save_cover(raw: bytes, folder: Path) -> str:
+    """Kapsuła w natywnej szerokości, a z wersji 2× także wariant 616 px dla telefonów."""
+    image = Image.open(io.BytesIO(raw)).convert('RGB')
+    if abs(image.width / image.height - COVER_RATIO) > 0.02:
+        image = crop_to(image, COVER_RATIO)  # header.jpg jest szerszy niż kafelek
+
+    sizes = [616, 1232] if image.width >= 1232 else [min(image.width, 616)]
+    for size in sizes:
+        scaled = image.resize((size, round(size / COVER_RATIO)), Image.LANCZOS)
+        save(scaled, folder / f'cover-{size}', COVER_QUALITY)
+    return f'{image.width}×{image.height}'
+
+
+def save_shot(raw: bytes, folder: Path, number: int) -> None:
+    image = crop_to(Image.open(io.BytesIO(raw)).convert('RGB'), SHOT_WIDTH / SHOT_HEIGHT)
+    save(image.resize((SHOT_WIDTH, SHOT_HEIGHT), Image.LANCZOS), folder / f'shot-{number}-{SHOT_WIDTH}', SHOT_QUALITY)
 
 
 def set_scalar(text: str, key: str, value: str) -> str:
@@ -110,7 +179,7 @@ def set_store(text: str, url: str) -> str:
     return f'{text.rstrip()}\n{block}\n'
 
 
-def process(path: Path, shot: int | None, force: bool) -> None:
+def process(path: Path) -> None:
     text = path.read_text(encoding='utf-8')
     data = yaml.safe_load(text)
     slug = data['slug']
@@ -122,22 +191,35 @@ def process(path: Path, shot: int | None, force: bool) -> None:
 
     details = app_details(appid)
     screenshots = [item['path_full'] for item in details.get('screenshots', [])]
-    if not screenshots:
-        print(f'{slug}: appid {appid} nie ma zrzutów — potrzebny własny keyart')
-        return
+    gallery = data.get('gallery') or list(range(1, min(GALLERY_DEFAULT, len(screenshots)) + 1))
+    gallery = [number for number in gallery if 1 <= number <= len(screenshots)]
 
-    index = shot if shot is not None else int(data.get('keyart_shot') or 1)
-    index = max(1, min(index, len(screenshots)))
+    # Katalog powstaje obok i podmienia stary dopiero na końcu, żeby przerwane
+    # pobieranie nie zostawiło gry z połową galerii.
+    folder = KEYART / f'.{slug}.tmp'
+    shutil.rmtree(folder, ignore_errors=True)
+    folder.mkdir(parents=True)
 
-    has_art = (KEYART / f'{slug}.webp').exists()
-    if has_art and shot is None and not force:
-        print(f'{slug}: keyart już jest (appid {appid}) — pomijam, użyj --force')
-    else:
-        to_keyart(fetch(screenshots[index - 1]), slug)
-        print(f'{slug}: keyart ze zrzutu {index}/{len(screenshots)} (appid {appid})')
+    cover = '— brak, zostaje zastępczy kafelek'
+    for url in capsule_urls(appid, details):
+        raw = try_fetch(url)
+        if raw:
+            cover = f'{save_cover(raw, folder)} z {url.rsplit("/", 1)[-1]}'
+            break
+    for number in gallery:
+        save_shot(fetch(screenshots[number - 1]), folder, number)
+
+    target = KEYART / slug
+    shutil.rmtree(target, ignore_errors=True)
+    folder.rename(target)
+    for old in (KEYART / f'{slug}.webp', KEYART / f'{slug}.jpg'):
+        old.unlink(missing_ok=True)  # pliki sprzed okładek i galerii
+
+    size = sum(file.stat().st_size for file in target.iterdir()) / 1024
+    print(f'{slug}: okładka {cover}, galeria {gallery} z {len(screenshots)}, {size:.0f} KB (appid {appid})')
 
     text = set_scalar(text, 'steam_appid', str(appid))
-    text = set_scalar(text, 'keyart_shot', str(index))
+    text = set_scalar(text, 'gallery', '[' + ', '.join(map(str, gallery)) + ']')
     released = re.search(r'\b(19|20)\d{2}\b', (details.get('release_date') or {}).get('date', ''))
     if released:
         text = set_scalar(text, 'year', released.group(0))
@@ -157,10 +239,10 @@ def list_shots(path: Path) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--game', help='slug jednej gry; domyślnie wszystkie')
-    parser.add_argument('--shot', type=int, help='numer zrzutu użytego jako keyart')
-    parser.add_argument('--force', action='store_true', help='nadpisz istniejący keyart')
-    parser.add_argument('--list-shots', metavar='SLUG', help='wypisz dostępne zrzuty i zakończ')
+    target = parser.add_mutually_exclusive_group(required=True)
+    target.add_argument('--game', help='slug jednej gry')
+    target.add_argument('--all', action='store_true', help='odśwież wszystkie gry')
+    target.add_argument('--list-shots', metavar='SLUG', help='wypisz dostępne zrzuty i zakończ')
     args = parser.parse_args()
 
     if args.list_shots:
@@ -178,7 +260,7 @@ def main() -> int:
         if number:
             time.sleep(1)  # Steam nie lubi serii zapytań bez oddechu.
         try:
-            process(path, args.shot, args.force)
+            process(path)
         except Exception as error:  # jedna gra nie może wywrócić całej serii
             print(f'{path.parent.name}: {error}')
     return 0

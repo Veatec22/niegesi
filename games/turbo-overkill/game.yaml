@@ -23,5 +23,5 @@ build_input:
   store: gog
   build_id: '58328218944594138'
   unity: 2021.3.11f1
-keyart_shot: 1
+gallery: [1, 2, 3, 4, 5]
 year: 2023

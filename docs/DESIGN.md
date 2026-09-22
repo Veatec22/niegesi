@@ -158,7 +158,8 @@ nie element kompozycji.
 
 ### Kafelek gry
 
-Keyart na górze w proporcji 16:9, pod nim ramka 3 px oddzielająca opis,
+Okładka na górze w proporcji kapsuły sklepu Steam (616:353, grafika z logo gry,
+bez przycinania), pod nim ramka 3 px oddzielająca opis,
 w opisie tytuł, wiersz metadanych i przyklejony do dołu wiersz statusu.
 Wysokość opisu jest stała niezależnie od długości tytułu, więc dolne krawędzie
 kafelków w rzędzie się zgadzają — dwuwierszowy tytuł zjada odstęp,
@@ -182,7 +183,7 @@ panel nie zostawia po sobie wpisu, więc „Wstecz" po zamknięciu nie otwiera g
 ponownie. Wejście prosto z linku `/?gra=…` otwiera panel, a zamknięcie
 zamienia adres na stronę główną.
 
-Kolejność w panelu jest celowa: pasek keyartu, tytuł, status i metadane, cytat
+Kolejność w panelu jest celowa: karuzela grafik, tytuł, status i metadane, cytat
 z gry, krótki opis, przycisk pobierania, przyciski sklepów, tabela metadanych
 przyklejona do dołu. Cytat stoi przed opisem, bo to on pokazuje jakość
 przekładu — czyli to, po co ktoś tu przyszedł.
@@ -268,10 +269,17 @@ Ikony są wektorami rysowanymi obrysem, dziedziczą kolor tekstu i dostają
 
 ## 9. Zasoby
 
-Na grę potrzebny jest jeden keyart 1600 × 900 px, WebP z fallbackiem JPG,
-kadrowany tak, żeby istotny element nie siedział przy prawej krawędzi — tam
-w panelu wchodzi węższy wykrój. Wszystkie węższe warianty da się z tego
-przyciąć przez `object-fit: cover`.
+Grafiki gry robi `tools/keyart.py` ze Steama i trzyma w repo, w
+`site/public/keyart/<slug>/`: okładkę (kapsuła sklepu 616 × 353, a gdy Steam ma
+wersję 2×, także 1232 × 706) i 4–6 zrzutów 1600 × 900 wybranych polem `gallery`
+w `game.yaml`. Każdy plik jako AVIF z zapasowym WebP, bez JPG.
+
+Kafelek pokazuje samą okładkę — logo mówi, co to za gra, czego zrzut z bronią
+w korytarzu nie powie. Panel ma na górze karuzelę 16:9: okładka, potem zrzuty.
+Karuzela to pasek przewijany w poziomie z przyciąganiem do slajdu, bez biblioteki;
+skrypt dokłada kwadratowe strzałki 44 × 44 px w lewym i prawym dolnym rogu,
+kwadratowe znaczniki slajdów między nimi i obsługę ← / → na pasku. Bez JS zostaje
+zwykłe przewijanie palcem albo paskiem. Na kafelkach karuzeli nie ma.
 
 Trzy kroje ładowane z Google Fonts z podzbiorem `latin` i `latin-ext`,
 `display=swap`. Jeśli będziesz hostować lokalnie, wystarczą cztery pliki woff2:

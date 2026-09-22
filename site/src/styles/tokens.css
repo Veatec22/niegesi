@@ -75,7 +75,7 @@
   --ng-grid-gap: 28px;
   --ng-panel-width: min(800px, 92vw);  /* nakładka z prawej; na telefonie szuflada na całą szerokość */
   --ng-drawer-max-height: 88vh;
-  --ng-keyart-ratio: 16 / 9;
+  --ng-keyart-ratio: 616 / 353;  /* kapsuła sklepu Steam z logo — kafelek jej nie przycina */
 
   /* --- Ruch ------------------------------------------------------- */
   --ng-ease: cubic-bezier(0.2, 0, 0, 1);

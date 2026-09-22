@@ -19,4 +19,4 @@ phase: full
 tested_on:
   - store: steam
     version: "build 24334618"
-keyart_shot: 1
+gallery: [1, 2, 3, 4, 5]

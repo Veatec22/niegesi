@@ -40,9 +40,20 @@ const docs = await getCollection('gameDocs');
     // kolejny — „Wstecz" po zamknięciu nie otwiera panelu z powrotem.
     let pushed = false;
 
+    // Grafiki panelu mają loading="lazy", więc bez tego ruszają dopiero po otwarciu,
+    // a dalsze slajdy karuzeli dopiero przy przewijaniu. Przestawienie na eager każe
+    // przeglądarce pobrać je od razu — sama wybiera przy tym AVIF albo WebP z <picture>.
+    function warm(slug: string, count = Infinity) {
+      const body = bodies.find((body) => body.dataset.game === slug);
+      body?.querySelectorAll<HTMLImageElement>('.ng-carousel img[loading="lazy"]').forEach((img, index) => {
+        if (index < count) img.loading = 'eager';
+      });
+    }
+
     function open(slug: string, push: boolean) {
       const target = bodies.find((body) => body.dataset.game === slug);
       if (!target) return;
+      warm(slug);
 
       bodies.forEach((body) => (body.hidden = body !== target));
       cards.forEach((card) => card.setAttribute('aria-current', String(card.dataset.card === slug)));
@@ -92,6 +103,17 @@ const docs = await getCollection('gameDocs');
     }
 
     cards.forEach((card) => {
+      // Zamiar otwarcia: kursor zatrzymany na kafelku, fokus albo dotyk. Pierwsze dwa
+      // slajdy pobieramy zawczasu; przejechanie kursorem przez siatkę niczego nie rusza.
+      let intent: number | undefined;
+      const slug = card.dataset.card;
+      if (slug) {
+        card.addEventListener('pointerenter', () => (intent = window.setTimeout(() => warm(slug, 2), 80)));
+        card.addEventListener('pointerleave', () => window.clearTimeout(intent));
+        card.addEventListener('focus', () => warm(slug, 2));
+        card.addEventListener('touchstart', () => warm(slug, 2), { passive: true });
+      }
+
       card.addEventListener('click', (event) => {
         // Modyfikatory zostawiamy przeglądarce: nowa karta, nowe okno, zapis.
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;

@@ -35,7 +35,9 @@ Rozmawiamy po polsku.
    zostawia w `dist/` spakowany ZIP — wszystko do wypakowania w katalogu gry plus
    `READ-ME.txt` z instrukcją — a `games/<gra>/game.yaml` opisuje aktualny stan: wersję,
    liczbę wpisów, status testu w grze i rodzaj paczki. Luźne pliki w `dist/` bez archiwum
-   to niedokończona robota. Status spolszczenia (gotowe, wersja testowa, w trakcie)
+   to niedokończona robota. Do domknięcia należy też okładka i galeria na stronę:
+   `tools/keyart.py --game <gra>` (szczegóły w `docs/dodawanie-gry.md`) — gra bez nich
+   stoi na stronie jako zastępczy kafelek. Status spolszczenia (gotowe, wersja testowa, w trakcie)
    ustawia się w jednym miejscu, `games/catalog.yaml`: nowa gra trafia tam od razu
    na listę `w-trakcie`, a na `gotowe` przenosi ją dopiero użytkownik po pełnym ograniu. Zasady dotyczące zawartości paczki opisuje sekcja poniżej.
 

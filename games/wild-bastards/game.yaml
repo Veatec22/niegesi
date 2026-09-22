@@ -24,4 +24,4 @@ build_input:
   version: 1.0.0.26658
   unity: 2021.3.32f1
 year: 2024
-keyart_shot: 1
+gallery: [1, 2, 3, 4, 5]

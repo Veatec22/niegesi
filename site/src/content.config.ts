@@ -5,8 +5,7 @@ const slugFromPath = ({ entry }: { entry: string }) => entry.split('/')[0];
 
 /**
  * Metadane gry z game.yaml — tylko pola, których używa strona. Plik ma też pola dla
- * narzędzi (steam_appid, year, keyart_shot z tools/keyart.py, phase, test_notes);
- * schemat je pomija.
+ * narzędzi (steam_appid, year z tools/keyart.py, phase, test_notes); schemat je pomija.
  */
 const games = defineCollection({
   loader: glob({ pattern: '*/game.yaml', base: '../games', generateId: slugFromPath }),
@@ -23,6 +22,8 @@ const games = defineCollection({
     // albo z PlayerSettings.bundleVersion. Informacja dla gracza, nigdy warunek działania.
     tested_on: z.array(z.object({ store: z.string(), version: z.string() })).default([]),
     stores: z.record(z.string()).default({}),
+    // Numery zrzutów ze Steama w karuzeli panelu, w kolejności slajdów (tools/keyart.py).
+    gallery: z.array(z.number()).default([]),
     quote: z
       .object({ text: z.string().nullable().default(null), source: z.string().nullable().default(null) })
       .default({ text: null, source: null }),

@@ -59,3 +59,17 @@ do przeciągnięcia, nie skrypt.
 ## Po dodaniu
 
 Dopisz grę do tabeli w [README.md](../README.md) — zakres, wersja, status testów.
+
+Wygeneruj okładkę i galerię na stronę — bez tego kafelek zostaje zastępczą plamą:
+
+```powershell
+.venv\Scripts\python.exe tools\keyart.py --list-shots <slug>   # numery zrzutów ze Steama
+.venv\Scripts\python.exe tools\keyart.py --game <slug>
+```
+
+Skrypt bierze kapsułę sklepu Steam (grafika z logo) na kafelek i zrzuty do karuzeli
+w panelu, zapisuje je w `site/public/keyart/<slug>/` (AVIF + WebP) i uzupełnia
+w `game.yaml` `steam_appid`, `year`, link do sklepu oraz `gallery`. `gallery` to
+numery zrzutów w kolejności slajdów, 4–6 sztuk; domyślnie pierwsze pięć. Wybierz
+zrzuty, które pokazują grę, a nie pięć razy broń w korytarzu, popraw listę
+i uruchom skrypt jeszcze raz. Grafiki commitujesz razem z grą.
