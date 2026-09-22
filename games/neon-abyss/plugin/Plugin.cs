@@ -27,7 +27,7 @@ namespace NieGesi.NeonAbyss
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.neonabyss";
-        public const string Version = "0.2.2";
+        public const string Version = "0.2.3";
 
         internal const string LanguageName = "Polish";
         internal const string LanguageCode = "pl";
@@ -207,10 +207,10 @@ namespace NieGesi.NeonAbyss
             return true;
         }
 
-        // Każdy egzemplarz uszkodzonego atlasu naprawiamy, zanim trafi do tekstu.
-        private static void BeforeSetFont(object[] __args)
+        // Uszkodzony atlas gry podmieniamy na świeży, zanim trafi do tekstu.
+        private static void BeforeSetFont(ref TMP_FontAsset value)
         {
-            if (__args.Length > 0) Fonts.Repair(__args[0] as TMP_FontAsset);
+            value = Fonts.Substitute(value);
         }
 
         // --- Przełącznik języka w opcjach -----------------------------------------
@@ -312,8 +312,6 @@ namespace NieGesi.NeonAbyss
             if (installed) return;
             installed = true;
 
-            Repair(Resources.Load<TMP_FontAsset>(Folder + BrokenAtlas));
-            foreach (var loaded in Resources.FindObjectsOfTypeAll<TMP_FontAsset>()) Repair(loaded);
             AddFallback(Folder + "EN_70px_ModernBrush", Folder + "_TTF/ModernBrush-Regular");
             AddFallback(Folder + "EN_12px_PixAntiqua", Folder + "_TTF/Zpix");
 
@@ -326,34 +324,49 @@ namespace NieGesi.NeonAbyss
         }
 
         // Dynamiczny atlas CHT_12px_Zpix przychodzi z gry z listą wolnych miejsc, która
-        // nachodzi na 159 już narysowanych glifów (m.in. „i”). Każda dorysowana litera,
-        // np. „ą”, ląduje wtedy na cudzym glifie. Wyczyszczony atlas TMP odbudowuje
-        // na bieżąco z pliku Zpix — tego samego, z którego powstał.
-        //
-        // Gra ma kilka egzemplarzy tego atlasu: w Resources i w paczkach poziomów
-        // (rooms, roomshared). Dymki dialogów biorą kopię z paczki, więc naprawiamy
-        // każdy egzemplarz przy pierwszym przypięciu do tekstu (TMP_Text.font).
+        // nachodzi na 159 już narysowanych glifów (m.in. „i”). Każda dorysowana polska
+        // litera ląduje wtedy na cudzym glifie. Czyszczenie atlasu (ClearFontAssetData)
+        // w tej wersji TMP tego nie naprawiło, więc przy polskim podajemy tekstom świeży
+        // atlas z tego samego pliku Zpix i z tymi samymi ustawieniami: 12 px, raster
+        // z hintingiem, padding 5, shader Bitmap. Chiński dalej dostaje oryginał.
         internal const string BrokenAtlas = "CHT_12px_Zpix";
-        private static readonly HashSet<int> repaired = new HashSet<int>();
-        private static MethodInfo clear;
+        private static TMP_FontAsset fresh;
+        private static bool freshFailed;
 
-        internal static void Repair(TMP_FontAsset asset)
+        internal static TMP_FontAsset Substitute(TMP_FontAsset asset)
         {
-            if (asset == null || asset.name != BrokenAtlas || !repaired.Add(asset.GetInstanceID())) return;
+            if (asset == null || asset.name != BrokenAtlas || freshFailed) return asset;
+            if (LocalizationManager.CurrentLanguageCode != Plugin.LanguageCode) return asset;
+            if (fresh == null) fresh = CreateFresh(asset);
+            return fresh ?? asset;
+        }
+
+        private static TMP_FontAsset CreateFresh(TMP_FontAsset original)
+        {
             try
             {
-                if (clear == null) clear = AccessTools.Method(typeof(TMP_FontAsset), "ClearFontAssetData");
-                if (clear == null || asset.atlasPopulationMode != AtlasPopulationMode.Dynamic)
+                var font = Resources.Load<Font>(Folder + "_TTF/Zpix");
+                if (font == null) throw new Exception("brak Fonts & Materials/_TTF/Zpix");
+                var asset = TMP_FontAsset.CreateFontAsset(font, 12, 5,
+                    UnityEngine.TextCore.LowLevel.GlyphRenderMode.RASTER_HINTED, 1024, 1024,
+                    AtlasPopulationMode.Dynamic);
+                if (asset == null) throw new Exception("CreateFontAsset zwróciło null");
+                asset.name = BrokenAtlas + " (Nie gęsi)";
+                if (original.material != null && asset.material != null)
                 {
-                    Plugin.Log.LogWarning("Nie odbudowuję atlasu " + asset.name + " — inny niż oczekiwany.");
-                    return;
+                    var texture = asset.material.GetTexture(ShaderUtilities.ID_MainTex);
+                    asset.material.shader = original.material.shader;
+                    asset.material.SetTexture(ShaderUtilities.ID_MainTex, texture);
                 }
-                clear.Invoke(asset, clear.GetParameters().Length == 1 ? new object[] { false } : new object[0]);
-                Plugin.Log.LogInfo("Atlas " + asset.name + " (egzemplarz " + repaired.Count + ") wyczyszczony; glify zostaną narysowane od nowa.");
+                asset.fallbackFontAssetTable = original.fallbackFontAssetTable;
+                Plugin.Log.LogInfo("Polski mały tekst dostaje świeży atlas Zpix zamiast " + BrokenAtlas + ".");
+                return asset;
             }
             catch (Exception error)
             {
-                Plugin.Log.LogError("Nie udało się odbudować atlasu " + asset.name + ": " + error.Message);
+                freshFailed = true;
+                Plugin.Log.LogError("Nie udało się zbudować świeżego atlasu Zpix, zostaje " + BrokenAtlas + ": " + error.Message);
+                return null;
             }
         }
 

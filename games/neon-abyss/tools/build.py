@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
-VERSION = '0.2.2'
+VERSION = '0.2.3'
 PACKAGE = f'Neon-Abyss-PL-{VERSION}.zip'
 DATA = 'NeonAbyss_Data'
 PLUGIN_FOLDER = 'NieGesiNeonAbyss'
@@ -46,6 +46,7 @@ GAME_REFERENCES = [
     'UnityEngine.dll',
     'UnityEngine.CoreModule.dll',
     'UnityEngine.TextRenderingModule.dll',
+    'UnityEngine.TextCoreModule.dll',
     'UnityEngine.UI.dll',
     'Assembly-CSharp-firstpass.dll',
     'Unity.TextMeshPro.dll',

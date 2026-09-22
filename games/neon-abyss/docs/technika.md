@@ -68,15 +68,19 @@ z `_TTF/ModernBrush-Regular` (`TMP_FontAsset.CreateFontAsset`). PixAntiqua dosta
 zapasowy Zpix, a `TMP_Settings.fallbackFontAssets` — globalny Zpix na teksty z fontem
 ustawionym na sztywno. Wszystko z plików gry, paczka nie niesie fontów.
 
-**Uszkodzony atlas CHT_12px_Zpix (0.2.1).** W 0.2.0 litera „i” w dymkach dialogów
-wyświetlała się jako krzaczek. Przyczyna leży w grze: `m_FreeGlyphRects` tego atlasu nachodzi
-na 159 już narysowanych glifów (m.in. „i” w 593,612), więc każda dorysowana polska litera
-lądowała na cudzym glifie. Plugin woła teraz `ClearFontAssetData` na tym atlasie przed
-użyciem, a TMP rysuje glify od nowa z Zpix. Sprawdzone na danych atlasu z paczki `rooms`.
-W 0.2.1 czyszczony był tylko egzemplarz z Resources i „i” dalej było zepsute: dymki
-dialogów biorą kopię atlasu z paczek poziomów (I2 szuka fontu najpierw w odwołaniach
-komponentu). Od 0.2.2 plugin łata `TMP_Text.font` i czyści każdy egzemplarz
-`CHT_12px_Zpix` przy pierwszym przypięciu; log podaje numer egzemplarza.
+**Uszkodzony atlas CHT_12px_Zpix.** Litera „i” w dymkach dialogów wyświetlała się jako
+krzaczek. W wydanej grze atlas ma „i” narysowane poprawnie (593,612, 3×9), ale jego
+`m_FreeGlyphRects` nachodzi na 159 narysowanych glifów, w tym na „i”, więc litery
+dorysowywane w locie (ą, ę, ł…) lądują na cudzych glifach. Plik Zpix sam rysuje „i”
+dobrze (sprawdzone renderem 12 px). Próby naprawy:
+
+- 0.2.1: `ClearFontAssetData` na egzemplarzu z Resources — bez zmian w grze;
+- 0.2.2: to samo dla każdego egzemplarza przy `TMP_Text.font` — log pokazał jeden
+  egzemplarz, czyli dymki używają tego z Resources, a czyszczenie nie pomaga;
+- 0.2.3: prefiks na `TMP_Text.set_font` przy polskim podmienia `CHT_12px_Zpix` na świeży
+  atlas z `_TTF/Zpix` (`CreateFontAsset(font, 12, 5, RASTER_HINTED, 1024, 1024, Dynamic)`,
+  shader skopiowany z oryginału, czyli TextMeshPro/Bitmap). Chiński dostaje oryginał.
+  W logu: „Polski mały tekst dostaje świeży atlas Zpix”.
 
 Do sprawdzenia w grze: czy Zpix w małym tekście wygląda dobrze, czy litery
 z zapasowego ModernBrusha pasują wysokością do statycznego atlasu.
