@@ -1,0 +1,26 @@
+slug: somber-echoes
+title: Somber Echoes
+version: '0.2.0'
+entries: { done: 1507, total: 1507 }
+tested: czesciowy
+engine: Unreal Engine 5.4 (pak v11)
+approach: Nakładkowy pak z kulturą pl i rozszerzenie Lua/UE4SS dodające Polski do selektora języka; bez podmiany oryginalnych plików.
+scope: Całość — menu i ustawienia, samouczki, narracja i dialogi, dziennik, mapa, ekwipunek i ulepszenia, zadania, wyzwania i osiągnięcia.
+steam_appid: 1299290
+stores:
+  steam: https://store.steampowered.com/app/1299290/
+  gog: https://www.gog.com/en/game/somber_echoes
+phase: full
+build_input:
+  store: gog
+  build_id: '59160173690323092'
+tested_on:
+  - store: gog
+    version: "build 59160173690323092"
+test_notes: Vertical 0.1 potwierdzony w grze. Pełne tłumaczenie 0.2.0 z osobnym wyborem języka Polski sprawdzone wstępnie w grze; pełne przejście czeka.
+download:
+  kind: zip
+  file: Somber-Echoes-PL-0.2.0.zip
+  bytes: 8776895
+gallery: [1, 2, 3, 4, 5]
+year: 2025

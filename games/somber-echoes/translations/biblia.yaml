@@ -1,0 +1,254 @@
+etap: full
+zrodla:
+- id: gra
+  opis: Oryginalne Dialog, Journal, StringTables i Updated*.locres z GOG build 59160173690323092.
+- id: uzytkownik
+  opis: '2026-09-22: vertical idealny; polski musi być osobnym językiem, nie pod English.'
+postacie:
+- id: adrestia
+  nazwa: Adrestia
+  plec: k
+  zrodlo:
+  - gra
+  uwaga: Dialog/TheFracture1.1; bohaterka, siostra Harmonii.
+- id: harmonia
+  nazwa: Harmonia
+  plec: k
+  zrodlo:
+  - gra
+  uwaga: Dialog/TheFracture1.2; siostra Adrestii.
+- id: eter
+  nazwa: Eter
+  plec: m
+  zrodlo:
+  - gra
+  uwaga: Dialog/EnterAether1.1; Aether.
+- id: nyks
+  nazwa: Nyks
+  plec: k
+  zrodlo:
+  - gra
+  uwaga: Dialog/EnterNyx1.1; Nyx, bogini nocy.
+- id: hefajstos
+  nazwa: Hefajstos
+  plec: m
+  zrodlo:
+  - gra
+  uwaga: Dialog/HephaestusTraitorFull; Hephaestus, rzeźbiarz i kowal.
+- id: artemida
+  nazwa: Artemida
+  plec: k
+  zrodlo:
+  - gra
+  uwaga: Dialog/ArtemisMissing; Artemis, badaczka.
+- id: posejdon
+  nazwa: Posejdon
+  plec: m
+  zrodlo:
+  - gra
+  uwaga: Dialog/PoseidonSpooked; Poseidon, naukowiec.
+- id: ares
+  nazwa: Ares
+  plec: m
+  zrodlo:
+  - gra
+  uwaga: Dialog/AresDefeated1.2; dowódca straży.
+- id: antenor
+  nazwa: Antenor
+  plec: m
+  zrodlo:
+  - gra
+  uwaga: Dialog/AntenorDead1.1; ambicja, przemiana w cyklopa.
+terminy:
+- en: Aether
+  pl: Eter
+  formy:
+  - eter
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Nyx
+  pl: Nyks
+  formy:
+  - nyks
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Aether Lantern
+  pl: latarnia Eteru
+  formy:
+  - latar
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Nocturne
+  pl: Nokturn
+  formy:
+  - nokturn
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Fracture
+  pl: Rozłam
+  formy:
+  - rozłam
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Ashfall
+  pl: Popielisko
+  formy:
+  - popielisk
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Cesspit
+  pl: Ściekowisko
+  formy:
+  - ściekowisk
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: The Grove
+  pl: Gaj
+  formy:
+  - gaj
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Heavy Industries
+  pl: Sektor przemysłowy
+  formy:
+  - przemysłow
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Science Department
+  pl: Dział naukowy
+  formy:
+  - naukow
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Lower Residence
+  pl: Dolne kwatery
+  formy:
+  - doln
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Higher Residence
+  pl: Górne kwatery
+  formy:
+  - górn
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Underworld
+  pl: Zaświaty
+  formy:
+  - zaświat
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Sundering Spear
+  pl: Rozdzierająca włócznia
+  formy:
+  - rozdzierając
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Nocturnal Blast
+  pl: Nocny rozbłysk
+  formy:
+  - nocn
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Arbiter
+  pl: Arbiter
+  formy:
+  - arbit
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Gladius
+  pl: Gladius
+  formy:
+  - gladius
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Hover Boost
+  pl: Wzmocniony zawis
+  formy:
+  - zawis
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Hover
+  pl: Zawis
+  formy:
+  - zawis
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Supernova
+  pl: Supernowa
+  formy:
+  - supernow
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Lightstream
+  pl: Świetlny nurt
+  formy:
+  - świetln
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Centimanes
+  pl: Sturęcy
+  formy:
+  - sturę
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Stymphalian
+  pl: Ptak stymfalijski
+  formy:
+  - stymfalijsk
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+- en: Circe
+  pl: Kirke
+  formy:
+  - kirke
+  zrodlo: decyzja
+  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
+    gry.
+bez_tlumaczenia:
+- Adrestia
+- Harmonia
+- Atromitos
+- C.I.R.C.E.
+- Steam Deck
+- V-Sync
+- DLSS
+- FSR
+- XeSS
+- Klang
+- Adrestia Invicta
+- FPS
+- HDR
+ustawienia:
+  dialog_klucz: ^Dialog/
+  max_wiersz: 110
+decyzje:
+- Zachowano zaakceptowane 111 wpisów próbki.
+- Narrator podniosły, bez sztucznych rymów; dziennik w pierwszej osobie żeńskiej Adrestii.
+- C.I.R.C.E. pozostaje oznaczeniem systemu, Circe jako nazwa komory to Kirke.
+- Polski ma kod pl i osobną pozycję selektora; angielski nie jest zastępowany (użytkownik).
+- Granica 110 znaków raportu wynika z długości już zaakceptowanej próbki, nie gwarantuje
+  tempa odczytu wszystkich napisów.
