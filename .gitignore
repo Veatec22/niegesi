@@ -49,3 +49,7 @@ games/holy-shoot/work/
 
 # Neon Abyss: tabela I2 z gry (dziesięć języków) i build pluginu.
 games/neon-abyss/work/
+
+# BPM: klucz AES i pliki wyciągnięte z paków.
+games/bpm/work/
+games/somber-echoes/work/

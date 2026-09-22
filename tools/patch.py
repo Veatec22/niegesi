@@ -17,6 +17,12 @@ który ma każde środowisko: .NET Framework, przeglądarka, Python. Dzięki tem
     0x02 <długość> <bajty>          wstaw nowe bajty
     0x00                            koniec
 
+Format 3 dodaje dwa opcjonalne pola nagłówka. `sources` składa oryginał z wycinków
+plików gry (`ścieżka@przesunięcie+długość;…`), np. z fontu leżącego wewnątrz
+wielogigabajtowego paka — sumy liczymy wtedy z samego wycinka. `mode create` znaczy,
+że wynik to nowy plik (np. dodatkowy pak), a nie podmiana: nic nie jest odkładane,
+a przywrócenie oryginału to usunięcie tego pliku.
+
 Liczby to varinty LEB128. Przesunięcie jest liczone ze znakiem (zigzag) od końca
 poprzedniego kopiowania, więc przy pliku, który tylko się przesunął, wynosi zero.
 Implementacje nakładania: tutaj i `tools/applier/NieGesiPatch.cs` — zmiana formatu
@@ -41,6 +47,7 @@ from pathlib import Path
 
 MAGIC = 'NIEGESI-PATCH'
 FORMAT = '2'
+FORMAT_SOURCES = '3'
 END, COPY, ADD = 0, 1, 2
 
 # Oryginał indeksujemy w blokach tej długości. Krótsze dopasowania trafiają do
@@ -210,16 +217,40 @@ def run(source: bytes, ops: bytes, size: int) -> bytes:
     return bytes(out)
 
 
-def build(original: Path, built: Path, out: Path, game: str, relative: str) -> dict:
-    source, target = original.read_bytes(), built.read_bytes()
+def read_sources(game: Path, spec: str) -> bytes:
+    """Oryginał złożony z wycinków plików gry: `ścieżka@przesunięcie+długość;…`."""
+    out = bytearray()
+    for part in spec.split(';'):
+        relative, _, span = part.rpartition('@')
+        offset, _, length = span.partition('+')
+        with (game / relative).open('rb') as f:
+            f.seek(int(offset))
+            chunk = f.read(int(length))
+        assert len(chunk) == int(length), f'{relative} jest krótszy, niż zakłada łatka'
+        out += chunk
+    return bytes(out)
+
+
+def build(original: Path, built: Path, out: Path, game: str, relative: str,
+          sources: str | None = None, create: bool = False) -> dict:
+    """`sources` i `create` — patrz format 3 w opisie modułu. Przy `sources` parametr
+    `original` to katalog gry, z którego czytamy wycinki."""
+    source = read_sources(original, sources) if sources else original.read_bytes()
+    target = built.read_bytes()
     ops = diff(source, target)
     payload = deflate(ops)
 
+    extra = []
+    if sources:
+        extra.append(f'sources {sources}')
+    if create:
+        extra.append('mode create')
     header = '\n'.join([
         MAGIC,
-        f'format {FORMAT}',
+        f'format {FORMAT_SOURCES if extra else FORMAT}',
         f'game {game}',
         f'file {relative}',
+        *extra,
         f'source-sha256 {sha256(source)}',
         f'source-size {len(source)}',
         f'target-sha256 {sha256(target)}',
@@ -235,12 +266,28 @@ def build(original: Path, built: Path, out: Path, game: str, relative: str) -> d
     restored = run(source, inflate(payload), len(target))
     assert restored == target, 'łatka nie odtwarza pliku wynikowego'
 
+    added = added_bytes(inflate(payload))
     return {
         'patch': str(out),
         'patch_bytes': out.stat().st_size,
+        'added_bytes': added,
         'target_bytes': len(target),
         'share_of_file': round(out.stat().st_size / len(target) * 100, 3),
     }
+
+
+def added_bytes(ops: bytes) -> int:
+    """Ile bajtów łatka wnosi od siebie (operacje wstawienia), przed kompresją."""
+    total, at = 0, 0
+    while ops[at] != END:
+        op = ops[at]
+        length, at = read_varint(ops, at + 1)
+        if op == COPY:
+            _, at = read_varint(ops, at)
+        else:
+            total += length
+            at += length
+    return total
 
 
 def read_header(raw: bytes) -> tuple[dict, bytes]:
@@ -253,19 +300,22 @@ def read_header(raw: bytes) -> tuple[dict, bytes]:
     for line in lines[1:]:
         key, _, value = line.partition(' ')
         header[key] = value
-    assert header.get('format') == FORMAT, f'nieznana wersja formatu: {header.get("format")}'
+    assert header.get('format') in (FORMAT, FORMAT_SOURCES), f'nieznana wersja formatu: {header.get("format")}'
     return header, raw[split + 2:]
 
 
 def apply(game: Path, patch: Path, backup: Path | None) -> dict:
     header, payload = read_header(patch.read_bytes())
     target_file = game / header['file']
-    assert target_file.exists(), f'nie znalazłem {target_file}'
-
-    source = target_file.read_bytes()
-    digest = sha256(source)
-    if digest == header['target-sha256']:
+    create = header.get('mode') == 'create'
+    if target_file.exists() and sha256(target_file.read_bytes()) == header['target-sha256']:
         return {'status': 'juz zainstalowane', 'file': str(target_file)}
+    if 'sources' in header:
+        source = read_sources(game, header['sources'])
+    else:
+        assert target_file.exists(), f'nie znalazłem {target_file}'
+        source = target_file.read_bytes()
+    digest = sha256(source)
     assert digest == header['source-sha256'], (
         'Ten plik gry nie jest tym, pod który zrobiono łatkę.\n'
         f'  oczekiwano {header["source-sha256"]}\n'
@@ -277,7 +327,7 @@ def apply(game: Path, patch: Path, backup: Path | None) -> dict:
     restored = run(source, inflate(payload), int(header['target-size']))
     assert sha256(restored) == header['target-sha256'], 'odtworzony plik ma inną sumę kontrolną'
 
-    if backup is not None:
+    if backup is not None and not create:
         backup.parent.mkdir(parents=True, exist_ok=True)
         backup.write_bytes(source)
 
@@ -300,18 +350,22 @@ def applier() -> Path:
     return exe
 
 
-def release(files: list[tuple[Path, Path, str]], readme: Path, out_dir: Path,
+def release(files: list[tuple], readme: Path, out_dir: Path,
             game: str, name: str, version: str) -> dict:
     """Łatki plus paczka gotowa dla gracza — jedno polecenie na grę.
 
-    `files` to trójki (oryginał, wynik builda, ścieżka w katalogu gry). Każdy plik
-    dostaje własną łatkę; aplikator nakłada wszystkie łatki leżące obok niego.
+    `files` to trójki (oryginał, wynik builda, ścieżka w katalogu gry), opcjonalnie
+    z czwartym elementem: słownikiem argumentów `build` (`sources`, `create`). Każdy
+    plik dostaje własną łatkę; aplikator nakłada wszystkie łatki leżące obok niego.
     """
     patches, results = [], []
-    for original, built, relative in files:
-        suffix = '' if len(files) == 1 else '-' + Path(relative).stem
+    stems = [Path(item[2]).stem for item in files]
+    # Pliki o tym samym rdzeniu (np. .pak i .sig) rozróżnia rozszerzenie.
+    label = (lambda p: p.name.replace('.', '-')) if len(set(stems)) < len(stems) else (lambda p: p.stem)
+    for original, built, relative, *options in files:
+        suffix = '' if len(files) == 1 else '-' + label(Path(relative))
         patch = out_dir / f'{name}-PL-{version}{suffix}.patch'
-        results.append(build(original, built, patch, game, relative))
+        results.append(build(original, built, patch, game, relative, **(options[0] if options else {})))
         patches.append(patch)
     exe = applier()
 

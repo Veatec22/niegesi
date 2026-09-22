@@ -27,6 +27,9 @@ are built locally from an installed copy and kept in ignored output and backup f
 | [Wild Bastards](games/wild-bastards/) | 4426/4426 entries: menus, HUD, dialogue, tutorials and hints, outlaws with aces, stunts and weapons, items, planet traits, planet and sector map events, achievements | 0.2.0 | Polish added as an extra I2 language with its own menu button; dynamic font fallback from the game's TTFs; vertical confirmed, full playthrough pending |
 | [Holy Shoot](games/holy-shoot/) | 1286/1286 entries: menus and settings, tutorials, perks and upgrade tree, weapons, challenges, characters, intro and voice-line subtitles | 0.2.0 | Overlay pak with an empty IoStore companion plus UE4SS Lua patch adding Polski to the language selector; vertical confirmed, full playthrough pending |
 | [Neon Abyss](games/neon-abyss/) | 2639/2639 entries: menus, 600+ items, weapons, pets and sets, tips and lore, unlock tree, bosses, bar and office dialogue, seeds, cheat codes and achievements | 0.3.2 | BepInEx plugin adds Polish to I2 and to the hard-coded language switcher; Polish glyphs from the game's own fonts; vertical confirmed, full playthrough pending |
+| [BPM: Bullets Per Minute](games/bpm/) | 859/859 entries: menus and settings, HUD, hints, latency test, items, trials, enemies, valkyries and credits | 1.0 | Overlay pak in the unused Japanese slot, renamed Polski; Polish letters added to two game fonts; delivered as creating patches built from the player's own paks; vertical confirmed, full playthrough pending |
+
+| [Somber Echoes](games/somber-echoes/) | 111/1507 extracted entries: menu, opening narration and selected tutorials | 0.1 vertical | Text-only overlay pak using English; built and installed, in-game test pending |
 
 Each game's Polish README is a short player-facing description and installation guide.
 Technical findings belong in `docs/technika.md`; `game.yaml` records counts, release

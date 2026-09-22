@@ -2,6 +2,8 @@
 //
 // Nakłada łatkę formatu 2 z tools/patch.py: nagłówek tekstowy z sumami kontrolnymi,
 // potem lista operacji „skopiuj z oryginału" / „wstaw bajty" spakowana DEFLATE.
+// Format 3 dodaje „sources" (oryginał złożony z wycinków plików gry) i „mode create"
+// (wynik to nowy plik obok plików gry; przywrócenie oryginału = usunięcie go).
 // Wszystko z .NET Framework 4, który jest na każdym Windowsie od lat — żadnej biblioteki.
 //
 // Użycie:
@@ -23,6 +25,7 @@ static class NieGesiPatch
 {
     const string Magic = "NIEGESI-PATCH";
     const string Format = "2";
+    const string FormatSources = "3";
     const string BackupSuffix = ".przed-spolszczeniem";
 
     class Failure : Exception
@@ -75,6 +78,9 @@ static class NieGesiPatch
         public string Backup { get { return Target + BackupSuffix; } }
         public bool Installed;
         public string Source;   // skąd czytamy oryginał: sam plik gry albo odłożona kopia
+        public string GameDir;
+        public bool Create { get { string mode; return Header.TryGetValue("mode", out mode) && mode == "create"; } }
+        public string Sources { get { string value; return Header.TryGetValue("sources", out value) ? value : null; } }
     }
 
     static int Run(List<string> args)
@@ -92,7 +98,7 @@ static class NieGesiPatch
         }
 
         string gameDir = args.Count > 0 ? args[0] : here;
-        if (args.Count == 0 && !File.Exists(TargetIn(gameDir, jobs[0])))
+        if (args.Count == 0 && !File.Exists(AnchorIn(gameDir, jobs[0])))
         {
             Console.WriteLine("Nie widzę plików gry obok programu. Wskaż katalog gry.");
             gameDir = AskForFolder(jobs[0].Header["file"]);
@@ -100,8 +106,9 @@ static class NieGesiPatch
         foreach (Job job in jobs)
         {
             job.Target = TargetIn(gameDir, job);
-            if (!File.Exists(job.Target))
-                throw new Failure("Nie znalazłem pliku gry: " + job.Target +
+            job.GameDir = gameDir;
+            if (!File.Exists(AnchorIn(gameDir, job)))
+                throw new Failure("Nie znalazłem pliku gry: " + AnchorIn(gameDir, job) +
                                   "\nWypakuj paczkę do katalogu gry albo podaj go jako parametr.");
             Console.WriteLine("Łatka " + Path.GetFileName(job.PatchPath) + " -> " + job.Header["file"]);
         }
@@ -114,6 +121,15 @@ static class NieGesiPatch
         Console.WriteLine("Sprawdzam sumy kontrolne…");
         foreach (Job job in jobs)
         {
+            if (job.Sources != null)
+            {
+                job.Installed = File.Exists(job.Target) && Sha256(File.ReadAllBytes(job.Target)) == job.Header["target-sha256"];
+                if (!job.Installed && Sha256(ReadSources(job)) != job.Header["source-sha256"])
+                    throw new Failure("Pliki gry nie są tymi, pod które zrobiono łatkę " + job.Header["file"] + ".\n" +
+                                      "Spolszczenie sprawdzono na wersji gry podanej w READ-ME.txt; inna wersja\n" +
+                                      "albo wydanie z innego sklepu może mieć pliki ułożone inaczej.");
+                continue;
+            }
             string digest = Sha256(File.ReadAllBytes(job.Target));
             job.Installed = digest == job.Header["target-sha256"];
             job.Source = job.Target;
@@ -135,7 +151,7 @@ static class NieGesiPatch
         if (jobs.TrueForAll(delegate(Job job) { return job.Installed; }))
         {
             Console.WriteLine("Spolszczenie jest już wgrane.");
-            if (Console.IsInputRedirected || !jobs.TrueForAll(delegate(Job job) { return File.Exists(job.Backup); }))
+            if (Console.IsInputRedirected || !jobs.TrueForAll(delegate(Job job) { return job.Create || File.Exists(job.Backup); }))
                 return 0;
             Console.Write("Przywrócić oryginał gry? [t/N] ");
             string answer = (Console.ReadLine() ?? "").Trim().ToLowerInvariant();
@@ -147,9 +163,22 @@ static class NieGesiPatch
             if (job.Installed)
                 continue;
             Console.WriteLine("Nakładam łatkę na " + job.Header["file"] + "…");
-            byte[] result = Apply(File.ReadAllBytes(job.Source), Inflate(job.Payload), long.Parse(job.Header["target-size"]));
+            byte[] source = job.Sources != null ? ReadSources(job) : File.ReadAllBytes(job.Source);
+            byte[] result = Apply(source, Inflate(job.Payload), long.Parse(job.Header["target-size"]));
             if (Sha256(result) != job.Header["target-sha256"])
                 throw new Failure("Odtworzony plik " + job.Header["file"] + " ma inną sumę kontrolną niż powinien.");
+
+            if (job.Create)
+            {
+                // Nowy plik obok plików gry: nic nie odkładamy, starszą wersję po prostu zastępujemy.
+                string fresh = job.Target + ".niegesi-tmp";
+                File.WriteAllBytes(fresh, result);
+                if (File.Exists(job.Target))
+                    File.Delete(job.Target);
+                File.Move(fresh, job.Target);
+                Console.WriteLine("  utworzono: " + job.Target);
+                continue;
+            }
 
             // Najpierw kopia oryginału, potem zapis do pliku tymczasowego i dopiero podmiana —
             // przerwanie w połowie nie zostawia w grze uszkodzonego pliku.
@@ -176,6 +205,8 @@ static class NieGesiPatch
     {
         foreach (Job job in jobs)
         {
+            if (job.Create)
+                continue;
             if (!File.Exists(job.Backup))
                 throw new Failure("Nie ma kopii oryginału (" + job.Backup + ").\n" +
                                   "Zweryfikuj pliki gry w Steamie albo GOG Galaxy.");
@@ -184,11 +215,57 @@ static class NieGesiPatch
         }
         foreach (Job job in jobs)
         {
+            if (job.Create)
+            {
+                if (File.Exists(job.Target))
+                    File.Delete(job.Target);
+                continue;
+            }
             File.Copy(job.Backup, job.Target, true);
             File.Delete(job.Backup);
         }
         Console.WriteLine("Przywrócono oryginał.");
         return 0;
+    }
+
+    // Plik, po którym poznajemy katalog gry: pierwszy wycinek źródła albo sam plik gry.
+    static string AnchorIn(string gameDir, Job job)
+    {
+        if (job.Sources == null)
+            return TargetIn(gameDir, job);
+        string first = job.Sources.Split(';')[0];
+        return Path.Combine(gameDir, first.Substring(0, first.LastIndexOf('@')).Replace('/', Path.DirectorySeparatorChar));
+    }
+
+    // Oryginał złożony z wycinków plików gry: ścieżka@przesunięcie+długość;…
+    static byte[] ReadSources(Job job)
+    {
+        MemoryStream output = new MemoryStream();
+        foreach (string part in job.Sources.Split(';'))
+        {
+            int at = part.LastIndexOf('@');
+            string[] span = part.Substring(at + 1).Split('+');
+            long offset = long.Parse(span[0]);
+            int length = int.Parse(span[1]);
+            string path = Path.Combine(job.GameDir, part.Substring(0, at).Replace('/', Path.DirectorySeparatorChar));
+            using (FileStream file = File.OpenRead(path))
+            {
+                if (file.Length < offset + length)
+                    throw new Failure("Plik " + path + " jest krótszy, niż zakłada łatka.");
+                file.Seek(offset, SeekOrigin.Begin);
+                byte[] chunk = new byte[length];
+                int read = 0;
+                while (read < length)
+                {
+                    int got = file.Read(chunk, read, length - read);
+                    if (got == 0)
+                        throw new Failure("Nie da się odczytać " + path + ".");
+                    read += got;
+                }
+                output.Write(chunk, 0, length);
+            }
+        }
+        return output.ToArray();
     }
 
     static string[] FindPatches(string directory)
@@ -232,7 +309,7 @@ static class NieGesiPatch
                 header[lines[i].Substring(0, space)] = lines[i].Substring(space + 1);
         }
         string format;
-        if (!header.TryGetValue("format", out format) || format != Format)
+        if (!header.TryGetValue("format", out format) || (format != Format && format != FormatSources))
             throw new Failure("Nieznana wersja formatu łatki: " + format + ". Pobierz nowszy aplikator.");
 
         payload = new byte[raw.Length - split - 2];

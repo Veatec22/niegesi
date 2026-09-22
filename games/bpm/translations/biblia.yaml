@@ -1,0 +1,86 @@
+zrodla:
+  - id: gra
+    opis: Game.locres gry (en) i tabele innych języków z tej samej gry (de, fr, ru, es, it, pt) w work/ref-all.json.
+  - id: hades
+    opis: Oficjalne polskie wydanie Hadesa (Supergiant) — „Zryw” dla dash.
+  - id: overwatch
+    opis: Oficjalne polskie wydanie Overwatcha — „superumiejętność” dla ultimate.
+
+postacie:
+  - id: gracz
+    nazwa: gracz (walkiria)
+    plec: '?'
+    mowi_do_gracza: ty
+    rejestr: krótkie komendy w trybie rozkazującym, bez form osobowych w czasie przeszłym
+    zrodlo: [gra]
+    uwagi: >
+      Grywalne postacie mają różne płcie (GÖLL, SKULD — żeńskie wg ru/fr; FREYR, NJORD — męskie).
+      Dlatego żadnych form „zabity/zabita”: „killed by” = „zabójca:” jak w ru („убийца”).
+
+terminy:
+  - en: dash
+    pl: zryw
+    zrodlo: hades
+  - en: dodge
+    pl: unik
+    zrodlo: decyzja
+    uwagi: W grze dash i dodge to ten sam ruch; w podpowiedziach zostawiamy rozróżnienie oryginału.
+  - en: ultimate (ability)
+    pl: superumiejętność
+    zrodlo: overwatch
+  - en: secondary ability
+    pl: umiejętność dodatkowa
+    zrodlo: decyzja
+  - en: mobility ability
+    pl: umiejętność ruchu
+    zrodlo: decyzja
+  - en: run (roguelike)
+    pl: podejście
+    zrodlo: decyzja
+    uwagi: „New Run” = „Nowe podejście”; ru „забег”.
+  - en: streak / note streak
+    pl: seria / seria nut
+    zrodlo: decyzja
+  - en: juke
+    pl: zwód
+    zrodlo: decyzja
+  - en: armoury
+    pl: zbrojownia
+    zrodlo: decyzja
+  - en: the dish
+    pl: misa
+    zrodlo: decyzja
+    uwagi: de „Schale”.
+  - en: blessing
+    pl: błogosławieństwo
+    zrodlo: decyzja
+  - en: curse
+    pl: klątwa
+    zrodlo: decyzja
+  - en: rhythm window Loose / Strict
+    pl: Łagodne / Ścisłe (okno rytmu)
+    zrodlo: decyzja
+  - en: auto rhythm
+    pl: automatyczny rytm
+    zrodlo: decyzja
+  - en: difficulty Easy / Hard / Hellish / Practice
+    pl: ŁATWY / TRUDNY / PIEKIELNY / TRENING
+    zrodlo: decyzja
+
+bez_tlumaczenia:
+  - ASGARD
+  - SVARTALFHEIM
+  - VANAHEIM
+  - HELHEIM
+  - NIDHOGG
+  - HUGINN
+  - MUNINN
+  - HUD
+  - FPS
+  - VSync
+  - Gamma
+  - Alt
+  - Ctrl
+  - Shift
+  - Cmd
+  - L1

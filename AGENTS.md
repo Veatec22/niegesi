@@ -98,6 +98,10 @@ potrzebuje Pythona: paczka niesie `NieGesiPatch.exe` (`tools/applier/`, ~11 KB, 
 Framework z Windowsa). Format ma dwie implementacje — `patch.py` i aplikator; zmieniasz
 jedną, zmieniasz obie. `release` sam buduje aplikator i wkłada go do paczki.
 
+Format 3 pozwala łatce **utworzyć nowy plik** z wycinków plików gry (`sources`,
+`mode create`) — tak BPM składa dodatkowy pak z fontów leżących wewnątrz 3 GB paka
+gracza. Wzór: `games/bpm/tools/release.py`.
+
 **Paczka musi trafić na stronę.** Gotowy ZIP kopiujesz do `site/public/pobierz/`
 i wpisujesz w `game.yaml` (`download`). Strona pokazuje tylko paczki, które tam naprawdę leżą.
 
