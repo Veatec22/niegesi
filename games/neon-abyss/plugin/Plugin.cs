@@ -27,7 +27,7 @@ namespace NieGesi.NeonAbyss
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.neonabyss";
-        public const string Version = "0.2.3";
+        public const string Version = "0.2.4";
 
         internal const string LanguageName = "Polish";
         internal const string LanguageCode = "pl";
@@ -312,10 +312,12 @@ namespace NieGesi.NeonAbyss
             if (installed) return;
             installed = true;
 
-            AddFallback(Folder + "EN_70px_ModernBrush", Folder + "_TTF/ModernBrush-Regular");
-            AddFallback(Folder + "EN_12px_PixAntiqua", Folder + "_TTF/Zpix");
+            // Atlasy gry są rastrowe (shader Bitmap), więc zapasowe muszą być takie same:
+            // domyślny CreateFontAsset daje SDF, który Bitmap rysuje jako pusty kontur.
+            AddFallback(Folder + "EN_70px_ModernBrush", Folder + "_TTF/ModernBrush-Regular", 70, 2);
+            AddFallback(Folder + "EN_12px_PixAntiqua", Folder + "_TTF/Zpix", 12, 2);
 
-            var global = Create(Folder + "_TTF/Zpix");
+            var global = Create(Folder + "_TTF/Zpix", 12, 2, Resources.Load<TMP_FontAsset>(Folder + "EN_12px_PixAntiqua"));
             if (global != null && TMP_Settings.instance != null && TMP_Settings.fallbackFontAssets != null)
             {
                 TMP_Settings.fallbackFontAssets.Add(global);
@@ -370,12 +372,12 @@ namespace NieGesi.NeonAbyss
             }
         }
 
-        private static void AddFallback(string assetPath, string fontPath)
+        private static void AddFallback(string assetPath, string fontPath, int pointSize, int padding)
         {
             try
             {
                 var asset = Resources.Load<TMP_FontAsset>(assetPath);
-                var fallback = Create(fontPath);
+                var fallback = asset == null ? null : Create(fontPath, pointSize, padding, asset);
                 if (asset == null || fallback == null)
                 {
                     Plugin.Log.LogWarning("Brak " + (asset == null ? assetPath : fontPath) + " — polskie litery mogą się nie wyświetlić.");
@@ -383,7 +385,7 @@ namespace NieGesi.NeonAbyss
                 }
                 if (asset.fallbackFontAssetTable == null) asset.fallbackFontAssetTable = new List<TMP_FontAsset>();
                 asset.fallbackFontAssetTable.Insert(0, fallback);
-                Plugin.Log.LogInfo("Font " + asset.name + " dostał zapasowy atlas z " + fontPath + ".");
+                Plugin.Log.LogInfo("Font " + asset.name + " dostał zapasowy atlas z " + fontPath + " (" + pointSize + " pt, raster).");
             }
             catch (Exception error)
             {
@@ -391,12 +393,22 @@ namespace NieGesi.NeonAbyss
             }
         }
 
-        private static TMP_FontAsset Create(string fontPath)
+        // Dynamiczny atlas rastrowy z pliku TTF gry, z shaderem wziętym z atlasu wzorcowego.
+        private static TMP_FontAsset Create(string fontPath, int pointSize, int padding, TMP_FontAsset like)
         {
             var font = Resources.Load<Font>(fontPath);
             if (font == null) return null;
-            var asset = TMP_FontAsset.CreateFontAsset(font);
-            if (asset != null) asset.name = font.name + " (Nie gęsi)";
+            var asset = TMP_FontAsset.CreateFontAsset(font, pointSize, padding,
+                UnityEngine.TextCore.LowLevel.GlyphRenderMode.RASTER_HINTED, 1024, 1024,
+                AtlasPopulationMode.Dynamic);
+            if (asset == null) return null;
+            asset.name = font.name + " " + pointSize + " (Nie gęsi)";
+            if (like != null && like.material != null && asset.material != null)
+            {
+                var texture = asset.material.GetTexture(ShaderUtilities.ID_MainTex);
+                asset.material.shader = like.material.shader;
+                asset.material.SetTexture(ShaderUtilities.ID_MainTex, texture);
+            }
             return asset;
         }
     }

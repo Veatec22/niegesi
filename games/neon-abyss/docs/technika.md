@@ -82,6 +82,12 @@ dobrze (sprawdzone renderem 12 px). Próby naprawy:
   shader skopiowany z oryginału, czyli TextMeshPro/Bitmap). Chiński dostaje oryginał.
   W logu: „Polski mały tekst dostaje świeży atlas Zpix”.
 
+**Zapasowe atlasy muszą być rastrowe (0.2.4).** Wszystkie atlasy gry to raster z hintingiem
+i shader TextMeshPro/Bitmap (EN_70px_ModernBrush: 70 pt, padding 2; EN_12px_PixAntiqua:
+12 pt, padding 2). Domyślny `CreateFontAsset(font)` daje SDF 90 pt, który shader Bitmap
+rysuje jako cienki pusty kontur — tak wyglądały Ę, Ś, Ł w nagłówkach 0.2.0–0.2.3.
+Od 0.2.4 zapasowe atlasy powstają w tym samym trybie i rozmiarze co oryginał, z jego shaderem.
+
 Do sprawdzenia w grze: czy Zpix w małym tekście wygląda dobrze, czy litery
 z zapasowego ModernBrusha pasują wysokością do statycznego atlasu.
 
