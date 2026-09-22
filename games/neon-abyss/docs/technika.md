@@ -10,6 +10,12 @@ chiński uproszczony i tradycyjny, francuski, włoski, niemiecki, hiszpański, j
 i rosyjski. Polski ma dopiero Neon Abyss 2 (2235200) — łatwo to pomylić w wynikach
 wyszukiwania. Nie znalazłem dostępnej paczki fanowskiego spolszczenia.
 
+## DLC Chrono Trap
+
+Na GOG DLC to sam znacznik licencji (`goggame-1891558830.info`, ten sam `buildId`, hashdb
+178 B); pliki gry i tabela I2 po instalacji mają te same sumy. Teksty DLC (Chronos, tryb
+Chrono Trap, `Seed_endless_Desc`) są w tabeli bazowej i są przetłumaczone.
+
 ## Gra i silnik
 
 - GOG, wersja 1.5.0.0 (`PlayerSettings.bundleVersion` „1.5.0.0sRC”), Unity 2018.4.21f1, Mono x64.
@@ -61,6 +67,12 @@ Decyzja verticala: dla polskiego `UI/smallFont` = `CHT_12px_Zpix` (pikselowy, dy
 z `_TTF/ModernBrush-Regular` (`TMP_FontAsset.CreateFontAsset`). PixAntiqua dostaje
 zapasowy Zpix, a `TMP_Settings.fallbackFontAssets` — globalny Zpix na teksty z fontem
 ustawionym na sztywno. Wszystko z plików gry, paczka nie niesie fontów.
+
+**Uszkodzony atlas CHT_12px_Zpix (0.2.1).** W 0.2.0 litera „i” w dymkach dialogów
+wyświetlała się jako krzaczek. Przyczyna leży w grze: `m_FreeGlyphRects` tego atlasu nachodzi
+na 159 już narysowanych glifów (m.in. „i” w 593,612), więc każda dorysowana polska litera
+lądowała na cudzym glifie. Plugin woła teraz `ClearFontAssetData` na tym atlasie przed
+użyciem, a TMP rysuje glify od nowa z Zpix. Sprawdzone na danych atlasu z paczki `rooms`.
 
 Do sprawdzenia w grze: czy Zpix w małym tekście wygląda dobrze, czy litery
 z zapasowego ModernBrusha pasują wysokością do statycznego atlasu.

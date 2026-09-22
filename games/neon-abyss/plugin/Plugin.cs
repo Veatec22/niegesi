@@ -27,7 +27,7 @@ namespace NieGesi.NeonAbyss
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.neonabyss";
-        public const string Version = "0.2.0";
+        public const string Version = "0.2.1";
 
         internal const string LanguageName = "Polish";
         internal const string LanguageCode = "pl";
@@ -305,6 +305,7 @@ namespace NieGesi.NeonAbyss
             if (installed) return;
             installed = true;
 
+            RebuildAtlas(Folder + "CHT_12px_Zpix");
             AddFallback(Folder + "EN_70px_ModernBrush", Folder + "_TTF/ModernBrush-Regular");
             AddFallback(Folder + "EN_12px_PixAntiqua", Folder + "_TTF/Zpix");
 
@@ -313,6 +314,31 @@ namespace NieGesi.NeonAbyss
             {
                 TMP_Settings.fallbackFontAssets.Add(global);
                 Plugin.Log.LogInfo("Globalny zapasowy font: Zpix.");
+            }
+        }
+
+        // Dynamiczny atlas CHT_12px_Zpix przychodzi z gry z listą wolnych miejsc, która
+        // nachodzi na 159 już narysowanych glifów (m.in. „i”). Każda dorysowana litera,
+        // np. „ą”, ląduje wtedy na cudzym glifie. Wyczyszczony atlas TMP odbudowuje
+        // na bieżąco z pliku Zpix — tego samego, z którego powstał.
+        private static void RebuildAtlas(string assetPath)
+        {
+            try
+            {
+                var asset = Resources.Load<TMP_FontAsset>(assetPath);
+                var clear = AccessTools.Method(typeof(TMP_FontAsset), "ClearFontAssetData");
+                if (asset == null || clear == null || asset.atlasPopulationMode != AtlasPopulationMode.Dynamic)
+                {
+                    Plugin.Log.LogWarning("Nie odbudowuję atlasu " + assetPath + " — inny niż oczekiwany.");
+                    return;
+                }
+                var parameters = clear.GetParameters();
+                clear.Invoke(asset, parameters.Length == 1 ? new object[] { false } : new object[0]);
+                Plugin.Log.LogInfo("Atlas " + asset.name + " wyczyszczony; glify zostaną narysowane od nowa.");
+            }
+            catch (Exception error)
+            {
+                Plugin.Log.LogError("Nie udało się odbudować atlasu " + assetPath + ": " + error.Message);
             }
         }
 
