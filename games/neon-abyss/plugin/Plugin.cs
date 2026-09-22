@@ -27,7 +27,7 @@ namespace NieGesi.NeonAbyss
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.neonabyss";
-        public const string Version = "0.2.4";
+        public const string Version = "0.2.5";
 
         internal const string LanguageName = "Polish";
         internal const string LanguageCode = "pl";
@@ -360,6 +360,8 @@ namespace NieGesi.NeonAbyss
                     asset.material.shader = original.material.shader;
                     asset.material.SetTexture(ShaderUtilities.ID_MainTex, texture);
                 }
+                if (original.atlasTexture != null && asset.atlasTexture != null)
+                    asset.atlasTexture.filterMode = original.atlasTexture.filterMode;
                 asset.fallbackFontAssetTable = original.fallbackFontAssetTable;
                 Plugin.Log.LogInfo("Polski mały tekst dostaje świeży atlas Zpix zamiast " + BrokenAtlas + ".");
                 return asset;
@@ -409,6 +411,9 @@ namespace NieGesi.NeonAbyss
                 asset.material.shader = like.material.shader;
                 asset.material.SetTexture(ShaderUtilities.ID_MainTex, texture);
             }
+            // Atlasy gry mają filtr Point (piksel w piksel); domyślny dwuliniowy rozmywa litery.
+            if (like != null && like.atlasTexture != null && asset.atlasTexture != null)
+                asset.atlasTexture.filterMode = like.atlasTexture.filterMode;
             return asset;
         }
     }

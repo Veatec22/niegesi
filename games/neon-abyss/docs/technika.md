@@ -87,6 +87,11 @@ i shader TextMeshPro/Bitmap (EN_70px_ModernBrush: 70 pt, padding 2; EN_12px_PixA
 12 pt, padding 2). Domyślny `CreateFontAsset(font)` daje SDF 90 pt, który shader Bitmap
 rysuje jako cienki pusty kontur — tak wyglądały Ę, Ś, Ł w nagłówkach 0.2.0–0.2.3.
 Od 0.2.4 zapasowe atlasy powstają w tym samym trybie i rozmiarze co oryginał, z jego shaderem.
+W 0.2.4 litery wyszły rozmazane: tekstury atlasów gry mają filtr Point (EN_70px_ModernBrush
+Atlas 1024×512, Alpha8, filtr 0), a tekstura z `CreateFontAsset` — dwuliniowy. Od 0.2.5
+zapasowe atlasy kopiują filtr oryginału. Dorysowanie liter wprost do atlasu ModernBrush
+odpada: jest pełny (glify do y=510 z 512). Plik ModernBrush sam ma pełne, poprawne ą–ż
+(sprawdzone renderem 70 px).
 
 Do sprawdzenia w grze: czy Zpix w małym tekście wygląda dobrze, czy litery
 z zapasowego ModernBrusha pasują wysokością do statycznego atlasu.
