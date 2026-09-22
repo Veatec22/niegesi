@@ -42,5 +42,4 @@ w-trakcie:
   label: w trakcie
   description: Tłumaczenie jeszcze powstaje. Paczka pojawi się, kiedy będzie komplet tekstu.
   tone: accent
-  games:
-    somber-echoes: 2026-09-22
+  games: {}
