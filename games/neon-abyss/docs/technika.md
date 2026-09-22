@@ -82,16 +82,33 @@ dobrze (sprawdzone renderem 12 px). Próby naprawy:
   shader skopiowany z oryginału, czyli TextMeshPro/Bitmap). Chiński dostaje oryginał.
   W logu: „Polski mały tekst dostaje świeży atlas Zpix”.
 
-**Zapasowe atlasy muszą być rastrowe (0.2.4).** Wszystkie atlasy gry to raster z hintingiem
-i shader TextMeshPro/Bitmap (EN_70px_ModernBrush: 70 pt, padding 2; EN_12px_PixAntiqua:
-12 pt, padding 2). Domyślny `CreateFontAsset(font)` daje SDF 90 pt, który shader Bitmap
-rysuje jako cienki pusty kontur — tak wyglądały Ę, Ś, Ł w nagłówkach 0.2.0–0.2.3.
-Od 0.2.4 zapasowe atlasy powstają w tym samym trybie i rozmiarze co oryginał, z jego shaderem.
-W 0.2.4 litery wyszły rozmazane: tekstury atlasów gry mają filtr Point (EN_70px_ModernBrush
-Atlas 1024×512, Alpha8, filtr 0), a tekstura z `CreateFontAsset` — dwuliniowy. Od 0.2.5
-zapasowe atlasy kopiują filtr oryginału. Dorysowanie liter wprost do atlasu ModernBrush
-odpada: jest pełny (glify do y=510 z 512). Plik ModernBrush sam ma pełne, poprawne ą–ż
-(sprawdzone renderem 70 px).
+**Polskie litery w nagłówkach (ModernBrush) — droga do 0.3.1.** Wszystkie atlasy gry to
+raster z hintingiem, shader TextMeshPro/Bitmap i filtr Point (EN_70px_ModernBrush: 70 pt,
+padding 2, tekstura 1024×512 zapełniona do y=510, więc nie da się do niej dorysować).
+Plik ModernBrush ma pełne ą–ż (render 70 px). Kolejne próby i czego uczą:
+
+- 0.2.0–0.2.3: zapas z `CreateFontAsset(font)` = SDF 90 pt; Bitmap rysuje go jako pusty kontur;
+- 0.2.4–0.2.5: zapas rastrowy 70 pt, potem z filtrem Point — dalej zły krój;
+- 0.2.6–0.2.9: log pokazał, że `TMP_FontAsset.TryAddCharacters` na atlasach z `CreateFontAsset`
+  rzuca NullReferenceException przy `FontEngine.TryAddGlyphsToTexture` (IL 0x1e1), także po
+  uzupełnieniu pustych list. **Dorysowywanie w locie do atlasów tworzonych w tej wersji TMP
+  nie działa** — TMP po cichu bierze literę z kolejnego zapasu (globalny Zpix), stąd Zpix
+  w nagłówku. Silnik fontów sam w sobie działa (`LoadFontFace` Success, glify Ę/Ś/Ł są);
+- 0.3.0: zapasowy atlas statyczny złożony ręcznie — `CreateFontAsset(..., Static)`, a litery
+  „ĄĆĘŁŃÓŚŹŻąćęłńóśźż„”–—…” renderowane pojedynczo wewnętrznym
+  `FontEngine.TryAddGlyphToTexture` (refleksja) do własnej tekstury Alpha8, tabele glifów
+  i znaków wypełnione ręcznie. Log: wszystkie wyrenderowane; w grze nadal Zpix;
+- 0.3.1: zapasowe atlasy, ich tekstury i materiały dostają `HideFlags.DontUnloadUnusedAsset`,
+  a zapas jest doklejany przy każdym `TMP_Text.font` i `LoadFontAsset`. **Potwierdzone
+  w grze** („SZCZĘŚLIWA ZŁOTA MONETA” w całości ModernBrushem). Log pokazał po jednym
+  egzemplarzu atlasów gry, więc to nie przeładowanie atlasu gry — najpewniej
+  `UnloadUnusedAssets` zwalniał nasze obiekty tworzone w locie, a lista zapasów wskazywała
+  na zniszczony atlas. Ochrona przed zwolnieniem jest tu kluczowa;
+- 0.3.2: usunięta diagnostyka (próbne `TryAddCharacters` zaśmiecało log wyjątkami).
+
+Świeży atlas Zpix dla dymków i globalny zapasowy Zpix zostały dynamiczne (`CreateFontAsset`
++ uzupełnione listy + ochrona przed zwolnieniem); „i” i polskie litery w dymkach działają.
+Jeśli gdzieś w małym tekście wyjdzie obcy krój polskiej litery, przerobić je tak jak ModernBrush.
 
 Do sprawdzenia w grze: czy Zpix w małym tekście wygląda dobrze, czy litery
 z zapasowego ModernBrusha pasują wysokością do statycznego atlasu.
