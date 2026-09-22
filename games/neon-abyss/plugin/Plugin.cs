@@ -27,7 +27,7 @@ namespace NieGesi.NeonAbyss
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.neonabyss";
-        public const string Version = "0.2.1";
+        public const string Version = "0.2.2";
 
         internal const string LanguageName = "Polish";
         internal const string LanguageCode = "pl";
@@ -63,6 +63,7 @@ namespace NieGesi.NeonAbyss
             Patch(harmony, gamePlay, "LanguageReverseMapping", "MapLabel", null);
             Patch(harmony, gamePlay, "LanguageMapping", "MapLabel", null);
             Patch(harmony, settings, "InitWithLanguge", "InitSwitcher", null);
+            Patch(harmony, typeof(TMP_Text), "set_font", "BeforeSetFont", null);
         }
 
         private void Patch(Harmony harmony, Type type, string method, string prefix, string postfix)
@@ -206,6 +207,12 @@ namespace NieGesi.NeonAbyss
             return true;
         }
 
+        // Każdy egzemplarz uszkodzonego atlasu naprawiamy, zanim trafi do tekstu.
+        private static void BeforeSetFont(object[] __args)
+        {
+            if (__args.Length > 0) Fonts.Repair(__args[0] as TMP_FontAsset);
+        }
+
         // --- Przełącznik języka w opcjach -----------------------------------------
         //
         // Gra trzyma w ustawieniach nazwę języka I2, a w menu pokazuje podpisy
@@ -305,7 +312,8 @@ namespace NieGesi.NeonAbyss
             if (installed) return;
             installed = true;
 
-            RebuildAtlas(Folder + "CHT_12px_Zpix");
+            Repair(Resources.Load<TMP_FontAsset>(Folder + BrokenAtlas));
+            foreach (var loaded in Resources.FindObjectsOfTypeAll<TMP_FontAsset>()) Repair(loaded);
             AddFallback(Folder + "EN_70px_ModernBrush", Folder + "_TTF/ModernBrush-Regular");
             AddFallback(Folder + "EN_12px_PixAntiqua", Folder + "_TTF/Zpix");
 
@@ -321,24 +329,31 @@ namespace NieGesi.NeonAbyss
         // nachodzi na 159 już narysowanych glifów (m.in. „i”). Każda dorysowana litera,
         // np. „ą”, ląduje wtedy na cudzym glifie. Wyczyszczony atlas TMP odbudowuje
         // na bieżąco z pliku Zpix — tego samego, z którego powstał.
-        private static void RebuildAtlas(string assetPath)
+        //
+        // Gra ma kilka egzemplarzy tego atlasu: w Resources i w paczkach poziomów
+        // (rooms, roomshared). Dymki dialogów biorą kopię z paczki, więc naprawiamy
+        // każdy egzemplarz przy pierwszym przypięciu do tekstu (TMP_Text.font).
+        internal const string BrokenAtlas = "CHT_12px_Zpix";
+        private static readonly HashSet<int> repaired = new HashSet<int>();
+        private static MethodInfo clear;
+
+        internal static void Repair(TMP_FontAsset asset)
         {
+            if (asset == null || asset.name != BrokenAtlas || !repaired.Add(asset.GetInstanceID())) return;
             try
             {
-                var asset = Resources.Load<TMP_FontAsset>(assetPath);
-                var clear = AccessTools.Method(typeof(TMP_FontAsset), "ClearFontAssetData");
-                if (asset == null || clear == null || asset.atlasPopulationMode != AtlasPopulationMode.Dynamic)
+                if (clear == null) clear = AccessTools.Method(typeof(TMP_FontAsset), "ClearFontAssetData");
+                if (clear == null || asset.atlasPopulationMode != AtlasPopulationMode.Dynamic)
                 {
-                    Plugin.Log.LogWarning("Nie odbudowuję atlasu " + assetPath + " — inny niż oczekiwany.");
+                    Plugin.Log.LogWarning("Nie odbudowuję atlasu " + asset.name + " — inny niż oczekiwany.");
                     return;
                 }
-                var parameters = clear.GetParameters();
-                clear.Invoke(asset, parameters.Length == 1 ? new object[] { false } : new object[0]);
-                Plugin.Log.LogInfo("Atlas " + asset.name + " wyczyszczony; glify zostaną narysowane od nowa.");
+                clear.Invoke(asset, clear.GetParameters().Length == 1 ? new object[] { false } : new object[0]);
+                Plugin.Log.LogInfo("Atlas " + asset.name + " (egzemplarz " + repaired.Count + ") wyczyszczony; glify zostaną narysowane od nowa.");
             }
             catch (Exception error)
             {
-                Plugin.Log.LogError("Nie udało się odbudować atlasu " + assetPath + ": " + error.Message);
+                Plugin.Log.LogError("Nie udało się odbudować atlasu " + asset.name + ": " + error.Message);
             }
         }
 

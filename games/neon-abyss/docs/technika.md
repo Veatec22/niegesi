@@ -73,6 +73,10 @@ wyświetlała się jako krzaczek. Przyczyna leży w grze: `m_FreeGlyphRects` teg
 na 159 już narysowanych glifów (m.in. „i” w 593,612), więc każda dorysowana polska litera
 lądowała na cudzym glifie. Plugin woła teraz `ClearFontAssetData` na tym atlasie przed
 użyciem, a TMP rysuje glify od nowa z Zpix. Sprawdzone na danych atlasu z paczki `rooms`.
+W 0.2.1 czyszczony był tylko egzemplarz z Resources i „i” dalej było zepsute: dymki
+dialogów biorą kopię atlasu z paczek poziomów (I2 szuka fontu najpierw w odwołaniach
+komponentu). Od 0.2.2 plugin łata `TMP_Text.font` i czyści każdy egzemplarz
+`CHT_12px_Zpix` przy pierwszym przypięciu; log podaje numer egzemplarza.
 
 Do sprawdzenia w grze: czy Zpix w małym tekście wygląda dobrze, czy litery
 z zapasowego ModernBrusha pasują wysokością do statycznego atlasu.

@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
-VERSION = '0.2.1'
+VERSION = '0.2.2'
 PACKAGE = f'Neon-Abyss-PL-{VERSION}.zip'
 DATA = 'NeonAbyss_Data'
 PLUGIN_FOLDER = 'NieGesiNeonAbyss'
