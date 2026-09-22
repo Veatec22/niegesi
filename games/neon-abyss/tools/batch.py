@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PL = ROOT / 'translations/pl.json'
 REVIEW = ROOT / 'translations/en-pl-review.json'
-TOKEN = re.compile(r'\{[^}]*\}|<[^>]*>|\[i2s_[^\]]*\]')
+TOKEN = re.compile(r'\{[^}]*\}|</?[a-z]+(?:=[^>]*)?>|\[i2s_[^\]]*\]')
 RESOURCE = re.compile(r'^(Fonts & Materials/.*|[a-z0-9]+(_[a-z0-9]+)+|-+|\.+|\?+|v\{\[Version\]\})$')
 
 

@@ -27,7 +27,7 @@ namespace NieGesi.NeonAbyss
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.neonabyss";
-        public const string Version = "0.1.0";
+        public const string Version = "0.2.0";
 
         internal const string LanguageName = "Polish";
         internal const string LanguageCode = "pl";

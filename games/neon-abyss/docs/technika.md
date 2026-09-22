@@ -83,10 +83,19 @@ z kolumny angielskiej.
 
 ## Stan testów
 
-- 2026-09-22: vertical 0.1.0 (84 wpisy) zbudowany i wypakowany do `C:\Games\Neon Abyss`
-  (tylko nowe pliki: BepInEx, winhttp.dll, doorstop, READ-ME.txt). **Test w grze czeka
-  na użytkownika.** Usunięcie: folder `BepInEx`, `winhttp.dll`, `doorstop_config.ini`,
-  `.doorstop_version`, `READ-ME.txt`, `BepInEx-LICENSE.txt`.
+- 2026-09-22: vertical 0.1.0 (84 wpisy) **potwierdzony w grze** przez użytkownika:
+  POLSKI w opcjach, polskie litery, gra sama wybrała polski z języka systemu.
+- 2026-09-22: pełne tłumaczenie 0.2.0 (2639/2639) zbudowane i zainstalowane
+  w `C:\Games\Neon Abyss` (podmienione tylko pliki pluginu i READ-ME). Pełne przejście
+  czeka. Co sprawdzić: [decyzje-tlumaczenia.md](decyzje-tlumaczenia.md), „Mniej pewne”.
+- Usunięcie: folder `BepInEx`, `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`,
+  `READ-ME.txt`, `BepInEx-LICENSE.txt`.
+
+## Tłumaczenie
+
+`translations/pl.json` to źródło (tylko przetłumaczone klucze), `en-pl-review.json`
+generuje `tools/batch.py` (`show`, `put`, `from-review`, `stats`). Partie robocze leżą
+w `work/batches/` (poza Gitem). Raport: `.claude/skills/lokalizacja/scripts/l10n_report.py`.
 
 ## Materiał gry
 

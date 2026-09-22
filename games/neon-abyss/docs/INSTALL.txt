@@ -1,8 +1,10 @@
-NEON ABYSS PL 0.1.0 — WERSJA TESTOWA (VERTICAL)
+NEON ABYSS PL 0.2.0 — PEŁNE TŁUMACZENIE
 
-Próbka tłumaczenia: menu główne, opcje, zapisy, wybór poziomu trudności,
-kilka opisów postaci, samouczków, przedmiotów i pierwsza rozmowa w barze.
-Reszta gry zostaje po angielsku, dopóki nie powstanie pełne tłumaczenie.
+2639/2639 tekstów: menu i opcje, wszystkie przedmioty, bronie, zwierzaki i zestawy,
+wskazówki i tło fabularne, drzewko odblokowań, bossowie, dialogi w barze i biurze,
+ziarna, kody, osiągnięcia w grze i ekran śmierci.
+Nie obejmuje tekstów na grafikach (logo, ikony poziomów trudności, napis
+ekranu śmierci) ani osiągnięć wyświetlanych przez GOG Galaxy i Steam.
 
 Spolszczenie działa jako plugin BepInEx: dokłada język Polski w czasie działania
 gry. Żaden plik gry nie jest zmieniany ani podmieniany. Pozostałe języki zostają.
@@ -13,7 +15,7 @@ INSTALACJA (przy zamkniętej grze)
    Steam: Zarządzaj → Przeglądaj pliki lokalne.
 2. Uruchom grę. Pierwsze uruchomienie potrwa chwilę dłużej niż zwykle.
 3. Wejdź w OPTIONS → GAMEPLAY → LANGUAGE i wybierz POLSKI.
-   Na Windowsie po polsku gra może od razu wystartować po polsku.
+   Na Windowsie po polsku gra sama wystartuje po polsku.
 
 CO JEST W PACZCE
 - winhttp.dll, doorstop_config.ini, .doorstop_version, BepInEx/core — BepInEx 5.4.23.5
@@ -22,8 +24,9 @@ CO JEST W PACZCE
 Polskie litery rysują fonty, które gra ma w swoich plikach (Zpix, ModernBrush).
 
 USUNIĘCIE
-Skasuj z katalogu gry folder BepInEx oraz pliki winhttp.dll, doorstop_config.ini
-i .doorstop_version. Gra wróci do stanu sprzed instalacji; zapisy zostają nietknięte.
+Skasuj z katalogu gry folder BepInEx oraz pliki winhttp.dll, doorstop_config.ini,
+.doorstop_version, READ-ME.txt i BepInEx-LICENSE.txt. Gra wróci do stanu sprzed
+instalacji; zapisy zostają nietknięte.
 
 ZGODNOŚĆ
 Sprawdzone na: GOG, wersja 1.5.0.0 (Unity 2018.4.21). Plugin nie sprawdza wersji gry.
