@@ -22,7 +22,7 @@ namespace NieGesi.VoidBastards
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.voidbastards";
-        public const string Version = "0.2.0";
+        public const string Version = "0.2.1";
 
         // Nazwa języka jest też kluczem podpisu w menu: „Language/Polish”.
         internal const string LanguageName = "Polish";
@@ -80,10 +80,12 @@ namespace NieGesi.VoidBastards
             }
             foreach (var line in File.ReadAllText(path, Encoding.UTF8).Split('\n'))
             {
-                if (line.Length == 0) continue;
-                var tab = line.IndexOf('\t');
+                // Plik z końcami CRLF zostawiłby \r w tekście, a TextMeshPro cofa po nim pióro.
+                var entry = line.TrimEnd('\r');
+                if (entry.Length == 0) continue;
+                var tab = entry.IndexOf('\t');
                 if (tab <= 0) continue;
-                terms[line.Substring(0, tab)] = line.Substring(tab + 1).Replace("\\n", "\n");
+                terms[entry.Substring(0, tab)] = entry.Substring(tab + 1).Replace("\\n", "\n");
             }
             return terms;
         }

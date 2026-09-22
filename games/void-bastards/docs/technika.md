@@ -114,6 +114,19 @@ zgłoszeniami długości do obejrzenia w grze).
 
 Plugin 0.2.0 = 0.1.2 bez zmian w kodzie; `PolishGlyphs.cs` składa też „ z ” (0.1.2).
 
+## Poprawka 0.2.1 — nakładające się napisy
+
+Test 0.2.0: podpowiedzi „Naciśnij Tab, aby otworzyć mapę”, „Naciśnij C, aby kucnąć”,
+dymek „wezwij dostawę: 5 Jedzenie” i nazwa statku w HUD rysowały się jako dwie warstwy
+na jednej wysokości. Diagnostyka układu TextMeshPro (pozycje znaków w logu) pokazała
+U+000D na końcu każdego polskiego tekstu. TMP po `\r` cofa pióro na początek linii bez
+przejścia niżej, więc tekst doklejony przez grę (nazwa klawisza w miejsce `KEY`,
+„: 5 Jedzenie” po „wezwij dostawę”) nachodził na początek.
+
+Źródło: `build_plugin.py` pisał `pl.tsv` przez `Path.write_text`, który na Windowsie
+zamienia `\n` na CRLF, a plugin dzielił plik po `\n`. 0.2.1: zapis z `newline='\n'`
+i `TrimEnd('\r')` przy wczytywaniu. W paczce 0.2.1 `pl.tsv` nie ma żadnego `\r`.
+
 ## Następny krok
 
 Test pełnej wersji: warsztat (nazwy części i ulepszeń), mapa gwiezdna (zdarzenia,

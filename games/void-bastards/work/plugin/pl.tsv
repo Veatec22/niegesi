@@ -1200,14 +1200,14 @@ Log/DeepPockets	Wygrzebano
 Log/DeepPocketsFail	Nic nie wygrzebano
 Log/Downloaded	Pobrano
 Log/Dropped	Upuszczono
-Log/Insured	Wypłata z ubezpieczenia
+Log/Insured	Odszkodowanie
 Log/MapInfo	Dane mapy
 Log/PickedUp	Podniesiono
 Log/Recycled	Zwrócono
 Log/Salvaged	Odzyskano
 Log/Scavenged	Znaleziono
 Log/Sold	Sprzedano
-Log/Supplied	Wezwano statek zaopatrzenia
+Log/Supplied	Wezwano dostawę
 Mission/Crouch	Naciśnij KEY, aby kucnąć
 Mission/CrouchController	Kucnij
 Mission/DisablePirateTether	Zwolnij kotwicę piratów

@@ -75,3 +75,11 @@ Po pełnym tłumaczeniu: 0 zgłoszeń poza 18 dotyczącymi długości. Poprawion
 raporcie: skrócone nazwy części i cech, ujednolicony „identyfikator”. Fałszywe alarmy
 (nazwy klawiszy, nazwy języków, skróty na mapie, oboczności „turyści”, „śmieci”)
 opisane w biblii jako wyjątki albo rdzenie.
+
+## Poprawki po teście 0.2.0
+
+- **Log akcji (prawy górny róg)** — tytuł wpisu ma miejsce na jedną linię, pod nim
+  gra rysuje podpis (np. rodzaj ładunku). Dłuższy tytuł zawijał się na podpis.
+  Budżet: długość angielskiego (do ~20 znaków). „Wezwano statek zaopatrzenia” →
+  „Wezwano dostawę” (spójne z „wezwij dostawę” przy terminalu), „Wypłata
+  z ubezpieczenia” → „Odszkodowanie”.

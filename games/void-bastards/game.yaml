@@ -1,6 +1,6 @@
 slug: void-bastards
 title: Void Bastards
-version: '0.2.0'
+version: '0.2.1'
 entries: { done: 2480, total: 2480 }
 tested: czesciowy
 engine: Unity 2017.4.21f1 (Mono)
@@ -11,17 +11,17 @@ stores:
   steam: https://store.steampowered.com/app/857980/
 download:
   kind: zip
-  file: Void-Bastards-PL-0.2.0.zip
-  bytes: 698760
+  file: Void-Bastards-PL-0.2.1.zip
+  bytes: 698560
 phase: full
 tested_on:
   - store: steam
     version: "2.0.24"
-test_notes: Vertical 0.1.1 potwierdzony w grze (selektor, menu i komiks z polskimi literami składanymi w czasie gry). Pełne tłumaczenie 0.2.0 zbudowane i zainstalowane; pełne przejście czeka.
+test_notes: Vertical 0.1.1 potwierdzony w grze (selektor, menu i komiks z polskimi literami składanymi w czasie gry). Pełne tłumaczenie 0.2.0 sprawdzane w grze; 0.2.1 naprawia nakładające się napisy (zły koniec linii w tekstach) i skraca dwa wpisy logu akcji. Pełne przejście czeka.
 build_input:
   store: steam
   build_id: '4269398'
   version: 2.0.24
   unity: 2017.4.21f1
 year: 2019
-keyart_shot: 1
+gallery: [1, 2, 3, 4, 5]

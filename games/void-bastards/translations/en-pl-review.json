@@ -5916,7 +5916,7 @@
   {
     "key": "Log/Insured",
     "english": "Insurance Payout",
-    "polish": "Wypłata z ubezpieczenia"
+    "polish": "Odszkodowanie"
   },
   {
     "key": "Log/MapInfo",
@@ -5951,7 +5951,7 @@
   {
     "key": "Log/Supplied",
     "english": "Supply Ship Summoned",
-    "polish": "Wezwano statek zaopatrzenia"
+    "polish": "Wezwano dostawę"
   },
   {
     "key": "Map/Airlock",
