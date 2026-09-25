@@ -15219,145 +15219,169 @@
     "key": "item-noun:Gun",
     "english": "Gun",
     "polish": "Pistolet",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Pistol",
     "english": "Pistol",
     "polish": "Pistolet",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Rifle",
     "english": "Rifle",
     "polish": "Karabin",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Shotgun",
     "english": "Shotgun",
     "polish": "Strzelba",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f",
+    "gender": "f"
   },
   {
     "key": "item-noun:Longblade",
     "english": "Longblade",
     "polish": "Długie ostrze",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj n"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj n",
+    "gender": "n"
   },
   {
     "key": "item-noun:Shortblade",
     "english": "Shortblade",
     "polish": "Krótkie ostrze",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj n"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj n",
+    "gender": "n"
   },
   {
     "key": "item-noun:Wrench",
     "english": "Wrench",
     "polish": "Klucz francuski",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Concussion Hammer",
     "english": "Concussion Hammer",
     "polish": "Młot ogłuszający",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Grenade",
     "english": "Grenade",
     "polish": "Granat",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Grenade Launcher",
     "english": "Grenade Launcher",
     "polish": "Granatnik",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Teleporter",
     "english": "Teleporter",
     "polish": "Teleporter",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Swapper",
     "english": "Swapper",
     "polish": "Zamieniacz",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Visitor",
     "english": "Visitor",
     "polish": "Wizytator",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Sidewinder",
     "english": "Sidewinder",
     "polish": "Omijacz",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Slipstream",
     "english": "Slipstream",
     "polish": "Poślizg",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Crashbeam",
     "english": "Crashbeam",
     "polish": "Zawieszacz",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Subverter",
     "english": "Subverter",
     "polish": "Przeprogramator",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj m",
+    "gender": "m"
   },
   {
     "key": "item-noun:Key Cloner",
     "english": "Key Cloner",
     "polish": "Kopiarka kart",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f",
+    "gender": "f"
   },
   {
     "key": "item-noun:Emergency Shield",
     "english": "Emergency Shield",
     "polish": "Tarcza awaryjna",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f",
+    "gender": "f"
   },
   {
     "key": "item-noun:Stealth Shield",
     "english": "Stealth Shield",
     "polish": "Tarcza maskująca",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f",
+    "gender": "f"
   },
   {
     "key": "item-noun:Glitch Trap",
     "english": "Glitch Trap",
     "polish": "Pułapka glitchowa",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f",
+    "gender": "f"
   },
   {
     "key": "item-noun:Acid Trap",
     "english": "Acid Trap",
     "polish": "Pułapka kwasowa",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f",
+    "gender": "f"
   },
   {
     "key": "item-noun:Crash Trap",
     "english": "Crash Trap",
     "polish": "Pułapka zawieszająca",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj f",
+    "gender": "f"
   },
   {
     "key": "item-noun:Crashblade",
     "english": "Crashblade",
     "polish": "Ostrze zawieszające",
-    "context": "Rzeczownik w nazwach przedmiotów, rodzaj n"
+    "context": "Rzeczownik w nazwach przedmiotów, rodzaj n",
+    "gender": "n"
   },
   {
     "key": "item-modifier:Quiet",

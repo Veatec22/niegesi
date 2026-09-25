@@ -14,7 +14,7 @@ Logi diagnostyczne odsiano ręcznie przy przeglądzie całej listy.
 
 **Silnik tłumaczenia** — `plugin/Translate.h`, czysty C++, testowany
 `tools/test_translate.py`. Kolejność: wpis dokładny → wersja WERSALIKAMI →
-nazwa przedmiotu (rzeczownik + przymiotniki zgodne w rodzaju, `items.json`) →
+nazwa przedmiotu (rzeczownik + przymiotniki zgodne w rodzaju, wpisy `item-*`) →
 szablon z lukami `{0}`..`{9}` (luki tłumaczone rekurencyjnie) → tłumaczenie
 wierszy (`#`, `\r\n`) → nazwa ucięta „...” (ostatnie pełne nazwy) → fragmenty
 na granicach słów. Pamięć podręczna wyników; nieprzetłumaczone trafiają do logu,
@@ -63,8 +63,14 @@ Budowanie (kolejność):
 .venv\Scripts\python.exe games\heat-signature\tools\test_translate.py --tsv --dialogs "C:\SteamLibrary\steamapps\common\Heat Signature\Dialog"
 ```
 
-`assemble.py` składa `pl.json` z kluczy verticala i partii; korekty użytkownika
-zapisywać w partii (np. `parts/95-user.json`), bo inne klucze znikną.
+Od 2026-09-25 jedynym plikiem tłumaczenia jest `translations/en-pl-review.json`
+(decyzja 0021): teksty gry (klucz = angielski literał) i gramatyka nazw przedmiotów
+(`item-noun:*` z polem `gender`, `item-modifier:*` z formami „m / ż / n”, `item-tail:*`),
+czytane przez `tools/texts.py`. Dawne `pl.json`, `items.json` i `translations/parts/`
+zniknęły; ich treść jest w tym pliku (sprawdzone: teksty i gramatyka co do znaku
+i kolejności). `assemble.py <partia.json>` dopisuje nowe partie do pliku tłumaczenia,
+`gen_personal.py` zapisuje swoją partię w `work/batches/`. Korekty z pracowni nanosi
+`tools/corrections.py`.
 
 ## Poprawka 0.1.2 — odstępy między literami
 
@@ -181,7 +187,7 @@ Budowanie i instalacja:
 ```
 
 `prepare_ui.py` i `prepare_opening.py` dokumentują ekstrakcję i początkowy przekład.
-Build czyta wyłącznie aktualne `translations/pl.json`; po korekcie użytkownika nie
+Build czyta wyłącznie `translations/en-pl-review.json`; po korekcie użytkownika nie
 uruchamiać ponownie skryptu `prepare_opening.py`, bo odtworzyłby początkowy przekład.
 Przed pełnym tłumaczeniem potrzebne jest potwierdzenie tego verticala w grze.
 

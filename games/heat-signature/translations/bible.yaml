@@ -15,7 +15,7 @@ styl:
   adaptacja: 'Zachować czynność i warunki instrukcji; nie dopisywać klawiszy obok ikon sterowania. Liczby z luk zostają cyframi; zdania z liczbą budujemy tak, by nie wymagały odmiany („Zabójstwa: 3”).'
   zrodlo: decyzja
   uwaga: Wygładzenie terminala jest osobnym ustaleniem użytkownika; nie obejmuje łagodzenia przekleństw w pozostałych dialogach.
-  nazwy_przedmiotow: Gra składa nazwy z przymiotników i rzeczownika („Rechargeable High Capacity Swapper”). Po polsku rzeczownik pierwszy, przymiotniki za nim w odwróconej kolejności, zgodne w rodzaju, frazy „o dużej pojemności”/„dalekiego zasięgu” na końcu — przy ucinaniu „...” zostaje najważniejsze słowo. translations/items.json.
+  nazwy_przedmiotow: Gra składa nazwy z przymiotników i rzeczownika („Rechargeable High Capacity Swapper”). Po polsku rzeczownik pierwszy, przymiotniki za nim w odwróconej kolejności, zgodne w rodzaju, frazy „o dużej pojemności”/„dalekiego zasięgu” na końcu — przy ucinaniu „...” zostaje najważniejsze słowo. Wpisy item-* w translations/en-pl-review.json.
 postacie:
   - id: gracz
     nazwa: losowa postać gracza

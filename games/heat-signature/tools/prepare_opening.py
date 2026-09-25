@@ -117,15 +117,13 @@ def main(game):
         assert en.encode() + b'\0' in exe, f'Missing native literal {en!r}'
     for en in DIALOG:
         assert en in originals, f'Missing dialogue {en!r}'
-    path = ROOT / 'translations/pl.json'
-    pl = json.loads(path.read_text(encoding='utf-8'))
-    pl.update(NATIVE | DIALOG)
-    path.write_text(json.dumps(pl, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    review = [dict(key=en, english=en, polish=value,
-                  context='; '.join(originals[en]) if en in DIALOG else 'Literał EXE; UI, narracja lub instrukcja samouczka')
-              for en, value in pl.items()]
-    (ROOT / 'translations/en-pl-review.json').write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f'{len(pl)} verified entries; {len(NATIVE)} opening/native and {len(DIALOG)} dialogue additions')
+    # Overwrites these entries in the translation file (en-pl-review.json, decision 0021)
+    # with the initial translation - do not rerun after corrections.
+    import texts
+    changed, added = texts.merge(NATIVE | DIALOG, {en: '; '.join(originals[en]) if en in DIALOG
+                                                   else 'Literał EXE; UI, narracja lub instrukcja samouczka'
+                                                   for en in NATIVE | DIALOG})
+    print(f'{changed} changed, {added} added; {len(NATIVE)} opening/native and {len(DIALOG)} dialogue entries')
 
 
 if __name__ == '__main__':

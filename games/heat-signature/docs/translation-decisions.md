@@ -97,7 +97,8 @@ Zakres: 2650 wpisów `pl.json` (literały EXE przypisane do funkcji GML, 523 lin
 dialogów, szablony dla zdań składanych przez grę) oraz słownik nazw przedmiotów
 `items.json` (24 rzeczowniki z rodzajem, 25 przymiotników, 5 określeń końcowych).
 Partie źródłowe: `translations/parts/*.json`; szablony misji osobistych generuje
-`tools/gen_personal.py`. Logi diagnostyczne gry (ok. 2 tys. literałów) pominięto.
+`tools/gen_personal.py`. Od 2026-09-25 całość — teksty i słownik przedmiotów — leży
+w jednym pliku `en-pl-review.json` (decyzja 0021). Logi diagnostyczne gry (ok. 2 tys. literałów) pominięto.
 
 **Poprawka faktu (źródło: dialog).** Fiasco jest kobietą: Breaker mówi o niej „she”
 i „this white haired woman” (BartenderDialogueFoundry.txt). Vertical przyjął formy

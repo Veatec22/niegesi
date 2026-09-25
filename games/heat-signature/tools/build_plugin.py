@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import sys
 import os
 import re
 import shutil
@@ -12,6 +13,12 @@ import font_assets
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import load_entries  # noqa: E402
+
+import texts  # noqa: E402
+
 VERSION = '0.2.0'
 
 
@@ -60,12 +67,12 @@ def build(binary_only=False):
     if binary_only:
         print('Plugin built; binary-only technical preparation, no translation package.')
         return
-    translations = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
-    items = json.loads((ROOT / 'translations/items.json').read_text(encoding='utf-8'))
-    review = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
-    plain = [r for r in review if not r['key'].startswith('item-')]
-    assert translations and len(translations) == len(plain)
-    assert all(translations[r['key']] == r['polish'] and r['key'] == r['english'] for r in plain)
+    # Jedyny plik tłumaczenia: en-pl-review.json (0021); texts.py dzieli go na teksty
+    # gry i gramatykę nazw przedmiotów.
+    translations = texts.plain()
+    items = texts.items()
+    plain = [r for r in load_entries(ROOT) if not r['key'].startswith('item-')]
+    assert translations
     assert all('\t' not in en + pl for en, pl in translations.items())
     dialog = {r['key'] for r in plain if r['context'].startswith('Dialog:')}
     rows = {}

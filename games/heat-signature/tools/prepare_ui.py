@@ -90,12 +90,9 @@ if __name__ == '__main__':
     exe = (game / 'Heat_Signature.exe').read_bytes()
     for en in UI:
         assert en.encode('utf-8') + b'\0' in exe, f'Not an original literal: {en!r}'
-    # Merge preserves later editorial changes and additional narrative entries.
-    pl_path = ROOT / 'translations/pl.json'
-    current = json.loads(pl_path.read_text(encoding='utf-8'))
-    current = UI | current
-    pl_path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    review = [dict(key=en, english=en, polish=pl, context='UI/instrukcja; oryginalny literał EXE')
-              for en, pl in current.items()]
-    (ROOT / 'translations/en-pl-review.json').write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    # Merge preserves later editorial changes: only missing entries are added to the
+    # translation file (en-pl-review.json, decision 0021).
+    import texts
+    changed, added = texts.merge(UI, {en: 'UI/instrukcja; oryginalny literał EXE' for en in UI}, overwrite=False)
+    print(f'{added} UI entries added')
     print(f'Verified and prepared {len(UI)} UI/instruction literals; total {len(current)}')

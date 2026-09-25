@@ -2,7 +2,8 @@
 
 The game joins "Rescue my " + relation + " from " + faction etc. Polish needs the
 relation in the right case and the verb in its gender, so every relation gets its
-own template. Writes translations/parts/32-personal-runtime.json.
+own template. Writes work/batches/32-personal-runtime.json; tools/assemble.py merges it
+into translations/en-pl-review.json.
 """
 import json
 from pathlib import Path
@@ -73,7 +74,8 @@ def main():
         'the Glitchers': 'Glitchers', 'the Foundry': 'Foundry', 'the Sovereign': 'Sovereign',
         'the Offworld': 'Offworld', 'the Offworld Security': 'Offworld Security',
     })
-    path = ROOT / 'translations/parts/32-personal-runtime.json'
+    path = ROOT / 'work/batches/32-personal-runtime.json'
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'{len(out)} personal mission templates -> {path}')
 
