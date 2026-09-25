@@ -2,6 +2,7 @@
 import collections
 import hashlib
 import json
+import sys
 import re
 import shutil
 import zipfile
@@ -10,6 +11,9 @@ from compile_plugin import compile_plugin
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import load_entries, polish_by_key  # noqa: E402
 VERSION = '0.2.0'
 BEP_VERSION = '6.0.0-pre.2'
 BINARY = REPO/'vendor/bepinex'/f'BepInEx-Unity.IL2CPP-win-x64-{BEP_VERSION}.zip'
@@ -20,8 +24,8 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 def validate_texts():
-    pl = json.loads((ROOT/'translations/pl.json').read_text(encoding='utf-8'))
-    review = json.loads((ROOT/'translations/en-pl-review.json').read_text(encoding='utf-8'))
+    pl = polish_by_key(ROOT)
+    review = load_entries(ROOT)
     indexed = {row['key']: row for row in review}
     assert len(indexed) == len(review), 'Duplicate review key'
     assert pl and not set(pl).difference(indexed), 'Unknown translation IDs'
@@ -33,9 +37,11 @@ def validate_texts():
         # Hand-wrapped, indented continuation lines in dialogue logs may be joined.
         wraps = len(re.findall(r'\n[ \t]+\S', source))
         assert value.count('\n') in (source.count('\n'), source.count('\n') - wraps), ('newlines', key)
-        assert indexed[key]['polish'] == value, ('review mismatch', key)
-    assert all(row['polish'] == pl.get(row['key'], '') for row in review), 'Review out of sync'
     return len(pl), len(review)
+
+def package_texts():
+    """pl.json dla pluginu, składany z en-pl-review.json (0021); w repo go nie ma."""
+    return (json.dumps(polish_by_key(ROOT), ensure_ascii=False, indent=2) + '\n').encode('utf-8')
 
 def main():
     count, total = validate_texts()
@@ -49,7 +55,7 @@ def main():
         expected.update({
             'BepInEx-LICENSE.txt': sources.read(f'BepInEx-{BEP_VERSION}/LICENSE'),
             PREFIX+'notgeese.TurboOverkill.dll': dll.read_bytes(),
-            PREFIX+'pl.json': (ROOT/'translations/pl.json').read_bytes(),
+            PREFIX+'pl.json': package_texts(),
             PREFIX+'LICENSE-notgeese.txt': (REPO/'LICENSE').read_bytes(),
             'READ-ME.txt': (ROOT/'docs/INSTALL-plugin.txt').read_bytes(),
             'BepInEx/config/BepInEx.cfg': b'[Logging.Console]\nEnabled = false\n\n[Logging.Disk]\nEnabled = true\n',

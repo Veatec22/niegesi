@@ -123,7 +123,7 @@ z zapasowego ModernBrusha pasują wysokością do statycznego atlasu.
 
 `extract.py` przypina SHA-256 `globalgamemanagers.assets`
 (`d342ad45…f563`) i zapisuje `work/source.json` (poza Gitem — dziesięć języków gry).
-`batch.py` trzyma `pl.json` i `en-pl-review.json` w zgodzie. `build.py` sprawdza klucze
+`batch.py` dopisuje partie do `en-pl-review.json`. `build.py` sprawdza klucze
 i znaczniki, kompiluje plugin (csc, referencje z `Managed` gry i BepInEksa), składa
 `dist/Neon-Abyss-PL-<wersja>.zip` z BepInEksem 5.4.23.5 i kładzie obok źródła BepInEksa.
 Plugin: teksty z `pl.tsv`, brakujące i nietekstowe terminy (grafiki, przyciski padów)
@@ -141,8 +141,8 @@ z kolumny angielskiej.
 
 ## Tłumaczenie
 
-`translations/pl.json` to źródło (tylko przetłumaczone klucze), `en-pl-review.json`
-generuje `tools/batch.py` (`show`, `put`, `from-review`, `stats`). Partie robocze leżą
+`translations/en-pl-review.json` to jedyny plik tłumaczenia (decyzja 0021; do 2026-09-25
+obok leżał `pl.json`). Partie dopisuje `tools/batch.py` (`show`, `put`, `stats`). Partie robocze leżą
 w `work/batches/` (poza Gitem). Raport: `.claude/skills/localization/scripts/l10n_report.py`.
 
 ## Materiał gry

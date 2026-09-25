@@ -1,6 +1,6 @@
 """Zbuduj paczkę z pluginem BepInEx: polski dla Neon Abyss bez podmiany plików gry.
 
-Kompiluje plugin, zamienia pl.json na pl.tsv i składa archiwum z BepInEksem,
+Kompiluje plugin, zamienia teksty z en-pl-review.json na pl.tsv i składa archiwum z BepInEksem,
 pluginem, tekstami i instrukcją. Nie dotyka katalogu gry.
 
     .venv\\Scripts\\python.exe games\\neon-abyss\\tools\\build.py --game "C:\\Games\\Neon Abyss"
@@ -20,6 +20,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 VERSION = '0.3.2'
 PACKAGE = f'Neon-Abyss-PL-{VERSION}.zip'
 DATA = 'NeonAbyss_Data'
@@ -73,8 +76,8 @@ def english_terms() -> dict[str, str]:
 
 
 def write_terms(destination: Path) -> int:
-    """pl.json -> pl.tsv: klucz, tabulator, tekst; nowe linie jako \\n. Sprawdza znaczniki."""
-    terms = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    """Teksty -> pl.tsv: klucz, tabulator, tekst; nowe linie jako \\n. Sprawdza znaczniki."""
+    terms = polish_by_key(ROOT)
     english = english_terms()
     lines = []
     for key, value in terms.items():

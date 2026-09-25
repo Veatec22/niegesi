@@ -31,13 +31,10 @@ const PL_JSON_PENDING = new Set<string>([
   'holy-shoot',
   'katana-zero',
   'labyrinth-of-the-demon-king',
-  'neon-abyss',
   'not-a-hero',
   'otxo',
   'skate-story',
-  'somber-echoes',
   'sprawl',
-  'turbo-overkill',
 ]);
 
 const root = new URL('../games/', import.meta.url);

@@ -1,12 +1,15 @@
 """Apply reviewed numbered work batches to native IDs and keep EN/PL synchronized."""
 import argparse
 import json
+import sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+from translations import polish_by_key, write_entries  # noqa: E402
 def main():
  p=argparse.ArgumentParser();p.add_argument('action',choices=['show','apply']);p.add_argument('--start',type=int,default=0);p.add_argument('--end',type=int,default=1507);p.add_argument('--file',type=Path);a=p.parse_args()
  rows=json.loads((ROOT/'work/english.json').read_text(encoding='utf-8'))
- pl=json.loads((ROOT/'translations/pl.json').read_text(encoding='utf-8'))
+ pl=polish_by_key(ROOT)
  if a.action=='show':
   for i,row in enumerate(rows):
    if a.start<=i<a.end and row['key'] not in pl:print(f"{i}|{row['key']}|{json.dumps(row['english'],ensure_ascii=False)}")
@@ -24,8 +27,7 @@ def main():
  for row in rows:
   values=known.get(row['english'],set())
   if row['key'] not in pl and len(values)==1:pl[row['key']]=next(iter(values))
- (ROOT/'translations/pl.json').write_text(json.dumps(pl,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  review=[dict(key=r['key'],english=r['english'],polish=pl[r['key']]) for r in rows if r['key'] in pl]
- (ROOT/'translations/en-pl-review.json').write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ write_entries(ROOT,review)
  print(f'{len(pl)}/{len(rows)}')
 if __name__=='__main__':main()

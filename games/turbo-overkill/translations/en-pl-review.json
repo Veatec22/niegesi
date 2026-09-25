@@ -1960,54 +1960,6 @@
     "term": "vo_e3m2_1_combat"
   },
   {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18973384179712",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18973384179712,
-    "term": "vo_e3m2_21_captain"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18972004253696",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18972004253696,
-    "term": "vo_e3m2_20_null"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18747680292864",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18747680292864,
-    "term": "vo_e3m2_19_combat"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18746921123840",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18746921123840,
-    "term": "vo_e3m2_18_null"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18745981599744",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18745981599744,
-    "term": "vo_e3m2_17_captain"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18745306316800",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18745306316800,
-    "term": "vo_e3m2_16_captain"
-  },
-  {
     "key": "bc2982a2c85b21148b687d68eb330bfb:18655648874496",
     "english": "A giant swarm is approaching our LZ. We haven't enough firepower to take them out.",
     "polish": "Ogromny rój zbliża się do lądowiska. Nie mamy dość siły ognia, by go powstrzymać.",
@@ -2054,46 +2006,6 @@
     "table": "TurboVoices",
     "entry_id": 18718152392704,
     "term": "vo_e3m2_7_samm"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18719897223168",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18719897223168,
-    "term": "vo_e3m2_8_samm"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18725760860160",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18725760860160,
-    "term": "vo_e3m2_9_samm"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18729242132480",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18729242132480,
-    "term": "vo_e3m2_10_samm"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18732127813632",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18732127813632,
-    "term": "vo_e3m2_11_samm"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:18735172878336",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 18735172878336,
-    "term": "vo_e3m2_12_samm"
   },
   {
     "key": "bc2982a2c85b21148b687d68eb330bfb:18738658344960",
@@ -2448,22 +2360,6 @@
     "term": "vo_e3m4_1_samm"
   },
   {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:20981960867840",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 20981960867840,
-    "term": "vo_e3m4_2_samm"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:20984775245824",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 20984775245824,
-    "term": "vo_e3m4_3_samm"
-  },
-  {
     "key": "bc2982a2c85b21148b687d68eb330bfb:20985446334464",
     "english": "The easiest way to make use of the TitanCell is to use the transfer cable housed in your central cortex.",
     "polish": "Najłatwiej wykorzystać ogniwo Tytana przez kabel transferowy w pana centralnej korze mózgowej.",
@@ -2728,14 +2624,6 @@
     "term": "vo_e3m5_16_samm"
   },
   {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:21723450900480",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 21723450900480,
-    "term": "vo_e3m5_15_BLANK"
-  },
-  {
     "key": "bc2982a2c85b21148b687d68eb330bfb:21005507690496",
     "english": "Los Haven. The most heavily fortified city in Paradise… and the last location on Paradise that Syn hasn’t yet assimilated.",
     "polish": "Los Haven. Najsilniej ufortyfikowane miasto Paradise... i ostatnie miejsce, którego SYN jeszcze nie zasymilowała.",
@@ -2840,14 +2728,6 @@
     "term": "vo_e3m5_12_samm"
   },
   {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:21711471968256",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 21711471968256,
-    "term": "vo_e3m5_13_samm"
-  },
-  {
     "key": "bc2982a2c85b21148b687d68eb330bfb:21713556537344",
     "english": "There it is, the starport... and our last ticket off Paradise.",
     "polish": "Oto kosmoport... i nasz ostatni bilet z Paradise.",
@@ -2862,14 +2742,6 @@
     "table": "TurboVoices",
     "entry_id": 21715683049472,
     "term": "vo_e3m5_15_samm"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:23513638567936",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 23513638567936,
-    "term": "vo_e3m6_15_captain"
   },
   {
     "key": "bc2982a2c85b21148b687d68eb330bfb:23610615070720",
@@ -3606,14 +3478,6 @@
     "table": "TurboVoices",
     "entry_id": 26125062569984,
     "term": "vo_e3m8_12_maw"
-  },
-  {
-    "key": "bc2982a2c85b21148b687d68eb330bfb:26127499460608",
-    "english": "",
-    "polish": "",
-    "table": "TurboVoices",
-    "entry_id": 26127499460608,
-    "term": "vo_e3m8_13_maw"
   },
   {
     "key": "bc2982a2c85b21148b687d68eb330bfb:26129491755008",

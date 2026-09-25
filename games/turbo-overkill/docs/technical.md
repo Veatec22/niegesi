@@ -3,7 +3,7 @@
 21 września 2026. **Pełne tłumaczenie 0.2.0 zbudowane i zainstalowane lokalnie.**
 Selektor, polskie menu i fonty potwierdził użytkownik na verticalu 0.1.3.
 Przetłumaczono 2316/2333 wpisów, czyli wszystkie niepuste. 17 wpisów ma pusty oryginał
-i nie trafia do `pl.json`, więc gra pokazuje tam pusty tekst jak w EN. Dialogi,
+i nie trafia do tłumaczenia (od 2026-09-25 także do review), więc gra pokazuje tam pusty tekst jak w EN. Dialogi,
 infodeks i sklep w 0.2.0 czekają na test w grze. Gry nie uruchamiano.
 
 ZIP: `dist/Turbo-Overkill-PL-0.2.0.zip`, 34 260 048 B.
@@ -117,7 +117,7 @@ wygeneruje jego własne interop; do paczki nie trafiają nasze kopie.
 
 Plugin po inicjalizacji ładuje osiem angielskich tabel asynchronicznie i tworzy
 ich kopie w pamięci z LocaleIdentifier `pl`. Zmienia tylko wpisy obecne w
-`pl.json`, a 2159 niepustych wpisów bez PL zachowuje w EN i raportuje ich liczbę.
+`pl.json` z paczki (build składa go z `en-pl-review.json`), a 2159 niepustych wpisów bez PL zachowuje w EN i raportuje ich liczbę.
 Zachowuje natywny format SmartString oraz metadane. Kontroluje, czy kopia nie
 współdzieli modyfikowanych danych wpisu z EN. Utrzymuje referencje do operacji
 EN, ponieważ SharedTableData musi pozostać załadowana.
@@ -268,7 +268,8 @@ Nowy ZIP ma 234 pliki, plugin 19 968 B. Potrzebny test nowego wyglądu po restar
 
 Wszystkie osiem tabel ma polski tekst. Do dopisywania partii służy `work/batch.py`
 (`show` wypisuje brakujące wpisy tabeli, `put` dopisuje wiersze `indeks<TAB>tekst`).
-Review `translations/en-pl-review.json` jest zsynchronizowane z `pl.json`.
+Od 2026-09-25 `translations/en-pl-review.json` jest jedynym plikiem tłumaczenia (decyzja 0021);
+`pl.json` dla pluginu powstaje przy budowaniu paczki.
 
 Ustalenia terminologiczne i postacie:
 - S.A.M.M. mówi do Johnny'ego „sir”/„pan”, forma męska. Pozostali mówią na „ty”.

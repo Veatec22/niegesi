@@ -8,6 +8,8 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+from translations import load_entries, polish_by_key  # noqa: E402
 sys.path.insert(0, str(ROOT.parent / 'bpm' / 'tools'))
 from game_pak import GamePak
 import locres
@@ -17,6 +19,8 @@ import pak
 PAK_NAME = 'pakchunk99-notgeese-PL_P.pak'
 PACKAGE = 'Somber-Echoes-PL-0.2.0.zip'
 RUNTIME_SHA = 'b954f036b10e9abb0c0c41599311ab1accc53e30515aeed7e48ee22c5b3b1280'
+# Kolejność plików w paku jak w wydaniu 0.2.0 (wtedy wynikała z kolejności pl.json).
+TARGETS = ['StringTables', 'Dialog', 'Challenges', 'Updated1', 'Updated2', 'Updated3', 'Updated4', 'Journal']
 
 
 def tokens(text):
@@ -26,9 +30,8 @@ def tokens(text):
 def build(output, runtime):
     if not __debug__:
         raise RuntimeError('Build validation requires Python without -O.')
-    translations = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
-    review = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
-    assert {row['key']: row['polish'] for row in review} == translations
+    translations = polish_by_key(ROOT)
+    review = load_entries(ROOT)
     english = {row['key']: row['english'] for row in review}
     source_rows = json.loads((ROOT / 'work/english.json').read_text(encoding='utf-8'))
     assert english == {row['key']: row['english'] for row in source_rows}, 'Incomplete review'
@@ -38,6 +41,7 @@ def build(output, runtime):
         target, namespace, entry = key.split('/', 2)
         assert text and tokens(text) == tokens(english[key]), key
         grouped.setdefault(target, {})[(namespace, entry)] = text
+    grouped = dict(sorted(grouped.items(), key=lambda item: (TARGETS.index(item[0]) if item[0] in TARGETS else len(TARGETS), item[0])))
     output.mkdir(parents=True, exist_ok=True)
     files = {}
     for target, texts in grouped.items():

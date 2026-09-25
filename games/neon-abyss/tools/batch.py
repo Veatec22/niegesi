@@ -2,12 +2,10 @@
 
     python tools/batch.py show [prefiks] [limit] -> nieprzetłumaczone jako `klucz @@ tekst`
     python tools/batch.py put PLIK               -> dopisz linie `klucz @@ tekst`; \\n = nowa linia
-    python tools/batch.py from-review            -> przenieś poprawki z en-pl-review.json
     python tools/batch.py stats
 
-translations/pl.json to źródło: {"klucz I2": "polski tekst"}, tylko przetłumaczone.
-translations/en-pl-review.json powstaje z niego i z angielskiego w work/source.json
-(tools/extract.py) — do przeglądu; po poprawkach `from-review` zanosi je do pl.json.
+translations/en-pl-review.json to jedyny plik tłumaczenia (decyzja 0021): angielski
+z work/source.json (tools/extract.py) i polski; pusty `polish` = jeszcze nieprzetłumaczone.
 Wpisy tekstowe, które są w istocie nazwami zasobów (ścieżki fontów, nazwy grafik),
 nie są do tłumaczenia i plugin kopiuje je z angielskiego.
 """
@@ -17,8 +15,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PL = ROOT / 'translations/pl.json'
-REVIEW = ROOT / 'translations/en-pl-review.json'
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key, write_entries  # noqa: E402
+
 TOKEN = re.compile(r'\{[^}]*\}|</?[a-z]+(?:=[^>]*)?>|\[i2s_[^\]]*\]')
 RESOURCE = re.compile(r'^(Fonts & Materials/.*|[a-z0-9]+(_[a-z0-9]+)+|-+|\.+|\?+|v\{\[Version\]\})$')
 
@@ -37,16 +37,14 @@ def check(key, source, text):
 
 
 def save(source, polish):
-    polish = dict(sorted(polish.items()))
-    PL.write_text(json.dumps(polish, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     rows = [{'key': key, 'english': text, 'polish': polish.get(key, '')} for key, text in source.items()]
-    REVIEW.write_text(json.dumps(rows, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    write_entries(ROOT, rows)
 
 
 def main():
     command = sys.argv[1] if len(sys.argv) > 1 else 'stats'
     source = english()
-    polish = json.loads(PL.read_text(encoding='utf-8'))
+    polish = polish_by_key(ROOT)
     unknown = polish.keys() - source.keys()
     assert not unknown, ('klucze spoza gry', sorted(unknown)[:5])
 
@@ -70,16 +68,6 @@ def main():
             added += 1
         save(source, polish)
         print(f'dopisano {added}, razem {len(polish)}/{len(source)}')
-    elif command == 'from-review':
-        rows = json.loads(REVIEW.read_text(encoding='utf-8'))
-        changed = 0
-        for row in rows:
-            if row['polish'] and polish.get(row['key']) != row['polish']:
-                check(row['key'], source[row['key']], row['polish'])
-                polish[row['key']] = row['polish']
-                changed += 1
-        save(source, polish)
-        print(f'zmienione {changed}')
     elif command == 'stats':
         save(source, polish)
         print(json.dumps({'translated': len(polish), 'total': len(source)}))
