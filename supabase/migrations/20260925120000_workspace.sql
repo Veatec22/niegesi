@@ -27,6 +27,18 @@ $$;
 revoke all on function workspace_private.is_admin() from public, anon;
 grant execute on function workspace_private.is_admin() to authenticated;
 
+-- Dla Edge Functions: jawne sprawdzenie konta przed pobraniem gry (0014).
+create function public.workspace_is_admin()
+returns boolean
+language sql
+stable
+set search_path = ''
+as $$
+  select workspace_private.is_admin();
+$$;
+revoke all on function public.workspace_is_admin() from public, anon;
+grant execute on function public.workspace_is_admin() to authenticated;
+
 -- Gra, którą użytkownik otworzył. Rewizja rośnie przy każdej zmianie wyniku pracy.
 create table public.workspace_games (
   game text primary key check (game ~ '^[a-z0-9][a-z0-9-]{0,63}$'),

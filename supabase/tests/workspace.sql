@@ -19,6 +19,7 @@ select pg_temp.as_user(:'admin');
 do $$
 declare r jsonb;
 begin
+  assert public.workspace_is_admin(), 'administrator';
   r := public.workspace_apply('shotgun-cop-man', 0, repeat('a', 40), '[]', '[]', '[]');
   assert r = '{"ok": true, "revision": 0}'::jsonb, 'otwarcie bez zmian nie podbija rewizji: ' || r;
   r := public.workspace_apply('shotgun-cop-man', 0, repeat('a', 40),
@@ -86,6 +87,7 @@ begin;
 select pg_temp.as_user(:'other');
 do $$
 begin
+  assert not public.workspace_is_admin(), 'obce konto nie jest administratorem';
   assert (select count(*) from public.workspace_work) = 0, 'RLS: obce konto';
   assert (select count(*) from public.workspace_journal) = 0;
   assert (select count(*) from public.workspace_games) = 0;
@@ -128,6 +130,11 @@ begin
   begin
     perform public.workspace_apply('shotgun-cop-man', 1, null, '[]', '[]', '[]');
     assert false, 'anon: RPC';
+  exception when insufficient_privilege then null;
+  end;
+  begin
+    perform public.workspace_is_admin();
+    assert false, 'anon: workspace_is_admin';
   exception when insufficient_privilege then null;
   end;
 end $$;
