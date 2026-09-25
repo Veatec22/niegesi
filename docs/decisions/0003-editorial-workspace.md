@@ -184,9 +184,9 @@ Ustalenia bez osobnego pliku decyzji:
    `migration repair --status applied 20260925120000` czeka na wykonanie z sieci, która
    dopuszcza połączenie z Postgresem. Funkcje `workspace-open` i `workspace-save` wdrożone
    (v1, ACTIVE, `verify_jwt`): bez nagłówka i z kluczem anon zwracają 401, CORS 204.
-   Sesje podpisuje ES256 z `kid`. `workspace_admins` jest pusta mimo konta w Auth — do czasu
-   wpisu administratora każde otwarcie zwróci 403. Test na koncie administratora (485 wpisów
-   SCM, obce konto 403, nieaktualna rewizja 409) nie wykonany.
+   Sesje podpisuje ES256 z `kid`. Administrator wpisany w `workspace_admins` (1 konto
+   z potwierdzonym e-mailem). Test na koncie administratora (485 wpisów SCM, obce konto 403,
+   nieaktualna rewizja 409) nie wykonany.
    Zostają: panel `/admin/`, narzędzie nanoszenia eksportu i scalenie `structure.yaml` SCM z main.
 
 ## Pozostałe kwestie
