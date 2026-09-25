@@ -128,6 +128,15 @@ Gra 1.0.13 (GOG). Lista kontrolna z verticalu:
 użytkownika; paczka 745 007 B w `dist/` i `site/public/pobierz/`, zainstalowana lokalnie.
 Test dalszej części gry czeka — lista w `docs/translation-decisions.md` („Mniej pewne”).
 
+## Jeden plik tłumaczenia (2026-09-25)
+
+Build i `tools/review.py` czytają teksty z `translations/en-pl-review.json` (decyzja 0021),
+`pl.json` zniknął. Przed migracją 3 wpisy różniły się między plikami; review przejął
+brzmienie z `pl.json`, z którego zbudowano paczkę 0.2.0: `UI_CONTENT_WARNING`
+(„co dla części graczy może być przykre”), `D_0_Walkie_3_LAIKA_3` („Tak czy siak,
+niedobrze.”), `D_0_Walkie_2_A_LAIKA_4` („No właśnie, Starsza.”). Mapa tekstów dla builda
+jest identyczna z dawnym `pl.json`.
+
 ## Nota o materiale gry
 
 `work/source/en.json` to teksty gry wyciągnięte do pracy. Paczka nie niesie żadnego pliku

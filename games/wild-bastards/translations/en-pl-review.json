@@ -2305,11 +2305,6 @@
     "polish": "Witajcie, żałosne worki ch-słów! Przyszliście, d-słowa, w porze obiadu, a my podajemy gorący ołów i... i możecie ż-słowo do woli! \n"
   },
   {
-    "key": "Dialog/Bastard1PlanetStart_3a",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "Dialog/Bastard1PlanetStart_4",
     "english": "We like the Bastard.",
     "polish": "Lubimy tego bękarta."
@@ -3298,11 +3293,6 @@
     "key": "Dialog/FletchRawhideArg_1",
     "english": "I'm... this is a weird feeling. I'm starting to get the sense that you see things. See things like I do.  ",
     "polish": "Ja... to dziwne uczucie. Zaczynam mieć wrażenie, że ty widzisz różne rzeczy. Widzisz je tak jak ja.  "
-  },
-  {
-    "key": "Dialog/FletchRawhideArg_2",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "Dialog/FletchRespArg_1",
@@ -7235,11 +7225,6 @@
     "polish": "Głęboka zaspa pochłania wszystkie pozostałe ruchy."
   },
   {
-    "key": "InteractionDescription/StormSpawner",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "InteractionDescription/TelePickup",
     "english": "You have found a Portable Teleporter. Use it to add a new Teleporter at your bunch's location. ",
     "polish": "Znaleziono przenośny teleporter. Użyj go, żeby postawić nowy teleporter tam, gdzie stoi twoja grupa. "
@@ -7723,11 +7708,6 @@
     "key": "ItemDescription/CASINO_RESIST",
     "english": "Damage Resist: <p>",
     "polish": "Odporność na obrażenia: <p>"
-  },
-  {
-    "key": "ItemDescription/CHANGE",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "ItemDescription/CHOW",
@@ -8558,11 +8538,6 @@
     "key": "ItemName/CASINO_RESIST",
     "english": "Casino's Bolo",
     "polish": "Krawat bolo Casino"
-  },
-  {
-    "key": "ItemName/CHANGE",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "ItemName/CHOW",
@@ -10315,11 +10290,6 @@
     "polish": "Przenieś ruchomego wroga"
   },
   {
-    "key": "LocationShortDesc/ArmorPickup",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "LocationShortDesc/ArmorSpawner",
     "english": "Place armor at a roadblock",
     "polish": "Połóż pancerz na blokadzie"
@@ -10328,11 +10298,6 @@
     "key": "LocationShortDesc/Bank",
     "english": "Deposit or withdraw cramm",
     "polish": "Wpłać lub wypłać cramm"
-  },
-  {
-    "key": "LocationShortDesc/BarricadePickup",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "LocationShortDesc/BastardPickup",
@@ -10358,16 +10323,6 @@
     "key": "LocationShortDesc/BonusUnlockPickup",
     "english": "Buffs when charged",
     "polish": "Wzmacnia po naładowaniu"
-  },
-  {
-    "key": "LocationShortDesc/BunchSwapper",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "LocationShortDesc/Casino",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "LocationShortDesc/ChitsPickup",
@@ -10400,11 +10355,6 @@
     "polish": "Przebranie do omijania wrogów"
   },
   {
-    "key": "LocationShortDesc/Distillery",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "LocationShortDesc/Doctor",
     "english": "Get health",
     "polish": "Zdobądź zdrowie"
@@ -10418,26 +10368,6 @@
     "key": "LocationShortDesc/EnemyInfo",
     "english": "Get enemy info",
     "polish": "Zdobądź dane o wrogach"
-  },
-  {
-    "key": "LocationShortDesc/EstateKey",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "LocationShortDesc/EstateKeyPickup",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "LocationShortDesc/EstateKeyPickupA",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "LocationShortDesc/EstateKeyPickupB",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "LocationShortDesc/Exit",
@@ -10455,16 +10385,6 @@
     "polish": "Cenny łup"
   },
   {
-    "key": "LocationShortDesc/GoldPickup",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "LocationShortDesc/GuardPost",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "LocationShortDesc/Guesthouse",
     "english": "Get moves, health and armor",
     "polish": "Ruchy, zdrowie i pancerz"
@@ -10478,11 +10398,6 @@
     "key": "LocationShortDesc/GunhandAlly_2",
     "english": "Place allies at a roadblock",
     "polish": "Postaw sojuszników przy blokadzie"
-  },
-  {
-    "key": "LocationShortDesc/HealthPickup",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "LocationShortDesc/HealthSpawner",
@@ -10545,26 +10460,6 @@
     "polish": "Kradnij z dowolnego miejsca na planecie"
   },
   {
-    "key": "LocationShortDesc/Jail",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "LocationShortDesc/Junction",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "LocationShortDesc/KramPickup",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "LocationShortDesc/LurePickup",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "LocationShortDesc/MachineGunnerAlly",
     "english": "Place allies at a roadblock",
     "polish": "Postaw sojuszników przy blokadzie"
@@ -10585,11 +10480,6 @@
     "polish": "Więcej ruchów"
   },
   {
-    "key": "LocationShortDesc/Node",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "LocationShortDesc/OutlawPickup",
     "english": "Find a scattered outlaw",
     "polish": "Odnajdź rozproszonego banitę"
@@ -10598,16 +10488,6 @@
     "key": "LocationShortDesc/PatrolDestroy",
     "english": "Destroy mobile enemies",
     "polish": "Zniszcz ruchomych wrogów"
-  },
-  {
-    "key": "LocationShortDesc/PlaceableBarricade",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "LocationShortDesc/PlaceableLure",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "LocationShortDesc/PlaceableTeleporter",
@@ -10655,29 +10535,14 @@
     "polish": "Awansuj banitę"
   },
   {
-    "key": "LocationShortDesc/ShinePickup",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "LocationShortDesc/ShineSpawner",
     "english": "Place juice at a roadblock",
     "polish": "Połóż bimber na blokadzie"
   },
   {
-    "key": "LocationShortDesc/Shop",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "LocationShortDesc/Snowbank",
     "english": "Ends movement",
     "polish": "Kończy ruch"
-  },
-  {
-    "key": "LocationShortDesc/StormSpawner",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "LocationShortDesc/TelePickup",
@@ -10693,11 +10558,6 @@
     "key": "LocationShortDesc/TurretAlly",
     "english": "Place allies at a roadblock",
     "polish": "Postaw sojuszników przy blokadzie"
-  },
-  {
-    "key": "LocationShortDesc/UnlockedGuardPost",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "LocationShortDesc/Vault",
@@ -10718,11 +10578,6 @@
     "key": "LocationShortDesc/WolfAlly",
     "english": "Place allies at a roadblock",
     "polish": "Postaw sojuszników przy blokadzie"
-  },
-  {
-    "key": "MamaPanicJailPals_1",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "Map/Blacksmith",
@@ -12595,11 +12450,6 @@
     "polish": "Kliknij cel lewym przyciskiem"
   },
   {
-    "key": "QuestCompleted",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "QuestDescription/CUFFS_JAIL_RESCUE",
     "english": "Break Outlaws Out of Jail",
     "polish": "Uwolnij banitów z więzienia"
@@ -13000,16 +12850,6 @@
     "polish": "Nagrody"
   },
   {
-    "key": "SME/CarePackageB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/CarePackageC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/CarePackageDesc",
     "english": "Robots, xenos and other undesirables provide goods in exchange for infamy earned by killing Chasteners.",
     "polish": "Roboty, ksenosi i inni niepożądani dają towary w zamian za niesławę zdobytą zabijaniem Karzycieli."
@@ -13260,11 +13100,6 @@
     "polish": "Billy"
   },
   {
-    "key": "SME/MixBillyC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/MixBillyDesc",
     "english": "The quickest draws in the sector come here to test their mettle.",
     "polish": "Najszybsi rewolwerowcy w sektorze przyjeżdżają tu sprawdzić, ile są warci."
@@ -13298,11 +13133,6 @@
     "key": "SME/MixFletchBTitle",
     "english": "Fletch",
     "polish": "Fletch"
-  },
-  {
-    "key": "SME/MixFletchC",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "SME/MixFletchDesc",
@@ -13345,11 +13175,6 @@
     "polish": "Casino"
   },
   {
-    "key": "SME/MixGamblerC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/MixGamblerDesc",
     "english": "A good opportunity to make some quick cash - or lose it.",
     "polish": "Dobra okazja, żeby szybko zarobić – albo stracić."
@@ -13390,11 +13215,6 @@
     "polish": "Hopalong"
   },
   {
-    "key": "SME/MixHopalongC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/MixHopalongDesc",
     "english": "This seldom visited bean ranch is infested with savage porcupines.",
     "polish": "Po rzadko odwiedzanym fasolowym ranczu grasują dzikie jeżozwierze."
@@ -13428,11 +13248,6 @@
     "key": "SME/MixJudgeBTitle",
     "english": "Judge",
     "polish": "Sędzia"
-  },
-  {
-    "key": "SME/MixJudgeC",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "SME/MixJudgeDesc",
@@ -13515,11 +13330,6 @@
     "polish": "Kaboom"
   },
   {
-    "key": "SME/MixMistMinerC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/MixMistMinerDesc",
     "english": "This checkpoint will require gunplay to pass - but might be a source of Beacons as well.",
     "polish": "Przez ten punkt kontrolny trzeba się przebić ogniem – ale może też być źródłem nadajników."
@@ -13560,11 +13370,6 @@
     "polish": "Kaznodzieja"
   },
   {
-    "key": "SME/MixPreachC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/MixPreachDesc",
     "english": "These greedy pilgrims are resting on their way to the promised land. They have beans but lust after Cramm.",
     "polish": "Ci chciwi pielgrzymi odpoczywają w drodze do ziemi obiecanej. Mają fasolę, ale pożądają cramm."
@@ -13603,11 +13408,6 @@
     "key": "SME/MixRawhideBTitle",
     "english": "Rawhide",
     "polish": "Rawhide"
-  },
-  {
-    "key": "SME/MixRawhideC",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "SME/MixRawhideDesc",
@@ -13705,11 +13505,6 @@
     "polish": "Smoky"
   },
   {
-    "key": "SME/MixSmokyC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/MixSmokyDesc",
     "english": "This wreck is on fire but probably still has valuable mods that can be salvaged.",
     "polish": "Ten wrak płonie, ale pewnie wciąż da się z niego wyciągnąć cenne przedmioty."
@@ -13785,16 +13580,6 @@
     "polish": "Waśń"
   },
   {
-    "key": "SME/NegAffinityB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/NegAffinityC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/NegAffinityDesc",
     "english": "The psychic winds that blow through this region cause outbursts of anger.",
     "polish": "Psychiczne wiatry wiejące w tym rejonie wywołują wybuchy gniewu."
@@ -13818,16 +13603,6 @@
     "key": "SME/NegFatigueATitle",
     "english": "Fatigue",
     "polish": "Zmęczenie"
-  },
-  {
-    "key": "SME/NegFatigueB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/NegFatigueC",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "SME/NegFatigueDesc",
@@ -13855,16 +13630,6 @@
     "polish": "Banici poturbowani"
   },
   {
-    "key": "SME/NegInjFatigueB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/NegInjFatigueC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/NegInjFatigueDesc",
     "english": "Navigating this debris field will be risky",
     "polish": "Przelot przez to pole szczątków będzie ryzykowny"
@@ -13888,16 +13653,6 @@
     "key": "SME/NegInjuryATitle",
     "english": "Injuries",
     "polish": "Rany"
-  },
-  {
-    "key": "SME/NegInjuryB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/NegInjuryC",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "SME/NegInjuryDesc",
@@ -13925,16 +13680,6 @@
     "polish": "Uszkodzone przedmioty"
   },
   {
-    "key": "SME/NegItemsB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/NegItemsC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/NegItemsDesc",
     "english": "Nanobots are consuming this wrecked ship. They can't harm the Drifter but might damage your mods.",
     "polish": "Nanoboty pożerają ten wrak. Drifterowi nie zaszkodzą, ale mogą uszkodzić przedmioty."
@@ -13943,21 +13688,6 @@
     "key": "SME/NoEvent",
     "english": "No Event",
     "polish": "Brak zdarzenia"
-  },
-  {
-    "key": "SME/NoEventA",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/NoEventB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/NoEventC",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "SME/NoEventDesc",
@@ -14020,16 +13750,6 @@
     "polish": "Podarunek"
   },
   {
-    "key": "SME/PosBeansB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/PosBeansC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/PosBeansDesc",
     "english": "A lost dispatch rider will reward you generously for directions.",
     "polish": "Zagubiony goniec hojnie wynagrodzi wskazanie drogi."
@@ -14055,16 +13775,6 @@
     "polish": "Juki"
   },
   {
-    "key": "SME/PosChitsB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/PosChitsC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/PosChitsDesc",
     "english": "An unfortunate traveller seems to have left their saddlebag behind.",
     "polish": "Jakiś nieszczęsny podróżny zostawił chyba swoje juki."
@@ -14088,16 +13798,6 @@
     "key": "SME/PosElixirsATitle",
     "english": "Free Tonic",
     "polish": "Darmowy tonik"
-  },
-  {
-    "key": "SME/PosElixirsB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/PosElixirsC",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "SME/PosElixirsDesc",
@@ -14150,16 +13850,6 @@
     "polish": "Losowe leczenie"
   },
   {
-    "key": "SME/PosInjuriesB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/PosInjuriesC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/PosInjuriesDesc",
     "english": "Non human sawbones are forced to work out of makeshift travelling infirmaries. They help their own kind.",
     "polish": "Nieludzcy konowałowie muszą pracować w prowizorycznych wędrownych lazaretach. Pomagają swoim."
@@ -14183,16 +13873,6 @@
     "key": "SME/PosItemsATitle",
     "english": "Mods",
     "polish": "Przedmioty"
-  },
-  {
-    "key": "SME/PosItemsB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/PosItemsC",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "SME/PosItemsDesc",
@@ -14220,16 +13900,6 @@
     "polish": "Nadajniki"
   },
   {
-    "key": "SME/PosNavsB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/PosNavsC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/PosNavsDesc",
     "english": "Beacons are used to summon a ship to beam up off a planet. These ones were probably tossed overboard in a panic.",
     "polish": "Nadajniki wzywają statek, który zabiera z planety. Te ktoś chyba wyrzucił za burtę w panice."
@@ -14253,16 +13923,6 @@
     "key": "SME/PosRandomATitle",
     "english": "Stash",
     "polish": "Skrytka"
-  },
-  {
-    "key": "SME/PosRandomB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/PosRandomC",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "SME/PosRandomDesc",
@@ -14295,11 +13955,6 @@
     "polish": "Odzyskaj"
   },
   {
-    "key": "SME/StashC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/StashDesc",
     "english": "Store all unequipped mods, then retrieve them after a reset",
     "polish": "Przechowaj wszystkie niezałożone przedmioty i odzyskaj je po resecie"
@@ -14310,21 +13965,6 @@
     "polish": "Nieustawione"
   },
   {
-    "key": "SME/UnsetA",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/UnsetB",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "SME/UnsetC",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "SME/UnsetDesc",
     "english": "Unset Description",
     "polish": "Brak opisu"
@@ -14333,11 +13973,6 @@
     "key": "Scene/Barren",
     "english": "Barren",
     "polish": "Jałowizna"
-  },
-  {
-    "key": "Scene/Boulders",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "Scene/C_Ridge",
@@ -14498,11 +14133,6 @@
     "key": "SectorName/Sector9",
     "english": "Gomorrah Sector",
     "polish": "Sektor Gomora"
-  },
-  {
-    "key": "SmokyHelix_2",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "State/ArmorPickups",
@@ -14810,11 +14440,6 @@
     "polish": "Po nokaucie nietykalność, razy na starcie: <d>"
   },
   {
-    "key": "TalentDesc/BLANK001",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TalentDesc/CUFFS_BADGED",
     "english": "Next {[TALENT:CUFFS_BADGED]} patrols or posses surrender",
     "polish": "Następne patrole lub obławy, które się poddadzą: {[TALENT:CUFFS_BADGED]}"
@@ -14868,11 +14493,6 @@
     "key": "TalentDesc/DOC_LUCKY_BOUNCE",
     "english": "Armor Save: <p>",
     "polish": "Pancerz się nie zużywa: <p>"
-  },
-  {
-    "key": "TalentDesc/DOC_LUCKY_DRAW",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TalentDesc/DOC_LUCKY_ESCAPE",
@@ -15175,11 +14795,6 @@
     "polish": "Ucieczka przed patrolem, sforą lub obławą: <p>"
   },
   {
-    "key": "TalentDesc/HOPLAONG_DETERMINED",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TalentDesc/JUDGE_DEADLY",
     "english": "Damage: <d>",
     "polish": "Obrażenia: <d>"
@@ -15263,11 +14878,6 @@
     "key": "TalentDesc/KABOOM_EXPLODER",
     "english": "Dynamite Radius: <p>",
     "polish": "Promień wybuchu dynamitu: <p>"
-  },
-  {
-    "key": "TalentDesc/KABOOM_FISSILE",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TalentDesc/KABOOM_FLOATING",
@@ -15390,11 +15000,6 @@
     "polish": "Wysokość skoku: <p>, brak obrażeń od upadku"
   },
   {
-    "key": "TalentDesc/LAIKA_LIQUID_COOLING",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TalentDesc/LAIKA_MULTI_CHARGE",
     "english": "Burst: <d>, Damage: <d2>",
     "polish": "Seria: <d>, obrażenia: <d2>"
@@ -15475,11 +15080,6 @@
     "polish": "Szał po zabiciu Karzyciela: <p>"
   },
   {
-    "key": "TalentDesc/MAMA_INFILTRATOR",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TalentDesc/MAMA_JACKBOX_HIDE",
     "english": "Invisible to Jackboxes",
     "polish": "Niewidzialna dla skrzynek-pułapek"
@@ -15538,11 +15138,6 @@
     "key": "TalentDesc/MAMA_UNSTABLE_DECOY",
     "english": "Decoy Reflects Shots",
     "polish": "Wabik odbija strzały"
-  },
-  {
-    "key": "TalentDesc/NONE",
-    "english": " ",
-    "polish": ""
   },
   {
     "key": "TalentDesc/PREACH_BARTENDER",
@@ -15990,11 +15585,6 @@
     "polish": "Nieustępliwość"
   },
   {
-    "key": "TalentName/BLANK001",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TalentName/CUFFS_BADGED",
     "english": "Badged",
     "polish": "Odznaka"
@@ -16048,11 +15638,6 @@
     "key": "TalentName/DOC_LUCKY_BOUNCE",
     "english": "Lucky Bounce",
     "polish": "Szczęśliwy rykoszet"
-  },
-  {
-    "key": "TalentName/DOC_LUCKY_DRAW",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TalentName/DOC_LUCKY_ESCAPE",
@@ -16355,11 +15940,6 @@
     "polish": "Woltyżer"
   },
   {
-    "key": "TalentName/HOPLAONG_DETERMINED",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TalentName/JUDGE_DEADLY",
     "english": "Deadly",
     "polish": "Zabójczość"
@@ -16443,11 +16023,6 @@
     "key": "TalentName/KABOOM_EXPLODER",
     "english": "Exploder",
     "polish": "Wybuchowiec"
-  },
-  {
-    "key": "TalentName/KABOOM_FISSILE",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TalentName/KABOOM_FLOATING",
@@ -16570,11 +16145,6 @@
     "polish": "Skoczek"
   },
   {
-    "key": "TalentName/LAIKA_LIQUID_COOLING",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TalentName/LAIKA_MULTI_CHARGE",
     "english": "Fission",
     "polish": "Rozszczepienie"
@@ -16655,11 +16225,6 @@
     "polish": "Żniwa"
   },
   {
-    "key": "TalentName/MAMA_INFILTRATOR",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TalentName/MAMA_JACKBOX_HIDE",
     "english": "Jackbox Pass",
     "polish": "Przepustka u skrzynek"
@@ -16723,11 +16288,6 @@
     "key": "TalentName/MAMA_UNSTABLE_DECOY",
     "english": "Vengeful Decoy",
     "polish": "Mściwy wabik"
-  },
-  {
-    "key": "TalentName/NONE",
-    "english": " ",
-    "polish": ""
   },
   {
     "key": "TalentName/PREACH_BARTENDER",
@@ -17230,11 +16790,6 @@
     "polish": "Nagrody w cramm za zabicie: "
   },
   {
-    "key": "TraitDesc/Brutish",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitDesc/BushwhackerBounty",
     "english": "More infamy for each bushwhacker kill",
     "polish": "Więcej niesławy za każdego zabitego czatownika"
@@ -17280,11 +16835,6 @@
     "polish": "Dużo teleporterów"
   },
   {
-    "key": "TraitDesc/Easy",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitDesc/EnemyStrengthHidden",
     "english": "Enemy Strength Hidden",
     "polish": "Siła wrogów ukryta"
@@ -17323,11 +16873,6 @@
     "key": "TraitDesc/Hard",
     "english": "Tough Enemies, Extra Loot",
     "polish": "Twardzi wrogowie, więcej łupów"
-  },
-  {
-    "key": "TraitDesc/HasEstateKeys",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitDesc/Heroic",
@@ -17390,11 +16935,6 @@
     "polish": "Więcej niesławy za każdego zabitego kojota"
   },
   {
-    "key": "TraitDesc/LargePlanet",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitDesc/Lawless",
     "english": "No Patrols Or Packs",
     "polish": "Brak patroli i sfor"
@@ -17408,11 +16948,6 @@
     "key": "TraitDesc/LongTime",
     "english": "Delayed Prince Arrival",
     "polish": "Książę przybywa później"
-  },
-  {
-    "key": "TraitDesc/LotsOfEnemy",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitDesc/LowGravity",
@@ -17465,11 +17000,6 @@
     "polish": "Dużo nadajników do zebrania"
   },
   {
-    "key": "TraitDesc/NewEnum",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitDesc/NightOwls",
     "english": "Guard numbers reduced during day, not night",
     "polish": "Mniej strażników za dnia, nie nocą"
@@ -17498,16 +17028,6 @@
     "key": "TraitDesc/NoBushwhacker",
     "english": "[BLANK]",
     "polish": "[BLANK]"
-  },
-  {
-    "key": "TraitDesc/NoEnemy",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "TraitDesc/NoGoldVariance",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitDesc/NoGrenadier",
@@ -17545,19 +17065,9 @@
     "polish": "[BLANK]"
   },
   {
-    "key": "TraitDesc/NoRifts",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitDesc/NoScorpion",
     "english": "[BLANK]",
     "polish": "[BLANK]"
-  },
-  {
-    "key": "TraitDesc/NoScorpions",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitDesc/NoShieldBearer",
@@ -17573,11 +17083,6 @@
     "key": "TraitDesc/NoWolf",
     "english": "[BLANK]",
     "polish": "[BLANK]"
-  },
-  {
-    "key": "TraitDesc/None",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitDesc/Paved",
@@ -17655,11 +17160,6 @@
     "polish": "Losowe dodatkowe asy"
   },
   {
-    "key": "TraitDesc/SmallPlanet",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitDesc/StingerBounty",
     "english": "More infamy for each stinger kill",
     "polish": "Więcej niesławy za każdego zabitego żądłaka"
@@ -17685,24 +17185,9 @@
     "polish": "W starciach trzeba pilnować tlenu"
   },
   {
-    "key": "TraitDesc/TinyPlanet",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "TraitDesc/Tutorial",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitDesc/Unalert",
     "english": "No Guards for First Jailbreak",
     "polish": "Brak strażników przy pierwszej ucieczce z więzienia"
-  },
-  {
-    "key": "TraitDesc/VeryEasy",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitDesc/VeryHard",
@@ -17780,11 +17265,6 @@
     "polish": "Nagrody"
   },
   {
-    "key": "TraitName/Brutish",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitName/BushwhackerBounty",
     "english": "Bushwhacker Bounty",
     "polish": "Nagroda za czatowników"
@@ -17828,11 +17308,6 @@
     "key": "TraitName/Developed",
     "english": "Developed",
     "polish": "Rozwinięta"
-  },
-  {
-    "key": "TraitName/Easy",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitName/EnemyStrengthHidden",
@@ -17960,11 +17435,6 @@
     "polish": "Powolny książę"
   },
   {
-    "key": "TraitName/LotsOfEnemy",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitName/LowGravity",
     "english": "Low Gravity",
     "polish": "Niska grawitacja"
@@ -18015,11 +17485,6 @@
     "polish": "Węzeł nawigacyjny"
   },
   {
-    "key": "TraitName/NewEnum",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitName/NightOwls",
     "english": "Night Owls",
     "polish": "Nocne marki"
@@ -18048,21 +17513,6 @@
     "key": "TraitName/NoBushwhacker",
     "english": "No Buckshooters",
     "polish": "Bez czatowników"
-  },
-  {
-    "key": "TraitName/NoEnemy",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "TraitName/NoEnemyTraitsEnd",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "TraitName/NoGoldVariance",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitName/NoGrenadier",
@@ -18100,11 +17550,6 @@
     "polish": "Bez jeżozwierzy"
   },
   {
-    "key": "TraitName/NoRifts",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitName/NoScorpion",
     "english": "No Scorpions",
     "polish": "Bez żądłaków"
@@ -18128,11 +17573,6 @@
     "key": "TraitName/NoWolf",
     "english": "No Wolves",
     "polish": "Bez kojotów"
-  },
-  {
-    "key": "TraitName/None",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitName/Paved",
@@ -18210,19 +17650,9 @@
     "polish": "Przetasowana"
   },
   {
-    "key": "TraitName/SlightlyShortDay",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitName/SmallPlanet",
     "english": "Small Planet",
     "polish": "Mała planeta"
-  },
-  {
-    "key": "TraitName/SmokyPlanet",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitName/StingerBounty",
@@ -18255,19 +17685,9 @@
     "polish": "Maleńka planeta"
   },
   {
-    "key": "TraitName/Tutorial",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "TraitName/Unalert",
     "english": "Unalert",
     "polish": "Nieczujna"
-  },
-  {
-    "key": "TraitName/VeryEasy",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "TraitName/VeryHard",
@@ -19508,11 +18928,6 @@
     "key": "UIMG/End",
     "english": "End",
     "polish": "Koniec"
-  },
-  {
-    "key": "UIMG/EndOfDemo",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "UIMG/EndOfRunOverlayBastardRecoverFailure",

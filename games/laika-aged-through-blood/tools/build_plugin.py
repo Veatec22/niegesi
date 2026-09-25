@@ -1,7 +1,7 @@
 """Zbuduj paczkę z pluginem BepInEx: polski dla Laika: Aged Through Blood bez podmiany plików gry.
 
-Sprawdza pl.json względem angielskich tekstów gry (work/source/en.json z extract.py),
-kompiluje plugin, zamienia pl.json na pl.tsv i składa archiwum z BepInEksem, pluginem,
+Sprawdza teksty z en-pl-review.json względem angielskich tekstów gry (work/source/en.json
+z extract.py), kompiluje plugin, zamienia je na pl.tsv i składa archiwum z BepInEksem, pluginem,
 tekstami i instrukcją. Nie dotyka katalogu gry.
 
     .venv\\Scripts\\python.exe games\\laika-aged-through-blood\\tools\\build_plugin.py --game "C:\\Games\\Laika Aged Through Blood"
@@ -22,6 +22,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 
 VERSION = '0.2.0'
 DATA = 'Laika Aged through Blood_Data'
@@ -82,7 +85,7 @@ def check(terms: dict[str, str]) -> dict:
         if 'limit' in row and len(plain) > row['limit'] and len(plain) > len(TOKENS.sub('', row['text'])):
             long.append(f'{key}: {len(plain)} > limit {row["limit"]} (EN {len(TOKENS.sub("", row["text"]))})')
     if problems:
-        raise SystemExit('pl.json ma błędy:\n  ' + '\n  '.join(problems))
+        raise SystemExit('en-pl-review.json ma błędy:\n  ' + '\n  '.join(problems))
     with_text = [r for r in source if r['text']]
     return {
         'game_texts': len(with_text),
@@ -173,7 +176,7 @@ def main() -> int:
     parser.add_argument('--game', type=Path, required=True, help='katalog gry (ten z Laika Aged through Blood.exe)')
     args = parser.parse_args()
 
-    terms = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    terms = polish_by_key(ROOT)
     stats = check(terms)
 
     work = ROOT / 'work' / 'plugin'

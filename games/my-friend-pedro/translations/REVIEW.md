@@ -28,6 +28,6 @@ zapis wyboru, polskie znaki i początek rozgrywki. Pełnej kampanii i wszystkich
 układów ekranowych jeszcze nie przetestowano. Sprawdź szczególnie długie dialogi,
 opisy trudności, menu modyfikatorów oraz dopowiedzenia ocen.
 
-Korekta: zmień pl.json, uruchom build.py --extract na oryginale z backups,
-następnie review.py i build.py. JSON EN/PL musi zgadzać się z pl.json.
-HTML to podgląd z wyszukiwaniem, nie edytor zapisujący zmiany.
+Korekta: w pracowni (notgeese.cc/admin/), naniesienie przez `tools/corrections.py`
+do `en-pl-review.json` — jedynego pliku tłumaczenia (decyzja 0021); potem review.py
+i build_plugin.py. HTML to podgląd z wyszukiwaniem, nie edytor zapisujący zmiany.

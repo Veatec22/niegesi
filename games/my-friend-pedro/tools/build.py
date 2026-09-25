@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import sys
 import re
 import struct
 import zipfile
@@ -9,6 +10,9 @@ from pathlib import Path
 import UnityPy
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key, write_entries  # noqa: E402
 SHA256 = '4a81ed99cd1e8e5e4665bde87b80d4bd551bf95c088c1b3a80ed2ecfbb9764fd'
 DATA = 'My Friend Pedro - Blood Bullets Bananas_Data'
 OBJECT = 2279
@@ -87,8 +91,7 @@ def main():
     prefix, langs, middle, rows, tail = parse(raw)
     assert encode(prefix, langs, middle, rows, tail) == raw
     assert len(langs) == 10 and len(rows) == 721 and all(x[1] != 'pl' for x in langs)
-    pl_path = ROOT / 'translations/pl.json'
-    pl = json.loads(pl_path.read_text(encoding='utf-8')) if pl_path.exists() else {}
+    pl = polish_by_key(ROOT)
     english = {row[0]: row[3][0] for row in rows}
     assert pl.keys() <= english.keys()
     tokens = lambda s: re.findall(r'<[^>]+>|\[[^\]]+\]|\{[^}]+\}|\|', s)
@@ -105,7 +108,7 @@ def main():
               for k, _, desc, vs, _, _ in rows]
     review_path = ROOT / 'translations/en-pl-review.json'
     if args.extract:
-        review_path.write_text(json.dumps(review, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+        write_entries(ROOT, review)
         print(json.dumps({'entries': len(rows), 'translated': len(pl)}))
         return
     assert json.loads(review_path.read_text(encoding='utf-8')) == review, 'Regenerate review with --extract'

@@ -1,7 +1,7 @@
 """Batch helper for translating: show missing entries, put translations (key<TAB>text).
 
 python work/batch.py show <prefix> [limit]   -> prints missing entries with context
-python work/batch.py put <file.tsv>          -> merges translations into pl.json (\\n = newline)
+python work/batch.py put <file.tsv>          -> merges translations into en-pl-review.json (\\n = newline)
 python work/batch.py stats
 """
 import collections
@@ -10,12 +10,15 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-REVIEW = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
-PL_PATH = ROOT / 'translations/pl.json'
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import load_entries, polish_by_key, update_polish  # noqa: E402
+
+REVIEW = load_entries(ROOT)
 
 
 def load():
-    return json.loads(PL_PATH.read_text(encoding='utf-8'))
+    return polish_by_key(ROOT)
 
 
 def main():
@@ -37,7 +40,7 @@ def main():
                     break
     elif cmd == 'put':
         english = {r['key']: r['english'] for r in REVIEW}
-        added = 0
+        added, new = 0, {}
         for line in Path(sys.argv[2]).read_text(encoding='utf-8').splitlines():
             if not line.strip():
                 continue
@@ -45,10 +48,10 @@ def main():
             assert key in english, 'unknown key ' + key
             text = text.replace('\\n', '\n')
             assert english[key].count('\n') == text.count('\n'), ('newlines', key)
-            pl[key] = text
+            new[key] = text
             added += 1
-        PL_PATH.write_text(json.dumps(pl, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-        print('added', added, 'total', len(pl))
+        update_polish(ROOT, new)
+        print('added', added, 'total', len(load()))
 
 
 if __name__ == '__main__':

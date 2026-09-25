@@ -4099,11 +4099,6 @@
     "polish": "bezużyteczne"
   },
   {
-    "key": "Interact/Uses",
-    "english": "",
-    "polish": ""
-  },
-  {
     "key": "Interact/UsesAvailable",
     "english": "uses available",
     "polish": "dostępne użycia"
@@ -12505,12 +12500,6 @@
     "polish": "Inspirowana BioShockiem i System Shock 2, Void Bastards to rewolucyjna strategiczna strzelanka, która sprawdzi twój spryt i wyćwiczy celność. Czy zdołasz przeprowadzić niedopasowanych więźniów z Void Ark przez opuszczone statki i niezliczone niebezpieczeństwa Mgławicy Sargassowej?"
   },
   {
-    "key": "getXMerits",
-    "english": "",
-    "polish": "",
-    "context": "When you get some money."
-  },
-  {
     "key": "objective",
     "english": "objective",
     "polish": "cel",
@@ -12565,16 +12554,6 @@
     "key": "seach_key_9",
     "english": "Action",
     "polish": "Akcja"
-  },
-  {
-    "key": "xDays",
-    "english": "",
-    "polish": ""
-  },
-  {
-    "key": "xJumps",
-    "english": "",
-    "polish": ""
   },
   {
     "key": "Challenges/DifficultySelectSettingsAdditionalValueAlt",

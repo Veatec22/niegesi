@@ -9,7 +9,8 @@ Uzupełniamy proces redakcyjny na istniejącym pełnym przekładzie. Vertical je
 potwierdzony przez użytkownika; nie wymaga ponownej akceptacji. Aktualne wydanie
 0.3.1 korzysta z pluginu, zgodnie z `game.yaml`; opis podmiany zasobów poniżej jest historyczny.
 
-Sprawdzono zgodność 721 wpisów EN/PL z `translations/pl.json` (brak rozjazdów).
+Sprawdzono zgodność 721 wpisów EN/PL z ówczesnym `translations/pl.json` (brak rozjazdów);
+od 2026-09-25 jedynym plikiem tłumaczenia jest `en-pl-review.json` (decyzja 0021).
 Przygotowano 19 wpisów próbki oraz trzy tematy kierunku w
 [translation-decisions.md](translation-decisions.md): głos Pedra, adaptacja sucharów
 i nazwy osiągnięć. Użytkownik zaakceptował wszystkie trzy rekomendacje. Zapisano
@@ -62,7 +63,6 @@ still pending. Agents never launch the game.
 
 - [Searchable EN/PL review](../translations/en-pl-review.html)
 - [EN/PL JSON](../translations/en-pl-review.json)
-- [Polish source](../translations/pl.json)
 - [Terminology and review notes](../translations/REVIEW.md)
 
 ### Build

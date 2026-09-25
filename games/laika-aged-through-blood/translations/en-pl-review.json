@@ -1268,7 +1268,7 @@
   {
     "key": "UI_CONTENT_WARNING",
     "english": "WARNING: This game contains depictions of extreme acts of violence towards children and suicide, and mention of sexual assault, which some players may find distressing.",
-    "polish": "OSTRZEŻENIE: gra zawiera przedstawienia skrajnej przemocy wobec dzieci i samobójstwa oraz wzmianki o napaści seksualnej, co niektórzy gracze mogą uznać za niepokojące.",
+    "polish": "OSTRZEŻENIE: gra zawiera przedstawienia skrajnej przemocy wobec dzieci i samobójstwa oraz wzmianki o napaści seksualnej, co dla części graczy może być przykre.",
     "context": "UI, limit 270 znaków"
   },
   {
@@ -6230,7 +6230,7 @@
   {
     "key": "D_0_Walkie_3_LAIKA_3",
     "english": "Either way, not good.",
-    "polish": "Tak czy inaczej - niedobrze.",
+    "polish": "Tak czy siak, niedobrze.",
     "context": "DIALOGUES, mówi LAIKA"
   },
   {
@@ -14108,7 +14108,7 @@
   {
     "key": "D_0_Walkie_2_A_LAIKA_4",
     "english": "My point exactly, Elder.",
-    "polish": "W tym rzecz, Starsza.",
+    "polish": "No właśnie, Starsza.",
     "context": "DIALOGUES, mówi A_LAIKA"
   },
   {

@@ -9,12 +9,16 @@ Usage: python analyze.py --game "C:/SteamLibrary/steamapps/common/<Game>"
 import argparse
 import collections
 import json
+import sys
 import re
 import struct
 from pathlib import Path
 import UnityPy
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key, review_path, write_entries  # noqa: E402
 
 
 class Reader:
@@ -118,13 +122,14 @@ def main():
     en = next(i for i, c in enumerate(codes) if c.startswith('en'))
     assert not any(c.startswith('pl') for c in codes), 'Polish already present'
 
-    plfile = ROOT / 'translations/pl.json'
-    polish = json.loads(plfile.read_text(encoding='utf-8')) if plfile.exists() else {}
+    polish = polish_by_key(ROOT) if review_path(ROOT).exists() else {}
     keys = [t['key'] for t in terms]
     assert len(set(keys)) == len(keys), 'duplicate terms'
     rows = []
     for t in terms:
         english = t['texts'][en] if len(t['texts']) > en else ''
+        if not english.strip() and t['key'] not in polish:
+            continue  # pusty termin gry: nie ma czego tłumaczyć ani korygować
         row = {'key': t['key'], 'english': english, 'polish': polish.get(t['key'], '')}
         if t['context']:
             row['context'] = t['context']
@@ -135,9 +140,7 @@ def main():
                      'context': 'Nowy termin dodawany przez plugin; gra go nie ma.'})
     (ROOT / 'translations').mkdir(parents=True, exist_ok=True)
     (ROOT / 'work').mkdir(parents=True, exist_ok=True)
-    if not plfile.exists():
-        plfile.write_text('{}\n', encoding='utf-8')
-    (ROOT / 'translations/en-pl-review.json').write_text(json.dumps(rows, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    write_entries(ROOT, rows)
     for i, code in enumerate(codes):
         if i == en:
             continue
