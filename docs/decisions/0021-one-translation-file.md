@@ -19,6 +19,15 @@ Migracja gry: mapa zbudowana z review musi być identyczna z dotychczasowym `pl.
 się nie zmienia, więc i wynik — sprawdzalne bez plików gry. Rozjazdy wyrównuje się
 przed migracją na korzyść pliku, z którego zbudowano wydaną paczkę.
 
+Stan 2026-09-25: wszystkie 26 gier zmigrowane. Po drodze: Laika przejęła w review
+3 brzmienia z `pl.json`; Boomerang X ma jeden wpis dla dwóch wierszy tabeli z tym samym
+kluczem; z review wypadły puste wiersze gier (bez EN i PL: OTXO 104, Wild Bastards 117,
+Turbo Overkill 17, Void Bastards 4, Anger Foot 2), których build nie używał; Dread
+Templar ma wpis na pole (`klucz/text`, `klucz/name`); Heat Signature trzyma w review
+też gramatykę nazw przedmiotów (dawne `items.json`, rodzaj w polu `gender`), a partie
+`parts/` zniknęły. Buildy sprawdzono na plikach (wejście równe dawnemu `pl.json`),
+bez gier; pierwsza przebudowa każdej paczki jest zarazem testem.
+
 Płaski identyfikator dla niepustego namespace przestaje być formatem repo; to sprawa
 wewnętrzna builda danej gry (otwarta kwestia 6 specyfikacji odpada).
 

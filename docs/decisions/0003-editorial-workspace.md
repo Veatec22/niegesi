@@ -199,14 +199,15 @@ Ustalenia bez osobnego pliku decyzji:
    9 grup SCM. Prototyp w `site/src/prototype/` zostaje (decyzja użytkownika).
    Panel sprawdzony przez użytkownika na żywo na SCM 2026-09-25: działa.
 5. Plan po teście panelu (ustalony z użytkownikiem 2026-09-25):
-   - Jeden plik tłumaczenia (0021), najpierw SCM, potem pozostałe gry z testem
-     równoważności z dotychczasowym `pl.json`.
+   - ~~Jeden plik tłumaczenia (0021).~~ Zrobione 2026-09-25 dla wszystkich 26 gier,
+     z testem równoważności wejścia builda z dawnym `pl.json`; wszystkie 26 otwiera się
+     w pracowni.
    - Narzędzie nanoszenia eksportu `tools/corrections.py`. Obieg: użytkownik pobiera
      eksport w panelu, daje plik sesji Claude na swoim komputerze („zrób to”); agent
      nanosi, buduje paczkę z grą na dysku i wydaje na main. Eksport nie ma wersji;
      wersja paczki zmienia się dopiero przy wydaniu na main. Obecna numeracja wersji
      jest przypadkowa, konwencja do ustalenia osobno.
-   - Walidator wszystkich gier w buildzie strony i generowana tabela stanu gier.
+   - ~~Walidator wszystkich gier i tabela stanu.~~ `tools/check_games.ts`, workflow „Gry”.
    - Struktura (grupy, sekwencje) gra po grze; kolejność wybiera agent, od gier
      najtańszych do najbardziej dialogowych.
    - Wyrównanie procesu: każda gra przed korektą w panelu ma biblię, decyzje

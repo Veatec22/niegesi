@@ -169,8 +169,8 @@ do 6.0.0-be.788. Wtedy zostaje podmiana plików.
   `polish` i opcjonalnie `context`, `note`, `max_length`. Wzór:
   `games/shotgun-cop-man/translations/en-pl-review.json`. Z tego pliku czytają buildy
   (`tools/translations.py`) i pracownia korekty; innej kopii polskich tekstów w repo nie ma.
-  Gry, które jeszcze mają `pl.json`, czekają na migrację — do tego czasu oba pliki muszą
-  być zgodne co do znaku.
+  Pusty `polish` przy niepustym `english` znaczy „jeszcze nieprzetłumaczone” — build
+  zostawia wtedy oryginał. `tools/check_games.ts` pilnuje formatu wszystkich gier.
 - Podział treści w katalogu gry jest sztywny, bo zasila też stronę w `site/`:
   `README.md` to wyłącznie instrukcja dla gracza, po polsku, wyświetlana w panelu gry
   na stronie: nagłówek `# <Gra> PL`, sekcja `## Instalacja` z ponumerowanymi krokami

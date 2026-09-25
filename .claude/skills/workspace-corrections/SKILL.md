@@ -24,8 +24,9 @@ wersji: nowa wersja paczki powstaje dopiero przy wydaniu na main.
    - **Do rozstrzygnięcia** (kod 3): EN albo PL w repo różni się od bazy korekty,
      albo wpisu brak. Pokaż użytkownikowi oba brzmienia i zapytaj; nie zgaduj.
    - **Konflikty z pracowni** nie są nanoszone. Wymień je w odpowiedzi.
-   - Gra jeszcze z `pl.json` (przed migracją 0021): nanieś te same zmiany ręcznie
-     do `pl.json` i sprawdź zgodność obu plików, albo najpierw ją zmigruj.
+   - W Heat Signature wpisy `item-*` to gramatyka nazw przedmiotów: `item-modifier`
+     musi zachować trzy formy „m / ż / n”, a zmianę rodzaju rzeczownika robi się
+     w polu `gender` (pracownia jej nie pokazuje).
 4. **Zależności korekty.** Gdy korekta zmienia termin, imię, formę zwracania się
    lub powtarzalny zwrot, wyszukaj to samo brzmienie w innych wpisach i w biblii.
    Pozostałe wystąpienia **zaproponuj** użytkownikowi jako listę, nie nanoś ich sam.
