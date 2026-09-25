@@ -133,6 +133,10 @@ Build przyjmuje tylko oryginały (sumy SHA-256 w `tools/hld.py`).
   `patch.py release`).
 - W grze: **jeszcze nie testowane.**
 
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli 126 wpisów na 4 grupy (menu, tryby gry, ustawienia, podpowiedzi) po kluczach.
+
 ## Materiał gry
 
 Paczka nie niesie zawartości gry: łatki tekstów to nasze linie, łatka exe to nasze rzędy

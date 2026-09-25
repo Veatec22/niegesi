@@ -102,3 +102,7 @@ z DefaultGame.ini. Próbka pod `en` działała, ale `pl` nie było jeszcze spraw
 Niezależny przegląd 1507/1507 wpisów: `docs/localization-review.md`. Naniesiono 8 pewnych poprawek
 w `en-pl-review.json`; paczki nie przebudowano, więc 0.2.0 w `dist/` ich nie zawiera. Następny krok:
 decyzje użytkownika w sprawie wariantów z raportu, potem build i pełne przejście w grze.
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 9 grup po tabeli locres (menu, samouczki, mapa, przedmioty, zadania, dziennik, dialogi, wyzwania, aktualizacje). Bez sekwencji — dialog to głównie narracja.
