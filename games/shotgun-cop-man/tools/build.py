@@ -14,6 +14,9 @@ import UnityPy
 ORIGINAL_SHA256 = '064c07138b7f5e133733c4b8ec8449457407c1f7a2cfec9b6d9c218960bfea83'
 VERSION = '0.1'
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 
 def parse(raw):
     pos = 56
@@ -78,7 +81,7 @@ def main():
         raise ValueError('Choose an output directory outside the game installation.')
     if hashlib.sha256(source.read_bytes()).hexdigest() != ORIGINAL_SHA256:
         raise ValueError(f'Unsupported or modified original asset. Expected SHA-256 {ORIGINAL_SHA256}. No output was written.')
-    translations = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    translations = polish_by_key(ROOT)
     env = UnityPy.load(str(source))
     obj = next(o for o in env.objects if o.path_id == 4903)
     raw = obj.get_raw_data()

@@ -137,12 +137,13 @@ Nie wybrano ani nie utworzono projektu Supabase, nie wykonano migracji ani deplo
 - [0012 Rozliczanie stanu gry działa w Edge Function](0012-reconciliation-in-edge-function.md)
 - [0013 Jeden format pliku review dla wszystkich gier](0013-one-review-file-format.md)
 - [0014 Jedno konto, logowanie linkiem na e-mail](0014-single-admin-email-login.md)
-- [0015 Docelowo ujednolicamy też pl.json](0015-unify-pl-json-too.md)
+- [0015 Docelowo ujednolicamy też pl.json](0015-unify-pl-json-too.md) (zastąpione przez 0021)
 - [0017 Wynik pracy bez wpisu na main czeka na ręczne usunięcie](0017-removed-entries-kept-for-manual-cleanup.md)
 - [0018 Pierwsza wersja nie przenosi wpisów między grupami](0018-no-group-moves-in-first-version.md)
 - [0019 Szkice zapisuje się i odrzuca tylko w grze](0019-save-inside-game-only.md)
   (zastępuje zapis wszystkich gier z 0009)
 - [0020 Eksport pomija konflikty i wypisuje je osobno](0020-export-skips-conflicts.md)
+- [0021 Jeden plik tłumaczenia na grę: en-pl-review.json](0021-one-translation-file.md)
 - Pierwsza wersja ma grupy i sekwencje (rozmowy po kolei, z mówcą i pewnością
   kolejności), bez grafu odnóg. Graf dojdzie przy Laice.
 
@@ -196,7 +197,22 @@ Ustalenia bez osobnego pliku decyzji:
    przechodzi, w tym wszystkie 6 panelu. Scalone z main (`b0b8d8c`), strona zbudowana,
    `https://notgeese.cc/admin/` odpowiada z `noindex`; `workspace-open` widzi teraz
    9 grup SCM. Prototyp w `site/src/prototype/` zostaje (decyzja użytkownika).
-   Zostają: test panelu na prawdziwym projekcie i narzędzie nanoszenia eksportu.
+   Panel sprawdzony przez użytkownika na żywo na SCM 2026-09-25: działa.
+5. Plan po teście panelu (ustalony z użytkownikiem 2026-09-25):
+   - Jeden plik tłumaczenia (0021), najpierw SCM, potem pozostałe gry z testem
+     równoważności z dotychczasowym `pl.json`.
+   - Narzędzie nanoszenia eksportu `tools/corrections.py`. Obieg: użytkownik pobiera
+     eksport w panelu, daje plik sesji Claude na swoim komputerze („zrób to”); agent
+     nanosi, buduje paczkę z grą na dysku i wydaje na main. Eksport nie ma wersji;
+     wersja paczki zmienia się dopiero przy wydaniu na main. Obecna numeracja wersji
+     jest przypadkowa, konwencja do ustalenia osobno.
+   - Walidator wszystkich gier w buildzie strony i generowana tabela stanu gier.
+   - Struktura (grupy, sekwencje) gra po grze; kolejność wybiera agent, od gier
+     najtańszych do najbardziej dialogowych.
+   - Wyrównanie procesu: każda gra przed korektą w panelu ma biblię, decyzje
+     i niezależny przegląd `localization-review` (decyzja użytkownika: to zawsze
+     krok mniej przy jego finalnej korekcie). 4 najstarsze gry nie mają biblii
+     ani decyzji; 20 gier nie ma przeglądu.
 
 ## Pozostałe kwestie
 

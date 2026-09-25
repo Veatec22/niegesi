@@ -1,6 +1,6 @@
 """Zbuduj paczkę z pluginem BepInEx: polski dla Shotgun Cop Man bez podmiany plików gry.
 
-Kompiluje plugin, zamienia pl.json na pl.tsv i składa archiwum z BepInEksem,
+Kompiluje plugin, zamienia teksty z en-pl-review.json na pl.tsv i składa archiwum z BepInEksem,
 pluginem, tekstami i instrukcją. Nie dotyka katalogu gry.
 
     .venv\\Scripts\\python.exe games\\shotgun-cop-man\\tools\\build_plugin.py --game "C:\\SteamLibrary\\steamapps\\common\\Shotgun Cop Man"
@@ -19,6 +19,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 
 VERSION = '0.3.1'
 DATA = 'Shotgun Cop Man_Data'
@@ -57,8 +60,8 @@ def compiler() -> Path:
 
 
 def write_terms(destination: Path) -> int:
-    """pl.json jest kluczowane terminem I2 — dokładnie tym, po którym pyta gra."""
-    terms = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    """Klucz wpisu to termin I2 — dokładnie ten, po który pyta gra."""
+    terms = polish_by_key(ROOT)
     lines = []
     for key, value in terms.items():
         assert '\t' not in key and '\t' not in value, f'tabulator w {key}'

@@ -1,6 +1,6 @@
 # Docelowo ujednolicamy też pl.json
 
-Status: przyjęte · Data: 2026-09-25 · Temat: [pracownia korekty](0003-editorial-workspace.md)
+Status: zastąpione przez [0021](0021-one-translation-file.md) · Data: 2026-09-25 · Temat: [pracownia korekty](0003-editorial-workspace.md)
 
 Oprócz pliku review ([0013](0013-one-review-file-format.md)) do jednego kształtu
 doprowadzamy też `pl.json`. Ma to być płaska mapa identyfikator → PL, zgodna z plikiem

@@ -20,11 +20,10 @@ linię „Polski dodany jako jezyk 11 z 11".
 
 | Plik | Do czego |
 | --- | --- |
-| [`translations/pl.json`](../translations/pl.json) | Polskie teksty, 485 wpisów kluczowanych identyfikatorem terminu I2. Tu poprawia się tłumaczenie. |
-| [`translations/en-pl-review.json`](../translations/en-pl-review.json) | Zestawienie EN/PL do korekty; zmiany w `pl.json` trzeba nanieść także tutaj. |
+| [`translations/en-pl-review.json`](../translations/en-pl-review.json) | Jedyny plik tłumaczenia (decyzja 0021): 485 wpisów, klucz to identyfikator terminu I2, obok EN i PL. Tu poprawia się tłumaczenie; korekty z pracowni nanosi `tools/corrections.py`. |
 | [`translations/structure.yaml`](../translations/structure.yaml) | Grupy i sekwencja Pedro dla pracowni korekty (decyzja 0010). Nie wpływa na paczkę. Nowy klucz bez pasującej reguły trafi w pracowni do „Do uporządkowania”. |
 | [`plugin/Plugin.cs`](../plugin/Plugin.cs) | Plugin BepInEx. |
-| [`tools/build_plugin.py`](../tools/build_plugin.py) | Kompiluje plugin, zamienia `pl.json` na `pl.tsv` i składa paczkę. |
+| [`tools/build_plugin.py`](../tools/build_plugin.py) | Kompiluje plugin, zamienia teksty z review na `pl.tsv` i składa paczkę. |
 | [`docs/INSTALL-plugin.txt`](INSTALL-plugin.txt) | Instrukcja dla gracza, w paczce jako `READ-ME.txt`. |
 | [`tools/build.py`](../tools/build.py), [`docs/INSTALL.txt`](INSTALL.txt) | Stara droga z wersji 0.1: podmiana `resources.assets`. Zastąpiona pluginem, zostaje dla porównania. |
 
@@ -43,6 +42,12 @@ python -m venv .venv
 Wynik: `dist/Shotgun-Cop-Man-PL-<wersja>.zip` z BepInEksem 5.4.23.5, jego licencją,
 pluginem, `pl.tsv` i `READ-ME.txt`. Obok leży archiwum źródeł BepInEksa tej wersji,
 bo wymaga tego jego licencja (LGPL-2.1). Katalog `dist` nie trafia do Gita.
+
+Od 2026-09-25 build czyta teksty z `en-pl-review.json` (decyzja 0021), a `pl.json`
+zniknął. Sprawdzone na plikach, bez gry: `pl.tsv` z review ma te same 485 linii co
+z dawnego `pl.json`, tylko w kolejności review; plugin wczytuje je do słownika, więc
+kolejność nie ma znaczenia. Pierwsza przebudowa paczki po tej zmianie jest zarazem jej
+sprawdzeniem w grze.
 
 ## Stan testów
 
