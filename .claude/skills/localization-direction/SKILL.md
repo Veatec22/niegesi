@@ -32,7 +32,7 @@ Zapisz próbkę i propozycje w `games/<gra>/docs/translation-decisions.md`, w se
 „Przed verticalem”. Dla każdego tematu podaj klucze/scenę, EN, rekomendację PL,
 ewentualny wariant, uzasadnienie i status: **propozycja**, **decyzja agenta** lub
 **uzgodnione z użytkownikiem**. Zwykle wystarczą 3–5 tematów, bez sztucznego minimum.
-Nie wpisuj wariantów jako obowiązujących tłumaczeń do `pl.json`.
+Nie wpisuj wariantów jako obowiązujących tłumaczeń do pliku tłumaczenia (`en-pl-review.json`).
 
 Przedstaw użytkownikowi tę konkretną próbkę i zapytaj o istotne wybory przed verticalem.
 Nie rób ankiety o każdą nazwę czy przecinek. Jeśli wcześniejsze ustalenia wystarczają

@@ -55,6 +55,11 @@ Rozmawiamy po polsku.
    stoi na stronie jako zastępczy kafelek. Status spolszczenia (gotowe, wersja testowa, w trakcie)
    ustawia się w jednym miejscu, `games/catalog.yaml`: nowa gra trafia tam od razu
    na listę `w-trakcie`, a na `gotowe` przenosi ją dopiero użytkownik po pełnym ograniu. Zasady dotyczące zawartości paczki opisuje sekcja poniżej.
+10. **Korekty z pracowni.** Użytkownik czyta i poprawia teksty w pracowni
+    (`notgeese.cc/admin/`), pobiera eksport gry i daje go sesji na swoim komputerze.
+    Naniesienie, build i wydanie na main opisuje
+    `.claude/skills/workspace-corrections/SKILL.md`. Gra trafia do pracowni po kroku 7:
+    z biblią, decyzjami i niezależnym review, żeby użytkownikowi zostało jak najmniej.
 
 ## Jak dostarczamy spolszczenie
 
@@ -92,7 +97,7 @@ Wynika z tego kilka reguł, których trzymamy się bez wyjątku:
   źródeł tej konkretnej wersji. Nie modyfikujemy jego kodu i nie scalamy go z naszym.
 
 Wzorcem jest `games/my-friend-pedro`: plugin w `plugin/Plugin.cs`, budowanie przez
-`tools/build_plugin.py`, teksty dalej w `translations/pl.json`. Ta droga zbiła paczkę
+`tools/build_plugin.py`, teksty dalej w `translations/`. Ta droga zbiła paczkę
 z 142 MB przepisanego zasobu Unity do 660 KB, z czego nasze jest 43 KB.
 
 **Gdy pluginu się nie da, dostarczamy łatkę różnicową, nie plik.** Paczka niesie wtedy
@@ -159,11 +164,13 @@ do 6.0.0-be.788. Wtedy zostaje podmiana plików.
 - Każda gra ma katalog `games/<gra>/`. Przy kontynuacji najpierw przeczytaj jego
   `docs/technical.md` i sprawdź istniejące teksty oraz narzędzia, żeby podjąć pracę
   od aktualnego etapu.
-- Każda gra musi mieć `translations/en-pl-review.json`: identyfikator wpisu, angielski
-  oryginał i polskie tłumaczenie obok siebie, opcjonalnie kontekst lub uwagi.
-  Wzór: `games/shotgun-cop-man/translations/en-pl-review.json` (`key`, `english`, `polish`).
-  Plik służy użytkownikowi do oceny i poprawiania tłumaczenia automatycznego; utrzymuj go
-  w zgodzie z `translations/pl.json`, również po korektach użytkownika.
+- Każda gra ma jeden plik tłumaczenia, `translations/en-pl-review.json`
+  (decyzje 0013 i 0021): lista wpisów z `key`, opcjonalnym `namespace`, `english`,
+  `polish` i opcjonalnie `context`, `note`, `max_length`. Wzór:
+  `games/shotgun-cop-man/translations/en-pl-review.json`. Z tego pliku czytają buildy
+  (`tools/translations.py`) i pracownia korekty; innej kopii polskich tekstów w repo nie ma.
+  Gry, które jeszcze mają `pl.json`, czekają na migrację — do tego czasu oba pliki muszą
+  być zgodne co do znaku.
 - Podział treści w katalogu gry jest sztywny, bo zasila też stronę w `site/`:
   `README.md` to wyłącznie instrukcja dla gracza, po polsku, wyświetlana w panelu gry
   na stronie: nagłówek `# <Gra> PL`, sekcja `## Instalacja` z ponumerowanymi krokami

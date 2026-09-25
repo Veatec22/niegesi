@@ -16,8 +16,7 @@ Minimalna zawartość:
 | `docs/technical.md` | Co obejmuje tłumaczenie, jak gra trzyma teksty, co build podmienia, czego nie rusza, budowanie, stan testów, nota o materiale gry. |
 | `docs/INSTALL.txt` | Instrukcja dla gracza: instalacja, przywracanie oryginału, zgodność z wersją gry, zakres. Zwykły tekst, trafia do paczki jako `READ-ME.txt`. |
 | `tools/build.py` | Budowanie plików gry z oryginałów. |
-| `translations/pl.json` | Polskie teksty. |
-| `translations/en-pl-review.json` | Angielski oryginał obok tłumaczenia, do korekty. |
+| `translations/en-pl-review.json` | Jedyny plik tłumaczenia: klucz, angielski oryginał i polski tekst (decyzja 0021). |
 
 Katalog `dist/` powstaje przy budowaniu i jest ignorowany przez Gita.
 
@@ -35,13 +34,18 @@ Katalog `dist/` powstaje przy budowaniu i jest ignorowany przez Gita.
 
 ## Format `translations/`
 
-`pl.json` ma klucze takie, jakich używa gra — identyfikator terminu, path ID zasobu,
-cokolwiek jest w danym silniku naturalne. Klucz wymyślony na potrzeby tłumaczenia to
-dodatkowa warstwa do pomylenia.
+`en-pl-review.json` to lista wpisów `{key, namespace?, english, polish, context?, note?,
+max_length?}` ([0013](decisions/0013-one-review-file-format.md)). Klucz jest taki, jakiego
+używa gra — identyfikator terminu, path ID zasobu, cokolwiek jest w danym silniku
+naturalne. Klucz wymyślony na potrzeby tłumaczenia to dodatkowa warstwa do pomylenia.
+Para `namespace` + `key` jest unikalna. `context` to notatka z oryginału, jeśli gra taką trzyma.
 
-`en-pl-review.json` niesie ten sam klucz, angielski oryginał, polskie tłumaczenie i notatkę
-kontekstową z oryginału, jeśli gra taką trzyma. Zmiana tekstu w `pl.json` idzie w parze
-ze zmianą w pliku korektorskim.
+Build czyta teksty przez `tools/translations.py` (`polish_by_key`, `load_entries`).
+Jeśli paczka potrzebuje płaskiej mapy, build tworzy ją w `dist/`, nie w repo — druga
+kopia polskich tekstów w repo zawsze w końcu się rozjeżdża
+([0021](decisions/0021-one-translation-file.md)). Podział na grupy i rozmowy dla pracowni
+leży w `translations/structure.yaml` (format w
+[specyfikacji](specs/editorial-workspace.md#plik-struktury)).
 
 ## Testowanie na własnej instalacji
 

@@ -15,7 +15,7 @@ Agent prowadzący uruchamia osobnego subagenta w świeżym kontekście (bez hist
 tłumaczenia; jeśli narzędzie udostępnia `fork_turns`, wybierz `none`). Przekazuje:
 
 - ten skill, katalog gry i zakres pełnego tłumaczenia;
-- kompletne EN/PL, `pl.json`, biblię i `docs/translation-decisions.md`;
+- kompletny plik tłumaczenia `en-pl-review.json` (w starszych grach także `pl.json`), biblię i `docs/translation-decisions.md`;
 - kontekst scen, materiały gry i ograniczenia z `docs/technical.md`;
 - wynik aktualnego `l10n_report.py`, jako wskazówki, nie zastępstwo tekstów.
 
@@ -29,7 +29,7 @@ nie przedstawiaj jako ukończonego review przez osobnego agenta.
 
 Na początku ustal liczbę i identyfikatory wpisów do sprawdzenia, korzystając
 z istniejącego formatu gry (np. `table` + `term`, nie zawsze samo `key`). Porównaj
-EN/PL z `pl.json` i dostępną ekstrakcją; zgłoś braki i rozjazdy zamiast zgadywać,
+EN/PL z dostępną ekstrakcją (i z `pl.json`, jeśli gra go jeszcze ma); zgłoś braki i rozjazdy zamiast zgadywać,
 która wersja jest aktualna. Nie zmieniaj wspólnych formatów na potrzeby przeglądu.
 
 Czytaj pełne wpisy, scenami i grupami funkcjonalnymi. Duży materiał podziel na
@@ -75,7 +75,7 @@ Zapisz `games/<gra>/docs/localization-review.md`:
   5–10 najważniejszych tematów; ten limit nie ogranicza zakresu przeglądu ani raportu.
 - **Do sprawdzenia w grze:** konkretne sceny/ekrany i co ma rozstrzygnąć test.
 
-Agent prowadzący weryfikuje przesłanki i nanosi pewne poprawki do `pl.json` i EN/PL.
+Agent prowadzący weryfikuje przesłanki i nanosi pewne poprawki do pliku tłumaczenia.
 Przedstawia użytkownikowi warianty stylistyczne i oczekuje na rozstrzygnięcie zmian,
 których nie zlecono mu wybierać samodzielnie. Do tego czasu zostawia obecny tekst.
 Nie musi wstrzymywać niezależnych poprawek ani technicznego builda.
