@@ -139,7 +139,8 @@ function saveGame() {
 }
 function exportData(comment='') {
   return { format:1, game:slug, source:{kind:'prototype-local',main_sha:null}, exported_at:new Date().toISOString(), comment,
-    corrections:rows().filter(row=>stateOf(row)==='pending').map(row=>({namespace:'',key:row.key,english:saved[row.key].english,before:saved[row.key].before,after:saved[row.key].after})) };
+    corrections:rows().filter(row=>stateOf(row)==='pending').map(row=>({namespace:'',key:row.key,english:saved[row.key].english,before:saved[row.key].before,after:saved[row.key].after})),
+    conflicts:rows().filter(row=>stateOf(row)==='conflict').map(row=>({namespace:'',key:row.key,english:saved[row.key].english,before:saved[row.key].before,after:saved[row.key].after,main_english:row.english,main_polish:row.polish})) };
 }
 function switchVariant(delta) {
   const keys=Object.keys(variants);variant=keys[(keys.indexOf(variant)+delta+keys.length)%keys.length];page=0;
@@ -192,7 +193,7 @@ function handle(event) {
   else if(action==='journal'){modal('Dziennik gry',journal.length?`<ol>${journal.map(j=>`<li><small>${new Date(j.at).toLocaleTimeString('pl')}</small> ${esc(j.message)}</li>`).join('')}</ol>`:'<p>Brak zapisanych akcji. Szkice nie trafiają do dziennika.</p>');}
   else if(action==='export'){
     const blocked=counts().conflict>0;
-    modal('Eksport korekt · Shotgun Cop Man',`<p>${pendingCount()} korekt. Eksport obejmuje wyłącznie zapisany wynik pracy.</p>${Object.keys(drafts).length?notice(`${Object.keys(drafts).length} lokalnych szkiców nie trafi do eksportu. Zapisz je osobno, jeśli mają być uwzględnione.`):''}${blocked?notice('Najpierw rozstrzygnij konflikty i zapisz grę. Blokada eksportu przy konflikcie jest wariantem do oceny.'):''}<label for="pw-comment">Komentarz dla agenta</label><textarea id="pw-comment" placeholder="Co agent powinien wiedzieć przy nanoszeniu korekt?"></textarea><details><summary>Pokaż strukturę JSON</summary><pre>${esc(JSON.stringify(exportData(),null,2))}</pre></details><p class="pw-muted">Próbka jest oznaczona jako prototyp, nie jako eksport z main. Pobranie niczego nie zmienia.</p>`,`<button class="pw-primary" data-action="download" ${blocked?'disabled':''}>Pobierz JSON prototypu</button>`);
+    modal('Eksport korekt · Shotgun Cop Man',`<p>${pendingCount()} korekt. Eksport obejmuje wyłącznie zapisany wynik pracy.</p>${Object.keys(drafts).length?notice(`${Object.keys(drafts).length} lokalnych szkiców nie trafi do eksportu. Zapisz je osobno, jeśli mają być uwzględnione.`):''}${blocked?notice(`${counts().conflict} wpisów w konflikcie nie trafi do korekt; eksport wypisze je osobno.`):''}<label for="pw-comment">Komentarz dla agenta</label><textarea id="pw-comment" placeholder="Co agent powinien wiedzieć przy nanoszeniu korekt?"></textarea><details><summary>Pokaż strukturę JSON</summary><pre>${esc(JSON.stringify(exportData(),null,2))}</pre></details><p class="pw-muted">Próbka jest oznaczona jako prototyp, nie jako eksport z main. Pobranie niczego nie zmienia.</p>`,`<button class="pw-primary" data-action="download">Pobierz JSON prototypu</button>`);
   } else if(action==='download'){
     const payload=exportData(document.getElementById('pw-comment').value);const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'}));
     const a=document.createElement('a');a.href=url;a.download=`shotgun-cop-man-PROTOTYP-korekty-${new Date().toISOString().slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Pobrano JSON prototypu. Stan wpisów nie zmienił się.');

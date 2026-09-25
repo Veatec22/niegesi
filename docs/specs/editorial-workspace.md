@@ -2,7 +2,7 @@
 
 Status: specyfikacja do prototypu; otwarte szczegóły przed implementacją.
 Data: 2026-09-25.
-Decyzje: [0003 i indeks 0004–0019](../decisions/0003-editorial-workspace.md),
+Decyzje: [0003 i indeks 0004–0020](../decisions/0003-editorial-workspace.md),
 [ustalenia techniczne 0016](../decisions/0016-workspace-technical-findings.md).
 Słownik: [pojęcia](../glossary.md).
 
@@ -162,8 +162,8 @@ szkic korekty od aktualnego main. Zapis jest nadal osobną akcją.
   rewizja; jedna transakcja z dziennikiem (0017).
 - Dziennik: odczyt jednej gry, chroniony tym samym kontem administratora.
 - Eksport: ostatni odświeżony SHA i zapisane korekty. Lokalne szkice są wyraźnie
-  wyłączone; okno pozwala wrócić do zapisu. Konflikty nie są korektami gotowymi do
-  automatycznego naniesienia; ich obsługa przy eksporcie wymaga decyzji poniżej.
+  wyłączone; okno pozwala wrócić do zapisu. Konflikty nie blokują eksportu: trafiają
+  do osobnej listy, nie do korekt (0020).
 
 Otwarcie/zapis sprawdzają administratora po `user_id`. Wyłączona rejestracja. RLS
 nie dopuszcza innych kont; samo `authenticated` nie wystarcza. Logowanie e-mailem
@@ -192,7 +192,9 @@ jest dopiero przy eksporcie. Sekwencje pokazują kolejność i mówców, a nie g
 ### Eksport i naniesienie
 
 Wersjonowany JSON: gra, SHA ostatniego odświeżenia, czas, komentarz, lista korekt
-`namespace/key/english/before/after`. Bez przeniesień grup (0018).
+`namespace/key/english/before/after`. Bez przeniesień grup (0018). Osobna lista
+`conflicts`: `namespace/key`, zapisane `english/before/after` oraz `main_english/main_polish`;
+agent jej nie nanosi (0020).
 Eksport nie zawiera akceptacji, nie zamraża zapisów, nie oznacza ich jako zastosowane.
 Komentarz jest treścią od użytkownika, nie automatyczną instrukcją wykonania kodu.
 
@@ -240,10 +242,10 @@ budowanie i instalacja gry przez Edge Functions. Prototyp nie wdraża Supabase.
 2. ~~Usunięte z main wpisy z wynikiem pracy.~~ Rozstrzygnięte w 0017.
 3. ~~Atomowość zapisu wielu gier.~~ Nie ma zapisu wielu gier (0019).
 4. ~~Konflikty i cofanie przeniesień grup.~~ Przeniesienia poza pierwszą wersją (0018).
-5. Ustalić eksport przy konfliktach: blokada całej gry czy jawne pomijanie konfliktów.
+5. ~~Eksport przy konfliktach.~~ Pomija je i wypisuje osobno (0020).
 6. Ustalić jednoznaczny identyfikator płaskiego PL dla niepustego namespace oraz
    referencje struktury; nie zgadywać separatora.
 7. Opcjonalny token odczytu GitHuba przed produkcją. Nie jest wymagany do prototypu.
 
 Powyższe kwestie nie blokują makiety SCM. W makiecie jawnie symulujemy tylko
-uzgodnione reguły; ekran eksportu blokuje konflikt jako wariant do oceny.
+uzgodnione reguły.

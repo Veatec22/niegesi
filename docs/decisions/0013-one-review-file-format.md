@@ -7,6 +7,8 @@ Format ustalamy na podstawie obecnych plików. Gry, które go nie spełniają, d
 do niego w repo. Wcześniej pracownia pokazuje przy otwarciu takiej gry czytelny błąd,
 a nie zgaduje. Stan z 2026-09-25: Dread Templar ma słownik zamiast listy, a Boomerang X
 zdublowany wpis `difficulty_select_prompt`.
+Walidator pracowni (2026-09-25) dodatkowo odrzuca OTXO: 104 wpisy z pustym `english`
+bez pola `polish`. Pozostałe 23 gry przechodzą.
 
 ## Format
 

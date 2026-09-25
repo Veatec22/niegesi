@@ -142,6 +142,7 @@ Nie wybrano ani nie utworzono projektu Supabase, nie wykonano migracji ani deplo
 - [0018 Pierwsza wersja nie przenosi wpisów między grupami](0018-no-group-moves-in-first-version.md)
 - [0019 Szkice zapisuje się i odrzuca tylko w grze](0019-save-inside-game-only.md)
   (zastępuje zapis wszystkich gier z 0009)
+- [0020 Eksport pomija konflikty i wypisuje je osobno](0020-export-skips-conflicts.md)
 - Pierwsza wersja ma grupy i sekwencje (rozmowy po kolei, z mówcą i pewnością
   kolejności), bez grafu odnóg. Graf dojdzie przy Laice.
 
@@ -169,9 +170,9 @@ Ustalenia bez osobnego pliku decyzji:
 ## Następne kroki
 
 1. Użytkownik ocenia warianty i przepływ prototypu. Nie uznawać braku odpowiedzi za wybór.
-2. Rozstrzygnąć pozostałe szczegóły ze specyfikacji: eksport przy konfliktach
-   i identyfikatory z namespace. Usunięte wpisy, przeniesienia i zapis wielu gier
-   rozstrzygnięte 2026-09-25 (0017–0019).
+2. ~~Rozstrzygnąć szczegóły ze specyfikacji.~~ Rozstrzygnięte 2026-09-25 (0017–0020).
+   Otwarty zostaje tylko separator identyfikatora `pl.json` dla niepustego namespace;
+   wraca przy pierwszej grze z namespace.
 3. ~~Doprowadzić SCM do formatu 0013, przygotować strukturę 0010 i zgodność z 0015.~~
    SCM spełniał już 0013 i 0015; `structure.yaml` dodany 2026-09-25 (485/485 wpisów w grupach).
 4. Implementować Supabase, `/admin/` oraz narzędzie nanoszenia eksportu.
