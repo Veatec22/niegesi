@@ -178,9 +178,16 @@ Ustalenia bez osobnego pliku decyzji:
 4. Implementować Supabase, `/admin/` oraz narzędzie nanoszenia eksportu.
    Stan 2026-09-25: backend w [supabase/](../../supabase/README.md) — migracja z RLS
    i RPC, funkcje `workspace-open` i `workspace-save`, wspólny moduł reguł. Testy: 25 w Deno
-   (reguły i orkiestracja z atrapą bazy) oraz SQL na lokalnym PostgreSQL. **Nie wdrożone**:
-   brak dostępu do projektu z tej sesji. Zostają: wdrożenie z konfiguracją Auth,
-   panel `/admin/`, narzędzie nanoszenia eksportu i scalenie `structure.yaml` SCM z main.
+   (reguły i orkiestracja z atrapą bazy) oraz SQL na lokalnym PostgreSQL.
+   Wdrożenie 2026-09-25: migrację użytkownik wgrał ręcznie w SQL Editor (tabele `workspace_*`
+   i RPC są w bazie); `supabase_migrations.schema_migrations` jeszcze nie istnieje, więc
+   `migration repair --status applied 20260925120000` czeka na wykonanie z sieci, która
+   dopuszcza połączenie z Postgresem. Funkcje `workspace-open` i `workspace-save` wdrożone
+   (v1, ACTIVE, `verify_jwt`): bez nagłówka i z kluczem anon zwracają 401, CORS 204.
+   Sesje podpisuje ES256 z `kid`. `workspace_admins` jest pusta mimo konta w Auth — do czasu
+   wpisu administratora każde otwarcie zwróci 403. Test na koncie administratora (485 wpisów
+   SCM, obce konto 403, nieaktualna rewizja 409) nie wykonany.
+   Zostają: panel `/admin/`, narzędzie nanoszenia eksportu i scalenie `structure.yaml` SCM z main.
 
 ## Pozostałe kwestie
 
