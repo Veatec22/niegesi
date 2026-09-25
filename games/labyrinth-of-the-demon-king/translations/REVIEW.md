@@ -5,8 +5,8 @@ i zlecił pełny przekład. Pełna kampania nie została jeszcze sprawdzona wizu
 
 Otwórz `en-pl-review.html` w przeglądarce: wyszukiwanie działa po EN, PL,
 identyfikatorze i uwagach. Filtr „Tylko z uwagami” wyodrębnia miejsca do oceny.
-Źródłem są `pl.json` i zgodny z nim `en-pl-review.json`. Poprawki trzeba zapisać
-w obu plikach, potem uruchomić `tools/review.py` i `tools/build.py`.
+Źródłem jest `en-pl-review.json` — jedyny plik tłumaczenia (decyzja 0021). Korekty
+z pracowni nanosi `tools/corrections.py`, potem `tools/review.py` i `tools/build.py`.
 
 ## Terminologia
 

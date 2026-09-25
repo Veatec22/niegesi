@@ -16,7 +16,6 @@ import {
 
 /** Gry, których review panel dziś odrzuca; do naprawy w repo (0013). */
 const REVIEW_PENDING: Record<string, string> = {
-  'boomerang-x': 'zdublowany wpis difficulty_select_prompt',
   'dread-templar': 'słownik zamiast listy wpisów',
   otxo: '104 wpisy bez pola polish',
 };
@@ -24,16 +23,11 @@ const REVIEW_PENDING: Record<string, string> = {
 /** Gry, które jeszcze mają pl.json (migracja 0021). Po migracji gra wypada z listy. */
 const PL_JSON_PENDING = new Set<string>([
   'anger-foot',
-  'boomerang-x',
   'bpm',
   'dread-templar',
   'heat-signature',
   'holy-shoot',
-  'katana-zero',
-  'labyrinth-of-the-demon-king',
-  'not-a-hero',
   'otxo',
-  'skate-story',
   'sprawl',
 ]);
 

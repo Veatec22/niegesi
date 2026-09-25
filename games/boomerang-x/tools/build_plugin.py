@@ -1,6 +1,6 @@
 """Zbuduj paczkę z pluginem BepInEx: polski dla Boomerang X bez podmiany plików gry.
 
-Kompiluje plugin, zamienia pl.json na pl.tsv i składa archiwum z BepInEksem,
+Kompiluje plugin, zamienia teksty z en-pl-review.json na pl.tsv i składa archiwum z BepInEksem,
 pluginem, tekstami i instrukcją. Nie dotyka katalogu gry.
 
     .venv\\Scripts\\python.exe games\\boomerang-x\\tools\\build_plugin.py --game "C:\\SteamLibrary\\steamapps\\common\\Boomerang X"
@@ -20,6 +20,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 
 VERSION = '0.2'
 DATA = 'BOOMERANG X_Data'
@@ -86,8 +89,8 @@ def compiler() -> Path:
 
 
 def write_terms(destination: Path) -> int:
-    """pl.json jest kluczowane identyfikatorem wiersza tabeli — tym, o który pyta gra."""
-    terms = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    """Klucz wpisu to identyfikator wiersza tabeli — ten, o który pyta gra."""
+    terms = polish_by_key(ROOT)
     lines = []
     for key, value in terms.items():
         assert '\t' not in key and '\t' not in value, f'tabulator w {key}'

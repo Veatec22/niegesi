@@ -37,6 +37,9 @@ from fonts import FONT_SPRITES, LOWER, UPPER, glyphs_for
 from gmdata import DataWin, TPAG_SIZE, u32
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 EXE_NAME = 'Katana ZERO.exe'
 EXE_SHA256 = '291c552e7aa4640a5a40b320863fe13747ac431133a834c8532a2cdfa574bb93'
 WIN_SHA256 = '8353b7da345f8c72ecafdc0a523d7b627091ff88a17cd56c8350cf15bdba509e'
@@ -93,7 +96,7 @@ def build_exe(src: Path, pl: dict[str, str], new_maps: dict[str, str], out: Path
     known = {e.key for e in entries}
     unknown = sorted(set(pl) - known)
     if unknown:
-        raise SystemExit(f'pl.json ma klucze, których nie ma w grze: {unknown[:10]}')
+        raise SystemExit(f'en-pl-review.json ma klucze, których nie ma w grze: {unknown[:10]}')
     stats = {'entries': len(entries), 'translated': 0, 'english': 0}
     for e in entries:
         if e.key in pl:
@@ -413,7 +416,7 @@ def main():
         got = sha256(p)
         if got != want:
             sys.exit(f'{p.name}: SHA-256 {got}, oczekiwano {want} (GOG 1.0.5). Nic nie zapisano.')
-    pl = json.loads((ROOT / 'translations' / 'pl.json').read_text(encoding='utf-8'))
+    pl = polish_by_key(ROOT)
     maps = json.loads((ROOT / 'work' / 'fontmaps.json').read_text(encoding='utf-8'))
     dw = DataWin(src_win)
     glyphs, new_maps = font_glyphs(dw, maps)

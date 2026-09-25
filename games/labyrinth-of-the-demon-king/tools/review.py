@@ -7,8 +7,6 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def main():
     rows=json.loads((ROOT/'translations/en-pl-review.json').read_text(encoding='utf-8'))
-    polish=json.loads((ROOT/'translations/pl.json').read_text(encoding='utf-8'))
-    assert {x['key']:x['polish'] for x in rows}==polish
     rendered=[]
     for i,row in enumerate(rows):
         notes=row.get('notes','')

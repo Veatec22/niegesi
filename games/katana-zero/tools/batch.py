@@ -1,7 +1,7 @@
-"""Warsztat tłumacza: partie wpisów do tłumaczenia i scalanie z pl.json.
+"""Warsztat tłumacza: partie wpisów do tłumaczenia i scalanie z en-pl-review.json.
 
     batch.py dump [--size 120]     # kolejne nieprzetłumaczone wpisy, w kolejności gry
-    batch.py merge <partia.json>   # dopisuje partię do pl.json
+    batch.py merge <partia.json>   # dopisuje partię do translations/en-pl-review.json
 
 `dump` pokazuje klucz, angielski i rosyjski (płeć mówiącego w czasie przeszłym).
 Kwestia, której angielski tekst ma już tłumaczenie gdzie indziej, dostaje podpowiedź
@@ -15,13 +15,16 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PL = ROOT / 'translations' / 'pl.json'
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key, write_entries  # noqa: E402
+
 LAST = ROOT / 'work' / 'last_batch.json'
 
 
 def load():
     texts = json.loads((ROOT / 'work' / 'texts.json').read_text(encoding='utf-8'))
-    pl = json.loads(PL.read_text(encoding='utf-8'))
+    pl = polish_by_key(ROOT)
     return texts, pl
 
 
@@ -40,11 +43,10 @@ def by_english(texts, pl):
 
 
 def save(pl):
-    def key(k):
-        fn, rest = k.split(':', 1)
-        return (fn, int(rest) if rest.lstrip('-').isdigit() else -1, rest)
-    PL.write_text(json.dumps(dict(sorted(pl.items(), key=lambda kv: key(kv[0]))),
-                             ensure_ascii=False, indent=1), encoding='utf-8')
+    """Wpisy przetłumaczone w kolejności work/texts.json, jak w tools/review.py."""
+    texts = json.loads((ROOT / 'work' / 'texts.json').read_text(encoding='utf-8'))
+    write_entries(ROOT, [{'key': t['key'], 'english': t['en'], 'polish': pl[t['key']], 'context': t['ru']}
+                         for t in texts if t['key'] in pl])
 
 
 def dump(size: int):

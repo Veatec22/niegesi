@@ -2,7 +2,7 @@
 cards, controller notices and the final boss prompt.
 
 Positions, fonts and spacing were measured on the English originals
-(tools/locate.py and pixel bands); see docs/technical.md. Text comes from pl.json.
+(tools/locate.py and pixel bands); see docs/technical.md. Text comes from en-pl-review.json.
 `{...}` in a line marks the highlight colour (red percentage, white key names).
 """
 import re

@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import sys
 import re
 import struct
 from pathlib import Path
@@ -10,6 +11,9 @@ import locres
 import pak
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key, review_path, write_entries  # noqa: E402
 PAK_SHA = 'e2be58acee1ecdbe04b3147612b298a2112791b98a2fc2d80658433bc91f3d48'
 EN_SHA = 'a21b8c409d78fd066ef0a5cd9f4e41efc11dccf6bea74a321ec7d35387cad846'
 
@@ -59,14 +63,12 @@ def main():
     english = locres.load(enfile)
     assert locres.dump(english) == data
     assert len(english.texts()) == 1120
-    plfile = translations/'pl.json'
-    polish = json.loads(plfile.read_text(encoding='utf-8')) if plfile.exists() else {}
+    polish = polish_by_key(ROOT) if review_path(ROOT).exists() else {}
     assert polish.keys() <= {e.key for _, e in english.entries()}
-    if not plfile.exists(): plfile.write_text('{}\n', encoding='utf-8')
     review = [{'key': e.key, 'english': e.text, 'polish': polish.get(e.key, ''),
                'namespace': ns, 'status': 'translated' if e.key in polish else 'untranslated'}
               for ns,e in english.entries()]
-    (translations/'en-pl-review.json').write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    write_entries(ROOT, review)
     cultures = {}
     for name in source.files:
         if re.fullmatch('Shinigami/Content/Localization/Game/[^/]+/Game.locres', name):

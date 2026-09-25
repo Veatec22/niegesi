@@ -4,7 +4,8 @@
 
 Użytkownik potwierdził działanie verticala („poszło gładko”) i zlecił pełny
 przekład. Dodano 798 wpisów, zachowując 322 wpisy verticala bez zmian:
-**1120/1120**. Pliki `pl.json` i `en-pl-review.json` są zsynchronizowane;
+**1120/1120**. Jedynym plikiem tłumaczenia jest `en-pl-review.json` (decyzja 0021;
+do 2026-09-25 obok leżał zgodny z nim `pl.json`);
 `tools/review.py` tworzy przeszukiwalne HTML z uwagami do korekty.
 
 Paczka `dist/Labyrinth-of-the-Demon-King-PL-0.2.zip`: **83 553 bajty**,

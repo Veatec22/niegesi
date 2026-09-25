@@ -1,6 +1,6 @@
 """Zbuduj paczkę z pluginem BepInEx: polski dla Skate Story bez podmiany plików gry.
 
-Kompiluje plugin, zamienia pl.json na pl.tsv, wypisuje mapę czcionek z build.py
+Kompiluje plugin, zamienia teksty z en-pl-review.json na pl.tsv, wypisuje mapę czcionek z build.py
 i składa archiwum z BepInEksem, pluginem, tekstami i instrukcją.
 
     .venv\\Scripts\\python.exe games\\skate-story\\tools\\build_plugin.py --game "C:\\Games\\Skate Story"
@@ -21,6 +21,9 @@ from pathlib import Path
 TOOLS = Path(__file__).resolve().parent
 ROOT = TOOLS.parent
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 
 sys.path.insert(0, str(TOOLS))
 from build import FONT_MAP, PL  # mapa czcionek i indeks polskiego slotu — jedno źródło prawdy
@@ -73,7 +76,7 @@ def compiler() -> Path:
 
 
 def write_tables(work: Path) -> tuple[int, int]:
-    terms = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    terms = polish_by_key(ROOT)
     lines = []
     for key, value in terms.items():
         assert '\t' not in key and '\t' not in value, f'tabulator w {key}'

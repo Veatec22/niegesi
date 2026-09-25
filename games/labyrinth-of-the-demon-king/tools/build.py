@@ -8,6 +8,7 @@ import argparse
 from collections import Counter
 import hashlib
 import json
+import sys
 import re
 import tempfile
 import zipfile
@@ -20,6 +21,9 @@ import locres
 import pak
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import load_entries, polish_by_key  # noqa: E402
 VERSION='0.2'
 STEM='pakchunk99-notgeesePL_P'
 PAKS='Shinigami/Content/Paks'
@@ -52,11 +56,10 @@ def main():
     ap.add_argument('--game',required=True,type=Path)
     args=ap.parse_args()
     game=args.game.resolve();dist=ROOT/'dist';dist.mkdir(exist_ok=True)
-    polish=json.loads((ROOT/'translations/pl.json').read_text(encoding='utf-8'))
-    review=json.loads((ROOT/'translations/en-pl-review.json').read_text(encoding='utf-8'))
+    polish=polish_by_key(ROOT)
+    review=load_entries(ROOT)
     assert len({x['key'] for x in review})==len(review)
     assert all(x['polish'] for x in review), 'Full release requires all reviewed entries translated'
-    assert {x['key']:x['polish'] for x in review if x['polish']}==polish
     source=GamePak(game/PAKS/'pakchunk0-WindowsNoEditor.pak')
     en=source.extract(EN_PATH)
     with tempfile.TemporaryDirectory(prefix='labyrinth-pl-') as tmp:

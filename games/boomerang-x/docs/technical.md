@@ -296,8 +296,7 @@ Installing for a test, and putting the original back:
 
 ### Translation files
 
-- [`translations/pl.json`](../translations/pl.json) — row id to Polish text. The build reads only this.
-- [`translations/en-pl-review.json`](../translations/en-pl-review.json) — all 360 rows with the English, the Polish, the developers' note as context and the authors' `max_char_limit`. Regenerate with `tools/review.py --source <original DLL>` after editing `pl.json`. Rows not yet translated have an empty `polish`.
+- [`translations/en-pl-review.json`](../translations/en-pl-review.json) — the only translation file (decision 0021, 2026-09-25; `pl.json` is gone): 359 entries with the English, the Polish, the developers' note as context and the authors' limit as `max_length`. The two table rows `difficulty_select_prompt` are one entry with a `note` on the second English text. `tools/review.py --source <original DLL>` refreshes the English and context and keeps the Polish. Rows not yet translated have an empty `polish`.
 
 ### What the vertical covers
 

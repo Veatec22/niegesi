@@ -5,7 +5,7 @@ The Chowdren build copies these strings with fixed lengths baked into the code
 initialisers), so a Polish string may not be longer than the English one in
 bytes. Shorter strings are padded with spaces: around the text when the
 English has no edge spaces (centred pop-ups), at the end otherwise (labels that
-keep a column). Keys in pl.json are `exe|0x<file offset>`.
+keep a column). Translation keys (en-pl-review.json) are `exe|0x<file offset>`.
 """
 from fonts import encode
 

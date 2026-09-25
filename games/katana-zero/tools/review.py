@@ -2,8 +2,8 @@
 
     .venv\\Scripts\\python.exe games\\katana-zero\\tools\\review.py
 
-Tworzy translations/en-pl-review.json (klucz, angielski, polski, rosyjski jako kontekst
-slotu, który zajmujemy) i sprawdza, czy tłumaczenie niesie te same znaczniki co oryginał:
+Odświeża translations/en-pl-review.json (klucz, angielski, polski z samego pliku — decyzja
+0021 —, rosyjski jako kontekst slotu, który zajmujemy) i sprawdza, czy tłumaczenie niesie te same znaczniki co oryginał:
 kolory i efekty w nawiasach kwadratowych oraz łamania linii. Gwiazdki to pauzy
 w wypowiedzi — ich liczbę tylko zgłaszamy, bo polski szyk bywa inny.
 """
@@ -15,12 +15,16 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key, write_entries  # noqa: E402
+
 TAG = re.compile(r'\[[^\]]*\]')
 
 
 def main() -> int:
     texts = {t['key']: t for t in json.loads((ROOT / 'work' / 'texts.json').read_text(encoding='utf-8'))}
-    pl = json.loads((ROOT / 'translations' / 'pl.json').read_text(encoding='utf-8'))
+    pl = polish_by_key(ROOT)
     errors, notes = [], []
     rows = []
     for key, t in texts.items():
@@ -34,8 +38,7 @@ def main() -> int:
         if en.replace('*', '').strip() and TAG.sub('', en).count('*') != TAG.sub('', tr).count('*'):
             notes.append(f'{key}: pauzy * {TAG.sub("", en).count("*")} -> {TAG.sub("", tr).count("*")}')
         rows.append({'key': key, 'english': en, 'polish': tr, 'context': t['ru']})
-    (ROOT / 'translations' / 'en-pl-review.json').write_text(
-        json.dumps(rows, ensure_ascii=False, indent=1), encoding='utf-8')
+    write_entries(ROOT, rows)
     for n in notes:
         print('uwaga:', n)
     for e in errors:

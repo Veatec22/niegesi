@@ -74,8 +74,9 @@ Generator odczytuje metadane DLL, nie uruchamia gry.
 .venv/Scripts/python.exe games/skate-story/tools/build.py --original backups/skate-story/resources.assets --managed "C:/Games/Skate Story/SkateStory_Data/Managed"
 ```
 
-`--extract` synchronizuje review z `pl.json` i `review-notes.json`. Domyślny build
-wymaga ich zgodności oraz pełnego pokrycia kluczy. Sprawdza SHA źródła, dokładny
+`--extract` odświeża review z tabeli gry i `review-notes.json`, PL biorąc z samego review
+(jedyny plik tłumaczenia, decyzja 0021). Domyślny build wymaga zgodności review z tabelą
+oraz pełnego pokrycia kluczy. Sprawdza SHA źródła, dokładny
 round-trip tabeli, znaczniki (także `(S)` i `(C)`), liczbę nowych linii, fonty,
 ponowny odczyt wyjścia, zmianę wyłącznie obiektu 785 i zachowanie 19 innych kolumn.
 ZIP jest otwierany ponownie, sprawdzany CRC i porównywany bajtowo z plikiem wynikowym.
@@ -214,7 +215,7 @@ cała kampania czeka na sprawdzenie w rozgrywce. Następny krok: kontynuacja zap
 kontrola dłuższych dialogów, sklepu i celów. Tekstury z napisami nie są zmieniane.
 
 [Korekta EN/PL w przeglądarce](../translations/en-pl-review.html) ·
-[JSON EN/PL](../translations/en-pl-review.json) · [Polskie teksty](../translations/pl.json).
+[JSON EN/PL — plik tłumaczenia](../translations/en-pl-review.json).
 21 wpisów ma uwagi do korekty, przede wszystkim literackiej.
 
 [Szczegóły techniczne, build i kopie zapasowe](../docs/technical.md) ·

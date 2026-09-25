@@ -26,6 +26,7 @@ the original DLL rather than a recompile.
 import argparse
 import hashlib
 import json
+import sys
 import struct
 from pathlib import Path
 
@@ -33,6 +34,9 @@ import table
 
 HERE = Path(__file__).resolve().parent
 GAME = HERE.parent
+sys.path.insert(0, str(GAME.parents[1] / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 ORIGINAL = '1c0ac29aad888faa7439ec57ea7da4976a74c6936aefd7b388a3e9fe904e0b40'
 RELATIVE = Path('BOOMERANG X_Data') / 'Managed' / 'Assembly-CSharp.dll'
 VERSION = '1.1'
@@ -163,7 +167,6 @@ def main():
     parser.add_argument('--source', type=Path, required=True,
                         help='The original Assembly-CSharp.dll, or the game folder holding it')
     parser.add_argument('--out', type=Path, default=GAME / 'dist', help='Where to build')
-    parser.add_argument('--translations', type=Path, default=GAME / 'translations' / 'pl.json')
     args = parser.parse_args()
 
     source = args.source
@@ -174,7 +177,7 @@ def main():
     assert digest == ORIGINAL, (f'{source} is not the original DLL ({digest}). '
                                 'Build from the game as shipped, or from the backup.')
 
-    polish = json.loads(args.translations.read_text(encoding='utf-8'))
+    polish = polish_by_key(GAME)
     image = table.Assembly(source)
     out = bytearray(raw)
 

@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import sys
 import re
 import struct
 import zipfile
@@ -11,6 +12,9 @@ from UnityPy.helpers.TypeTreeGenerator import TypeTreeGenerator
 from i2 import parse, parse_languages, integer, string
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key, write_entries  # noqa: E402
 SHA = '3e65be29272f5879bd907a0d0c7f8134f5b5bd35902263dc65381bb0c3a7a82c'
 PL = 15
 FONT_MAP = {
@@ -54,7 +58,7 @@ def main():
     assert serialize(raw[:56], rows, tail) == raw
     langs, end = parse_languages(tail)
     assert len(langs) == 20 and langs[PL] == ('Polish', 'pl', integer(1))
-    pl = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    pl = polish_by_key(ROOT)
     source = {k: v[0] for k, t, v, _, _ in rows if t == 0}
     assert len(source) == 2305 and pl.keys() == source.keys(), 'Incomplete translation'
     tokens = lambda s: re.findall(r'<[^>]+>|\{[^}]+\}|\*\w+\*|\*\*|\([A-Z]\)', s)
@@ -70,7 +74,7 @@ def main():
               for k, t, v, _, _ in rows if t == 0]
     review_path = ROOT / 'translations/en-pl-review.json'
     if args.extract:
-        review_path.write_text(json.dumps(review, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+        write_entries(ROOT, review)
         print(json.dumps({'translated': sum(bool(x['polish']) for x in review), 'total': len(review)}))
         return
     assert json.loads(review_path.read_text(encoding='utf-8')) == review

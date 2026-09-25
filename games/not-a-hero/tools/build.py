@@ -24,6 +24,9 @@ import menus
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import load_entries, polish_by_key  # noqa: E402
 VERSION = '0.2.0'
 HASHES = {
     'Assets.dat': '25023db094a6d3dc0534953b9963116b1bb16926ae2742d2b40040aeea5c0a33',
@@ -165,9 +168,8 @@ def main():
         if digest != expected:
             raise SystemExit(f'{relative}: expected {expected}, got {digest}; use original backup')
         inputs[relative] = raw
-    pl = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
-    review = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
-    assert {r['key']: r['polish'] for r in review} == pl
+    pl = polish_by_key(ROOT)
+    review = load_entries(ROOT)
     originals = {r['key']: r['english'] for r in review}
     assets = Assets(inputs['Assets.dat'])
     fonts = {i: polish_font(assets.image(i), *cell) for i, cell in FONT_CELLS.items()}

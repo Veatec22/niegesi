@@ -106,7 +106,7 @@ Build: `.venv\Scripts\python.exe games\not-a-hero\tools\build.py --game "C:\Game
 oryginałów i odmawia pracy na plikach spolszczonych — gdy tłumaczenie jest
 zainstalowane, buduj z `--game backups\not-a-hero`.
 Pomocnicze: `tools/extract.py` (zrzut tekstów do `work/`), `tools/review.py`
-(odtworzenie `en-pl-review.json` z `pl.json`).
+(odświeżenie EN w `en-pl-review.json` z gry; to jedyny plik tłumaczenia, decyzja 0021).
 
 Test lokalny: `tools/install.py --game …` (z `--restore` przywraca). Kopie oryginałów
 w `backups/not-a-hero/` i jako `*.przed-spolszczeniem` obok plików gry.
