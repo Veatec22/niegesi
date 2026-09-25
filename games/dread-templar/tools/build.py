@@ -28,6 +28,7 @@ import UnityPy
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import assembly
 import game
+import texts
 import scene as scenes
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -167,7 +168,8 @@ def main():
     for name in ['resources.assets', ASSEMBLY] + chosen:
         check(source / name, name)
 
-    polish = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    # Teksty z en-pl-review.json, pola liczbowe i kolejność z angielskiego bloku gry.
+    polish = texts.polish_tree(game.load(source / 'resources.assets')['eng'])
     assert list(polish) == game.CATEGORIES, list(polish)
     if args.no_diacritics:
         polish = {c: {k: {f: (v.translate(DIACRITICS) if isinstance(v, str) else v)

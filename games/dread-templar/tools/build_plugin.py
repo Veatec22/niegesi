@@ -1,6 +1,6 @@
 """Zbuduj paczkę z pluginem BepInEx: polski dla Dread Templar bez podmiany plików gry.
 
-Zamienia pl.json na pl.tsv (rodzaj wpisu, kategoria/klucz, tekst), kompiluje plugin
+Zamienia teksty z en-pl-review.json na pl.tsv (rodzaj wpisu, kategoria/klucz, tekst), kompiluje plugin
 i składa archiwum z BepInEksem, tekstami i instrukcją. Nie dotyka katalogu gry.
 
     .venv\\Scripts\\python.exe games\\dread-templar\\tools\\build_plugin.py --game "C:\\Games\\Dread Templar"
@@ -23,6 +23,7 @@ REPO = ROOT.parents[1]
 
 sys.path.insert(0, str(TOOLS))
 from game import CATEGORIES  # ten sam podział co przy metodzie z podmianą pliku
+from texts import polish_tree  # noqa: E402
 
 VERSION = '0.2'
 DATA = 'DreadTemplar_Data'
@@ -64,8 +65,8 @@ def escape(value: str) -> str:
 
 
 def write_terms(destination: Path) -> tuple[int, int]:
-    """pl.json: kategoria → klucz → {text, name}. Plugin pyta o „kategoria/klucz"."""
-    polish = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    """Teksty: kategoria → klucz → {text, name}. Plugin pyta o „kategoria/klucz"."""
+    polish = polish_tree()
     unknown = [c for c in polish if c not in CATEGORIES]
     assert not unknown, f'nieznane kategorie: {unknown}'
 

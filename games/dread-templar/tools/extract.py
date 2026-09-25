@@ -1,7 +1,8 @@
 """Dump the English source text and refresh the review file.
 
-Reads an original resources.assets, pairs every English entry with whatever is
-already in translations/pl.json, and writes translations/en-pl-review.json.
+Reads an original resources.assets and refreshes translations/en-pl-review.json,
+the only translation file (decision 0021): one entry per text field, English beside
+the Polish already in the file (empty = not translated yet), in the game's order.
 Never writes into the game directory.
 """
 import argparse
@@ -11,8 +12,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import game
+import texts
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import review_path, write_entries  # noqa: E402
 
 
 def main():
@@ -24,21 +29,11 @@ def main():
     english = data['eng']
     assert data['pol'] == {}, 'This build already carries Polish text.'
 
-    polish_path = ROOT / 'translations/pl.json'
-    polish = json.loads(polish_path.read_text(encoding='utf-8')) if polish_path.exists() else {}
-
-    review, missing = {}, 0
-    for category, key, entry in game.entries(english):
-        translated = polish.get(category, {}).get(key, {})
-        row = {'en': entry}
-        if translated:
-            row['pl'] = translated
-        else:
-            missing += 1
-        review[f'{category}/{key}'] = row
-
-    out = ROOT / 'translations/en-pl-review.json'
-    out.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    polish = texts.translated() if review_path(ROOT).exists() else {}
+    review = texts.review_rows(english, polish)
+    missing = sum(1 for row in review if not row['polish'])
+    write_entries(ROOT, review)
+    out = review_path(ROOT)
 
     characters = sum(len(str(v)) for _, _, e in game.entries(english) for v in e.values())
     print(json.dumps({'entries': len(review), 'translated': len(review) - missing,

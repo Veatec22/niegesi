@@ -40,9 +40,9 @@ The same options menu is baked into 33 scene files, one per level, so all 33 are
 
 | Audience | Files | Use |
 | --- | --- | --- |
-| Game developer | [`translations/pl.json`](../translations/pl.json), [`translations/en-pl-review.json`](../translations/en-pl-review.json) | Dropping Polish into the project properly. `pl.json` is exactly the shape of one language block in the game's own JSON — it can be pasted in as `"pol"` with no conversion. The review file pairs every English entry with its translation. |
+| Game developer | [`translations/en-pl-review.json`](../translations/en-pl-review.json), [`tools/texts.py`](../tools/texts.py) | Dropping Polish into the project properly. The translation file (decision 0021) has one entry per text field: `namespace` = category, `key` = `<key>/<field>`, English beside Polish. `texts.polish_tree(english)` turns it back into exactly one language block of the game's own JSON, ready to paste in as `"pol"`; numeric fields (speaker ids) come from the English block. |
 | Players | The built `DreadTemplar_Data` folder | Drag and drop over the game folder. Build it yourself as below — there is no prebuilt download at the moment. See [INSTALL.txt](../docs/INSTALL.txt). |
-| Translation contributors | [`translations/pl.json`](../translations/pl.json), [`tools/build.py`](../tools/build.py) | Editing the strings and rebuilding from your own original game files. |
+| Translation contributors | [`translations/en-pl-review.json`](../translations/en-pl-review.json), [`tools/build.py`](../tools/build.py) | Editing the strings and rebuilding from your own original game files. |
 
 ### Building
 
@@ -68,7 +68,7 @@ The build checks itself against the untouched originals and refuses to write oth
 
 - every object in `resources.assets` compared by path id - only the text asset differs;
 - the nine original language blocks byte-identical;
-- the Polish block read back from the rebuilt asset equal to `pl.json`, entry for entry;
+- the Polish block read back from the rebuilt asset equal to the translation file, entry for entry;
 - 636 entries in, 636 out, the same keys and the same fields as English;
 - every rich-text tag (`<color=...>`, `<size=...>`, `<sprite=...>`) preserved in the same order as in the source string;
 - in each scene, exactly seven objects changed - the button, its transform, its language component, its label, the grid's transform, the panel it left and the array that indexes it - and every other object byte-identical;
@@ -81,7 +81,7 @@ They render. The menu shows `Dźwięk`, `Zarządzanie danymi` and `Zatwierdź` c
 
 This contradicts an earlier reading of the font assets here, which counted the character table of `LiberationSans SDF` - the fallback the decorative fonts lean on - found 250 characters ending at Latin-1, and concluded Polish could not be drawn. Something further down the fallback chain covers it; the large `SourceHanSerifTC` atlas, which carries Latin Extended-A, is the likely source and is a serif, which is why it blends into the menu's own serif. The conclusion was wrong, and only in-game evidence settled it.
 
-`build.py --no-diacritics` still exists as a fallback for any screen that turns out not to render them. `pl.json` always holds properly spelled Polish; the stripping happens at build time and never touches the source text.
+`build.py --no-diacritics` still exists as a fallback for any screen that turns out not to render them. The translation file always holds properly spelled Polish; the stripping happens at build time and never touches the source text.
 
 ### Testing status
 
