@@ -62,3 +62,15 @@ dzielić limitu 60 zapytań/h bez uwierzytelnienia:
 
 Po wdrożeniu sprawdź: otwarcie SCM zwraca 485 wpisów, obce konto dostaje 403, zapis
 z nieaktualną rewizją 409. Stan wdrożenia wpisuj w [0003](../docs/decisions/0003-editorial-workspace.md).
+
+## Panel `/admin/`
+
+Kod w [site/src/workspace/](../site/src/workspace/), strona `site/src/pages/admin/index.astro`.
+Panel potrzebuje klucza **publishable** projektu (publiczny z założenia). Wpisz go w stałej
+`PROJECT_PUBLISHABLE_KEY` w `site/src/workspace/api.ts` — build na GitHub Actions nie ma
+zmiennych środowiskowych. Nigdy klucza `sb_secret_…`; panel odmówi startu z takim kluczem.
+Do lokalnych prób wystarczy `PUBLIC_SUPABASE_PUBLISHABLE_KEY=… npm --prefix site run dev`.
+
+Testy panelu (`site/tests/admin.spec.ts`) podkładają sesję i odpowiadają za Supabase
+atrapą liczącą wspólnym modułem. Bez klucza w buildzie pomijają się wszystkie poza testem
+braku tekstów gier w HTML i `noindex`.

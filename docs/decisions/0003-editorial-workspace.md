@@ -187,7 +187,12 @@ Ustalenia bez osobnego pliku decyzji:
    Sesje podpisuje ES256 z `kid`. Administrator wpisany w `workspace_admins` (1 konto
    z potwierdzonym e-mailem). Test na koncie administratora (485 wpisów SCM, obce konto 403,
    nieaktualna rewizja 409) nie wykonany.
-   Zostają: panel `/admin/`, narzędzie nanoszenia eksportu i scalenie `structure.yaml` SCM z main.
+   Panel `/admin/` (2026-09-25): logowanie linkiem, lista gier ze szkicami, grupy
+   i sekwencje, trzy tryby redakcji z prototypu, szkice, zapis, konflikty, nieaktualne
+   szkice, „Brak na main”, dziennik, eksport. Testy Playwright z atrapą Supabase (6).
+   Zostają: klucz publishable w `site/src/workspace/api.ts`, test panelu na prawdziwym
+   projekcie, narzędzie nanoszenia eksportu, scalenie z main, usunięcie prototypu
+   (decyzja użytkownika).
 
 ## Pozostałe kwestie
 

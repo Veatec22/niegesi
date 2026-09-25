@@ -78,6 +78,37 @@ export type DraftAction =
   | (EntryRef & { kind: 'unset'; base: { english: string; polish: string } })
   | (EntryRef & { kind: 'forget' });
 
+/** Odpowiedź workspace-open i workspace-save: gra z main plus rozliczony wynik pracy. */
+export interface GameView {
+  game: string;
+  main_sha: string;
+  revision: number;
+  entries: Entry[];
+  layout: Layout;
+  /** Identyfikator postaci z bible.yaml → nazwa do wyświetlenia. */
+  speakers: Record<string, string>;
+  /** Wyniki pracy wpisów obecnych na main. */
+  work: WorkRow[];
+  /** Wyniki pracy bez wpisu na main (0017). */
+  missing: WorkRow[];
+  /** Zmiany stanów z tego rozliczenia. */
+  changes: JournalItem[];
+  /** Ponowienie zapisu, który już przeszedł. */
+  duplicate?: boolean;
+}
+
+/** Treść odpowiedzi z błędem obu funkcji. */
+export interface WorkspaceErrorBody {
+  error: 'bad_request' | 'method' | 'not_found' | 'forbidden' | 'format' | 'github' | 'revision' | 'stale' | 'busy' | 'internal';
+  message: string;
+  file?: string;
+  issues?: string[];
+  retry_at?: string | null;
+  revision?: number;
+  stale?: (EntryRef & { main: { english: string; polish: string } | null })[];
+  invalid?: string[];
+}
+
 export class FormatError extends Error {
   constructor(public readonly file: string, public readonly issues: string[]) {
     super(`${file}: ${issues.slice(0, 5).join('; ')}${issues.length > 5 ? ` (i ${issues.length - 5} więcej)` : ''}`);

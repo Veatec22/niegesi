@@ -11,5 +11,6 @@ export default defineConfig({
   base: '/',
   devToolbar: { enabled: false },
   build: { format: 'directory' },
-  integrations: [sitemap()],
+  // Pracownia korekty jest prywatna: poza sitemapą (strona ma też noindex).
+  integrations: [sitemap({ filter: (page) => !new URL(page).pathname.startsWith('/admin/') })],
 });

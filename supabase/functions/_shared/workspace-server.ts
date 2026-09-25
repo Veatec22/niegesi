@@ -7,8 +7,8 @@ import {
   type DraftAction,
   type Entry,
   FormatError,
+  type GameView,
   type JournalItem,
-  type Layout,
   parseReview,
   planSave,
   resolveLayout,
@@ -19,23 +19,10 @@ import {
 
 type Client = SupabaseContext['supabase'];
 
+export type { GameView };
+
 const SLUG = /^[a-z0-9][a-z0-9-]{0,63}$/;
 const PAGE = 1000;
-
-export interface GameView {
-  game: string;
-  main_sha: string;
-  revision: number;
-  entries: Entry[];
-  layout: Layout;
-  speakers: Record<string, string>;
-  /** Wyniki pracy wpisów obecnych na main. */
-  work: WorkRow[];
-  /** Wyniki pracy bez wpisu na main (0017). */
-  missing: WorkRow[];
-  /** Zmiany stanów z tego rozliczenia. */
-  changes: JournalItem[];
-}
 
 export class RequestError extends Error {
   constructor(public readonly status: number, public readonly body: Record<string, unknown>) {
@@ -198,7 +185,7 @@ function draftActions(value: unknown): DraftAction[] {
  * Zapis szkiców jednej gry (0019). Serwer sam sprawdza bazę szkiców z aktualnym main
  * i rewizję; nieaktualność zwraca do rozstrzygnięcia, bez częściowego zapisu.
  */
-export async function saveGame(supabase: Client, body: Record<string, unknown>): Promise<GameView & { duplicate?: boolean }> {
+export async function saveGame(supabase: Client, body: Record<string, unknown>): Promise<GameView> {
   const game = gameSlug(body);
   if (typeof body.request_id !== 'string' || !UUID.test(body.request_id)) {
     throw new RequestError(400, { error: 'bad_request', message: 'Brak identyfikatora żądania.' });

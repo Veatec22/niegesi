@@ -6,7 +6,7 @@ name: Strona
 on:
   push:
     branches: [main]
-    paths: ['site/**', 'games/catalog.yaml', 'games/*/game.yaml', 'games/*/README.md', '.github/workflows/pages.yml']
+    paths: ['site/**', 'supabase/functions/_shared/workspace/**', 'games/catalog.yaml', 'games/*/game.yaml', 'games/*/README.md', '.github/workflows/pages.yml']
   workflow_dispatch:
 
 permissions:
