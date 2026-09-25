@@ -177,8 +177,9 @@ terminy:
   formy:
   - gladius
   zrodlo: decyzja
-  uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
-    gry.
+  uwaga: 'Samodzielna nazwa przedmiotu wielką literą („Gladius”), w zestawieniach jako
+    nazwa pospolita małą („Wzmocniony gladius 1”). Arbiter jest imieniem własnym. Review
+    2026-09-25.'
 - en: Hover Boost
   pl: Wzmocniony zawis
   formy:
@@ -228,6 +229,37 @@ terminy:
   zrodlo: decyzja
   uwaga: Spójny odpowiednik w narracji, mapie i opisach umiejętności; kontekst w tabelach
     gry.
+- en: Cindered
+  pl: Spopieleni
+  formy:
+  - spopielon
+  - spopieleni
+  zrodlo: gra
+  uwaga: Sekta podpalaczy (Dialog, Journal); dopisane w review 2026-09-25.
+- en: Phoenix
+  pl: Feniks
+  formy:
+  - feniks
+  zrodlo: mitologia
+  uwaga: Boss; dopisane w review 2026-09-25.
+- en: Helicon Legion
+  pl: Legion Helikonu
+  formy:
+  - legion
+  zrodlo: decyzja
+  uwaga: Formacja Adrestii (pancerz, buty, uprawnienia trybuna); dopisane w review 2026-09-25.
+- en: the Fates
+  pl: Mojry
+  formy:
+  - mojr
+  zrodlo: mitologia
+  uwaga: Dopisane w review 2026-09-25.
+- en: divine duo
+  pl: boska dwójca
+  formy:
+  - dwójc
+  zrodlo: decyzja
+  uwaga: Eter i Nyks jako para; dopisane w review 2026-09-25.
 bez_tlumaczenia:
 - Adrestia
 - Harmonia
@@ -252,3 +284,5 @@ decyzje:
 - Polski ma kod pl i osobną pozycję selektora; angielski nie jest zastępowany (użytkownik).
 - Granica 110 znaków raportu wynika z długości już zaakceptowanej próbki, nie gwarantuje
   tempa odczytu wszystkich napisów.
+- 'Review 2026-09-25: komora to zawsze Kirke, także w komunikacie CirceAutoSecurity1.2;
+  C.I.R.C.E. tylko w nazwie interfejsu.'

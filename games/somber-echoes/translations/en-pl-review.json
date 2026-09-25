@@ -517,7 +517,7 @@
   {
     "key": "Dialog/Dialog/SurvivorGRA1.2",
     "english": "A young researcher they called Artemis, had recently gone missing.\nLast seen alive, she was making her way, to power up the shuttle.",
-    "polish": "Niedawno zaginęła młoda badaczka zwana Artemidą.\nOstatnio widziano ją, gdy zmierzała uruchomić zasilanie promu."
+    "polish": "Niedawno zaginęła młoda badaczka zwana Artemidą.\nOstatni raz widziano ją żywą, gdy szła uruchomić zasilanie promu."
   },
   {
     "key": "Dialog/Dialog/NecklaceHalf1.1",
@@ -1347,7 +1347,7 @@
   {
     "key": "Dialog/Dialog/CirceAutoSecurity1.2",
     "english": "Please manually power up the district C.I.R.C.E chamber to negate.",
-    "polish": "Aby je wyłączyć, uruchom ręcznie zasilanie miejscowej komory C.I.R.C.E."
+    "polish": "Aby je wyłączyć, uruchom ręcznie zasilanie miejscowej komory Kirke."
   },
   {
     "key": "Dialog/Dialog/BetrayalApparent1.2",
@@ -1462,7 +1462,7 @@
   {
     "key": "Dialog/Dialog/PathOfTheOracle1.3",
     "english": "Soon, many on the ship had seen the truth, the poor and the misfortuned worshiped her,\nand over the years, guided by her visions, to the rank of Pythia she steadily ascended.",
-    "polish": "Wkrótce wielu na statku poznało prawdę. Biedni i nieszczęśliwi otoczyli ją czcią.\nPrzez lata, prowadzona wizjami, stopniowo zmierzała do godności Pytii."
+    "polish": "Wkrótce wielu na statku poznało prawdę. Biedni i nieszczęśliwi otoczyli ją czcią.\nPrzez lata, prowadzona wizjami, stopniowo doszła do godności Pytii."
   },
   {
     "key": "Dialog/Dialog/SurvivorERA1.1",
@@ -1827,7 +1827,7 @@
   {
     "key": "Dialog/Dialog/SecondMemory1.2",
     "english": "Their innocence they left behind that day, the prophecy, horrendous.\nWith an empty gaze, the oracle decreed, Harmonia’s golden thread of life, Adrestia would sever.",
-    "polish": "Tego dnia straciły niewinność. Proroctwo było straszliwe.\nWyrocznia pustym wzrokiem wpatrywała się w dal: Adrestia przetnie złotą nić życia Harmonii."
+    "polish": "Tego dnia straciły niewinność. Proroctwo było straszliwe.\nWyrocznia z pustym wzrokiem orzekła: Adrestia przetnie złotą nić życia Harmonii."
   },
   {
     "key": "Dialog/Dialog/NecklaceZeroPieces1.1",
@@ -2197,7 +2197,7 @@
   {
     "key": "Journal//E9F647A642EB028BF63C3692061FF22C",
     "english": "Harmonia—or some twisted echo of her—appeared before me. She’s lost again in her illusions of grandeur, raving about a stolen destiny and a brilliance only she remembers.\r\nWhatever she’s become, whatever she’s doing, it’s tearing the Atromitos apart and putting every soul aboard at risk. I have to reach her—before there’s nothing left to save.",
-    "polish": "Harmonia — albo jej wypaczone echo — stanęła przede mną. Znów zaginęła we własnych urojeniach wielkości. Majaczy o odebranym przeznaczeniu i chwale, którą tylko ona pamięta.\r\nCzymkolwiek się stała i cokolwiek robi, rozdziera Atromitos i zagraża każdej duszy na pokładzie. Muszę do niej dotrzeć, zanim nie zostanie nic do ocalenia."
+    "polish": "Harmonia — albo jej wypaczone echo — stanęła przede mną. Znów zagubiła się we własnych urojeniach wielkości. Majaczy o odebranym przeznaczeniu i chwale, którą tylko ona pamięta.\r\nCzymkolwiek się stała i cokolwiek robi, rozdziera Atromitos i zagraża każdej duszy na pokładzie. Muszę do niej dotrzeć, zanim nie zostanie nic do ocalenia."
   },
   {
     "key": "Journal//8E7089354C333C8E3C79B9923734D918",
@@ -2252,7 +2252,7 @@
   {
     "key": "Journal//A833B708409F2090F3880CA0A9BF0E0A",
     "english": "I found a hidden lab—filled with shattered remnants of experiments that bear my and Harmonia’s face. Whatever purpose they served in her grand design, it’s clear not everyone aboard the Atromitos approved. Someone, or perhaps many, opposed her plan with fanatic violence. Only one specimen seems to have survived the attack and was secretly whisked away to an undisclosed location.",
-    "polish": "Znalazłam ukryte laboratorium pełne zniszczonych pozostałości eksperymentów o twarzach mojej i Harmonii. Cokolwiek znaczyły dla jej wielkiego planu, nie wszyscy na Atromitosie to popierali. Ktoś, a może wielu, sprzeciwił się jej z fanatyczną brutalnością. Chyba tylko jeden okaz przetrwał atak i został potajemnie wywieziony w nieznane miejsce."
+    "polish": "Znalazłam ukryte laboratorium pełne zniszczonych pozostałości eksperymentów o moich rysach i rysach Harmonii. Cokolwiek znaczyły dla jej wielkiego planu, nie wszyscy na Atromitosie to popierali. Ktoś, a może wielu, sprzeciwił się jej z fanatyczną brutalnością. Chyba tylko jeden okaz przetrwał atak i został potajemnie wywieziony w nieznane miejsce."
   },
   {
     "key": "Journal//ED7438F04898720D1A6418B219ADFDA5",
@@ -3227,12 +3227,12 @@
   {
     "key": "StringTables/STRING_MapElements/Transition_Disabled",
     "english": "Exit",
-    "polish": "Wyjdź"
+    "polish": "Wyjście"
   },
   {
     "key": "StringTables/STRING_MapElements/Transition_Enabled",
     "english": "Exit",
-    "polish": "Wyjdź"
+    "polish": "Wyjście"
   },
   {
     "key": "StringTables/STRING_MapElements/Crystal_Enabled",

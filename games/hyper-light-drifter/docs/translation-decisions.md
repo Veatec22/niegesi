@@ -60,3 +60,10 @@ Zostały fałszywe alarmy: „Standard”, „MENU”, „Reset”, „XBOX 360/
 z oryginałem celowo; „Standard” / „Standardowe” to dwa różne miejsca (tryb gry i schemat
 sterowania); „Celuj / Strzelaj” wielką literą, bo to osobne etykiety przy ikonach;
 brak spacji na końcu „Wybierz broń w ekwipunku” — w oryginale to przypadkowa spacja.
+
+## Niezależny przegląd (2026-09-25)
+Pełny raport: `docs/localization-review.md`. Wszystkie decyzje powyżej utrzymane.
+Poprawione: „Broń palna w pełni naładowana…” (brakowało „fully”) i „Odblokowano Średni
+zestaw…” (spójnie z nazwą zestawu). Otwarte do decyzji użytkownika: moment wyświetlania
+REMINDERGUN, „SPECJALNY”/„STRZAŁ” w konfiguracji, „Brak” dla N/A, forma trybów sterowania
+i rodzaj „Wyłączona” przy kooperacji — obecny tekst zostaje do rozstrzygnięcia.

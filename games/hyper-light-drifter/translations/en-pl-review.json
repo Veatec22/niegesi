@@ -164,7 +164,7 @@
   {
     "key": "MenuText/MidRangeBossRushLoadoutUnlocked",
     "english": "Mid-Range boss rush loadout unlocked",
-    "polish": "Odblokowano zestaw Średni w Maratonie bossów",
+    "polish": "Odblokowano Średni zestaw w Maratonie bossów",
     "context": "zastępuje ITA: apparecchiature di fascia media di boss rush sbloccata"
   },
   {
@@ -710,7 +710,7 @@
   {
     "key": "Phrases/REMINDERGUN",
     "english": "Gun is fully charged from slashing",
-    "polish": "Broń palna naładowana cięciami miecza",
+    "polish": "Broń palna w pełni naładowana cięciami miecza",
     "context": "zastępuje ITA: Arma da fuoco ricaricata usando la spada"
   },
   {
