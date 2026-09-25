@@ -180,9 +180,8 @@ Ustalenia bez osobnego pliku decyzji:
    i RPC, funkcje `workspace-open` i `workspace-save`, wspólny moduł reguł. Testy: 25 w Deno
    (reguły i orkiestracja z atrapą bazy) oraz SQL na lokalnym PostgreSQL.
    Wdrożenie 2026-09-25: migrację użytkownik wgrał ręcznie w SQL Editor (tabele `workspace_*`
-   i RPC są w bazie); `supabase_migrations.schema_migrations` jeszcze nie istnieje, więc
-   `migration repair --status applied 20260925120000` czeka na wykonanie z sieci, która
-   dopuszcza połączenie z Postgresem. Funkcje `workspace-open` i `workspace-save` wdrożone
+   i RPC są w bazie); wpis historii `20260925120000` dodał w SQL Editor (odpowiednik
+   `migration repair --status applied`), więc `db push` nie wgra jej drugi raz. Funkcje `workspace-open` i `workspace-save` wdrożone
    (v1, ACTIVE, `verify_jwt`): bez nagłówka i z kluczem anon zwracają 401, CORS 204.
    Sesje podpisuje ES256 z `kid`. Administrator wpisany w `workspace_admins` (1 konto
    z potwierdzonym e-mailem). Test na koncie administratora: `workspace-open` dla SCM zwraca
@@ -193,7 +192,8 @@ Ustalenia bez osobnego pliku decyzji:
    Panel `/admin/` (2026-09-25): logowanie linkiem, lista gier ze szkicami, grupy
    i sekwencje, trzy tryby redakcji z prototypu, szkice, zapis, konflikty, nieaktualne
    szkice, „Brak na main”, dziennik, eksport. Testy Playwright z atrapą Supabase (6).
-   Zostają: klucz publishable w `site/src/workspace/api.ts`, test panelu na prawdziwym
+   Klucz publishable wpisany w `site/src/workspace/api.ts`; z nim 18/18 testów strony
+   przechodzi, w tym wszystkie 6 panelu. Zostają: test panelu na prawdziwym
    projekcie, narzędzie nanoszenia eksportu, scalenie z main, usunięcie prototypu
    (decyzja użytkownika).
 

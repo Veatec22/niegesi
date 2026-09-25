@@ -9,7 +9,7 @@ import type { GameView, JournalItem, WorkspaceErrorBody } from '../../../supabas
  * konfiguracji. Pobranie: `npx supabase projects api-keys --project-ref kulwhymoxgaiqpipwbav`
  * (klucz `sb_publishable_…`, nigdy `sb_secret_…`).
  */
-const PROJECT_PUBLISHABLE_KEY = '';
+const PROJECT_PUBLISHABLE_KEY = 'sb_publishable_tLou_pVQr_bzp9sJxLPoQQ_jhiy1YIS';
 
 export const SUPABASE_URL: string = import.meta.env.PUBLIC_SUPABASE_URL ?? 'https://kulwhymoxgaiqpipwbav.supabase.co';
 export const SUPABASE_PUBLISHABLE_KEY: string = import.meta.env.PUBLIC_SUPABASE_PUBLISHABLE_KEY || PROJECT_PUBLISHABLE_KEY;
