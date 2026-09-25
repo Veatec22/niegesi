@@ -51,7 +51,7 @@ Budowanie i instalacja:
 .venv\Scripts\python.exe games\deadbolt\tools\install.py --game "C:\SteamLibrary\steamapps\common\DEADBOLT" --restore
 ```
 
-Pliki: `plugin/Plugin.cpp` (plugin), `tools/fonts.py` (projekt liter → `NieGesi/fonts.txt`,
+Pliki: `plugin/Plugin.cpp` (plugin), `tools/fonts.py` (projekt liter → `notgeese/fonts.txt`,
 podgląd `work/font-preview.png`), `tools/strings_usage.py` (gdzie kod używa każdego napisu,
 klasyfikacja wyświetlanie/logika, `--dump` jednego wpisu CODE), `tools/review.py`
 (en-pl-review.json + kontrola znaczników), `translations/pl.json` (źródło tłumaczeń).
@@ -193,7 +193,7 @@ Adresy poniżej są dowodem z tej wersji, **nie wchodzą do pluginu**.
    są tylko nasze glify (kształty liter), nie piksele gry.
 4. **Dialogi JSON:** hak MinHook na `kernel32!CreateFileW` (runner i `GMFile.dll`
    z MSVCR100 czytają przez niego) przekierowuje `dia_*.json` na wersję polską
-   wygenerowaną z oryginału + `pl.tsv` w `NieGesi/cache/`.
+   wygenerowaną z oryginału + `pl.tsv` w `notgeese/cache/`.
 5. Log: wersja pluginu, PE i GEN8 gry, liczby dopasowań, wynik każdego kroku.
    Każdy błąd wyłącza całość i zostawia grę po angielsku.
 

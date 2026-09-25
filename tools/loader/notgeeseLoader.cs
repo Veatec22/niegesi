@@ -1,4 +1,4 @@
-// Nie gęsi — punkt wejścia dla gier z okrajanym kodem zarządzanym.
+// Not Geese — punkt wejścia dla gier z okrajanym kodem zarządzanym.
 //
 // Preloader BepInEksa woła w PlatformUtils.SetPlatform metodę Module.GetPEKind
 // wyłącznie po to, żeby wykryć procesor ARM. Gry budowane z managed strippingiem
@@ -37,7 +37,7 @@ namespace Doorstop
 
         public static void Start()
         {
-            var report = "niegesi_loader_" + DateTime.Now.ToString("yyyyMMdd_HHmmss_fff") + ".log";
+            var report = "notgeese_loader_" + DateTime.Now.ToString("yyyyMMdd_HHmmss_fff") + ".log";
 
             try
             {
@@ -74,7 +74,7 @@ namespace Doorstop
             {
                 try
                 {
-                    File.WriteAllText(report, "Nie gęsi — punkt wejścia nie wystartował.\n\n" + error);
+                    File.WriteAllText(report, "Not Geese — punkt wejścia nie wystartował.\n\n" + error);
                 }
                 catch
                 {

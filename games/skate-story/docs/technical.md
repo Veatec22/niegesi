@@ -163,7 +163,7 @@ albo własna wersja BepInEksa bez wywołania `GetPEKind`.
 
 ### Własny punkt wejścia też nie pomoże — sprawdzone statycznie (21 września 2026)
 
-Po tym, jak `tools/loader/NieGesiLoader.cs` przeszedł dalej w Boomerang X, sprawdziliśmy,
+Po tym, jak `tools/loader/notgeeseLoader.cs` przeszedł dalej w Boomerang X, sprawdziliśmy,
 czy Skate Story nie jest okrojone łagodniej. Test statyczny, bez uruchamiania gry:
 
 | element | Boomerang X | Skate Story | Anger Foot (działa) |

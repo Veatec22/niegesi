@@ -51,7 +51,7 @@ def main():
                 path.write_bytes(data)
     for relative, data in changes.items():
         target = game / relative
-        temporary = Path(str(target) + '.niegesi-tmp')
+        temporary = Path(str(target) + '.notgeese-tmp')
         temporary.write_bytes(data)
         os.replace(temporary, target)
         assert target.read_bytes() == data

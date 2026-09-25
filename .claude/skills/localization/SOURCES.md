@@ -1,5 +1,9 @@
 # Źródła faktów i norm
 
+Zasady redakcji wyciągnięte z materiałów branżowych są w [EDITORIAL.md](EDITORIAL.md).
+Stosuj je lokalnie. Poniższa bibliografia służy rozstrzyganiu konkretnych problemów,
+nie jest listą lektur do powtarzania przy każdej grze.
+
 ## Fakty o grze (od najmocniejszych)
 
 1. **Pliki gry**
@@ -15,8 +19,9 @@
      Zrzut tabeli: narzędzie gry do odczytu (np. `tools/other_languages.py`),
      wynik w `work/ref-<język>.json` — poza gitem, to treść wydawcy.
    - Komentarze, metadane i nazwy kolumn w tabelach lokalizacji; nazwy scen.
-2. **Obsada i napisy końcowe** — płeć głosu, kto jest kim. W grze bywa tabela
-   z creditsami (w Turbo Overkill: TurboEx1).
+2. **Obsada i napisy końcowe** — identyfikacja ról. Płeć aktora nie dowodzi płci
+   postaci; sprawdź tekst gry i opis postaci. W grze bywa tabela z creditsami
+   (w Turbo Overkill: TurboEx1).
 3. **Wiki, TV Tropes, strona i posty twórców** — lore, relacje, kontekst żartów.
 4. **Nasze tłumaczenia powiązanych gier w `games/`** — crossovery, DLC
    z postaciami z innej gry, ten sam twórca. Imiona i terminy mają się zgadzać
@@ -34,8 +39,9 @@
   https://learn.microsoft.com/en-us/globalization/reference/microsoft-terminology
 - **Netflix Polish Timed Text Style Guide** — napisy dialogów:
   https://partnerhelp.netflixstudios.com/hc/en-us/articles/216787928-Polish-Timed-Text-Style-Guide
-  oraz ogólne wymagania (42 znaki w wierszu, do 2 wierszy, do 17 znaków/s):
+  oraz ogólne wymagania:
   https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements
+  Limity napisów filmowych nie są automatycznie limitami gry; sprawdź jej UI i timing.
 - **WSJP** (odmiana, łączliwość): https://wsjp.pl · **SJP PWN i Poradnia PWN**:
   https://sjp.pwn.pl/poradnia · **Rada Języka Polskiego**: https://rjp.pan.pl
 - Odmiana obcych imion i nazw: Poradnia PWN (hasła „odmiana nazwisk obcych”).

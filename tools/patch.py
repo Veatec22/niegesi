@@ -25,7 +25,7 @@ a przywrócenie oryginału to usunięcie tego pliku.
 
 Liczby to varinty LEB128. Przesunięcie jest liczone ze znakiem (zigzag) od końca
 poprzedniego kopiowania, więc przy pliku, który tylko się przesunął, wynosi zero.
-Implementacje nakładania: tutaj i `tools/applier/NieGesiPatch.cs` — zmiana formatu
+Implementacje nakładania: tutaj i `tools/applier/notgeesePatch.cs` — zmiana formatu
 to zmiana w obu.
 
     python tools/patch.py release --original <plik> --built <plik> --readme <txt> ...
@@ -45,7 +45,7 @@ import zipfile
 import zlib
 from pathlib import Path
 
-MAGIC = 'NIEGESI-PATCH'
+MAGIC = 'NOTGEESE-PATCH'
 FORMAT = '2'
 FORMAT_SOURCES = '3'
 END, COPY, ADD = 0, 1, 2
@@ -193,7 +193,7 @@ def read_varint(data: bytes, at: int) -> tuple[int, int]:
 
 
 def run(source: bytes, ops: bytes, size: int) -> bytes:
-    """Nakłada operacje na oryginał. Lustro `NieGesiPatch.cs`."""
+    """Nakłada operacje na oryginał. Lustro `notgeesePatch.cs`."""
     out = bytearray()
     at = cursor = 0
     while True:
@@ -294,7 +294,8 @@ def read_header(raw: bytes) -> tuple[dict, bytes]:
     split = raw.find(b'\n\n')
     assert split > 0, 'to nie jest nasza łatka'
     lines = raw[:split].decode('utf-8').splitlines()
-    assert lines and lines[0] == MAGIC, 'to nie jest nasza łatka'
+    # Compatibility with patches distributed before the project rename.
+    assert lines and lines[0] in (MAGIC, 'NIEGESI-PATCH'), 'to nie jest nasza łatka'
 
     header = {}
     for line in lines[1:]:
@@ -342,8 +343,8 @@ def apply(game: Path, patch: Path, backup: Path | None) -> dict:
 
 def applier() -> Path:
     """Aplikator .exe dla gracza; budowany z `tools/applier`, gdy go jeszcze nie ma."""
-    exe = APPLIER / 'bin' / 'NieGesiPatch.exe'
-    source = APPLIER / 'NieGesiPatch.cs'
+    exe = APPLIER / 'bin' / 'notgeesePatch.exe'
+    source = APPLIER / 'notgeesePatch.cs'
     icon = APPLIER / 'icon.ico'
     if not exe.exists() or exe.stat().st_mtime < max(source.stat().st_mtime, icon.stat().st_mtime):
         import subprocess

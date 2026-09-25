@@ -13,7 +13,7 @@ phase: full
 download:
   kind: zip
   file: Rain-World-PL-0.2.0.zip
-  bytes: 356341
+  bytes: 357324
 build_input:
   store: gog
   gog_build_id: '59599002084023645'

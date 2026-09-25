@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
 VERSION = '0.3.1'
 DATA = 'My Friend Pedro - Blood Bullets Bananas_Data'
-PLUGIN_FOLDER = 'NieGesiPedro'
+PLUGIN_FOLDER = 'notgeesePedro'
 
 BEPINEX_VERSION = '5.4.23.5'
 BEPINEX = REPO / 'vendor' / 'bepinex'
@@ -110,10 +110,10 @@ def package(work: Path, terms: int) -> Path:
         with zipfile.ZipFile(BEPINEX_SOURCE) as source:
             archive.writestr('BepInEx-LICENSE.txt', source.read(f'BepInEx-{BEPINEX_VERSION}/LICENSE'))
 
-        archive.write(work / 'NieGesiPedro.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/NieGesiPedro.dll')
+        archive.write(work / 'notgeesePedro.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/notgeesePedro.dll')
         archive.write(work / 'pl.tsv', f'BepInEx/plugins/{PLUGIN_FOLDER}/pl.tsv')
         archive.write(ROOT / 'docs/INSTALL-plugin.txt', 'READ-ME.txt')
-        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-niegesi.txt')
+        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-notgeese.txt')
 
     # Źródła BepInEksa jako osobny plik obok paczki — ten sam adres pobrania.
     shutil.copyfile(BEPINEX_SOURCE, out.parent / BEPINEX_SOURCE.name)
@@ -140,10 +140,10 @@ def main() -> int:
     work.mkdir(parents=True)
 
     terms = write_terms(work / 'pl.tsv')
-    compile_plugin(args.game.resolve(), work / 'NieGesiPedro.dll')
+    compile_plugin(args.game.resolve(), work / 'notgeesePedro.dll')
     archive = package(work, terms)
 
-    dll = (work / 'NieGesiPedro.dll').stat().st_size
+    dll = (work / 'notgeesePedro.dll').stat().st_size
 
     print(json.dumps({
         'version': VERSION,

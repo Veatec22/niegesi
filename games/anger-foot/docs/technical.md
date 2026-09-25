@@ -103,7 +103,7 @@ krótką instrukcją instalacji dla gracza, wyświetlaną na stronie; ustalenia 
 bez zmian, poza poprawionymi linkami względnymi. Część może być nieaktualna —
 obowiązuje to, co wyżej w tym pliku, i instrukcja w paczce.
 
-*Part of [Nie gęsi](../../../README.md) — Polish translations of games that never got one.*
+*Part of [Not Geese](../../../README.md) — Polish translations of games that never got one.*
 
 An unofficial Polish translation of **Anger Foot**.
 

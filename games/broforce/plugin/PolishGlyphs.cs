@@ -14,7 +14,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace NieGesi.Broforce
+namespace notgeese.Broforce
 {
     internal static class PolishGlyphs
     {

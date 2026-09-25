@@ -26,7 +26,7 @@ from game import CATEGORIES  # ten sam podział co przy metodzie z podmianą pli
 
 VERSION = '0.2'
 DATA = 'DreadTemplar_Data'
-PLUGIN_FOLDER = 'NieGesiDreadTemplar'
+PLUGIN_FOLDER = 'notgeeseDreadTemplar'
 
 BEPINEX_VERSION = '5.4.23.5'
 BEPINEX = REPO / 'vendor' / 'bepinex'
@@ -135,10 +135,10 @@ def package(work: Path) -> Path:
         with zipfile.ZipFile(BEPINEX_SOURCE) as source:
             archive.writestr('BepInEx-LICENSE.txt', source.read(f'BepInEx-{BEPINEX_VERSION}/LICENSE'))
 
-        archive.write(work / 'NieGesiDreadTemplar.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/NieGesiDreadTemplar.dll')
+        archive.write(work / 'notgeeseDreadTemplar.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/notgeeseDreadTemplar.dll')
         archive.write(work / 'pl.tsv', f'BepInEx/plugins/{PLUGIN_FOLDER}/pl.tsv')
         archive.write(ROOT / 'docs/INSTALL-plugin.txt', 'READ-ME.txt')
-        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-niegesi.txt')
+        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-notgeese.txt')
 
     shutil.copyfile(BEPINEX_SOURCE, out.parent / BEPINEX_SOURCE.name)
 
@@ -166,14 +166,14 @@ def main() -> int:
     work.mkdir(parents=True)
 
     texts, names = write_terms(work / 'pl.tsv')
-    compile_plugin(args.game.resolve(), work / 'NieGesiDreadTemplar.dll')
+    compile_plugin(args.game.resolve(), work / 'notgeeseDreadTemplar.dll')
     archive = package(work)
 
     print(json.dumps({
         'version': VERSION,
         'texts': texts,
         'names': names,
-        'plugin_bytes': (work / 'NieGesiDreadTemplar.dll').stat().st_size,
+        'plugin_bytes': (work / 'notgeeseDreadTemplar.dll').stat().st_size,
         'package': str(archive),
         'package_bytes': archive.stat().st_size,
         'package_sha256': hashlib.sha256(archive.read_bytes()).hexdigest()[:16],

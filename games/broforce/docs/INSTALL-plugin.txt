@@ -49,9 +49,14 @@ w jaki dokladka wchodzi do gry; plik pochodzi z oficjalnego wydania BepInEksa.
 
 CO JEST W PACZCE
 BepInEx 5.4.23.5 - otwarta dokladka, ktora uruchamia modyfikacje w grach Unity.
-BepInEx/plugins/NieGesiBroforce - nasz plugin oraz pl.tsv z tekstami.
+BepInEx/plugins/notgeeseBroforce - nasz plugin oraz pl.tsv z tekstami.
 
 LICENCJE
-Spolszczenie i plugin: MIT, tekst w BepInEx/plugins/NieGesiBroforce/LICENSE-niegesi.txt
+Spolszczenie i plugin: MIT, tekst w BepInEx/plugins/notgeeseBroforce/LICENSE-notgeese.txt
 BepInEx: LGPL-2.1, tekst w BepInEx-LICENSE.txt. Zrodla tej konkretnej wersji:
 https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5
+
+AKTUALIZACJA ZE STARSZEJ PACZKI
+Starsze wydania instalowaly plugin w folderze BepInEx/plugins/NieGesiBroforce
+(poprzednia nazwa projektu). Usun ten folder przed wypakowaniem nowej paczki.
+Jesli zostanie, BepInEx uruchomi stara wersje, a nowa pominie.

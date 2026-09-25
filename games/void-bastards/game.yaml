@@ -12,7 +12,7 @@ stores:
 download:
   kind: zip
   file: Void-Bastards-PL-0.2.1.zip
-  bytes: 698560
+  bytes: 698702
 phase: full
 tested_on:
   - store: steam

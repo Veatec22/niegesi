@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Dread Templar, dokładany w czasie działania gry.
+// Not Geese — polski dla Dread Templar, dokładany w czasie działania gry.
 //
 // Gra ma w swoich danych pusty blok „pol", zostawiony przez twórców, oraz
 // wyłączony przycisk włoski zaparkowany obok siatki języków w menu opcji.
@@ -15,12 +15,15 @@ using BepInEx.Logging;
 using HarmonyLib;
 using UnityEngine;
 
-namespace NieGesi.DreadTemplar
+namespace notgeese.DreadTemplar
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.dreadtemplar")]
     [BepInPlugin(Id, "Dread Templar PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.dreadtemplar";
+        public const string Id = "cc.notgeese.dreadtemplar";
         public const string Version = "0.2";
 
         internal const string LanguageCode = "pol";

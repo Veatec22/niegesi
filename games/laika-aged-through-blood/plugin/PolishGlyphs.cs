@@ -20,7 +20,7 @@ using UnityEngine;
 using UnityEngine.TextCore;
 using UnityEngine.TextCore.LowLevel;
 
-namespace NieGesi.Laika
+namespace notgeese.Laika
 {
     internal static class PolishGlyphs
     {
@@ -74,7 +74,7 @@ namespace NieGesi.Laika
         private static bool Patch(TMP_FontAsset font, out bool final)
         {
             final = true;
-            if (font.name.StartsWith("NieGesi", StringComparison.Ordinal)) return false;
+            if (font.name.StartsWith("notgeese", StringComparison.Ordinal)) return false;
             if (font.material == null || font.atlasTextures == null || font.atlasTextures.Length == 0)
             {
                 final = false; // font jeszcze się ładuje
@@ -189,7 +189,7 @@ namespace NieGesi.Laika
                 UnityEngine.Object.Destroy(fallback);
                 return false;
             }
-            fallback.name = "NieGesi PL " + font.name + " (" + source.name + ")";
+            fallback.name = "notgeese PL " + font.name + " (" + source.name + ")";
             UnityEngine.Object.DontDestroyOnLoad(fallback);
             if (font.fallbackFontAssetTable == null) font.fallbackFontAssetTable = new List<TMP_FontAsset>();
             font.fallbackFontAssetTable.Insert(0, fallback);
@@ -432,7 +432,7 @@ namespace NieGesi.Laika
 
             var alpha = new byte[size * size];
             var fallback = ScriptableObject.CreateInstance<TMP_FontAsset>();
-            fallback.name = "NieGesi PL " + font.name;
+            fallback.name = "notgeese PL " + font.name;
             for (var i = 0; i < cells.Count; i++)
             {
                 var cell = cells[i];
@@ -446,7 +446,7 @@ namespace NieGesi.Laika
             }
 
             var atlas = new Texture2D(size, size, TextureFormat.Alpha8, false, true);
-            atlas.name = "NieGesi PL atlas";
+            atlas.name = "notgeese PL atlas";
             atlas.filterMode = FilterMode.Bilinear;
             atlas.wrapMode = TextureWrapMode.Clamp;
             var pixels = new Color32[alpha.Length];

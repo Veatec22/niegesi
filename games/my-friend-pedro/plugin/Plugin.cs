@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla My Friend Pedro, dokładany w czasie działania gry.
+// Not Geese — polski dla My Friend Pedro, dokładany w czasie działania gry.
 //
 // Zamiast podmieniać resources.assets (205 MB), plugin dopisuje jedenasty język
 // do źródła I2 Localization zaraz po jego wczytaniu i wypełnia go tekstami
@@ -15,12 +15,15 @@ using BepInEx.Logging;
 using HarmonyLib;
 using I2.Loc;
 
-namespace NieGesi.Pedro
+namespace notgeese.Pedro
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.myfriendpedro")]
     [BepInPlugin(Id, "My Friend Pedro PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.myfriendpedro";
+        public const string Id = "cc.notgeese.myfriendpedro";
         public const string Version = "0.3.1";
 
         internal const string LanguageName = "Polski";

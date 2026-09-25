@@ -8,7 +8,7 @@ def compile_plugin():
         for path in folder.glob('*.dll'):
             if managed(path):
                 refs.append('/r:'+str(path))
-    output = ROOT/'work/NieGesi.TurboOverkill.dll'
+    output = ROOT/'work/notgeese.TurboOverkill.dll'
     result = subprocess.run([str(CSC), '/nologo', '/noconfig', '/nostdlib+', '/optimize+',
                     '/target:library', '/out:'+str(output), *refs,
                     str(ROOT/'plugin/Plugin.cs')])

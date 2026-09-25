@@ -74,7 +74,7 @@ ogranicza też rozmiar nośnika. Negatywne próby potwierdziły odrzucenie obceg
 zasobu wewnątrz PAK, luźnego resources.assets i uszkodzonego chunka.
 Nie ma warunku SHA wersji gry w builderze wydania ani w instalowanej nakładce.
 
-Instalacja dopisała wyłącznie trzy pliki `pakchunk99-NieGesiPL_P` do Paks.
+Instalacja dopisała wyłącznie trzy pliki `pakchunk99-notgeesePL_P` do Paks.
 Oryginały PAK/IoStore/global porównano SHA-256 przed i po instalacji: identyczne.
 Potwierdzenie: `backups/labyrinth-of-the-demon-king/install-receipt.json` w repo.
 Nie było wcześniejszych plików tej nakładki do zastąpienia.
@@ -248,7 +248,7 @@ fanowski przekład koreański jako dodatkowy trop. [Źródła i linki](../../../
 
 Wypakuj [ZIP 0.2](../dist/Labyrinth-of-the-Demon-King-PL-0.2.zip) do katalogu
 z `Shinigami.exe`, przy zamkniętej grze. Uruchom ją i wybierz „Polski”.
-Są potrzebne wszystkie trzy pliki `pakchunk99-NieGesiPL_P` (`pak`, `utoc`, `ucas`).
+Są potrzebne wszystkie trzy pliki `pakchunk99-notgeesePL_P` (`pak`, `utoc`, `ucas`).
 Usunięcie tych trzech plików wycofuje łatkę. Oryginały gry pozostają nietknięte.
 [Pełna instrukcja i zawartość paczki](../docs/INSTALL.txt).
 Przy aktualizacji z 0.1 zastąp te same trzy pliki. Paczka ma około 84 KB.

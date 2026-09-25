@@ -21,7 +21,7 @@ import pak
 
 ROOT=Path(__file__).resolve().parents[1]
 VERSION='0.2'
-STEM='pakchunk99-NieGesiPL_P'
+STEM='pakchunk99-notgeesePL_P'
 PAKS='Shinigami/Content/Paks'
 PL_PATH='Shinigami/Content/Localization/Game/pl/Game.locres'
 EN_PATH='Shinigami/Content/Localization/Game/en/Game.locres'

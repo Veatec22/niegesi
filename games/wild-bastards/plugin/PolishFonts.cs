@@ -13,7 +13,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.TextCore.LowLevel;
 
-namespace NieGesi.WildBastards
+namespace notgeese.WildBastards
 {
     internal static class PolishFonts
     {
@@ -81,7 +81,7 @@ namespace NieGesi.WildBastards
 
         private static void Patch(TMP_FontAsset asset)
         {
-            if (asset.name.StartsWith("NieGesi", StringComparison.Ordinal)) return;
+            if (asset.name.StartsWith("notgeese", StringComparison.Ordinal)) return;
             var family = asset.faceInfo.familyName ?? "";
             if (family.IndexOf("Noto Sans JP", StringComparison.OrdinalIgnoreCase) >= 0) return;
 
@@ -112,7 +112,7 @@ namespace NieGesi.WildBastards
                 Plugin.Log.LogWarning("Nie udało się utworzyć fontu z " + source.name + ".");
                 return;
             }
-            fallback.name = "NieGesi PL " + asset.name;
+            fallback.name = "notgeese PL " + asset.name;
             string notAdded;
             fallback.TryAddCharacters(missing, out notAdded);
             UnityEngine.Object.DontDestroyOnLoad(fallback);

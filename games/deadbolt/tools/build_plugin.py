@@ -20,7 +20,7 @@ import labels
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = '0.2.0'
 PACKAGE = f'Deadbolt-PL-{VERSION}.zip'
-FILES = ['d3d9.dll', 'NieGesi/pl.tsv', 'NieGesi/fonts.txt', 'NieGesi/labels.txt', 'NieGesi/LICENSE-MINHOOK.txt',
+FILES = ['d3d9.dll', 'notgeese/pl.tsv', 'notgeese/fonts.txt', 'notgeese/labels.txt', 'notgeese/LICENSE-MINHOOK.txt',
          'READ-ME.txt']
 GAME = Path(r'C:\SteamLibrary\steamapps\common\DEADBOLT')
 
@@ -97,15 +97,15 @@ def write_tsv(path: Path) -> int:
 
 def build(binary_only=False):
     out = ROOT / 'dist'
-    (out / 'NieGesi').mkdir(parents=True, exist_ok=True)
+    (out / 'notgeese').mkdir(parents=True, exist_ok=True)
     compile_plugin(out)
     if binary_only:
         print('Zbudowano sam d3d9.dll.')
         return
-    entries = write_tsv(out / 'NieGesi/pl.tsv')
-    glyphs = fonts.write_recipes(out / 'NieGesi/fonts.txt')
-    label_ops = labels.write_recipe(out / 'NieGesi/labels.txt', GAME)
-    shutil.copyfile(ROOT / 'work/minhook-1.3.4/LICENSE.txt', out / 'NieGesi/LICENSE-MINHOOK.txt')
+    entries = write_tsv(out / 'notgeese/pl.tsv')
+    glyphs = fonts.write_recipes(out / 'notgeese/fonts.txt')
+    label_ops = labels.write_recipe(out / 'notgeese/labels.txt', GAME)
+    shutil.copyfile(ROOT / 'work/minhook-1.3.4/LICENSE.txt', out / 'notgeese/LICENSE-MINHOOK.txt')
     shutil.copyfile(ROOT / 'docs/INSTALL.txt', out / 'READ-ME.txt')
     archive = out / PACKAGE
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as z:

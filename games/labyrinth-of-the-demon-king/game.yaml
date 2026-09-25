@@ -10,8 +10,8 @@ approach: Nakładkowy PAK z tekstami PL oraz minimalny IoStore selektora; orygin
   pliki gry pozostają nietknięte.
 scope: menu, sterowanie, dialogi, opisy przedmiotów i notatki
 tested_on:
-  - store: gog
-    version: "1.31"
+- store: gog
+  version: '1.31'
 steam_appid: 1804010
 stores:
   steam: https://store.steampowered.com/app/1804010/
@@ -19,10 +19,15 @@ stores:
 download:
   kind: zip
   file: Labyrinth-of-the-Demon-King-PL-0.2.zip
-  bytes: 83553
+  bytes: 83689
 phase: full
 test_notes: 'Użytkownik potwierdził vertical: osobny Polski, przełączanie, zapis wyboru,
   fonty i próbki w grze. Pełny przekład sprawdzono w plikach; cała kampania i układ
   długich tekstów czekają na przegląd.'
-gallery: [10, 1, 2, 3, 4]
+gallery:
+- 10
+- 1
+- 2
+- 3
+- 4
 year: 2025

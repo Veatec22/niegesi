@@ -1,4 +1,4 @@
-TURBO OVERKILL — NIE GĘSI PL 0.2.0 (PEŁNE TŁUMACZENIE, WERSJA TESTOWA)
+TURBO OVERKILL — Not Geese PL 0.2.0 (PEŁNE TŁUMACZENIE, WERSJA TESTOWA)
 
 Przetłumaczone są wszystkie teksty gry: menu i ustawienia, HUD, samouczki,
 cele misji, napisy dialogów kampanii, opisy broni i wszczepów,
@@ -33,7 +33,7 @@ Pierwsza generacja interop może potrwać kilka minut. Nie przerywaj jej od razu
 Przy zgłoszeniu dołącz log oraz zrzut problematycznego ekranu.
 
 WYŁĄCZENIE I USUNIĘCIE
-Zamknij grę i usuń folder BepInEx/plugins/NieGesiTurboOverkill.
+Zamknij grę i usuń folder BepInEx/plugins/notgeeseTurboOverkill.
 Oryginalne pliki gry nie są podmieniane. Po usunięciu pluginu można wybrać
 oryginalny język; plugin zachowuje natywne ustawienie English jako bezpieczny powrót.
 Jeśli był to jedyny mod, można też usunąć DODANE przez tę paczkę:
@@ -52,9 +52,14 @@ Tabele PL i flaga powstają w pamięci; fonty są używane z lokalnej gry
 (awaryjnie Arial z systemu). Plików Unity nie zastępujemy.
 
 LICENCJE
-Plugin i tłumaczenie: LICENSE-niegesi.txt w katalogu pluginu.
+Plugin i tłumaczenie: LICENSE-notgeese.txt w katalogu pluginu.
 BepInEx: LGPL-2.1, BepInEx-LICENSE.txt; kod loadera nie jest modyfikowany.
 Źródła dokładnie tej wersji: BepInEx-source-6.0.0-pre.2.zip obok paczki.
 Wydanie: https://github.com/BepInEx/BepInEx/releases/tag/v6.0.0-pre.2
 Źródła: https://github.com/BepInEx/BepInEx/archive/refs/tags/v6.0.0-pre.2.zip
 Pozostałe licencje i informacje o komponentach .NET są w pełnym katalogu dotnet/.
+
+AKTUALIZACJA ZE STARSZEJ PACZKI
+Starsze wydania instalowały plugin w folderze BepInEx/plugins/NieGesiTurboOverkill
+(poprzednia nazwa projektu). Usuń ten folder przed wypakowaniem nowej paczki.
+Jeśli zostanie, BepInEx uruchomi starą wersję, a nową pominie.

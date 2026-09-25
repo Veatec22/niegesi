@@ -141,7 +141,7 @@ automatyczną nawigację. Nie zajmuje żadnego oryginalnego języka.
 
 Kliknięcie korzysta najpierw z natywnej metody English, aby zachować zamykanie
 panelu i bezpieczne ustawienie po usunięciu pluginu, następnie wybiera locale PL.
-Własny PlayerPrefs `NieGesi.TurboOverkill.Locale` przechowuje wybór; powrót do
+Własny PlayerPrefs `notgeese.TurboOverkill.Locale` przechowuje wybór; powrót do
 innego języka aktualizuje go. Zachowanie po restarcie wymaga testu użytkownika.
 
 Odczytano cmap fontów z sharedassets0/1: Oxanium, Russo One, Roboto i TheNeue

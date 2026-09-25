@@ -82,12 +82,12 @@ Kod: `InGameTranslator`, `Conversation.LoadEventsFromFile`, `Menu.OptionsMenu`.
 
 ## Jak dostarczamy
 
-Mod Remix `niegesi-polski` (`RainWorld_Data/StreamingAssets/mods/niegesi-polski/`):
+Mod Remix `notgeese-polski` (`RainWorld_Data/StreamingAssets/mods/notgeese-polski/`):
 
 | Plik | Po co |
 | --- | --- |
 | `modinfo.json` | Opis dla menu REMIX. Bez `target_game_version` — brak pola = bieżąca wersja, nic nie przypinamy. |
-| `plugins/NieGesiRainWorld.dll` | `plugin/Plugin.cs`: rejestruje `LanguageID("Polish")`, dopisuje go do `languageOrder` (transpiler po nazwie pola), doczytuje `text_pol/strings.txt`, przepuszcza otwarte czatlogi przez `DecryptResult`, loguje wersję gry i Unity oraz każdy tekst bez polskiego wpisu. |
+| `plugins/notgeeseRainWorld.dll` | `plugin/Plugin.cs`: rejestruje `LanguageID("Polish")`, dopisuje go do `languageOrder` (transpiler po nazwie pola), doczytuje `text_pol/strings.txt`, przepuszcza otwarte czatlogi przez `DecryptResult`, loguje wersję gry i Unity oraz każdy tekst bez polskiego wpisu. |
 | `text/text_pol/strings.txt` | Polskie wpisy `klucz|tekst`, znacznik `0`. |
 | `text/text_pol/<plik>.txt` | Rozmowy, perły, echa, czatlogi, transmisje i komentarz twórców: angielski plik z podmienionymi liniami, otwarty tekst ze znacznikiem `0`. |
 
@@ -99,7 +99,7 @@ zostawiłoby w opcjach nieznany język, stąd w instrukcji: najpierw przełącz 
 
 ```powershell
 .venv\Scripts\python.exe games\rain-world\tools\extract.py      # work/en.json z gry (+ mapa literałów)
-.venv\Scripts\python.exe games\rain-world\tools\build.py        # dist/niegesi-polski + dist/Rain-World-PL-<wersja>.zip
+.venv\Scripts\python.exe games\rain-world\tools\build.py        # dist/notgeese-polski + dist/Rain-World-PL-<wersja>.zip
 .venv\Scripts\python.exe games\rain-world\tools\review.py       # translations/en-pl-review.json
 .venv\Scripts\python.exe games\rain-world\tools\install.py      # test: kopia moda do gry (--remove usuwa)
 ```

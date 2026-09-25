@@ -26,10 +26,10 @@ import rw  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
 VERSION = '0.2.0'
-MOD_ID = 'niegesi-polski'
+MOD_ID = 'notgeese-polski'
 MOD_PATH = f'{rw.DATA}/StreamingAssets/mods/{MOD_ID}'
 PACKAGE = f'Rain-World-PL-{VERSION}.zip'
-DLL = 'NieGesiRainWorld.dll'
+DLL = 'notgeeseRainWorld.dll'
 
 COMPILERS = [
     Path(r'C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/csc.exe'),
@@ -44,9 +44,9 @@ PLACEHOLDER = re.compile(r'<(?!LINE>)(?:[A-Za-z_][A-Za-z0-9_]*|[A-Z][A-Z_ ]*)>|\
 
 MODINFO = {
     'id': MOD_ID,
-    'name': 'Polski (Nie gęsi)',
+    'name': 'Polski (Not Geese)',
     'version': VERSION,
-    'authors': 'Nie gęsi',
+    'authors': 'Not Geese',
     'description': 'Spolszczenie Rain World. Dodaje język POLSKI w Opcje > Język. '
                    'Nie podmienia plików gry; teksty bez tłumaczenia zostają po angielsku.',
     'requirements': [],
@@ -185,7 +185,7 @@ def main() -> int:
 
     compile_plugin(game, stage / 'plugins' / DLL)
     (stage / 'modinfo.json').write_text(json.dumps(MODINFO, ensure_ascii=False, indent='\t'), encoding='utf-8')
-    shutil.copyfile(REPO / 'LICENSE', stage / 'LICENSE-niegesi.txt')
+    shutil.copyfile(REPO / 'LICENSE', stage / 'LICENSE-notgeese.txt')
 
     archive = package(stage)
     total = len(english)

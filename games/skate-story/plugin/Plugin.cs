@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Skate Story, włączany w czasie działania gry.
+// Not Geese — polski dla Skate Story, włączany w czasie działania gry.
 //
 // Gra ma polski slot I2 pod indeksem 15, ale wyłączony i pusty. Plugin go włącza,
 // wypełnia 2305 tekstami z pl.tsv i przestawia dziewięć referencji do czcionek
@@ -16,12 +16,15 @@ using HarmonyLib;
 using I2.Loc;
 using UnityEngine;
 
-namespace NieGesi.SkateStory
+namespace notgeese.SkateStory
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.skatestory")]
     [BepInPlugin(Id, "Skate Story PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.skatestory";
+        public const string Id = "cc.notgeese.skatestory";
         public const string Version = "0.3";
 
         internal const string LanguageCode = "pl";

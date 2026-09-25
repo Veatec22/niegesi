@@ -1,4 +1,4 @@
-# notgoose.cc — kierunek artystyczny
+# notgeese.cc — kierunek artystyczny
 
 Handoff do repozytorium. Dokument jest niezależny od stacku: opisuje decyzje
 wizualne i zachowania, nie implementację. Wartości liczbowe pochodzą z makiet
@@ -12,7 +12,7 @@ w kodzie.
 Nazwa jest cytatem. „A niechaj narodowie wżdy postronni znają, iż Polacy nie
 gęsi, iż swój język mają" (Mikołaj Rej, 1562) to najstarszy polski manifest
 w obronie własnego języka, a strona o fanowskich spolszczeniach robi dokładnie
-to samo, sześć wieków później. Stąd `notgoose` i stąd gęś przekreślona czerwoną
+to samo, sześć wieków później. Stąd `notgeese` i stąd gęś przekreślona czerwoną
 kreską jako znak.
 
 Z tego wynika ton: plakatowy, drukarski, trochę manifestowy. Nie gamingowy

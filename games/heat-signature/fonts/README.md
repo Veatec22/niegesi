@@ -7,4 +7,4 @@ Pobrano 2026-09-25. Licencja SIL OFL 1.1: `LICENSE.txt`.
 
 `tools/font_assets.py` tworzy własne paski glifów z tych TTF. Nie odczytuje
 ani nie kopiuje atlasów wydawcy Heat Signature. Kursywa jest syntetyczna.
-Licencja trafia do paczki jako `NieGesi/LICENSE-XOLONIUM.txt`.
+Licencja trafia do paczki jako `notgeese/LICENSE-XOLONIUM.txt`.

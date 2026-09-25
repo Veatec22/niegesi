@@ -33,7 +33,7 @@ def main() -> int:
         return 0
     source = ROOT / 'dist' / MOD_ID
     if not source.exists():
-        raise SystemExit('Brak dist/niegesi-polski — uruchom najpierw tools/build.py.')
+        raise SystemExit('Brak dist/notgeese-polski — uruchom najpierw tools/build.py.')
     shutil.copytree(source, target)
     print(f'Zainstalowano {target}')
     return 0

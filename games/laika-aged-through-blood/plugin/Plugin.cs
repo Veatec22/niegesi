@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Laika: Aged Through Blood, podstawiany w czasie działania gry.
+// Not Geese — polski dla Laika: Aged Through Blood, podstawiany w czasie działania gry.
 //
 // Gra używa M2H Localization: arkusz tekstów to TextAsset „Languages/<KOD>_<ARKUSZ>”
 // w Resources, a lista języków powstaje z enuma LanguageCode (jest w nim PL) przez
@@ -21,12 +21,15 @@ using TMPro;
 using UnityEngine;
 using SettingsViewItem = Laika.UI.Settings.SettingsViewItem;
 
-namespace NieGesi.Laika
+namespace notgeese.Laika
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.laika")]
     [BepInPlugin(Id, "Laika PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.laika";
+        public const string Id = "cc.notgeese.laika";
         public const string Version = "0.2.0";
 
         internal const string Code = "PL";

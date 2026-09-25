@@ -19,5 +19,5 @@ tested_on:
 download:
   kind: zip
   file: Neon-Abyss-PL-0.3.2.zip
-  bytes: 705215
+  bytes: 705382
 gallery: [1, 2, 3, 4, 5]

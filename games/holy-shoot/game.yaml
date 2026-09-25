@@ -14,7 +14,7 @@ test_notes: Vertical potwierdzony w grze (Polski w selektorze od startu, zapamiÄ
 download:
   kind: zip
   file: Holy-Shoot-PL-0.2.0.zip
-  bytes: 8753354
+  bytes: 8753522
 phase: full
 tested_on:
   - store: steam

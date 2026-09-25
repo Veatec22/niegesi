@@ -20,7 +20,7 @@ INSTALACJA (przy zamkniętej grze)
 CO JEST W PACZCE
 - winhttp.dll, doorstop_config.ini, .doorstop_version, BepInEx/core — BepInEx 5.4.23.5
   (licencja LGPL-2.1 w BepInEx-LICENSE.txt; źródła w osobnym archiwum obok paczki),
-- BepInEx/plugins/NieGesiNeonAbyss — plugin, teksty (pl.tsv) i licencja.
+- BepInEx/plugins/notgeeseNeonAbyss — plugin, teksty (pl.tsv) i licencja.
 Polskie litery rysują fonty, które gra ma w swoich plikach (Zpix, ModernBrush).
 
 USUNIĘCIE
@@ -32,3 +32,8 @@ ZGODNOŚĆ
 Sprawdzone na: GOG, wersja 1.5.0.0 (Unity 2018.4.21). Plugin nie sprawdza wersji gry.
 Po aktualizacji nowe teksty zostaną po angielsku, a jeśli gra zmieni się mocniej,
 plugin wyłączy się i zapisze powód w BepInEx/LogOutput.log.
+
+AKTUALIZACJA ZE STARSZEJ PACZKI
+Starsze wydania instalowały plugin w folderze BepInEx/plugins/NieGesiNeonAbyss
+(poprzednia nazwa projektu). Usuń ten folder przed wypakowaniem nowej paczki.
+Jeśli zostanie, BepInEx uruchomi starą wersję, a nową pominie.

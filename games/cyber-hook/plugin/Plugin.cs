@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Cyber Hook, podstawiany w czasie działania gry.
+// Not Geese — polski dla Cyber Hook, podstawiany w czasie działania gry.
 //
 // Gra trzyma każdy język jako CSV (klucz → tekst) w Language_SO, a język wybiera się
 // wartością enuma zapisaną w ustawieniach. Enuma nie da się rozszerzyć bez podmiany
@@ -17,12 +17,15 @@ using HarmonyLib;
 using TMPro;
 using UnityEngine;
 
-namespace NieGesi.CyberHook
+namespace notgeese.CyberHook
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.cyberhook")]
     [BepInPlugin(Id, "Cyber Hook PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.cyberhook";
+        public const string Id = "cc.notgeese.cyberhook";
         public const string Version = "0.2.0";
 
         // Klucz języka, który zastępujemy. W menu podpisany jest wpisem option_en.

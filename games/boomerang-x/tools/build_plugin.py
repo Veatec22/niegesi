@@ -23,7 +23,7 @@ REPO = ROOT.parents[1]
 
 VERSION = '0.2'
 DATA = 'BOOMERANG X_Data'
-PLUGIN_FOLDER = 'NieGesiBoomerangX'
+PLUGIN_FOLDER = 'notgeeseBoomerangX'
 
 BEPINEX_VERSION = '5.4.23.5'
 BEPINEX = REPO / 'vendor' / 'bepinex'
@@ -50,9 +50,9 @@ BEPINEX_REFERENCES = ['BepInEx.dll', '0Harmony.dll']
 
 # Ta gra jest zbudowana z okrajaniem kodu zarządzanego, więc preloader BepInEksa
 # wywraca się na Module.GetPEKind. Podstawiamy własny punkt wejścia, który robi
-# to samo bez tego wywołania. Szczegóły w tools/loader/NieGesiLoader.cs.
-LOADER_SOURCE = REPO / 'tools' / 'loader' / 'NieGesiLoader.cs'
-LOADER_NAME = 'NieGesiLoader.dll'
+# to samo bez tego wywołania. Szczegóły w tools/loader/notgeeseLoader.cs.
+LOADER_SOURCE = REPO / 'tools' / 'loader' / 'notgeeseLoader.cs'
+LOADER_NAME = 'notgeeseLoader.dll'
 
 # Okrojony jest też System.Core: nie ma w nim System.Linq.IGrouping, którego
 # BepInEx używa w swojej konfiguracji. Podstawiamy tę jedną bibliotekę — nie
@@ -170,10 +170,10 @@ def package(work: Path) -> Path:
         with zipfile.ZipFile(BEPINEX_SOURCE) as source:
             archive.writestr('BepInEx-LICENSE.txt', source.read(f'BepInEx-{BEPINEX_VERSION}/LICENSE'))
 
-        archive.write(work / 'NieGesiBoomerangX.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/NieGesiBoomerangX.dll')
+        archive.write(work / 'notgeeseBoomerangX.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/notgeeseBoomerangX.dll')
         archive.write(work / 'pl.tsv', f'BepInEx/plugins/{PLUGIN_FOLDER}/pl.tsv')
         archive.write(ROOT / 'docs/INSTALL-plugin.txt', 'READ-ME.txt')
-        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-niegesi.txt')
+        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-notgeese.txt')
 
     shutil.copyfile(BEPINEX_SOURCE, out.parent / BEPINEX_SOURCE.name)
 
@@ -199,14 +199,14 @@ def main() -> int:
     work.mkdir(parents=True)
 
     terms = write_terms(work / 'pl.tsv')
-    compile_plugin(args.game.resolve(), work / 'NieGesiBoomerangX.dll')
+    compile_plugin(args.game.resolve(), work / 'notgeeseBoomerangX.dll')
     compile_loader(args.game.resolve(), work / LOADER_NAME)
     archive = package(work)
 
     print(json.dumps({
         'version': VERSION,
         'terms': terms,
-        'plugin_bytes': (work / 'NieGesiBoomerangX.dll').stat().st_size,
+        'plugin_bytes': (work / 'notgeeseBoomerangX.dll').stat().st_size,
         'package': str(archive),
         'package_bytes': archive.stat().st_size,
         'package_sha256': hashlib.sha256(archive.read_bytes()).hexdigest()[:16],

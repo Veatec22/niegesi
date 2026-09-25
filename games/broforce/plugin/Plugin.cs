@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Broforce, dokładany w czasie działania gry.
+// Not Geese — polski dla Broforce, dokładany w czasie działania gry.
 //
 // Gra ma własny system języków (Localisation.LanguageManager): lista kodów
 // w LanguageManagerConfig i po jednym banku tekstów na język w resources.assets.
@@ -17,12 +17,15 @@ using Localisation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace NieGesi.Broforce
+namespace notgeese.Broforce
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.broforce")]
     [BepInPlugin(Id, "Broforce PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.broforce";
+        public const string Id = "cc.notgeese.broforce";
         public const string Version = "0.2.0";
 
         internal const string LanguageCode = "pl";

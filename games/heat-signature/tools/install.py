@@ -12,10 +12,10 @@ from font_assets import VARIANTS
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
 BACKUP = REPO / 'backups/heat-signature/plugin'
-FILES = {'d3d9.dll', 'NieGesi/pl.tsv', 'NieGesi/LICENSE-MINHOOK.txt', 'READ-ME.txt'}
-FILES |= {'NieGesi/LICENSE-XOLONIUM.txt', 'NieGesi/fonts/charmap.txt'}
-FILES |= {f'NieGesi/fonts/font-{s}-{b}-{i}.png' for s, b, i in VARIANTS}
-FILES |= {f'NieGesi/fonts/font-{s}-{b}-{i}.metrics' for s, b, i in VARIANTS}
+FILES = {'d3d9.dll', 'notgeese/pl.tsv', 'notgeese/LICENSE-MINHOOK.txt', 'READ-ME.txt'}
+FILES |= {'notgeese/LICENSE-XOLONIUM.txt', 'notgeese/fonts/charmap.txt'}
+FILES |= {f'notgeese/fonts/font-{s}-{b}-{i}.png' for s, b, i in VARIANTS}
+FILES |= {f'notgeese/fonts/font-{s}-{b}-{i}.metrics' for s, b, i in VARIANTS}
 
 
 def digest(path):

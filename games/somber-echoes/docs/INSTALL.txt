@@ -1,4 +1,4 @@
-SOMBER ECHOES — NIE GĘSI PL 0.2.0 (PEŁNE TŁUMACZENIE, WERSJA TESTOWA)
+SOMBER ECHOES — Not Geese PL 0.2.0 (PEŁNE TŁUMACZENIE, WERSJA TESTOWA)
 
 Przetłumaczone są wszystkie teksty gry (1507 wpisów): menu i ustawienia,
 samouczki, narracja i dialogi, dziennik Adrestii, mapa i nazwy pomieszczeń,
@@ -10,18 +10,18 @@ angielski i pozostałe języki zostają bez zmian.
 INSTALACJA (przy zamkniętej grze)
 1. Wypakuj całą zawartość archiwum do głównego katalogu gry — tego, w którym
    leży SomberEchoes.exe. Jeśli była tu próbka 0.1, pozwól nadpisać
-   pakchunk99-NieGesi-PL_P.pak.
+   pakchunk99-notgeese-PL_P.pak.
 2. Uruchom grę normalnie. Nie są potrzebne żadne opcje uruchamiania.
 3. W opcjach gry wybierz język Polski (ostatnia pozycja listy). Wybór
    zostaje zapamiętany. Włącz napisy.
 
 USUNIĘCIE
 Najpierw wybierz w grze English i zamknij grę. Potem skasuj:
-- SomberEchoes/Content/Paks/pakchunk99-NieGesi-PL_P.pak
+- SomberEchoes/Content/Paks/pakchunk99-notgeese-PL_P.pak
 - SomberEchoes/Binaries/Win64/dwmapi.dll
 - SomberEchoes/Binaries/Win64/ue4ss (folder dodany przez tę paczkę)
 Jeśli używasz innych modów UE4SS, zachowaj wspólny loader i usuń tylko
-ue4ss/Mods/NieGesiPL oraz jego wpisy w mods.txt i mods.json.
+ue4ss/Mods/notgeesePL oraz jego wpisy w mods.txt i mods.json.
 Oryginalne pliki gry i zapisy pozostają nietknięte.
 
 CO JEST W PACZCE
@@ -38,5 +38,11 @@ aktualizacjach zostaną po angielsku.
 
 JEŚLI COŚ NIE DZIAŁA
 Log: SomberEchoes/Binaries/Win64/ue4ss/UE4SS.log. Powinny w nim być linie
-„[NieGesiPL 0.2.0] Polish appended to the native language list” oraz
+„[notgeesePL 0.2.0] Polish appended to the native language list” oraz
 „Polski label supplied”. Prześlij ten plik razem ze zrzutem ekranu.
+
+AKTUALIZACJA ZE STARSZEJ PACZKI
+Starsze wydania nazywały pliki inaczej (poprzednia nazwa projektu). Przed
+wypakowaniem usuń plik SomberEchoes/Content/Paks/pakchunk99-NieGesi-PL_P.pak
+oraz folder SomberEchoes/Binaries/Win64/ue4ss/Mods/NieGesiPL.
+Inaczej gra wczyta obie wersje i starsza może przesłonić nowszą.

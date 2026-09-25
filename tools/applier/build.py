@@ -1,4 +1,4 @@
-"""Buduje NieGesiPatch.exe — aplikator łatek dokładany do paczek deltowych.
+"""Buduje notgeesePatch.exe — aplikator łatek dokładany do paczek deltowych.
 
 Wynik trafia do `tools/applier/bin/` (ignorowane przez Gita). `tools/patch.py release`
 woła ten skrypt sam, gdy pliku .exe brakuje albo jest starszy od źródła lub ikony,
@@ -14,9 +14,9 @@ import subprocess
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SOURCE = HERE / 'NieGesiPatch.cs'
+SOURCE = HERE / 'notgeesePatch.cs'
 ICON = HERE / 'icon.ico'
-OUT = HERE / 'bin' / 'NieGesiPatch.exe'
+OUT = HERE / 'bin' / 'notgeesePatch.exe'
 
 COMPILERS = [
     Path(r'C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/csc.exe'),

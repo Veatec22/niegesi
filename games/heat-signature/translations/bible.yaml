@@ -6,7 +6,7 @@ zrodla:
   - id: scenarios
     opis: Scenarios/*.dat — postacie wyzwań dziennych, nazwy przedmiotów, opisy misji.
   - id: log
-    opis: NieGesi/LogOutput.log z sesji użytkownika (0.1.2) — faktycznie rysowane napisy, work/run-0.1.2.log.
+    opis: notgeese/LogOutput.log z sesji użytkownika (0.1.2) — faktycznie rysowane napisy, work/run-0.1.2.log.
   - id: tvtropes
     opis: Wyszukiwarka streszcza TV Tropes (strona niedostępna, 403) — Breaker „he”, Geneva „she”, Mirfak „they”. Niepotwierdzone.
     url: https://tvtropes.org/pmwiki/pmwiki.php/Characters/HeatSignature

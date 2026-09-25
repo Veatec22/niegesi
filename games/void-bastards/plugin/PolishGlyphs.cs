@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace NieGesi.VoidBastards
+namespace notgeese.VoidBastards
 {
     internal static class PolishGlyphs
     {
@@ -59,7 +59,7 @@ namespace NieGesi.VoidBastards
 
         private static void Patch(TMP_FontAsset font)
         {
-            if (font.name.StartsWith("NieGesi", StringComparison.Ordinal) || font.atlas == null || font.fontInfo == null) return;
+            if (font.name.StartsWith("notgeese", StringComparison.Ordinal) || font.atlas == null || font.fontInfo == null) return;
 
             var wanted = new List<Recipe>();
             foreach (var recipe in Recipes)
@@ -84,7 +84,7 @@ namespace NieGesi.VoidBastards
 
             var glyphs = Pack(cells, padding, out var atlas);
             var fallback = ScriptableObject.CreateInstance<TMP_FontAsset>();
-            fallback.name = "NieGesi PL " + font.name;
+            fallback.name = "notgeese PL " + font.name;
             fallback.hashCode = SimpleHash(fallback.name);
             fallback.fontAssetType = TMP_FontAsset.FontAssetTypes.SDF;
             var face = CopyFace(info);
@@ -323,7 +323,7 @@ namespace NieGesi.VoidBastards
             }
 
             atlas = new Texture2D(size, size, TextureFormat.Alpha8, false, true);
-            atlas.name = "NieGesi PL atlas";
+            atlas.name = "notgeese PL atlas";
             atlas.filterMode = FilterMode.Bilinear;
             atlas.wrapMode = TextureWrapMode.Clamp;
             var pixels = new Color32[alpha.Length];

@@ -21,7 +21,7 @@ test_notes: Vertical potwierdzony w grze na 0.1.2 — menu, opcje, ostrzeżenie,
 download:
   kind: patch
   file: Katana-ZERO-PL-0.2.0-latka.zip
-  bytes: 148077
+  bytes: 148105
 quote:
   text:
   source:

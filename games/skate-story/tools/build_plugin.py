@@ -27,7 +27,7 @@ from build import FONT_MAP, PL  # mapa czcionek i indeks polskiego slotu — jed
 
 VERSION = '0.3'
 DATA = 'SkateStory_Data'
-PLUGIN_FOLDER = 'NieGesiSkateStory'
+PLUGIN_FOLDER = 'notgeeseSkateStory'
 
 # Unity 6 wywraca preloader BepInEksa 5 (brak Module.GetPEKind w tym Mono),
 # więc ta gra idzie na wydaniu rozwojowym szóstki.
@@ -159,11 +159,11 @@ def package(work: Path) -> Path:
         with zipfile.ZipFile(BEPINEX_SOURCE) as source:
             archive.writestr('BepInEx-LICENSE.txt', source.read(f'BepInEx-{BEPINEX_COMMIT}/LICENSE'))
 
-        archive.write(work / 'NieGesiSkateStory.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/NieGesiSkateStory.dll')
+        archive.write(work / 'notgeeseSkateStory.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/notgeeseSkateStory.dll')
         archive.write(work / 'pl.tsv', f'BepInEx/plugins/{PLUGIN_FOLDER}/pl.tsv')
         archive.write(work / 'fonts.tsv', f'BepInEx/plugins/{PLUGIN_FOLDER}/fonts.tsv')
         archive.write(ROOT / 'docs/INSTALL-plugin.txt', 'READ-ME.txt')
-        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-niegesi.txt')
+        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-notgeese.txt')
 
     shutil.copyfile(BEPINEX_SOURCE, out.parent / BEPINEX_SOURCE.name)
 
@@ -190,7 +190,7 @@ def main() -> int:
     work.mkdir(parents=True)
 
     terms, fonts = write_tables(work)
-    compile_plugin(args.game.resolve(), work / 'NieGesiSkateStory.dll')
+    compile_plugin(args.game.resolve(), work / 'notgeeseSkateStory.dll')
     archive = package(work)
 
     print(json.dumps({
@@ -198,7 +198,7 @@ def main() -> int:
         'terms': terms,
         'fonts': fonts,
         'polish_slot': PL,
-        'plugin_bytes': (work / 'NieGesiSkateStory.dll').stat().st_size,
+        'plugin_bytes': (work / 'notgeeseSkateStory.dll').stat().st_size,
         'package': str(archive),
         'package_bytes': archive.stat().st_size,
         'package_sha256': hashlib.sha256(archive.read_bytes()).hexdigest()[:16],

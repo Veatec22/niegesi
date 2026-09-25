@@ -2,7 +2,7 @@
 
 ## Instalacja
 
-1. Zamknij grę.
+1. Zamknij grę. Jeśli masz starsze spolszczenie, usuń folder `BepInEx/plugins/NieGesiNeonAbyss` — inaczej gra uruchomi starą wersję zamiast nowej.
 2. Wypakuj całą zawartość archiwum do katalogu gry, czyli tam, gdzie leży `NeonAbyss.exe`. W Steamie trafisz tam przez **Zarządzaj → Przeglądaj pliki lokalne**, w GOG Galaxy przez **Zarządzaj instalacją → Pokaż folder**.
 3. Uruchom grę. Pierwsze uruchomienie potrwa chwilę dłużej niż zwykle.
 4. Wejdź w **Options → Gameplay → Language** i wybierz **POLSKI**.

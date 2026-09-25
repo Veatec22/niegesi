@@ -12,7 +12,7 @@ stores:
 download:
   kind: zip
   file: Wild-Bastards-PL-0.2.0.zip
-  bytes: 736434
+  bytes: 736608
 phase: full
 tested_on:
   - store: steam

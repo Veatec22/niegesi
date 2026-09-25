@@ -21,7 +21,7 @@ test_notes: Pełne 0.1.0 zbudowane, zweryfikowane z plików i zainstalowane do t
 download:
   kind: patch
   file: Hyper-Light-Drifter-PL-0.1.0-latka.zip
-  bytes: 82867
+  bytes: 82896
 quote:
   text:
   source:

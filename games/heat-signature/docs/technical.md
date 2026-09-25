@@ -23,7 +23,7 @@ chyba że wyglądają na polski tekst (ogonki, prefiks znanego polskiego wiersza
 `<PlayerName>` build zamienia na luki szablonów.
 
 **Dialogi przy wczytaniu.** Hook `kernel32!CreateFileW/A` rozpoznaje otwarcie
-`Dialog\<nazwa>.txt` do odczytu i podaje grze kopię `NieGesi/cache/Dialog/<nazwa>.txt`
+`Dialog\<nazwa>.txt` do odczytu i podaje grze kopię `notgeese/cache/Dialog/<nazwa>.txt`
 zrobioną z pliku gracza: tłumaczone są tylko wypowiedzi, zostają `[Blok]`, `#`,
 `=`, `{Cel}`, `<Token>`, BOM i CRLF; odpowiedzi w całości w nawiasach
 (`[Continue]`) zostają dla logiki gry. Wcześniejsze dopasowywanie prefiksów
@@ -145,7 +145,7 @@ instrukcje samouczka, rozmowa po samouczku i terminal treningowy. Pozostałe
 elementy pozostają po angielsku. Liczba 163 nie jest liczbą tekstów pełnej gry.
 
 Build tworzy `dist/Heat-Signature-PL-0.1.0.zip` (132 431 bajtów) z czterema
-plikami: `d3d9.dll`, `NieGesi/pl.tsv`, `NieGesi/LICENSE-MINHOOK.txt`, `READ-ME.txt`.
+plikami: `d3d9.dll`, `notgeese/pl.tsv`, `notgeese/LICENSE-MINHOOK.txt`, `READ-ME.txt`.
 Pakiet zawiera własny kod, teksty i MinHook na BSD; żadnych zasobów wydawcy ani
 fontów Windows. Build używa jawnej listy dopuszczonych plików i sprawdza ZIP.
 Kopia paczki jest w `site/public/pobierz/`; gra pozostaje w `w-trakcie`.
@@ -170,7 +170,7 @@ Warunki próby i trzy potrzebne screeny opisuje `docs/INSTALL.txt`: menu z F8
 Arial zmienia wygląd gry; to tymczasowy krój do potwierdzenia drogi technicznej.
 Sprawdzić szczególnie tekst wyświetlany stopniowo, przechwycenie wszystkich
 wariantów rysowania, pozycje kliknięć po zmianie szerokości i dłuższe podpowiedzi.
-W razie niepowodzenia odczytać `NieGesi/LogOutput.log` z katalogu gry.
+W razie niepowodzenia odczytać `notgeese/LogOutput.log` z katalogu gry.
 
 Budowanie i instalacja:
 
@@ -236,7 +236,7 @@ domknięcia narracyjnej części próbki oraz `docs/INSTALL.txt`.
 następnie dopisać początek narracji, wykonać ZIP i instalację, podać użytkownikowi
 kroki testu. Nie traktować przygotowanych 74 wpisów jako pełnego verticala.
 Nie ma jeszcze paczki dla gracza ani instalacji. Lokalna gra pozostaje nietknięta.
-Log docelowy: `NieGesi/LogOutput.log`; zawiera wersję pluginu, wersję PE gry,
+Log docelowy: `notgeese/LogOutput.log`; zawiera wersję pluginu, wersję PE gry,
 silnik, wynik odkrywania, tworzenie fontów i liczbę zaobserwowanych nieprzetłumaczonych napisów.
 
 Poniżej zachowano pierwotny raport analizy; jego uwagi o pustym zbiorze PL

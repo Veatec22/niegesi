@@ -18,7 +18,7 @@ local SWITCHER = BASE .. "WB_T1_PVDSettingsMenu.WB_T1_PVDSettingsMenu_C:WidgetTr
 local messages, done = {}, false
 
 local function log(message)
-    print("[NieGesiPL " .. VERSION .. "] " .. message .. "\n")
+    print("[notgeesePL " .. VERSION .. "] " .. message .. "\n")
 end
 
 local function once(message)

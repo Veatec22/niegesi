@@ -5,7 +5,7 @@ local UI = "/Game/Blueprints/UI/Menus/Settings/UI_Settings-Text_BP.UI_Settings-T
 local installed, reported, disabled = {}, {}, {}
 
 local function log(message)
-    print("[NieGesiPL " .. VERSION .. "] " .. message .. "\n")
+    print("[notgeesePL " .. VERSION .. "] " .. message .. "\n")
 end
 
 local function once(message)

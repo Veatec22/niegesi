@@ -1,6 +1,6 @@
-# Nie gęsi — instrukcje dla agenta
+# Not Geese — instrukcje dla agenta
 
-Prywatne repo do maszynowego tworzenia spolszczeń gier indie. Użytkownik wybiera grę,
+Publiczne repo do maszynowego tworzenia spolszczeń gier indie. Użytkownik wybiera grę,
 instaluje ją na swoim komputerze i przekazuje agentowi do rozpracowania. Agent prowadzi
 analizę techniczną i tłumaczenie, użytkownik ocenia efekt w grze i robi korektę językową.
 Rozmawiamy po polsku.
@@ -17,24 +17,36 @@ Rozmawiamy po polsku.
 3. **Zbadaj lokalne pliki gry.** Ustal silnik, format i zakres tekstów, sposób ich
    wydobycia i ponownego wgrania, obsługę polskich znaków oraz przeszkody techniczne.
    Daj krótki werdykt: czy warto ruszać, jak to zrobić i co pozostaje niepewne.
-4. **Po pozytywnym werdykcie zrób vertical.** Przetłumacz małą, reprezentatywną próbkę
+4. **Przed verticalem ustal kierunek tłumaczenia.** Po pozytywnym werdykcie użyj
+   `.claude/skills/localization-direction/SKILL.md`: zbierz próbkę prawdziwych tekstów,
+   zaproponuj ton, głosy postaci i ważne terminy. Z użytkownikiem rozstrzygnij istotne
+   warianty na konkretnych przykładach EN/PL; zwykłe decyzje podejmuj sam.
+   Zapisz ustalenia i odrzucone warianty w biblii oraz `docs/translation-decisions.md`
+   gry. Nie traktuj braku odpowiedzi jako akceptacji przedstawionego wyboru.
+5. **Zrób vertical według ustalonego kierunku.** Przetłumacz małą, reprezentatywną próbkę
    i przeprowadź cały proces: ekstrakcja → tłumaczenie → build → instalacja → test w grze.
    Próbka musi obejmować przynajmniej część menu (główne i ustawienia) oraz sam
    początek rozgrywki — pierwsze kwestie, samouczek, HUD — tak, żeby użytkownik po
    uruchomieniu gry zobaczył polski tekst w pierwszych minutach, bez przechodzenia dalej.
    Sprawdź widoczność tekstów, polskie znaki i układ UI. Sam poprawny build nie dowodzi,
    że spolszczenie działa; jeśli test wymaga użytkownika, podaj mu konkretne kroki.
-5. **Dopiero po działającym verticalu tłumacz całość.** Zachowuj ton gry, spójną
+6. **Dopiero po działającym verticalu tłumacz całość.** Zachowuj ton gry, spójną
    terminologię, placeholdery, znaczniki i formatowanie. Standard pracy opisuje
    skill `.claude/skills/localization/`: biblia gry z faktami i źródłami (postacie,
    płeć, terminy), lista pułapek i raport kontrolny, który tylko podpowiada.
-   Decyzje podejmuj sam, zamiast o nie pytać.
-6. **Przygotuj review i wynik do użycia.** Aktualizuj plik EN/PL, zakres tłumaczenia,
+   Pracuj według ustaleń sprzed verticala, rozszerzając biblię o nowy kontekst.
+7. **Po fullu uruchom osobnego reviewera.** Użyj
+   `.claude/skills/localization-review/SKILL.md` i subagenta w świeżym kontekście.
+   Przegląd obejmuje cały tekst i ponowną ocenę początkowych decyzji w świetle całej
+   gry, nie tylko próbkę lub raport automatyczny. Pewne błędy popraw, wartościowe
+   warianty stylistyczne omów z użytkownikiem. Jego ustaleń nie nadpisuj samowolnie.
+   Przegląd językowy nie zastępuje testu w grze.
+8. **Przygotuj review i wynik do użycia.** Aktualizuj plik EN/PL, zakres tłumaczenia,
    status testów oraz instrukcję instalacji i przywrócenia oryginału. Przy oddaniu
    spisz decyzje w `docs/translation-decisions.md` gry i streść je użytkownikowi:
    co wybrano, dlaczego, skąd to wiadomo i co sprawdzić w grze. Użytkownik
    akceptuje albo odsyła poprawki.
-7. **Domknij grę paczką i metadanymi.** Spolszczenie jest gotowe dopiero wtedy, gdy build
+9. **Domknij grę paczką i metadanymi.** Spolszczenie jest gotowe dopiero wtedy, gdy build
    zostawia w `dist/` spakowany ZIP — wszystko do wypakowania w katalogu gry plus
    `READ-ME.txt` z instrukcją — a `games/<gra>/game.yaml` opisuje aktualny stan: wersję,
    liczbę wpisów, status testu w grze i rodzaj paczki. Luźne pliki w `dist/` bez archiwum
@@ -125,7 +137,7 @@ w obu grach, i z samą `mscorlib`, i z kompletem kilkunastu bibliotek: gra staje
 pierwszym ekranem, bez logu i bez awarii. Prawdziwe odchudzanie na odwrót wymaga
 podmiany plików w katalogu `Managed` gry, czyli łamie zasadę powyżej.
 
-**Próba obejścia wyczerpana.** `tools/loader/NieGesiLoader.cs` zastępuje punkt wejścia
+**Próba obejścia wyczerpana.** `tools/loader/notgeeseLoader.cs` zastępuje punkt wejścia
 BepInEksa i pomija to wywołanie — działa, ale odsłania kolejne braki: najpierw
 `System.Linq.IGrouping` w `System.Core` (to akurat da się podstawić), potem konstruktor
 `AmbiguousMatchException` w `mscorlib`, którego wymaga Harmony. To nie jeden brakujący
@@ -174,5 +186,5 @@ do 6.0.0-be.788. Wtedy zostaje podmiana plików.
 - Nie uruchamiaj gry za użytkownika. Jeśli potrzebujesz feedbacku wizualnego, podaj
   konkretne kroki testu i wskaż, co ma być widoczne na screenach. Użytkownik sam
   uruchomi grę i prześle screeny; poczekaj na nie przed oceną wyniku testu.
-- Pracujemy bezpośrednio w tym prywatnym repo. Nie organizuj pracy wokół branchy,
+- Pracujemy bezpośrednio w tym repo. Nie organizuj pracy wokół branchy,
   worktree, PR-ów ani konwencji commitów, chyba że użytkownik o to poprosi.

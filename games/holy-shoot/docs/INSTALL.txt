@@ -1,4 +1,4 @@
-HOLY SHOOT — NIE GĘSI PL 0.2.0 (PEŁNE TŁUMACZENIE, WERSJA TESTOWA)
+HOLY SHOOT — Not Geese PL 0.2.0 (PEŁNE TŁUMACZENIE, WERSJA TESTOWA)
 
 Przetłumaczone są wszystkie teksty gry: menu i ustawienia, samouczki, atuty,
 broń i jej cechy, wyzwania, postacie, wprowadzenie fabularne i napisy kwestii
@@ -17,11 +17,11 @@ INSTALACJA (przy zamkniętej grze)
 
 USUNIĘCIE
 Najpierw wybierz w grze English i zamknij grę. Potem skasuj:
-- Windows/PVD/Content/Paks/pakchunk99-NieGesiPL_P.pak, .utoc i .ucas
+- Windows/PVD/Content/Paks/pakchunk99-notgeesePL_P.pak, .utoc i .ucas
 - Windows/PVD/Binaries/Win64/dwmapi.dll
 - Windows/PVD/Binaries/Win64/ue4ss (folder dodany przez tę paczkę)
 Jeśli używasz innych modów UE4SS, zachowaj wspólny loader i usuń tylko
-ue4ss/Mods/NieGesiPL oraz jego wpisy w mods.txt i mods.json.
+ue4ss/Mods/notgeesePL oraz jego wpisy w mods.txt i mods.json.
 Oryginały gry pozostają nietknięte.
 
 CO JEST W PACZCE
@@ -37,5 +37,11 @@ przypięte do wersji gry. Nowe teksty po aktualizacji zostaną po angielsku.
 
 JEŚLI COŚ NIE DZIAŁA
 Log: Windows/PVD/Binaries/Win64/ue4ss/UE4SS.log. Powinna w nim być linia
-„[NieGesiPL 0.2.0] Polski at index 10 (Create)”. Prześlij ten plik razem
+„[notgeesePL 0.2.0] Polski at index 10 (Create)”. Prześlij ten plik razem
 ze zrzutem ekranu.
+
+AKTUALIZACJA ZE STARSZEJ PACZKI
+Starsze wydania nazywały pliki inaczej (poprzednia nazwa projektu). Przed
+wypakowaniem usuń z Windows/PVD/Content/Paks trzy pliki pakchunk99-NieGesiPL_P
+(.pak, .utoc, .ucas) oraz folder Windows/PVD/Binaries/Win64/ue4ss/Mods/NieGesiPL.
+Inaczej gra wczyta obie wersje i starsza może przesłonić nowszą.

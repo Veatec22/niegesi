@@ -23,8 +23,8 @@ REPO = ROOT.parents[1]
 VERSION = '0.3.2'
 PACKAGE = f'Neon-Abyss-PL-{VERSION}.zip'
 DATA = 'NeonAbyss_Data'
-PLUGIN_FOLDER = 'NieGesiNeonAbyss'
-PLUGIN_DLL = 'NieGesiNeonAbyss.dll'
+PLUGIN_FOLDER = 'notgeeseNeonAbyss'
+PLUGIN_DLL = 'notgeeseNeonAbyss.dll'
 
 BEPINEX_VERSION = '5.4.23.5'
 BEPINEX = REPO / 'vendor' / 'bepinex'
@@ -134,7 +134,7 @@ def package(work: Path) -> Path:
         archive.write(work / PLUGIN_DLL, f'BepInEx/plugins/{PLUGIN_FOLDER}/{PLUGIN_DLL}')
         archive.write(work / 'pl.tsv', f'BepInEx/plugins/{PLUGIN_FOLDER}/pl.tsv')
         archive.write(ROOT / 'docs/INSTALL.txt', 'READ-ME.txt')
-        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-niegesi.txt')
+        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-notgeese.txt')
 
     shutil.copyfile(BEPINEX_SOURCE, out.parent / BEPINEX_SOURCE.name)
 

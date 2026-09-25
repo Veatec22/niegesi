@@ -20,6 +20,6 @@ quote:
 download:
   kind: zip
   file: Anger-Foot-PL-0.3.zip
-  bytes: 708370
+  bytes: 708533
 gallery: [1, 2, 3, 4, 5]
 test_notes: Przycisk języka i podmiana tekstów potwierdzone w grze; pełna kampania czeka na przejście. Dwa wpisy tabeli są puste również w oryginale.

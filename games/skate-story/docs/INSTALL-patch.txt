@@ -13,7 +13,7 @@ na dysku. Wynik jest dokladnie taki sam, co do bajta.
 CO BEDZIE POTRZEBNE
 Nic. Latke naklada Skate-Story-PL-0.3.exe z tej paczki: jeden maly program, bez
 instalacji, korzysta z .NET Framework wbudowanego w Windows. Kod zrodlowy
-lezy w repozytorium projektu (tools/applier/NieGesiPatch.cs).
+lezy w repozytorium projektu (tools/applier/notgeesePatch.cs).
 
 INSTALACJA (przy zamknietej grze)
 1. Wypakuj cala paczke do katalogu gry - tam, gdzie lezy plik .exe gry.

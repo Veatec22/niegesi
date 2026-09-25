@@ -19,7 +19,7 @@ static void __cdecl Font(Value* r,void*,void*,int n,Value*) {
     *reinterpret_cast<int*>(fontObject+0x20)=400;
     *reinterpret_cast<int*>(fontObject+0x40)=120;
     *reinterpret_cast<int16_t***>(fontObject+0x44)=glyphPointers;
-    std::ifstream file(root+L"NieGesi\\fonts\\font-12-0-0.metrics");
+    std::ifstream file(root+L"notgeese\\fonts\\font-12-0-0.metrics");
     int code,frame,advance,offset,height;
     while(file>>code>>frame>>advance>>offset>>height) {
         glyphPointers[frame]=glyphData[frame];

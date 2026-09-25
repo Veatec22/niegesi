@@ -145,7 +145,7 @@ Glitchers”, „Uratuj mojego durnego brata, który dał się złapać…”. �
 „Bywało lepiej.”, żeby zachować żart Breaker o dwóch znaczeniach.
 
 **Technika dialogów.** Pliki `Dialog/*.txt` są tłumaczone w chwili wczytania
-(kopia w `NieGesi/cache`), więc stopniowo wypisywany tekst jest polski.
+(kopia w `notgeese/cache`), więc stopniowo wypisywany tekst jest polski.
 Odpowiedzi w nawiasach kwadratowych ([Continue], [Something else]) zostają
 w pliku bez zmian i tłumaczy je dopiero wyświetlanie — gra może je rozpoznawać.
 

@@ -1,7 +1,7 @@
 """Test pluginu bez uruchamiania gry.
 
 Kopiuje data.win i dia_*.json z gry do work/harness (kopie zostają w work/, nie trafiają
-do repo ani paczki), obok kładzie zbudowany dist/d3d9.dll i NieGesi/, uruchamia
+do repo ani paczki), obok kładzie zbudowany dist/d3d9.dll i notgeese/, uruchamia
 tools/harness.cpp (32 bity) i sprawdza, co zobaczyłaby gra:
   - każdy wiersz s z pl.tsv: napis w liście STRG jest polski,
   - wiersz c: napis zmieniony tylko w swoim wpisie kodu, oryginał gdzie indziej zostaje,
@@ -47,21 +47,21 @@ def main():
     game = ap.parse_args().game
     if WORK.exists():
         shutil.rmtree(WORK)
-    (WORK / 'NieGesi').mkdir(parents=True)
+    (WORK / 'notgeese').mkdir(parents=True)
     shutil.copyfile(game / 'data.win', WORK / 'data.win')
     for f in game.glob('dia_*.json'):
         shutil.copyfile(f, WORK / f.name)
     dist = ROOT / 'dist'
     shutil.copyfile(dist / 'd3d9.dll', WORK / 'd3d9.dll')
     for name in ('pl.tsv', 'fonts.txt', 'labels.txt'):
-        shutil.copyfile(dist / 'NieGesi' / name, WORK / 'NieGesi' / name)
+        shutil.copyfile(dist / 'notgeese' / name, WORK / 'notgeese' / name)
 
     env = compiler_environment()
     cl = shutil.which('cl.exe', path=next(v for k, v in env.items() if k.lower() == 'path'))
     subprocess.run([cl, '/nologo', '/O2', '/EHsc', '/utf-8', str(ROOT / 'tools/harness.cpp'), '/Fe:' + str(WORK / 'harness.exe')],
                    cwd=WORK, env=env, check=True, stdout=subprocess.DEVNULL)
     subprocess.run([str(WORK / 'harness.exe'), str(WORK)], cwd=WORK, check=True)
-    log = (WORK / 'NieGesi/LogOutput.log').read_text(encoding='utf-8')
+    log = (WORK / 'notgeese/LogOutput.log').read_text(encoding='utf-8')
     print(log)
     assert 'Ready in' in log, 'plugin nie doszedł do końca'
 
@@ -71,7 +71,7 @@ def main():
         i, text = line.split('\t', 1)
         strings[int(i)] = unescape(text)
     original = Data(game / 'data.win').strings()
-    rows = [l.split('\t') for l in (dist / 'NieGesi/pl.tsv').read_text(encoding='utf-8').splitlines()
+    rows = [l.split('\t') for l in (dist / 'notgeese/pl.tsv').read_text(encoding='utf-8').splitlines()
             if l and not l.startswith('#')]
     for kind, en, pl, *rest in rows:
         en, pl = unescape(en), unescape(pl)

@@ -112,7 +112,7 @@ def flag_texture(asset):
             at = pixels_at + (120*y+x)*4
             b[at:at+3] = colour
     # A distinct lighting GUID prevents identity reuse by derived texture data.
-    b[106:122] = hashlib.md5(b'niegesi-sprawl-polish-flag').digest()
+    b[106:122] = hashlib.md5(b'notgeese-sprawl-polish-flag').digest()
     return bytes(h), bytes(b)
 
 

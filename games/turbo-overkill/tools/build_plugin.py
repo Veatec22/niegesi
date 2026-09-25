@@ -14,7 +14,7 @@ VERSION = '0.2.0'
 BEP_VERSION = '6.0.0-pre.2'
 BINARY = REPO/'vendor/bepinex'/f'BepInEx-Unity.IL2CPP-win-x64-{BEP_VERSION}.zip'
 SOURCE = REPO/'vendor/bepinex'/f'BepInEx-source-{BEP_VERSION}.zip'
-PREFIX = 'BepInEx/plugins/NieGesiTurboOverkill/'
+PREFIX = 'BepInEx/plugins/notgeeseTurboOverkill/'
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -48,9 +48,9 @@ def main():
         expected = {n: official.read(n) for n in official.namelist() if not n.endswith('/')}
         expected.update({
             'BepInEx-LICENSE.txt': sources.read(f'BepInEx-{BEP_VERSION}/LICENSE'),
-            PREFIX+'NieGesi.TurboOverkill.dll': dll.read_bytes(),
+            PREFIX+'notgeese.TurboOverkill.dll': dll.read_bytes(),
             PREFIX+'pl.json': (ROOT/'translations/pl.json').read_bytes(),
-            PREFIX+'LICENSE-niegesi.txt': (REPO/'LICENSE').read_bytes(),
+            PREFIX+'LICENSE-notgeese.txt': (REPO/'LICENSE').read_bytes(),
             'READ-ME.txt': (ROOT/'docs/INSTALL-plugin.txt').read_bytes(),
             'BepInEx/config/BepInEx.cfg': b'[Logging.Console]\nEnabled = false\n\n[Logging.Disk]\nEnabled = true\n',
             'dotnet/LICENSE.TXT': (REPO/'vendor/bepinex/dotnet-6.0.7-licenses/LICENSE.TXT').read_bytes(),

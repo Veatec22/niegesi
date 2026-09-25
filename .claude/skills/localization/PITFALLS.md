@@ -1,6 +1,7 @@
 # Pułapki i okazje
 
 Lista kontrolna do przejrzenia przed tłumaczeniem dialogów i przed oddaniem.
+Ocenę scen, głosów i wariantów prowadź według [zasad redakcji](EDITORIAL.md).
 
 ## Gramatyka zależna od kontekstu
 
@@ -30,9 +31,11 @@ Lista kontrolna do przejrzenia przed tłumaczeniem dialogów i przed oddaniem.
 
 ## Napisy dialogów
 
-- Do 42 znaków w wierszu i najwyżej 2 wiersze, o ile gra sama łamie tekst
-  do pola napisów. Krótsze zdania > wierne powtórzenie każdego słowa.
-- Tempo mowy: napis nie może być wyraźnie dłuższy od kwestii mówionej.
+- 42 znaki w wierszu i 2 wiersze to punkt odniesienia z napisów filmowych,
+  nie uniwersalny limit gry. Potwierdź szerokość pola, font i sposób łamania.
+- Oceń, czy tekst da się przeczytać w czasie wyświetlania i podczas rozgrywki.
+  Gdy brak czasów lub obrazu, zgłoś ryzyko do testu; stosunek długości PL/EN
+  nie potwierdza czytelności. Skracaj bez gubienia sensu i funkcji wypowiedzi.
 
 ## Styl i ton
 

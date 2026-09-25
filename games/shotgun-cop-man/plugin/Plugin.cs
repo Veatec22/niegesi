@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Shotgun Cop Man, dokładany w czasie działania gry.
+// Not Geese — polski dla Shotgun Cop Man, dokładany w czasie działania gry.
 //
 // Gra ma dziesięć języków w tabeli I2 Localization wkompilowanej w kod.
 // Plugin dokłada jedenasty i wypełnia go tekstami z pl.tsv. Menu wylicza języki
@@ -15,12 +15,15 @@ using BepInEx.Logging;
 using HarmonyLib;
 using I2.Loc;
 
-namespace NieGesi.ShotgunCopMan
+namespace notgeese.ShotgunCopMan
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.shotguncopman")]
     [BepInPlugin(Id, "Shotgun Cop Man PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.shotguncopman";
+        public const string Id = "cc.notgeese.shotguncopman";
         public const string Version = "0.3.1";
 
         internal const string LanguageName = "Polski";

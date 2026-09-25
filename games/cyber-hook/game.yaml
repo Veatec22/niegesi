@@ -12,7 +12,7 @@ stores:
 download:
   kind: zip
   file: Cyber-Hook-PL-0.2.0.zip
-  bytes: 666933
+  bytes: 667095
 phase: full
 build_input:
   store: gog

@@ -53,7 +53,7 @@ SEARCH = 'https://steamcommunity.com/actions/SearchApps/{}'
 DETAILS = 'https://store.steampowered.com/api/appdetails?appids={}&l=english'
 STORE = 'https://store.steampowered.com/app/{}/'
 ASSETS = 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{}/'
-USER_AGENT = 'niegesi-keyart/2.0 (+https://github.com/Veatec22/niegesi)'
+USER_AGENT = 'notgeese-keyart/2.0 (+https://github.com/Veatec22/notgeese)'
 # Bez tych ciasteczek strona sklepu części gier pokazuje bramkę wieku zamiast grafik.
 STORE_COOKIES = 'birthtime=0; wants_mature_content=1; lastagecheckage=1-0-1990'
 

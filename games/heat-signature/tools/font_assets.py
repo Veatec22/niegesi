@@ -54,4 +54,4 @@ def build(out):
 
 
 if __name__ == '__main__':
-    print(build(ROOT / 'dist/NieGesi/fonts'))
+    print(build(ROOT / 'dist/notgeese/fonts'))

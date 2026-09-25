@@ -100,15 +100,15 @@ def build(binary_only=False):
     lines += [f'N\t{en}\t{noun}\t{gender}\n' for en, (noun, gender) in items['nouns'].items()]
     lines += [f'A\t{en}\t' + '\t'.join(forms) + '\n' for en, forms in items['modifiers'].items()]
     lines += [f'P\t{en}\t{phrase}\n' for en, phrase in items['tails'].items()]
-    payload = out / 'NieGesi'
+    payload = out / 'notgeese'
     payload.mkdir(exist_ok=True)
     (payload / 'pl.tsv').write_bytes(''.join(lines).encode('utf-8'))
     (payload / 'LICENSE-MINHOOK.txt').write_bytes((mh / 'LICENSE.txt').read_bytes())
     (payload / 'LICENSE-XOLONIUM.txt').write_bytes((ROOT / 'fonts/LICENSE.txt').read_bytes())
     font_files = font_assets.build(payload / 'fonts')
     (out / 'READ-ME.txt').write_bytes((ROOT / 'docs/INSTALL.txt').read_bytes())
-    files = ['d3d9.dll', 'NieGesi/pl.tsv', 'NieGesi/LICENSE-MINHOOK.txt', 'NieGesi/LICENSE-XOLONIUM.txt', 'READ-ME.txt']
-    files += ['NieGesi/fonts/' + name for name in font_files]
+    files = ['d3d9.dll', 'notgeese/pl.tsv', 'notgeese/LICENSE-MINHOOK.txt', 'notgeese/LICENSE-XOLONIUM.txt', 'READ-ME.txt']
+    files += ['notgeese/fonts/' + name for name in font_files]
     archive = out / f'Heat-Signature-PL-{VERSION}.zip'
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as z:
         for name in files:
@@ -116,7 +116,7 @@ def build(binary_only=False):
     with zipfile.ZipFile(archive) as z:
         assert set(z.namelist()) == set(files)
         assert not any(n.lower().endswith(('.exe', '.win', '.ogg')) for n in z.namelist())
-        assert all(not n.endswith('.png') or n in ['NieGesi/fonts/' + f for f in font_files] for n in z.namelist())
+        assert all(not n.endswith('.png') or n in ['notgeese/fonts/' + f for f in font_files] for n in z.namelist())
         assert z.testzip() is None
     (out / 'build-report.json').write_text(json.dumps({'version': VERSION, 'entries': len(translations),
         'package_bytes': archive.stat().st_size, 'package_sha256': hashlib.sha256(archive.read_bytes()).hexdigest(),

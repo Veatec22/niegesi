@@ -19,6 +19,6 @@ test_notes: 'Vertical częściowo potwierdzony w grze — polskie litery w dialo
 download:
   kind: patch
   file: Not-A-Hero-PL-0.2.0-latka.zip
-  bytes: 549322
+  bytes: 549354
 gallery: [1, 2, 3, 4, 5]
 year: 2015

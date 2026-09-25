@@ -18,19 +18,22 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 using Object = UnityEngine.Object;
 using GameLocale = UnityEngine.Localization.Locale;
 
-namespace NieGesi.TurboOverkill
+namespace notgeese.TurboOverkill
 {
-    [BepInPlugin(Id, "Nie Gęsi — Turbo Overkill PL", "0.2.0")]
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("pl.niegesi.turbooverkill")]
+    [BepInPlugin(Id, "Not Geese — Turbo Overkill PL", "0.2.0")]
     public sealed class Plugin : BasePlugin
     {
-        public const string Id = "pl.niegesi.turbooverkill";
+        public const string Id = "pl.notgeese.turbooverkill";
         internal static ManualLogSource Logger;
         internal static bool Failed, Ready;
         internal static GameLocale Polish;
         internal static readonly Dictionary<string, string> Texts = new Dictionary<string, string>();
         internal static readonly List<StringTable> Tables = new List<StringTable>();
         internal static readonly List<AsyncOperationHandle<StringTable>> Handles = new List<AsyncOperationHandle<StringTable>>();
-        internal const string Preference = "NieGesi.TurboOverkill.Locale";
+        internal const string Preference = "notgeese.TurboOverkill.Locale";
         static Harmony harmony;
         static bool tablesRegistered;
 
@@ -212,7 +215,7 @@ namespace NieGesi.TurboOverkill
                 Addressables.ResourceManager.Acquire((AsyncOperationHandle)load);
                 // Only in-memory copies, never shipped or saved as modified game assets.
                 var table = Object.Instantiate(load.Result);
-                table.name = load.Result.name + " NieGesi PL";
+                table.name = load.Result.name + " notgeese PL";
                 table.LocaleIdentifier = new LocaleIdentifier("pl");
                 Object.DontDestroyOnLoad(table);
                 string guid = table.SharedData.m_TableCollectionNameGuidString;
@@ -239,7 +242,7 @@ namespace NieGesi.TurboOverkill
 
     static class Selector
     {
-        const string ButtonName = "NieGesi_Polski";
+        const string ButtonName = "notgeese_Polski";
         static Sprite flag;
         internal static void Add(UiLanguageSelector selector)
         {
@@ -296,7 +299,7 @@ namespace NieGesi.TurboOverkill
             var texture = new Texture2D(32, 20, TextureFormat.RGBA32, false);
             for (int y = 0; y < 20; y++) for (int x = 0; x < 32; x++)
                 texture.SetPixel(x, y, y >= 10 ? Color.white : new Color(0.86f, 0.078f, 0.235f, 1));
-            texture.Apply(); texture.name = "NieGesi Polish flag";
+            texture.Apply(); texture.name = "notgeese Polish flag";
             Object.DontDestroyOnLoad(texture);
             flag = Sprite.Create(texture, new Rect(0, 0, 32, 20), new Vector2(0.5f, 0.5f));
             Object.DontDestroyOnLoad(flag);

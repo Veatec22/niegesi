@@ -116,7 +116,7 @@ w całości, a zstd nie sięgał dopasowaniami przez całe 275 MB:
 
 Format 1 został usunięty razem z zależnością od `zstandard`.
 
-**2. `NieGesiPatch.exe`** (`tools/applier/`, 11 KB, C# 5, .NET Framework 4): wypakuj
+**2. `notgeesePatch.exe`** (`tools/applier/`, 11 KB, C# 5, .NET Framework 4): wypakuj
 paczkę do katalogu gry, dwuklik. Sprawdza sumę, odkłada oryginał jako
 `<plik>.przed-spolszczeniem`, zapisuje przez plik tymczasowy. Uruchomiony ponownie
 na spolszczonej grze pyta o przywrócenie oryginału. Wybrano `.exe` z dwuklikiem;
@@ -139,4 +139,4 @@ Guzik działający na trzech grach, w jednej rodzinie przeglądarek i poza domy�
 katalogami sklepów nie jest „jednym modelem wszędzie". Usunięty razem z polami
 `install.marker` i `download.patch`. Nie wracać do tematu bez zmiany po stronie
 przeglądarek — zamiast tego zostaje ZIP do wypakowania, a w paczkach deltowych
-`NieGesiPatch.exe`.
+`notgeesePatch.exe`.

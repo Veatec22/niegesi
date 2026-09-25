@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using HarmonyLib;
 using UnityEngine;
 
-namespace NieGesi.Broforce
+namespace notgeese.Broforce
 {
     [HarmonyPatch]
     internal static class PolishText3D

@@ -53,6 +53,11 @@ mniejsza wersja zostala potwierdzona w grze przez uzytkownika; pelna kampania
 czeka na przejscie. Napisy wypalone w teksturach i modele liter nie sa zmieniane.
 
 LICENCJE
-Spolszczenie i plugin: MIT, tekst w BepInEx/plugins/NieGesiSkateStory/LICENSE-niegesi.txt
+Spolszczenie i plugin: MIT, tekst w BepInEx/plugins/notgeeseSkateStory/LICENSE-notgeese.txt
 BepInEx: LGPL-2.1, tekst w BepInEx-LICENSE.txt. Zrodla tej konkretnej wersji:
 https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5
+
+AKTUALIZACJA ZE STARSZEJ PACZKI
+Starsze wydania instalowaly plugin w folderze BepInEx/plugins/NieGesiSkateStory
+(poprzednia nazwa projektu). Usun ten folder przed wypakowaniem nowej paczki.
+Jesli zostanie, BepInEx uruchomi stara wersje, a nowa pominie.

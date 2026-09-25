@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Neon Abyss, dokładany w czasie działania gry.
+// Not Geese — polski dla Neon Abyss, dokładany w czasie działania gry.
 //
 // Plugin dopisuje jedenasty język do źródła I2 Localization zaraz po jego wczytaniu
 // i wypełnia go tekstami z pliku pl.tsv leżącego obok tej biblioteki. Do tego:
@@ -22,12 +22,15 @@ using I2.Loc;
 using TMPro;
 using UnityEngine;
 
-namespace NieGesi.NeonAbyss
+namespace notgeese.NeonAbyss
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.neonabyss")]
     [BepInPlugin(Id, "Neon Abyss PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.neonabyss";
+        public const string Id = "cc.notgeese.neonabyss";
         public const string Version = "0.3.2";
 
         internal const string LanguageName = "Polish";
@@ -364,7 +367,7 @@ namespace NieGesi.NeonAbyss
                     UnityEngine.TextCore.LowLevel.GlyphRenderMode.RASTER_HINTED, 1024, 1024,
                     AtlasPopulationMode.Dynamic);
                 if (asset == null) throw new Exception("CreateFontAsset zwróciło null");
-                asset.name = BrokenAtlas + " (Nie gęsi)";
+                asset.name = BrokenAtlas + " (Not Geese)";
                 Initialize(asset);
                 if (original.material != null && asset.material != null)
                 {
@@ -475,7 +478,7 @@ namespace NieGesi.NeonAbyss
 
             var asset = TMP_FontAsset.CreateFontAsset(font, pointSize, padding, mode, size, size, AtlasPopulationMode.Static);
             if (asset == null) return null;
-            asset.name = font.name + " " + pointSize + " PL (Nie gęsi)";
+            asset.name = font.name + " " + pointSize + " PL (Not Geese)";
             Initialize(asset);
 
             var engine = typeof(UnityEngine.TextCore.LowLevel.FontEngine);
@@ -539,7 +542,7 @@ namespace NieGesi.NeonAbyss
                 UnityEngine.TextCore.LowLevel.GlyphRenderMode.RASTER_HINTED, 1024, 1024,
                 AtlasPopulationMode.Dynamic);
             if (asset == null) return null;
-            asset.name = font.name + " " + pointSize + " (Nie gęsi)";
+            asset.name = font.name + " " + pointSize + " (Not Geese)";
             // Atlas z CreateFontAsset nie ma jeszcze tablic znaków — bez tego TMP
             // wywraca się przy dorysowywaniu i po cichu bierze literę z kolejnego zapasu.
             Initialize(asset);

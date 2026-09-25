@@ -7,14 +7,14 @@ Zakres nie obejmuje napisów w teksturach, nagrań głosowych ani tekstów sklep
 
 INSTALACJA
 Przy zamkniętej grze wypakuj zawartość ZIP do katalogu z Shinigami.exe.
-W Shinigami/Content/Paks pojawią się trzy pliki pakchunk99-NieGesiPL_P:
+W Shinigami/Content/Paks pojawią się trzy pliki pakchunk99-notgeesePL_P:
 .pak, .utoc i .ucas. Wszystkie trzy są potrzebne.
 Uruchom grę normalnie i wybierz Polski na ekranie wyboru języka.
 Nie trzeba ustawiać parametru Culture ani zastępować angielskiego.
 Aktualizacja z 0.1: zastąp te same trzy pliki. Własne zapisy gry zostają bez zmian.
 
 USUNIĘCIE
-Przy zamkniętej grze usuń wyłącznie te trzy pliki pakchunk99-NieGesiPL_P.
+Przy zamkniętej grze usuń wyłącznie te trzy pliki pakchunk99-notgeesePL_P.
 Nie usuwaj oryginalnych pakchunk0 ani global. Oryginały nie są podmieniane.
 Jeżeli używasz innych modów, pozostaw ich pliki na miejscu.
 
@@ -51,3 +51,8 @@ Repozytorium: games/labyrinth-of-the-demon-king/translations/en-pl-review.json
 zawiera angielski oryginał i polski przekład obok siebie.
 Obok jest przeszukiwalny en-pl-review.html oraz REVIEW.md z terminologią.
 Uwagi w review wskazują teksty wymagające oceny w kontekście rozgrywki.
+
+AKTUALIZACJA ZE STARSZEJ PACZKI
+Starsze wydania nazywały pliki inaczej (poprzednia nazwa projektu). Przed
+wypakowaniem usuń z Shinigami/Content/Paks trzy pliki pakchunk99-NieGesiPL_P
+(.pak, .utoc, .ucas). Inaczej gra wczyta obie wersje i starsza może przesłonić nowszą.

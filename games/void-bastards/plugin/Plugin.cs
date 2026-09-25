@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Void Bastards, dokładany w czasie działania gry.
+// Not Geese — polski dla Void Bastards, dokładany w czasie działania gry.
 //
 // Gra ma dziewięć języków w tabeli I2 Localization wkompilowanej w kod. Plugin dokłada
 // dziesiąty („Polish”) i wypełnia go tekstami z pl.tsv. Ekran języków wylicza języki
@@ -16,12 +16,15 @@ using HarmonyLib;
 using I2.Loc;
 using UnityEngine;
 
-namespace NieGesi.VoidBastards
+namespace notgeese.VoidBastards
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.voidbastards")]
     [BepInPlugin(Id, "Void Bastards PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.voidbastards";
+        public const string Id = "cc.notgeese.voidbastards";
         public const string Version = "0.2.1";
 
         // Nazwa języka jest też kluczem podpisu w menu: „Language/Polish”.
@@ -130,7 +133,7 @@ namespace NieGesi.VoidBastards
                     Report("Font", font.name, font.dynamic, c => font.HasCharacter(c));
                 foreach (var font in Resources.FindObjectsOfTypeAll<TMPro.TMP_FontAsset>())
                 {
-                    if (font.name.StartsWith("NieGesi", StringComparison.Ordinal)) continue;
+                    if (font.name.StartsWith("notgeese", StringComparison.Ordinal)) continue;
                     var asset = font;
                     Report("TMP", font.name, false, c => HasWithFallback(asset, c));
                 }

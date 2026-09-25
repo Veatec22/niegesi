@@ -14,7 +14,7 @@ import locres
 sys.path.insert(0, str(ROOT.parent / 'sprawl' / 'tools'))
 import pak
 
-PAK_NAME = 'pakchunk99-NieGesi-PL_P.pak'
+PAK_NAME = 'pakchunk99-notgeese-PL_P.pak'
 PACKAGE = 'Somber-Echoes-PL-0.2.0.zip'
 RUNTIME_SHA = 'b954f036b10e9abb0c0c41599311ab1accc53e30515aeed7e48ee22c5b3b1280'
 
@@ -71,9 +71,9 @@ def build(output, runtime):
     with zipfile.ZipFile(runtime) as archive:
         for member in ('dwmapi.dll', 'ue4ss/UE4SS.dll', 'ue4ss/LICENSE', 'ue4ss/UE4SS-settings.ini'):
             payload[prefix + member] = archive.read(member)
-    payload[prefix + 'ue4ss/Mods/mods.txt'] = b'NieGesiPL : 1\n'
-    payload[prefix + 'ue4ss/Mods/mods.json'] = b'[{"mod_name":"NieGesiPL","mod_enabled":true}]\n'
-    payload[prefix + 'ue4ss/Mods/NieGesiPL/Scripts/main.lua'] = (ROOT / 'plugin/main.lua').read_bytes()
+    payload[prefix + 'ue4ss/Mods/mods.txt'] = b'notgeesePL : 1\n'
+    payload[prefix + 'ue4ss/Mods/mods.json'] = b'[{"mod_name":"notgeesePL","mod_enabled":true}]\n'
+    payload[prefix + 'ue4ss/Mods/notgeesePL/Scripts/main.lua'] = (ROOT / 'plugin/main.lua').read_bytes()
     assert len(payload) == 9
     assert not any(Path(name).suffix in ('.uasset', '.uexp', '.ufont', '.ubulk') for name in payload)
     with zipfile.ZipFile(output / PACKAGE, 'w', zipfile.ZIP_DEFLATED) as package:

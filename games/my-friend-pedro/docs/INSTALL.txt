@@ -12,9 +12,9 @@ My Friend Pedro - Blood Bullets Bananas_Data/resources.assets
 Uruchom grę normalnie i wybierz Options → Language → Polski.
 
 W lokalnej instalacji agenta oryginał jest zachowany w:
-E:/Repos/niegesi/backups/my-friend-pedro/resources.assets
+E:/Repos/notgeese/backups/my-friend-pedro/resources.assets
 Działający vertical sprzed pełnej wersji:
-E:/Repos/niegesi/backups/my-friend-pedro-vertical/resources.assets
+E:/Repos/notgeese/backups/my-friend-pedro-vertical/resources.assets
 
 PRZYWRÓCENIE
 Zamknij grę i zastąp resources.assets oryginałem z kopii zapasowej.

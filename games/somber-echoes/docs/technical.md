@@ -74,7 +74,7 @@ Pak nie blokuje uruchomienia na podstawie numeru wersji gry.
 Werdykt: warto kontynuować przez mały pak nakładkowy. Przygotowano próbkę 111 wpisów.
 ZIP 6568 bajtów trafił do `dist/` oraz `site/public/pobierz/`; okładka i pięć
 zrzutów sklepowych są w `site/public/keyart/somber-echoes/`.
-Próbkę zainstalowano jako nowy `SomberEchoes/Content/Paks/pakchunk99-NieGesi-PL_P.pak`.
+Próbkę zainstalowano jako nowy `SomberEchoes/Content/Paks/pakchunk99-notgeese-PL_P.pak`.
 Nie istniał wcześniej, więc nie podmieniono żadnego pliku i nie była potrzebna
 kopia oryginału. SHA-256 źródła i zainstalowanego paka są zgodne:
 `410a7f92324492fd38a8d1a2fc859e3baadee44dba982c4b14edcc43aba9b66b`.

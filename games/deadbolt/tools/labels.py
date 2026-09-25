@@ -1,6 +1,6 @@
 """Polskie napisy na grafikach DEADBOLT (menu główne, samouczek, wybór misji) — projekt i podgląd.
 
-Plugin nie dostaje żadnych pikseli gry. Dla każdej etykiety przepis (`NieGesi/labels.txt`) mówi:
+Plugin nie dostaje żadnych pikseli gry. Dla każdej etykiety przepis (`notgeese/labels.txt`) mówi:
   erase — w prostokącie klatki zamaluj kolorem tła piksele w kolorach napisu
           (faktura etykiety — plamy, zabrudzenia — zostaje, bo ma inne kolory);
   fill  — wypełnij prostokąt kolorem (klawisz „SPACE” z wyciętymi literami);

@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla I Am Your Beast, dokładany w czasie działania gry.
+// Not Geese — polski dla I Am Your Beast, dokładany w czasie działania gry.
 //
 // Gra nie ma systemu języków. Teksty żyją w trzech miejscach, wszystkie podmieniamy
 // w pamięci, bez dotykania plików gry:
@@ -27,12 +27,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace NieGesi.IAmYourBeast
+namespace notgeese.IAmYourBeast
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.iamyourbeast")]
     [BepInPlugin(Id, "I Am Your Beast PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.iamyourbeast";
+        public const string Id = "cc.notgeese.iamyourbeast";
         public const string Version = "0.2.0";
 
         internal const string TermsFile = "pl.tsv";

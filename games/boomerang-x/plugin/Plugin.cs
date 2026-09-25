@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Boomerang X, dokładany w czasie działania gry.
+// Not Geese — polski dla Boomerang X, dokładany w czasie działania gry.
 //
 // Gra trzyma teksty w tabeli wkompilowanej w kod i ma dziesięć języków bez miejsca
 // na jedenasty. Plugin dokłada go w pamięci: przechwytuje pobieranie tłumaczenia,
@@ -14,12 +14,15 @@ using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
 
-namespace NieGesi.BoomerangX
+namespace notgeese.BoomerangX
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.boomerangx")]
     [BepInPlugin(Id, "Boomerang X PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.boomerangx";
+        public const string Id = "cc.notgeese.boomerangx";
         public const string Version = "0.2";
 
         /// Nasz język siada tuż za ostatnim istniejącym (language.LENGTH).

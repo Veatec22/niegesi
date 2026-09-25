@@ -14,7 +14,7 @@ INSTALACJA
 1. Zamknij grę.
 2. W Steam wybierz Heat Signature > Zarządzaj > Przeglądaj pliki lokalne.
 3. Wypakuj zawartość ZIP obok Heat_Signature.exe: plik d3d9.dll oraz folder
-   NieGesi. Nie wkładaj całego folderu paczki jako dodatkowego podkatalogu.
+   notgeese. Nie wkładaj całego folderu paczki jako dodatkowego podkatalogu.
 4. Uruchom grę normalnie ze Steama. Spolszczenie działa automatycznie.
 
 Jeżeli masz już d3d9.dll od innego moda, zachowaj jego kopię i wyłącz tamten
@@ -30,15 +30,15 @@ CO SPRAWDZIĆ
    i Szefowie. Misja osobista postaci i jej opis.
 4. Rozmowy w barze (Fiasco, barmani frakcji) — tekst pojawia się stopniowo.
 5. Dziennik zdarzeń pod klawiszem B i komunikaty po misji.
-Nieprzetłumaczone teksty trafiają do NieGesi/LogOutput.log jako „Untranslated”.
+Nieprzetłumaczone teksty trafiają do notgeese/LogOutput.log jako „Untranslated”.
 Przytrzymanie F8 w menu zastępuje „Wznów” próbką wszystkich polskich liter.
 
 Jeżeli gra nie startuje lub wszystko zostaje po angielsku, zakończ grę
-i zachowaj NieGesi/LogOutput.log. Log pokazuje wynik odnajdywania funkcji,
+i zachowaj notgeese/LogOutput.log. Log pokazuje wynik odnajdywania funkcji,
 tworzenia fontów i liczbę wczytanych tłumaczeń.
 
 USUNIĘCIE
-Przy zamkniętej grze usuń dodany d3d9.dll i folder NieGesi. Jeśli wcześniej
+Przy zamkniętej grze usuń dodany d3d9.dll i folder notgeese. Jeśli wcześniej
 odłożono proxy innego moda, przywróć tamtą kopię. Oryginalne pliki gry nie były
 zmieniane, więc nie wymagają przywracania.
 
@@ -49,12 +49,16 @@ czeka na test w grze. Plugin nie wymaga konkretnej wersji gry: jeśli nie
 rozpozna potrzebnych funkcji, pomija instalację i zapisuje powód w logu.
 
 ZAWARTOŚĆ I LICENCJE
-d3d9.dll — własny plugin Nie gęsi, zawiera MinHook 1.3.4.
-NieGesi/pl.tsv — polskie teksty, szablony i oryginały służące dopasowaniu.
-NieGesi/LICENSE-MINHOOK.txt — licencja BSD MinHook i jego składników.
-NieGesi/fonts/ — 13 pasków liter, 13 tabel szerokości oraz mapa 120 znaków.
-NieGesi/LICENSE-XOLONIUM.txt — licencja SIL OFL 1.1 fontu Xolonium.
+d3d9.dll — własny plugin Not Geese, zawiera MinHook 1.3.4.
+notgeese/pl.tsv — polskie teksty, szablony i oryginały służące dopasowaniu.
+notgeese/LICENSE-MINHOOK.txt — licencja BSD MinHook i jego składników.
+notgeese/fonts/ — 13 pasków liter, 13 tabel szerokości oraz mapa 120 znaków.
+notgeese/LICENSE-XOLONIUM.txt — licencja SIL OFL 1.1 fontu Xolonium.
 READ-ME.txt — ta instrukcja.
 Źródła MinHook: https://github.com/TsudaKageyu/minhook/tree/v1.3.4
 Źródła Xolonium: https://sev.dev/fonts/xolonium/
 Paczka nie zawiera plików wykonywalnych ani zasobów wydawcy gry, ani fontów Windows.
+
+AKTUALIZACJA ZE STARSZEJ PACZKI
+Starsze wydania trzymały pliki spolszczenia w folderze NieGesi (poprzednia
+nazwa projektu). Nowa wersja już go nie używa, więc możesz go usunąć.

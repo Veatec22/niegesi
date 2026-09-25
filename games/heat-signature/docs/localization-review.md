@@ -12,7 +12,7 @@ Status wszystkich poprawek poniżej: **proponowane** (nic nie zostało naniesion
   rozjazdów i nadmiarowych kluczy). `parts/*.json` zgodne z `pl.json`; 117 kluczy pl.json (vertical) jest poza parts.
 - Kontekst: oryginalne `Dialog/*.txt` (13 plików, czytane scenami), `work/strings-by-function.txt`,
   `work/preview-out.txt`, `work/l10n-report.md`, `plugin/Translate.h` (logika składania).
-- Złożone napisy sprawdzano Pythonowym portem silnika z `Translate.h` na aktualnym `dist/NieGesi/pl.tsv`.
+- Złożone napisy sprawdzano Pythonowym portem silnika z `Translate.h` na aktualnym `dist/notgeese/pl.tsv`.
   Uwaga: `work/preview-out.txt` jest starszy od `pl.json` — pokazuje m.in. „Zabij oficera Sovereign w, który…”
   i „Guard, patroluje”; aktualny TSV daje poprawnie „Zabij oficera Sovereign, który…” i „Strażnik, patroluje”.
   Warto odświeżyć podgląd przed oddaniem.

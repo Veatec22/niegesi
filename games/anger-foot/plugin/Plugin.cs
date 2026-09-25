@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Anger Foot, dokładany w czasie działania gry.
+// Not Geese — polski dla Anger Foot, dokładany w czasie działania gry.
 //
 // Gra ma dwanaście slotów tłumaczeń, z czego włoski jest pusty i niedostępny
 // w menu. Plugin przemianowuje ten rekord na polski i włącza go, a teksty
@@ -14,12 +14,15 @@ using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
 
-namespace NieGesi.AngerFoot
+namespace notgeese.AngerFoot
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.angerfoot")]
     [BepInPlugin(Id, "Anger Foot PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.angerfoot";
+        public const string Id = "cc.notgeese.angerfoot";
         public const string Version = "0.3";
 
         internal const string TermsFile = "pl.tsv";

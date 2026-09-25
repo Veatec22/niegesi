@@ -1,4 +1,4 @@
-// Aplikator łatek Nie gęsi — jeden plik obok łatki, bez instalacji.
+// Aplikator łatek Not Geese — jeden plik obok łatki, bez instalacji.
 //
 // Nakłada łatkę formatu 2 z tools/patch.py: nagłówek tekstowy z sumami kontrolnymi,
 // potem lista operacji „skopiuj z oryginału" / „wstaw bajty" spakowana DEFLATE.
@@ -7,9 +7,9 @@
 // Wszystko z .NET Framework 4, który jest na każdym Windowsie od lat — żadnej biblioteki.
 //
 // Użycie:
-//   NieGesiPatch.exe                          nakłada wszystkie łatki obok siebie, gra = katalog programu
-//   NieGesiPatch.exe <katalog gry> [łatka...]
-//   NieGesiPatch.exe --przywroc [katalog gry] [łatka...]
+//   notgeesePatch.exe                          nakłada wszystkie łatki obok siebie, gra = katalog programu
+//   notgeesePatch.exe <katalog gry> [łatka...]
+//   notgeesePatch.exe --przywroc [katalog gry] [łatka...]
 //
 // Kod celowo w C# 5, żeby kompilował go także csc.exe dołączony do samego Windowsa.
 
@@ -21,9 +21,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
-static class NieGesiPatch
+static class notgeesePatch
 {
-    const string Magic = "NIEGESI-PATCH";
+    const string Magic = "NOTGEESE-PATCH";
     const string Format = "2";
     const string FormatSources = "3";
     const string BackupSuffix = ".przed-spolszczeniem";
@@ -37,7 +37,7 @@ static class NieGesiPatch
     static int Main(string[] args)
     {
         try { Console.OutputEncoding = Encoding.UTF8; } catch (IOException) { }
-        Console.WriteLine("Nie gęsi — nakładanie spolszczenia");
+        Console.WriteLine("Not Geese — nakładanie spolszczenia");
         Console.WriteLine();
 
         int code;
@@ -171,7 +171,7 @@ static class NieGesiPatch
             if (job.Create)
             {
                 // Nowy plik obok plików gry: nic nie odkładamy, starszą wersję po prostu zastępujemy.
-                string fresh = job.Target + ".niegesi-tmp";
+                string fresh = job.Target + ".notgeese-tmp";
                 File.WriteAllBytes(fresh, result);
                 if (File.Exists(job.Target))
                     File.Delete(job.Target);
@@ -184,7 +184,7 @@ static class NieGesiPatch
             // przerwanie w połowie nie zostawia w grze uszkodzonego pliku.
             if (!File.Exists(job.Backup))
                 File.Copy(job.Target, job.Backup);
-            string temporary = job.Target + ".niegesi-tmp";
+            string temporary = job.Target + ".notgeese-tmp";
             File.WriteAllBytes(temporary, result);
             File.Delete(job.Target);
             File.Move(temporary, job.Target);
@@ -295,11 +295,12 @@ static class NieGesiPatch
         for (int i = 0; i + 1 < raw.Length; i++)
             if (raw[i] == '\n' && raw[i + 1] == '\n') { split = i; break; }
         if (split <= 0)
-            throw new Failure("To nie jest łatka Nie gęsi.");
+            throw new Failure("To nie jest łatka Not Geese.");
 
         string[] lines = Encoding.UTF8.GetString(raw, 0, split).Split('\n');
-        if (lines[0] != Magic)
-            throw new Failure("To nie jest łatka Nie gęsi.");
+        // Compatibility with patches distributed before the project rename.
+        if (lines[0] != Magic && lines[0] != "NIEGESI-PATCH")
+            throw new Failure("To nie jest łatka Not Geese.");
 
         header = new Dictionary<string, string>();
         for (int i = 1; i < lines.Length; i++)

@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Rain World jako osobny język gry.
+// Not Geese — polski dla Rain World jako osobny język gry.
 //
 // Rain World ma własnego BepInEksa i system modów (Remix). Języki są rozszerzalnym
 // ExtEnumem, a teksty gra czyta z text/text_<trzy litery nazwy>/ — także z folderów
@@ -15,12 +15,15 @@ using BepInEx.Logging;
 using HarmonyLib;
 using UnityEngine;
 
-namespace NieGesi.RainWorldPL
+namespace notgeese.RainWorldPL
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("niegesi.rainworld.polski")]
     [BepInPlugin(Id, "Rain World PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "niegesi.rainworld.polski";
+        public const string Id = "notgeese.rainworld.polski";
         public const string Version = "0.2.0";
 
         // Nazwa wartości ExtEnuma. Pierwsze trzy litery wyznaczają folder tekstów: text_pol.

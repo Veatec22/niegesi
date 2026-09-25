@@ -4,7 +4,7 @@ Każda litera to przepis: litera bazowa gry (np. „a”), przesunięcie jej w n
 komórce, wymiary komórki, szerokość kroku i nasze piksele znaku (kreska, kropka,
 ogonek, przekreślenie). Plugin składa litery w pamięci z pikseli gry i naszych
 znaków, więc paczka nie niesie ani jednego piksela z atlasu gry — tylko przepis
-(`NieGesi/fonts.txt`).
+(`notgeese/fonts.txt`).
 
 fontMedium to w praktyce fontSmall przeskalowany ×2 (te same kształty, piksel 2×2),
 więc jego znaki to znaki fontSmall w skali 2. Jego istniejące „Ó” nie ma kreski

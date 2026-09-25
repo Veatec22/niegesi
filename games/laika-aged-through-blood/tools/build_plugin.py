@@ -25,7 +25,7 @@ REPO = ROOT.parents[1]
 
 VERSION = '0.2.0'
 DATA = 'Laika Aged through Blood_Data'
-PLUGIN = 'NieGesiLaika'
+PLUGIN = 'notgeeseLaika'
 PACKAGE = 'Laika-Aged-Through-Blood-PL'
 
 BEPINEX_VERSION = '5.4.23.5'
@@ -152,7 +152,7 @@ def package(work: Path) -> Path:
         archive.write(work / f'{PLUGIN}.dll', f'BepInEx/plugins/{PLUGIN}/{PLUGIN}.dll')
         archive.write(work / 'pl.tsv', f'BepInEx/plugins/{PLUGIN}/pl.tsv')
         archive.write(ROOT / 'docs/INSTALL-plugin.txt', 'READ-ME.txt')
-        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN}/LICENSE-niegesi.txt')
+        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN}/LICENSE-notgeese.txt')
 
     shutil.copyfile(BEPINEX_SOURCE, out.parent / BEPINEX_SOURCE.name)
 

@@ -1,7 +1,4 @@
-# Nie gęsi
-
-> *A niechaj narodowie wżdy postronni znają, iż Polacy nie gęsi, iż swój język mają.*
-> — Mikołaj Rej, 1562
+# Not Geese
 
 Unofficial Polish translations of indie games. This private working repository holds
 translation sources, build tools, review files and installation instructions for each game.

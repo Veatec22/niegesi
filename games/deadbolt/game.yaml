@@ -4,7 +4,7 @@ version: "0.2.0"
 entries: { done: 619, total: 619 }
 tested: czesciowy
 engine: GameMaker Studio 1.4 (VM, bytecode 15), x86
-approach: Własny plugin d3d9.dll poprawia dane gry w pamięci przy starcie, zanim silnik je rozbierze — polskie napisy w tabeli STRG, polskie litery dołożone do trzech fontów gry, dialogi dia_*.json tłumaczone do NieGesi/cache. Żaden plik gry nie jest podmieniany; bez stałych adresów i sum kontrolnych.
+approach: Własny plugin d3d9.dll poprawia dane gry w pamięci przy starcie, zanim silnik je rozbierze — polskie napisy w tabeli STRG, polskie litery dołożone do trzech fontów gry, dialogi dia_*.json tłumaczone do notgeese/cache. Żaden plik gry nie jest podmieniany; bez stałych adresów i sum kontrolnych.
 scope: Pełne — menu główne i pauzy, ustawienia i sterowanie, wybór i opisy misji, podpowiedzi, cele, broń, osiągnięcia, okrzyki wrogów i bossów, wszystkie rozmowy z płomieniami (wiersze), notatki i sejfy, nagrania z kaset, porady po śmierci, napisy końcowe oraz napisy na grafikach (menu główne, samouczek, teczka misji). 619 wpisów; nazwy gangów i imiona w oryginale. Poza zakresem edytor map.
 phase: full
 test_notes: Vertical 0.1.1 potwierdzony w grze przez użytkownika 2026-09-25. Pełne 0.2.0 po niezależnym przeglądzie językowym i przepisaniu wierszy płomieni, sprawdzone testem pluginu bez gry i zainstalowane lokalnie; pełne przejście w grze czeka.
@@ -20,6 +20,6 @@ tested_on: []
 download:
   kind: zip
   file: Deadbolt-PL-0.2.0.zip
-  bytes: 210441
+  bytes: 210557
 gallery: [1, 2, 3, 4, 5]
 year: 2016

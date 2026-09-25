@@ -13,7 +13,7 @@ stores:
 download:
   kind: zip
   file: Turbo-Overkill-PL-0.2.0.zip
-  bytes: 34260048
+  bytes: 34260218
 phase: full
 tested_on:
   - store: gog

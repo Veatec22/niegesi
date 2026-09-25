@@ -43,7 +43,7 @@ files = {'PVD/Content/Localization/Game/pl/Game.locres': data}
 assert list(files) == ['PVD/Content/Localization/Game/pl/Game.locres']
 archive = pak.write(files, seed=47419669)
 assert pak.read(archive)[1] == files
-name = 'pakchunk99-NieGesiPL_P.pak'
+name = 'pakchunk99-notgeesePL_P.pak'
 (out / name).write_bytes(archive)
 # UE5 IoStore mounts a .pak only together with its container; ship an empty one.
 CONTAINER_ID = 0x4E6965476573694C  # "LiseGeiN": fixed, unique to this overlay
@@ -61,10 +61,10 @@ with zipfile.ZipFile(args.runtime) as runtime:
     # Ship only the loader, its settings and MIT license. No cheat/debug mods.
     for member in ('dwmapi.dll', 'ue4ss/UE4SS.dll', 'ue4ss/LICENSE', 'ue4ss/UE4SS-settings.ini'):
         payload[prefix + member] = runtime.read(member)
-payload[prefix + 'ue4ss/Mods/mods.txt'] = b'NieGesiPL : 1\n'
-payload[prefix + 'ue4ss/Mods/mods.json'] = b'[{"mod_name":"NieGesiPL","mod_enabled":true}]\n'
+payload[prefix + 'ue4ss/Mods/mods.txt'] = b'notgeesePL : 1\n'
+payload[prefix + 'ue4ss/Mods/mods.json'] = b'[{"mod_name":"notgeesePL","mod_enabled":true}]\n'
 for script in ('main.lua', 'selector.lua'):
-    payload[prefix + 'ue4ss/Mods/NieGesiPL/Scripts/' + script] = (ROOT / 'plugin' / script).read_bytes()
+    payload[prefix + 'ue4ss/Mods/notgeesePL/Scripts/' + script] = (ROOT / 'plugin' / script).read_bytes()
 assert len(payload) == 12
 assert not any(Path(p).suffix in ('.uasset', '.uexp', '.ufont') for p in payload)
 assert len(ucas) < 1024, 'IoStore companion must stay an empty container header'

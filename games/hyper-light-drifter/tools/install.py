@@ -57,7 +57,7 @@ def main():
             saved.write_bytes((args.game / file).read_bytes())
     for file, source in plan.items():
         target = args.game / file
-        temporary = target.with_name(target.name + '.niegesi-tmp')
+        temporary = target.with_name(target.name + '.notgeese-tmp')
         temporary.write_bytes(source.read_bytes())
         os.replace(temporary, target)
         want = HASHES[file] if args.restore else built_hashes[file]

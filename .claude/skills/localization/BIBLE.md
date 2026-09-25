@@ -1,8 +1,9 @@
 # Biblia gry — format
 
 Plik: `games/<gra>/translations/bible.yaml`. Czyta go człowiek i `l10n_report.py`.
-Wszystkie sekcje są opcjonalne. Zacznij od postaci mówiących i 20–50 terminów,
-które wracają najczęściej albo są nazwami własnymi świata gry.
+Sekcje dobieraj do gry. Przed verticalem wystarczy profil stylu, postacie i kilka
+terminów z próbki; przy fullu rozszerz biblię o powracające terminy i nowe postacie.
+Pola stylu i przykłady czyta agent; raport regexowy ich nie ocenia.
 
 ```yaml
 zrodla:                      # identyfikatory, do których odwołują się fakty
@@ -13,6 +14,12 @@ zrodla:                      # identyfikatory, do których odwołują się fakty
     url: https://english-voice-over.fandom.com/wiki/Turbo_Overkill_(2023)
   - id: ru
     opis: Rosyjska tabela gry — płeć w czasie przeszłym
+
+styl:
+  ton: suchy humor, krótkie riposty, bez współczesnych memów
+  adaptacja: idiomy swobodnie; bez dopisywania lore i wzmacniania wulgaryzmów
+  zrodlo: decyzja             # uzytkownik dopiero po rzeczywistym uzgodnieniu
+  uwaga: punkt wyjścia z próbki, do ponownej oceny po fullu
 
 postacie:
   - id: syn
@@ -46,8 +53,8 @@ bez_tlumaczenia:              # nazwy zostające w oryginale; raport nie zgłosi
   - Vector-4
 
 ustawienia:
-  dialog_klucz: '^vo_'        # regex na term/key: napisy dialogów (limit wiersza)
-  max_wiersz: 42              # znaków w wierszu napisów (Netflix PL)
+  dialog_klucz: '^vo_'        # regex na term/key: napisy dialogów
+  max_wiersz: 42              # orientacyjne; potwierdzić w grze, raport nie sprawdza tego pola
 
 ignoruj:                      # świadome wyjątki od raportu
   - sprawdzenie: plec
@@ -68,7 +75,20 @@ Lista identyfikatorów z `zrodla` albo słowo `decyzja`. Przy decyzji dopisz
 
 `zrodlo: uzytkownik` oznacza rozstrzygnięcie użytkownika przy akceptacji.
 Jest nadrzędne wobec wszystkich innych źródeł. W `uwaga` zapisz też odrzuconą
-propozycję, żeby kolejny przegląd nie proponował jej ponownie.
+propozycję, żeby kolejny przegląd nie proponował jej ponownie bez nowych przesłanek.
+Jeśli pełna gra ujawnia konflikt z ustaleniem, reviewer pokazuje go użytkownikowi;
+nie nadpisuje ustalenia. Brak odpowiedzi nie uprawnia do wpisania `uzytkownik`.
+
+## Przykłady głosu i pamięć decyzji
+
+Do postaci można dodać `przyklady`: listę z `klucz`, `en`, `pl`, `uwaga`, `zrodlo`.
+Wybierz 1–3 rzeczywiste kwestie pokazujące sposób mówienia, zamiast mnożyć etykiety.
+Zaznacz, jeśli rejestr zależy od rozmówcy albo zmienia się wraz z fabułą.
+
+W biblii trzymaj obowiązujące ustalenia. Próbki, nierozstrzygnięte alternatywy
+i uzasadnienia rozmów zachowuj w `docs/translation-decisions.md` gry.
+Przy zmianie uzgodnienia odnotuj poprzedni wybór, nową przesłankę i rozstrzygnięcie;
+nie kasuj pamięci odrzuconych wariantów.
 
 ## Płeć w polskim, na co wpływa
 

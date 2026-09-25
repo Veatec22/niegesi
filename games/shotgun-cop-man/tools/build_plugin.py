@@ -22,7 +22,7 @@ REPO = ROOT.parents[1]
 
 VERSION = '0.3.1'
 DATA = 'Shotgun Cop Man_Data'
-PLUGIN_FOLDER = 'NieGesiShotgunCopMan'
+PLUGIN_FOLDER = 'notgeeseShotgunCopMan'
 
 BEPINEX_VERSION = '5.4.23.5'
 BEPINEX = REPO / 'vendor' / 'bepinex'
@@ -114,10 +114,10 @@ def package(work: Path) -> Path:
         with zipfile.ZipFile(BEPINEX_SOURCE) as source:
             archive.writestr('BepInEx-LICENSE.txt', source.read(f'BepInEx-{BEPINEX_VERSION}/LICENSE'))
 
-        archive.write(work / 'NieGesiShotgunCopMan.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/NieGesiShotgunCopMan.dll')
+        archive.write(work / 'notgeeseShotgunCopMan.dll', f'BepInEx/plugins/{PLUGIN_FOLDER}/notgeeseShotgunCopMan.dll')
         archive.write(work / 'pl.tsv', f'BepInEx/plugins/{PLUGIN_FOLDER}/pl.tsv')
         archive.write(ROOT / 'docs/INSTALL-plugin.txt', 'READ-ME.txt')
-        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-niegesi.txt')
+        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-notgeese.txt')
 
     shutil.copyfile(BEPINEX_SOURCE, out.parent / BEPINEX_SOURCE.name)
 
@@ -143,13 +143,13 @@ def main() -> int:
     work.mkdir(parents=True)
 
     terms = write_terms(work / 'pl.tsv')
-    compile_plugin(args.game.resolve(), work / 'NieGesiShotgunCopMan.dll')
+    compile_plugin(args.game.resolve(), work / 'notgeeseShotgunCopMan.dll')
     archive = package(work)
 
     print(json.dumps({
         'version': VERSION,
         'terms': terms,
-        'plugin_bytes': (work / 'NieGesiShotgunCopMan.dll').stat().st_size,
+        'plugin_bytes': (work / 'notgeeseShotgunCopMan.dll').stat().st_size,
         'package': str(archive),
         'package_bytes': archive.stat().st_size,
         'package_sha256': hashlib.sha256(archive.read_bytes()).hexdigest()[:16],

@@ -54,14 +54,20 @@ def main(game: Path, restore: bool):
                 path.unlink(missing_ok=True)
             else:
                 shutil.copy2(BACKUP / name, path)
-        # Katalog NieGesi tworzy plugin (log, cache dialogów) — usuwamy go w całości, jeśli go nie było.
-        if not old.get('niegesi_existed'):
-            shutil.rmtree(game / 'NieGesi', ignore_errors=True)
+        # Katalog notgeese tworzy plugin (log, cache dialogów) — usuwamy go w całości, jeśli go nie było.
+        # Old manifests describe the directory used by the previous release.
+        legacy = 'notgeese_existed' not in old and 'niegesi_existed' in old
+        folder = 'NieGesi' if legacy else 'notgeese'
+        existed_key = 'niegesi_existed' if legacy else 'notgeese_existed'
+        if not old.get(existed_key):
+            shutil.rmtree(game / folder, ignore_errors=True)
         old['installed'] = {}
         manifest_path.write_text(json.dumps(old, indent=2) + '\n', encoding='utf-8')
         print('Przywrócono stan sprzed instalacji.')
         return
 
+    if old and 'notgeese_existed' not in old:
+        raise SystemExit('Najpierw przywróć poprzednią instalację przez --restore i zarchiwizuj jej backup.')
     archive = ROOT / 'dist' / PACKAGE
     with ZipFile(archive) as z:
         if sorted(z.namelist()) != sorted(FILES) or z.testzip():
@@ -70,7 +76,7 @@ def main(game: Path, restore: bool):
     before = {str(p.relative_to(game)): digest(p) for p in game_files(game)}
     BACKUP.mkdir(parents=True, exist_ok=True)
     record = old or {'game': str(game), 'original': {}, 'installed': {},
-                     'niegesi_existed': (game / 'NieGesi').exists()}
+                     'notgeese_existed': (game / 'notgeese').exists()}
     for name in sorted(FILES):
         target = game / name
         if old and name in old['installed'] and target.exists() and digest(target) != old['installed'][name]:

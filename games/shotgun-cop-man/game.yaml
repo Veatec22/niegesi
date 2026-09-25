@@ -19,6 +19,6 @@ quote:
 download:
   kind: zip
   file: Shotgun-Cop-Man-PL-0.3.1.zip
-  bytes: 653627
+  bytes: 653787
 gallery: [1, 2, 3, 4, 5]
 test_notes: Wybór języka i teksty potwierdzone w grze; 0.3 ujednolica imiona z dodatku Pedro z My Friend Pedro PL (Ofelia, Pedrowi), 0.3.1 usuwa nakładanie się licznika trafień na tekst na ekranie oceny — pełne przejście czeka.

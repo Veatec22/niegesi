@@ -1,4 +1,4 @@
-// Nie gęsi — polski dla Wild Bastards, dokładany w czasie działania gry.
+// Not Geese — polski dla Wild Bastards, dokładany w czasie działania gry.
 //
 // Gra ma dziesięć języków w tabeli I2 Localization wkompilowanej w kod. Plugin dokłada
 // jedenasty („Polish”) i wypełnia go tekstami z pl.tsv, dodaje przycisk „Polski” do panelu
@@ -16,12 +16,15 @@ using HarmonyLib;
 using I2.Loc;
 using UnityEngine;
 
-namespace NieGesi.WildBastards
+namespace notgeese.WildBastards
 {
+    // Wydanie sprzed zmiany nazwy projektu miało inny GUID. Gdy jego katalog został w plugins,
+    // BepInEx pominie ten plugin zamiast ładować dwa spolszczenia naraz.
+    [BepInIncompatibility("cc.notgoose.wildbastards")]
     [BepInPlugin(Id, "Wild Bastards PL", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Id = "cc.notgoose.wildbastards";
+        public const string Id = "cc.notgeese.wildbastards";
         public const string Version = "0.2.0";
 
         internal const string LanguageName = "Polish";

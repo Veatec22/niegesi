@@ -8,7 +8,7 @@
 //     strony tekstur przekodowane przez WIC;
 //   - napisy: wpisy listy STRG wskazują na nasze teksty (runner liczy baza + przesunięcie
 //     w 32 bitach, więc nowe dane mogą leżeć w naszej pamięci);
-//   - dialogi dia_*.json: tłumaczone przy starcie do NieGesi\cache, otwarcie przekierowane.
+//   - dialogi dia_*.json: tłumaczone przy starcie do notgeese\cache, otwarcie przekierowane.
 // Żadnych stałych adresów ani sum kontrolnych. Każdy błąd = gra po angielsku + wpis w logu.
 #define WIN32_LEAN_AND_MEAN
 #define NOMINMAX
@@ -632,8 +632,8 @@ static std::string TranslateJson(const std::string& text, size_t& done, size_t& 
 }
 
 static bool PrepareJson() {
-    std::wstring cache = root + L"NieGesi\\cache\\";
-    CreateDirectoryW((root + L"NieGesi").c_str(), nullptr);
+    std::wstring cache = root + L"notgeese\\cache\\";
+    CreateDirectoryW((root + L"notgeese").c_str(), nullptr);
     CreateDirectoryW(cache.c_str(), nullptr);
     WIN32_FIND_DATAW fd;
     HANDLE h = FindFirstFileW((root + L"dia_*.json").c_str(), &fd);
@@ -713,13 +713,13 @@ static void Init() {
     wchar_t path[MAX_PATH] = {};
     GetModuleFileNameW(selfModule, path, MAX_PATH);
     root = path; root.resize(root.find_last_of(L"\\/") + 1);
-    CreateDirectoryW((root + L"NieGesi").c_str(), nullptr);
-    logfile = _wfsopen((root + L"NieGesi\\LogOutput.log").c_str(), L"w", _SH_DENYNO);
-    Log("NieGesi DEADBOLT PL %s; GameMaker Studio 1.4 VM; data.win patched in memory", kVersion);
+    CreateDirectoryW((root + L"notgeese").c_str(), nullptr);
+    logfile = _wfsopen((root + L"notgeese\\LogOutput.log").c_str(), L"w", _SH_DENYNO);
+    Log("notgeese DEADBOLT PL %s; GameMaker Studio 1.4 VM; data.win patched in memory", kVersion);
     auto started = std::chrono::steady_clock::now();
 
-    auto rows = LoadRows(root + L"NieGesi\\pl.tsv");
-    auto recipes = LoadRecipes(root + L"NieGesi\\fonts.txt");
+    auto rows = LoadRows(root + L"notgeese\\pl.tsv");
+    auto recipes = LoadRecipes(root + L"notgeese\\fonts.txt");
     if (rows.empty() || recipes.empty()) { LogVersions(nullptr); Log("Missing pl.tsv or fonts.txt: disabled"); return; }
 
     std::vector<uint8_t> file;
@@ -740,7 +740,7 @@ static void Init() {
     std::vector<FontPlan> fonts;
     bool fontsOk = PrepareFonts(form, recipes, pages, fonts);
     // Napisy na grafikach (menu główne, samouczek, wybór misji) — tylko razem z fontami.
-    if (fontsOk) ApplyLabels(form, LoadLabels(root + L"NieGesi\\labels.txt"), pages);
+    if (fontsOk) ApplyLabels(form, LoadLabels(root + L"notgeese\\labels.txt"), pages);
     std::map<uint32_t, std::vector<uint8_t>> encoded;      // wpis TXTR -> nowy PNG
     if (fontsOk) {
         for (auto& [index, page] : pages) {

@@ -21,8 +21,8 @@ ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
 VERSION = '0.2.0'
 DATA = 'Broforce_Data'
-PLUGIN_FOLDER = 'NieGesiBroforce'
-PLUGIN_DLL = 'NieGesiBroforce.dll'
+PLUGIN_FOLDER = 'notgeeseBroforce'
+PLUGIN_DLL = 'notgeeseBroforce.dll'
 PACKAGE = f'Broforce-PL-{VERSION}.zip'
 
 BEPINEX_VERSION = '5.4.23.5'
@@ -158,7 +158,7 @@ def package(work: Path) -> Path:
         archive.write(work / PLUGIN_DLL, f'BepInEx/plugins/{PLUGIN_FOLDER}/{PLUGIN_DLL}')
         archive.write(work / 'pl.tsv', f'BepInEx/plugins/{PLUGIN_FOLDER}/pl.tsv')
         archive.write(ROOT / 'docs/INSTALL-plugin.txt', 'READ-ME.txt')
-        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-niegesi.txt')
+        archive.write(REPO / 'LICENSE', f'BepInEx/plugins/{PLUGIN_FOLDER}/LICENSE-notgeese.txt')
 
     # Źródła BepInEksa jako osobny plik obok paczki — ten sam adres pobrania.
     shutil.copyfile(BEPINEX_SOURCE, out.parent / BEPINEX_SOURCE.name)

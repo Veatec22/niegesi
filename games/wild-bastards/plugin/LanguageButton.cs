@@ -13,12 +13,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace NieGesi.WildBastards
+namespace notgeese.WildBastards
 {
     [HarmonyPatch]
     internal static class LanguageButton
     {
-        private const string CloneName = "NieGesi Polski";
+        private const string CloneName = "notgeese Polski";
         private static Sprite flag;
 
         [HarmonyPostfix]
@@ -152,7 +152,7 @@ namespace NieGesi.WildBastards
                     texture.SetPixel(x, y, y >= 10 ? white : red);
             texture.Apply();
             flag = Sprite.Create(texture, new Rect(0, 0, 32, 20), new Vector2(0.5f, 0.5f));
-            flag.name = "NieGesi flaga PL";
+            flag.name = "notgeese flaga PL";
             UnityEngine.Object.DontDestroyOnLoad(texture);
             return flag;
         }

@@ -166,7 +166,7 @@ static bool ApplyMetrics(int id,int sprite,const std::wstring& path,unsigned cou
 static bool LoadFonts() {
     if (fontsAttempted) return fontsReady;
     fontsAttempted=true;
-    std::ifstream mapFile(root+L"NieGesi\\fonts\\charmap.txt",std::ios::binary);
+    std::ifstream mapFile(root+L"notgeese\\fonts\\charmap.txt",std::ios::binary);
     std::string chars((std::istreambuf_iterator<char>(mapFile)),std::istreambuf_iterator<char>());
     unsigned count=0;
     for(unsigned char c:chars) if((c&0xc0)!=0x80) ++count;
@@ -178,7 +178,7 @@ static bool LoadFonts() {
         for(size_t j=0;j<i;++j) if(fonts[j].size==font.size && fonts[j].bold==font.bold && fonts[j].italic==font.italic)
             font.replacement=fonts[j].replacement;
         if(font.replacement>=0) continue;
-        std::wstring path=root+L"NieGesi\\fonts\\font-"+std::to_wstring(font.size)+L"-"+
+        std::wstring path=root+L"notgeese\\fonts\\font-"+std::to_wstring(font.size)+L"-"+
             std::to_wstring(font.bold)+L"-"+std::to_wstring(font.italic)+L".png";
         if(GetFileAttributesW(path.c_str())==INVALID_FILE_ATTRIBUTES) {Log("Missing font variant %zu: disabled",i);return false;}
         int bytes=WideCharToMultiByte(CP_UTF8,0,path.c_str(),-1,nullptr,0,nullptr,nullptr);
@@ -260,7 +260,7 @@ static void __cdecl OnSplit(const char* text,int width,void* lines) {
 }
 
 // Dialogue files: the game reads Dialog\<name>.txt when a conversation starts.
-// We hand it a copy under NieGesi\cache with only the spoken text translated,
+// We hand it a copy under notgeese\cache with only the spoken text translated,
 // made from the player's own file, so the letter-by-letter reveal is Polish.
 // Any failure opens the original file; no game file is ever written.
 using CreateFileWFn = HANDLE (WINAPI*)(LPCWSTR, DWORD, DWORD, LPSECURITY_ATTRIBUTES, DWORD, DWORD, HANDLE);
@@ -290,8 +290,8 @@ static std::wstring DialogCopy(const std::wstring& requested, DWORD access, DWOR
         size_t done = 0, total = 0;
         std::string translated = in ? content : std::string();
         if (!content.empty()) translated = engine.TranslateDialogFile(content, done, total);
-        std::wstring dir = root + L"NieGesi\\cache\\Dialog\\";
-        CreateDirectoryW((root + L"NieGesi\\cache").c_str(), nullptr);
+        std::wstring dir = root + L"notgeese\\cache\\Dialog\\";
+        CreateDirectoryW((root + L"notgeese\\cache").c_str(), nullptr);
         CreateDirectoryW(dir.c_str(), nullptr);
         std::ofstream out(dir + name, std::ios::binary | std::ios::trunc);
         out.write(translated.data(), std::streamsize(translated.size()));
@@ -349,14 +349,14 @@ static std::string Unescape(const std::string& input) {
 static void Init() {
     wchar_t path[32768]={}; GetModuleFileNameW(selfModule,path,32768);
     root=path; root.resize(root.find_last_of(L"\\/")+1);
-    logfile=_wfsopen((root+L"NieGesi\\LogOutput.log").c_str(),L"w",_SH_DENYNO);
-    Log("NieGesi Heat Signature 0.2.0; engine GameMaker Studio YYC x86; proportional Xolonium sprite fonts");
+    logfile=_wfsopen((root+L"notgeese\\LogOutput.log").c_str(),L"w",_SH_DENYNO);
+    Log("notgeese Heat Signature 0.2.0; engine GameMaker Studio YYC x86; proportional Xolonium sprite fonts");
     DWORD unused=0; wchar_t gamePath[32768]={};GetModuleFileNameW(nullptr,gamePath,32768);
     DWORD size=GetFileVersionInfoSizeW(gamePath,&unused);
     std::vector<BYTE> version(size); VS_FIXEDFILEINFO* info=nullptr; UINT bytes=0;
     if(size && GetFileVersionInfoW(gamePath,0,size,version.data()) && VerQueryValueW(version.data(),L"\\",reinterpret_cast<void**>(&info),&bytes))
         Log("Game PE version %u.%u.%u.%u",HIWORD(info->dwFileVersionMS),LOWORD(info->dwFileVersionMS),HIWORD(info->dwFileVersionLS),LOWORD(info->dwFileVersionLS));
-    std::ifstream in(root+L"NieGesi\\pl.tsv",std::ios::binary);
+    std::ifstream in(root+L"notgeese\\pl.tsv",std::ios::binary);
     std::string line;size_t rows=0,rejected=0;
     while(std::getline(in,line)) {
         if(!line.empty()&&line.back()=='\r')line.pop_back();

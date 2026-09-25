@@ -20,9 +20,9 @@ decyzje `docs/translation-decisions.md`, raport `work/l10n-report.md`.
 
 Trzy części, żadna nie podmienia pliku gry:
 
-1. **`pakchunk99-NieGesiPL_P.pak`** z jednym plikiem
+1. **`pakchunk99-notgeesePL_P.pak`** z jednym plikiem
    `PVD/Content/Localization/Game/pl/Game.locres` (tylko przetłumaczone wpisy).
-2. **Pusty kontener IoStore** `pakchunk99-NieGesiPL_P.utoc`/`.ucas` (202 i 64 bajty),
+2. **Pusty kontener IoStore** `pakchunk99-notgeesePL_P.utoc`/`.ucas` (202 i 64 bajty),
    `tools/iostore_empty.py`. Bez niego UE 5.7 tego paka nie montuje: w 0.1.2
    `FileExists` widział `en/Game.locres` gry, a naszego `pl/Game.locres` nie.
    Kontener ma jeden chunk, pusty nagłówek kontenera (wersja 5, zero pakietów).

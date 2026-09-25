@@ -33,7 +33,7 @@ który pomija wykrywanie platformy. Do decyzji.
 
 ## Własny punkt wejścia — działa, ale okrajanie sięga głębiej (21 września 2026)
 
-`tools/loader/NieGesiLoader.cs` to nasz zamiennik punktu wejścia BepInEksa: odtwarza
+`tools/loader/notgeeseLoader.cs` to nasz zamiennik punktu wejścia BepInEksa: odtwarza
 jego `PreloaderRunner.PreloaderPreMain` krok po kroku, tylko platformę ustala sam,
 bez `Module.GetPEKind`. Całość idzie przez refleksję, więc biblioteka nie kompiluje się
 przeciw BepInEksowi i nie zawiera ani linijki jego kodu.
@@ -150,7 +150,7 @@ krótką instrukcją instalacji dla gracza, wyświetlaną na stronie; ustalenia 
 bez zmian, poza poprawionymi linkami względnymi. Część może być nieaktualna —
 obowiązuje to, co wyżej w tym pliku, i instrukcja w paczce.
 
-*Part of [Nie gęsi](../../../README.md) — Polish translations of games that never got one.*
+*Part of [Not Geese](../../../README.md) — Polish translations of games that never got one.*
 
 An unofficial Polish translation of **Boomerang X** (GOG build). Two original
 files are pinned by SHA-256 and the tools refuse anything else:
