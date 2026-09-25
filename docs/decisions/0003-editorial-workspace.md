@@ -193,9 +193,10 @@ Ustalenia bez osobnego pliku decyzji:
    i sekwencje, trzy tryby redakcji z prototypu, szkice, zapis, konflikty, nieaktualne
    szkice, „Brak na main”, dziennik, eksport. Testy Playwright z atrapą Supabase (6).
    Klucz publishable wpisany w `site/src/workspace/api.ts`; z nim 18/18 testów strony
-   przechodzi, w tym wszystkie 6 panelu. Zostają: test panelu na prawdziwym
-   projekcie, narzędzie nanoszenia eksportu, scalenie z main, usunięcie prototypu
-   (decyzja użytkownika).
+   przechodzi, w tym wszystkie 6 panelu. Scalone z main (`b0b8d8c`), strona zbudowana,
+   `https://notgeese.cc/admin/` odpowiada z `noindex`; `workspace-open` widzi teraz
+   9 grup SCM. Prototyp w `site/src/prototype/` zostaje (decyzja użytkownika).
+   Zostają: test panelu na prawdziwym projekcie i narzędzie nanoszenia eksportu.
 
 ## Pozostałe kwestie
 
