@@ -185,8 +185,11 @@ Ustalenia bez osobnego pliku decyzji:
    dopuszcza połączenie z Postgresem. Funkcje `workspace-open` i `workspace-save` wdrożone
    (v1, ACTIVE, `verify_jwt`): bez nagłówka i z kluczem anon zwracają 401, CORS 204.
    Sesje podpisuje ES256 z `kid`. Administrator wpisany w `workspace_admins` (1 konto
-   z potwierdzonym e-mailem). Test na koncie administratora (485 wpisów SCM, obce konto 403,
-   nieaktualna rewizja 409) nie wykonany.
+   z potwierdzonym e-mailem). Test na koncie administratora: `workspace-open` dla SCM zwraca
+   200 z 485 wpisami z main `16b8ee3` (rewizja 0, bez zmian), zapis z nieaktualną rewizją 409
+   `revision`. Main nie ma jeszcze `structure.yaml`, więc wszystkie wpisy trafiają do jednej
+   grupy zastępczej `_all`. Obce konto 403 niesprawdzone na projekcie (rejestracja wyłączona,
+   drugiego konta nie zakładano); pokrywa to test SQL i test orkiestracji.
    Panel `/admin/` (2026-09-25): logowanie linkiem, lista gier ze szkicami, grupy
    i sekwencje, trzy tryby redakcji z prototypu, szkice, zapis, konflikty, nieaktualne
    szkice, „Brak na main”, dziennik, eksport. Testy Playwright z atrapą Supabase (6).
