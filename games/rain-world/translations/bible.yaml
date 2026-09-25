@@ -160,7 +160,7 @@ terminy:
   - {en: ascension (Święty), pl: wzniesienie, formy: [wznie], zrodlo: decyzja}
   - {en: Story (menu), pl: Fabuła, formy: [fabuł], zrodlo: decyzja}
   - {en: save slot, pl: zapis / slot zapisu, formy: [zapis], zrodlo: decyzja}
-  # Stworzenia (wybór; pełna lista w pl.json pod creaturetype-*)
+  # Stworzenia (wybór; pełna lista w en-pl-review.json pod creaturetype-*)
   - {en: Lizard, pl: jaszczur, formy: [jaszczur], zrodlo: [ru], uwaga: duży drapieżnik — „jaszczurka” byłaby za mała}
   - {en: Vulture, pl: sęp, formy: [sęp, sęp], zrodlo: [ru]}
   - {en: Centipede / Centiwing / Aquapede, pl: skolopendra / skrzydłopendra / wodopendra, formy: [pendr], zrodlo: [ru, decyzja]}

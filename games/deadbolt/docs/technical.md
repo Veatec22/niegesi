@@ -54,9 +54,10 @@ Budowanie i instalacja:
 Pliki: `plugin/Plugin.cpp` (plugin), `tools/fonts.py` (projekt liter → `notgeese/fonts.txt`,
 podgląd `work/font-preview.png`), `tools/strings_usage.py` (gdzie kod używa każdego napisu,
 klasyfikacja wyświetlanie/logika, `--dump` jednego wpisu CODE), `tools/review.py`
-(en-pl-review.json + kontrola znaczników), `translations/pl.json` (źródło tłumaczeń).
+(odświeża EN i kontekst + kontrola znaczników), `translations/en-pl-review.json` (jedyny plik
+tłumaczenia, decyzja 0021; do 2026-09-25 obok leżał `pl.json` z tym samym PL).
 
-Klucze `pl.json`: `s<indeks>` (napis STRG wszędzie), `s<indeks>@<wpis CODE>` (tylko w tym
+Klucze: `s<indeks>` (napis STRG wszędzie), `s<indeks>@<wpis CODE>` (tylko w tym
 wpisie — plugin przestawia operand `push.s` na wolny slot od końca listy STRG), `j:<plik>/<ścieżka>`
 (dialog; plugin tłumaczy wartości JSON po tekście, więc powtórzenia dostają to samo).
 

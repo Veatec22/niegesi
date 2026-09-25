@@ -105,7 +105,7 @@ długości PNG z różnicy wskaźników, więc PNG poza FORM nie psuje sąsiedni
 Weryfikacja w buildzie: poza zadeklarowanymi miejscami exe bajt w bajt jak oryginał;
 chunki FORM bez zmian; wszystkie pozostałe strony wskazują te same PNG; nowy PNG dekoduje
 się do zamierzonego obrazu; na stronie zmieniły się tylko piksele polskich liter; glify
-inne niż polskie bez zmian; teksty — tylko linie `ITA|`, każda równa `pl.json`; każdy
+inne niż polskie bez zmian; teksty — tylko linie `ITA|`, każda równa PL z `en-pl-review.json`; każdy
 znak tłumaczenia ma w `f_uni` niepuste piksele.
 
 **Niepewne, do potwierdzenia w grze:** czy runner nie przycina współrzędnych glifów do

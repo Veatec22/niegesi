@@ -1,4 +1,4 @@
-r"""Zapisuje translations/en-pl-review.json: klucz, angielski, polski i kontekst z pliku gry.
+r"""Odświeża translations/en-pl-review.json: klucz, angielski i kontekst z pliku gry, PL z samego pliku.
 
 Użycie: .venv\Scripts\python.exe games\hyper-light-drifter\tools\review.py --game "C:\Games\Hyper Light Drifter"
 
@@ -7,17 +7,20 @@ Kontekst to włoski tekst, który polski zastępuje, i komentarz autorów o limi
 from __future__ import annotations
 
 import argparse
-import json
+import sys
 from pathlib import Path
 
 from hld import ROOT, SLOT, load_texts, value
+
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+from translations import polish_by_key, write_entries  # noqa: E402
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--game', type=Path, required=True)
     args = parser.parse_args()
-    pl = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    pl = polish_by_key(ROOT)
     rows = []
     for lines, items in load_texts(args.game).values():
         for e in items:
@@ -27,9 +30,8 @@ def main():
                 context.append(f'uwaga autorów: {e.note}')
             row['context'] = '; '.join(context)
             rows.append(row)
-    out = ROOT / 'translations/en-pl-review.json'
-    out.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f'{len(rows)} wpisów -> {out}')
+    write_entries(ROOT, rows)
+    print(f'{len(rows)} wpisów -> translations/en-pl-review.json')
 
 
 if __name__ == '__main__':

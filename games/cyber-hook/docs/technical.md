@@ -44,7 +44,7 @@ wyszukiwarki, 2026-09-23).
   `Tutorial_Line_04_00` i `Tutorial_Line_04_01` mają zamiast klucza **angielski tekst**
   (z końcowymi spacjami) — gra pokazuje go wprost. Plugin obsługuje takie klucze
   (`KeyExists` zwraca prawdę dla przetłumaczonych). Klucze i oryginał są
-  w `translations/raw-keys.json`, tłumaczenie w `pl.json` pod tym samym kluczem.
+  w `translations/raw-keys.json`, tłumaczenie w `en-pl-review.json` pod tym samym kluczem.
 - Znaczniki: TMP (`<color>`, `<size>`, `<sprite name="Jump">`, `<br>`) i własne
   `<link="Pause(1)">`, `<link="EventTrigger(...)">` sterujące dialogiem. Build porównuje
   je z oryginałem.

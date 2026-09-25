@@ -8,6 +8,7 @@ Wymaga MSVC x86 i źródeł MinHook 1.3.4 w work/minhook-1.3.4
 import argparse
 import hashlib
 import json
+import sys
 import os
 import shutil
 import subprocess
@@ -18,6 +19,9 @@ import fonts
 import labels
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import load_entries  # noqa: E402
 VERSION = '0.2.0'
 PACKAGE = f'Deadbolt-PL-{VERSION}.zip'
 FILES = ['d3d9.dll', 'notgeese/pl.tsv', 'notgeese/fonts.txt', 'notgeese/labels.txt', 'notgeese/LICENSE-MINHOOK.txt',
@@ -74,11 +78,11 @@ def escape(value: str) -> str:
 
 
 def write_tsv(path: Path) -> int:
-    """pl.tsv dla pluginu: rodzaj, EN, PL[, wpis CODE]. Źródło: review zgodny z pl.json."""
-    pl = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
-    review = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
-    if [r['key'] for r in review] != list(pl) or any(pl[r['key']] != r['polish'] for r in review):
-        raise SystemExit('en-pl-review.json nie zgadza się z pl.json — uruchom tools/review.py')
+    """pl.tsv dla pluginu: rodzaj, EN, PL[, wpis CODE]. Źródło: en-pl-review.json (0021).
+
+    Pusty PL jest tu celowy (np. s1724: zbędny po polsku sufiks „ Souls”), więc wchodzi do paczki.
+    """
+    review = load_entries(ROOT)
     lines, json_rows = [], {}
     for r in review:
         key, en, polish = r['key'], r['english'], r['polish']

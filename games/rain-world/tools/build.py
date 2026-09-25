@@ -1,7 +1,7 @@
 """Zbuduj spolszczenie Rain World jako mod Remix: plugin + polskie teksty.
 
 Kompiluje plugin (plugin/Plugin.cs) na bibliotekach z instalacji gry, zamienia
-pl.json na pliki text/text_pol/ w formacie gry i składa ZIP do wypakowania
+teksty z en-pl-review.json na pliki text/text_pol/ w formacie gry i składa ZIP do wypakowania
 w katalogu gry. Paczka zawiera wyłącznie folder moda i instrukcję — BepInEx gra
 ma własny, a plików gry nie ruszamy. Nie pisze niczego poza dist/ i work/.
 
@@ -25,6 +25,9 @@ import rw  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 VERSION = '0.2.0'
 MOD_ID = 'notgeese-polski'
 MOD_PATH = f'{rw.DATA}/StreamingAssets/mods/{MOD_ID}'
@@ -160,7 +163,7 @@ def main() -> int:
     args = parser.parse_args()
     game = args.game.resolve()
 
-    polish = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    polish = polish_by_key(ROOT)
     english_path = ROOT / 'work' / 'en.json'
     if not english_path.exists():
         raise SystemExit('Brak work/en.json — uruchom najpierw tools/extract.py.')

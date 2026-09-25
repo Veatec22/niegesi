@@ -1,6 +1,6 @@
 """Zbuduj paczkę z pluginem BepInEx: polski dla I Am Your Beast bez podmiany plików gry.
 
-Sprawdza pl.json względem angielskich tekstów z translations/en-pl-review.json, kompiluje
+Sprawdza teksty z translations/en-pl-review.json (wstawki jak w angielskim), kompiluje
 plugin, zapisuje pl.tsv (klucz, odcisk angielskiego, tekst) i składa archiwum z BepInEksem,
 pluginem, tekstami i instrukcją. Nie dotyka katalogu gry.
 
@@ -22,6 +22,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 
 VERSION = '0.2.0'
 DATA = 'I Am Your Beast_Data'
@@ -77,14 +80,11 @@ def escape(text: str) -> str:
 def check(terms: dict[str, str]) -> tuple[list[tuple[str, str, str]], dict]:
     review = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
     english = {row['key']: row['english'] for row in review}
-    polish_review = {row['key']: row['polish'] for row in review}
     problems, rows = [], []
     for key, value in terms.items():
         if key not in english:
             problems.append(f'{key}: nie ma takiego klucza w en-pl-review.json')
             continue
-        if polish_review[key] != value:
-            problems.append(f'{key}: pl.json i en-pl-review.json się różnią')
         if not value:
             continue
         if '\r' in value or '\t' in value:
@@ -97,9 +97,9 @@ def check(terms: dict[str, str]) -> tuple[list[tuple[str, str, str]], dict]:
         rows.append((key, source, value))
     missing = [key for key in english if key not in terms]
     if missing:
-        problems.append(f'{len(missing)} kluczy z en-pl-review.json nie ma w pl.json, np. {missing[:3]}')
+        problems.append(f'{len(missing)} kluczy bez tekstu, np. {missing[:3]}')
     if problems:
-        raise SystemExit('pl.json ma błędy:\n  ' + '\n  '.join(problems))
+        raise SystemExit('en-pl-review.json ma błędy:\n  ' + '\n  '.join(problems))
     groups = Counter(key.split('/')[0] for key, _, _ in rows)
     totals = Counter(key.split('/')[0] for key, text in english.items() if text.strip())
     return rows, {'translated': dict(groups), 'with_text': dict(totals)}
@@ -187,7 +187,8 @@ def main() -> int:
     parser.add_argument('--game', type=Path, required=True, help='katalog gry (ten z I Am Your Beast.exe)')
     args = parser.parse_args()
 
-    terms = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    # Pusty PL pomija check(); wpis zostaje w grze po angielsku.
+    terms = polish_by_key(ROOT, keep_empty=True)
     rows, stats = check(terms)
 
     work = ROOT / 'work' / 'plugin'

@@ -106,7 +106,7 @@ zostawiłoby w opcjach nieznany język, stąd w instrukcji: najpierw przełącz 
 
 `extract.py` kompiluje `tools/StrMap.cs` (Mono.Cecil z katalogu gry) i dopisuje do każdego wpisu
 klasy, w których tekst stoi w kodzie — to kontekst dla tłumacza i podstawa wyboru próbki.
-Klucze w `pl.json`: `str:<klucz strings.txt>` i `dlg:<plik>#<linia>`.
+Klucze w `en-pl-review.json` (jedyny plik tłumaczenia, 0021): `str:<klucz strings.txt>` i `dlg:<plik>#<linia>`.
 
 Build odmawia paczki, gdy tłumaczenie gubi znacznik (`<PlayerName>`, `{ERROR}` itd.),
 ma znak nowej linii zamiast `<LINE>` albo `|` w tekście.

@@ -95,7 +95,7 @@ w całości; narzędzie służy wyłącznie do odczytu.
 
 ## Plugin (0.2.0)
 
-`plugin/Plugin.cs`, budowanie przez `tools/build_plugin.py`, teksty w `translations/pl.json`.
+`plugin/Plugin.cs`, budowanie przez `tools/build_plugin.py`, teksty w `translations/en-pl-review.json` (jedyny plik tłumaczenia, 0021).
 Kod gry przejrzano przez Cecil (zrzut IL w scratchpadzie, nie w repo). Trzy warstwy:
 
 - **Fleece.** Wszystkie odczyty tekstu idą przez `Passage.text` (`parsedText`,
@@ -113,7 +113,7 @@ Kod gry przejrzano przez Cecil (zrzut IL w scratchpadzie, nie w repo). Trzy wars
   kolejne slajdy, więc nie wymagają wspólnego przedrostka technicznie — trzymamy go
   redakcyjnie. Już oryginał ma odcinki, których `IndexOf` nie znajduje (np. „Dear diary”
   przy „Dear Diary...”), i gra to znosi.
-- **Stałe napisy TMP** (`tmp/<angielski>` w pl.json): dokładne dopasowanie w prefiksie
+- **Stałe napisy TMP** (klucze `tmp/<angielski>`): dokładne dopasowanie w prefiksie
   `TMP_Text.set_text`, w `Awake` obu klas TMP (pole `m_text`) i w przeglądzie po scenie.
 
 Każdy wpis Fleece i odcinek ma w `pl.tsv` odcisk FNV-1a liter i cyfr ASCII angielskiego
@@ -123,7 +123,7 @@ licznika w logu. Plugin loguje wersję gry i Unity oraz stan polskich liter w ka
 
 Wstawki do zachowania: `[KEY]`, `[WEAPON]`, `VALUE`, `[Quick Turn]` (HintManager
 zamienia treść nawiasu na nazwę klawisza akcji, więc angielska nazwa akcji zostaje),
-znaczniki TMP. Build sprawdza je i zgodność pl.json z en-pl-review.json.
+znaczniki TMP. Build je sprawdza.
 
 Oba fonty źródłowe mają też „ ” — – … ’, więc polska typografia jest bezpieczna.
 

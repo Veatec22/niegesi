@@ -1,13 +1,13 @@
-"""Partie do tłumaczenia: wydziel nieprzetłumaczone wpisy i scal gotowe z pl.json.
+"""Partie do tłumaczenia: wydziel nieprzetłumaczone wpisy i scal gotowe z en-pl-review.json.
 
     batch.py make --kind strings --size 200     # work/batches/NNN.json: klucz -> en, ru, kontekst
     batch.py make --kind dialogue --size 120    # całe pliki rozmów po kolei, aż do rozmiaru
     batch.py show 001                           # zwarty podgląd: numer, [klucz], en, ru, kontekst
-    batch.py merge work/batches/NNN.pl.json     # klucz -> polski; scala do translations/pl.json
+    batch.py merge work/batches/NNN.pl.json     # klucz -> polski; scala do translations/en-pl-review.json
     batch.py merge work/batches/NNN.pl.tsv      # numer<TAB>polski (numeracja z show)
     batch.py status
 
-pl.json trzyma kolejność work/en.json (dodatkowe wpisy spolszczenia na początku).
+Plik tłumaczenia trzyma kolejność work/en.json (dodatkowe wpisy spolszczenia na początku).
 """
 
 from __future__ import annotations
@@ -21,7 +21,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / 'work'
 BATCHES = WORK / 'batches'
-PL = ROOT / 'translations' / 'pl.json'
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+sys.path.insert(0, str(ROOT / 'tools'))
+
+from review import row_for  # noqa: E402
+from translations import load_entries, write_entries  # noqa: E402
 
 COMMENTARY = re.compile(r'^dlg:[a-z]{2}_[^#]*-(white|artificer|inv|saint|rivulet|spear|gourmand)\.txt#')
 
@@ -29,7 +33,7 @@ COMMENTARY = re.compile(r'^dlg:[a-z]{2}_[^#]*-(white|artificer|inv|saint|rivulet
 def load():
     english = json.loads((WORK / 'en.json').read_text(encoding='utf-8'))
     ref = json.loads((WORK / 'ref-rus.json').read_text(encoding='utf-8'))
-    polish = json.loads(PL.read_text(encoding='utf-8'))
+    polish = {e['key']: e['polish'] for e in load_entries(ROOT)}
     return english, ref, polish
 
 
@@ -118,8 +122,14 @@ def merge(path: Path) -> None:
     polish.update(new)
     extra = {k: v for k, v in polish.items() if k not in english}
     ordered = {**extra, **{k: polish[k] for k in english if k in polish}}
-    PL.write_text(json.dumps(ordered, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
-    print(f'Scalono {len(new)}; w pl.json {len(ordered)} wpisów')
+    existing = {e['key']: e for e in load_entries(ROOT)}
+    rows = []
+    for key, text in ordered.items():
+        row = existing.get(key) or row_for(key, text, english)
+        row['polish'] = text
+        rows.append(row)
+    write_entries(ROOT, rows)
+    print(f'Scalono {len(new)}; w pliku tłumaczenia {len(rows)} wpisów')
 
 
 def status() -> None:

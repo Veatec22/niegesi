@@ -30,6 +30,9 @@ import pngsplice
 from hld import (EXE, HASHES, ROOT, SLOT, TEXT_FILES, GameData, load_texts, sections,
                  value, write_text)
 
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+from translations import polish_by_key  # noqa: E402
+
 VERSION = '0.1.0'
 NAMES = b'ENGLISH\x00FRAN\xc3\x87AIS\x00ESPA\xc3\x91OL\x00'
 OLD_NAME, NEW_NAME = b'ITALIANO\x00', b'POLSKI\x00\x00\x00'
@@ -262,7 +265,7 @@ def main() -> int:
             return 1
         originals[file] = data
 
-    pl = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    pl = polish_by_key(ROOT)
     check_charset(GameData(originals[EXE]), pl)
     texts, stats = translate_texts(args.game, pl)
     exe, changed, info = patch_exe(originals[EXE])

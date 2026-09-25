@@ -30,11 +30,10 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / 'tools'))
 
-from translations import REVIEW_FILE, load_entries  # noqa: E402
+from translations import REVIEW_FILE, dump, file_style, load_entries  # noqa: E402
 
 EXPORT_FORMAT = 1
 SLUG = re.compile(r'^[a-z0-9][a-z0-9-]{0,63}$')
-STYLES = [(2, True), (1, True), (4, True), (2, False), (1, False), (4, False)]
 
 
 class ExportError(Exception):
@@ -85,18 +84,6 @@ def read_export(path: Path) -> dict:
     return data
 
 
-def file_style(text: str, data: list) -> tuple[int, bool]:
-    """Styl zapisu, który odtwarza plik bajt w bajt; inaczej odmawiamy zapisu."""
-    for indent, newline in STYLES:
-        if dump(data, indent, newline) == text:
-            return indent, newline
-    raise ExportError('plik tłumaczenia ma niestandardowe formatowanie — zapis zmieniłby więcej niż korekty.')
-
-
-def dump(data: list, indent: int, newline: bool) -> str:
-    return json.dumps(data, ensure_ascii=False, indent=indent) + ('\n' if newline else '')
-
-
 def apply(export_path: Path, repo: Path = REPO, check: bool = False) -> Result:
     export = read_export(export_path)
     game_root = repo / 'games' / export['game']
@@ -105,7 +92,9 @@ def apply(export_path: Path, repo: Path = REPO, check: bool = False) -> Result:
         raise ExportError(f'brak pliku {path.relative_to(repo)} — gra nie ma jednego pliku tłumaczenia.')
     text = path.read_text(encoding='utf-8')
     entries = load_entries(game_root)
-    style = file_style(text, entries)
+    style = file_style(text)
+    if style is None:
+        raise ExportError('plik tłumaczenia ma niestandardowe formatowanie — zapis zmieniłby więcej niż korekty.')
     index = {(entry.get('namespace', ''), entry['key']): entry for entry in entries}
 
     result = Result(export['game'], str(export.get('main_sha', '')), str(export.get('comment', '')))

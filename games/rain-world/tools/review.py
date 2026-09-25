@@ -1,6 +1,8 @@
-"""Złóż translations/en-pl-review.json z pl.json i angielskich tekstów gry (work/en.json).
+"""Odśwież translations/en-pl-review.json: EN i uwagi z tekstów gry (work/en.json), PL z pliku.
 
     .venv\\Scripts\\python.exe games\\rain-world\\tools\\review.py
+
+Plik tłumaczenia jest jedyny (decyzja 0021); nowe wpisy dopisuje `batch.py merge`.
 """
 
 from __future__ import annotations
@@ -10,27 +12,31 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import load_entries, write_entries  # noqa: E402
+
+
+def row_for(key: str, text: str, english: dict) -> dict:
+    """Wpis review: EN z gry (albo z klucza dla wpisów spolszczenia), PL i uwagi."""
+    source = english.get(key, {})
+    row = {'key': key, 'english': source.get('english', key.split(':', 1)[1]), 'polish': text}
+    notes = []
+    if source.get('context'):
+        notes.append('w kodzie: ' + ', '.join(source['context'].split(', ')[:3]))
+    if source.get('source') and source['source'] != 'base':
+        notes.append('dodatek: ' + source['source'])
+    if key not in english:
+        notes.append('wpis dodany przez spolszczenie')
+    if notes:
+        row['note'] = '; '.join(notes)
+    return row
 
 
 def main() -> int:
-    polish = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
     english = json.loads((ROOT / 'work/en.json').read_text(encoding='utf-8'))
-    rows = []
-    for key, text in polish.items():
-        source = english.get(key, {})
-        row = {'key': key, 'english': source.get('english', key.split(':', 1)[1]), 'polish': text}
-        notes = []
-        if source.get('context'):
-            notes.append('w kodzie: ' + ', '.join(source['context'].split(', ')[:3]))
-        if source.get('source') and source['source'] != 'base':
-            notes.append('dodatek: ' + source['source'])
-        if key not in english:
-            notes.append('wpis dodany przez spolszczenie')
-        if notes:
-            row['note'] = '; '.join(notes)
-        rows.append(row)
-    (ROOT / 'translations/en-pl-review.json').write_text(
-        json.dumps(rows, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    rows = [row_for(e['key'], e['polish'], english) for e in load_entries(ROOT)]
+    write_entries(ROOT, rows)
     print(f'{len(rows)} wpisów')
     return 0
 

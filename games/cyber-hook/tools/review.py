@@ -1,4 +1,4 @@
-"""Odtwórz translations/en-pl-review.json z pl.json i angielskich tekstów gry.
+"""Odśwież translations/en-pl-review.json: EN z gry, PL z dotychczasowego pliku.
 
 Kolejność jak w CSV gry. Wpisy bez tłumaczenia mają pusty `polish`, żeby było widać zakres.
 Kolumna DETAILS z CSV (u twórców zwykle francuski odpowiednik) trafia do `context`.
@@ -6,14 +6,18 @@ Kolumna DETAILS z CSV (u twórców zwykle francuski odpowiednik) trafia do `cont
     .venv\Scripts\python.exe games\cyber-hook\tools\review.py
 """
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key, write_entries  # noqa: E402
 
 
 def main():
     source = json.loads((ROOT / 'work/source/en.json').read_text(encoding='utf-8'))
-    terms = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    terms = polish_by_key(ROOT)
     raw_path = ROOT / 'translations/raw-keys.json'
     raw = json.loads(raw_path.read_text(encoding='utf-8')) if raw_path.exists() else {}
     rows = []
@@ -26,8 +30,7 @@ def main():
     for key, english in raw.items():
         rows.append({'key': key, 'english': english, 'polish': terms.get(key, ''),
                      'context': 'klucz = tekst angielski (dialog bez wpisu w CSV)'})
-    (ROOT / 'translations/en-pl-review.json').write_text(
-        json.dumps(rows, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
+    write_entries(ROOT, rows)
     done = sum(1 for r in rows if r['polish'])
     print(json.dumps({'rows': len(rows), 'translated': done}))
 

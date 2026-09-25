@@ -22,12 +22,26 @@ const REVIEW_PENDING: Record<string, string> = {
 };
 
 /** Gry, które jeszcze mają pl.json (migracja 0021). Po migracji gra wypada z listy. */
-const PL_JSON_PENDING = new Set([
-  'anger-foot', 'boomerang-x', 'bpm', 'broforce', 'cyber-hook', 'deadbolt', 'dread-templar',
-  'heat-signature', 'holy-shoot', 'hyper-light-drifter', 'i-am-your-beast', 'katana-zero',
-  'labyrinth-of-the-demon-king', 'laika-aged-through-blood', 'my-friend-pedro', 'neon-abyss',
-  'not-a-hero', 'otxo', 'rain-world', 'skate-story', 'somber-echoes', 'sprawl', 'turbo-overkill',
-  'void-bastards', 'wild-bastards',
+const PL_JSON_PENDING = new Set<string>([
+  'anger-foot',
+  'boomerang-x',
+  'bpm',
+  'dread-templar',
+  'heat-signature',
+  'holy-shoot',
+  'katana-zero',
+  'labyrinth-of-the-demon-king',
+  'laika-aged-through-blood',
+  'my-friend-pedro',
+  'neon-abyss',
+  'not-a-hero',
+  'otxo',
+  'skate-story',
+  'somber-echoes',
+  'sprawl',
+  'turbo-overkill',
+  'void-bastards',
+  'wild-bastards',
 ]);
 
 const root = new URL('../games/', import.meta.url);

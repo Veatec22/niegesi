@@ -1,6 +1,6 @@
 """Zbuduj paczkę z pluginem BepInEx: polski dla Broforce bez podmiany plików gry.
 
-Kompiluje plugin, zamienia pl.json na pl.tsv, odświeża en-pl-review.json i składa
+Kompiluje plugin, zamienia teksty z en-pl-review.json na pl.tsv, odświeża w nim EN z gry i składa
 archiwum z BepInEksem, pluginem, tekstami i instrukcją. Nie dotyka katalogu gry.
 
     .venv\\Scripts\\python.exe games\\broforce\\tools\\build_plugin.py --game "C:\\Games\\Broforce"
@@ -19,6 +19,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import polish_by_key, write_entries  # noqa: E402
+
 VERSION = '0.2.0'
 DATA = 'Broforce_Data'
 PLUGIN_FOLDER = 'notgeeseBroforce'
@@ -61,11 +65,11 @@ def compiler() -> Path:
 
 
 def load_terms() -> dict[str, str]:
-    return json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    return polish_by_key(ROOT)
 
 
 def write_terms(terms: dict[str, str], destination: Path) -> int:
-    """pl.json -> pl.tsv: klucz, tabulator, tekst; nowe linie jako \\n."""
+    """Teksty -> pl.tsv: klucz, tabulator, tekst; nowe linie jako \\n."""
     lines = []
     for key, value in terms.items():
         assert '\t' not in key and '\t' not in value, f'tabulator w {key}'
@@ -106,8 +110,7 @@ def write_review(terms: dict[str, str], english: dict[str, str]) -> int:
         if key.startswith('LANGUAGE_'):
             continue
         review.append({'key': key, 'english': value, 'polish': terms.get(key, '')})
-    path = ROOT / 'translations/en-pl-review.json'
-    path.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    write_entries(ROOT, review)
     return len(review)
 
 

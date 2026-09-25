@@ -1,6 +1,9 @@
-"""Buduje translations/en-pl-review.json z pl.json i oryginałów z gry; sprawdza znaczniki.
+"""Odświeża EN i kontekst w translations/en-pl-review.json z oryginałów gry; sprawdza znaczniki.
 
-Klucze w pl.json:
+PL i zestaw kluczy bierze z samego pliku (0021). Nowy klucz: dopisz wpis z dowolnym
+`english`, a skrypt uzupełni oryginał z gry.
+
+Klucze:
   s<indeks>                 napis STRG (tłumaczony wszędzie, gdzie kod go używa)
   s<indeks>@<wpis CODE>     napis STRG tylko w tym wpisie kodu (np. „Controls”, który
                             jest też nazwą sekcji w Prefs.ini)
@@ -22,6 +25,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 from strings_usage import Data, disasm  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import load_entries, write_entries  # noqa: E402
 MARKUP = re.compile(r'&[a-z!]{1,2}&|#')
 
 
@@ -71,9 +77,9 @@ def main():
     data = Data(game / 'data.win')
     strings = data.strings()
     where = contexts(data, strings)
-    pl = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
     review, errors = [], 0
-    for key, polish in pl.items():
+    for entry in load_entries(ROOT):
+        key, polish = entry['key'], entry['polish']
         if key.startswith('s'):
             index = int(key[1:].split('@')[0])
             english = strings[index]
@@ -95,9 +101,8 @@ def main():
             if seen.setdefault(r['english'], r['polish']) != r['polish']:
                 print(f"{r['key']}: inne tłumaczenie tej samej wartości JSON")
                 errors += 1
-    out = ROOT / 'translations/en-pl-review.json'
-    out.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f'{len(review)} wpisów -> {out}; problemów: {errors}')
+    write_entries(ROOT, review)
+    print(f'{len(review)} wpisów -> translations/en-pl-review.json; problemów: {errors}')
     sys.exit(1 if errors else 0)
 
 
