@@ -138,6 +138,10 @@ kontekstem; powtórzone angielskie kwestie wypełniają się same).
 
 Paczka 0.2.0: 78 KB (łatka exe 60 KB, łatka data.win 9 KB).
 
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 3 grupy po skrypcie GML (opcje, różne, dialogi); rozmów nie da się wydzielić z numerów wierszy.
+
 ## Materiał gry
 
 Paczka nie niesie zawartości gry: łatki to polskie napisy, nasze klatki liter (złożone

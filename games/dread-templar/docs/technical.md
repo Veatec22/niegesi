@@ -94,3 +94,7 @@ This directory contains translation text and tooling only — no executables, no
 ### License
 
 [MIT](../../../LICENSE), same as the rest of the repository.
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 6 grup po kategoriach bloku językowego.

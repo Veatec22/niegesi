@@ -121,3 +121,7 @@ Historia testów w grze:
   grup grafik, rekonstrukcja z łatek i raport kontrolny. Test w grze: czeka.
 
 Materiał gry pozostaje w instalacji użytkownika; repo i paczka nie niosą zasobów gry.
+
+## Pracownia korekty
+
+`translations/structure.yaml` generuje `tools/structure.py`: 7 grup i 57 monologów BunnyLorda (odprawy talk.ini i podsumowania ENDS.ini) w kolejności wierszy, której plik tłumaczenia nie trzyma. Sekcje z nazwą to słowa podstawiane za `$ZMIENNE$`. Po zmianie kluczy uruchom skrypt ponownie.

@@ -130,6 +130,10 @@ pień „I” 8,7, bez UV (wygląd z oświetlenia). Plugin przed `UpdateText(str
 Ą Ć Ę Ł Ń Ó Ś Ź Ż = bryła bazowa + graniastosłup znaku (płaskie ściany, normalne na zewnątrz);
 podgląd sylwetek `work/text3d_proto.py` → `work/fontdump/text3d-proto-a.png`.
 
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 8 grup po prefiksach kluczy.
+
 ## Nota o materiale gry
 
 Paczka niesie wyłącznie BepInEx, plugin i `pl.tsv`. Fonty, atlasy i banki gry zostają

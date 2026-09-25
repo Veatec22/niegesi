@@ -145,6 +145,10 @@ z kolumny angielskiej.
 obok leżał `pl.json`). Partie dopisuje `tools/batch.py` (`show`, `put`, `stats`). Partie robocze leżą
 w `work/batches/` (poza Gitem). Raport: `.claude/skills/localization/scripts/l10n_report.py`.
 
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 10 grup po prefiksach kluczy.
+
 ## Materiał gry
 
 Paczka niesie wyłącznie BepInEx, nasz plugin i nasze teksty. Tabela I2 i fonty

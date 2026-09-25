@@ -215,3 +215,7 @@ Wersja źródłowa: GOG, 1.106.
 
 [Szczegóły techniczne, budowanie i materiały do korekty](../docs/technical.md) ·
 [Metadane](../game.yaml)
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 9 grup po blokach numerów wierszy script_english.ini.

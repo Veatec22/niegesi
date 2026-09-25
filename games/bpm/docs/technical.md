@@ -155,3 +155,7 @@ Wniosek: polski musi siedzieć w katalogu `ja`; nazwę pozycji daje ICU
    `docs/translation-decisions.md`, sekcja „Mniej pewne”.
 2. Czy wystarczy własny, sztuczny `.sig` — pozwoliłoby to obejść się bez łatki podpisu.
 3. Wydanie Steam: czy układ `pakchunk0` jest taki sam jak na GOG.
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 8 grup po tabelach; pusta przestrzeń nazw to widgety z kluczami-hashami.

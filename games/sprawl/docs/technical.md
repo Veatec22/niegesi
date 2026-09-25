@@ -135,3 +135,7 @@ Wersja źródłowa: GOG, ekran tytułowy 2024.12.09 (v1.6).
 
 [Szczegóły techniczne, budowanie i materiały do korekty](../docs/technical.md) ·
 [Metadane](../game.yaml)
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 6 grup po tabelach (namespace) i prefiksach.

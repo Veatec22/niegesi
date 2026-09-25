@@ -87,3 +87,7 @@ Czytnik paka pochodzi ze SPRAWL-a, z lokalnym dopuszczeniem zbadanego formatu 12
 Uruchom z katalogu repo `.venv\Scripts\python.exe games/holy-shoot/tools/extract.py --pak "C:\SteamLibrary\steamapps\common\Holy Shoot\Windows\PVD\Content\Paks\PVD-Windows.pak" --oodle "<lokalny oodle-data-shared.dll>"`, następnie `.venv\Scripts\python.exe games/holy-shoot/tools/build.py`.
 
 Build używa istniejących kodeków SPRAWL-a, zapisuje pak v11 z jednym częściowym zasobem `pl/Game.locres`, weryfikuje odczyt locres i paka, zgodność review i identyfikatorów oraz placeholdery. ZIP niesie ten pak, pusty kontener IoStore, UE4SS z naszym skryptem i READ-ME.txt. Nie niesie tekstur, scen, bibliotek gry ani pozostałych tekstów. Brak wpisu zostawia natywny angielski tekst (potwierdzone w grze).
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 9 grup po tabelach tekstów.

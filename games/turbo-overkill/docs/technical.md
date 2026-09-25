@@ -292,3 +292,7 @@ Oryginał łamie tam wiersze ręcznie i dokłada wcięcie. W PL takie kontynuacj
 połączono, bo pole tekstowe samo zawija tekst. Walidator akceptuje brak właśnie
 tych złamań: nowa linia + wcięcie. Wpis Superior Maw w TurboStrings ma w oryginale
 dosłowne `\n` jako tekst; PL odtwarza to samo.
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 12 grup po kontekście „tabela: termin” (pole `context` dopisane 2026-09-25 z `table` i `term`).

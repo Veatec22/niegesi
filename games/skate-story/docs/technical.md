@@ -220,3 +220,7 @@ kontrola dłuższych dialogów, sklepu i celów. Tekstury z napisami nie są zmi
 
 [Szczegóły techniczne, build i kopie zapasowe](../docs/technical.md) ·
 [Metadane](../game.yaml).
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 16 grup: rozdziały ch1–ch10, interfejs, przedmioty, samouczek i inne.

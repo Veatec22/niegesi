@@ -343,3 +343,7 @@ game assets. Nothing here is affiliated with or endorsed by the game's authors;
 ### License
 
 [MIT](../../../LICENSE), same as the rest of the repository.
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 8 grup po prefiksach kluczy.

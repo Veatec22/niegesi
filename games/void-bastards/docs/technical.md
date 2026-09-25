@@ -131,3 +131,7 @@ i `TrimEnd('\r')` przy wczytywaniu. W paczce 0.2.1 `pl.tsv` nie ma żadnego `\r`
 
 Test pełnej wersji: warsztat (nazwy części i ulepszeń), mapa gwiezdna (zdarzenia,
 cechy statków), profil postaci (cechy, wykroczenia), rozmowy piratów.
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 10 grup po kategoriach terminów I2.

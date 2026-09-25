@@ -94,3 +94,7 @@ Plugin 0.2.0 = 0.1.1 bez zmian w kodzie, tylko nowa wersja i pełne `pl.tsv`.
 
 Test pełnej wersji: ekran banity (asy, przedmioty, cechy), mapa sektora ze
 zdarzeniami (SME), mapa planety (opisy miejsc), dialogi na Drifterze.
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 9 grup po kategoriach terminów I2.

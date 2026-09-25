@@ -168,3 +168,7 @@ This directory contains translation text and tooling only — no executables, no
 ### License
 
 [MIT](../../../LICENSE), same as the rest of the repository.
+
+## Pracownia korekty
+
+`translations/structure.yaml` generuje `tools/structure.py`: 13 grup i 294 rozmowy ze scen dialogów, mówca z klucza (`[mówiący > adresat]`), NPC jako npc-m / npc-k. Po zmianie kluczy dialogów uruchom skrypt ponownie.

@@ -121,6 +121,10 @@ Do sprawdzenia:
 6. `BepInEx/LogOutput.log`: „Wczytano 342 wpisów”, „345 z 687 tekstów … zostaną po
    angielsku”, linie „Font TMP „…”: złożono …”.
 
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 6 grup po prefiksach kluczy (PAX, poziomy, opcje, dialogi).
+
 ## Nota o materiale gry
 
 `work/source/*.json` to teksty gry wyciągnięte do pracy (jak `ref-*.json` w innych grach).

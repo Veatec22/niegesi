@@ -36,6 +36,7 @@ def main():
             key=guid+':'+str(entry['m_Id'])
             if not entry['m_Localized'].strip() and key not in polish:continue  # pusty wpis gry
             rows.append({'key':key,'english':entry['m_Localized'],'polish':polish.get(key,''),
+                         'context':f"{table}: {names[entry['m_Id']]}",  # widoczne w pracowni, reguły structure.yaml
                          'table':table,'entry_id':entry['m_Id'],'term':names[entry['m_Id']]})
     assert len({x['key'] for x in rows})==len(rows)
     metadata=(data/'il2cpp_data/Metadata/global-metadata.dat').read_bytes()

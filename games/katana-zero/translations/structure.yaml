@@ -1,0 +1,20 @@
+# Grupy Katana ZERO dla pracowni korekty.
+# Format: docs/specs/editorial-workspace.md, sekcja „Plik struktury”. Decyzja: docs/decisions/0010.
+#
+# Klucz to <skrypt GML>:<wiersz>. Dialogi (init_lines) stoją w kolejności skryptu gry;
+# rozmów nie da się wydzielić z samych kluczy — bez sekwencji.
+
+format: 1
+
+groups:
+  - id: options
+    name: Opcje
+  - id: misc
+    name: Menu, HUD i różne
+  - id: dialogue
+    name: Dialogi
+
+rules:
+  - {group: options, match: '^init_option_translations:'}
+  - {group: misc, match: '^init_misc_text:'}
+  - {group: dialogue, match: '^init_lines:'}
