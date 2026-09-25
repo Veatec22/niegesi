@@ -1,0 +1,222 @@
+zrodla:
+  - id: klucze
+    opis: Klucz dialogu kończy się mówiącym i numerem, np. D_0_Walkie_1_PUPPY_1.
+  - id: ru
+    opis: Rosyjski arkusz gry (RU_DIALOGUES) — płeć w czasie przeszłym, forma nazw miejsc.
+  - id: es
+    opis: Hiszpański arkusz gry — rodzaj w tytułach postaci (LA ANCIANA).
+  - id: en
+    opis: Angielski tekst gry (zaimki, relacje rodzinne).
+
+postacie:
+  - id: laika
+    nazwa: Laika
+    plec: k
+    klucz: '_LAIKA_\d+$'
+    mowi_do_gracza: '-'
+    rejestr: szorstka, ironiczna, przeklina; do matki „matko”, do córki „kochanie”
+    odmiana: 'Laika, Laiki, Laice; w zwrocie bezpośrednim mianownik „Laika”; Laika też zwraca się do innych w mianowniku („Hilda”, „Jakob”). Wyjątki świadome — wołacz u innych postaci: Hilda „słodka Laiko”, Maya „Avo”, „Mayo” (górniczka), rytualne „bracie Jakobie”'
+    zrodlo: [klucze, ru, en]
+  - id: puppy
+    nazwa: Puppy
+    plec: k
+    klucz: '_PUPPY_\d+$'
+    rejestr: małe dziecko, „mamusiu”
+    odmiana: nieodmienne (Puppy, do Puppy)
+    zrodlo: [klucze, en]
+    uwaga: córka Laiki; imię zostaje, jak w ES i RU
+  - id: maya
+    nazwa: Maya
+    plec: k
+    klucz: '_MAYA_\d+$'
+    rejestr: twarda, wojenna przeszłość
+    odmiana: Maya, Mai, Mayę
+    zrodlo: [klucze, en]
+    uwaga: matka Laiki, babcia Puppy
+  - id: jakob
+    nazwa: Jakob
+    plec: m
+    klucz: '_JAKOB_\d+$'
+    odmiana: Jakob, Jakoba; zwrot „Jakob”, rytualnie „bracie Jakobie”
+    zrodlo: [klucze, en]
+    uwaga: jak brat dla Laiki, dla Puppy „wujek”; ojciec Poochiego
+  - id: chief
+    nazwa: Starsza
+    plec: k
+    klucz: '_CHIEF_\d+$'
+    rejestr: podniosły, przywódczyni wioski
+    zrodlo: [ru, es, en]
+    uwaga: 'EN „THE ELDER” i zaimki niebinarne „ey/em/eir” (D_B_Carey_AfterMissions3, Q_D_1_Mines_BackHome); RU „я слышала”, ES „LA ANCIANA” — kobieta. Decyzja — forma żeńska jak RU/ES, bo polski nie ma utartej formy niebinarnej w grach'
+  - id: poochie
+    nazwa: Poochie
+    plec: m
+    odmiana: Poochie, Poochiego, Poochiemu
+    zrodlo: [en]
+
+  - {id: shaza, nazwa: Shaza, plec: k, klucz: '_SHAZA_\d+$', rejestr: 'ciepła, techniczka; do Laiki „kochana” (EN „hon”)', zrodlo: [klucze, ru]}
+  - {id: roy, nazwa: Roy, plec: m, klucz: '_CAPTAIN_\d+$', rejestr: 'przezywa Laikę „radiowcu”, ale mówi do niej w rodzaju żeńskim', zrodlo: [ru]}
+  - {id: orella, nazwa: Orella, plec: k, klucz: '_ORELLA_\d+$', zrodlo: [ru, en]}
+  - {id: primo, nazwa: Primo, plec: m, klucz: '_PRIMO_\d+$', rejestr: 'odgrywa obie strony rozmowy: „pytasz mnie”, „mówię”', zrodlo: [en]}
+  - {id: pluck, nazwa: Pluck, plec: m, klucz: '_INSIDER_\d+$', rejestr: 'Ptak Renegat, dzieciak; „Tss”', zrodlo: [ru]}
+  - {id: hektystka, nazwa: Hektystka, plec: k, klucz: '_ANARCHIST_\d+$', rejestr: 'anarchistka Chaosu; Laikę nazywa „zakutym łbem” (EN bonehead)', zrodlo: [en]}
+  - {id: unae, nazwa: Unae, plec: m, klucz: '_UNDERTAKER_\d+$', zrodlo: [en, es], uwaga: 'grabarz; EN „he” (Molly), ES „el enterrador”; RU ma kobietę — przyjęto EN'}
+  - {id: kris, nazwa: Kris, plec: k, klucz: '_COOK_\d+$', rejestr: '„Rzecz w tym”', zrodlo: [ru]}
+  - {id: carey, nazwa: Carey, plec: k, klucz: '_CAREY_\d+$', rejestr: '„cholernie pewna”; przedrzeźnia Laikę, zamieniając samogłoski na „i”', zrodlo: [en]}
+  - {id: zooey, nazwa: Zooey, plec: k, klucz: '_BLACKSMITH_\d+$', rejestr: '„Miażdżąco!”, do Laiki „żołnierzu”', zrodlo: [en]}
+  - {id: maniu, nazwa: Maniu, plec: k, klucz: '_SHOPKEEPER_\d+$', rejestr: '„Moja najdroższa przyjaciółko”', zrodlo: [en]}
+  - {id: kidgutter, nazwa: Kidgutter, plec: m, klucz: '_KIDGUTTER_\d+$', uwaga: 'ptasi kapitan-dziecko (ES „Soy un niño”)', zrodlo: [es]}
+  - {id: boo, nazwa: Boo, plec: m, zrodlo: [ru]}
+  - {id: kai, nazwa: Kai, plec: m, klucz: '_GUITAR_\d+$', zrodlo: [ru]}
+  - {id: kobiety_poboczne, nazwa: 'Fogg, Gusto, Rollo, Fernidu, Beícoli, Camilla, Dalia, Mina, Gunda, Hilda, Molly, Lewis, Tressie, Pebble, górniczka', plec: k, zrodlo: [en, ru]}
+  - {id: mezczyzni_poboczni, nazwa: 'Jakob, Han, Qwota, Borden, Petey, Alfredo, Herman, Inok, Walterio, Trook, Lee', plec: m, zrodlo: [en, ru]}
+
+terminy:
+  - en: Birds
+    pl: Ptaki
+    formy: [ptak, ptac, ptasi]
+    zrodlo: en
+    uwaga: wielka litera jak w oryginale — nazwa wrogiego imperium
+  - en: viscera
+    pl: wnętrzności
+    formy: [wnętrznoś]
+    zrodlo: decyzja
+    uwaga: waluta; „wnętrzność” ma liczbę pojedynczą, więc liczebnik z {0} zawsze się zgadza (2, 5, 22 wnętrzności)
+  - en: Viscera Sack
+    pl: worek wnętrzności
+    formy: [worek, work]
+    zrodlo: decyzja
+  - en: bone memorial
+    pl: kościana kapliczka
+    formy: [kaplicz]
+    zrodlo: decyzja
+    uwaga: punkt kontrolny; „memorial statues” Ptaków to osobne „pomniki”
+  - en: bike
+    pl: motor
+    formy: [motor]
+    zrodlo: decyzja
+    uwaga: potocznie o motocyklu, pasuje do rejestru
+  - en: walkie
+    pl: krótkofalówka
+    formy: [krótkofalów]
+    zrodlo: decyzja
+  - en: dash
+    pl: zryw
+    formy: [zryw]
+    zrodlo: decyzja
+  - en: bullet time
+    pl: spowolnienie
+    formy: [spowoln]
+    zrodlo: decyzja
+  - en: war machine
+    pl: machina wojenna
+    formy: [machin]
+    zrodlo: decyzja
+  - en: A Hundred Hungry Beaks
+    pl: Sto Głodnych Dziobów
+    formy: [głodn]
+    zrodlo: decyzja
+  - en: blueprint
+    pl: projekt
+    formy: [projekt]
+    zrodlo: decyzja
+  - en: Wastelands
+    pl: Pustkowia
+    formy: [pustkow]
+    zrodlo: decyzja
+  - en: 'Where (We|All|Birds|Rock|Water|Our|the|Doom|Rust|Iron|Mother|Shaza|Music|Other|They|Playing|Chaos|I)\b'
+    pl: 'Tam, Gdzie …'
+    formy: [gdzie, skąd]
+    zrodlo: [ru]
+    uwaga: nazwy miejsc jak w RU („Там, Где Мы Живём”); w zdaniu „tam, Gdzie Żyjemy”
+
+  - en: Grim Biker
+    pl: Ponura Motocyklistka
+    formy: [ponur]
+    zrodlo: decyzja
+    uwaga: gra na „Ponury Żniwiarz”
+  - en: bonehead
+    pl: zakuty łeb
+    formy: [zakut]
+    zrodlo: decyzja
+    uwaga: przezwisko od Hektystki; łączy „tępaka” z kościanym hełmem i motorem
+  - en: Hectist
+    pl: Hektystka / hektystyczny
+    formy: [hektyst]
+    zrodlo: decyzja
+  - en: the Egg
+    pl: Jajo
+    formy: [jaj]
+    zrodlo: decyzja
+  - en: Renegades
+    pl: Renegaci
+    formy: [renegat]
+    zrodlo: decyzja
+  - en: heartglaze
+    pl: sercolśń
+    formy: [sercolś]
+    zrodlo: decyzja
+    uwaga: neologizm na wzór nazwy kwiatu
+  - en: Wastelanders
+    pl: Pustkowianie
+    formy: [pustkowian]
+    zrodlo: decyzja
+  - en: Undernest
+    pl: Podgniazdo
+    formy: [podgnie, podgniazd]
+    zrodlo: decyzja
+  - en: Floating City
+    pl: Latające Miasto
+    formy: [latając]
+    zrodlo: decyzja
+  - en: funerary friend
+    pl: pogrzebowa przyjaciółka
+    formy: [pogrzebow]
+    zrodlo: decyzja
+
+  - en: Closure (tytuł zadania)
+    pl: Pożegnanie
+    formy: [pożegna]
+    zrodlo: uzytkownik
+    uwaga: 'odrzucone — „Zamknięcie” (kalka), „Domknięcie”'
+  - en: Where We Say Who (strefa napisów)
+    pl: Tam, Gdzie Mówimy, Kto Jest Kim
+    formy: [kto jest kim]
+    zrodlo: uzytkownik
+    uwaga: 'odrzucone — „Tam, Gdzie Mówimy, Kto” (urwane), „Tam, Gdzie Wymieniamy Imiona”'
+  - en: 'PUSH, YOU PUSSY!'
+    pl: 'PRZYJ, CIPO!'
+    formy: [cipo]
+    zrodlo: uzytkownik
+    uwaga: 'odrzucone — „CIOTO” (homofobiczna obelga), „MIĘCZAKU”'
+
+wulgaryzmy:
+  zrodlo: uzytkownik
+  zasada: 'wzmacniamy miejsca osłabione względem EN („Nie pierdol” za „Don''t fuck with me”, „wydymasz” za „fuck me over”); mocniejsze od EN zostają („robi mnie w chuja”, „skurwysyny”) — odrzucone wyrównanie w dół'
+
+bez_tlumaczenia:
+  - Laika
+  - Puppy
+  - Poochie
+  - Jakob
+  - Maya
+  - OK
+  - DUALSHOCK
+  - DualSense
+  - Carajillo
+  - Espeto
+  - Arepa
+  - Roy
+  - Shaza
+  - Primo
+  - Orella
+  - Pluck
+  - Kidgutter
+
+ustawienia:
+  dialog_klucz: '^D_'
+  max_wiersz: 60
+
+ignoruj:
+  - sprawdzenie: plec
+    klucz: 'D_S_PlantSeed_Briefing_PRIMO_2|D_3_TheBigTree_Primo_Undone2_PRIMO_4|D_3_TheBigTree_Primo_Complete_PRIMO_1'
+    powod: Primo cytuje słowa Laiki („pytasz mnie”), więc forma żeńska jest poprawna

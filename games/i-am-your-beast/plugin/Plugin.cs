@@ -1,0 +1,381 @@
+// Nie gęsi — polski dla I Am Your Beast, dokładany w czasie działania gry.
+//
+// Gra nie ma systemu języków. Teksty żyją w trzech miejscach, wszystkie podmieniamy
+// w pamięci, bez dotykania plików gry:
+//   1. bank Fleece (menu, HUD, samouczek, okrzyki wrogów) — pole Passage.text po ID;
+//   2. sceny dialogowe AudioTextSynchronizer — tekst każdego odcinka PhraseAsset;
+//   3. napisy wpisane na sztywno w sceny TextMeshPro — dokładne dopasowanie tekstu.
+//
+// Każdy wpis Fleece i odcinek sceny niesie odcisk angielskiego oryginału. Gdy po
+// aktualizacji gry pod tym samym kluczem stoi inny tekst, zostaje po angielsku,
+// a plugin zapisuje w logu, ile takich było.
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
+using System.Text;
+using AudioTextSynchronizer;
+using AudioTextSynchronizer.Core;
+using AudioTextSynchronizer.TextEffects.Base;
+using AudioTextSynchronizer.TextSplitters.Base;
+using BepInEx;
+using BepInEx.Logging;
+using Fleece;
+using HarmonyLib;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+namespace NieGesi.IAmYourBeast
+{
+    [BepInPlugin(Id, "I Am Your Beast PL", Version)]
+    public class Plugin : BaseUnityPlugin
+    {
+        public const string Id = "cc.notgoose.iamyourbeast";
+        public const string Version = "0.2.0";
+
+        internal const string TermsFile = "pl.tsv";
+        internal const string PolishLetters = "ąćęłńóśźżĄĆĘŁŃÓŚŹŻ";
+
+        internal static ManualLogSource Log;
+
+        private void Awake()
+        {
+            Log = Logger;
+            Logger.LogInfo(string.Format("Gra {0} {1}, Unity {2}.",
+                Application.productName, Application.version, Application.unityVersion));
+
+            if (!Texts.Load(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), TermsFile)))
+            {
+                return;
+            }
+
+            var harmony = new Harmony(Id);
+            Patch(harmony, typeof(FleecePatch), "bank Fleece");
+            Patch(harmony, typeof(PhrasePatch), "sceny dialogowe");
+            Patch(harmony, typeof(TmpPatch), "napisy TextMeshPro");
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        private void Patch(Harmony harmony, Type patches, string what)
+        {
+            try
+            {
+                harmony.PatchAll(patches);
+            }
+            catch (Exception error)
+            {
+                Logger.LogError("Nie udało się wpiąć (" + what + "), ta część zostaje po angielsku: " + error.Message);
+            }
+        }
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            try
+            {
+                foreach (var passage in Resources.FindObjectsOfTypeAll<Passage>()) Texts.Translate(passage);
+                foreach (var phrase in Resources.FindObjectsOfTypeAll<PhraseAsset>()) Texts.Translate(phrase);
+                foreach (var text in Resources.FindObjectsOfTypeAll<TMP_Text>()) TmpPatch.Replace(text);
+                Fonts.Prepare();
+                Texts.ReportOnce();
+            }
+            catch (Exception error)
+            {
+                Logger.LogError("Błąd przy scenie " + scene.name + ": " + error);
+            }
+        }
+    }
+
+    internal static class Texts
+    {
+        private struct Entry
+        {
+            public uint Print;
+            public string Text;
+        }
+
+        private static readonly Dictionary<int, Entry> Passages = new Dictionary<int, Entry>();
+        private static readonly Dictionary<string, Dictionary<int, Entry>> Phrases =
+            new Dictionary<string, Dictionary<int, Entry>>(StringComparer.Ordinal);
+        internal static readonly Dictionary<string, string> Fixed = new Dictionary<string, string>(StringComparer.Ordinal);
+
+        private static readonly HashSet<int> Done = new HashSet<int>();
+        private static int translated, changed;
+        private static bool reported;
+
+        /// Plik obok biblioteki: klucz, tabulator, odcisk angielskiego, tabulator, tekst.
+        /// Klucze: fleece/<ID>, phrase/<zasób>/<odcinek>, tmp/<angielski tekst>.
+        internal static bool Load(string path)
+        {
+            if (!File.Exists(path))
+            {
+                Plugin.Log.LogError("Brak pliku " + path + " — gra zostaje po angielsku.");
+                return false;
+            }
+
+            foreach (var raw in File.ReadAllText(path, Encoding.UTF8).Split('\n'))
+            {
+                var line = raw.TrimEnd('\r');
+                var parts = line.Split('\t');
+                if (parts.Length != 3) continue;
+                var key = Unescape(parts[0]);
+                var text = Unescape(parts[2]);
+                uint print;
+                if (!uint.TryParse(parts[1], System.Globalization.NumberStyles.HexNumber, null, out print)) continue;
+                var entry = new Entry { Print = print, Text = text };
+
+                if (key.StartsWith("fleece/", StringComparison.Ordinal))
+                {
+                    int id;
+                    if (int.TryParse(key.Substring(7), out id)) Passages[id] = entry;
+                }
+                else if (key.StartsWith("phrase/", StringComparison.Ordinal))
+                {
+                    var slash = key.LastIndexOf('/');
+                    int index;
+                    if (slash <= 7 || !int.TryParse(key.Substring(slash + 1), out index)) continue;
+                    var name = key.Substring(7, slash - 7);
+                    Dictionary<int, Entry> timings;
+                    if (!Phrases.TryGetValue(name, out timings)) Phrases[name] = timings = new Dictionary<int, Entry>();
+                    timings[index] = entry;
+                }
+                else if (key.StartsWith("tmp/", StringComparison.Ordinal))
+                {
+                    Fixed[key.Substring(4)] = text;
+                }
+            }
+
+            Plugin.Log.LogInfo(string.Format("Wczytano {0} wpisów Fleece, {1} scen, {2} stałych napisów.",
+                Passages.Count, Phrases.Count, Fixed.Count));
+            return Passages.Count + Phrases.Count + Fixed.Count > 0;
+        }
+
+        private static string Unescape(string value)
+        {
+            return value.Replace("\\n", "\n").Replace("\\t", "\t").Replace("\\\\", "\\");
+        }
+
+        /// Odcisk FNV-1a samych liter i cyfr: odporny na \r, spacje na końcu i znaki,
+        /// które różne czytniki zasobów dekodują inaczej. Ta sama funkcja jest w build_plugin.py.
+        internal static uint Fingerprint(string text)
+        {
+            uint hash = 2166136261;
+            if (text == null) return hash;
+            foreach (var c in text)
+            {
+                if (c > 127 || !char.IsLetterOrDigit(c)) continue;
+                hash ^= c;
+                hash *= 16777619;
+            }
+            return hash;
+        }
+
+        internal static void Translate(Passage passage)
+        {
+            if (passage == null || !Done.Add(passage.GetInstanceID())) return;
+            Entry entry;
+            if (!Passages.TryGetValue(passage.id, out entry)) return;
+            if (Fingerprint(passage.text) != entry.Print)
+            {
+                changed++;
+                return;
+            }
+            passage.text = entry.Text;
+            translated++;
+        }
+
+        internal static void Translate(PhraseAsset phrase)
+        {
+            if (phrase == null || phrase.Timings == null || !Done.Add(phrase.GetInstanceID())) return;
+            Dictionary<int, Entry> timings;
+            if (!Phrases.TryGetValue(phrase.name, out timings)) return;
+
+            var any = false;
+            for (var i = 0; i < phrase.Timings.Count; i++)
+            {
+                var timing = phrase.Timings[i];
+                Entry entry;
+                if (timing == null || !timings.TryGetValue(i, out entry)) continue;
+                if (Fingerprint(timing.Text) != entry.Print)
+                {
+                    changed++;
+                    continue;
+                }
+                timing.Text = entry.Text;
+                translated++;
+                any = true;
+            }
+            if (!any) return;
+
+            // Pełny tekst służy do odszukania kolejnych odcinków (IndexOf od końca poprzedniego).
+            // Składamy go z odcinków, żeby każdy dał się znaleźć po kolei, także powtórzenia.
+            var full = new StringBuilder();
+            foreach (var timing in phrase.Timings)
+            {
+                if (timing == null) continue;
+                if (full.Length > 0) full.Append('\n');
+                full.Append(timing.Text);
+            }
+            phrase.Text = full.ToString();
+        }
+
+        internal static void ReportOnce()
+        {
+            if (reported || translated == 0) return;
+            reported = true;
+            Plugin.Log.LogInfo("Podmieniono " + translated + " tekstów.");
+            if (changed > 0)
+            {
+                Plugin.Log.LogWarning(changed + " tekstów tej wersji gry różni się od spolszczonych — zostają po angielsku.");
+            }
+        }
+    }
+
+    [HarmonyPatch]
+    internal static class FleecePatch
+    {
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(Passage), "get_parsedText")]
+        private static void BeforeParsedText(Passage __instance)
+        {
+            Texts.Translate(__instance);
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(Story), "Find", new[] { typeof(int) })]
+        private static void AfterFindById(Passage __result)
+        {
+            Texts.Translate(__result);
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(Story), "Find", new[] { typeof(string) })]
+        private static void AfterFindByName(Passage __result)
+        {
+            Texts.Translate(__result);
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(Drawstring), "Begin", new[] { typeof(Passage), typeof(bool) })]
+        private static void BeforeBegin(Passage __0)
+        {
+            Texts.Translate(__0);
+        }
+    }
+
+    [HarmonyPatch]
+    internal static class PhrasePatch
+    {
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextSynchronizer), "set_Timings")]
+        private static void BeforeSetTimings(PhraseAsset value)
+        {
+            Texts.Translate(value);
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextSynchronizer), "SplitWords")]
+        private static void BeforeSplitWords(TextSynchronizer __instance)
+        {
+            Texts.Translate(__instance.Timings);
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextSplitConfigBase), "Init")]
+        private static void BeforeSplit(PhraseAsset __0)
+        {
+            Texts.Translate(__0);
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextEffectBase), "Init")]
+        private static void BeforeEffect(TextSynchronizer __0)
+        {
+            if (__0 != null) Texts.Translate(__0.Timings);
+        }
+    }
+
+    [HarmonyPatch]
+    internal static class TmpPatch
+    {
+        private static readonly AccessTools.FieldRef<TMP_Text, string> Text =
+            AccessTools.FieldRefAccess<TMP_Text, string>("m_text");
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TMP_Text), "set_text")]
+        private static void BeforeSetText(ref string value)
+        {
+            string polish;
+            if (value != null && Texts.Fixed.TryGetValue(value, out polish)) value = polish;
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextMeshProUGUI), "Awake")]
+        private static void BeforeAwakeUi(TextMeshProUGUI __instance)
+        {
+            Swap(__instance);
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextMeshPro), "Awake")]
+        private static void BeforeAwakeWorld(TextMeshPro __instance)
+        {
+            Swap(__instance);
+        }
+
+        /// Przed Awake: podmiana samego pola, TMP jeszcze niczego nie zbudował.
+        private static void Swap(TMP_Text text)
+        {
+            var value = Text(text);
+            string polish;
+            if (value != null && Texts.Fixed.TryGetValue(value, out polish)) Text(text) = polish;
+        }
+
+        /// Po wczytaniu sceny: obiekty już obudzone przechodzą przez setter, żeby się przerysowały.
+        internal static void Replace(TMP_Text text)
+        {
+            if (text == null) return;
+            var value = Text(text);
+            string polish;
+            if (value == null || !Texts.Fixed.TryGetValue(value, out polish)) return;
+            if (text.gameObject.scene.IsValid()) text.text = polish;
+            else Text(text) = polish;
+        }
+    }
+
+    /// Fonty gry są dynamiczne i mają źródłowy krój z polskimi literami. Dokładamy
+    /// litery do atlasu od razu i zapisujemy w logu, czy się udało.
+    internal static class Fonts
+    {
+        private static readonly HashSet<int> Checked = new HashSet<int>();
+
+        internal static void Prepare()
+        {
+            foreach (var font in Resources.FindObjectsOfTypeAll<TMP_FontAsset>())
+            {
+                if (font == null || !Checked.Add(font.GetInstanceID())) continue;
+                try
+                {
+                    uint[] missing;
+                    var complete = font.HasCharacters(Plugin.PolishLetters, out missing, true, true);
+                    if (complete)
+                    {
+                        Plugin.Log.LogInfo("Font " + font.name + ": polskie litery są.");
+                    }
+                    else
+                    {
+                        var list = new StringBuilder();
+                        if (missing != null) foreach (var c in missing) list.Append((char)c);
+                        Plugin.Log.LogWarning("Font " + font.name + " (" + font.atlasPopulationMode + "): brak " + list + ".");
+                    }
+                }
+                catch (Exception error)
+                {
+                    Plugin.Log.LogWarning("Font " + font.name + ": nie sprawdzę liter (" + error.Message + ").");
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,44 @@
 Ustalenia i instrukcje dla osób, które budują paczkę albo poprawiają teksty.
 Gracz potrzebuje tylko [README](../README.md).
 
+## Pilotaż kierunku i review — 2026-09-24
+
+Uzupełniamy proces redakcyjny na istniejącym pełnym przekładzie. Vertical jest już
+potwierdzony przez użytkownika; nie wymaga ponownej akceptacji. Aktualne wydanie
+0.3.1 korzysta z pluginu, zgodnie z `game.yaml`; opis podmiany zasobów poniżej jest historyczny.
+
+Sprawdzono zgodność 721 wpisów EN/PL z `translations/pl.json` (brak rozjazdów).
+Przygotowano 19 wpisów próbki oraz trzy tematy kierunku w
+[translation-decisions.md](translation-decisions.md): głos Pedra, adaptacja sucharów
+i nazwy osiągnięć. Użytkownik zaakceptował wszystkie trzy rekomendacje. Zapisano
+biblię i zmieniono `w102-18`, `w410-1`, `achN4` oraz błąd sensu `w102-14`.
+
+Osobny reviewer zakończył odczyt 721/721 wpisów, ponownie czytając polskie dialogi
+i oceniając decyzje na całej grze. [Raport](localization-review.md) zawiera pokrycie,
+hashe wejścia, dwie poprawki i trzy otwarte propozycje. Prowadzący potwierdził i wdrożył
+`w54-1` (obwód) oraz `w57-4` (bez dopisanych lat rozłąki). Łącznie zmieniono sześć wpisów
+względem 0.3. Pełna kampania i nowe teksty 0.3.1 nadal czekają na test użytkownika.
+
+Paczka `dist/My-Friend-Pedro-PL-0.3.1.zip` (661725 B) zbudowana i skopiowana do
+`site/public/pobierz/`; `game.yaml` wskazuje nowy plik. Sprawdzono kompletność
+BepInEx, zgodność jego plików z oficjalnym ZIP-em, obecność licencji i źródeł obok
+paczki oraz zgodność wszystkich 721 wpisów TSV z JSON-ami. Nie instalowano 0.3.1.
+Raport po oznaczeniu uzasadnionych wyjątków w biblii zostawia 18 ostrzeżeń długości;
+nie są to potwierdzone błędy UI. Trzy propozycje redakcyjne czekają na rozmowę.
+
+## Aktualne budowanie pluginu
+
+```powershell
+.venv/Scripts/python.exe games/my-friend-pedro/tools/review.py
+.venv/Scripts/python.exe games/my-friend-pedro/tools/build_plugin.py --game "C:/Games/My Friend Pedro"
+```
+
+`build_plugin.py` kompiluje plugin i pakuje teksty TSV, BepInEx oraz instrukcję
+`docs/INSTALL-plugin.txt`. Nie podmienia zasobów gry ani nie instaluje wyniku.
+Źródła konkretnej wersji BepInEx leżą obok ZIP-a. Poniższy `build.py` opisuje
+historyczną metodę zasobową; jego parser i walidator mogą nadal służyć do porównań
+z oryginalnym `resources.assets`, ale nie używamy go do wydawania paczki.
+
 ## Dawne README
 
 Treść, która do 2026-09-21 stała w README gry (nagłówek: „My Friend Pedro PL — full translation 0.2”). README jest teraz

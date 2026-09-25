@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
-VERSION = '0.3'
+VERSION = '0.3.1'
 DATA = 'My Friend Pedro - Blood Bullets Bananas_Data'
 PLUGIN_FOLDER = 'NieGesiPedro'
 
@@ -99,10 +99,10 @@ def package(work: Path, terms: int) -> Path:
     out.parent.mkdir(parents=True, exist_ok=True)
 
     with zipfile.ZipFile(out, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
-        # BepInEx prosto z oficjalnego wydania; changelog pomijamy, to śmieć w katalogu gry.
+        # BepInEx w całości z oficjalnego wydania, razem z dokumentacją.
         with zipfile.ZipFile(BEPINEX_BINARY) as bepinex:
             for name in bepinex.namelist():
-                if name.endswith('/') or name == 'changelog.txt':
+                if name.endswith('/'):
                     continue
                 archive.writestr(name, bepinex.read(name))
 

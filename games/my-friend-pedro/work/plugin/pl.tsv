@@ -46,14 +46,14 @@ w101-8	Co za brak odpowiedzialności...|Jakiś gamoń zostawił tu <color=#FFD79
 w101-9	Śmiało. <color=#FFD79C>Podnieś go</color>.|Może się przydać.
 w101-10	Chyba możemy uciec tym kanałem wentylacyjnym.|<color=#FFD79C>Rozstrzel kratkę</color>.
 w101-11	Celny strzał!|Teraz <color=#FFD79C>przeturlaj się przez kanał</color> i zaraz będziemy na zewnątrz!
-w102-14	O kurczę, to <i><color=#ff9999>Mitch Rzeźnik</color>!</i>|Jego mięsny interes to przykrywka dla przemytu nielegalnej broni.|Mięso to głównie szczury, gołębie albo ktoś, kto akurat krzywo na nich spojrzał.|To chyba wyjaśnia, jak tu trafiliśmy...
+w102-14	O kurczę, to <i><color=#ff9999>Mitch Rzeźnik</color>!</i>|Jego mięsny interes to przykrywka dla przemytu nielegalnej broni.|Mięso to głównie szczury, gołębie albo ktoś, kto akurat im się nie spodobał.|To chyba wyjaśnia, jak tu trafiliśmy...
 w102-15	Hej, szefie.|Spokojnie dziś na mieście...
 w102-19	<shake>NIE...|Nie przerywaj mi, kiedy pracuję, półgłówku.|[Butcher_Question?Butcher_Idle]Towar gotowy?
 w102-20	Już prawie...
 w102-21	<shake>[Butcher_Shout?Butcher_Idle]Bezużyteczne nieroby!|[Butcher_Point?Butcher_Idle]Pokażę im, czym się kończy obijanie!|Zrób coś pożytecznego i przygotuj ten żałosny kawał mięsa, który leży w piwnicy.
 w102-16	*Wzdycha*
 w102-17	Idzie tutaj!|Musisz go załatwić.|Gotowy?
-w102-18	Hm...|No cóż, teraz chyba musisz zabić ich wszystkich.
+w102-18	Hm...|No to teraz chyba musisz ich wszystkich pozabijać.
 w102-12	Pijesz dość wody?|Jakiś nieobecny jesteś.|Chodź, zabiorę cię w moje wyjątkowe miejsce i pomogę ci dojść do siebie.
 w102-13	Przychodzę tu, kiedy mnie nie widzisz.
 w102-1	Coś ci pokażę. Nie ruszaj się.
@@ -182,7 +182,7 @@ w45-1	To ISP, Internetowa Straż Porządkowa.|Ofelia musiała się dowiedzieć o
 w46-1	Ofelia naprawdę musi pragnąć twojej śmierci, skoro wysłała ISP aż tutaj.
 w47-1	Kurczę, te tunele są dłuższe, niż myślałem.|Tory muszą być gdzieś tutaj!
 w48-1	Nieźle tu śmierdzi.|Jak mieszanka moczu, starych skarpet i pizzy pepperoni...
-w410-1	Patrz, miny!|Czyli jesteśmy na dobrej drodze do torów.|Heh... droga... tory.|Przepraszam, puściłem myśli po szynach.
+w410-1	Patrz, miny!|Chyba jesteśmy na właściwym torze, żeby znaleźć kolej.|Heh... tor... kolej.|Wybacz, taki już mam tok... tor myślenia.
 w4101-3	Ech, stary...|Mam już dość pilnowania tej dźwigni.
 w4101-4	No właśnie!|Tkwimy tu od miesięcy.|Nikt by nie zauważył pięciominutowej przerwy...
 w4101-5	Myślisz o tym samym co ja..?
@@ -200,13 +200,13 @@ w52-2	[ScreenTalk3]Mam tu kulkę z twoim imieniem.|[ScreenTalk2]Właściwie to n
 w53-1	[ScreenTalk1]Zobaczmy, na co naprawdę cię stać.
 w53-2	[ScreenTalk1]Te ruchy. Skądś je znam...
 w53-3	[ScreenTalk2]Gdzie... gdzie nauczyłeś się tak ruszać?|[ScreenTalk1]Już widziałam te ruchy.
-w54-1	[OpheliaScreenCheckScreen]Cholera. To Wi-Fi ciągle przerywa.|[PresentingLeft]Włączyć alarmy laserowe w obiegu zamkniętym!
+w54-1	[OpheliaScreenCheckScreen]Cholera. To Wi-Fi ciągle przerywa.|[PresentingLeft]Włączyć alarmy laserowe w obwodzie zamkniętym!
 w55-1	Internet był dużo fajniejszy, zanim Ofelia zaczęła go cenzurować.|Prowadziłem starannie dobraną playlistę filmików z kotami.|Ale pewnego dnia usunięto ją za nieodpowiednie treści.|Chyba Ofelia woli psy.
 w56-1	Bycie dyktatorką Internetu to chyba największa władza w naszych czasach.|Ludzie budują swój obraz świata na tym, co widzą w sieci.|Jeśli kontrolujesz wyświetlane treści, kontrolujesz ludzkie umysły.
 w57-1	[ScreenTalk1]Nooo i wróciłam.|[ScreenTalk2]Musiałam tylko zrestartować router.
 w57-2	[ScreenTalk3]Naprawdę. Tak dobrze znam te ruchy...
 w57-3	[ScreenTalk2]Chwileczkę... Niemożliwe..!|[ScreenTalk1]Czy... czy to ty..?
-w57-4	[ScreenTalk1]To naprawdę ty, prawda??|[ScreenTalk3]Po takim czasie...|[ScreenTalk2]Tyle lat...|[ScreenTalk1]Ale dlaczego?|[ScreenTalk3]Dlaczego to robisz?|[ScreenTalk1]Dlaczego teraz?
+w57-4	[ScreenTalk1]To naprawdę ty, prawda??|[ScreenTalk3]Po takim czasie...|[ScreenTalk2]Minęło tyle czasu...|[ScreenTalk1]Ale dlaczego?|[ScreenTalk3]Dlaczego to robisz?|[ScreenTalk1]Dlaczego teraz?
 w57-5	Nie słuchaj jej.|Plecie od rzeczy. Po prostu zaczyna się denerwować.
 w511-1	Więc... udało ci się.|Wreszcie wróciłeś do domu.|Nie myśl, że oszukasz mnie tą maską.|Wiem, że to ty, bracie.|Minęło tyle czasu. Z początku nie byłam pewna.|Wiem, że wtedy, po tym zdarzeniu, wszystko się rozpadło. Rozumiem twoje działania.|Ale ty też musisz zrozumieć, dlaczego nie mogę pozwolić ci działać dalej.|Mitch nigdy nie był dobrym ojcem, ale jestem wdzięczna za drogę, na którą mnie skierował.|A Denny nigdy nie był nikomu wierny, ale zawsze będzie miał szczególne miejsce w moim sercu.|Twoje czyny muszą mieć konsekwencje.|Zadbam o ładny nagrobek dla ciebie...
 w512-1	Wygrałeś, bracie.|Wygrałeś...
@@ -604,7 +604,7 @@ achN2	Trzy pieczenie na jednym wybuchu
 achD2	Zabij co najmniej 3 wrogów jednym wybuchem
 achN3	Czary-combary
 achD3	Uzyskaj combo x10
-achN4	Combo na boczek
+achN4	Combo na zaczes
 achD4	Uzyskaj combo x20
 achN5	No to combo!
 achD5	Uzyskaj combo x50

@@ -64,3 +64,16 @@ games/katana-zero/work/
 
 # NOT A HERO: zrzut tekstów INI gry do tłumaczenia.
 games/not-a-hero/work/
+
+# Hyper Light Drifter: raport kontrolny
+games/hyper-light-drifter/work/
+
+# Broforce: zrzuty banków i fontów gry, narzędzia analizy.
+games/broforce/work/
+
+# Rain World: odszyfrowane teksty gry, mapa literałów z Assembly-CSharp, build pluginu.
+games/rain-world/work/
+
+# Cyber Hook, Laika: tabele tekstów wyciągnięte z gry (wszystkie języki) — cudza treść.
+games/cyber-hook/work/source/
+games/laika-aged-through-blood/work/source/

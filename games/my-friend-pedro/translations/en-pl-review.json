@@ -86,7 +86,7 @@
   {
     "key": "w102-14",
     "english": "Oh chucks, that's <i><color=#ff9999>Mitch the Butcher</color>!</i>|His meat operation is a front for smuggling unlicensed firearms.|The meat is mainly rats, pigeons or whatever person they didn't like the look of that day.|I guess that explains how we ended up here...",
-    "polish": "O kurczę, to <i><color=#ff9999>Mitch Rzeźnik</color>!</i>|Jego mięsny interes to przykrywka dla przemytu nielegalnej broni.|Mięso to głównie szczury, gołębie albo ktoś, kto akurat krzywo na nich spojrzał.|To chyba wyjaśnia, jak tu trafiliśmy...",
+    "polish": "O kurczę, to <i><color=#ff9999>Mitch Rzeźnik</color>!</i>|Jego mięsny interes to przykrywka dla przemytu nielegalnej broni.|Mięso to głównie szczury, gołębie albo ktoś, kto akurat im się nie spodobał.|To chyba wyjaśnia, jak tu trafiliśmy...",
     "status": "translated",
     "context": ""
   },
@@ -135,7 +135,7 @@
   {
     "key": "w102-18",
     "english": "Huh...|Well, I guess you'll just have to kill them all now.",
-    "polish": "Hm...|No cóż, teraz chyba musisz zabić ich wszystkich.",
+    "polish": "Hm...|No to teraz chyba musisz ich wszystkich pozabijać.",
     "status": "translated",
     "context": ""
   },
@@ -674,7 +674,7 @@
   {
     "key": "w410-1",
     "english": "Look, mines!|That must mean we're on track to find the railway.|Heh... on track... railway.|Sorry, just sharing my train of thoughts.",
-    "polish": "Patrz, miny!|Czyli jesteśmy na dobrej drodze do torów.|Heh... droga... tory.|Przepraszam, puściłem myśli po szynach.",
+    "polish": "Patrz, miny!|Chyba jesteśmy na właściwym torze, żeby znaleźć kolej.|Heh... tor... kolej.|Wybacz, taki już mam tok... tor myślenia.",
     "status": "translated",
     "context": ""
   },
@@ -800,7 +800,7 @@
   {
     "key": "w54-1",
     "english": "[OpheliaScreenCheckScreen]Ah crap. The wifi is really spotty around here.|[PresentingLeft]Activate the closed circuit laser alarms!",
-    "polish": "[OpheliaScreenCheckScreen]Cholera. To Wi-Fi ciągle przerywa.|[PresentingLeft]Włączyć alarmy laserowe w obiegu zamkniętym!",
+    "polish": "[OpheliaScreenCheckScreen]Cholera. To Wi-Fi ciągle przerywa.|[PresentingLeft]Włączyć alarmy laserowe w obwodzie zamkniętym!",
     "status": "translated",
     "context": ""
   },
@@ -842,7 +842,7 @@
   {
     "key": "w57-4",
     "english": "[ScreenTalk1]It really is you, isn't it??|[ScreenTalk3]After all this time...|[ScreenTalk2]It's been so long...|[ScreenTalk1]But why?|[ScreenTalk3]Why this?|[ScreenTalk1]Why now?",
-    "polish": "[ScreenTalk1]To naprawdę ty, prawda??|[ScreenTalk3]Po takim czasie...|[ScreenTalk2]Tyle lat...|[ScreenTalk1]Ale dlaczego?|[ScreenTalk3]Dlaczego to robisz?|[ScreenTalk1]Dlaczego teraz?",
+    "polish": "[ScreenTalk1]To naprawdę ty, prawda??|[ScreenTalk3]Po takim czasie...|[ScreenTalk2]Minęło tyle czasu...|[ScreenTalk1]Ale dlaczego?|[ScreenTalk3]Dlaczego to robisz?|[ScreenTalk1]Dlaczego teraz?",
     "status": "translated",
     "context": ""
   },
@@ -3159,7 +3159,7 @@
   {
     "key": "achN4",
     "english": "Comb-o-ver",
-    "polish": "Combo na boczek",
+    "polish": "Combo na zaczes",
     "status": "translated",
     "context": ""
   },

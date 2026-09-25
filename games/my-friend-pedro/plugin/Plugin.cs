@@ -21,7 +21,7 @@ namespace NieGesi.Pedro
     public class Plugin : BaseUnityPlugin
     {
         public const string Id = "cc.notgoose.myfriendpedro";
-        public const string Version = "0.3";
+        public const string Version = "0.3.1";
 
         internal const string LanguageName = "Polski";
         internal const string LanguageCode = "pl";

@@ -1,0 +1,130 @@
+zrodla:
+  - id: exe
+    opis: Literały lokalnego Heat_Signature.exe (Steam build 6124596) z przypisaną funkcją GML, tools/extract_strings.py → work/strings.json.
+  - id: dialog
+    opis: Pliki Dialog/*.txt gry (13 plików); znaczniki [Blok], #odpowiedź, {Cel}, =ciąg dalszy, <Token>.
+  - id: scenarios
+    opis: Scenarios/*.dat — postacie wyzwań dziennych, nazwy przedmiotów, opisy misji.
+  - id: log
+    opis: NieGesi/LogOutput.log z sesji użytkownika (0.1.2) — faktycznie rysowane napisy, work/run-0.1.2.log.
+  - id: tvtropes
+    opis: Wyszukiwarka streszcza TV Tropes (strona niedostępna, 403) — Breaker „he”, Geneva „she”, Mirfak „they”. Niepotwierdzone.
+    url: https://tvtropes.org/pmwiki/pmwiki.php/Characters/HeatSignature
+styl:
+  ton: UI i instrukcje krótkie, bezpośrednie, w 2. osobie. Opisy przedmiotów rzeczowe, a dopiski-cytaty (reklamowe hasła frakcji) z suchym, czarnym humorem. Dialogi z suchym humorem, bez dopisywania memów.
+  adaptacja: 'Zachować czynność i warunki instrukcji; nie dopisywać klawiszy obok ikon sterowania. Liczby z luk zostają cyframi; zdania z liczbą budujemy tak, by nie wymagały odmiany („Zabójstwa: 3”).'
+  zrodlo: decyzja
+  uwaga: Wygładzenie terminala jest osobnym ustaleniem użytkownika; nie obejmuje łagodzenia przekleństw w pozostałych dialogach.
+  nazwy_przedmiotow: Gra składa nazwy z przymiotników i rzeczownika („Rechargeable High Capacity Swapper”). Po polsku rzeczownik pierwszy, przymiotniki za nim w odwróconej kolejności, zgodne w rodzaju, frazy „o dużej pojemności”/„dalekiego zasięgu” na końcu — przy ucinaniu „...” zostaje najważniejsze słowo. translations/items.json.
+postacie:
+  - id: gracz
+    nazwa: losowa postać gracza
+    plec: '?'
+    mowi_do_gracza: '-'
+    rejestr: Riposty w odpowiedziach dialogowych; bez form ujawniających płeć (czas teraźniejszy, bezosobowe).
+    zrodlo: decyzja
+    uwaga: 'Postacie są losowane (Female/Male w EXE). Wyjątek: w TutorialEnd graczem jest Fiasco.'
+  - id: terminal
+    nazwa: Terminal treningowy
+    plec: n
+    mowi_do_gracza: ty
+    rejestr: Poprawna gramatyka, wersaliki i entuzjazm automatu.
+    zrodlo: uzytkownik
+    uwaga: Użytkownik wybrał „wygładź mimo wszystko”. Odrzucono celowe błędy „TRENING SIĘ ZACZĄĆ” i „ROBIĆ PRZEMOC”.
+    przyklady:
+      - en: PRACTICE IS START
+        pl: TRENING ROZPOCZĘTY
+        zrodlo: uzytkownik
+      - en: EXCELLENT VIOLENCE!
+        pl: ŚWIETNA WALKA!
+        zrodlo: decyzja
+  - id: fiasco
+    nazwa: Sader Fiasco
+    plec: k
+    mowi_do_gracza: ty
+    rejestr: Zmęczona zawodowczyni po czterdziestu latach szpiegostwa; krótkie, suche uwagi, dosadne słownictwo.
+    zrodlo: [dialog]
+    uwaga: 'Breaker o Fiasco: „she ain’t saying”, „she killed their commander”, „this white haired woman walks into my local” (BartenderDialogueFoundry.txt). Vertical 0.1.x błędnie przyjął formy męskie („wyobrażałem”, „Dostałem”) — poprawione w 0.2.0.'
+    przyklady:
+      - en: This is not how I pictured my retirement.
+        pl: Nie tak wyobrażałam sobie emeryturę.
+        zrodlo: dialog
+  - id: breaker
+    nazwa: Breaker Gemini
+    plec: '?'
+    mowi_do_gracza: ty
+    rejestr: Swobodna, gadatliwa, ironiczna; była inżynier Foundry, barman.
+    zrodlo: [dialog, tvtropes]
+    uwaga: Płeć niepotwierdzona w plikach gry; kwestie bez form ujawniających płeć mówiącego. Imię nieodmienne („z Breaker”).
+  - id: asli
+    nazwa: Asli Sixty
+    plec: k
+    mowi_do_gracza: ty
+    rejestr: Entuzjastyczna, dziecinnie radosna, makabryczne szczegóły podane z uśmiechem.
+    zrodlo: [dialog]
+    uwaga: 'O swojej pierwszej wersji: „She knew that when she pressed the button” (BartenderDialogueGlitchers.txt).'
+  - id: geneva
+    nazwa: Geneva Stonelock
+    plec: '?'
+    mowi_do_gracza: ty
+    rejestr: Oschła szefowa ochrony z Offworld, lakoniczna, bezkompromisowa.
+    zrodlo: [dialog, tvtropes]
+    uwaga: Płeć niepotwierdzona w plikach; kwestie neutralne. Streszczenie TV Tropes wskazuje „she”.
+  - id: mirfak
+    nazwa: Mirfak Lagrange
+    plec: '?'
+    mowi_do_gracza: ty
+    rejestr: Ciepły, gadatliwy, lubi teorie spiskowe; były kryptograf Sovereign.
+    zrodlo: [dialog, tvtropes]
+    uwaga: Płeć niepotwierdzona; kwestie neutralne (czas teraźniejszy zamiast „zostałem/zostałam”).
+terminy:
+  - {en: pod, pl: kapsuła, formy: [kapsuł], zrodlo: decyzja}
+  - {en: station, pl: stacja, formy: [stacj], zrodlo: decyzja}
+  - {en: stronghold, pl: twierdza, formy: [twierdz], zrodlo: decyzja}
+  - {en: liberat, pl: wyzwolić / wyzwolenie, formy: [wyzwol, wyzwal], zrodlo: decyzja}
+  - {en: glory, pl: chwała, formy: [chwał], zrodlo: decyzja}
+  - {en: clause, pl: klauzula, formy: [klauzul], zrodlo: decyzja}
+  - {en: vow, pl: przysięga, formy: [przysięg], zrodlo: decyzja}
+  - {en: defector, pl: dezerter, formy: [dezert], zrodlo: decyzja, uwaga: Postać przechodząca na naszą stronę; „Defection” → dezercja.}
+  - {en: contractor, pl: najemnik, formy: [najemni], zrodlo: decyzja}
+  - {en: keycard, pl: karta dostępu, formy: [kart], zrodlo: decyzja}
+  - {en: heat sensor, pl: czujnik ciepła, formy: [czujnik], zrodlo: decyzja}
+  - {en: stash, pl: schowek, formy: [schow], zrodlo: decyzja}
+  - {en: glitch, pl: glitch / glitchować, formy: [glitch], zrodlo: decyzja, uwaga: Slang teleportacji Glitcherów; zostaje jako zapożyczenie.}
+  - {en: crash, pl: zawiesić / zawieszenie, formy: [zawies, zawiesz], zrodlo: decyzja, uwaga: Wyłączenie elektroniki; Crashbeam → Zawieszacz.}
+  - {en: subvert, pl: przeprogramować, formy: [przeprogram], zrodlo: decyzja, uwaga: Subverter → Przeprogramator.}
+  - {en: Swapper, pl: Zamieniacz, formy: [zamieniacz], zrodlo: decyzja}
+  - {en: Visitor, pl: Wizytator, formy: [wizytator], zrodlo: decyzja, uwaga: Teleport z powrotem po 2 s — „wizyta”.}
+  - {en: Sidewinder, pl: Omijacz, formy: [omijacz], zrodlo: decyzja, uwaga: Teleport okrężną drogą.}
+  - {en: Slipstream, pl: Poślizg, formy: [poślizg], zrodlo: decyzja}
+  - {en: Key Cloner, pl: Kopiarka kart, formy: [kopiark], zrodlo: decyzja}
+  - {en: Longblade, pl: Długie ostrze, formy: [ostrz], zrodlo: decyzja}
+  - {en: Shortblade, pl: Krótkie ostrze, formy: [ostrz], zrodlo: decyzja}
+  - {en: Wrench, pl: klucz francuski, formy: [klucz], zrodlo: decyzja, uwaga: Narzędzie walki; odróżnić od karty dostępu.}
+  - {en: tutorial, pl: samouczek, formy: [samoucz], zrodlo: decyzja}
+  - {en: inventory, pl: ekwipunek, formy: [ekwipun], zrodlo: decyzja}
+  - {en: Facebreaker, pl: Gębołamacz, formy: [gębołamacz], zrodlo: decyzja, uwaga: Krótka, dosadna nazwa kinetycznej broni Fiasco.}
+  - {en: Drift, pl: Dryf, formy: [dryf], zrodlo: decyzja, uwaga: Nazwa mgławicy „the Drift”; nazwa mówiąca.}
+  - {en: Voidmother, pl: Matka Pustki, formy: [matk], zrodlo: decyzja}
+bez_tlumaczenia: [Fiasco, Breaker, Breacher, Heat Signature, Foundry, Sovereign, Glitchers, Glitcher, Offworld, Offworld Security, Castor's Rest, Coldfire, Asli, Mirfak, Geneva, Sader, Caeli]
+ustalenia_uzytkownika:
+  - en: Yep. (odpowiedź gracza)
+    pl: No tak.
+    zrodlo: uzytkownik
+    uwaga: Odrzucono „No.”, które łatwo wziąć za przeczenie.
+  - en: Holy shit you're alive.
+    pl: Jasna cholera, żyjesz.
+    zrodlo: uzytkownik
+    uwaga: Odrzucono „O kurwa, żyjesz.” jako mocniejsze niż oryginał.
+  - en: PACIFIST / Liberator
+    pl: PACYFIZM / Wyzwolenie
+    zrodlo: uzytkownik
+    uwaga: Odrzucono męskie „PACYFISTA”, „Wyzwoliciel” przy losowej płci postaci.
+  - en: Shiplocked
+    pl: pokładowy / Sprzęt pokładowy
+    zrodlo: uzytkownik
+    uwaga: Odrzucono „przypisany do statku” (dwuznaczne przed „dalekiego zasięgu”).
+  - en: missions board / jobs board / Job Listings / Mission Listings
+    pl: tablica zleceń / Oferty zleceń
+    zrodlo: uzytkownik
+    uwaga: Recenzent proponował „tablica misji”; użytkownik wybrał zlecenia.

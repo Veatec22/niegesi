@@ -1,4 +1,4 @@
-MY FRIEND PEDRO PL 0.3 - PELNE TLUMACZENIE
+MY FRIEND PEDRO PL 0.3.1 - PELNE TLUMACZENIE
 
 721/721 wpisow: dialogi, menu, samouczki, odzywki przeciwnikow, HUD, wyniki,
 modyfikatory, teksty osiagniec i napisy koncowe. Polski jest jedenastym jezykiem,
@@ -21,7 +21,9 @@ oraz caly katalog BepInEx. To wszystko - plikow gry nie ruszamy, wiec nie ma
 czego przywracac.
 
 WERSJE GRY I SKLEPY
-Sprawdzone na wydaniu GOG, Unity 2017.4.19f1, 64-bitowym.
+Vertical potwierdzony na GOG 1.03, Unity 2017.4.19f1, 64-bitowym.
+Wersja 0.3.1 zawiera korekte jezykowa; nowe brzmienie tekstow wymaga testu
+w grze. Potwierdzenie verticala nie oznacza przejscia calej kampanii.
 
 Spolszczenie nie jest przypiete do konkretnej wersji gry ani do sklepu -
 wpina sie w system tlumaczen po nazwach, nie po zawartosci plikow. Powinno
@@ -47,5 +49,6 @@ BepInEx/plugins/NieGesiPedro - nasz plugin oraz pl.tsv z tekstami.
 
 LICENCJE
 Spolszczenie i plugin: MIT, tekst w BepInEx/plugins/NieGesiPedro/LICENSE-niegesi.txt
-BepInEx: LGPL-2.1, tekst w BepInEx-LICENSE.txt. Zrodla tej konkretnej wersji:
+BepInEx: LGPL-2.1, tekst w BepInEx-LICENSE.txt. Obok paczki udostepniamy
+archiwum BepInEx-source-5.4.23.5.zip ze zrodlami tej konkretnej wersji:
 https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5

@@ -1,0 +1,22 @@
+{
+  "entries": 721,
+  "changed_keys": [
+    "w102-14",
+    "w102-18",
+    "w410-1",
+    "w54-1",
+    "w57-4",
+    "achN4"
+  ],
+  "final_hashes": {
+    "pl.json": "5340e4b88861d4ca3e9a7336f4e9c1f93f3caf36fe2e8c16dc3207cf76de73c0",
+    "en-pl-review.json": "5327df6f7abbf47456e2021745adc9b0feb091bf12ae6385088a740f5cb5b046"
+  },
+  "package": "games\\my-friend-pedro\\dist\\My-Friend-Pedro-PL-0.3.1.zip",
+  "package_bytes": 661725,
+  "package_sha256": "11ea358c2cc4b2a374f1aaf86a1956074dd585b03c7b5c0e4d20f7afd6da9353",
+  "site_copy_identical": true,
+  "all_bepinex_files_unmodified": true,
+  "open_proposals_unchanged": true,
+  "runtime_test": false
+}

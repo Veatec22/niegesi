@@ -26,7 +26,7 @@ td+td{border-left:1px solid #e4e8e2}small{display:block;color:#557167}code{font-
 #count{margin-left:12px;color:#d5dfdb}@media(max-width:800px){main{padding:8px}table{min-width:850px}header{padding:20px}}
 </style>
 <header><h1>My Friend Pedro · korekta EN / PL</h1>
-<p>Pełne tłumaczenie 0.2 · 721 wpisów. Podgląd bez zapisywania zmian. Do korekty podaj identyfikator wpisu i nowy tekst.</p>
+<p>Pełne tłumaczenie · 721 wpisów. Podgląd bez zapisywania zmian. Do korekty podaj identyfikator wpisu i nowy tekst.</p>
 <input id="search" type="search" aria-label="Szukaj w identyfikatorach i tekstach" placeholder="Szukaj tekstu, klucza lub kategorii, np. w101, skupienie, Ofelia…"><span id="count"></span>
 </header><main><table><thead><tr><th>Identyfikator</th><th>English</th><th>Polski</th></tr></thead><tbody>__ROWS__</tbody></table></main>
 <script>

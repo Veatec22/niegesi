@@ -95,7 +95,8 @@ def find_appid(title: str) -> int | None:
 
 def app_details(appid: int) -> dict:
     payload = json.loads(fetch(DETAILS.format(appid)))
-    entry = payload.get(str(appid), {})
+    # Niektóre gry (I Am Your Beast) wracają pod innym kluczem niż zapytany appid.
+    entry = payload.get(str(appid)) or (next(iter(payload.values())) if len(payload) == 1 else {})
     if not entry.get('success'):
         raise RuntimeError(f'Steam nie zwrócił danych dla appid {appid}')
     return entry['data']

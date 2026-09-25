@@ -1,0 +1,179 @@
+zrodla:
+  - id: strg
+    opis: Napisy z chunku STRG w data.win (work/candidates.json, numer = kolejność kandydata).
+  - id: fp
+    opis: dia_fp.json — misje, wiersze i rozmowy płomieni; ścieżka węzła w kluczu.
+  - id: dia
+    opis: Pozostałe dia_*.json — sejfy, notatki, rozmowa w finale.
+  - id: kierunek
+    opis: docs/translation-decisions.md — próbka przed verticalem, cztery tematy rozstrzygnięte przez użytkownika 2026-09-25.
+
+styl:
+  ton: >-
+    Mroczny noir z nieumarłymi. Suchy, rzeczowy głos żniwiarza w opisach misji,
+    wyrocznia w wierszach, gangsterskie docinki wrogów, rwane narkotyczne monologi z kaset.
+    Bez dopisywania humoru; żarty twórców zostają nietknięte.
+  adaptacja: >-
+    Tytuły misji i osiągnięć z grą słów adaptujemy; łacina i obce cytaty zostają.
+    Nie wyrównujemy niekonsekwencji oryginału (1./2. osoba narracji).
+  zrodlo: uzytkownik
+  uwaga: >-
+    Użytkownik 2026-09-25 przyjął kierunek próbki: wiersze rymowane ze stałym refrenem,
+    „żniwiarz”, gangi po angielsku. Przekleństwa w kasetach mocniejsze niż proponowałem:
+    „jebany” za „fucking” (odrzucony „pieprzony”). Stopnia wulgarności nie podnosimy
+    tam, gdzie EN go nie ma.
+
+postacie:
+  - id: zniwiarz
+    nazwa: żniwiarz
+    plec: m
+    rejestr: >-
+      Rzeczowy, zimny, krótkie zdania w 1. osobie („Znajdę, co ukrywają.”).
+      O zleceniodawcy mówi „mój pracodawca”.
+    odmiana: żniwiarza, żniwiarzu (wołacz), żniwiarzem
+    zrodlo: [fp, strg, kierunek]
+    uwaga: >-
+      Rodzaj męski: kominek „A man of light… his time” (fp map_mission7/map_lamp),
+      wrogowie „He's... coming...” (strg 446). „reaper” małą literą jak w EN;
+      „grim reaper” = „ponury żniwiarz”. Odrzucone: „kosiarz” (żartobliwy), „Kostucha” (rodzaj żeński).
+    przyklady:
+      - klucz: strg 73
+        en: Not bad, reaper.
+        pl: Nieźle, żniwiarzu.
+        zrodlo: uzytkownik
+  - id: plomienie
+    nazwa: płomienie / kominek
+    plec: m   # o sobie: „Pomyślałem”, „Nie spodziewałem się gości”; kasety mówią o nim „he”; „płomienie” jako rzeczownik — lm
+    mowi_do_gracza: ty („przyjacielu”)
+    rejestr: >-
+      Wyrocznia: tylko wierszem. Rym i rytm ważniejsze od dosłowności (użytkownik
+      2026-09-25, po przeglądzie): obraz można przesunąć, sens misji, wyróżnienia
+      &y&/&b& i refren zostają;
+      poza cytatem („spoke the fireplace”) krótkie, ciepłe, uroczyste zdania.
+    zrodlo: [fp, kierunek]
+    uwaga: >-
+      Refren zawsze „…nie może przy mnie żyć” / „…nie mogą przy mnie żyć”
+      (EN „cannot live with me”, 8 wystąpień). W zwrotce, gdzie wiersz mówi o pukaniu,
+      zostaje „zapukaj” — to mechanika gry. Odrzucony wiersz wolny.
+    przyklady:
+      - klucz: fp map_mission4/Description
+        en: '"No moment to flee -# he should not be here.#&y&A man with a heart&!&,#cannot live with me."'
+        pl: '„Nie ma dokąd zbiec -# on nie powinien tu być.#&y&Człowiek, co ma serce&!&,#nie może przy mnie żyć.”'
+        zrodlo: uzytkownik
+      - klucz: fp map_mission1/Description
+        en: '"My Candles tell me tales,#&y&Undead&!& form and blossom#Find their abode and knock,#And free them from their jails." ##The flames never spoke in prose.'
+        pl: '„Świece szepczą mi wieści:#&y&Nieumarli&!& wciąż się mnożą.#Znajdź ich dom i zapukaj,#niech ich cele się otworzą.” ##Płomienie nigdy nie mówiły prozą.'
+        zrodlo: uzytkownik
+  - id: kasety
+    nazwa: narratorzy kaset
+    plec: '?'
+    rejestr: rwane, krótkie zdania; przekleństwa rzadkie, w chwilach załamania
+    zrodlo: [strg, kierunek]
+    uwaga: >-
+      Każda kaseta to inny narrator (zombie, wampirzyca, szkielet…); płeć ustalać z treści
+      kasety („My husband agrees” = kobieta). „fucking” → „jebany” (decyzja użytkownika).
+    przyklady:
+      - klucz: strg 165
+        en: My heart drops through the fucking floor and I lose it, forever.
+        pl: Serce spada mi przez jebaną podłogę i puszczają mi nerwy. Na dobre.
+        zrodlo: uzytkownik
+
+terminy:
+  - en: reaper
+    pl: żniwiarz
+    formy: [żniwiar]
+    zrodlo: uzytkownik
+  - en: Candles?
+    pl: Świece
+    formy: [świec]
+    zrodlo: decyzja
+    uwaga: informatorzy płomieni; wielka litera jak w EN
+  - en: this Place
+    pl: to Miejsce
+    formy: [miejsc]
+    zrodlo: decyzja
+    uwaga: wielka litera jak w EN
+  - en: undead
+    pl: nieumarli
+    formy: [nieumar]
+    zrodlo: decyzja
+  - en: ash
+    pl: popiół
+    formy: [popi, popioł]
+    zrodlo: decyzja
+    uwaga: narkotyk i paliwo portalu; „ash totems” = totemy z popiołu, „ash caches” = skrytki z popiołem
+  - en: souls?
+    pl: dusze
+    formy: [dusz]
+    zrodlo: decyzja
+  - en: Hellhounds?
+    pl: piekielne ogary
+    formy: [ogar]
+    zrodlo: decyzja
+  - en: phylacter(y|ies)
+    pl: filakteria
+    formy: [filakteri]
+    zrodlo: decyzja
+  - en: harvest
+    pl: żniwa
+    formy: [żniw]
+    zrodlo: decyzja
+    uwaga: pobrzmiewa w „żniwiarzu” — zamierzone w PL, w EN reaper/harvest też się łączą
+  - en: employer
+    pl: pracodawca
+    formy: [pracodaw]
+    zrodlo: decyzja
+  - en: flames
+    pl: płomienie
+    formy: [płomie, płomien]
+    zrodlo: decyzja
+  - en: fireplace
+    pl: kominek
+    formy: [komin]
+    zrodlo: decyzja
+
+  - en: bouncer
+    pl: bramkarz
+    formy: [bramkar]
+    zrodlo: decyzja
+    uwaga: typ wroga (the Bouncer) i w opisach misji
+  - en: knock
+    pl: pukać / zapukaj
+    formy: [puk]
+    zrodlo: decyzja
+    uwaga: mechanika gry — także w wierszach płomieni
+
+bez_tlumaczenia:
+  - Zombie Kingz
+  - 1000 Year Royals
+  - The Dredged
+  - Charon
+  - Lux in Tenebris
+  - Le Sniper Du Cœur
+  - Quid Pro Quo
+  - Baba Yaga
+
+technika: >-
+  Fonty gry nie mają „ ” ani półpauzy: cudzysłowy " lub ', myślnik -.
+  Doklejane imiona i liczby: forma z dwukropkiem („Zabij: Puff”, „Liczba zgonów: 5.”).
+  Podpowiedzi klawiszy wersalikami w trybie rozkazującym, apostrofy i znaczniki &y& &!& # bez zmian.
+
+ustawienia:
+  max_wiersz: 0   # nieustalone; fontTiny jest bardzo mały, sprawdzić w verticalu
+
+ignoruj:
+  - sprawdzenie: typografia
+    klucz: '.*'
+    powod: fonty gry nie mają „ ” ani półpauzy — proste cudzysłowy i dywiz to decyzja (technika)
+  - sprawdzenie: brak
+    klucz: '^s1724$'
+    powod: "' Souls' po liczbie celowo puste — jednostka w nagłówku 'NAGRODA W DUSZACH: '"
+  - sprawdzenie: angielski
+    klucz: 'map_portal/Name$'
+    powod: „portal” to także polskie słowo
+  - sprawdzenie: terminy
+    klucz: 'map_mission5/Description$'
+    powod: wiersz płomieni — „piekielne psy” jako wariant poetycki terminu
+  - sprawdzenie: terminy
+    klucz: 'map_mission22/Description$'
+    powod: wiersz płomieni — „zapomnianych trupów rój” dla rymu z „twój”

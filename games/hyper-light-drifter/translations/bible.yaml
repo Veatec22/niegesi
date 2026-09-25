@@ -1,0 +1,74 @@
+zrodla:
+  - id: pliki
+    opis: MenuText.txt i Phrases.txt z gry — klucze, komentarze o limitach znaków, wersje FR/ES/DE/IT
+  - id: gra
+    opis: Mechanika Hyper Light Drifter — tekst gry nie ma dialogów, tylko menu, ustawienia i podpowiedzi
+
+postacie: []   # gra nie ma kwestii mówionych ani pisanych; opowiada obrazem
+
+terminy:
+  - en: dash
+    pl: zryw
+    formy: [zryw]
+    zrodlo: decyzja
+    uwaga: krótkie (4 znaki w polu na 11), oddaje szybki doskok postaci; „unik” sugerowałby tylko obronę
+  - en: gun
+    pl: broń palna
+    formy: [broń, broni]
+    zrodlo: [pliki]
+    uwaga: gra odróżnia broń palną ładowaną cięciami od miecza — jak niemieckie „Schusswaffe” i włoskie „arma da fuoco”
+  - en: gear
+    pl: wyposażenie
+    formy: [wyposaż, sprzęt]
+    zrodlo: decyzja
+  - en: warp
+    pl: teleportować się
+    formy: [teleport]
+    zrodlo: [pliki]
+    uwaga: FR/ES/DE też tłumaczą „warp” jako teleportację
+  - en: Newcomer
+    pl: Nowicjusz
+    formy: [nowicjusz]
+    zrodlo: decyzja
+    uwaga: nazwa trybu; w zdaniach „w trybie Nowicjusz”, bez odmiany nazwy
+  - en: Boss Rush
+    pl: Maraton bossów
+    formy: [maraton]
+    zrodlo: decyzja
+    uwaga: opisowe i naturalne; „boss” w polskich grach zostaje
+  - en: Fully Loaded
+    pl: Pełny zestaw
+    formy: [pełny zestaw]
+    zrodlo: decyzja
+  - en: Mid-Range
+    pl: Średni zestaw
+    formy: [średni]
+    zrodlo: decyzja
+    uwaga: w grze to zestaw wyposażenia, nie zasięg — FR/ES/DE przetłumaczyły to jako „średni zasięg” i wyszło bez sensu
+  - en: Naked
+    pl: Na golasa
+    formy: [golasa]
+    zrodlo: decyzja
+    uwaga: potoczne jak oryginał, opis pod spodem mówi wprost „Nic poza pistoletem”
+  - en: achievement
+    pl: osiągnięcie
+    formy: [osiągnię]
+    zrodlo: decyzja
+    uwaga: termin polskiego Steama
+  - en: co-op
+    pl: kooperacja
+    formy: [kooperac]
+    zrodlo: decyzja
+
+bez_tlumaczenia:
+  - Alt
+  - Drifter
+  - DLC
+  - Xbox
+  - DVR
+  - Windows
+  - HUD
+  - VSYNC
+  - FPS
+  - PLAYSTATION
+  - Heart Machine

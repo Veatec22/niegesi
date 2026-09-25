@@ -1,0 +1,148 @@
+zrodla:
+  - id: pliki
+    opis: DialogLine.Speaker w bundlach dialogs/*, story/*, dlc_01/* — kto mówi daną kwestię
+  - id: ru
+    opis: Rosyjska tabela gry — płeć w czasie przeszłym („Уверен”, „ты смог”, „Ты вернулся”)
+  - id: es-pt
+    opis: Hiszpańska i portugalska tabela gry („Estoy seguro”, „o Dron”, „hombre araña”)
+  - id: fr
+    opis: Francuska tabela gry (twórcy są Francuzami) — Dron w rodzaju żeńskim („je suis sûre”, „contente”)
+  - id: recenzje
+    opis: Recenzje i opisy gry w sieci mówią o Dronie „he”
+  - id: en
+    opis: Angielski oryginał — „spider boi”, „the perfect runner”
+
+postacie:
+  - id: dron
+    nazwa: Dron
+    plec: m
+    mowi_do_gracza: ty
+    rejestr: wesoły, gadatliwy przewodnik, lekkie żarty, łamanie czwartej ściany; w zakończeniu wyznaje, że stworzył poziomy, Numero i gracza
+    odmiana: Dron, Drona, Dronowi („Gang Drona”)
+    zrodlo: [pliki, ru, es-pt, recenzje]
+    uwaga: Francuski robi z Drona kobietę; trzy inne tabele i recenzje — mężczyznę. Przyjęty rodzaj męski.
+  - id: numero
+    nazwa: Numero
+    plec: m
+    mowi_do_gracza: ty (do obu — wy)
+    rejestr: wrogi, wrzeszczy, wersaliki, ucięte przekleństwa
+    odmiana: nieodmienne w tekście (zawsze w znaczniku koloru), „dla Numero”
+    zrodlo: [pliki, en]
+  - id: swiat
+    nazwa: system (terminal wstępu)
+    plec: n
+    rejestr: komunikaty maszynowe, bezosobowo („Wykryto…”, „Nie znaleziono”)
+    zrodlo: [pliki]
+  - id: gracz
+    nazwa: biegacz
+    plec: m
+    uwaga: Oryginał i tłumaczenia traktują gracza jako mężczyznę („spider boi”, „Tu es revenu”). Tam, gdzie to łatwe, formy bezosobowe („udało ci się”, „jesteś z powrotem”); rodzaj męski tylko przy nawiązaniu („w końcu się obudziłeś” — Skyrim).
+    zrodlo: [en, ru, fr, es-pt]
+
+terminy:
+  - en: runner
+    pl: biegacz
+    formy: [biegacz]
+    zrodlo: decyzja
+    uwaga: Tak nazywa gracza Numero i Dron; „runner” bez tłumaczenia byłby żargonem.
+  - en: hook
+    pl: hak
+    formy: [hak, haki, haczy]
+    zrodlo: decyzja
+    uwaga: Nazwa gry i gadżetu CYBER HOOK zostaje; sam przedmiot to hak (Kapitan Hak w nazwie poziomu).
+  - en: crystal
+    pl: kryształ
+    formy: [kryształ, kryształk]
+    zrodlo: decyzja
+  - en: level
+    pl: poziom
+    formy: [poziom]
+    zrodlo: decyzja
+  - en: world
+    pl: świat
+    formy: [świat, świeci]
+    zrodlo: decyzja
+  - en: replay
+    pl: powtórka
+    formy: [powtór]
+    zrodlo: decyzja
+  - en: leaderboard
+    pl: ranking
+    formy: [ranking]
+    zrodlo: decyzja
+    uwaga: Jak w polskim Steamie.
+  - en: personal best
+    pl: rekord (osobisty)
+    formy: [rekord]
+    zrodlo: decyzja
+  - en: timewarp
+    pl: spowolnienie (czasu)
+    formy: [spowoln, spowalni]
+    zrodlo: decyzja
+    uwaga: Mechanika to spowolnienie czasu; „zaginanie czasu” tylko w okrzyku Drona (BEND TIME).
+  - en: marathon mode
+    pl: tryb maratonu
+    formy: [maraton]
+    zrodlo: decyzja
+  - en: green cubes
+    pl: zielone sześciany
+    formy: [sześcian]
+    zrodlo: decyzja
+  - en: probe
+    pl: sonda
+    formy: [sond]
+    zrodlo: fr
+  - en: portal
+    pl: portal
+    formy: [portal]
+    zrodlo: decyzja
+
+bez_tlumaczenia:
+  - Numero
+  - NUMERO
+  - Dron
+  - CYBER HOOK
+  - Cyber Hook
+  - CyberHook
+  - Cyberhook
+  - Speedrun
+  - Discord
+  - Steam
+  - Twitter
+  - MLG
+  - V-Sync
+  - FPS
+  - Speedy Luke
+  - Big Bank
+  - PropulZone
+  - Zartan
+  - Fazer
+  - Koma
+  - Apura
+  - Klonk
+  - Neo
+  - Rabator
+  - Xitra
+  - Rotato
+  - Lerap
+  - Parangon
+  - Eazywi
+  - Shifter Pro
+  - Tobledrone
+  - Metropolis X
+  - Ring Ring
+  - Castle Trashers
+  - Beagle
+  - cORE
+  - Korridor
+  - Three 6
+  - Converger
+  - Slipgate
+  - Skorpion
+  - JCVD
+  - La Grange
+  - Polygon
+
+ustawienia:
+  dialog_klucz: '^(PAX_Line|interworld|dialog_)'
+  max_wiersz: 60

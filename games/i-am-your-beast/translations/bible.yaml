@@ -1,0 +1,217 @@
+zrodla:
+  - id: sceny
+    opis: >-
+      PhraseAsset (AudioTextSynchronizer) z work/survey.json — odcinki dialogów
+      w kolejności wyświetlania; mówiącego wskazuje setColorScheme odcinka
+      (7231/7236 Harding, 7233 Burkin, 7234 Byron) i przebieg wymiany.
+  - id: fleece
+    opis: Bank Fleece „Sample” — UI, HUD, samouczek, okrzyki wrogów, nazwy poziomów; klucz = ID pasażu.
+  - id: kierunek
+    opis: docs/translation-decisions.md — próbka przed verticalem, decyzje użytkownika 2026-09-25.
+
+styl:
+  ton: >-
+    Kontrast: Harding spokojny, suchy i ironicznie uprzejmy; Burkin wojskowo-patriotyczny,
+    w gniewie wrzeszczy; żołnierze I.T.O. przestraszeni, chełpliwi i wulgarni.
+  adaptacja: >-
+    Wulgaryzmy tej samej siły co EN, bez łagodzenia i bez dokładania; bez obelg
+    homofobicznych. Nawiązania kulturowe adaptujemy, gdy są czytelne po polsku.
+    Zachowujemy jąkanie, urwania „--”, didaskalia w gwiazdkach (tłumaczone).
+  zrodlo: uzytkownik
+  uwaga: >-
+    Użytkownik przyjął rekomendacje 2026-09-25. Siła wulgaryzmów to decyzja agenta
+    zgodna z praktyką repo (Wild Bastards, Laika).
+
+postacie:
+  - id: harding
+    nazwa: Alphonse Harding
+    plec: m
+    rejestr: >-
+      suchy, spokojny, krótkie zdania albo celowo przydługie i zbyt grzeczne;
+      przeklina rzadko i wtedy z wagą. Nie twardziel z kina akcji.
+    odmiana: Hardinga, Hardingowi, Hardingiem; w wołaczu mianownik („Harding!”, „Alphonse?”)
+    mowi_do: Burkin — ty + „generale”, w drwinie „Charles”; Byron — ty
+    zrodlo: uzytkownik
+    uwaga: Odrzucono zdrobnienie „ptaszek” — Harding mówi o ptaku serio i na tym polega żart.
+    przyklady:
+      - klucz: 9 Anger#15
+        en: I'm whittling a bird out of soap, Charles.
+        pl: Strugam ptaka z mydła, Charles.
+        zrodlo: uzytkownik
+        uwaga: odrzucony wariant „Rzeźbię w mydle ptaszka, Charles.”
+      - klucz: 4_ImpoliteDispute#4
+        en: I believe I'm making it very unpleasant for a COI agent to exist in the relatively small patch of forest I've made my home.
+        pl: Wydaje mi się, że uprzykrzam życie agentom I.T.O. na tym dość niewielkim skrawku lasu, w którym urządziłem sobie dom.
+        zrodlo: uzytkownik
+      - klucz: 2_Tete-A-Tete#16
+        en: I may be out in the middle of nowhere but, I still find time to read.
+        pl: Może i siedzę na końcu świata, ale na czytanie wciąż znajduję czas.
+        zrodlo: uzytkownik
+  - id: burkin
+    nazwa: generał Charles Burkin
+    plec: m
+    rejestr: >-
+      dowódca, patos obowiązku i ojczyzny, protekcjonalne „synu”; w gniewie krzyk
+      (wersaliki zostają) i przekleństwa.
+    odmiana: Burkina, Burkinowi
+    mowi_do: Harding — ty („Harding”, „synu”)
+    zrodlo: [sceny, kierunek]
+    przyklady:
+      - klucz: 9 Anger#3
+        en: FUCK your access code!
+        pl: PIERDOLĘ twój kod dostępu!
+        zrodlo: decyzja
+  - id: byron
+    nazwa: Byron Ford
+    plec: m
+    rejestr: nerwowy agent I.T.O., jąka się, przeprasza, ciepły; ma córkę
+    mowi_do: >-
+      Harding — „pan” wyłącznie w pierwszej rozmowie (6 Help Wanted), od 8 Helper Alpha
+      „ty” i „Alphonse”
+    zrodlo: uzytkownik
+    uwaga: Odrzucono „ty” od początku (ginie trema pierwszego kontaktu) i „pan” do końca (gryzie się z „Alphonse”).
+  - id: comms
+    nazwa: łącznościowiec (7 Peekaboo)
+    plec: m
+    rejestr: służbista, do słuchającego muzyki żołnierza; ten mówi mu „szefie”
+    zrodlo: [sceny]
+  - id: grupa-wsparcia
+    nazwa: Bob, Kyle, Markus, Nathan, Stephen (Grupa wsparcia)
+    plec: m
+    rejestr: >-
+      weterani na terapii grupowej, mówią do siebie „ty”, potocznie. Bob powołuje się na
+      broszurę, Markus teatralny („bogowie”, „u licha”), Nathan australijski luz („stary”,
+      „Przyjąłem.”), Kyle przeżył trzy starcia z Hardingiem.
+    zrodlo: [sceny]
+    uwaga: >-
+      Kolory odcinków BOB/KYLE/MARKUS/NATHAN/STEPHEN przypisują kwestie. Markus zostaje
+      przy „Weź się ogar-” (SCENE 9/1) — użytkownik odrzucił „Nie przesadzaj-”.
+  - id: jodie-iris
+    nazwa: Jodie, Iris (Grupa wsparcia)
+    plec: k
+    rejestr: jak reszta grupy; Jodie opowiada o jaskini, Iris o oddziałach rakietowych
+    zrodlo: decyzja
+    uwaga: >-
+      Płeć przyjęta z imion („Dopiero przyszłam”, „Nigdy nie widziałam”, „Jak się stamtąd
+      wydostałaś?”); w danych gry brak potwierdzenia. Sprawdzić na głosach w grze.
+      Z tego powodu grupa liczy się „sześcioro”. Burkin i tak mówi do nich „panowie”.
+  - id: zolnierze
+    nazwa: agenci I.T.O. (wrogowie)
+    plec: m
+    rejestr: okrzyki bojowe, strach, przechwałki, wulgaryzmy tej samej siły
+    zrodlo: [fleece]
+    uwaga: 95117 „I'm the Birthday Girl!” — kobieca forma żartobliwa albo agentka; sprawdzić przy fullu.
+
+terminy:
+  - en: COI
+    pl: I.T.O.
+    formy: ['I.T.O']
+    zrodlo: uzytkownik
+    uwaga: >-
+      Skrót od polskiej nazwy, jak w dialogach. Rodzaj żeński według wyrazu głównego
+      (Inicjatywa), nieodmienny: „I.T.O. zrobiła ze mnie”. Z kropkami na prośbę użytkownika
+      (2026-09-25, po verticalu): „ITO” czytało się jak słowo, nie skrótowiec; na końcu
+      zdania jedna kropka („w I.T.O.”). Odrzucono pozostawienie „COI”
+      przy tłumaczonej pełnej nazwie. Napisy na teksturach (jeśli są) zostają bez zmian.
+  - en: Covert Operations Initiative
+    pl: Inicjatywa Tajnych Operacji
+    formy: [Inicjatyw]
+    zrodlo: uzytkownik
+  - en: one last job
+    pl: ostatnia robota
+    formy: [ostatni. robot, ostatnich robót]
+    zrodlo: decyzja
+    uwaga: motyw powracający; „zlecenie” zbyt urzędowe, „misja” zbyt wojskowa
+  - en: babe
+    pl: skarbie
+    formy: [skarb]
+    zrodlo: decyzja
+    uwaga: >-
+      Powracający żart: Byronowi wymyka się „babe” (12 Helper Gamma), potem Harding
+      odpowiada tym samym. Jedno słowo wszędzie.
+  - en: chopper
+    pl: helikopter
+    formy: [helikopter]
+    zrodlo: decyzja
+    uwaga: jak w UI (Helicopter → Helikopter); nie „śmigłowiec”
+  - en: box (5_StartingGun)
+    pl: szufladka
+    formy: [szufladk]
+    zrodlo: decyzja
+    uwaga: filozofia Burkina — polskie „szufladka” niesie ironię zaszufladkowania, której Burkin nie słyszy
+  - en: Cold Sweat
+    pl: Zimny pot
+    formy: [zimny pot, zimnym potem]
+    zrodlo: decyzja
+    uwaga: nazwa dodatku; w 4_ImpoliteDispute „zlany zimnym potem” zostaje z echem nazwy
+  - en: Support Group
+    pl: Grupa wsparcia
+    formy: [grupa wsparcia, grupy wsparcia]
+    zrodlo: decyzja
+  - en: Catch and release
+    pl: Złów i wypuść
+    formy: [złów]
+    zrodlo: uzytkownik
+    uwaga: po review; odrzucono „Złap i wypuść” — termin wędkarski, ryby wracają w fabule
+  - en: Look Down
+    pl: Spójrz w dół
+    formy: [spójrz w dół]
+    zrodlo: uzytkownik
+    uwaga: po review; odrzucono „Nie patrz w dół” (EN bez przeczenia)
+  - en: Dear diary
+    pl: Drogi pamiętniku
+    formy: [pamiętnik]
+    zrodlo: decyzja
+  - en: Wabbit Season
+    pl: Sezon na kłólika
+    formy: [kłólik]
+    zrodlo: uzytkownik
+    uwaga: odrzucono bezpieczne „Sezon polowań”
+  - en: I Am Your Beast
+    pl: Jestem twoją bestią
+    formy: [bestią]
+    zrodlo: uzytkownik
+    uwaga: >-
+      Nazwa ostatniego poziomu tłumaczona; logo gry zostaje angielskie.
+      Odrzucono pozostawienie angielskiego tytułu w nazwie poziomu.
+  - en: I Am Your Fears
+    pl: Jestem twoim strachem
+    formy: [strachem]
+    zrodlo: decyzja
+    uwaga: paralela do „Jestem twoją bestią”
+  - en: Tete-a-Tete
+    pl: Tête-à-tête
+    formy: [tête]
+    zrodlo: decyzja
+  - en: poultice
+    pl: ziołowe krzaki
+    formy: [ziołow]
+    zrodlo: decyzja
+  - en: Quick Turn
+    pl: szybki obrót
+    formy: [obrót, obrot]
+    zrodlo: decyzja
+  - en: Kick
+    pl: kopnięcie
+    formy: [kopnię, kop]
+    zrodlo: decyzja
+  - en: Stomp
+    pl: zdeptanie
+    formy: [zdepta, depn]
+    zrodlo: decyzja
+    uwaga: do potwierdzenia w HUD-zie przy verticalu
+
+bez_tlumaczenia:
+  - Harding
+  - Alphonse
+  - Burkin
+  - Charles
+  - Byron
+  - Strange Scaffold
+  - Xbox
+  - Playstation
+  - Twitch
+  - RPG
+
+ustawienia:
+  dialog_klucz: '#\d+$'

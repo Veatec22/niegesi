@@ -1,0 +1,139 @@
+zrodla:
+  - id: bank
+    opis: Bank tekstów gry (StringLanguageBank en), klucze w review
+  - id: kod
+    opis: Kod gry (Assembly-CSharp) — jak teksty są sklejane
+  - id: ref
+    opis: Tabele innych języków gry (de, fr, es…) w work/bank-*.json
+
+terminy:
+  - en: bro
+    pl: bro
+    formy: [bro]
+    zrodlo: decyzja
+    uwaga: nieodmienne („jednego BRO”, „wszystkich bro”); rdzeń gry i gier słów, polski slang zna „bro”
+  - en: Broforce
+    pl: Broforce
+    formy: [broforce]
+    zrodlo: decyzja
+    uwaga: nazwa własna; w wołaczu też „Broforce”
+  - en: IRONBRO
+    pl: IRONBRO
+    formy: [ironbro, iron bro]
+    zrodlo: decyzja
+    uwaga: nazwa trybu, zostaje jak w grze („tryb IRONBRO”)
+  - en: Brotality
+    pl: brotalność
+    formy: [brotaln]
+    zrodlo: decyzja
+    uwaga: gra słów brutality → brutalność, zachowana
+  - en: rescue
+    pl: uratowanie
+    formy: [uratowa, uratuj]
+    zrodlo: kod
+    uwaga: LevelOverScreen skleja „{n} {MORE} {RESCUE|RESCUES} {UNTIL NEXT UNLOCK}”, forma zależy tylko od n==1 — polski dostał „4 DO URATOWANIA I NOWY BRO ODBLOKOWANY!”, bez rzeczownika wymagającego trzech form
+  - en: threat level
+    pl: poziom zagrożenia
+    formy: [poziom zagrożenia]
+    zrodlo: decyzja
+  - en: Veetman
+    pl: Wietman
+    formy: [wietman]
+    zrodlo: decyzja
+    uwaga: parodie nazw krajów zostają parodiami w polskiej pisowni (Veetman → Wietman)
+  - en: dash
+    pl: sprint
+    formy: [sprint]
+    zrodlo: decyzja
+    uwaga: w Broforce dash to szybszy bieg, nie unik
+  - en: fire
+    pl: strzał
+    formy: [strzał]
+    zrodlo: decyzja
+    uwaga: nazwa przycisku („NACIŚNIJ STRZAŁ”)
+  - en: Brodown
+    pl: brojedynek
+    formy: [brojedyn]
+    zrodlo: decyzja
+    uwaga: dogrywka po remisie w versus; showdown → pojedynek, z „bro” jak w oryginale. Nazwa konkursu „Weekend Workshop Brodown” zostaje
+  - en: Covert Operation
+    pl: tajna operacja
+    formy: [tajna operacj, tajnej operacj]
+    zrodlo: decyzja
+  - en: Workshop
+    pl: Warsztat
+    formy: [warszta]
+    zrodlo: decyzja
+    uwaga: oficjalna polska nazwa Steam Workshop w kliencie Steama
+  - en: Deathmatch
+    pl: deathmatch
+    formy: [deathmatch]
+    zrodlo: decyzja
+    uwaga: nazwa trybu utarta w polskich grach
+  - en: race
+    pl: wyścig
+    formy: [wyścig]
+    zrodlo: decyzja
+  - en: custom map
+    pl: mapa gracza
+    formy: [mapa gracza, mapach graczy, własn]
+    zrodlo: decyzja
+    uwaga: w menu głównym „WŁASNE KAMPANIE”, przy trybie trudnym i błędach „mapy graczy”
+  - en: gyming
+    pl: koksowanie
+    formy: [koksowani]
+    zrodlo: decyzja
+    uwaga: podpisy bossów Bruiser/Executioners; polski slang siłowni zamiast dosłownej „technologii siłowni”
+
+postacie:
+  - id: prezydent
+    nazwa: Prezydent
+    plec: m
+    klucz: '^CUTSCENE_PRESIDENT_'
+    mowi_do_gracza: ty
+    rejestr: patetyczny, podniosły; „Panowie” (PRESIDENT_5–6) to liczba mnoga do całej ekipy
+    zrodlo: decyzja
+  - id: jezus
+    nazwa: Jezus (finał)
+    plec: m
+    klucz: '^CUTSCENE_JESUS_'
+    mowi_do_gracza: ty
+    rejestr: łagodny, uroczysty; „Hello, friend” = liczba pojedyncza
+    zrodlo: [bank]
+
+ustawienia:
+  uwaga: >
+    Opisy regionów na mapie (WORLD_*) i podpisy przerywników (CUTSCENE_*) piszemy wersalikami — fonty
+    Hudson i 04B mają same wielkie litery, a brakujące polskie litery podstawiane przez Windows
+    wyszłyby jako małe. Rozkazy na mapie w bezokoliczniku („UZIEMIĆ ICH!”), jak w wojsku —
+    omija wybór „ty/wy” wobec Broforce. Parodie nazw krajów zostają parodiami:
+    Kambodium/KamBROdium, Twukraina/Naszkraina, Wietman, Irakistan, Jalpin, Mookgolia, Afreeka, Arstotzka.
+
+bez_tlumaczenia:
+  - Broforce
+  - IRONBRO
+  - IRON BRO
+  - FNET
+  - VSYNC
+  - VERSUS
+  - AFK
+  - OK
+  - DEATHMATCH
+  - HOST
+  - TOP
+  - Offline
+  - WWB
+  - BLRRGGGGG
+  - WHAT IS LOVE?
+  - Weekend Workshop Brodown
+  - Afreeka
+  - Arstotzka
+  - Val Verde
+  - Ellen Ripbro
+  - MacBrover
+  - Time Bro
+
+ignoruj:
+  - sprawdzenie: terminy
+    klucz: 'CUSTOM_CAMPAIGN_DESCRIPTION_6'
+    powod: nazwa konkursu Weekend Workshop Brodown zostaje w oryginale

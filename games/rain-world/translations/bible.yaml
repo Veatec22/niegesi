@@ -1,0 +1,252 @@
+# Rain World — biblia tłumaczenia. Format: .claude/skills/localization/BIBLE.md
+
+zrodla:
+  - id: wiki-pl
+    opis: Polska wersja oficjalnej wiki (Miraheze), tłumaczona przez społeczność; niepełna i niespójna (Survivor raz „Przetrwaniec”, raz „Ocalały”).
+    url: https://rainworld.miraheze.org/wiki/Creatures/pl
+  - id: wiki-pl-obrzeza
+    opis: Strona regionu Outskirts na polskiej wiki — Obrzeża, Mnich, Włócznik.
+    url: https://rainworld.miraheze.org/wiki/Outskirts/pl
+  - id: kod
+    opis: Kontekst z work/en.json — klasy gry, w których tekst stoi w kodzie (tools/StrMap.cs).
+  - id: ru
+    opis: Rosyjska tabela gry (work/ref-rus.json) — płeć w czasie przeszłym, tłumaczenie imion i skrótów.
+  - id: mechanika
+    opis: Ustalenia z kodu gry, opisane w docs/technical.md.
+
+postacie:
+  - id: gracz
+    nazwa: ślimakot gracza
+    plec: m
+    mowi_do_gracza: ty
+    rejestr: podpowiedzi i opisy zwracają się do gracza w 2. osobie, krótko
+    zrodlo: [kod, decyzja]
+    uwaga: >-
+      Angielski nie określa płci ślimakotów; „ślimakot” jest rodzaju męskiego, więc formy
+      o graczu („jesteś głodny”, „wróciłeś”) idą za rzeczownikiem. Iteratory mówią o nim „it” —
+      tam, gdzie to „stworzenie”, forma nijaka („jest zbyt głupie”).
+  - id: ksiezyc
+    nazwa: Patrząca na Księżyc (przezwisko Luna)
+    plec: k
+    klucz: 'SLOracleBehavior|MoonConversation'
+    mowi_do_gracza: ty; do gracza „mały stworku”, „przyjacielu”, „mały archeologu”
+    rejestr: ciepła, zmęczona, uprzejma; po uszkodzeniu urywane zdania
+    zrodlo: [ru]
+    uwaga: rosyjski „Смотрящая-на-Луну”, „я устала”, „я говорила”
+  - id: kamyki
+    nazwa: Pięć Kamyków (przezwisko Kamyk)
+    plec: m
+    klucz: 'SSOracleBehavior|PebblesConversation|CLOracleBehavior|SSOracleRotBehavior'
+    mowi_do_gracza: ty; „mały stworku”
+    rejestr: chłodny, wyniosły, sarkastyczny; w kampanii Świętego zgaszony
+    zrodlo: [ru]
+    uwaga: >-
+      W Downpour ta sama klasa (SSOracleBehavior, SSSleepoverBehavior) mówi też za Księżyc
+      sprzed upadku w kampanii Włócznika — płeć ustalana linia po linii z rosyjskiego
+      („я думала”, „я рада” = Księżyc; „я занят”, „побыть один” = Kamyki).
+  - id: bak
+    nazwa: Bąk (Spinning Top)
+    plec: m
+    mowi_do_gracza: ty; o graczu w 3. os. nijakiej („jest zbyt głupie”)
+    rejestr: kpiący, dziecinny, wykrzyknienia „OA!”
+    zrodlo: [ru]
+    uwaga: >-
+      Rosyjski w wielu miejscach unika form rodzajowych („мне хотелось”), ale w dialogu 209
+      ma „Я провёл” — rodzaj męski; zgodne też z rzeczownikiem „bąk”.
+  - id: ksiaze
+    nazwa: Książę (Prince, Watcher)
+    plec: m
+    rejestr: egzaltowany, dworski („Albowiem zostaniesz wywyższony”)
+    zrodlo: [decyzja]
+  - id: iteratory-czatlogi
+    nazwa: iteratory o nieustalonej płci (GW, HR, UU, WO, EOC, PG, SI, PI, Niezrównana Niewinność)
+    plec: '?'
+    rejestr: plotkarski czat grup iteratorów
+    zrodlo: [ru]
+    uwaga: >-
+      Rosyjski konsekwentnie unika rodzaju w ich liniach; robimy tak samo („doszły mnie”, „nie wypada mi”).
+      Męscy według rosyjskiego: SCS, BZN, NGI; żeńskie: SSL, Luna, Drzazga Słomy.
+  - id: starozytni-dokumenty
+    nazwa: listy i zwoje starożytnych (perły 42, 237, 238)
+    plec: '?'
+    zrodlo: [decyzja]
+    uwaga: >-
+      Bez rodzaju, chyba że tekst go podaje: w 238 autor pisze o sobie „Nine-Leaf, when he comes”
+      (parodia skargi na Ea-nasira), więc tam formy męskie.
+  - id: tworcy
+    nazwa: twórcy More Slugcats w komentarzu (Andrew, Will, Dakras, Norgad, Screams, Cappin, Slugitar i in.)
+    plec: '?'
+    mowi_do_gracza: ty / wy
+    rejestr: luźny, entuzjastyczny, żarty z procesu tworzenia
+    zrodlo: decyzja
+    uwaga: >-
+      Prawdziwe osoby; płci nie wnioskujemy z imion ani pseudonimów. Pierwsza osoba bez form
+      rodzajowych („udało mi się”, „moim zamiarem było”, strona bierna). O innych twórcach
+      w 3. osobie tylko tak, jak mówi oryginał („he” Cappin, „they” Minkimaro/Ender → bez rodzaju).
+      Postacie gry nazywamy rzeczownikami rodzaju męskiego (Pirotechnik, Strumyk) i uzgadniamy
+      z nimi formy, chyba że twórca podkreśla płeć — wtedy „ta postać”, „ona” (Pirotechnik:
+      Andrew mówi „she”, „her children”).
+
+terminy:
+  # Ślimakoty
+  - {en: slugcat, pl: ślimakot, formy: [ślimakot], zrodlo: [wiki-pl]}
+  - {en: slugpup, pl: ślimakocię, formy: [ślimakoci], zrodlo: decyzja, uwaga: „pup” w Jolly Co-op to „maluch”}
+  - en: Survivor
+    pl: Ocalały
+    formy: [ocalał]
+    zrodlo: [wiki-pl, ru]
+    uwaga: >-
+      Wiki podaje raz „Przetrwaniec”, raz „Ocalały”; rosyjski „Выживший”. W wersji próbnej 0.1.0
+      było „Przetrwaniec” — zmienione przy pełnym tłumaczeniu na naturalniejsze „Ocalały”.
+  - {en: Monk, pl: Mnich, formy: [mnich], zrodlo: [wiki-pl]}
+  - {en: Hunter, pl: Łowca, formy: [łowc], zrodlo: [wiki-pl]}
+  - {en: Gourmand, pl: Smakosz, formy: [smakosz], zrodlo: decyzja, uwaga: „indulger of the simpler pleasures”}
+  - en: Artificer
+    pl: Pirotechnik
+    formy: [pirotechni]
+    zrodlo: decyzja
+    uwaga: >-
+      „master of pyrotechnics and explosives”; wiki ma „Artyficer”, rosyjski „Техник” (rzeczownik męski
+      jako imię). W komentarzu Andrew mówi o niej „she” i „jej dzieci”; imię zostaje, a zaimki w tych
+      liniach idą przez „ta postać”/„jej”. „Pirotechniczka” odrzucona — użytkownik zaakceptował
+      „Pirotechnik” 2026-09-24 (zrodlo: uzytkownik).
+  - {en: Rivulet, pl: Strumyk, formy: [strumyk], zrodlo: [wiki-pl]}
+  - {en: Spearmaster, pl: Włócznik, formy: [włóczni], zrodlo: [wiki-pl-obrzeza]}
+  - {en: Saint, pl: Święty, formy: [święt], zrodlo: [ru]}
+  - {en: Watcher, pl: Obserwator, formy: [obserwator], zrodlo: [wiki-pl], uwaga: nazwa dodatku „The Watcher” zostaje po angielsku}
+  # Iteratory (skrót w czatlogach = kod mówiącego; gra koloruje linie po przetłumaczonym kodzie)
+  - {en: Looks to the Moon, pl: Patrząca na Księżyc, formy: [patrząc], zrodlo: [ru], uwaga: wiki „Patrzy na Księżyc”; forma imiesłowowa jak rosyjskie „Смотрящая-на-Луну”}
+  - {en: Moon (przezwisko), pl: Luna, formy: [lun], zrodlo: [ru], uwaga: rzeczownik żeński dla żeńskiej postaci, jak rosyjskie „Луна”}
+  - {en: Big Sis Moon (BSM), pl: Starsza Siostra Luna (SSL), formy: [starsz], zrodlo: [ru]}
+  - {en: Five Pebbles (FP), pl: Pięć Kamyków (PK), formy: [kamyk], zrodlo: [wiki-pl, ru]}
+  - {en: Pebbles (przezwisko), pl: Kamyk, formy: [kamyk], zrodlo: decyzja}
+  - {en: Seven Red Suns (SRS), pl: Siedem Czerwonych Słońc (SCS), formy: [słońc], zrodlo: [ru]}
+  - {en: No Significant Harassment (NSH), pl: Brak Znaczącego Nękania (BZN), formy: [nękani], zrodlo: decyzja, uwaga: rosyjski „Нет Значимых Забот”}
+  - {en: Chasing Wind (CW), pl: Goniący Wiatr (GW), formy: [goniąc], zrodlo: [ru]}
+  - {en: Erratic Pulse (EP), pl: Nieregularny Puls (NP), formy: [puls], zrodlo: [ru]}
+  - {en: Gazing Stars (GS), pl: Patrzący w Gwiazdy (PG), formy: [gwiazd], zrodlo: [ru]}
+  - {en: Secluded Instinct (SI), pl: Samotniczy Instynkt (SI), formy: [instynkt], zrodlo: [ru]}
+  - {en: Wandering Omen (WO), pl: Wędrowny Omen (WO), formy: [omen], zrodlo: [ru]}
+  - {en: Pleading Intellect (PI), pl: Proszący Intelekt (PI), formy: [intelekt], zrodlo: [ru]}
+  - {en: Unparalleled Innocence, pl: Niezrównana Niewinność, formy: [niewinnoś], zrodlo: [ru]}
+  - {en: Sliver of Straw, pl: Drzazga Słomy, formy: [drzazg, drzazdz], zrodlo: decyzja, uwaga: postać żeńska („She's quite legendary”); rzeczownik żeński pasuje; sliverists → drzazgiści}
+  - en: iterator
+    pl: iterator
+    formy: [iterator]
+    zrodlo: [ru, uzytkownik]
+    odrzucone: Przeliczacz (wiki-pl) — użytkownik 2026-09-24 „idziemy w iterator”
+    uwaga: >-
+      Wiki-pl ma „Przeliczacz”, ale niekonsekwentnie; rosyjski zostawia „итератор”. Termin jest
+      rozpoznawalny w społeczności i brzmi jak nazwa gatunku, nie opis. Perła 20 opiera się na grze
+      słów („iterujemy… dlatego nazwali nas Iteratorami”), którą „Przeliczacz” by zniszczył (review).
+  # Świat
+  - {en: shelter, pl: schronienie, formy: [schroni], zrodlo: [wiki-pl]}
+  - {en: hibernate, pl: hibernować / hibernacja, formy: [hibern], zrodlo: [wiki-pl]}
+  - {en: cycle, pl: cykl, formy: [cykl], zrodlo: [wiki-pl]}
+  - {en: karma, pl: karma, formy: [karm], zrodlo: [wiki-pl]}
+  - {en: Karma Flower, pl: Kwiat karmy, formy: [kwiat karmy, kwiatu karmy], zrodlo: [ru]}
+  - {en: overseer, pl: nadzorca, formy: [nadzorc], zrodlo: [wiki-pl]}
+  - {en: passage, pl: przeprawa, formy: [przepraw], zrodlo: decyzja, uwaga: rosyjski „переход”; „przejście” myliłoby się z przejściami między pokojami}
+  - {en: echo, pl: Echo, formy: [ech], zrodlo: [wiki-pl]}
+  - {en: pearl, pl: perła, formy: [perł, pereł, perel, perl], zrodlo: [wiki-pl]}
+  - {en: neuron, pl: neuron, formy: [neuron], zrodlo: [ru]}
+  - {en: Scavenger, pl: zbieracz, formy: [zbieracz], zrodlo: decyzja, uwaga: zbierają i handlują przedmiotami; wiki „Grabiarze”, rosyjski „Мусорщик”}
+  - {en: shortcut / pipe, pl: tunel / rura, formy: [tunel, rur], zrodlo: decyzja}
+  - {en: Expedition, pl: Wyprawa, formy: [wypraw], zrodlo: decyzja}
+  - {en: perk / burden, pl: atut / brzemię, formy: [atut, brzemi], zrodlo: decyzja}
+  - {en: challenge, pl: wyzwanie, formy: [wyzwa], zrodlo: [ru]}
+  - {en: Ripple (Watcher), pl: fala, formy: [fal], zrodlo: decyzja, uwaga: rosyjski „рябь”}
+  - {en: warp (Watcher), pl: przeniesienie, formy: [przenie], zrodlo: decyzja}
+  - {en: ascension (Święty), pl: wzniesienie, formy: [wznie], zrodlo: decyzja}
+  - {en: Story (menu), pl: Fabuła, formy: [fabuł], zrodlo: decyzja}
+  - {en: save slot, pl: zapis / slot zapisu, formy: [zapis], zrodlo: decyzja}
+  # Stworzenia (wybór; pełna lista w pl.json pod creaturetype-*)
+  - {en: Lizard, pl: jaszczur, formy: [jaszczur], zrodlo: [ru], uwaga: duży drapieżnik — „jaszczurka” byłaby za mała}
+  - {en: Vulture, pl: sęp, formy: [sęp, sęp], zrodlo: [ru]}
+  - {en: Centipede / Centiwing / Aquapede, pl: skolopendra / skrzydłopendra / wodopendra, formy: [pendr], zrodlo: [ru, decyzja]}
+  - {en: Batfly / Batnip, pl: muchoperz / muchomiętka, formy: [muchoperz, muchomięt], zrodlo: decyzja, uwaga: gra słów bat+fly, catnip→kocimiętka}
+  - {en: Noodlefly, pl: kluskomucha, formy: [kluskomuch], zrodlo: decyzja, uwaga: rosyjski „лапшемуха”}
+  - {en: Squidcada, pl: kałamarcykada, formy: [kałamarcykad], zrodlo: decyzja}
+  - {en: Dropwig, pl: spadoskorek, formy: [spadoskor], zrodlo: decyzja, uwaga: earwig = skorek}
+  - {en: Rain Deer, pl: deszczojeleń, formy: [deszczojel], zrodlo: [ru]}
+  - {en: Daddy / Brother / Mother Long Legs, pl: Tatko / Brat / Mama Długonogi(a), formy: [długonog], zrodlo: [ru]}
+  - {en: Spore Puff / Puff Ball, pl: purchawka, formy: [purchaw], zrodlo: [ru], uwaga: rosyjski „гриб-дождевик”}
+  - {en: Pole Plant / Pole Mimic, pl: tyczkowiec, formy: [tyczkow], zrodlo: decyzja}
+  - {en: Slime Mold, pl: śluzowiec, formy: [śluzow], zrodlo: [ru]}
+  - {en: Flashbang / Flare Bomb, pl: bomba świetlna, formy: [świetln], zrodlo: decyzja}
+  # Regiony (podstawka)
+  - {en: Outskirts, pl: Obrzeża, formy: [obrzeż], zrodlo: [wiki-pl-obrzeza]}
+  - {en: Industrial Complex, pl: Kompleks Przemysłowy, formy: [kompleks], zrodlo: [ru]}
+  - {en: Drainage System, pl: System Odwadniający, formy: [odwadniaj], zrodlo: decyzja}
+  - {en: Garbage Wastes, pl: Śmieciowe Pustkowie, formy: [śmieciow], zrodlo: decyzja}
+  - {en: Shaded Citadel, pl: Cienista Cytadela, formy: [cytadel], zrodlo: [ru]}
+  - {en: Chimney Canopy, pl: Korony Kominów, formy: [kominów], zrodlo: decyzja}
+  - {en: Sky Islands, pl: Podniebne Wyspy, formy: [podniebn], zrodlo: decyzja}
+  - {en: Farm Arrays, pl: Szeregi Farm, formy: [szeregi farm, szeregach farm, szeregów farm], zrodlo: decyzja}
+  - {en: Subterranean, pl: Podziemia, formy: [podziem], zrodlo: [ru]}
+  - {en: The Exterior, pl: Poszycie, formy: [poszyci], zrodlo: decyzja, uwaga: zewnętrzna powłoka nadbudowy Pięciu Kamyków; rosyjski „Корпус”}
+  - {en: Shoreline, pl: Wybrzeże, formy: [wybrzeż], zrodlo: [ru]}
+  - {en: Memory Crypts, pl: Krypty Pamięci, formy: [krypt], zrodlo: [ru]}
+  - {en: Undergrowth, pl: Podszyt, formy: [podszyt], zrodlo: decyzja}
+  - {en: Outer Expanse, pl: Zewnętrzne Rubieże, formy: [rubież], zrodlo: decyzja}
+  - {en: Rot, pl: Zgnilizna, formy: [zgnili], zrodlo: [ru]}
+  - {en: Pipeyard, pl: Rurowisko, formy: [rurowisk], zrodlo: decyzja}
+  - {en: Metropolis, pl: Metropolia, formy: [metropoli], zrodlo: [ru]}
+  - {en: Waterfront Facility, pl: Nabrzeżna Placówka, formy: [nabrzeżn], zrodlo: decyzja}
+  - {en: Submerged Superstructure, pl: Zatopiona Nadbudowa, formy: [zatopion], zrodlo: decyzja}
+  - {en: Precipice, pl: Urwisko, formy: [urwisk], zrodlo: decyzja}
+  - {en: Rubicon, pl: Rubikon, formy: [rubikon], zrodlo: [ru]}
+  - {en: Silent Construct, pl: Milcząca Konstrukcja, formy: [milcząc], zrodlo: decyzja}
+  - {en: Sunken Pier, pl: Zatopione Molo, formy: [zatopione molo, zatopionego mola, zatopionym molo], zrodlo: decyzja}
+  - {en: The Gutter, pl: Rynsztok, formy: [rynsztok], zrodlo: decyzja}
+  - {en: Bitter Aerie, pl: Gorzkie Gniazdo, formy: [gorzk], zrodlo: decyzja}
+  - {en: Void Fluid, pl: Płyn Pustki, formy: [płyn], zrodlo: [ru]}
+  - {en: The Mark (of Communication), pl: Znak, formy: [znak], zrodlo: decyzja}
+  - {en: Joke Rifle, pl: żartostrzelba, formy: [żartostrzelb], zrodlo: decyzja, uwaga: primaaprilisowy żart twórców}
+  - {en: Bell of Gesture, pl: Dzwon Gestu, formy: [dzwon], zrodlo: decyzja, uwaga: w przekazie na żywo mówca „Dzwon:”, Host → „Prowadzący:”}
+  - {en: Five Pebbsi, pl: Pięć Kamyksi, formy: [kamyksi], zrodlo: decyzja, uwaga: marka napoju z reklamy (gra słów z Pepsi); grafika reklamy w grze zostaje po angielsku}
+  - {en: Luna (miasto), pl: Luna, formy: [lun], zrodlo: [ru], uwaga: nazwa miasta zbiega się z przezwiskiem Patrzącej na Księżyc; tak samo w rosyjskim; gdzie oba stoją obok siebie, dopowiadamy „miasto Luna”}
+  - {en: Void Sea, pl: Morze Pustki, formy: [morze pustki, morza pustki, morzu pustki, morzem pustki], zrodlo: [ru]}
+
+bez_tlumaczenia:
+  - Rain World
+  - Downpour
+  - The Watcher
+  - REMIX
+  - Remix
+  - Jolly Co-op
+  - JOLLY CO-OP
+  - More Slugcats
+  - Akupara Games
+  - OptionInterface
+  - FPS
+  - Esc
+  - Shift
+  - R1
+  - RB
+  - DUALSHOCK
+  - Xbox
+  - PlayStation
+  - Inv
+  - EOC
+  - NGI
+  - HF
+  - HR
+  - UU
+
+ustawienia:
+  dialog_klucz: '^dlg:'
+
+ignoruj:
+  - sprawdzenie: terminy
+    klucz: '^dlg:lm_tower09-white\.txt#'
+    powod: Andrew rozwija angielskie skróty regionów; nazwy zostają po angielsku, bo tłumaczą skróty
+  - sprawdzenie: terminy
+    klucz: '^(str:The passage of time|dlg:126\.txt#9|dlg:sh_e04riv-white\.txt#5)'
+    powod: „passage of time” to upływ czasu, nie przeprawa
+  - sprawdzenie: typografia
+    klucz: '^dlg:(138|139)\.txt#'
+    powod: 'dopisek „ : -30” to instrukcja gry, dzięki której linia nie jest wyświetlana (jak w EN)'
+  - sprawdzenie: terminy
+    klucz: '^str:(watcher-name|watcher-description)$'
+    powod: nazwa dodatku The Watcher zostaje po angielsku

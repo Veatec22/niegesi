@@ -1,0 +1,604 @@
+# Raport kontrolny — laika-aged-through-blood
+
+Tylko do przejrzenia. Zgłoszenie to miejsce do obejrzenia, nie wyrok.
+
+Wpisy z tekstem: 3470. Biblia: tak.
+
+| Sekcja | Zgłoszenia |
+| --- | ---: |
+| Brak tłumaczenia | 0 |
+| Tokeny i znaczniki | 0 |
+| Płeć mówiącego (według biblii) | 0 |
+| Forma zwracania się | 0 |
+| Terminy z biblii | 5 |
+| Spójność: ten sam oryginał, różne PL | 48 |
+| Angielskie resztki | 51 |
+| Liczebniki przy placeholderach | 0 |
+| Długość (ryzyko ucięcia) | 24 |
+| Wielkie litery | 62 |
+| Typografia | 0 |
+
+## Terminy z biblii (5)
+
+- `UI_CRAFTING_MONEYSACKS_UPGRADE_NAME` — viscera → wnętrzności
+  - EN: Viscera Sacks Upgrade
+  - PL: Ulepszenie worków
+- `UI_TUT_ROPE_DESC` — bike → motor
+  - EN: Wheelie your bike to ride over the rope
+  - PL: Unieś przednie koło, żeby przejechać po linie
+- `UI_SETTINGS_GAME_WALKIETIME` — walkie → krótkofalówka
+  - EN: WALKIE SLOW TIME
+  - PL: SPOWOLNIENIE ROZMÓW
+- `UI_TUT_DASHTHROUGH_NAME` — dash → zryw
+  - EN: DASH THROUGH
+  - PL: PRZEMKNIJ
+- `D_4_FloatingCity_MainGauge_Walkie_INSIDER_3` — Renegades → Renegaci
+  - EN: Then kept some soldiers to keep us Renegades from doing anything.
+  - PL: A tu zostawili żołnierzy, żebyśmy my, Renegaci, nic nie zrobili.
+
+## Spójność: ten sam oryginał, różne PL (48)
+
+- `UI_TUT_BRAKE_NAME` — 2 warianty dla tego samego EN
+  - EN: BRAKE
+  - PL: HAMOWANIE
+- `UI_SETTINGS_CONTROLS_BRAKE` — 2 warianty dla tego samego EN
+  - EN: BRAKE
+  - PL: HAMUJ
+- `UI_BUTTON_TELEPORT` — 2 warianty dla tego samego EN
+  - EN: TELEPORT
+  - PL: TELEPORTUJ
+- `UI_MENUOPTION_TELEPORT` — 2 warianty dla tego samego EN
+  - EN: TELEPORT
+  - PL: TELEPORT
+- `AC_BLACKJACK_GAMES_1_NAME` — 2 warianty dla tego samego EN
+  - EN: Gambler
+  - PL: Hazardzistka
+- `CH_BLACKJACKER_TRUCK_B_NAME` — 2 warianty dla tego samego EN
+  - EN: GAMBLER
+  - PL: HAZARDZISTA
+- `CH_BLACKJACKER_TRUCK_A_NAME` — 2 warianty dla tego samego EN
+  - EN: GAMBLER
+  - PL: HAZARDZISTA
+- `UI_TUT_ACCELERATE_NAME` — 2 warianty dla tego samego EN
+  - EN: ACCELERATE
+  - PL: PRZYSPIESZANIE
+- `UI_SETTINGS_CONTROLS_ACCELERATE` — 2 warianty dla tego samego EN
+  - EN: ACCELERATE
+  - PL: PRZYSPIESZ
+- `UI_TUT_SHOOT_NAME` — 2 warianty dla tego samego EN
+  - EN: SHOOT
+  - PL: STRZELANIE
+- `UI_SETTINGS_CONTROLS_SHOOT` — 2 warianty dla tego samego EN
+  - EN: SHOOT
+  - PL: STRZELAJ
+- `D_A_Musicians_GuitarAndGlasses_Undone_GLASSES_2` — 2 warianty dla tego samego EN
+  - EN: My bar.
+  - PL: Mój bar.
+- `D_A_Musicians_GuitarAndGlasses_Briefing_GLASSES_3` — 2 warianty dla tego samego EN
+  - EN: My bar.
+  - PL: W moim barze.
+- `D_A_Musicians_GuitarAndGlasses_Briefing_GLASSES_5` — 2 warianty dla tego samego EN
+  - EN: My bar.
+  - PL: Mój bar.
+- `D_A_Musicians_GuitarAndGlasses_Briefing_GLASSES_7` — 2 warianty dla tego samego EN
+  - EN: My bar.
+  - PL: Mój bar.
+- `D_A_Musicians_GuitarAndGlasses_Briefing_GLASSES_9` — 2 warianty dla tego samego EN
+  - EN: My bar.
+  - PL: Mój bar.
+- `D_A_Musicians_GuitarAndGlasses_Briefing_GLASSES_13` — 2 warianty dla tego samego EN
+  - EN: My bar.
+  - PL: Mój bar.
+- `D_A_Musicians_GuitarAndGlasses_Briefing_GLASSES_11` — 2 warianty dla tego samego EN
+  - EN: My bar.
+  - PL: Mój bar.
+- `D_A_Musicians_GuitarAndGlasses_Briefing_GLASSES_16` — 2 warianty dla tego samego EN
+  - EN: My bar.
+  - PL: Mój bar.
+- `D_2_Lighthouse_Shaza_Undone1_LAIKA_20` — 2 warianty dla tego samego EN
+  - EN: I won't.
+  - PL: Nie będę.
+- `D_K_Saloon_Undone_LAIKA_14` — 2 warianty dla tego samego EN
+  - EN: I won't.
+  - PL: Nie pozwolę.
+- `D_K_Herman_Undone_3_LAIKA_10` — 2 warianty dla tego samego EN
+  - EN: I won't.
+  - PL: Nie będę.
+- `D_F_PuppysBirth_Briefing_LAIKA_11` — 2 warianty dla tego samego EN
+  - EN: Whatever.
+  - PL: Niech ci będzie.
+- `D_1_Mines_GettingKeys_Undone4_LAIKA_5` — 2 warianty dla tego samego EN
+  - EN: Whatever.
+  - PL: Niech będzie.
+- `D_S_NightmaresOne_Briefing_LAIKA_8` — 2 warianty dla tego samego EN
+  - EN: Of course.
+  - PL: No jasne.
+- `D_S_EntomBrother_Briefing_LAIKA_12` — 2 warianty dla tego samego EN
+  - EN: Of course.
+  - PL: No jasne.
+- `D_S_PoochiesCorpse_Briefing_LAIKA_10` — 2 warianty dla tego samego EN
+  - EN: Of course.
+  - PL: Oczywiście.
+- `D_S_NightmaresThree_Complete_LAIKA_6` — 2 warianty dla tego samego EN
+  - EN: Of course.
+  - PL: No jasne.
+- `D_S_Tombstone_Complete_LAIKA_4` — 2 warianty dla tego samego EN
+  - EN: Of course.
+  - PL: Oczywiście.
+- `D_K_Swings_Undone4_LAIKA_2` — 2 warianty dla tego samego EN
+  - EN: Of course.
+  - PL: No jasne.
+- `D_B_Puppy_B3_PUPPY_6` — 2 warianty dla tego samego EN
+  - EN: OK.
+  - PL: Dobra.
+- `D_2_Lighthouse_Final_Undone4_LAIKA_8` — 2 warianty dla tego samego EN
+  - EN: OK.
+  - PL: Dobra.
+- `D_S_PlantSeed_Briefing_PRIMO_14` — 2 warianty dla tego samego EN
+  - EN: OK.
+  - PL: Dobrze.
+- `D_F_DaughterDies_Briefing_MAYA_12` — 2 warianty dla tego samego EN
+  - EN: It's just...
+  - PL: Po prostu...
+- `D_2_Lighthouse_Borderpoints_Undone10_LIGHTCORPORAL2_11` — 2 warianty dla tego samego EN
+  - EN: It's just...
+  - PL: Tylko że...
+- `D_3_TheBigTree_Primo_Complete_PRIMO_7` — 2 warianty dla tego samego EN
+  - EN: Why?
+  - PL: Czemu?
+- `D_4_FloatingCity_MainGauge_CompleteGoal_LAIKA_3` — 2 warianty dla tego samego EN
+  - EN: Why?
+  - PL: Czemu?
+- `D_S_PoochiesCorpse_Kidgutter_LAIKA_7` — 2 warianty dla tego samego EN
+  - EN: Why?
+  - PL: Dlaczego?
+- `D_B_Puppy_F2_LAIKA_3` — 2 warianty dla tego samego EN
+  - EN: OK?
+  - PL: Dobrze?
+- `D_6_ThreeMainQuests_Complete_CHIEF_17` — 2 warianty dla tego samego EN
+  - EN: OK?
+  - PL: Jasne?
+- `D_B_Maya_F1_LAIKA_5` — 2 warianty dla tego samego EN
+  - EN: Now what?
+  - PL: I co teraz?
+- `D_4_FloatingCity_MainGauge_BackToInsider_LAIKA_1` — 2 warianty dla tego samego EN
+  - EN: Now what?
+  - PL: Co teraz?
+- `D_K_PeaceBird_LAIKA_2` — 2 warianty dla tego samego EN
+  - EN: Come again?
+  - PL: Że co?
+- `D_3_TheBigTree_KeyRooms_FirstDoorFound_LAIKA_3` — 2 warianty dla tego samego EN
+  - EN: Come again?
+  - PL: Możesz powtórzyć?
+- `D_A_GiftsPuppy_GameBoy_Intro_LAIKA_4` — 2 warianty dla tego samego EN
+  - EN: Come again?
+  - PL: Że co?
+- `D_4_FloatingCity_Briefing_LAIKA_4` — 2 warianty dla tego samego EN
+  - EN: Come again?
+  - PL: Możesz powtórzyć?
+- `D_2_Lighthouse_Borderpoints_Undone10_LIGHTCORPORAL2_12` — 2 warianty dla tego samego EN
+  - EN: Hm.
+  - PL: Hm.
+- `D_2_Lighthouse_Shaza_Complete_LAIKA_3` — 2 warianty dla tego samego EN
+  - EN: Hm.
+  - PL: Mhm.
+
+## Angielskie resztki (51)
+
+- `UI_LOG_MONEY_MESSAGE` — identyczne z oryginałem
+  - EN: ({0}) <color=#FF492E>{1}</color>
+  - PL: ({0}) <color=#FF492E>{1}</color>
+- `UI_MENUOPTION_STATUS` — identyczne z oryginałem
+  - EN: STATUS
+  - PL: STATUS
+- `UI_LOG_ITEM_MESSAGE` — identyczne z oryginałem
+  - EN: <color=#FF492E>{0}</color> {1}
+  - PL: <color=#FF492E>{0}</color> {1}
+- `UI_MENUOPTION_TELEPORT` — identyczne z oryginałem
+  - EN: TELEPORT
+  - PL: TELEPORT
+- `UI_TUT_DRIFT_NAME` — identyczne z oryginałem
+  - EN: DRIFT
+  - PL: DRIFT
+- `UI_SETTINGS_CONTROLS_DRIFT` — identyczne z oryginałem
+  - EN: DRIFT
+  - PL: DRIFT
+- `CH_SHOPKEEPER_GAS_W04_NAME` — identyczne z oryginałem
+  - EN: DALLY
+  - PL: DALLY
+- `CH_DALIA_NAME` — identyczne z oryginałem
+  - EN: DALIA
+  - PL: DALIA
+- `CH_MAPGUY_NAME` — identyczne z oryginałem
+  - EN: RENATO
+  - PL: RENATO
+- `CH_BLACKJACKER_CAMP_NAME` — identyczne z oryginałem
+  - EN: CHIP
+  - PL: CHIP
+- `CH_TAPEGUY_NAME` — identyczne z oryginałem
+  - EN: INOK
+  - PL: INOK
+- `CH_GLASSES_NAME` — identyczne z oryginałem
+  - EN: QWOTA
+  - PL: QWOTA
+- `CH_MOLLY_NAME` — identyczne z oryginałem
+  - EN: MOLLY
+  - PL: MOLLY
+- `CH_VOICE_NAME` — identyczne z oryginałem
+  - EN: FERNIDU
+  - PL: FERNIDU
+- `CH_SINGER_NAME` — identyczne z oryginałem
+  - EN: BEÍCOLI
+  - PL: BEÍCOLI
+- `CH_CHILD4_NAME` — identyczne z oryginałem
+  - EN: ASH
+  - PL: ASH
+- `CH_DRUM_NAME` — identyczne z oryginałem
+  - EN: FOGG
+  - PL: FOGG
+- `CH_FLUTE_NAME` — identyczne z oryginałem
+  - EN: GUSTO
+  - PL: GUSTO
+- `CH_LEWIS_NAME` — identyczne z oryginałem
+  - EN: LEWIS
+  - PL: LEWIS
+- `CH_COMMANDER_NAME` — identyczne z oryginałem
+  - EN: TROOK
+  - PL: TROOK
+- `CH_ENTOMOLOGIST_NAME` — identyczne z oryginałem
+  - EN: MINA
+  - PL: MINA
+- `CH_PEBBLE_NAME` — identyczne z oryginałem
+  - EN: PEBBLE
+  - PL: PEBBLE
+- `CH_SHOPKEEPER_GAS_W06_NAME` — identyczne z oryginałem
+  - EN: KALLY
+  - PL: KALLY
+- `CH_TRESSIE_NAME` — identyczne z oryginałem
+  - EN: TRESSIE
+  - PL: TRESSIE
+- `CH_CHILD2_NAME` — identyczne z oryginałem
+  - EN: FINN
+  - PL: FINN
+- `CH_PIANO_NAME` — identyczne z oryginałem
+  - EN: ROLLO
+  - PL: ROLLO
+- `CH_HILDA_NAME` — identyczne z oryginałem
+  - EN: HILDA
+  - PL: HILDA
+- `CH_PETEY_NAME` — identyczne z oryginałem
+  - EN: PETEY
+  - PL: PETEY
+- `CH_CAMILLA_NAME` — identyczne z oryginałem
+  - EN: CAMILLA
+  - PL: CAMILLA
+- `CH_AVA_NAME` — identyczne z oryginałem
+  - EN: AVA
+  - PL: AVA
+- `CH_ERHU_NAME` — identyczne z oryginałem
+  - EN: HAN
+  - PL: HAN
+- `CH_HERMAN_NAME` — identyczne z oryginałem
+  - EN: HERMAN
+  - PL: HERMAN
+- `CH_BORDEN_NAME` — identyczne z oryginałem
+  - EN: BORDEN
+  - PL: BORDEN
+- `CH_BUSTENDER_NAME` — identyczne z oryginałem
+  - EN: WALTERIO
+  - PL: WALTERIO
+- `CH_LEATHERWORKER_NAME` — identyczne z oryginałem
+  - EN: XOOT
+  - PL: XOOT
+- `CH_ALFREDO_NAME` — identyczne z oryginałem
+  - EN: ALFREDO
+  - PL: ALFREDO
+- `CH_SHOPKEEPER_GAS_W02_NAME` — identyczne z oryginałem
+  - EN: TALLY
+  - PL: TALLY
+- `CH_GUNLADY_NAME` — identyczne z oryginałem
+  - EN: GUNDA
+  - PL: GUNDA
+- `ZN_Dungeon_04_01_ZeppelinHangar_NAME` — identyczne z oryginałem
+  - EN: Hangar
+  - PL: Hangar
+- `I_METAL_BAD_NAME` — identyczne z oryginałem
+  - EN: METAL
+  - PL: METAL
+- `I_UKULELE_NAME` — identyczne z oryginałem
+  - EN: UKULELE
+  - PL: UKULELE
+- `Q_D_F_DaughterDies_NAME` — identyczne z oryginałem
+  - EN: Ava
+  - PL: Ava
+- `Q_D_A_MusiciansVoice_NAME` — identyczne z oryginałem
+  - EN: Oooo Ooo Oo O Ooo
+  - PL: Oooo Ooo Oo O Ooo
+- `D_F_DaughterDies_3_LAIKA_NPC_1` — identyczne z oryginałem
+  - EN: Ava!
+  - PL: Ava!
+- `D_A_Musicians_Flute_Briefing_LAIKA_1` — identyczne z oryginałem
+  - EN: Gusto?!
+  - PL: Gusto?!
+- `D_3_TheBigTree_CatacombsFail_BreakFail1_LAIKA_4` — identyczne z oryginałem
+  - EN: Plan B?
+  - PL: Plan B?
+- `D_F_PuppysBirth_Labor_01_LAIKA_NPC_4` — identyczne z oryginałem
+  - EN: AAAAAAAAAARGH!
+  - PL: AAAAAAAAAARGH!
+- `D_F_PuppysBirth_Labor_Start_LAIKA_NPC_2` — identyczne z oryginałem
+  - EN: AAAAAAAAAARGH!
+  - PL: AAAAAAAAAARGH!
+- `D_B_Laika1_LAIKA_1` — identyczne z oryginałem
+  - EN: Mila. Carly. Isla. Ava. Brisa. Kaia. Alani. Iris.
+  - PL: Mila. Carly. Isla. Ava. Brisa. Kaia. Alani. Iris.
+- `D_A_Musicians_Complete_VOICE_4` — identyczne z oryginałem
+  - EN: Ooo oo o oo!
+  - PL: Ooo oo o oo!
+- `D_A_Musicians_Drum_Briefing_LAIKA_1` — identyczne z oryginałem
+  - EN: Fogg!
+  - PL: Fogg!
+
+## Długość (ryzyko ucięcia) (24)
+
+- `UI_SETTINGS_VIDEO_VSYNC` — UI 22 zn. vs 6 w EN
+  - EN: V-SYNC
+  - PL: SYNCHRONIZACJA PIONOWA
+- `ZN_Credits_NAME` — UI 31 zn. vs 16 w EN
+  - EN: Where We Say Who
+  - PL: Tam, Gdzie Mówimy, Kto Jest Kim
+- `ZN_Wasteland_01_NAME` — UI 29 zn. vs 18 w EN
+  - EN: Where All Was Lost
+  - PL: Tam, Gdzie Wszystko Przepadło
+- `ZN_Wasteland_01_01_NAME` — UI 29 zn. vs 18 w EN
+  - EN: Where All Was Lost
+  - PL: Tam, Gdzie Wszystko Przepadło
+- `D_A_Blackjack_2D_BLACKJACKER_TRUCK_B_1` — napis 62 zn. vs 43 w EN
+  - EN: Fancy challenging a real gambler, stranger?
+  - PL: Masz ochotę zmierzyć się z prawdziwym hazardzistą, nieznajoma?
+- `D_2_Lighthouse_Borderpoints_Undone3_CAPTAIN_1` — napis 67 zn. vs 49 w EN
+  - EN: *whispering* Green light my ass, you beaky moron!
+  - PL: *szeptem* W dupę sobie wsadź to zielone światło, dziobaty kretynie!
+- `D_B_Chief_B2_CHIEF_1` — napis 67 zn. vs 48 w EN
+  - EN: What if all those lab creatures are Popes to be?
+  - PL: A jeśli wszystkie te stworzenia z laboratorium to przyszli Papieże?
+- `D_B_Molly_AfterKidnap2_MOLLY_1` — napis 90 zn. vs 66 w EN
+  - EN: I bet you'll have suicidal thoughts if Puppy dies, I bet you will!
+  - PL: Założę się, że będziesz myśleć o samobójstwie, jeśli Puppy umrze, założę się, że będziesz!
+- `D_S_TutorialHook_Briefing_ANARCHIST_9` — napis 69 zn. vs 50 w EN
+  - EN: Never seen a hookless bonehead in my Hectist life!
+  - PL: Nigdy w moim hektystycznym życiu nie widziałam zakutego łba bez haka!
+- `D_B_Maya_H1_MAYA_5` — napis 61 zn. vs 45 w EN
+  - EN: You're a much better fighter than I ever was.
+  - PL: Jesteś o wiele lepszą wojowniczką, niż ja kiedykolwiek byłam.
+- `D_1_Mines_Miner_Undone3_MINER_1` — napis 76 zn. vs 56 w EN
+  - EN: Now go, free my people and we'll all fight by your side.
+  - PL: A teraz idź, uwolnij moich ludzi, a wszyscy będziemy walczyć u twojego boku.
+- `D_S_NewSheriff_Briefing_ALFREDO_10` — napis 75 zn. vs 45 w EN
+  - EN: NOW GO GET ME ONE! DO AS YOUR SHERIFF ORDERS!
+  - PL: A TERAZ IDŹ I ZDOBĄDŹ MI JAKIŚ EGZEMPLARZ! WYKONUJ ROZKAZY SWOJEGO SZERYFA!
+- `D_B_Shaza_C1_SHAZA_2` — napis 73 zn. vs 46 w EN
+  - EN: Oh, hon! If only I knew how to make you smile!
+  - PL: Och, kochana! Gdybym tylko wiedziała, jak sprawić, żebyś się uśmiechnęła!
+- `D_K_Village_Chief_Undone_CHIEF_5` — napis 65 zn. vs 46 w EN
+  - EN: We can't afford to lose her. She's our future.
+  - PL: Nie możemy sobie pozwolić na jej utratę. Jest naszą przyszłością.
+- `D_B_Molly_DuringKidnap_MOLLY_1` — napis 114 zn. vs 83 w EN
+  - EN: I saw Herman leave the village last night. Bet he was completely drunk, bet he was.
+  - PL: Widziałam, jak Herman wychodził wczoraj w nocy z wioski. Założę się, że był kompletnie pijany, założę się, że był.
+- `D_S_Seashell_Briefing_HILDA_3` — napis 73 zn. vs 53 w EN
+  - EN: Not to see it, but to <color=#FF492E>hear it</color>.
+  - PL: Nie po to, żeby je zobaczyć, ale żeby <color=#FF492E>je usłyszeć</color>.
+- `D_B_Gunlady_BeforeKidnap4_GUNLADY_1` — napis 119 zn. vs 84 w EN
+  - EN: I can only hope my good aim is enough if Birds find Where We Live while you're away.
+  - PL: Mogę tylko mieć nadzieję, że moje dobre oko wystarczy, jeśli Ptaki znajdą miejsce, Gdzie Żyjemy, pod twoją nieobecność.
+- `D_A_MayasHouse_Bike_Rest_LAIKA_1` — napis 93 zn. vs 67 w EN
+  - EN: Mother quit riding when I first bled and took immortality from her.
+  - PL: Matka przestała jeździć, kiedy pierwszy raz zaczęłam krwawić i odebrałam jej nieśmiertelność.
+- `D_B_Chief_B1_CHIEF_2` — napis 67 zn. vs 48 w EN
+  - EN: What if all those lab creatures are Popes to be?
+  - PL: A jeśli wszystkie te stworzenia z laboratorium to przyszli Papieże?
+- `D_F_YoungLaika_Briefing_LAIKA_2` — napis 66 zn. vs 45 w EN
+  - EN: You never, ever, ever gave me your pendant!!!
+  - PL: Nigdy, przenigdy, ale to przenigdy nie dałaś mi swojego wisiora!!!
+- `D_4_FloatingCity_MeetingInsider_Intro_INSIDER_4` — napis 68 zn. vs 45 w EN
+  - EN: Tsk. I'm just underfed, like most Oldtowners.
+  - PL: Tss. Jestem po prostu niedożywiony, jak większość ze Starego Miasta.
+- `D_3_TheBigTree_Prima_Meeting_ORELLA_10` — napis 73 zn. vs 50 w EN
+  - EN: A pyramid built around the hugest tree ever grown.
+  - PL: Piramida zbudowana wokół największego drzewa, jakie kiedykolwiek wyrosło.
+- `D_B_Maya_H2_MAYA_1` — napis 61 zn. vs 45 w EN
+  - EN: You're a much better fighter than I ever was.
+  - PL: Jesteś o wiele lepszą wojowniczką, niż ja kiedykolwiek byłam.
+- `D_S_TutorialHook_Briefing_Undone1_ANARCHIST_2` — napis 78 zn. vs 54 w EN
+  - EN: Never seen a lazier bonehead in my whole Hectist life!
+  - PL: W całym moim hektystycznym życiu nie widziałam bardziej leniwego zakutego łba!
+
+## Wielkie litery (62)
+
+- `AC_BOSS_00_DESC` — Title Case przeniesiony z angielskiego?
+  - EN: Kill A Hundred Hungry Beaks.
+  - PL: Zabij Sto Głodnych Dziobów.
+- `AC_BOSS_02_DESC` — Title Case przeniesiony z angielskiego?
+  - EN: Kill A Gargantuan Swimcrab.
+  - PL: Zabij Gigantycznego Kraba Pływaka.
+- `AC_BOSS_01_DESC` — Title Case przeniesiony z angielskiego?
+  - EN: Kill A Caterpillar Made of Sadness.
+  - PL: Zabij Gąsienicę ze Smutku.
+- `AC_ROSCOBOSS_DESC` — Title Case przeniesiony z angielskiego?
+  - EN: Kill A Long Lost Woodcrawler.
+  - PL: Zabij Dawno Zaginionego Drzewołaza.
+- `AC_BOSS_04_DESC` — Title Case przeniesiony z angielskiego?
+  - EN: Kill the Two-Beak God.
+  - PL: Zabij Dwudziobego Boga.
+- `ZN_Wasteland_01_05_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where the Waves Die
+  - PL: Tam, Gdzie Umierają Fale
+- `ZN_Credits_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where We Say Who
+  - PL: Tam, Gdzie Mówimy, Kto Jest Kim
+- `ZN_Wasteland_01_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where All Was Lost
+  - PL: Tam, Gdzie Wszystko Przepadło
+- `ZN_Wasteland_01_01_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where All Was Lost
+  - PL: Tam, Gdzie Wszystko Przepadło
+- `ZN_T_D03_ENTRANCE` — Title Case przeniesiony z angielskiego?
+  - EN: Big Tree's Roots
+  - PL: Korzenie Wielkiego Drzewa
+- `ZN_esoteric_house_funeral_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Mother Groans
+  - PL: Tam, Gdzie Jęczy Matka
+- `ZN_bar_kidnapping_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where the Traitor Pays
+  - PL: Tam, Gdzie Zdrajca Płaci
+- `ZN_Dungeon_02_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Water Glistened
+  - PL: Tam, Gdzie Lśniła Woda
+- `ZN_Dungeon_01_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Rock Bleeds
+  - PL: Tam, Gdzie Krwawi Skała
+- `ZN_nest_bar_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Music Dies
+  - PL: Tam, Gdzie Umiera Muzyka
+- `ZN_Wasteland_01_07_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Our Ancestors Rest
+  - PL: Tam, Gdzie Spoczywają Przodkowie
+- `ZN_Boss_02_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: A Long Lost Woodcrawler
+  - PL: Dawno Zaginiony Drzewołaz
+- `ZN_Wasteland_01_04_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Iron Caresses the Sky
+  - PL: Tam, Gdzie Żelazo Pieści Niebo
+- `ZN_truck_bar_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Other People Forget
+  - PL: Tam, Gdzie Zapominają Inni
+- `ZN_chief_house_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Rules Are Made
+  - PL: Tam, Gdzie Stanowi się Prawa
+- `ZN_esoteric_house_night_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Mother Groans
+  - PL: Tam, Gdzie Jęczy Matka
+- `ZN_Boss_02_lighthouse_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: A Gargantuan Swimcrab
+  - PL: Gigantyczny Krab Pływak
+- `ZN_Dungeon_02_FinalSequence_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Water Glistened
+  - PL: Tam, Gdzie Lśniła Woda
+- `ZN_Boss_00_PoochiesCorpse_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Playing Ends
+  - PL: Tam, Gdzie Kończy się Zabawa
+- `ZN_Wasteland_01_06_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Our Bikes Growl
+  - PL: Tam, Gdzie Warczą Nasze Motory
+- `ZN_miner_house_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where the Miner Rests
+  - PL: Tam, Gdzie Odpoczywa Górnik
+- `ZN_esoteric_house_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Mother Groans
+  - PL: Tam, Gdzie Jęczy Matka
+- `ZN_Tutorial_Hook_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Chaos Plots
+  - PL: Tam, Gdzie Knuje Chaos
+- `ZN_Wasteland_01_02_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Doom Fell
+  - PL: Tam, Gdzie Spadła Zagłada
+- `ZN_Wasteland_01_03_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where Rust Weaves
+  - PL: Tam, Gdzie Tka Rdza
+- `Q_D_S_Flower_FindFlower` — Title Case przeniesiony z angielskiego?
+  - EN: Find a heartglaze flower Where Our Ancestors Rest
+  - PL: Znajdź sercolśń tam, Gdzie Spoczywają Przodkowie
+- `Q_D_3_TheBigTree_FindOrella` — Title Case przeniesiony z angielskiego?
+  - EN: Look for Orella near the Big Tree
+  - PL: Poszukaj Orelli przy Wielkim Drzewie
+- `Q_D_A_MusiciansVoice_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Oooo Ooo Oo O Ooo
+  - PL: Oooo Ooo Oo O Ooo
+- `Q_D_K_Kidnapping_TalkToHerman` — Title Case przeniesiony z angielskiego?
+  - EN: Find Herman at Camilla's bar
+  - PL: Znajdź Hermana w barze Camilli
+- `Q_D_F_PuppysBirth_NAME` — Title Case przeniesiony z angielskiego?
+  - EN: Where We Used to Live
+  - PL: Tam, Gdzie Kiedyś Żyliśmy
+- `D_S_LastMeal_Briefing_LEWIS_6` — Title Case przeniesiony z angielskiego?
+  - EN: High up, <color=#FF492E>Where Iron Caresses the Sky</color>.
+  - PL: Wysoko, tam, <color=#FF492E>Gdzie Żelazo Pieści Niebo</color>.
+- `D_S_FirstPeriod_Briefing_LAIKA_6` — Title Case przeniesiony z angielskiego?
+  - EN: Talk to Shaza or Hilda.
+  - PL: Porozmawiaj z Shazą albo z Hildą.
+- `D_4_FloatingCity_OldTown_CloseGauge_OfficeCompleted_LAIKA_2` — Title Case przeniesiony z angielskiego?
+  - EN: Meet you <color=#FFFFFF>at the Control Area</color> in no time.
+  - PL: Zaraz się widzimy <color=#FFFFFF>w Strefie Kontroli</color>.
+- `D_S_FirstPeriod_NoItem_LAIKA_1` — Title Case przeniesiony z angielskiego?
+  - EN: Have you talked to Shaza or Hilda?
+  - PL: Rozmawiałaś z Shazą albo z Hildą?
+- `D_S_NightmaresOne_Complete_CAREY_2` — Title Case przeniesiony z angielskiego?
+  - EN: "Hir, Kiri, sim thisl stims fir Simmi!"
+  - PL: „Priszi, Kiri, lidigi isti dli Simmi!”
+- `D_S_FirstPeriod_Complete_LAIKA_2` — Title Case przeniesiony z angielskiego?
+  - EN: Have you talked to Hilda and Shaza?
+  - PL: Rozmawiałaś z Hildą i Shazą?
+- `D_1_Mines_Briefing_CHIEF_5` — Title Case przeniesiony z angielskiego?
+  - EN: Good. You're going to offer an alliance to the Mining Town.
+  - PL: Dobrze. Zaproponujesz sojusz Górniczemu Miastu.
+- `D_2_Lighthouse_Wastelands_Undone3_LAIKA_3` — Title Case przeniesiony z angielskiego?
+  - EN: Advanced Electromagnetic Radiocommunications Maintenance Technician.
+  - PL: Zaawansowany Technik Konserwacji Elektromagnetycznej Radiokomunikacji.
+- `D_S_TutorialDash_Briefing_SHAZA_4` — Title Case przeniesiony z angielskiego?
+  - EN: The "where"? <color=#FF492E>Where Our Ancestors Rest</color>.
+  - PL: „Gdzie”? Tam, <color=#FF492E>Gdzie Spoczywają Przodkowie</color>.
+- `D_2_Lighthouse_Wastelands_Undone1_LAIKA_1` — Title Case przeniesiony z angielskiego?
+  - EN: Just got to <color=#FFFFFF>Where the Waves Die</color>.
+  - PL: Właśnie dotarłam tam, <color=#FFFFFF>Gdzie Umierają Fale</color>.
+- `D_4_FloatingCity_Office_CloseGauge_OldTownCompleted_LAIKA_2` — Title Case przeniesiony z angielskiego?
+  - EN: Meet you <color=#FFFFFF>at the Control Area</color> in no time.
+  - PL: Zaraz się widzimy <color=#FFFFFF>w Strefie Kontroli</color>.
+- `D_B_Undertaker_BeforeKidnap1_UNDERTAKER_2` — Title Case przeniesiony z angielskiego?
+  - EN: This is Where I Live.
+  - PL: Tu jest miejsce, Gdzie Ja Żyję.
+- `D_2_Lighthouse_Wastelands_Undone2_SHAZA_2` — Title Case przeniesiony z angielskiego?
+  - EN: "Advanced Electromagnetic Radiocommunications Maintenance Technician."
+  - PL: „Zaawansowany Technik Konserwacji Elektromagnetycznej Radiokomunikacji”.
+- `D_K_PeaceBird_PEACEBIRD_1` — Title Case przeniesiony z angielskiego?
+  - EN: Join the Peace Beaks, sister.
+  - PL: Dołącz do Dziobów Pokoju, siostro.
+- `D_3_TheBigTree_EnterCathedral_ORELLA_1` — Title Case przeniesiony z angielskiego?
+  - EN: You're in Pope Tribeak Thomas' Cathedral.
+  - PL: Jesteś w Katedrze papieża Tomasza Trójdziobego.
+- `D_3_TheBigTree_EnterGardens_ORELLA_1` — Title Case przeniesiony z angielskiego?
+  - EN: You've just entered the Gardens of Solitude.
+  - PL: Właśnie weszłaś do Ogrodów Samotności.
+- `D_S_NightmaresThree_Briefing_CAREY_2` — Title Case przeniesiony z angielskiego?
+  - EN: "Hiw'r Simmis hivs, Ciry?"
+  - PL: „Jik pikrzifki Simmi, Kiri?”
+- `D_3_TheBigTree_Primo_Complete_LAIKA_12` — Title Case przeniesiony z angielskiego?
+  - EN: She wanted to rest close to the Big Tree.
+  - PL: Chciała spocząć blisko Wielkiego Drzewa.
+- `D_S_Flower_Briefing_LAIKA_7` — Title Case przeniesiony z angielskiego?
+  - EN: Puppy, daughter of Laika, granddaughter of Maya...
+  - PL: Puppy, córko Laiki, wnuczko Mai...
+- `D_3_TheBigTree_EnterVIPOffice_ORELLA_1` — Title Case przeniesiony z angielskiego?
+  - EN: Those were the War Ministry's offices.
+  - PL: To były gabinety Ministerstwa Wojny.
+- `D_3_TheBigTree_Wastelands_1_LAIKA_1` — Title Case przeniesiony z angielskiego?
+  - EN: I can see the Big Tree.
+  - PL: Widzę Wielkie Drzewo.
+- `D_1_Mines_Briefing_CHIEF_1` — Title Case przeniesiony z angielskiego?
+  - EN: You will travel to <color=#FF492E>Where Rock Bleeds</color>.
+  - PL: Pojedziesz tam, <color=#FF492E>Gdzie Krwawi Skała</color>.
+- `D_S_OldWarfare_Maya_Undone_MAYA_1` — Title Case przeniesiony z angielskiego?
+  - EN: Have you bound a new gun to the Howling Spirits?
+  - PL: Związałaś nową broń z Wyjącymi Duchami?
+- `D_F_PuppysBirth_AfterLabor_LAIKA_NPC_1` — Title Case przeniesiony z angielskiego?
+  - EN: Have you been Where We Will Live?
+  - PL: Byłaś tam, Gdzie Będziemy Żyć?
+- `D_S_PlantSeed_Briefing_PRIMO_8` — Title Case przeniesiony z angielskiego?
+  - EN: I say it's a Big Tree seed.
+  - PL: Mówię, że to nasiono Wielkiego Drzewa.
+- `D_2_Lighthouse_Wastelands_Undone1_LAIKA_5` — Title Case przeniesiony z angielskiego?
+  - EN: *sighs* I'm the Sturdier Radio Something Tech.
+  - PL: *wzdycha* Jestem Wytrzymalszym Radiowym Jakimśtam Technikiem.
+- `D_2_Lighthouse_Wastelands_Undone1_SHAZA_6` — Title Case przeniesiony z angielskiego?
+  - EN: Advanced Electromagnetic Radiocommunications Maintenance Technician.
+  - PL: Zaawansowanym Technikiem Konserwacji Elektromagnetycznej Radiokomunikacji.

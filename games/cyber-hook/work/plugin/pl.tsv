@@ -1,0 +1,702 @@
+hello_world	Witaj, świecie
+Cyberhook	Cyberhook
+press_any	Naciśnij - Dowolny klawisz -
+clear	Ukończono!
+pb_number	Rekord: {0}
+play	Graj
+restart	Od nowa
+restart_marathon	Maraton od nowa
+replays	Powtórki
+options	Opcje
+quit	Wyjdź
+personnal_best	Rekord osobisty
+no_replay	- Brak powtórek -
+best_plays_stored_here	Tu trafią twoje najlepsze przejścia
+view_replay	Obejrzyj
+level_select	Wybór poziomu
+vsync	V-Sync
+max_fps	Maks. FPS
+screen_space_reflexions	Odbicia w przestrzeni ekranu
+motion_blur	Rozmycie ruchu
+anti_aliasing	Wygładzanie krawędzi
+full_screen	Pełny ekran
+resolution	Rozdzielczość
+clear_all_replays	Usuń wszystkie powtórki
+player_name	Nazwa gracza
+apply_changes	Zastosuj zmiany
+vertical_mouse_sensitivity	Czułość myszy w pionie
+horizontal_mouse_sensitivity	Czułość myszy w poziomie
+edit_controls	Zmień sterowanie
+game_is_under_construction	Gra jest wciąż w budowie <br>Uwaga na błędy i usterki!<br><size=6>Jeśli coś znajdziesz, napisz do <size=12><color=#00AAFF>@BlazingStick</color></size> na Twitterze</size>
+master_volume	Głośność ogólna
+music_volume	Muzyka
+sfx_volume	Efekty dźwiękowe
+invert_vertical_axis	Odwróć oś pionową
+sound	Dźwięk
+apply	Zastosuj
+gameplay	Rozgrywka
+return	Wróć
+leaderboards	Rankingi
+leaderboard_fullview	Pełny widok
+personnal_best_short	Rekord
+clear_selection	Wyczyść
+public	Publiczne
+tutorial	Samouczek
+graphics	Grafika
+controls	Sterowanie
+public_records	Publiczne powtórki
+level_name	Nazwa poziomu
+first_time_clear	Pierwsze ukończenie!
+personnal_best_clear	Nowy rekord!
+saved_replay_to	Zapisano powtórkę w: {0}
+save_replay	Zapisz powtórkę
+next_level	Następny poziom
+return_to_main_menu	Menu główne
+resume_game	Wznów
+pause_title	PAUZA
+loading	Wczytywanie
+secret_congratulation	Gratulacje!
+found_a_secret	Znaleziono sekret!
+secret_is_just_for_show	Może kiedyś będzie z tego coś więcej, ale na razie to tylko ozdoba :)
+locked	#ZABLOKOWANE#
+world_number	Świat {0}
+vsync_off	wył.
+vsync_every_frame	Co klatkę
+vsync_every_second_frame	Co 2. klatkę
+vsync_desc	Synchronizacja pionowa (V-Sync) czeka, aż monitor będzie gotowy, zanim pokaże kolejną klatkę.<br>Zapobiega rwaniu obrazu, ale ogranicza liczbę klatek.
+anti_aliasing_desc	Wygładza poszarpane krawędzie w świecie gry.
+apply_changes_desc	Zastosuj zmiany w grafice.
+clear_replay_data_desc	Usuwa wszystkie powtórki z plików gry.<br><br>(Postępy zostają).
+edit_controls_desc	Ta część jest jeszcze w budowie.<br>Pozwolimy ci zmienić każdy klawisz i przypisać od nowa <size=4>(miejmy nadzieję)</size> każdy pad.
+full_screen_desc	Czy gra ma działać na pełnym ekranie, czy w oknie?
+invert_vertical_axis_desc	Odwraca pionowy obrót kamery w grze.
+master_volume_desc	Główna głośność gry.<br>Wpływa na wszystko, co słychać.
+sfx_volume_desc	Głośność efektów dźwiękowych.<br><br>Dotyczy pojedynczych dźwięków w grze.<br><size=4>(czyli wszystkich „wziuum”, „piu piu” i „bum”)</size>
+music_volume_desc	Głośność muzyki.<br>Dotyczy tylko muzyki w tle.<br><br><size=4>(Ustaw 0, żeby zrobić montaż MLG z własną muzyką)</size>
+max_fps_desc	Największa liczba klatek na sekundę, jaką gra może wyświetlić.<br>Ogranicza ją częstotliwość monitora.
+motion_blur_desc	Rozmycie ruchu... rozmywa obraz przy szybkim ruchu.
+player_name_desc	Nazwa gracza wyświetlana przy powtórkach.<br><br>Możesz użyć <color="red">formatowania</color> <size=20><color=#00bbff>tekstu</color></size>, żeby dodać jej pazura.
+resolution_desc	Rozdzielczość ekranu.<br><br>Zmniejsz ją, żeby poprawić wydajność.
+screen_space_reflexions_desc	Odbicia w przestrzeni ekranu liczą odbicia w świecie na podstawie tego, co widać na ekranie.
+horizontal_mouse_sensitivity_desc	Czułość myszy w poziomie.
+vertical_mouse_sensitivity_desc	Czułość myszy w pionie.
+replay_download	Pobierz
+replay_delete_confirm	Usunąć?
+leaderboard	Ranking
+leaderboard_beat_dev_time	Pobij czas <color=#00CCCC>twórców</color>, żeby zobaczyć ranking!
+leaderboard_own_time	Twój czas
+leaderboard_world	Świat
+leaderboard_country	Kraj
+leaderboard_friend	Znajomi
+replay_play_level	Zagraj poziom
+replay_watch_again	Obejrzyj ponownie
+replay_saved	Zapisana powtórka
+feedback	Opinie
+send	Wyślij
+mail_here	Twój e-mail…
+enter_text	Wpisz tekst…
+mail_sending	Wysyłanie wiadomości
+mail_sent	Wiadomość wysłana
+mail_sent_thank	Dziękujemy!  :)
+mail_send_error	Błąd wysyłania wiadomości
+bug	Błąd
+contact	Kontakt
+request	Prośba
+success_mail_send	Wiadomość wysłana
+error_mail_send	Błąd wysyłania wiadomości
+thank_you	Dziękujemy!
+menu_replay_saved	Zapisane powtórki
+menu_best_time	Najlepsze czasy
+delete_question	Usunąć?
+error	Błąd
+load_more	Wczytaj więcej
+world_name_debug	Świat testowy
+world_name_tutorial	Samouczek
+world_name_easy	Łatwe próby
+world_name_medium	Średnie próby
+world_name_hard	Mordercze próby
+level_name_steppie_steps	Kroczki
+level_name_harder_walkies	Trudniejsze spacerki
+level_name_start_game	Start gry
+level_name_learn_2_move	Naucz się ruszać
+level_name_wall_climb	Po ścianie
+level_name_mini_recap	Mała powtórka
+level_name_get_shooting	Do strzału!
+level_name_warping_time	Zakrzywianie czasu
+level_name_full_tutorial	Pełny samouczek
+level_name_tower	Wieża
+level_name_too_hard_for_polygon	Za trudne dla Polygonu
+level_name_wall_jump	Odbicie od ściany
+level_name_cube_cloud	Chmura sześcianów
+level_name_ramp	Rampa
+level_name_equilibrium	Równowaga
+level_name_pull_and_shoot	Przyciągnij i strzel
+level_name_precision	Precyzja
+level_name_find_a_name_later	Nazwę się wymyśli
+level_name_no_touching	Nie dotykać
+level_name_slippery	Ślisko
+level_name_fazer	Fazer
+level_name_supah_swing	Superhuśtawka
+level_name_zartan	Zartan
+level_name_building_blocks	Klocki
+level_name_red_is_ded	Czerwone to zgon!
+level_name_propulzone	PropulZone
+level_name_baby_steps	Pierwsze kroki
+level_name_death_tower	Wieża śmierci
+level_name_blasting_off	Odpalamy
+level_name_pressing_buttons	Wciskanie guzików
+level_training_01	Słodkie odkrycie
+level_training_02	Rury prędkości
+level_training_03	Sześciany rozpaczy
+Level_Convention_01	Słodkie odkrycie
+Level_Convention_02	Rury prędkości
+Level_Convention_03	Sześciany rozpaczy
+Level_Convention_LD_01	Lecimy grać
+Level_Convention_LD_02	Huśtawkowa wieża
+Level_Conv_Extra_01	Orzeł
+Level_Conv_Extra_02	Odlot
+Level_Conv_Extra_03	Fioletowe żyły
+level_a0	Tunel
+level_a1	Speedy Luke
+level_a2	Wir
+level_a3	Most
+level_a4	Orzeł
+level_a5	Szlak
+level_a6	W biegu
+level_a7	Odlot
+level_a8	Pielgrzymka
+level_a9	Idź!
+level_a10	Skacz!
+level_a11	Hak!
+level_a12	Kosmooos!
+level_a13	Myśl zegarami
+level_a14	Big Bank
+level_a15	Myśl przyciskami
+level_a16	Pustkowie
+level_a17	Fioletowe żyły
+level_a18	Kora
+level_a19	Pif-paf kostka
+level_a20	Myśl hakami
+level_a21	Mistrz powietrza
+level_a22	Klocki
+level_a23	Czerwone to zgon!
+level_a24	Pierwsze kroki
+level_a25	Nawigacja
+level_a26	Listowie
+level_a27	DNA
+level_a28	Bezwładność
+level_a29	Naucz się latać
+level_a30	Odbicie od ściany
+level_a31	Wspinaczka
+level_a32	Miejska dżungla
+level_a33	Staraj się
+level_a34	Jeszcze raz
+level_a35	Lecimy grać
+level_a36	Huśtawkowa wieża
+level_a37	Pokłosie
+level_a38	Emulsja
+level_a39	Opanuj się
+level_a40	Surfing
+level_a41	Kuliste ranczo
+level_a42	Zabawa palcami
+level_a43	La Grange
+level_a44	Sześcian śmierci
+level_a45	Trening
+level_a46	Przejażdżka
+level_a47	Brak sił
+level_a48	Koma
+level_a49	Podciąganie
+level_a50	Przyspiesz
+level_a51	Apura
+level_a52	Ukradkiem
+level_a53	Bieg - Strzał - Hak
+level_a54	Atleta
+level_a55	Gorąco, gorąco
+level_a56	Klonk
+level_a57	Jo-jo
+level_a58	Neo
+level_a59	Rabator
+level_a60	Gra
+level_a61	Stolica
+level_a62	Wesołe miasteczko
+level_a63	Katakumby
+level_a64	Wełna
+level_a65	Próba egzekucji
+level_a66	Jastrząb
+level_a67	Pole
+level_a68	Mgła
+level_a69	Xitra
+level_a69_bis	Rotato
+level_a70	Lerap
+level_a70_phoenix	Feniks
+level_a71	Agresja
+level_a72	Parangon
+level_a73	Eazywi
+level_a74	Wspinanie
+level_a75	Otwarte więzienie
+level_a77	Ścieżka szkieletów
+level_a78	Skupisko
+level_a79	Cieśla
+level_a82	Gang Drona
+level_a83	Shifter Pro
+level_m1	Ewakuacja
+level_m2	Klasyczny skok wzwyż
+level_m3	Sztafeta
+level_m4	Zawis
+level_f02	Tobledrone
+level_f03	Powieś go wyżej
+level_f04	Metropolis X
+level_f05	Ring Ring
+level_f06	Wiejska dżungla
+level_f08	Niszczyciel danych
+level_f09	Młody mikser powietrza
+level_f10	Linia trzynasta
+level_f11	Młynek
+level_f12	Korony drzew
+level_f13	Społeczeństwo w biegu
+level_f14	Pudło pudło pudło
+level_f15	Wojny haków
+level_f16	Przetwarzanie odpadów
+level_f17	Kapitan Hak
+level_f18	Siła rozpędu
+level_f19	U bram
+level_f20	Największy Ben
+level_f21	Metalowy hak
+level_f22	Castle Trashers
+level_f23	Beagle
+level_f24	cORE
+level_f25	Korridor
+level_f26	Fabryka fizyki
+level_f28	Białe ściany
+level_f29	Kręciołek
+level_f30	Three 6
+level_f31	Converger
+level_f32	Slipgate
+level_f33	Skorpion
+level_f34	JCVD
+level_boss_phase_01	NUMERO
+PAX_Line_01_00_line_00	Inicjalizacja obiektu
+PAX_Line_01_00_line_01	...
+PAX_Line_01_00_line_02	Wykryto biegacza
+PAX_Line_01_00_line_02_01	Pobieranie nazwy...
+PAX_Line_01_00_line_02_02	Znaleziono nazwę = <link="Pause(1)"></link><color="red">{0}</color>
+PAX_Line_01_00_line_03	Potencjał... <link="Pause(1)"></link><color="red">nienormalny!</color>
+PAX_Line_01_00_line_04	<color="red">Wykryto zagrożenie dla <color=green>Numero</color>!</color>
+PAX_Line_01_00_line_05	Odinstalowywanie:
+PAX_Line_01_00_line_06	Znajomość map... <link="Pause(1f)"></link>Gotowe
+PAX_Line_01_00_line_07	Opanowanie haka... <link="Pause(1f)"></link>Gotowe
+PAX_Line_01_00_line_08	Speedrunowe triki... <link="Pause(1f)"></link>Gotowe
+PAX_Line_01_00_line_09	Umiejętności progamera... <link="Pause(0.5f)"></link><color="red">Nie znaleziono</color>
+PAX_Line_01_00_line_10	Świadomość...<link="Pause(1.2f)"></link> <link="BoxShake(ErrorShake)"></link><link="TypingSound(1,0.08f)"></link><color="red">!!! BŁĄD !!!</color>
+PAX_Line_01_00_line_11	<link="TypingSound(1,0.08f)"></link><color="red">Nie można odinstalować świadomości</color>
+PAX_Line_01_01_line_00	<link="TypingSound(1,0.08f) + EventTrigger(Glitch)"></link><size=150%>Wykryto nieautoryzowany dostęp!</size>
+PAX_Line_01_01_line_01	<link="BoxShake(BigErrorShake)"></link><color="red"><size=150%><link="TypingSound(1,0.08f)"></link>BŁĄD</size></color>
+PAX_Line_01_01_line_02	<link="TypingSound(1,0.08f)"></link><size=150%><color="red">Wykryto naruszenie protokołu!</color></size>
+PAX_Line_01_01_line_03	<link="TypingSound(1,0.08f)"></link><color="red"><size=150%>ZRZUCIĆ ŁADUNEK <link="EventTrigger(DropPlayer)"></link>SKUR</size></color>
+PAX_Line_01_02_line_00	O!
+PAX_Line_01_02_line_01	No cześć!
+PAX_Line_01_02_line_02	Jestem <color=#0FF>Dron</color>, miło cię poznać!
+PAX_Line_01_02_line_03	Pewnie jesteś najnowszym biegaczem złapanym w tę grę.
+PAX_Line_01_02_line_04	Skoro udało ci się do mnie dojść, to chyba hakowanie zadziałało.
+PAX_Line_01_02_line_05	Ale raczej nie chcesz, żebym opowiadał całą historię tego miejsca.
+PAX_Line_01_02_line_06	Więc łap za hak i do dzieła!
+PAX_Line_01_03_line_00	Oto twój <link="Floating(0.1f,0.1f) + Rainbow()">CYBER HOOK!</link>
+PAX_Line_01_03_line_01	To twój główny sposób poruszania się.
+PAX_Line_01_03_line_02	Łapie, przyciąga, huśta, kręci, co tylko chcesz! <link="Pause(0.5f)"></link>Wszystko potrafi!
+PAX_Line_01_03_line_03	Obowiązują warunki promocji...
+PAX_Line_01_03_line_04	No dalej!<link="Pause(0.5f)"></link> Strzel w ten <color=#0FF>niebieski sześcian</color>, naciskając <sprite name="Hook">
+PAX_Line_01_04_mocking miss_line_00	...
+PAX_Line_01_04_mocking miss_line_01	Serio, trzy razy pudło?
+PAX_Line_01_04_mocking miss_line_02	Po prostu stój i strzelaj, bardzo proszę
+PAX_Line_01_05_line_00	Nieźle,
+PAX_Line_01_05_line_01	Teraz po prostu <link="Floating()">przytrzymaj</link> <sprite name="Hook">, żeby się do niego przyciągnąć.
+PAX_Line_01_06_line_00	A na koniec naciśnij <link="Floating()"><sprite name="Jump"></link>, żeby puścić hak.
+PAX_Line_01_07_line_00	Dobra!
+PAX_Line_01_07_line_01	Wygląda na to, że po hakowaniu jesteś w całkiem niezłej formie.
+PAX_Line_01_07_line_02	A! Zanim pójdziesz!
+PAX_Line_01_07_line_03	Zrób mi mały <link="Floating()">podwójny skok</link>, tak na wszelki wypadek.
+PAX_Line_01_07_line_04	Naciśnij <link="Floating()"><sprite name="Jump"></link>, żeby skoczyć, i <link="Floating()">jeszcze raz w powietrzu.</link>
+PAX_Line_01_08_line_00	No i proszę!
+PAX_Line_01_08_line_01	Znasz już wszystkie podstawy przetrwania w tym miejscu.
+PAX_Line_01_08_line_02	Reszta to kwestia odrobiny <link="Rainbow()">praktyki!</link>
+PAX_Line_01_08_line_03	Kiedy poczujesz się na siłach, <link="EventTrigger(LookAtDoor)"></link>wejdź do <link="Floating() + Rainbow()">tego portalu</link> <link="Pause(1)"></link>i zacznie się prawdziwa zabawa.
+PAX_Line_02_00_line_00	A!
+PAX_Line_02_00_line_01	Jesteś z powrotem!
+PAX_Line_02_00_line_02	<link="EventTrigger(LookSide)"></link>Zobaczmy, jak ci poszło...
+PAX_Line_02_01_bad_line_00	...
+PAX_Line_02_01_bad_line_01	Hmm...
+PAX_Line_02_01_bad_line_02	<link="EventTrigger(LookSide)"></link>Na pewno z czasem pójdzie ci lepiej...
+PAX_Line_02_01_good_line_00	Ojej!
+PAX_Line_02_01_good_line_01	<link="EventTrigger(LookSide)"></link>Robi wrażenie!
+PAX_Line_02_01_good_line_02	Z tobą na pewno damy radę!
+PAX_Line_02_01_normal_line_00	Hmm...
+PAX_Line_02_01_normal_line_01	<link="EventTrigger(LookSide)"></link>Całkiem nieźle.
+PAX_Line_02_01_normal_line_02	A z paroma nowymi technikami pójdzie ci jeszcze lepiej.
+PAX_Line_02_02_line_00	W każdym razie,
+PAX_Line_02_02_line_01	Chodź tutaj.
+PAX_Line_02_02_line_02	Pokażę ci, jak <link="Floating() + Rainbow()">ZAGINAĆ CZAS!</link>
+PAX_Line_02_03_line_00	Nooo...
+PAX_Line_02_03_line_01	Tak, możesz <link="Floating(0.75f,0.2f)"><color=#0FF>spowolnić czas</color></link>, naciskając <sprite name="Timewarp">
+PAX_Line_02_03_line_02	<link="Floating()">Mógłbym</link> wyjaśnić, jak to działa naukowo.
+PAX_Line_02_03_line_03	Ale chyba żadnego z nas to nie obchodzi.
+PAX_Line_02_03_line_04	No dalej! Naciśnij <link="Floating()"><sprite name="Timewarp"></link>
+PAX_Line_02_04_line_00	Fajne, co?!
+PAX_Line_02_04_line_01	Pomoże ci naprawiać błędy, a przy okazji daje <color="yellow">odrobinę większy zasięg</color>.
+PAX_Line_02_04_line_02	Możesz tu poćwiczyć,
+PAX_Line_02_04_line_03	Przeleć przez tę świecącą armatę i użyj w powietrzu <link="Rainbow()">spowolnienia</link>, żeby złapać niebieską platformę pod sobą.<link="EventTrigger(LookAtDoor)"></link>
+PAX_Line_03_00_line_00	...
+PAX_Line_03_00_line_01	Chodź tutaj, pokażę ci ostatnią rzecz, zanim ruszysz na poważnie.
+PAX_Line_03_01_line_00	...
+PAX_Line_03_01_line_01	No tak, namierzają cię.
+PAX_Line_03_01_line_02	Te zielone sześciany wysyła ktoś inny...
+PAX_Line_03_01_line_03	Nie mam czasu dużo tłumaczyć,
+PAX_Line_03_01_line_04	Ale wiedz, że te zielone sześciany będą ci blokować drogę.
+PAX_Line_03_01_line_05	Kłopot w tym, że nie bardzo mam jak je <link="Shake()">zniszczyć</link>...
+PAX_Line_03_01_line_06	Spróbuj nacisnąć jakiś przypadkowy przycisk, na przykład <link="Floating()"><sprite name="Shoot"></link>
+PAX_Line_03_02_line_00	nooo...<link="Block()">dobra</link>
+PAX_Line_03_02_line_01	To znaczy, spełnia swoje zadanie.
+PAX_Line_03_02_line_02	Na pewno pomoże ci przechodzić poziomy.
+PAX_Line_03_02_line_03	Dobra, przejdź tylko przez tamtą ścianę z tyłu<link="EventTrigger(LookAtDoor) + Pause(1)"></link> i możesz ruszać.
+PAX_Line_04_00_line_00	O!
+PAX_Line_04_00_line_01	Tak! Udało ci się dotrzeć aż tutaj!
+PAX_Line_04_00_line_02	Niestety to wszystko, co mogę ci teraz pokazać.
+PAX_Line_04_00_line_03	Głównie dlatego, że to tylko demo pełnej gry...
+PAX_Line_04_00_line_04	Ale możesz <link="Rainbow() + Floating()">dodać Cyber Hook do listy życzeń na Steamie</link>, jeśli jesteś naprawdę miłą osobą :)
+PAX_Line_04_00_line_05	I tak oto pada czwarta ściana...
+PAX_Line_04_00_line_06	No sorry, ale dalej możesz się bawić na tym poziomie albo wrócić do menu głównego, znajdując portal ukryty w tym centrum!
+PAX_Line_04_00_line_07	Wielkie dzięki za grę!
+PAX_Line_04_00_line_08	Mam nadzieję, że się podobało :)
+ask_apply_settings	Zastosować zmiany?
+cancel	Anuluj
+option_camera_max_angle	Maks. kąt kamery
+option_camera_max_angle_desc	Jak wysoko i jak nisko może się obracać kamera
+option_reset_to_default	Przywróć domyślne
+option_reset_to_default_button	Przywróć
+option_autorelease_hook	Autopuszczanie haka
+option_autorelease_hook_desc	Czy hak ma się odczepiać, gdy puścisz przycisk?
+option_shadows_active	Cienie
+option_shadows_active_desc	Czy gra ma wyświetlać dynamiczne cienie z bliska?
+option_anti_aliasing	Wygładzanie krawędzi
+option_anti_aliasing_desc	Wygładza obraz, żeby zmniejszyć poszarpane krawędzie.
+option_button_Controls	Sterowanie
+option_button_Gameplay	Rozgrywka
+option_button_Speedrun	Speedrun
+option_button_Graphics	Grafika
+option_button_Audio	Dźwięk
+option_crosshair_size	Rozmiar celownika
+option_crosshair_size_desc	Zmienia rozmiar celownika w grze.
+option_desc_airdash	Drugi skok w powietrzu
+option_desc_hook	Użyj swojego CyberHooka!<br>Najważniejszy przycisk w grze!
+option_desc_jump	Rusz swoje leniwe cztery litery
+option_desc_move_x_negative	Zwiększa prędkość w ujemnym kierunku osi X względem poziomego obrotu kamery.<br><br><br>Albo po prostu idziesz w lewo.
+option_desc_move_x_positive	Zwiększa prędkość w dodatnim kierunku osi X względem poziomego obrotu kamery.<br><br><br>Albo po prostu idziesz w prawo.
+option_desc_move_y_negative	Zwiększa prędkość w ujemnym kierunku osi Z względem poziomego obrotu kamery.<br><br><br>Albo po prostu idziesz do tyłu.
+option_desc_move_y_positive	Zwiększa prędkość w dodatnim kierunku osi Z względem poziomego obrotu kamery.<br><br><br>Albo po prostu idziesz do przodu.
+option_desc_pull	Przyciąga cię na haku i nic więcej...
+option_desc_reset	Zacznij poziom od nowa, jeśli masz doła :(
+option_desc_retract	Puszcza hak, ale bestia zostaje w tobie.
+option_desc_shoot	Popraw im laserowymi paluchami.
+option_desc_timewarp	Spowalnia czas, żeby dać ci trochę większy zasięg, a wcale nie dlatego, że ostatni strzał poszedł w pudło.
+option_everyframe	Synchronizuj co klatkę
+option_everysecondframe	Synchronizuj co drugą klatkę
+option_uncapped	Bez limitu
+option_fps_144	144 FPS
+option_fps_30	30 FPS
+option_fps_60	60 FPS
+option_fullscreen	Pełny ekran
+option_fullscreen_desc	Gra na pełnym ekranie albo w oknie
+option_ground_reflexion_quality	Jakość odbić na podłożu
+option_ground_reflexion_quality_desc	Rozmiar tekstury, w której liczone są odbicia.
+option_ground_reflexions	Odbicia
+option_ground_reflexions_desc	Wyświetla odbicia w świecie gry.
+option_groundrefexion_1024	1024x1024
+option_groundrefexion_2048	2048x2048
+option_groundrefexion_256	256x256
+option_groundrefexion_512	512x512
+option_look_inversion	Odwrócenie osi pionowej
+option_look_inversion_desc	Odwraca pionową oś widoku. Tylko dla prawdziwych wariatów!
+option_max_fps	Maks. FPS
+option_max_fps_desc	Największa liczba klatek na sekundę wyświetlanych przez grę.<br>Nie przyspiesza gry, tylko ogranicza liczbę klatek, żeby nie zużywać niepotrzebnie energii.
+option_motion_blur	Rozmycie ruchu
+option_motion_blur_desc	Rozmywa obraz przy szybkim ruchu.<br>Pokręć głową jak wariat, żeby poczuć rozmycie ruchu w prawdziwym życiu.
+option_nosync	Wyłączona
+option_player_name	Nazwa gracza
+option_player_name_desc	Będzie widoczna w rankingu.
+option_resolution	Rozdzielczość
+option_resolution_1280x720	1280x720
+option_resolution_1600x900	1600x900
+option_resolution_1920x1080	1920x1080
+option_resolution_2560x1440	2560x1440
+option_resolution_3840x2160	3840x2160
+option_resolution_800x600	800x600
+option_resolution_desc	Zmienia rozmiar końcowej tekstury obrazu.<br>Większa jest ładniejsza, ale wolniej się renderuje.
+option_sensitivity_x	Czułość w poziomie
+option_sensitivity_x_desc	Mnożnik szybkości rozglądania się w poziomie.
+option_sensitivity_y	Czułość w pionie
+option_sensitivity_y_desc	Mnożnik szybkości rozglądania się w pionie
+option_title_airdash	Skok w powietrzu
+option_title_hook	Hak
+option_title_jump	Skok
+option_title_move_x_negative	W lewo
+option_title_move_x_positive	W prawo
+option_title_move_y_negative	Do tyłu
+option_title_move_y_positive	Do przodu
+option_title_pull	Przyciąganie
+option_title_reset	Od nowa
+option_title_retract	Zwolnienie haka
+option_title_shoot	Strzał
+option_title_timewarp	Spowolnienie
+option_vertical_sync	Synchronizacja pionowa
+option_vertical_sync_desc	Gra poczeka, aż monitor będzie gotowy, zanim wyświetli obraz.<br>Zapobiega tak zwanemu „rwaniu obrazu”.
+option_volume_master	Głośność ogólna
+option_volume_master_desc	Głośność wszystkiego w grze.
+option_volume_music	Głośność muzyki
+option_volume_music_desc	Głośność samej muzyki.<br>Nie wpływa na efekty dźwiękowe.
+option_volume_sfx	Głośność efektów
+option_volume_sfx_desc	Głośność wszystkich efektów w grze.<br><br><size=50%>Czyli wszystkich „bum”, „pif-paf” i „o matko, jaka ta gra trudna”</size>
+press_to_cancel	Naciśnij <sprite name="Pause">, żeby anulować
+press_to_delete	Naciśnij <sprite name="Cancel">, żeby usunąć
+waiting_for_input	Czekam na przycisk
+option_language	Język
+option_language_desc	Zmienia język gry.
+option_en	Polski
+option_fr	Francais
+option_es	Español
+option_de	Deutsch
+option_ru	Русский
+option_zh	简体中文
+option_pt	Português
+option_jp	にほんご
+option_gyroscope_active	Żyroskop włączony
+option_gyroscope_active_desc	Czy celownik ma się ruszać, gdy przechylasz konsolę?
+discord_join	Dołącz do innych biegaczy!
+option_gyroscope_sensitivity_x	Czułość żyroskopu w poziomie
+option_gyroscope_sensitivity_x_desc	Im wyżej, tym dalej żyroskop przesuwa widok w poziomie
+option_gyroscope_sensitivity_y	Czułość żyroskopu w pionie
+option_gyroscope_sensitivity_y_desc	Im wyżej, tym dalej żyroskop przesuwa widok w pionie
+option_fov	Pole widzenia
+option_screen_shake	Siła wstrząsów ekranu
+option_screen_shake_desc	Zmienia siłę wstrząsów ekranu w grze.
+option_fov_desc	Zmienia szerokość pola widzenia gracza.
+option_hide_hands	Ukryj dłonie
+option_hide_hands_desc	Ukrywa dłonie i hak postaci w grze
+option_screen_flash_brightness	Jasność błysku
+option_screen_flash_brightness_desc	Zmienia jasność błysku przy śmierci
+option_autoskip_levelintro	Pomijaj intro poziomów
+option_autoskip_levelintro_desc	Gdy włączone, każdy przelot kamery na początku poziomu zostanie pominięty.<br>Ryzykowne, jeśli nie znasz jeszcze mapy.
+option_internet_test	Połącz ponownie z internetem
+option_internet_test_desc	Ponawia próbę połączenia z internetem.<br>Potrzebne do wysyłania najlepszych czasów i powtórek, żeby trafić do rankingu.
+option_internet_reconnect	Połącz ponownie
+internet_connection_lost	Utracono połączenie z internetem!
+internet_goto_option	Połącz ponownie w menu opcji
+internet_connection_found	Połączono z internetem!
+press_any_switch	Naciśnij dowolny przycisk
+hold_space_skip	Przytrzymaj <sprite name=Jump>, żeby pominąć
+autosave_do_not_quit	Gra zapisuje postępy automatycznie. Nie wychodź z gry ani nie wyłączaj zasilania, gdy widać tę ikonę.
+link_discord_account	Połącz konto Discord
+world_0	Początek
+world_1	Trening
+world_2	Wyzwanie
+world_3	Mistrzostwo
+world_4	Zwątpienie
+world_5	Gniew
+world_6	Koniec
+world_secret_data_breach	WYCIEK DANYCH
+world_beta_01	Powrót
+world_dlc_01	Powrót
+world_dlc_02	Błąd
+world_dlc_03	Finał
+world_dlc_04	ON
+interworld_00_line_00_00	Dobra,
+interworld_00_line_00_01	Teraz już powinno ci iść jak z płatka.
+interworld_00_line_00_02	Jeśli czujesz, że potrzebujesz więcej treningu, śmiało poćwicz tutaj.
+interworld_00_line_00_03	Na pewno spodoba ci się bujanie na haku.
+interworld_00_line_00_04	A, jeszcze jedno, zanim pójdziesz!
+interworld_00_line_00_05	Pewnie zastanawiasz się, co tu się właściwie dzieje...
+interworld_00_line_00_06	Ale tak naprawdę musisz wiedzieć tylko tyle, że trzeba zbierać te małe kryształy na końcu każdego poziomu.
+interworld_00_line_00_07	Zasilą portal, którym wrócisz do domu.
+interworld_00_line_00_08	I nie martw się o mnie,
+interworld_00_line_00_09	Moja robota to pomagać uwięzionym tu ludziom w ucieczce, sam się o ten los trochę prosiłem.
+interworld_00_line_00_10	...
+interworld_00_line_01_00	A<link="Pause(0.25f)"></link>, hmm<link="Pause(0.25f)"></link>, tak, tym razem naprawdę ostatnia rzecz.
+interworld_00_line_01_01	Jeśli chcesz iść dalej, strzel w ten kryształ<link="EventTrigger(LookAtCrystal)"></link>, o tutaj.
+interworld_00_line_01_02	Wybierzesz sobie nowe poziomy do zagrania.
+interworld_00_line_01_03	Im więcej poziomów przejdziesz, tym więcej kryształów zdobędziesz i tym więcej światów odblokujesz.
+interworld_00_line_01_04	No to do dzieła, mistrzu!
+interworld_01_line_00_00	No proszę, no proszę!
+interworld_01_line_00_01	Świetnie ci idzie,
+interworld_01_line_00_02	Oby ta zabawa trwała, aż wrócisz do domu.
+interworld_01_line_00_03	Albo aż on nas znajdzie…
+interworld_01_line_00_04	ZNACZY SIĘ…
+interworld_01_line_00_05	No,<link="Pause(0.3f)"></link> baw się dalej, a resztę zostaw mnie.
+interworld_01_line_00_06	Hmmm…
+interworld_01_line_00_07	Właściwie to może ci się przydać<link="EventTrigger(ShowWall)"></link>
+interworld_01_line_00_08	Widzisz tę ścianę?
+interworld_01_line_00_09	Śmiało, podejdź do niej i przytrzymaj <sprite name=Jump>!
+interworld_01_line_00_10	Voilà!
+interworld_01_line_00_11	Ale z ciebie teraz mały pajączek, co?
+interworld_01_line_00_12	Możesz przyczepić się do dowolnej ściany na jak długo chcesz, a nawet <color="yellow">biegać po niej jak po ziemi</color>
+interworld_01_line_00_13	Po puszczeniu skoku dostaniesz też mały zastrzyk prędkości i odzyskasz podwójny skok.
+interworld_01_line_00_14	No, jak tak o tym mówię.
+interworld_01_line_00_15	To brzmi trochę za mocno, nie?
+interworld_01_line_00_16	Ale <color=green>on</color> też nie gra fair.
+interworld_01_line_00_17	Nieważneee!
+interworld_01_line_00_18	Strzel w kryształ i baw się na kolejnych poziomach!
+interworld_02_line_00_00	O, jesteś z powrotem!
+interworld_02_line_00_01	Cieszę się, że udało ci się przejść te wszystkie poziomy…
+interworld_02_line_00_02	Radzisz sobie lepiej niż większość ludzi, którym próbuję pomóc,
+interworld_02_line_00_03	Serio, cieszę się razem z tobą!
+interworld_02_line_00_04	Czekaj
+interworld_02_line_00_05	Nie, coś tu nie gra, nie powinien być tak blisko.
+interworld_02_line_00_06	Hmm, graj dalej
+interworld_02_line_00_07	Niedługo powinienem mieć dla ciebie więcej informacji,
+interworld_02_line_00_08	Po prostu się tym nie przejmuj.
+interworld_03_line_00_00	O, jesteś, super.
+interworld_03_line_00_01	Sorry za ostatnio,
+interworld_03_line_00_02	Miałem mały problem, ale już wszystko gra.
+interworld_03_line_00_03	Tylko czuję, że nie byłem z tobą do końca szczery.
+interworld_03_line_00_04	Masz już za sobą sporo poziomów,
+interworld_03_line_00_05	więc chyba zasługujesz, żeby wiedzieć trochę więcej o tym, co się tu dzieje.
+interworld_03_line_00_06	Po pierwsze
+interworld_03_line_00_07	Jak widać, nie jesteśmy tu sami,
+interworld_03_line_00_08	W tym świecie jest ktoś trzeci,
+interworld_03_line_00_09	Nazywa się <color=green>NUMERO</color>
+interworld_03_line_00_10	To przez niego na poziomach wyskakują zewsząd zielone sześciany
+interworld_03_line_00_11	Krótko mówiąc,
+interworld_03_line_00_12	Chce nas obu zabić, żeby to ON<link="Pause(0.3f)"></link> mógł uciec z tego świata
+interworld_03_line_00_13	Ale ciężko pracowałem i nie powinien nam za bardzo przeszkadzać
+interworld_03_line_00_14	Ty też dajesz z siebie wszystko, zbierając kryształy w takim tempie!
+interworld_03_line_00_15	Więc dzięki ci za to.
+interworld_03_line_00_16	Postaram się, żebyśmy szybko wyplątali się z tego bagna.
+interworld_04_line_00_00	O, już jesteś
+interworld_04_line_00_01	Dobra robota na tych poziomach, robią się coraz podchwytliwsze, co?
+interworld_04_line_00_02	<color=green>Numero</color> zbudował kilka naprawdę trudnych, żeby nas tu uwięzić.
+interworld_04_line_00_03	Walczyłem z nim, kiedy cię nie było, i chyba
+interworld_04_line_00_04	…
+interworld_04_line_00_05	Sz<link="TypingSound(0.0.3f)">laaa</link><link="Pause(1)"></link>g
+interworld_04_line_00_06	To on
+interworld_04_line_00_07	Znalazł nas
+interworld_04_line_00_08	<color=green>Numero</color> nas znalazł
+interworld_04_line_01_00	Znalazłem was!
+interworld_04_line_02_00	Przecież właśnie to powiedziałem!
+interworld_04_line_02_01	I odeślę cię tam, skąd przyszedłeś!
+interworld_04_line_03_00	Nie pozbędziecie się mnie znowu, sk#&-#!(#&&
+interworld_04_line_04_00	…
+interworld_04_line_04_01	Sorry, to nie było dla twoich uszu.
+interworld_04_line_04_02	Możesz, hmm… możesz zebrać dla mnie kolejne kryształy?
+interworld_04_line_04_03	Chyba już niedaleko…
+interworld_05_line_00_00	Dobrze, że jesteś,
+interworld_05_line_00_01	Potrzebuję twojej pomocy, <link="Pause(0.3f)"></link>szybko!
+interworld_05_line_00_02	<color=green>Numero</color> wciąż tu jest i nie odpuści<link=EventTrigger(NumeroTwitch)></link>
+interworld_05_line_00_03	No, widzisz, w czym problem
+interworld_05_line_00_04	Idź do
+interworld_05_line_00_05	STRZELAJ DO NICH Z TEGO LASEROWEGO PALCA!!!
+interworld_05_line_01_00	To nic nie znaczy!
+interworld_05_line_01_01	Przebiję się!
+interworld_05_line_01_02	Tak łatwo mnie nie zabijecie!
+interworld_05_line_01_03	Ja jeszcze
+interworld_05_line_02_00	Ty się zamkniesz!
+interworld_05_line_02_01	... I nie wracaj!<link="Pause(0.5f)"></link> Znowu!
+interworld_05_line_02_02	... Miejmy to z głowy
+interworld_05_line_02_03	Skoro <color=green>Numero</color> jest tak blisko przebicia się, spotkasz pewnie więcej <color=#6C6>latających zielonych sond</color>
+interworld_05_line_02_04	Nie daj się im zauważyć, będziesz mieć tylko kilka sekund, zanim <color=#C66>zaczną strzelać</color>
+interworld_05_line_02_05	Nie ruszą się, kiedy <link=Floating(1,1,1)><color=#00FFFF>spowolnisz czas</color></link>, a może nawet uda ci się wtedy uniknąć lasera.
+interworld_05_line_02_06	Dawaj, stary, wolność jest już blisko
+interworld_06_line_00_00	I znowu jesteś z powrotem!
+interworld_06_line_00_01	Już prawie koniec, jeszcze kilka poziomów i będziemy mogli stąd odejść
+interworld_06_line_00_02	<color=green>Numero</color> na razie się nie wychyla, ale chyba coś szykuje
+interworld_06_line_00_03	Wie, że jesteśmy blisko celu, nie możemy się teraz wycofać!
+interworld_06_line_00_04	Do dzieła, mistrzu, tym razem naprawdę!
+interworld_07_line_00_00	Tak, tak, tak! Udało się!
+interworld_07_line_00_01	Mamy dość kryształów, żeby wrócić do domu!
+interworld_07_line_00_02	Daj mi tylko
+interworld_07_line_01_00	OTO JESTEM
+interworld_07_line_02_00	Widzimy,
+interworld_07_line_02_01	i jesteś dokładnie tam, gdzie chciałem!
+interworld_07_line_03_01	Co?!
+interworld_07_line_04_00	Uff, dobra, szarpie się…
+interworld_07_line_04_01	Uff, niedobrze, ale dam radę go utrzymać.
+interworld_07_line_04_02	Hmmmm…
+interworld_07_line_04_03	No, nie dam rady zrobić obu rzeczy naraz…
+interworld_07_line_04_04	To znaczy, nie odeślę do domu nas obu, muszę tu zostać i pilnować, żeby się nie wyrwał
+interworld_07_line_04_05	Żeby mnie stąd wyciągnąć, potrzeba o wiele więcej mocy…
+interworld_07_line_04_06	Coś koło <link=Rainbow() + Floating()>10 000</link> ludzi takich jak ty...
+interworld_07_line_04_07	Ale to już nie twój problem,
+interworld_07_line_04_08	Dzięki za całą tę ciężką robotę, należy ci się wolność.
+interworld_07_line_04_09	Idź, poradzę sobie.
+interworld_07_line_04_10	Dzięki
+interworld_08_line_00_00	Jesteś... <link="Pause(1)"></link>Jesteś z powrotem!
+interworld_08_line_00_01	Hmm, to znaczy, poziomy musiały ci się naprawdę spodobać, skoro tu jesteś.
+interworld_08_line_00_02	No to chyba możesz dostać to w nagrodę
+interworld_08_line_00_03	Ten mały kryształ otworzy ci tryb maratonu.
+interworld_08_line_00_04	Nie da mi zbyt wiele mocy na powrót do domu, ale przynajmniej będziesz mieć powód, żeby tu wracać :)
+interworld_08_line_00_05	Oby zjawiło się więcej takich ludzi jak ty.
+interworld_08_line_00_06	Przydałoby mi się trochę więcej mocy…
+interworld_08_line_00_07	Ale na razie cieszę się, że tu jesteś, i naprawdę lubię twoje towarzystwo!
+interworld_08_line_00_08	Baw się dobrze w trybie maratonu!
+dialog_gmif_intro_00	O, znowu cześć!
+dialog_gmif_intro_01	Dobrze, że wciąż tu jesteś.
+dialog_gmif_intro_02	Znalazłem sposób, żeby odesłać cię do domu! <br>Musimy tylko wejść do matriksa
+dialog_gmif_intro_03	Patrz!
+dialog_gmif_boss_intro_00_00	Dobra, zrobiliśmy już dość!
+dialog_gmif_boss_intro_00_01	Złapałem nawet swojego nemezis, oto <color=green>NUMERO</color>!
+dialog_gmif_boss_intro_00_02	Czy on nie jest słodki!?
+dialog_gmif_boss_intro_01_00	Jeśli mnie nie znasz, to za mało grasz w tę grę...
+dialog_gmif_boss_intro_01_01	Więc powiem to jasno...
+dialog_gmif_boss_intro_02_00	<link="Shake(2,-1)">Zniszczę cię!</link>
+dialog_gmif_special_ending_00	Witaj w pustce
+dialog_gmif_special_ending_01	Wystarczająco mocno przywaliłem?
+dialog_gmif_special_ending_02	Mam nadzieję...
+dialog_gmif_special_ending_03	Masz szczęście, że potrzebuję więcej czasu, by działać na pełnych obrotach
+dialog_gmif_special_ending_04	Chyba wystarczy kilka dni...
+dialog_gmif_special_ending_05	Powiedzmy... <color=white><link="Rainbow()">29 października.</link></color>
+dialog_gmif_special_ending_06	<link="Shake()">A teraz wynoś się z mojego świata!</link>
+next_world	Następny świat
+internet_retry	Połącz <br>z internetem
+dialog_dlc_intro_00_00	Hej!
+dialog_dlc_intro_00_01	Miło cię znowu widzieć!
+dialog_dlc_intro_00_02	Znalazłem sposób, żeby raz na zawsze rozprawić się z Numero!
+dialog_dlc_intro_00_03	Chodź ze mną!
+dialog_dlc_boss_intro_00_00	No dobra, teraz powinienem mieć dość mocy, żeby rozprawić się z Numero.
+dialog_dlc_boss_intro_00_01	Hej, nie będę tu czekać, aż mnie skasujecie!
+dialog_dlc_boss_intro_00_02	Bawisz się w moim świecie i nie wiesz, co to dla mnie znaczy!
+dialog_dlc_boss_intro_00_03	Dron karmił się twoimi sukcesami, żeby zyskać moc
+dialog_dlc_boss_intro_00_04	A ja twoimi błędami!
+dialog_dlc_boss_intro_00_05	A TERAZ ZMIERZYSZ SIĘ Z WŁASNĄ PORAŻKĄ!
+dialog_ending_credits_00_00	Hej, w końcu się obudziłeś!
+dialog_ending_credits_00_01	Udało ci się go pokonać...
+dialog_ending_credits_00_02	Dziękuję...
+dialog_ending_credits_00_03	Pewnie masz mnóstwo pytań, a po tym wszystkim chyba jestem ci winien wyjaśnienia.
+dialog_ending_credits_00_04	Ale obawiam się, że cię rozczaruję.
+dialog_ending_credits_00_05	Prawda jest taka...<link="Pause"></link> że czułem się samotny.
+dialog_ending_credits_00_06	Stworzyłem te wszystkie poziomy, żeby bawić ludzi i rzucać im wyzwanie.
+dialog_ending_credits_00_07	Ale nikt nigdy nie dał rady ich przejść
+dialog_ending_credits_00_08	Więc stworzyłem ciebie! Idealnego biegacza!
+dialog_ending_credits_00_09	I udało ci się! Przejść najtrudniejsze poziomy, a nawet pokonać mój nieudany eksperyment!
+dialog_ending_credits_00_10	A, hmm, tak, może popełniłem parę błędów, zanim cię stworzyłem...
+dialog_ending_credits_00_11	Ale chciałem tylko mieć kogoś, kto kocha haki z linką tak jak ja.
+dialog_ending_credits_00_12	Przepraszam, że to nie jest jakieś pokręcone, epickie zakończenie...
+dialog_ending_credits_00_13	Ale cieszę się, że udało ci się zajść tak daleko!
+dialog_ending_credits_00_14	Gratulacje!
+dialog_ending_credits_00_15	A, no tak, gdzie jesteśmy?
+dialog_ending_credits_00_16	To tylko mały świat, który zrobiłem, żeby odsapnąć i trochę się zrelaksować
+dialog_ending_credits_00_17	Nie ma tu wiele do roboty, ale po całym tym stresie mam nadzieję, że odpoczniesz tu ze mną chwilę.
+dialog_ending_credits_00_18	Chodź, popatrzymy razem na zachód słońca!
+dialog_ending_credits_00_19	A, i dziękuję za granie w moją grę!
+dialog_ending_credits_00_20	;)
+Alright,  	Dobra,
+By now you should have the hang of it. 	Teraz już powinno ci iść jak z płatka.
+If you feel like you need more training, feel free to train here. 	Jeśli czujesz, że potrzebujesz więcej treningu, śmiało poćwicz tutaj.
+I'm sure you'll enjoy swinging around.	Na pewno spodoba ci się bujanie na haku.
+Oh one last thing before you go! 	A, jeszcze jedno, zanim pójdziesz!
+I guess that you must be wondering what is going on here... 	Pewnie zastanawiasz się, co tu się właściwie dzieje...
+But, really, the only thing you need to know is that you have to gather thoses little crystals. 	Ale tak naprawdę musisz wiedzieć tylko tyle, że trzeba zbierać te małe kryształy.
+I know it sounds suspicious, but bear with me for a second. 	Wiem, że to brzmi podejrzanie, ale posłuchaj mnie przez chwilę.
+They will help power up this portal and you'll be able to return home. 	Zasilą ten portal, a wtedy wrócisz do domu.
+My job is to help people trapped here to escape. 	Moja robota to pomagać uwięzionym tu ludziom w ucieczce.
+And don't worry about me, I kinda asked for this fate. 	I nie martw się o mnie, sam się o ten los trochę prosiłem.
+Ah, hum, yes the real last thing this time. 	A, hmm, tak, tym razem naprawdę ostatnia rzecz.
+If you want to proceed, go ahead and shoot this crystal<link="EventTrigger(LookAtCrystal)"></link> right here. 	Jeśli chcesz iść dalej, strzel w ten kryształ<link="EventTrigger(LookAtCrystal)"></link>, o tutaj.
+You'll be able to select a level to play. 	Wybierzesz sobie poziom do zagrania.
+The more levels you clear, the more crystals and the more worlds you'll unlock. 	Im więcej poziomów przejdziesz, tym więcej kryształów zdobędziesz i tym więcej światów odblokujesz.
+Now go get 'em champ! 	No to do dzieła, mistrzu!

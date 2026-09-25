@@ -1,0 +1,133 @@
+zrodla:
+  - id: en
+    opis: translations/en-pl-review.json — angielskie kwestie, klucze i komendy animacji z gry.
+  - id: stare-review
+    opis: translations/REVIEW.md — wcześniejsze ustalenia terminologiczne, bez przypisywania ich akceptacji użytkownika.
+  - id: kierunek
+    opis: docs/translation-decisions.md — próbka i trzy rekomendacje zaakceptowane przez użytkownika 2026-09-24.
+  - id: review-full
+    opis: docs/localization-review.md — niezależny odczyt 721 wpisów i synteza całej gry, 2026-09-24.
+
+styl:
+  ton: lekko potoczny, absurdalny czarny humor; Pedro pozornie troskliwy, nie twardziel
+  adaptacja: odtwarzaj istniejące gry słów po polsku; zachowuj celowo niezręczne suchary, bez dopisywania nowych żartów do zwykłych kwestii
+  zrodlo: uzytkownik
+  uwaga: >-
+    Użytkownik zaakceptował wszystkie trzy rekomendacje z próbki. Bez dokładania
+    mocniejszych przekleństw; nie upotoczniać automatycznie każdej teatralnej kwestii.
+    Nazwy osiągnięć mogą bawić się słowem i zachować „combo”. Odrzucone jako kierunek:
+    dosłowność kosztem żartu, opisowe „Combo x20” zamiast gry słów.
+
+postacie:
+  - id: pedro
+    nazwa: Pedro
+    plec: m
+    mowi_do_gracza: ty
+    rejestr: pogodny, troskliwy na pokaz, spokojne makabryczne rady i suchary
+    odmiana: Pedra, Pedrowi, Pedrem
+    zrodlo: [en, stare-review]
+    uwaga: >-
+      Autoprezentacja w w101-6. Rodzaj w PL i odmiana zachowane z istniejącego przekładu;
+      nie przypisuj wszystkich kluczy w* Pedrowi, bo mówią też inne postacie.
+      Użytkownik zaakceptował kierunek rejestru w próbce, nie dowolne nowe fakty o postaci.
+    przyklady:
+      - klucz: w102-18
+        en: Huh...|Well, I guess you'll just have to kill them all now.
+        pl: Hm...|No to teraz chyba musisz ich wszystkich pozabijać.
+        zrodlo: uzytkownik
+        uwaga: Swobodny rytm; poprzednie „No cóż, teraz chyba musisz zabić ich wszystkich” zastąpione po akceptacji.
+      - klucz: w410-1
+        en: Look, mines!|That must mean we're on track to find the railway.|Heh... on track... railway.|Sorry, just sharing my train of thoughts.
+        pl: Patrz, miny!|Chyba jesteśmy na właściwym torze, żeby znaleźć kolej.|Heh... tor... kolej.|Wybacz, taki już mam tok... tor myślenia.
+        zrodlo: uzytkownik
+        uwaga: Zachować polską adaptację; odrzucono słabsze powiązanie „droga... tory” i „myśli po szynach”.
+  - id: mitch
+    nazwa: Mitch
+    plec: m
+    rejestr: szorstki i rozkazujący; „półgłówku”, „nieroby”, bez dodatkowych przekleństw
+    zrodlo: [en, stare-review]
+    uwaga: w102-14 używa His; komendy Butcher_* w w102-19 i w102-21 przypisują kwestie. Nie obejmuj całego w102 jednym mówcą.
+  - id: ofelia
+    nazwa: Ofelia
+    plec: k
+    rejestr: autorytarny, ironiczny; w finale osobisty i poważny
+    odmiana: Ofelii, Ofelię, Ofelią
+    zrodlo: [en, review-full]
+    uwaga: 'SPOILERY: w29-1 nazywa ją siostrą Denny’ego, w511-1 zwraca się do bohatera „brother”. Nie dopisywać lat rozłąki; w57-4 podaje tylko długi czas.'
+  - id: denny
+    nazwa: Denny
+    plec: m
+    rejestr: teatralny konferansjer, w zagrożeniu spanikowany i potoczny
+    odmiana: Denny’ego, Denny’emu, Dennym
+    zrodlo: [en, review-full]
+    uwaga: 'SPOILERY: autoprezentacja w20-3; w29-1 nazywa Ofelię siostrą, Mitcha ojcem. w511-1 mówi o nim „he”.'
+
+terminy:
+  - en: focus
+    pl: skupienie
+    formy: [skup]
+    zrodlo: [stare-review]
+  - en: split aim|separat(?:e|ing) (?:your )?aim
+    pl: rozdzielanie celowania
+    formy: [rozdziel, celować w dwa miejsca]
+    zrodlo: [stare-review]
+  - en: Ophelia
+    pl: Ofelia
+    formy: [ofeli]
+    zrodlo: [stare-review]
+  - en: Mitch the Butcher
+    pl: Mitch Rzeźnik
+    formy: [rzeźnik]
+    zrodlo: [stare-review]
+  - en: Internet Service Protectors
+    pl: Internetowa Straż Porządkowa
+    formy: [internetowa straż porządkowa]
+    zrodlo: [stare-review]
+  - en: Old Town
+    pl: Stare Miasto
+    formy: [stare miasto, starego miasta, starym mie]
+    zrodlo: [stare-review]
+  - en: District Null
+    pl: Dzielnica Null
+    formy: [dzielnic]
+    zrodlo: [stare-review]
+  - en: Pedro's World
+    pl: Świat Pedra
+    formy: [świat]
+    zrodlo: [stare-review]
+  - en: The Sewer
+    pl: Kanały
+    formy: [kanał]
+    zrodlo: [stare-review]
+  - en: Comb-o-ver
+    pl: Combo na zaczes
+    formy: [combo na zaczes]
+    zrodlo: uzytkownik
+    uwaga: achN4; zastępuje „Combo na boczek”, nie zastępować opisowym „Combo x20”.
+  - en: Mumbo Combo
+    pl: Czary-combary
+    formy: [czary-combary]
+    zrodlo: uzytkownik
+    uwaga: achN3; świadomie zachowana gra słów z próbki.
+
+# Imiona, kody, slang, stylizowane okrzyki i nazwy klawiszy sprawdzone w pełnym review.
+bez_tlumaczenia:
+  [Pedro, Mitch, ISP, LOL, GG, GLHF, Tab, Home, My Friend Pedro,
+   Bob, John, Dave, Rutger, Ayoze, Hunter, Denny, 1337dealWithIT,
+   ISP-23698, ISP-23701, ISP-88172, Mech, Shamona, 'Hahahahaha!', ZOMG,
+   'Lag!', OMFG, 'Aggro!', 'Zerg!', MOB, Caps Lock, Menu, Backspace,
+   Insert, Page Up, Page Down, End, Delete, Scroll Lock, HUD]
+
+ustawienia:
+  dialog_klucz: '^w\d'
+
+ignoruj:
+  - sprawdzenie: tokeny
+    klucz: '^inNoMap$'
+    powod: '[Not mapped] jest tekstem etykiety, nie komendą; potwierdza walidator build.py.'
+  - sprawdzenie: spojnosc
+    klucz: '^(pep8|pep20|hChW|mChgWep|mKick|bul28)$'
+    powod: Pełny review potwierdza odmienne funkcje poleceń, nazw czynności i komunikatów punktowych oraz dopuszczalne warianty pochwał.
+  - sprawdzenie: wielkie_litery
+    klucz: '^in23$'
+    powod: Dwa równorzędne polecenia „Skocz / Puść”, nie Title Case przeniesiony z EN.

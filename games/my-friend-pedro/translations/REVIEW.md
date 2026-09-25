@@ -1,5 +1,10 @@
 # Pedro — uwagi do korekty
 
+Aktualizacja 2026-09-24: niezależny review przeczytał 721/721 wpisów. Wynik,
+poprawki i otwarte propozycje: [raport](../docs/localization-review.md).
+Obowiązująca terminologia i uzgodniony kierunek są w [biblii](bible.yaml);
+poniższe notatki zachowują wcześniejsze ustalenia.
+
 721/721 rekordów tabeli I2 ma polską wersję. Pełne dialogi zawierają zakończenie gry.
 
 - Focus: **skupienie**; split aim: **rozdzielanie celowania**.

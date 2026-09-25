@@ -1,0 +1,11 @@
+{
+  "entries": 721,
+  "original_sha256": "4a81ed99cd1e8e5e4665bde87b80d4bd551bf95c088c1b3a80ed2ecfbb9764fd",
+  "source_english_match": true,
+  "pl_review_sync": true,
+  "ordered_tokens_match": true,
+  "inputs": {
+    "pl.json": "e02115e0cf144dfdcb0510cac4ac68311c093d25379969b64b5d61d339cf7dca",
+    "en-pl-review.json": "518efee61a453bdc4de797320075471bb69d20b5ce0cc1bd04e91cffed47c1a3"
+  }
+}
