@@ -232,3 +232,7 @@ Test pełnego 0.2.0 w grze przez użytkownika (lista „Do sprawdzenia w grze”
 `docs/localization-review.md`, zwłaszcza wiersze płomieni w teczce, ekran Charona
 i podpowiedzi fontTiny). Otwarte warianty: „grim and dim” w finale, rodzaj Świecy
 w dia_lv3_7, skróty przycisków pada.
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 10 grup: napisy `s<indeks>` po kontekście (obiekt GameMakera), dialogi `dia_*.json` po pliku. Drzewa rozmów nie mają sekwencji.

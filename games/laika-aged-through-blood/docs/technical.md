@@ -137,6 +137,10 @@ brzmienie z `pl.json`, z którego zbudowano paczkę 0.2.0: `UI_CONTENT_WARNING`
 niedobrze.”), `D_0_Walkie_2_A_LAIKA_4` („No właśnie, Starsza.”). Mapa tekstów dla builda
 jest identyczna z dawnym `pl.json`.
 
+## Pracownia korekty
+
+`translations/structure.yaml` generuje `tools/structure.py`: 19 grup po prefiksach kluczy i 368 rozmów ze scen liniowych, z mówcą z klucza (postać według `regex_klucza` w biblii). Sceny z odnogami zostają w grupie w kolejności pliku. Po zmianie kluczy dialogów uruchom skrypt ponownie.
+
 ## Nota o materiale gry
 
 `work/source/en.json` to teksty gry wyciągnięte do pracy. Paczka nie niesie żadnego pliku

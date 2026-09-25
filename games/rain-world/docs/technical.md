@@ -124,6 +124,10 @@ Partie w `work/batches/` (ignorowane) przez `tools/batch.py make|show|merge|stat
 biblia w `translations/bible.yaml`, decyzje w `docs/translation-decisions.md`,
 raport kontrolny w `work/l10n-report.md`.
 
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 11 grup: `dlg:` po rodzajach plików rozmów, `str:` po kontekście (klasa kodu albo dodatek). Miejsce w kodzie trzyma pole `context` (do 2026-09-25 było w `note`).
+
 ## Nota o materiale gry
 
 `work/` (ignorowany) trzyma odszyfrowane teksty gry i zrzut literałów z Assembly-CSharp —

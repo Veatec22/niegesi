@@ -1,0 +1,32 @@
+# Grupy I Am Your Beast dla pracowni korekty.
+# Format: docs/specs/editorial-workspace.md, sekcja „Plik struktury”. Decyzja: docs/decisions/0010.
+#
+# phrase/<scena>/<n> to odcinki napisów scen w kolejności czasowej — w grupie stoją
+# po kolei, scena za sceną. Mówców scen nie ustalono, więc bez sekwencji.
+# fleece/<id> to jeden bank fragmentów Fleece, rozpoznawanych po tytule (kontekst):
+# tytuły liczbowe i „New Passage” to opowieści i wspomnienia, reszta miesza menu,
+# ustawienia, cele dodatkowe, napisy końcowe i okrzyki wrogów — do dalszego podziału.
+
+format: 1
+
+groups:
+  - id: interface
+    name: Napisy w scenach (menu, ekrany)
+  - id: menu-hud
+    name: Fleece — menu, ustawienia, cele, okrzyki, napisy końcowe
+  - id: tutorial
+    name: Samouczek (napisy)
+  - id: missions
+    name: Misje — rozmowy przez radio (sceny 2–24)
+  - id: cutscenes
+    name: Przerywniki i zakończenie
+  - id: stories
+    name: Fleece — opowieści i wspomnienia
+
+rules:
+  - {group: interface, match: '^tmp/'}
+  - {group: tutorial, match: '^phrase/TUT_'}
+  - {group: cutscenes, match: '^phrase/(SCENE \d+|FINAL CUTSCENE|ENDING|CATCH|RELEASE|Example Cutscene No Text)/'}
+  - {group: missions, match: '^phrase/\d+[ _]'}
+  - {group: stories, match: '^fleece/', context: '^(\d+(\.\d+)*|New Passage)$'}
+  - {group: menu-hud, match: '^fleece/'}

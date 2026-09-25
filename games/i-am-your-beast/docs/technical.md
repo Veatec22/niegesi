@@ -158,6 +158,10 @@ Mówiących w dodatku wskazują profile kolorów BOB, IRIS, JODIE, KYLE, MARKUS,
 Użytkownik testuje całość. Po akceptacji: przeniesienie w `games/catalog.yaml` należy
 do użytkownika.
 
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 6 grup: frazy scen (misje, przerywniki, samouczek) i bank Fleece (opowieści po tytułach liczbowych, reszta razem — do dalszego podziału). Bez sekwencji: mówców scen nie ustalono.
+
 ## Materiał gry
 
 Paczka zawiera wyłącznie plugin, `pl.tsv` z polskimi tekstami i odciskami angielskich,

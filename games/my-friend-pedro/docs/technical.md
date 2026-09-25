@@ -104,3 +104,7 @@ The user already confirmed the vertical; no repeated approval is required.
 
 [Technical research](../../../temp/research/2026-09-20-kandydaci-technika.md),
 [web sources](../../../temp/research/2026-09-20-kandydaci-zrodla.md).
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli 721 wpisów na 9 grup po prefiksach kluczy (kwestie `w…`, menu, klawisze, podpowiedzi, wynik, osiągnięcia, GIF/Twitter, napisy końcowe).

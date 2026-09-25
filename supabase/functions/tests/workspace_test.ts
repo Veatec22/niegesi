@@ -107,6 +107,27 @@ Deno.test('struktura: przypisanie wygrywa z regułą, pierwsza reguła wygrywa, 
   assertEquals(keys(UNSORTED_GROUP.id), ['/zz', 'ns/mA']);
 });
 
+Deno.test('struktura: reguła po kontekście, sama albo razem z kluczem', () => {
+  const withContext: Entry[] = [
+    { ...entry('s1', 'Volume', 'Głośność'), context: 'oPause_Step_2, oInit' },
+    { ...entry('s2', 'Kill all', 'Zabij'), context: 'oPControl_Step_2' },
+    { ...entry('s3', 'Tip', 'Rada') },
+    { ...entry('mX', 'Menu', 'Menu'), context: 'oPause_Create_0' },
+  ];
+  const layout = resolveLayout({
+    format: 1,
+    groups: groups2,
+    rules: [{ group: 'two', match: '^m', context: '^oPause' }, { group: 'one', context: '^oPause' }, { group: 'two', context: 'PControl' }],
+  }, withContext, null);
+  const keys = (id: string) => layout.groups.find((g) => g.id === id)?.entries.map((e) => e.key);
+  assertEquals(keys('one'), ['s1']);
+  assertEquals(keys('two'), ['s2', 'mX']);
+  assertEquals(keys(UNSORTED_GROUP.id), ['s3']);
+  const err = assertThrows(() =>
+    resolveLayout({ format: 1, groups: groups2, rules: [{ group: 'one' }, { group: 'one', context: '[' }] }, withContext, null), FormatError);
+  assertEquals(err.issues.length, 2);
+});
+
 Deno.test('struktura: błędy są zbierane i nie udają braku pliku', () => {
   const err = assertThrows(() =>
     resolveLayout({

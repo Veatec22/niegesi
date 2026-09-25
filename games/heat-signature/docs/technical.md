@@ -373,3 +373,7 @@ Użytkownik uruchamia grę i ocenia screeny. Dopiero udany test uzasadnia pełne
 
 Nie ma buildu, instalacji, paczki ZIP ani testu w uruchomionej grze.
 Dokument i skrypt są wynikiem rozpoznania, nie deklaracją ukończenia projektu.
+
+## Pracownia korekty
+
+`translations/structure.yaml` dzieli teksty na 11 grup po kontekście (`Dialog:` plik, `EXE:` funkcje GML, `Szablon`) i gramatykę nazw przedmiotów `item-*`. Rozmowy z barmanami i Fiasco to drzewa odpowiedzi, bez sekwencji.

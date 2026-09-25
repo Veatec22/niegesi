@@ -1,0 +1,51 @@
+# Grupy DEADBOLT dla pracowni korekty.
+# Format: docs/specs/editorial-workspace.md, sekcja „Plik struktury”. Decyzja: docs/decisions/0010.
+#
+# Klucze s<indeks> nic nie mówią, więc napisy dzielą reguły po kontekście — obiekcie
+# GameMakera, który ich używa (tools/review.py). Zakresy indeksów w oInit_Create_0:
+# misje s2228–s2278, broń s2279–s2363, osiągnięcia s2373–s2422 i s6291.
+# Dialogi dia_*.json to drzewa rozmów z odnogami, nie liniowe rozmowy, więc nie ma
+# sekwencji; kolejność w grupie to kolejność węzłów w pliku gry.
+
+format: 1
+
+groups:
+  - id: menu
+    name: Menu, zapis i ostrzeżenie
+  - id: settings
+    name: Pauza, ustawienia i sterowanie
+  - id: missions
+    name: Misje, cele, wyniki i porady
+  - id: interactions
+    name: Interakcje i HUD
+  - id: weapons
+    name: Broń i ulepszenia
+  - id: enemies
+    name: Przeciwnicy
+  - id: fireplace
+    name: Kominek — misje i rozmowy z płomieniami
+  - id: level-dialogue
+    name: Kwestie i notatki w misjach
+  - id: cassettes
+    name: Kasety
+  - id: achievements
+    name: Osiągnięcia
+
+rules:
+  # Dialogi z plików JSON gry.
+  - {group: fireplace, match: '^j:dia_fp\.json/'}
+  - {group: level-dialogue, match: '^j:dia_'}
+  # Napisy z oInit_Create_0 po zakresach indeksów.
+  - {group: missions, match: '^s22(2[89]|[3-7]\d)$', context: '^oInit_Create_0'}
+  - {group: weapons, match: '^s2(279|2[89]\d|3[0-6]\d)$', context: '^oInit_Create_0'}
+  - {group: achievements, match: '^s(23[7-9]\d|24[0-2]\d|6291)$', context: '^oInit_Create_0'}
+  # Pozostałe napisy po obiekcie, który ich używa.
+  - {group: settings, context: '^(tylko gml_Object_)?oPause_(Create|Step)|^script (string_|refresh_control_string|bstep_default)'}
+  - {group: menu, context: '^(oLoadGame|oNewGame|oLoadCustom|oLogo|oMissionSelect|oCredits|oPause_Other)|^script exit_room'}
+  - {group: missions, context: '^(oPControl_Step|oDialogueTree|oStat_Draw|oTip_)|^script advance_mission'}
+  - {group: weapons, context: '^oUpgrade'}
+  - {group: enemies, context: '^(o(Zomb|Vamp|Skele|Oni)\d|oSkeleBoss1|oDog1|oCar3)_'}
+  - {group: cassettes, context: '^oCassette_'}
+  - {group: achievements, context: '^oAchievementScreen'}
+  - {group: level-dialogue, context: '^(Timeline_|oSkeleBoss2Body|oVampBoss2Gem)'}
+  - {group: interactions, context: '^(oApt|oCable|oCar|oCharon|oCoke|oCrate|oDeadReaper|oDoor|oElevator|oGenerator|oGod|oJukebox|oKnife|oLadder|oLight|oMeat|oMicrowave|oNotes|oPantry|oPipe|oSafe|oSewer|oSnipe|oSnow|oStairwell|oThreaten|oTotem|oTrap|oWell|oZombBoss1Cover|pCover|oPControl_Draw|oSniper_Draw|oCassettePickup)'}

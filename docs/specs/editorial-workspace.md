@@ -107,10 +107,13 @@ i pewności. Okrzyki `pSpeech` nie tworzą rozmowy tylko dlatego, że mają nume
 - `groups` — lista `{id, name}` w kolejności wyświetlania. `id` unikalne, niepuste.
 - `assign` — lista `{key, namespace?, group}`; ręczne przypisanie pojedynczego wpisu.
   Wpis może mieć najwyżej jedno przypisanie; wskazany wpis i grupa muszą istnieć.
-- `rules` — lista `{group, match, namespace?}` sprawdzana po kolei, niezależnie od
-  kolejności wyświetlania grup. `match` to wyrażenie regularne na `key`, bez flag,
-  zgodne z JavaScriptem i Pythonem (kotwice, klasy, alternatywa, `\d`). Reguła
-  obejmuje tylko wpisy o dokładnie tym `namespace` (brak = pusty).
+- `rules` — lista `{group, match?, context?, namespace?}` sprawdzana po kolei, niezależnie od
+  kolejności wyświetlania grup. `match` to wyrażenie regularne na `key`, `context` na
+  polu `context` wpisu (brak = pusty tekst); przynajmniej jedno z nich, a podane oba
+  muszą pasować. Wyrażenia bez flag, zgodne z JavaScriptem i Pythonem (kotwice, klasy,
+  alternatywa, `\d`). `context` służy grom, których klucze nic nie mówią (hashe, indeksy
+  napisów), a kontekst wskazuje miejsce w grze. Reguła obejmuje tylko wpisy o dokładnie
+  tym `namespace` (brak = pusty).
 - `sequences` — lista `{id, name, group, order, speakers, lines}`. `order` i `speakers`
   to `{certainty, source}`, gdzie `certainty` ∈ `pewna`, `odtworzona`. `lines` to lista
   `{key, namespace?, speaker?}`; brak `speaker` oznacza mówcę nieustalonego, a podany

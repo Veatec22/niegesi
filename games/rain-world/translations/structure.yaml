@@ -1,0 +1,49 @@
+# Grupy Rain World dla pracowni korekty.
+# Format: docs/specs/editorial-workspace.md, sekcja „Plik struktury”. Decyzja: docs/decisions/0010.
+#
+# str:<klucz strings.txt> dzielą reguły po kontekście — klasie kodu, która używa napisu
+# (tools/extract.py + review.py), albo dodatku, z którego pochodzi. Napisy bez znalezionego
+# miejsca w kodzie (nazwy stworzeń, przejść, część menu) stoją w osobnej grupie.
+# dlg:<plik>#<linia> to pliki rozmów gry; w grupie stoją plik za plikiem, linia po linii.
+# Sekwencji jeszcze nie ma: mówców w plikach nie zapisano, a większość to monologi.
+
+format: 1
+
+groups:
+  - id: menu
+    name: Menu, opcje i mody
+  - id: game
+    name: Rozgrywka, samouczki i przejścia
+  - id: oracles-code
+    name: Iteratory — kwestie z kodu gry
+  - id: conversations
+    name: Rozmowy iteratorów i odczyty pereł
+  - id: broadcasts
+    name: Transmisje i czatlogi (More Slugcats)
+  - id: commentary
+    name: Komentarz twórców (More Slugcats)
+  - id: moreslugcats
+    name: More Slugcats i Remix
+  - id: expedition
+    name: Ekspedycje
+  - id: jolly
+    name: Tryb kooperacji (Jolly Co-op)
+  - id: watcher
+    name: The Watcher
+  - id: other
+    name: Napisy bez miejsca w kodzie (nazwy, przejścia, różne)
+
+rules:
+  # Pliki rozmów.
+  - {group: commentary, match: '^dlg:[a-z]{2}_[^#]*-(white|artificer|inv|saint|rivulet|spear|gourmand)\.txt#'}
+  - {group: broadcasts, match: '^dlg:(lp_|chatlog_)'}
+  - {group: conversations, match: '^dlg:'}
+  # Napisy po klasie kodu albo dodatku.
+  - {group: oracles-code, match: '^str:', context: 'Oracle'}
+  - {group: expedition, match: '^str:', context: 'Expedition|dodatek: expedition'}
+  - {group: jolly, match: '^str:', context: 'JollyCoop|dodatek: jollycoop'}
+  - {group: watcher, match: '^str:', context: 'Watcher|dodatek: watcher'}
+  - {group: menu, match: '^str:', context: '^w kodzie: (Menu\.|Options|RainWorldSteamManager|ProcessManager|ModManager|SteamWorkshopUploader|DevInterface|RegionSelectMenu|MoreSlugcats\.MMFOptionInterface)'}
+  - {group: moreslugcats, match: '^str:', context: 'MoreSlugcats|dodatek: (moreslugcats|rwremix)'}
+  - {group: game, match: '^str:', context: '^w kodzie: '}
+  - {group: other, match: '^str:'}

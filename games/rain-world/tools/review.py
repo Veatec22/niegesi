@@ -1,4 +1,4 @@
-"""Odśwież translations/en-pl-review.json: EN i uwagi z tekstów gry (work/en.json), PL z pliku.
+"""Odśwież translations/en-pl-review.json: EN i kontekst z tekstów gry (work/en.json), PL z pliku.
 
     .venv\\Scripts\\python.exe games\\rain-world\\tools\\review.py
 
@@ -18,7 +18,7 @@ from translations import load_entries, write_entries  # noqa: E402
 
 
 def row_for(key: str, text: str, english: dict) -> dict:
-    """Wpis review: EN z gry (albo z klucza dla wpisów spolszczenia), PL i uwagi."""
+    """Wpis review: EN z gry (albo z klucza dla wpisów spolszczenia), PL i kontekst (skąd tekst)."""
     source = english.get(key, {})
     row = {'key': key, 'english': source.get('english', key.split(':', 1)[1]), 'polish': text}
     notes = []
@@ -29,7 +29,7 @@ def row_for(key: str, text: str, english: dict) -> dict:
     if key not in english:
         notes.append('wpis dodany przez spolszczenie')
     if notes:
-        row['note'] = '; '.join(notes)
+        row['context'] = '; '.join(notes)
     return row
 
 

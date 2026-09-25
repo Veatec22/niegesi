@@ -75,21 +75,29 @@ export function resolveLayout(data: unknown, entries: Entry[], speakers: Set<str
   });
 
   // Reguły, po kolei.
-  const rules: { group: string; match: RegExp; namespace: string }[] = [];
+  // `match` sprawdza klucz, `context` kontekst wpisu; podane oba muszą pasować.
+  const rules: { group: string; match: RegExp | null; context: RegExp | null; namespace: string }[] = [];
   listOf(data.rules, 'rules', issues).forEach((raw, index) => {
     const at = `rules[${index}]`;
     if (!isObj(raw)) return void issues.push(`${at}: nie jest mapą`);
-    unknownFields(raw, ['group', 'match', 'namespace'], at, issues);
+    unknownFields(raw, ['group', 'match', 'context', 'namespace'], at, issues);
     if (raw.namespace !== undefined && typeof raw.namespace !== 'string') issues.push(`${at}: „namespace” musi być tekstem`);
-    if (typeof raw.match !== 'string' || raw.match === '') return void issues.push(`${at}: brak „match”`);
-    let match: RegExp;
-    try {
-      match = new RegExp(raw.match);
-    } catch {
-      return void issues.push(`${at}: błędne wyrażenie „${raw.match}”`);
-    }
+    if (raw.match === undefined && raw.context === undefined) return void issues.push(`${at}: brak „match” ani „context”`);
+    const pattern = (field: 'match' | 'context'): RegExp | null | undefined => {
+      const value = raw[field];
+      if (value === undefined) return null;
+      if (typeof value !== 'string' || value === '') return void issues.push(`${at}: „${field}” musi być niepustym tekstem`);
+      try {
+        return new RegExp(value);
+      } catch {
+        return void issues.push(`${at}: błędne wyrażenie „${value}”`);
+      }
+    };
+    const match = pattern('match');
+    const context = pattern('context');
+    if (match === undefined || context === undefined) return;
     if (knownGroup(raw.group, at)) {
-      rules.push({ group: raw.group, match, namespace: typeof raw.namespace === 'string' ? raw.namespace : '' });
+      rules.push({ group: raw.group, match, context, namespace: typeof raw.namespace === 'string' ? raw.namespace : '' });
     }
   });
 
@@ -97,7 +105,11 @@ export function resolveLayout(data: unknown, entries: Entry[], speakers: Set<str
 
   const groupOf = (entry: Entry): string =>
     assigned.get(refId(entry)) ??
-      rules.find((rule) => rule.namespace === entry.namespace && rule.match.test(entry.key))?.group ??
+      rules.find((rule) =>
+        rule.namespace === entry.namespace &&
+        (rule.match === null || rule.match.test(entry.key)) &&
+        (rule.context === null || rule.context.test(entry.context ?? ''))
+      )?.group ??
       UNSORTED_GROUP.id;
 
   const members = new Map<string, EntryRef[]>([...groupIds, UNSORTED_GROUP.id].map((id) => [id, []]));
