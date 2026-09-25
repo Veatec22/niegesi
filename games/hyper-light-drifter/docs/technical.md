@@ -9,6 +9,8 @@ Pełne tłumaczenie 0.1.0: wszystkie 126 wpisów (110 w `MenuText.txt`, 16 w `Ph
 Zbudowane, zweryfikowane z plików, zainstalowane do testu z kopią oryginałów
 w `backups/hyper-light-drifter/`. Paczka łatki: 83 KB (łatka exe 747 B).
 **Test w grze czeka** — to pierwszy test tej metody (litery w nowej sekcji exe).
+Niezależny przegląd tekstów (2026-09-25): `docs/localization-review.md`; dwie drobne
+poprawki w `en-pl-review.json`, jeszcze nie w paczce 0.1.0.
 
 Następny krok: test według listy w `docs/translation-decisions.md`, potem okładka
 (`tools/keyart.py --game hyper-light-drifter`) i numer wersji z GOG Galaxy do `game.yaml`.
