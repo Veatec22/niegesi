@@ -23,6 +23,9 @@ import pak
 from fontTools.ttLib import TTFont
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_ref  # noqa: E402
 EXTRACT = ROOT / 'work/extract/BPM/Content'
 EXTRACT_ROOT = ROOT / 'work/extract'
 OUT = ROOT / 'dist/BPM-PL_P.pak'
@@ -55,8 +58,7 @@ def main():
 
     source = locres.load(EXTRACT / 'Localization/Game/en/Game.locres')
     english = source.texts()
-    rows = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
-    polish = {(r['namespace'], r['key']): r['polish'] for r in rows}
+    polish = polish_by_ref(ROOT)
     unknown = set(polish) - set(english)
     assert not unknown, f'{len(unknown)} keys not in the game: {sorted(unknown)[:5]}'
     texts = {key: polish.get(key, text) for key, text in english.items()}

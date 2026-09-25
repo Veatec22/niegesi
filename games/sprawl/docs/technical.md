@@ -85,9 +85,9 @@ Działający vertical sprzed pełnej wersji zachowany w
 ## Korekta
 
 - [Wyszukiwalny podgląd EN/PL](../translations/en-pl-review.html) — otwórz w przeglądarce.
-- [EN/PL JSON](../translations/en-pl-review.json) — oryginał i tłumaczenie każdego wpisu.
+- [EN/PL JSON](../translations/en-pl-review.json) — oryginał i tłumaczenie każdego wpisu;
+  jedyny plik tłumaczenia (decyzja 0021, do 2026-09-25 obok leżał `pl.json`).
 - [Terminologia i miejsca do korekty](../translations/REVIEW.md).
-- [Polskie teksty źródłowe](../translations/pl.json).
 
 Po korekcie utrzymuj oba JSON-y w zgodzie, uruchom walidację, odtwórz HTML i build.
 Podgląd HTML nie zapisuje zmian. Do zgłoszenia poprawki wystarczy namespace, key i tekst.

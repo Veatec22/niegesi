@@ -4,6 +4,7 @@ Uses the same v11 writer as the Polish build. Never installs or launches the gam
 """
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 import build
@@ -17,11 +18,11 @@ def main():
     assert hashlib.sha256(source.read_bytes()).hexdigest() == build.SOURCE_SHA256
     english = locres.load(source)
     texts = english.texts()
-    rows = json.loads((root / 'translations/pl.json').read_text(encoding='utf-8'))
-    for row in rows:
-        key = row['namespace'], row['key']
+    sys.path.insert(0, str(root.parents[1] / 'tools'))
+    from translations import polish_by_ref
+    for key, text in polish_by_ref(root).items():
         assert key in texts
-        texts[key] = row['polish'] + ' [TEST PL]'
+        texts[key] = text + ' [TEST PL]'
     resource = locres.dump(locres.translate(english, texts))
     inside = 'Sprawl/Content/Localization/Game/en/Game.locres'
     archive = pak.write({inside: resource}, seed=build.PATH_HASH_SEED)

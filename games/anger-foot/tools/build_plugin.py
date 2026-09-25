@@ -1,7 +1,7 @@
 """Zbuduj paczkę z pluginem BepInEx: polski dla Anger Foot bez podmiany plików gry.
 
-Wyciąga z oryginalnego resources.assets mapę GUID → polski tekst (pl.json jest
-kluczowany identyfikatorem obiektu Unity, którego plugin w grze nie widzi),
+Wyciąga z oryginalnego resources.assets mapę GUID → polski tekst (en-pl-review.json
+wskazuje wpis polem `id` — identyfikatorem obiektu Unity, którego plugin w grze nie widzi),
 kompiluje plugin i składa archiwum z BepInEksem, tekstami i instrukcją.
 
     .venv\\Scripts\\python.exe games\\anger-foot\\tools\\build_plugin.py --game "C:\\Games\\Anger Foot"
@@ -23,6 +23,9 @@ import UnityPy
 TOOLS = Path(__file__).resolve().parent
 ROOT = TOOLS.parent
 REPO = ROOT.parents[1]
+sys.path.insert(0, str(REPO / 'tools'))
+
+from translations import polish_by_field  # noqa: E402
 
 sys.path.insert(0, str(TOOLS))
 from build import SLOT, parse_entry, rd  # ten sam parser co przy metodzie z podmianą pliku
@@ -73,8 +76,8 @@ def guid_of(raw: bytes, entry: dict) -> str:
 
 
 def write_terms(game: Path, destination: Path) -> tuple[int, int]:
-    """pl.json jest kluczowane path_id; plugin rozpoznaje wpisy po GUID-zie."""
-    polish = {int(k): v for k, v in json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8')).items()}
+    """Pole `id` wpisu to path_id; plugin rozpoznaje wpisy po GUID-zie."""
+    polish = polish_by_field(ROOT, 'id')
     env = UnityPy.load(str(game / DATA / 'resources.assets'))
 
     lines = []

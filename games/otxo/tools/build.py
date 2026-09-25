@@ -33,6 +33,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import script_ini
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key  # noqa: E402
 VERSION = '0.2'
 SLOTS = {                      # slot -> section header the game looks for
     'zho-CN': 'chinese-simplified',
@@ -73,7 +76,7 @@ def main():
 
     english = script_ini.load(source)
     assert script_ini.section(source) == 'english'
-    translations = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+    translations = polish_by_key(ROOT)
     unknown = [k for k in translations if k not in english]
     assert not unknown, f'Keys not present in the English file: {unknown[:5]}'
 

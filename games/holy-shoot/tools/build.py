@@ -23,15 +23,13 @@ import iostore_empty
 import batch
 
 source = locres.load(ROOT / 'work/en.locres')
-# pl.json is the source ({"namespace|key": text}); the review file is generated from
-# it by tools/batch.py and must be in sync, so reviewers never see stale text.
-polish = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
+# en-pl-review.json is the only translation file (decision 0021); `namespace|key` names
+# an entry inside the build.
+polish = batch.load_polish()
 english = {batch.ident(ns, key): text for (ns, key), text in source.texts().items()}
 assert set(polish) <= set(english), sorted(set(polish) - set(english))[:5]
 for name, text in polish.items():
     batch.check(name, english[name], text)
-review = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
-assert review == batch.review_rows(english, polish), 'run tools/batch.py from-review to sync the review file'
 translations = {tuple(name.split('|', 1)): text for name, text in polish.items()}
 data = locres.dump(locres.translate(source, translations))
 out = ROOT / 'dist'

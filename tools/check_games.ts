@@ -17,18 +17,12 @@ import {
 /** Gry, których review panel dziś odrzuca; do naprawy w repo (0013). */
 const REVIEW_PENDING: Record<string, string> = {
   'dread-templar': 'słownik zamiast listy wpisów',
-  otxo: '104 wpisy bez pola polish',
 };
 
 /** Gry, które jeszcze mają pl.json (migracja 0021). Po migracji gra wypada z listy. */
 const PL_JSON_PENDING = new Set<string>([
-  'anger-foot',
-  'bpm',
   'dread-templar',
   'heat-signature',
-  'holy-shoot',
-  'otxo',
-  'sprawl',
 ]);
 
 const root = new URL('../games/', import.meta.url);

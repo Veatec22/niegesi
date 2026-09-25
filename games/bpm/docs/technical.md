@@ -95,12 +95,13 @@ zostaje na wypadek podkrojów w assetach `Font`; w buildzie nieużywany.
 .venv\Scripts\python.exe gamespm	ools\extract.py "<BPM>\WindowsNoEditor"
 .venv\Scripts\python.exe .claude\skills\localization\scripts\l10n_report.py gamespm
 .venv\Scripts\python.exe gamespm	oolsuild.py
-.venv\Scripts\python.exe gamespm	oolselease.py "<BPM>\WindowsNoEditor" 1.0
+.venv\Scripts\python.exe gamespm	ools
+elease.py "<BPM>\WindowsNoEditor" 1.0
 ```
 
 `extract.py` sam znajduje klucz AES w exe i wyciąga do `work/extract` angielski
 locres, dwa fonty, `en.res` oraz locresy innych języków (tylko jako odniesienie).
-`build.py` → `dist/BPM-PL_P.pak` (locres `ja` z `translations/pl.json`, dwa fonty
+`build.py` → `dist/BPM-PL_P.pak` (locres `ja` z `translations/en-pl-review.json` — jedynego pliku tłumaczenia, 0021 —, dwa fonty
 z polskimi literami, `en.res` z nazwą „Polski”); wejścia przypięte sumami
 w `tools/sources.json`.
 

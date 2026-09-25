@@ -2,15 +2,12 @@
 
     python tools/batch.py show [ns]      -> untranslated entries as `ns|key @@ text`
     python tools/batch.py put FILE       -> merge `ns|key @@ text` lines; \\n = new line
-    python tools/batch.py from-review    -> take corrections made in en-pl-review.json
     python tools/batch.py stats
 
-translations/pl.json is the source: {"namespace|key": "polski tekst"}, only
-translated entries. translations/en-pl-review.json is generated from it and the
-game's English locres (namespace, key, english, polish) for human review; after
-correcting it, run `from-review` to carry the changes back into pl.json.
+translations/en-pl-review.json is the only translation file (decision 0021):
+namespace, key, english (from the game's locres) and polish; empty polish = not
+translated yet. `namespace|key` is only the build's internal name for an entry.
 """
-import json
 import re
 import sys
 from pathlib import Path
@@ -19,13 +16,19 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT.parent / 'sprawl' / 'tools'))
 import locres  # noqa: E402
 
-PL = ROOT / 'translations/pl.json'
-REVIEW = ROOT / 'translations/en-pl-review.json'
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+from translations import load_entries, untranslated, write_entries  # noqa: E402
+
 TOKEN = re.compile(r'\{[^}]+\}')
 
 
 def ident(namespace, key):
     return f'{namespace}|{key}'
+
+
+def load_polish():
+    """{namespace|key: polski} z pliku tłumaczenia, bez wpisów nieprzetłumaczonych."""
+    return {ident(e.get('namespace', ''), e['key']): e['polish'] for e in load_entries(ROOT) if not untranslated(e)}
 
 
 def source():
@@ -46,16 +49,13 @@ def check(name, english, text):
 
 
 def save(english, polish):
-    polish = dict(sorted(polish.items()))
-    PL.write_text(json.dumps(polish, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
-    REVIEW.write_text(json.dumps(review_rows(english, polish), ensure_ascii=False, indent=1) + '\n',
-                      encoding='utf-8')
+    write_entries(ROOT, review_rows(english, polish))
 
 
 def main():
     command = sys.argv[1]
     english = source()
-    polish = json.loads(PL.read_text(encoding='utf-8'))
+    polish = load_polish()
     if command == 'show':
         prefix = sys.argv[2] if len(sys.argv) > 2 else None
         for name, text in sorted(english.items()):
@@ -77,17 +77,6 @@ def main():
             count += 1
         save(english, polish)
         print('put', count, 'translated', len(polish), 'of', len(english))
-    elif command == 'from-review':
-        rows = json.loads(REVIEW.read_text(encoding='utf-8'))
-        changed = 0
-        for row in rows:
-            name = ident(row['namespace'], row['key'])
-            if row['polish'] and polish.get(name) != row['polish']:
-                check(name, english[name], row['polish'])
-                polish[name] = row['polish']
-                changed += 1
-        save(english, polish)
-        print('from review', changed, 'changed')
     elif command == 'stats':
         print(len(polish), 'of', len(english))
 

@@ -14,10 +14,10 @@ francuskim, niemieckim i hiszpańskim do `work/ref-all.json` (poza gitem, treś�
 .venv\Scripts\python.exe games\anger-foot\work\ref-extract.py "C:\Games\Anger Foot\Anger Foot_Data\resources.assets"
 ```
 
-`tools/review.py` składa z tego i z `pl.json` plik `translations/en-pl-review.json`
-w formacie repo (`key`, `english`, `polish`, `context`), z kluczem
-`<ścieżka> [mówiący > adresat]` — po nim raport sprawdza płeć. Źródłem prawdy dalej
-jest `pl.json`; review po każdej zmianie regeneruje się tym skryptem.
+`tools/review.py` odświeża z tego `translations/en-pl-review.json` — jedyny plik
+tłumaczenia (decyzja 0021; do 2026-09-25 obok leżał `pl.json`) — w formacie repo
+(`id`, `key`, `english`, `polish`, `context`), z kluczem `<ścieżka> [mówiący > adresat]`
+(po nim raport sprawdza płeć). `id` to `path_id` obiektu Unity; polski zostaje z pliku.
 
 Test w grze wersji 0.3: nie robiony, zmiany są wyłącznie tekstowe.
 
@@ -69,10 +69,10 @@ na wczytanie zasobów ani wymuszać `EnsureInstancesAreLoaded` — gra pyta, my 
 kwestii po `Term` podstawiłoby części dialogów cudzy tekst. GUID-y są unikalne
 co do jednego (1776/1776), więc plugin mapuje właśnie po nich.
 
-`translations/pl.json` jest kluczowane `path_id` obiektu Unity, którego w czasie gry
-nie widać. `tools/build_plugin.py` przy składaniu paczki czyta oryginalny
+Wpisy tłumaczenia wskazują obiekt polem `id` (`path_id` obiektu Unity), którego
+w czasie gry nie widać. `tools/build_plugin.py` przy składaniu paczki czyta oryginalny
 `resources.assets`, wyciąga dla każdego wpisu GUID i tworzy `pl.tsv` w postaci
-`GUID<TAB>tekst`. Źródłem tłumaczenia pozostaje ten sam `pl.json`, co przy starej
+`GUID<TAB>tekst`. Źródłem tłumaczenia pozostaje ten sam plik, co przy starej
 metodzie, więc korekty językowe działają bez zmian.
 
 ## Budowanie
@@ -126,9 +126,9 @@ No executable, DLL or scene is modified. The other eleven languages and English 
 
 | Audience | Files | Use |
 | --- | --- | --- |
-| Game developer | [`translations/pl.json`](../translations/pl.json), [`translations/en-pl-review.json`](../translations/en-pl-review.json) | Adding Polish to the project properly. The JSON is keyed by the text asset's path ID; the review file pairs every English source string with its Polish translation and the original context note. |
+| Game developer | [`translations/en-pl-review.json`](../translations/en-pl-review.json) | Adding Polish to the project properly. Each entry's `id` is the text asset's path ID; the file pairs every English source string with its Polish translation and the original context note. |
 | Players | The built `Anger Foot_Data` folder | Drag and drop over the game folder. Build it yourself as below — there is no prebuilt download at the moment. See [INSTALL.txt](../docs/INSTALL.txt). |
-| Translation contributors | [`translations/pl.json`](../translations/pl.json), [`tools/build.py`](../tools/build.py) | Editing the strings and rebuilding from your own original game files. |
+| Translation contributors | [`translations/en-pl-review.json`](../translations/en-pl-review.json), [`tools/build.py`](../tools/build.py) | Editing the strings and rebuilding from your own original game files. |
 
 ### Building
 
@@ -153,7 +153,7 @@ The build was checked against the untouched originals:
 - 1776 text entries in, 1776 out, same path IDs;
 - 30 842 objects in the asset file, same IDs, only text entries changed size;
 - 0 values changed in any of the other eleven languages;
-- 1774 Polish slots present and matching `pl.json`.
+- 1774 Polish slots present and matching the translation file.
 
 ### Testing status
 

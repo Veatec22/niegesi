@@ -24,6 +24,9 @@ import selector
 from validate_translations import validate
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import load_entries, polish_by_ref  # noqa: E402
 VERSION = '0.2'
 CULTURE = 'pl'
 INSIDE = f'Sprawl/Content/Localization/Game/{CULTURE}/Game.locres'
@@ -54,12 +57,10 @@ def main():
     english = locres.load(args.source)
     available = english.texts()
 
-    rows = json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8'))
-    translations = {(row['namespace'], row['key']): row['polish'] for row in rows}
-    assert len(translations) == len(rows), 'Duplicate namespace/key in pl.json.'
+    translations = polish_by_ref(ROOT)
     unknown = [k for k in translations if k not in available]
     assert not unknown, f'Keys not present in the English resource: {unknown[:5]}'
-    review = json.loads((ROOT / 'translations/en-pl-review.json').read_text(encoding='utf-8'))
+    review = load_entries(ROOT)
     validate(english, translations, review)
 
     polish = locres.translate(english, translations)

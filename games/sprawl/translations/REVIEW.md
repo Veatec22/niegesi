@@ -2,8 +2,9 @@
 
 717/717 wpisów otrzymało polską wersję. Plik `en-pl-review.json` zawiera dokładny
 angielski oryginał i polski tekst, a `en-pl-review.html` daje podgląd z wyszukiwaniem.
-HTML jest tylko do czytania: poprawki wprowadzamy równolegle w `pl.json` i JSON-ie
-do review, a potem odświeżamy HTML przez `tools/review.py`.
+HTML jest tylko do czytania: poprawki trafiają do `en-pl-review.json` — jedynego pliku
+tłumaczenia (decyzja 0021), korekty z pracowni przez `tools/corrections.py` — a potem
+odświeżamy HTML przez `tools/review.py`.
 
 ## Terminologia
 

@@ -1,8 +1,9 @@
 """Dump the English source text and refresh the review file.
 
-Reads the game's own script_english.ini, pairs every entry with whatever is in
-translations/pl.json, and writes translations/en-pl-review.json - one row per
-key, English beside Polish, in the file's own order.
+Reads the game's own script_english.ini and refreshes translations/en-pl-review.json,
+the only translation file (decision 0021): one row per key, English beside the Polish
+already in the file (empty = not translated yet), in the file's own order. Keys with
+empty English have nothing to translate and are left out.
 
 Never writes into the game directory.
 """
@@ -15,6 +16,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import script_ini
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_key, review_path, write_entries  # noqa: E402
 
 
 def main():
@@ -23,18 +27,12 @@ def main():
     args = parser.parse_args()
 
     english = script_ini.load(args.game / 'script_english.ini')
-    polish_path = ROOT / 'translations/pl.json'
-    polish = json.loads(polish_path.read_text(encoding='utf-8')) if polish_path.exists() else {}
+    polish = polish_by_key(ROOT) if review_path(ROOT).exists() else {}
 
-    rows = []
-    for key, text in english.items():
-        row = {'key': key, 'english': text}
-        if key in polish:
-            row['polish'] = polish[key]
-        rows.append(row)
-
-    out = ROOT / 'translations/en-pl-review.json'
-    out.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    rows = [{'key': key, 'english': text, 'polish': polish.get(key, '')}
+            for key, text in english.items() if text or key in polish]
+    write_entries(ROOT, rows)
+    out = review_path(ROOT)
     print(json.dumps({'entries': len(rows), 'translated': len(polish),
                       'english_characters': sum(len(r['english']) for r in rows),
                       'output': str(out)}, ensure_ascii=False))

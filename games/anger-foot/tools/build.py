@@ -7,12 +7,16 @@ relabelled as Polish. SpreadsheetKey must stay 'ITALIAN' or every index shifts.
 Never writes into the game directory; output goes to a separate folder.
 """
 import argparse, hashlib, json, struct, sys
+import sys
 from pathlib import Path
 import UnityPy
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parents[1] / 'tools'))
+
+from translations import polish_by_field  # noqa: E402
 VERSION = '0.1'
 ORIGINAL = {
     'resources.assets':     '52603316a629c7fd55196077d0316204ac6deb47b7b023580f6d18f3426d33bd',
@@ -77,7 +81,7 @@ def main():
     check(src_res, 'resources.assets')
     check(src_shared, 'sharedassets0.assets')
     out.mkdir(parents=True, exist_ok=True)
-    pl = {int(k): v for k, v in json.loads((ROOT / 'translations/pl.json').read_text(encoding='utf-8')).items()}
+    pl = polish_by_field(ROOT, 'id')
 
     # --- language record: Italian -> Polish, spliced in place (same byte size) ---
     env = UnityPy.load(str(src_shared))

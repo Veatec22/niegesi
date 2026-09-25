@@ -160,9 +160,9 @@ powodzenia. Turecki zestaw również sprowadza się do podmiany plików w katalo
 
 - [EN/PL JSON](../translations/en-pl-review.json) — każdy wpis z kluczem, angielskim
   oryginałem i tłumaczeniem; klucze są te same, których używa gra.
-- [Polskie teksty](../translations/pl.json) — źródło dla builda.
-
-`extract.py` odświeża plik korektorski po zmianach w `pl.json`.
+To jedyny plik tłumaczenia (decyzja 0021; do 2026-09-25 obok leżał `pl.json`), z niego
+czyta build. `extract.py` odświeża w nim angielski z gry; 104 klucze z pustym
+angielskim nie mają czego tłumaczyć i nie trafiają do pliku.
 
 ---
 

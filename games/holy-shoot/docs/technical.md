@@ -8,10 +8,9 @@ wpisów; mechanizm bez zmian poza usunięciem zapasowego odpytywania w Lua (log 
 potwierdził, że pierwszy zadziałał prehook `Create`). Pełne przejście gry czeka.
 
 Tłumaczenie: `tools/batch.py` (`show`, `put` plików `przestrzeń|klucz @@ tekst`,
-`from-review`), partie w `work/tsv/` (poza gitem, jak cały `work/`). Źródłem jest
-`translations/pl.json` — mapa `"przestrzeń|klucz": "tekst"`. `en-pl-review.json`
-jest z niej generowany razem z angielskim oryginałem; poprawki wprowadzone w nim
-przenosi `batch.py from-review`, a build odmawia pracy, gdy oba pliki się rozjadą.
+`stats`), partie w `work/tsv/` (poza gitem, jak cały `work/`). Jedynym plikiem
+tłumaczenia jest `translations/en-pl-review.json` z polami `namespace`, `key`, `english`,
+`polish` (decyzja 0021; do 2026-09-25 obok leżał `pl.json` z kluczami `przestrzeń|klucz`).
 Teksty diagnostyczne twórców bez przestrzeni nazw (`Steam Stat Saved…`, `MapOrigin…`)
 są przepisane dosłownie. Standard: skill `localization`, biblia `translations/bible.yaml`,
 decyzje `docs/translation-decisions.md`, raport `work/l10n-report.md`.

@@ -7966,13 +7966,6 @@
   "context": ""
  },
  {
-  "id": 28312,
-  "key": "UI/Challenge Levels/Limited Kicks/Bonus Goal",
-  "english": "",
-  "polish": "",
-  "context": ""
- },
- {
   "id": 28313,
   "key": "UI/Challenge Levels/Limited Kicks/Description",
   "english": "Complete the level with fewer than {0} kicks",
@@ -8019,13 +8012,6 @@
   "key": "UI/Challenge Levels/Sniper/Description",
   "english": "Stay alive until the timer runs out",
   "polish": "Przeżyj, aż skończy się czas",
-  "context": ""
- },
- {
-  "id": 28320,
-  "key": "UI/Challenge Levels/Sniper/Failure",
-  "english": "",
-  "polish": "",
   "context": ""
  },
  {

@@ -67,6 +67,21 @@ def polish_by_key(game_root: Path, keep_empty: bool = False) -> dict[str, str]:
     return {e['key']: e['polish'] for e in entries if keep_empty or not untranslated(e)}
 
 
+def polish_by_ref(game_root: Path) -> dict[tuple[str, str], str]:
+    """Mapa (namespace, key) → PL, bez wpisów nieprzetłumaczonych; dla gier z namespace."""
+    return {(e.get('namespace', ''), e['key']): e['polish'] for e in load_entries(game_root) if not untranslated(e)}
+
+
+def polish_by_field(game_root: Path, field: str) -> dict:
+    """Mapa wartość pola wpisu → PL, gdy gra identyfikuje teksty czymś innym niż `key`
+    (np. `id` = path ID obiektu Unity). Bez wpisów nieprzetłumaczonych."""
+    entries = load_entries(game_root)
+    result = {e[field]: e['polish'] for e in entries if not untranslated(e)}
+    if len(result) != sum(1 for e in entries if not untranslated(e)):
+        raise SystemExit(f'{review_path(game_root)}: pole „{field}” nie jest unikalne.')
+    return result
+
+
 def dump(entries: list[dict], indent: int = 2, newline: bool = True) -> str:
     return json.dumps(entries, ensure_ascii=False, indent=indent) + ('\n' if newline else '')
 
