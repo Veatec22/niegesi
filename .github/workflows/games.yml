@@ -1,0 +1,31 @@
+# Pliki gier wobec pracowni korekty: format tłumaczeń (0013, 0021), struktura, biblia,
+# reguły Edge Functions i narzędzie nanoszenia korekt. Nie wdraża niczego.
+name: Gry
+
+on:
+  push:
+    paths: ['games/**', 'tools/**', 'supabase/functions/**', '.github/workflows/games.yml']
+  pull_request:
+    paths: ['games/**', 'tools/**', 'supabase/functions/**', '.github/workflows/games.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Stan gier (walidator pracowni)
+        run: deno run --allow-read tools/check_games.ts >> "$GITHUB_STEP_SUMMARY"
+      - name: Reguły i funkcje pracowni
+        run: deno test --allow-read --allow-env=NOTGEESE_GITHUB_TOKEN supabase/functions/tests/
+      - name: Narzędzie nanoszenia korekt
+        run: python -m unittest discover -s tools/tests -v

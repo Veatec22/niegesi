@@ -39,8 +39,9 @@ Deno.test('review SCM: 485 wpisów, pusty namespace, bez zmian w tekście', () =
   const entries = parseReview(JSON.parse(read('en-pl-review.json')));
   assertEquals(entries.length, 485);
   assert(entries.every((e) => e.namespace === ''));
-  const pl = JSON.parse(read('pl.json')) as Record<string, string>;
-  for (const e of entries) assertEquals(e.polish, pl[e.key]);
+  // Tekst dokładnie jak w pliku (0021: review jest jedynym plikiem tłumaczenia).
+  const raw = JSON.parse(read('en-pl-review.json')) as { key: string; polish: string }[];
+  entries.forEach((e, i) => assertEquals([e.key, e.polish], [raw[i].key, raw[i].polish]));
 });
 
 Deno.test('review: nie przycina spacji ani nowych linii', () => {

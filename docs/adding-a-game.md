@@ -64,6 +64,13 @@ do przeciągnięcia, nie skrypt.
 
 Dopisz grę do tabeli w [README.md](../README.md) — zakres, wersja, status testów.
 
+Sprawdź, czy gra otworzy się w pracowni korekty — walidator stosuje te same reguły co
+panel i drukuje tabelę stanu wszystkich gier (uruchamia go też workflow „Gry”):
+
+```powershell
+npx -y deno run --allow-read tools/check_games.ts
+```
+
 Wygeneruj okładkę i galerię na stronę — bez tego kafelek zostaje zastępczą plamą:
 
 ```powershell
