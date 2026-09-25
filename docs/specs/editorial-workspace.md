@@ -2,7 +2,7 @@
 
 Status: specyfikacja do prototypu; otwarte szczegóły przed implementacją.
 Data: 2026-09-25.
-Decyzje: [0003 i indeks 0004–0015](../decisions/0003-editorial-workspace.md),
+Decyzje: [0003 i indeks 0004–0019](../decisions/0003-editorial-workspace.md),
 [ustalenia techniczne 0016](../decisions/0016-workspace-technical-findings.md).
 Słownik: [pojęcia](../glossary.md).
 
@@ -45,7 +45,7 @@ ani Supabase i nie przedstawia danych lokalnych jako odczytu main.
 14. Chcę zobaczyć zakres tej akcji niezależnie od filtra wyszukiwania.
 15. Chcę wrócić do szkiców po zamknięciu karty.
 16. Chcę wiedzieć, czy szkic jest tylko lokalny, czy zapis został potwierdzony.
-17. Chcę zapisać jedną grę lub wszystkie gry ze szkicami.
+17. Chcę widzieć na liście gier, gdzie mam niezapisane szkice, i zapisać je w grze.
 18. Chcę porzucić szkic, zachowując ostatni zapisany wynik pracy.
 19. Chcę cofnąć akceptację oraz poprawić lub wycofać zapisaną korektę.
 20. Chcę odświeżyć grę bez utraty szkiców.
@@ -53,7 +53,7 @@ ani Supabase i nie przedstawia danych lokalnych jako odczytu main.
 22. Chcę zobaczyć różnicę, gdy wcześniej zaakceptowany tekst zmieni się na main.
 23. Chcę rozstrzygnąć konflikt, przyjmując main lub zachowując własną korektę.
 24. Chcę świadomie zachować albo porzucić szkic oparty na nieaktualnym tekście.
-25. Chcę przenieść wpis do innej grupy i przekazać agentowi takie przeniesienie.
+25. ~~Chcę przenieść wpis do innej grupy.~~ Poza pierwszą wersją (0018).
 26. Chcę eksportować zapisane korekty jednej gry, dodając komentarz dla agenta.
 27. Chcę móc ponowić eksport bez zmiany stanów wpisów.
 28. Chcę, by eksport zachował wszystkie spacje, nowe linie i znaczniki.
@@ -67,7 +67,8 @@ ani Supabase i nie przedstawia danych lokalnych jako odczytu main.
 
 ### Odpowiedzialności
 
-- Powłoka strony: logowanie, lista gier, grupy/sekwencje, edycja, szkice i eksport.
+- Powłoka strony: logowanie, lista gier z oznaczeniem szkiców, grupy/sekwencje,
+  edycja, szkice i eksport.
 - Odczyt repo: znane repo i main, ustalenie SHA, pobranie plików tego samego commita.
   Żadnego adresu repo podawanego przez klienta i żadnego zapisu do GitHuba.
 - Kontrakt danych: sprawdzenie kształtu review i struktury, unikalności wpisów
@@ -76,7 +77,7 @@ ani Supabase i nie przedstawia danych lokalnych jako odczytu main.
 - Zapis wyniku: pojedyncza transakcja gry wraz z dziennikiem i kontrolą rewizji.
 - Szkice: dane lokalne przypisane do konta, gry i identyfikatora wpisu, odrębne od
   zapisanego stanu. Baza nie przechowuje szkiców.
-- Eksport: serializacja zapisanych korekt i przeniesień jednej gry, bez mutacji bazy.
+- Eksport: serializacja zapisanych korekt jednej gry, bez mutacji bazy.
 - Naniesienie: lokalne narzędzie/agent sprawdzający zgodność z repo i walidatory gry.
 
 Współdzielony TS może zawierać typy, kontrakty i czyste reguły; sekretów i adaptera
@@ -117,6 +118,10 @@ Metadane odwiedzonej gry mogą zapisać SHA i czas odświeżenia bez utrwalania 
 | Korekta | EN zgodne, PL = przed | Do wdrożenia |
 | Korekta | EN zgodne, inne PL | Konflikt |
 
+Wynik pracy, którego wpisu nie ma na main, nie zmienia stanu ani nie znika: gra pokazuje
+go na liście „Brak na main” poza grupami, postępem i eksportem; użytkownik usuwa go
+ręcznie z wpisem w dzienniku (0017). Powrót klucza rozlicza go według tabeli.
+
 Zmiana EN ma pierwszeństwo przed zgodnością PL — inaczej zaakceptowalibyśmy tekst
 na podstawie nieaktualnego źródła, wbrew 0009. Odświeżenie bez zmiany nie dopisuje
 fikcyjnych przejść stanu. Konflikt zachowuje bazę, własną korektę i aktualny main.
@@ -132,8 +137,10 @@ szkic korekty od aktualnego main. Zapis jest nadal osobną akcją.
   zestaw akcji i identyfikator żądania. Serwer potwierdza aktualność main i rewizji;
   nie ufa bazie przesłanej z klienta. Nieaktualność daje odpowiedź do rozstrzygnięcia,
   nie ciche nadpisanie. Ponowienie tego samego żądania nie dubluje dziennika.
-- Zapis wszystkich: interfejs zbiera szkice wielu gier; szczegóły atomowości są otwarte.
-  Obowiązkowo jawny wynik dla każdej gry i zachowanie wszystkich niezapisanych szkiców.
+- Lista gier: publiczna lista plus liczba niezapisanych szkiców z tej przeglądarki.
+  Bez zapisu i odrzucania; te akcje są tylko w otwartej grze (0019).
+- Usunięcie wyniku pracy bez wpisu na main: wejście game, identyfikator i oczekiwana
+  rewizja; jedna transakcja z dziennikiem (0017).
 - Dziennik: odczyt jednej gry, chroniony tym samym kontem administratora.
 - Eksport: ostatni odświeżony SHA i zapisane korekty. Lokalne szkice są wyraźnie
   wyłączone; okno pozwala wrócić do zapisu. Konflikty nie są korektami gotowymi do
@@ -166,7 +173,7 @@ jest dopiero przy eksporcie. Sekwencje pokazują kolejność i mówców, a nie g
 ### Eksport i naniesienie
 
 Wersjonowany JSON: gra, SHA ostatniego odświeżenia, czas, komentarz, lista korekt
-`namespace/key/english/before/after`, lista przeniesień `namespace/key/before/after`.
+`namespace/key/english/before/after`. Bez przeniesień grup (0018).
 Eksport nie zawiera akceptacji, nie zamraża zapisów, nie oznacza ich jako zastosowane.
 Komentarz jest treścią od użytkownika, nie automatyczną instrukcją wykonania kodu.
 
@@ -174,7 +181,7 @@ Agent/narzędzie porównuje EN i PL z aktualnym repo: zgodne EN i `before` pozwa
 nanosić `after`; zgodne EN i już obecne `after` oznaczają pominięcie. Inne brzmienie
 lub brak wpisu wymagają rozstrzygnięcia. Przejście JSON → pliki zachowuje tekst bajtowo
 w sensie wartości Unicode, w tym CR/LF, końcowych spacji i znaczników.
-Oba pliki tłumaczenia muszą pozostać zgodne; struktura otrzymuje przeniesienia.
+Oba pliki tłumaczenia muszą pozostać zgodne.
 Gry niezgodne z docelowym formatem PL obsługuje agent ręcznie do czasu migracji.
 
 ## Testy
@@ -189,10 +196,11 @@ zachowanie na granicach, a nie strukturę komponentów.
 2. **Przeglądarka.** Na SCM: otwarcie grupy, 485 wpisów, pojedyncza akceptacja/korekta,
    akceptuj pozostałe z aktywnym filtrem i istniejącym szkicem, sekwencja Pedro,
    przetrwanie szkicu po odświeżeniu, porzucenie, rozstrzygnięcie konfliktu i starego
-   szkicu, błąd zapisu, dwie karty. Wzór istniejących testów Playwright strony.
+   szkicu, błąd zapisu, dwie karty, oznaczenie szkiców na liście gier, lista
+   „Brak na main” i ręczne usunięcie wyniku pracy. Wzór istniejących testów Playwright strony.
 3. **Eksport i repo.** JSON bez szkiców i akceptacji, brak mutacji przy eksporcie,
-   ponowne naniesienie, rzeczywiste znaczniki/spacje z SCM, zmiana EN, aktualizacja
-   grup oraz zgodność review z PL. Testuje się pliki w kopii roboczej fixture,
+   ponowne naniesienie, rzeczywiste znaczniki/spacje z SCM, zmiana EN
+   oraz zgodność review z PL. Testuje się pliki w kopii roboczej fixture,
    nie na rzeczywistej instalacji gry. Kolejne gry dostarczą przypadki namespace.
 
 Produkcja musi także dowieść, że build strony nie zawiera tekstów prywatnych ani
@@ -204,15 +212,15 @@ sprawdzany ręcznie w przeglądarce; nie tworzymy dla niego produkcyjnego zestaw
 Tłumaczenie przez AI, pamięć tłumaczeń, wiele języków/użytkowników, komentarze przy
 wpisach, kontrola jakości w panelu, automatyczne commity/push, pełne kopie gier w bazie,
 import plików przez użytkownika, zamrażanie eksportów, grafy dialogów, screeny,
+przenoszenie wpisów między grupami (0018), zapis wielu gier naraz (0019),
 budowanie i instalacja gry przez Edge Functions. Prototyp nie wdraża Supabase.
 
 ## Otwarte kwestie
 
 1. Wybrać układ czytania po prototypie; EN/PL, samo PL i wyszukiwanie są do wypróbowania.
-2. Ustalić usunięte z main wpisy z wynikiem pracy: zachować dane i pokazać problem,
-   ale nie wprowadzać bez decyzji nowego stanu ani automatycznie usuwać korekty.
-3. Doprecyzować atomowość zapisu wielu gier: transakcja wszystkich czy osobne wyniki.
-4. Ustalić konflikty/przypadki usunięcia grup oraz zasady cofania przeniesień.
+2. ~~Usunięte z main wpisy z wynikiem pracy.~~ Rozstrzygnięte w 0017.
+3. ~~Atomowość zapisu wielu gier.~~ Nie ma zapisu wielu gier (0019).
+4. ~~Konflikty i cofanie przeniesień grup.~~ Przeniesienia poza pierwszą wersją (0018).
 5. Ustalić eksport przy konfliktach: blokada całej gry czy jawne pomijanie konfliktów.
 6. Ustalić jednoznaczny identyfikator płaskiego PL dla niepustego namespace oraz
    referencje struktury; nie zgadywać separatora.

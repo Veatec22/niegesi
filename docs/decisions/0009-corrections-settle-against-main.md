@@ -23,7 +23,8 @@ zaakceptowany) albo **zostać przy swoim**: korekta liczy się wtedy od nowego s
 i jest dalej do wdrożenia.
 
 Akcja w panelu najpierw jest *szkicem*: leży w pamięci przeglądarki, przetrwa zamknięcie
-karty i obejmuje wiele gier. Do Supabase trafia po zapisaniu (jednej gry albo wszystkich).
+karty i obejmuje wiele gier. Do Supabase trafia po zapisaniu gry (zapis „wszystkich” zastąpiło
+[0019](0019-save-inside-game-only.md)).
 Szkic można porzucić. Jeśli wpis zmienił się na main od powstania szkicu, szkic jest
 *nieaktualny*: użytkownik widzi oba teksty i wybiera, czy go zachować, czy porzucić.
 Do tego czasu nie da się go zapisać.
@@ -35,7 +36,7 @@ wpisy do przejrzenia bez szkiców. Nie ma akceptacji całej gry naraz.
 
 Eksport to plik JSON jednej gry, np. `shotgun-cop-man-korekty-2026-09-28.json`. Zawiera
 SHA main z ostatniego odświeżenia, wolny komentarz użytkownika, korekty (identyfikator,
-EN, PL przed, PL po) i przeniesienia między grupami. Akceptacji w nim nie ma, bo agent
+EN, PL przed, PL po); przeniesień w pierwszej wersji nie ma ([0018](0018-no-group-moves-in-first-version.md)). Akceptacji w nim nie ma, bo agent
 nic z nimi nie robi. JSON, a nie Markdown, bo spacje na końcu, `
 ` i znaczniki muszą
 dojść bez zmian. Eksport nie zmienia niczego w bazie i niczego nie zamraża. Kolejny eksport może powtórzyć

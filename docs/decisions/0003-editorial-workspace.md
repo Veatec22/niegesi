@@ -138,6 +138,10 @@ Nie wybrano ani nie utworzono projektu Supabase, nie wykonano migracji ani deplo
 - [0013 Jeden format pliku review dla wszystkich gier](0013-one-review-file-format.md)
 - [0014 Jedno konto, logowanie linkiem na e-mail](0014-single-admin-email-login.md)
 - [0015 Docelowo ujednolicamy też pl.json](0015-unify-pl-json-too.md)
+- [0017 Wynik pracy bez wpisu na main czeka na ręczne usunięcie](0017-removed-entries-kept-for-manual-cleanup.md)
+- [0018 Pierwsza wersja nie przenosi wpisów między grupami](0018-no-group-moves-in-first-version.md)
+- [0019 Szkice zapisuje się i odrzuca tylko w grze](0019-save-inside-game-only.md)
+  (zastępuje zapis wszystkich gier z 0009)
 - Pierwsza wersja ma grupy i sekwencje (rozmowy po kolei, z mówcą i pewnością
   kolejności), bez grafu odnóg. Graf dojdzie przy Laice.
 
@@ -165,8 +169,9 @@ Ustalenia bez osobnego pliku decyzji:
 ## Następne kroki
 
 1. Użytkownik ocenia warianty i przepływ prototypu. Nie uznawać braku odpowiedzi za wybór.
-2. Rozstrzygnąć otwarte szczegóły ze specyfikacji: usunięte wpisy, przeniesienia grup,
-   zapis wielu gier, eksport przy konfliktach i identyfikatory z namespace.
+2. Rozstrzygnąć pozostałe szczegóły ze specyfikacji: eksport przy konfliktach
+   i identyfikatory z namespace. Usunięte wpisy, przeniesienia i zapis wielu gier
+   rozstrzygnięte 2026-09-25 (0017–0019).
 3. Doprowadzić SCM do formatu 0013, przygotować strukturę 0010 i zgodność z 0015.
 4. Implementować Supabase, `/admin/` oraz narzędzie nanoszenia eksportu.
 

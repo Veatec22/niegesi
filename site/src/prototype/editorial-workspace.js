@@ -12,7 +12,7 @@ const groups = [
   ['editor', 'Edytor i kampanie'], ['achievements', 'Osiągnięcia'], ['other', 'Pozostałe'],
 ];
 const originals = structuredClone(data.rows);
-let saved = {}, drafts = {}, moves = {}, overrides = {}, journal = [], visited = false;
+let saved = {}, drafts = {}, overrides = {}, journal = [], visited = false;
 let currentGame = null, group = 'menu', query = '', stateFilter = '', page = 0, focusKey = null, onlyPl = false;
 let variant = new URLSearchParams(location.search).get('variant') || 'A';
 if (!variants[variant]) variant = 'A';
@@ -21,10 +21,10 @@ let pageSize = 50;
 try { const value = Number(localStorage.getItem('notgeese:prototype:page-size')); if ([50,100,200].includes(value)) pageSize = value; } catch {}
 try {
   const state = JSON.parse(localStorage.getItem(storageKey) || 'null');
-  if (state) ({ saved = {}, drafts = {}, moves = {}, overrides = {}, journal = [], visited = false } = state);
+  if (state) ({ saved = {}, drafts = {}, overrides = {}, journal = [], visited = false } = state);
 } catch { storageWorking = false; }
 function persist() {
-  try { localStorage.setItem(storageKey, JSON.stringify({ saved, drafts, moves, overrides, journal, visited })); }
+  try { localStorage.setItem(storageKey, JSON.stringify({ saved, drafts, overrides, journal, visited })); }
   catch { storageWorking = false; toast('Nie udało się utrwalić szkiców w przeglądarce. Pozostają tylko w pamięci tej karty.'); }
 }
 function esc(value = '') { return String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]); }
@@ -101,16 +101,15 @@ function badges(row) {
 function entry(row) {
   const status = stateOf(row), draft = drafts[row.key], old = saved[row.key];
   const isSequence = /^PedroDLCSpeech\d+$/.test(row.key);
-  const pendingGroup = draft?.group || moves[row.key]?.after;
   let special = '';
   if (stale(row)) special = `<div class="pw-callout"><h3>Nieaktualny szkic</h3><p>Tekst zmienił się od rozpoczęcia pracy. Zapis tej gry jest zablokowany.</p><div class="pw-compare"><div><small>Teraz w repo — symulacja</small><p>${esc(row.polish)}</p></div><div><small>Twój szkic</small><p>${esc(draft.after)}</p></div></div><div class="pw-actions"><button data-action="keep-draft" data-key="${esc(row.key)}">Zachowaj na nowej bazie</button><button data-action="discard" data-key="${esc(row.key)}">Porzuć szkic</button></div></div>`;
   else if (status === 'conflict' && !draft) special = `<div class="pw-callout"><h3>Konflikt</h3><p>W repo jest inne brzmienie niż przed i po korekcie.</p><div class="pw-compare"><div><small>Przed korektą</small><p>${esc(old.before)}</p></div><div><small>Teraz w repo — symulacja</small><p>${esc(row.polish)}</p></div></div><div class="pw-actions"><button data-action="accept" data-key="${esc(row.key)}">Przyjmij main</button><button data-action="keep-own" data-key="${esc(row.key)}">Zostań przy swoim</button></div></div>`;
-  return `<article class="pw-entry" data-entry="${esc(row.key)}"><div class="pw-meta"><div><h3 class="pw-key">${esc(row.key)}</h3>${isSequence ? `<span class="pw-speaker">${speaker(row.key)}</span>` : ''}</div><span class="pw-badges">${badges(row)}</span></div>${special}<div class="pw-pair"><div class="pw-source"><div class="pw-language">${flag('en')}</div><div class="pw-en">${esc(row.english)}</div></div><div><label class="pw-language" for="entry-${esc(row.key)}">${flag('pl')}<span class="ng-visually-hidden">Polskie tłumaczenie — ${esc(row.key)}</span></label><textarea id="entry-${esc(row.key)}" data-edit="${esc(row.key)}" ${stale(row) ? 'disabled' : ''}>${esc(textOf(row))}</textarea></div></div>${row.context ? `<p class="pw-muted">${esc(row.context)}</p>` : ''}${pendingGroup ? `<p class="pw-muted">Przeniesienie do „${esc(groups.find(g => g[0] === pendingGroup)?.[1])}” czeka na main.</p>` : ''}<div class="pw-actions"><button data-action="confirm-correction" data-key="${esc(row.key)}" ${!draft || draft.confirmed!==false || stale(row)?'disabled':''}>Zatwierdź poprawkę</button><button data-action="accept" data-key="${esc(row.key)}" ${stale(row) || status === 'conflict' ? 'disabled' : ''}>Akceptuj</button><button data-action="undo" data-key="${esc(row.key)}" ${stale(row) || status === 'conflict' || (status === 'review' && !draft) ? 'disabled' : ''}>${status === 'pending' ? 'Wycofaj korektę' : 'Cofnij akceptację'}</button>${draft ? `<button data-action="discard" data-key="${esc(row.key)}">Porzuć szkic</button>` : ''}<button data-action="move" data-key="${esc(row.key)}">Przenieś do grupy</button></div></article>`;
+  return `<article class="pw-entry" data-entry="${esc(row.key)}"><div class="pw-meta"><div><h3 class="pw-key">${esc(row.key)}</h3>${isSequence ? `<span class="pw-speaker">${speaker(row.key)}</span>` : ''}</div><span class="pw-badges">${badges(row)}</span></div>${special}<div class="pw-pair"><div class="pw-source"><div class="pw-language">${flag('en')}</div><div class="pw-en">${esc(row.english)}</div></div><div><label class="pw-language" for="entry-${esc(row.key)}">${flag('pl')}<span class="ng-visually-hidden">Polskie tłumaczenie — ${esc(row.key)}</span></label><textarea id="entry-${esc(row.key)}" data-edit="${esc(row.key)}" ${stale(row) ? 'disabled' : ''}>${esc(textOf(row))}</textarea></div></div>${row.context ? `<p class="pw-muted">${esc(row.context)}</p>` : ''}<div class="pw-actions"><button data-action="confirm-correction" data-key="${esc(row.key)}" ${!draft || draft.confirmed!==false || stale(row)?'disabled':''}>Zatwierdź poprawkę</button><button data-action="accept" data-key="${esc(row.key)}" ${stale(row) || status === 'conflict' ? 'disabled' : ''}>Akceptuj</button><button data-action="undo" data-key="${esc(row.key)}" ${stale(row) || status === 'conflict' || (status === 'review' && !draft) ? 'disabled' : ''}>${status === 'pending' ? 'Wycofaj korektę' : 'Cofnij akceptację'}</button>${draft ? `<button data-action="discard" data-key="${esc(row.key)}">Porzuć szkic</button>` : ''}</div></article>`;
 }
 function render() {
   root.className = `pw-layout-${variant}${onlyPl ? ' pw-only-pl' : ''}`;
   if (!currentGame) {
-    root.innerHTML = `<div class="pw-top"><div><div class="pw-overline">Not Geese / pracownia korekty</div><h1>Do której gry wracamy?</h1><p class="pw-muted">Lista ze strony. Prototyp podłącza teksty tylko Shotgun Cop Mana.</p></div><button data-action="save-all" class="pw-primary">Zapisz wszystkie szkice (${Object.keys(drafts).length})</button></div><div class="pw-game-list">${data.games.map(game => `<section class="pw-game"><div class="pw-overline">${esc(game.version)} · ${game.entries} wpisów</div><h2>${esc(game.title)}</h2><p class="pw-muted">${game.id === slug && visited ? `${counts().accepted} zaakceptowanych · ${Object.keys(drafts).length} szkiców` : 'Jeszcze nie otwierana'}</p><button data-action="open" data-game="${esc(game.id)}">Otwórz grę</button></section>`).join('')}</div>`;
+    root.innerHTML = `<div class="pw-top"><div><div class="pw-overline">Not Geese / pracownia korekty</div><h1>Do której gry wracamy?</h1><p class="pw-muted">Lista ze strony. Prototyp podłącza teksty tylko Shotgun Cop Mana. Szkice zapisuje się i odrzuca w grze.</p></div></div><div class="pw-game-list">${data.games.map(game => `<section class="pw-game"><div class="pw-overline">${esc(game.version)} · ${game.entries} wpisów</div>${game.id === slug && Object.keys(drafts).length ? `<span class="pw-draft-badge">Niezapisane szkice: ${Object.keys(drafts).length}</span>` : ''}<h2>${esc(game.title)}</h2><p class="pw-muted">${game.id === slug && visited ? `${counts().accepted} zaakceptowanych` : 'Jeszcze nie otwierana'}</p><button data-action="open" data-game="${esc(game.id)}">Otwórz grę</button></section>`).join('')}</div>`;
     return;
   }
   const items = filteredRows(), allGroup = groupRows();
@@ -135,14 +134,12 @@ function saveGame() {
       saved[key] = { action:draft.action, english:draft.english, before:draft.before, after:draft.after };
       log(`${key}: ${draft.action==='correct'?'korekta do wdrożenia':draft.action==='accept'?'akceptacja':'cofnięcie akceptacji / korekty'}`);
     }
-    if (draft.group) { moves[key] = { before:groupFor(rowFor(key)), after:draft.group }; log(`${key}: przeniesienie do ${draft.group}`); }
   }
   drafts={};persist();render();toast(`Zapisano ${count} szkiców w symulacji. Supabase pozostaje bez zmian.`);
 }
 function exportData(comment='') {
   return { format:1, game:slug, source:{kind:'prototype-local',main_sha:null}, exported_at:new Date().toISOString(), comment,
-    corrections:rows().filter(row=>stateOf(row)==='pending').map(row=>({namespace:'',key:row.key,english:saved[row.key].english,before:saved[row.key].before,after:saved[row.key].after})),
-    moves:Object.entries(moves).map(([key,m])=>({namespace:'',key,...m})) };
+    corrections:rows().filter(row=>stateOf(row)==='pending').map(row=>({namespace:'',key:row.key,english:saved[row.key].english,before:saved[row.key].before,after:saved[row.key].after})) };
 }
 function switchVariant(delta) {
   const keys=Object.keys(variants);variant=keys[(keys.indexOf(variant)+delta+keys.length)%keys.length];page=0;
@@ -165,7 +162,7 @@ function scenario(kind) {
       saved[row.key]={...saved[row.key],action:'accept'};log(`${row.key}: korekta obecna na main → zaakceptowany (symulacja)`);
     }
   } else if (kind==='reset') {
-    saved={};drafts={};moves={};overrides={};journal=[];visited=true;group='menu';
+    saved={};drafts={};overrides={};journal=[];visited=true;group='menu';
   }
   page=0;query='';stateFilter='';persist();dialog.close();render();
 }
@@ -188,16 +185,14 @@ function handle(event) {
   else if(action==='keep-own'){stage(key,'correct',saved[key].after);render();}
   else if(action==='keep-draft'){const d=drafts[key],r=rowFor(key);d.before=r.polish;d.english=r.english;if(d.action==='accept')d.after=r.polish;persist();render();}
   else if(action==='accept-rest'){const items=visibleRows().filter(r=>stateOf(r)==='review'&&!drafts[r.key]);for(const row of items)stage(row.key,'accept');render();toast(`${items.length} akceptacji na bieżącej stronie. Zapisz grę, aby je utrwalić.`);}
-  else if(action==='save'||action==='save-all'){saveGame();}
+  else if(action==='save'){saveGame();}
   else if(action==='prev-page'){page--;render();}
   else if(action==='next-page'){page++;render();}
   else if(action==='close'){dialog.close();}
   else if(action==='journal'){modal('Dziennik gry',journal.length?`<ol>${journal.map(j=>`<li><small>${new Date(j.at).toLocaleTimeString('pl')}</small> ${esc(j.message)}</li>`).join('')}</ol>`:'<p>Brak zapisanych akcji. Szkice nie trafiają do dziennika.</p>');}
-  else if(action==='move'){modal('Przenieś wpis',`<p>${esc(key)}</p><p>Przeniesienie trafi do eksportu; podział zmieni się po naniesieniu na main.</p><label for="pw-target">Grupa docelowa</label><select id="pw-target">${groups.map(([id,name])=>`<option value="${id}" ${id===groupFor(rowFor(key))?'selected':''}>${name}</option>`).join('')}</select>`,`<button data-action="confirm-move" data-key="${esc(key)}">Dodaj do szkiców</button>`);}
-  else if(action==='confirm-move'){const row=rowFor(key),target=document.getElementById('pw-target').value;if(target!==groupFor(row)){drafts[key]={english:row.english,before:row.polish,...drafts[key],group:target};persist();}dialog.close();render();}
   else if(action==='export'){
     const blocked=counts().conflict>0;
-    modal('Eksport korekt · Shotgun Cop Man',`<p>${pendingCount()} korekt i ${Object.keys(moves).length} przeniesień. Eksport obejmuje wyłącznie zapisany wynik pracy.</p>${Object.keys(drafts).length?notice(`${Object.keys(drafts).length} lokalnych szkiców nie trafi do eksportu. Zapisz je osobno, jeśli mają być uwzględnione.`):''}${blocked?notice('Najpierw rozstrzygnij konflikty i zapisz grę. Blokada eksportu przy konflikcie jest wariantem do oceny.'):''}<label for="pw-comment">Komentarz dla agenta</label><textarea id="pw-comment" placeholder="Co agent powinien wiedzieć przy nanoszeniu korekt?"></textarea><details><summary>Pokaż strukturę JSON</summary><pre>${esc(JSON.stringify(exportData(),null,2))}</pre></details><p class="pw-muted">Próbka jest oznaczona jako prototyp, nie jako eksport z main. Pobranie niczego nie zmienia.</p>`,`<button class="pw-primary" data-action="download" ${blocked?'disabled':''}>Pobierz JSON prototypu</button>`);
+    modal('Eksport korekt · Shotgun Cop Man',`<p>${pendingCount()} korekt. Eksport obejmuje wyłącznie zapisany wynik pracy.</p>${Object.keys(drafts).length?notice(`${Object.keys(drafts).length} lokalnych szkiców nie trafi do eksportu. Zapisz je osobno, jeśli mają być uwzględnione.`):''}${blocked?notice('Najpierw rozstrzygnij konflikty i zapisz grę. Blokada eksportu przy konflikcie jest wariantem do oceny.'):''}<label for="pw-comment">Komentarz dla agenta</label><textarea id="pw-comment" placeholder="Co agent powinien wiedzieć przy nanoszeniu korekt?"></textarea><details><summary>Pokaż strukturę JSON</summary><pre>${esc(JSON.stringify(exportData(),null,2))}</pre></details><p class="pw-muted">Próbka jest oznaczona jako prototyp, nie jako eksport z main. Pobranie niczego nie zmienia.</p>`,`<button class="pw-primary" data-action="download" ${blocked?'disabled':''}>Pobierz JSON prototypu</button>`);
   } else if(action==='download'){
     const payload=exportData(document.getElementById('pw-comment').value);const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'}));
     const a=document.createElement('a');a.href=url;a.download=`shotgun-cop-man-PROTOTYP-korekty-${new Date().toISOString().slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Pobrano JSON prototypu. Stan wpisów nie zmienił się.');

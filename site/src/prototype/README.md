@@ -20,7 +20,7 @@ z biblii, nieustalone oznaczone. Nie tworzono jeszcze produkcyjnego structure.ya
 
 Sprawdź:
 
-1. Otwórz SCM, popraw PL w Menu; użyj „Akceptuj pozostałe”. Korekta pozostaje szkicem.
+1. Otwórz SCM, popraw PL w Menu; użyj „Zaakceptuj na stronie”. Korekta pozostaje szkicem.
 2. Odśwież kartę, otwórz SCM i sprawdź szkic. „Zapisz grę” symuluje bazę lokalnie.
 3. Otwórz sekwencję Pedro, przełącz warianty i tryb tylko PL.
 4. „Sprawdź sytuacje” → Konflikt albo Nieaktualny szkic. Rozstrzygnij i zapisz.
@@ -66,3 +66,11 @@ Uwaga (2026-09-25, przejęcie): build produkcyjny zostawia w `dist/_astro/` osie
 arkusz `_prototype_*.css`, bo import CSS we frontmatterze trafia do bundla mimo braku
 trasy. Tylko style, bez tekstów, nieładowany przez żadną stronę. Znika razem
 z usunięciem prototypu. Zdanie powyżej o braku kodu prototypu w CSS jest przez to nieścisłe.
+
+## Po decyzjach 0017–0019 (2026-09-25)
+
+Usunięto „Zapisz wszystkie szkice” z listy gier i akcję „Przenieś do grupy”. Kafelek gry
+pokazuje liczbę niezapisanych szkiców; zapis i porzucenie są tylko w grze (0019).
+Eksport nie ma listy przeniesień (0018). Lista „Brak na main” (0017) nie jest
+symulowana w prototypie. Sprawdzone w przeglądarce: brak obu przycisków, oznaczenie
+szkicu na kafelku SCM po edycji, brak błędów JS.

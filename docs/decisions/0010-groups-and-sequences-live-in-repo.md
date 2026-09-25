@@ -4,8 +4,8 @@ Status: przyjęte · Data: 2026-09-25 · Temat: [pracownia korekty](0003-editori
 
 Podział na grupy i sekwencje każdej gry leży w repo, w pliku obok tłumaczeń. Są tam reguły
 według prefiksów kluczy, ręczne przypisania i sekwencje z mówcami. Przygotowuje go agent,
-a pracownia go czyta. Przeniesienie wpisu do innej grupy w panelu to zmiana taka jak korekta:
-trafia do eksportu i obowiązuje dopiero po naniesieniu na main. Uporządkowanie przetrwa
+a pracownia go czyta. Pierwsza wersja pracowni nie przenosi wpisów
+między grupami ([0018](0018-no-group-moves-in-first-version.md)); zmiany podziału robi agent w repo. Uporządkowanie przetrwa
 utratę bazy, a agent przy dotłumaczeniu wie, do której rozmowy należy nowa kwestia.
 
 ## Format
