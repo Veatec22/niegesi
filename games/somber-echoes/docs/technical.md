@@ -96,3 +96,9 @@ ZIP (9 plików): pak z ośmioma locres `pl`, loader `dwmapi.dll`, UE4SS z licenc
 skrypt i READ-ME. Build sprawdza SHA-256 archiwum UE4SS i odrzuca zasoby gry (`.uasset`, `.uexp`,
 `.ufont`, `.ubulk`). Otwarte pytanie: czy silnik wczyta tabele `pl` spoza SupportedCultures
 z DefaultGame.ini. Próbka pod `en` działała, ale `pl` nie było jeszcze sprawdzane w grze.
+
+## Review 2026-09-25
+
+Niezależny przegląd 1507/1507 wpisów: `docs/localization-review.md`. Naniesiono 8 pewnych poprawek
+w `en-pl-review.json`; paczki nie przebudowano, więc 0.2.0 w `dist/` ich nie zawiera. Następny krok:
+decyzje użytkownika w sprawie wariantów z raportu, potem build i pełne przejście w grze.

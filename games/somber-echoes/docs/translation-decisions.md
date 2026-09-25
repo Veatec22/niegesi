@@ -42,3 +42,11 @@ Polski jest osobnym językiem `pl` z pozycją „Polski” w selektorze. English
 - typografia (27): spacja na końcu kwestii w oryginale. Zostawiona tylko przy `Poziom {num} `, bo tam może służyć do doklejania tekstu;
 - wielkie litery (6): etykiety przy ikonach.
 Długość (9): patrz „Mniej pewne”.
+
+## Po niezależnym review (2026-09-25)
+Pełny raport: `docs/localization-review.md`. Wszystkie decyzje z tabeli terminów utrzymane.
+- **Kirke vs C.I.R.C.E.**: komora konsekwentnie „Kirke”, także w komunikacie zabezpieczeń (CirceAutoSecurity1.2 poprawione z „komory C.I.R.C.E.”). Nazwa interfejsu zostaje „Interfejs C.I.R.C.E.”. Czy dodać graczowi mostek między nazwami — otwarte, czeka na decyzję użytkownika.
+- **Gladius**: samodzielna nazwa przedmiotu wielką literą, w nazwach ulepszeń małą („Wzmocniony gladius 1”); Arbiter jako imię własne. Zapis w biblii doprecyzowany, tekst bez zmian.
+- **Exit na mapie** (STRING_MapElements/Transition_*): „Wyjście”, rzeczownik jak pozostałe elementy legendy, a nie „Wyjdź”. Podpowiedzi przycisków „[ikona] — Wyjdź” zostają w trybie rozkazującym.
+- Dopisane do biblii bez zmiany tekstu: Spopieleni, Feniks, Legion Helikonu, Mojry, boska dwójca.
+- Otwarte warianty stylistyczne (Udręka Posejdona, osiągnięcia z kalkami, „czysta Nyks” itd.) czekają na użytkownika; do czasu decyzji tekst bez zmian.
