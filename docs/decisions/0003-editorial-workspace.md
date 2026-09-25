@@ -172,7 +172,8 @@ Ustalenia bez osobnego pliku decyzji:
 2. Rozstrzygnąć pozostałe szczegóły ze specyfikacji: eksport przy konfliktach
    i identyfikatory z namespace. Usunięte wpisy, przeniesienia i zapis wielu gier
    rozstrzygnięte 2026-09-25 (0017–0019).
-3. Doprowadzić SCM do formatu 0013, przygotować strukturę 0010 i zgodność z 0015.
+3. ~~Doprowadzić SCM do formatu 0013, przygotować strukturę 0010 i zgodność z 0015.~~
+   SCM spełniał już 0013 i 0015; `structure.yaml` dodany 2026-09-25 (485/485 wpisów w grupach).
 4. Implementować Supabase, `/admin/` oraz narzędzie nanoszenia eksportu.
 
 ## Pozostałe kwestie

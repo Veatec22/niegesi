@@ -22,6 +22,7 @@ linię „Polski dodany jako jezyk 11 z 11".
 | --- | --- |
 | [`translations/pl.json`](../translations/pl.json) | Polskie teksty, 485 wpisów kluczowanych identyfikatorem terminu I2. Tu poprawia się tłumaczenie. |
 | [`translations/en-pl-review.json`](../translations/en-pl-review.json) | Zestawienie EN/PL do korekty; zmiany w `pl.json` trzeba nanieść także tutaj. |
+| [`translations/structure.yaml`](../translations/structure.yaml) | Grupy i sekwencja Pedro dla pracowni korekty (decyzja 0010). Nie wpływa na paczkę. Nowy klucz bez pasującej reguły trafi w pracowni do „Do uporządkowania”. |
 | [`plugin/Plugin.cs`](../plugin/Plugin.cs) | Plugin BepInEx. |
 | [`tools/build_plugin.py`](../tools/build_plugin.py) | Kompiluje plugin, zamienia `pl.json` na `pl.tsv` i składa paczkę. |
 | [`docs/INSTALL-plugin.txt`](INSTALL-plugin.txt) | Instrukcja dla gracza, w paczce jako `READ-ME.txt`. |
@@ -63,11 +64,14 @@ Na ekranie oceny poziomu „Otrzymane trafienia:” miało licznik narysowany na
 literach. Gra skleja w `RatingScreenScript.TriggerRatingScreen` jeden napis:
 tłumaczenie `mHitsTaken` + `"  "` + liczba. `build_plugin.py` zapisywał `pl.tsv`
 z końcami CRLF, a plugin dzielił plik po `
-`, więc każdy tekst kończył się ``.
-TextMeshPro po `` cofa pióro na początek linii, a doklejona liczba rysowała się
+`, więc każdy tekst kończył się `
+`.
+TextMeshPro po `
+` cofa pióro na początek linii, a doklejona liczba rysowała się
 na tekście. Poprawka jak w Void Bastards 0.2.1: zapis z `newline='
 '`
-i `TrimEnd('')` przy wczytywaniu. Błąd był od początku, widać go tylko tam,
+i `TrimEnd('
+')` przy wczytywaniu. Błąd był od początku, widać go tylko tam,
 gdzie gra dokleja coś po tłumaczeniu.
 
 ## Materiał gry i licencja

@@ -98,8 +98,27 @@ grupę w kolejności review. Błędna struktura nie jest traktowana jak brak pli
 Wystąpienie wskazuje wpis i mówcę z biblii. Kolejność oraz mówcy mają opis źródła
 i pewności. Okrzyki `pSpeech` nie tworzą rozmowy tylko dlatego, że mają numery.
 
-Dokładny zapis ręcznych przypisań i referencji z namespace wymaga ustalenia przed
-normalizacją gier; szkic YAML z 0010 nie definiuje go w pełni.
+### Plik struktury
+
+`translations/structure.yaml`, ustalony 2026-09-25 na Shotgun Cop Manie
+(`games/shotgun-cop-man/translations/structure.yaml`). Precyzuje szkic z 0010:
+
+- `format: 1` — obowiązkowy; inna wartość to błąd formatu.
+- `groups` — lista `{id, name}` w kolejności wyświetlania. `id` unikalne, niepuste.
+- `assign` — lista `{key, namespace?, group}`; ręczne przypisanie pojedynczego wpisu.
+  Wpis może mieć najwyżej jedno przypisanie; wskazany wpis i grupa muszą istnieć.
+- `rules` — lista `{group, match, namespace?}` sprawdzana po kolei, niezależnie od
+  kolejności wyświetlania grup. `match` to wyrażenie regularne na `key`, bez flag,
+  zgodne z JavaScriptem i Pythonem (kotwice, klasy, alternatywa, `\d`). Reguła
+  obejmuje tylko wpisy o dokładnie tym `namespace` (brak = pusty).
+- `sequences` — lista `{id, name, group, order, speakers, lines}`. `order` i `speakers`
+  to `{certainty, source}`, gdzie `certainty` ∈ `pewna`, `odtworzona`. `lines` to lista
+  `{key, namespace?, speaker?}`; brak `speaker` oznacza mówcę nieustalonego, a podany
+  musi być `id` postaci z `bible.yaml`. Wpis sekwencji musi należeć do jej grupy.
+
+Referencje do wpisów zawsze mają osobne pola `key` i `namespace`, nigdy sklejony ciąg.
+Nieznane pola są błędem, żeby literówka nie gubiła po cichu przypisania.
+Separator płaskiego identyfikatora w `pl.json` dla niepustego namespace pozostaje otwarty.
 
 ### Stan zapisany i rozliczanie
 

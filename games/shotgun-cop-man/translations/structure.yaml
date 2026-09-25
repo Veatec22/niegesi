@@ -1,0 +1,73 @@
+# Grupy i sekwencje Shotgun Cop Mana dla pracowni korekty.
+# Format: docs/specs/editorial-workspace.md, sekcja „Plik struktury”. Decyzja: docs/decisions/0010.
+
+format: 1
+
+# Kolejność wyświetlania w pracowni.
+groups:
+  - id: menu
+    name: Menu i nawigacja
+  - id: settings
+    name: Ustawienia i sterowanie
+  - id: tutorial
+    name: Intro, samouczek i podpowiedzi
+  - id: game
+    name: Rozgrywka i wyniki
+  - id: dialogue
+    name: Wypowiedzi i dialogi
+  - id: editor
+    name: Edytor poziomów
+  - id: campaigns
+    name: Kampanie i Warsztat Steam
+  - id: achievements
+    name: Osiągnięcia
+  - id: credits-demo
+    name: Napisy końcowe i wersja demo
+
+# Ręczne przypisania pojedynczych wpisów; wygrywają z regułami.
+assign:
+  - {key: LangName, group: menu}
+  - {key: mEnterText, group: editor}
+  - {key: mBrushSize, group: editor}
+  - {key: mSave, group: editor}
+  - {key: mUndo, group: editor}
+  - {key: mRedo, group: editor}
+  - {key: mSteamUpload, group: campaigns}
+  - {key: gHeart, group: tutorial}
+  - {key: gSkip, group: tutorial}
+  - {key: waitForInput, group: settings}
+
+# Sprawdzane po kolei; pierwsza pasująca reguła wygrywa. Reszta trafia do „Do uporządkowania”.
+rules:
+  - {group: dialogue, match: '^(pSpeech|satanSpeech|PedroDLCSpeech)\d+$'}
+  - {group: campaigns, match: '^(mcc|bcPromoLand|PedroDLCBonusCampaign)'}
+  - {group: editor, match: '^(e[A-Za-z]|PedroDLCep)'}
+  - {group: achievements, match: '^ach'}
+  - {group: credits-demo, match: '^(cred|demo|appDemo|mDemoSaveTransfer)'}
+  - {group: tutorial, match: '^(t[A-Z]|gIntro\d)'}
+  - {group: settings, match: '^(a[A-Z]|a(up|down|left|right)$|m(VideoSettings|Resolution|Fullscreen|VSync|TargetFPS|FPSUnlocked|AudioSettings|SFXVol|MusicVol|GameSettings|Blood|Screenshake|Rumble|ShowTimer|Clear|Language|Accessibility|Acc[A-Z]|ControlsSettings|ConfineCursor|MouseSensitivity))'}
+  - {group: game, match: '^(g[A-Z]|PedroDLCBoss\d|m(Lvl|BestTime|WorldMapPlay|KillAll|Speedrun|NoDamage|HitsTaken|Continue|Timer|AllInOne))'}
+  - {group: menu, match: '^m[A-Z]'}
+
+sequences:
+  - id: pedro-dlc
+    name: Spotkanie z Pedro
+    group: dialogue
+    order: {certainty: pewna, source: 'numeracja kluczy PedroDLCSpeech1–15, spójna z treścią'}
+    speakers: {certainty: odtworzona, source: 'treść kwestii; Pedro według biblii (postać pedro)'}
+    lines:
+      - {key: PedroDLCSpeech1, speaker: bohater}
+      - {key: PedroDLCSpeech2, speaker: pedro}
+      - {key: PedroDLCSpeech3, speaker: bohater}
+      - {key: PedroDLCSpeech4, speaker: pedro}
+      - {key: PedroDLCSpeech5, speaker: pedro}
+      - {key: PedroDLCSpeech6, speaker: bohater}
+      - {key: PedroDLCSpeech7, speaker: pedro}
+      - {key: PedroDLCSpeech8, speaker: pedro}
+      - {key: PedroDLCSpeech9, speaker: pedro}
+      - {key: PedroDLCSpeech10, speaker: bohater}
+      - {key: PedroDLCSpeech11, speaker: pedro}
+      - {key: PedroDLCSpeech12, speaker: pedro}
+      - {key: PedroDLCSpeech13}
+      - {key: PedroDLCSpeech14}
+      - {key: PedroDLCSpeech15}

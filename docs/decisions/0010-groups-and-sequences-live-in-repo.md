@@ -10,7 +10,8 @@ utratę bazy, a agent przy dotłumaczeniu wie, do której rozmowy należy nowa k
 
 ## Format
 
-`translations/structure.yaml`, szkic na Shotgun Cop Manie:
+`translations/structure.yaml`. Poniżej pierwotny szkic; obowiązujący format opisuje
+[specyfikacja](../specs/editorial-workspace.md#plik-struktury), wzór w Shotgun Cop Manie:
 
 ```yaml
 groups:
