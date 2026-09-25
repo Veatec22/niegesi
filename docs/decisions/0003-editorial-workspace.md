@@ -208,8 +208,11 @@ Ustalenia bez osobnego pliku decyzji:
      wersja paczki zmienia się dopiero przy wydaniu na main. Obecna numeracja wersji
      jest przypadkowa, konwencja do ustalenia osobno.
    - ~~Walidator wszystkich gier i tabela stanu.~~ `tools/check_games.ts`, workflow „Gry”.
-   - Struktura (grupy, sekwencje) gra po grze; kolejność wybiera agent, od gier
-     najtańszych do najbardziej dialogowych.
+   - ~~Struktura gra po grze.~~ 2026-09-25: 25/26 gier ma grupy; rozmowy z mówcami mają
+     Laika (368), Anger Foot (294) i Not a Hero (57) — generatory `tools/structure.py`.
+     Reguły mogą dopasować kontekst wpisu (pole `context`), stąd grupy gier z kluczami-
+     hashami. Labyrinth nie ma w plikach nic poza hashami i zostaje jedną listą.
+     Drzewa rozmów z odnogami (DEADBOLT, Heat Signature, Laika) czekają na graf.
    - Wyrównanie procesu: każda gra przed korektą w panelu ma biblię, decyzje
      i niezależny przegląd `localization-review` (decyzja użytkownika: to zawsze
      krok mniej przy jego finalnej korekcie). 4 najstarsze gry nie mają biblii

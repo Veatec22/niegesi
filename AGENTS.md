@@ -59,7 +59,9 @@ Rozmawiamy po polsku.
     (`notgeese.cc/admin/`), pobiera eksport gry i daje go sesji na swoim komputerze.
     Naniesienie, build i wydanie na main opisuje
     `.claude/skills/workspace-corrections/SKILL.md`. Gra trafia do pracowni po kroku 7:
-    z biblią, decyzjami i niezależnym review, żeby użytkownikowi zostało jak najmniej.
+    z biblią, decyzjami i niezależnym review, żeby użytkownikowi zostało jak najmniej,
+    oraz z `translations/structure.yaml` (grupy, rozmowy z mówcami tam, gdzie klucze
+    na to pozwalają). `tools/check_games.ts` pokazuje, czego grze jeszcze brakuje.
 
 ## Jak dostarczamy spolszczenie
 
