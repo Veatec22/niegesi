@@ -22,7 +22,7 @@ Wpisy z tekstem: 2479. Biblia: tak.
 
 - `Achievement/ach_hard_complete_desc_past` — UI 45 zn. vs 27 w EN
   - EN: Escaped the nebula on HARD.
-  - PL: Ucieczka z mgławicy na poziomie TRUDNY udana.
+  - PL: Udana ucieczka z mgławicy na poziomie TRUDNY.
 - `Dialog/BuzzController_3_Player` — napis 78 zn. vs 44 w EN
   - EN: So I can steal this junk? Shoplifters unite!
   - PL: Czyli mogę zwinąć ten złom? Złodzieje sklepowi wszystkich krajów, łączcie się!

@@ -103,15 +103,29 @@ Niezależny przegląd całości (2480/2480 wpisów, trzech reviewerów w śwież
 
 Przegląd językowy nie zastępuje testu w grze — pełne przejście nadal czeka.
 
-## Do rozmowy (propozycje z review, obecny tekst zostaje do decyzji)
+## Rozstrzygnięte z użytkownikiem po review (2026-09-26)
 
-Pełna lista z kluczami: `docs/localization-review.md`, sekcja „Do rozmowy”. Najważniejsze:
+Wprowadzone (31 wpisów):
 
-1. Samouczek B.A.C.S.-a — sztywne obejścia rodzaju („Czy zauważono na tym statku brzęczek?”,
-   „Zgubiony kierunek?”, „zanim dojdzie do zabicia albo uduszenia”).
-2. Osiągnięcia `_past` z „… udana” na końcu → „Udana ucieczka z mgławicy…”.
-3. Piraci: „kapuś” → „frajer” (dobber), Li Hua „osobiście” → „mam tam wyleźć…”.
-4. Nazwy akcji „Strzał/Skok/Bieg” → „Strzelaj/Skacz/Biegnij”.
-5. Stopnie wrogów „Stary woźny/Stary skryba” (Veteran) słabsze niż „Starszy skryba” (Senior).
-6. „upscale” = „ulepsz” jak ulepszenia z warsztatu → „uszlachetnij” / „przerób”.
-7. Kalambury: „Proszę się nadal doczekiwać”, „Zarządzanie grzybkowe”, „Sknerstwo”.
+1. **Samouczek B.A.C.S.-a** bez sztywnych obejść rodzaju: „Czy wiesz, że na tym statku jest
+   brzęczek?”, „Nie wiesz, dokąd iść?”, „…zanim ktoś cię zabije albo się udusisz.”,
+   „Zamiast budować w warsztacie lokalizator części.” — zwrot „ty” zamiast strony bezosobowej
+   tam, gdzie nie wymaga form rodzajowych.
+2. **Osiągnięcia `_past`:** „Udana ucieczka z mgławicy [na poziomie X] […].”, „Doprowadzono
+   S.T.E.V. …”, „Przeżyto spotkanie z piratami.”
+3. **Piraci:** „Jakiś frajer puścił…” (dobber = idiota, nie donosiciel), Li Hua: „mam tam wyleźć
+   i zrobić to za was??”, „Luli ciągle gada…” (płeć Luli nieznana).
+4. **Akcje w sterowaniu w trybie rozkazującym:** „Strzelaj”, „Skacz”, „Biegnij”.
+5. **Stopnie wrogów:** Veteran → „weteran” po nazwie („Woźny weteran”, „Skryba weteran”),
+   Senior → „Starszy”.
+6. **upscale → przerób:** „przerób”, „złom do przeróbki”, „Przerobiono”, na mapie „Przerabia złom”.
+   Odrzucone: „ulepsz” (myli się z warsztatem), „uszlachetnij”.
+7. **Kalambury:** „Proszę czekać dalej — i przy okazji szukać identyfikatora.”,
+   „Zarządzanie pieczarkowe” (odrzucone: „Metoda pieczarki”), „Sknera”.
+
+## Do rozmowy (pozostałe propozycje z review)
+
+Nie wprowadzone, obecny tekst zostaje. Szczegóły w `docs/localization-review.md`:
+„Pirat mat” → „Pirat bosman”; „Autorytet” (wyzwanie) → „Figura autorytetu”; „Zadanie!”
+(Action Item!) → „Do realizacji!”; kalambur „stacja… papiernicza”; drobne luki wierności
+(punkt 8) i wygładzenia komiksu (punkt 9); skróty zależne od testu długości (punkt 10).

@@ -71,7 +71,11 @@ konsekwentnie małymi literami.
 
 ## Do rozmowy
 
-Nie wprowadzone — obecny tekst zostaje do decyzji użytkownika.
+Stan po rozmowie z użytkownikiem (2026-09-26): **punkty 1–7 przyjęte i wprowadzone**
+(31 wpisów), z tymi wyborami: w 6 „przerób / złom do przeróbki / Przerobiono” (plus
+`MapPopup/fixTerminal` „Przerabia złom”), w 7 „Zarządzanie pieczarkowe”. Z punktów 5 i 7
+przyjęto tylko pozycje przedstawione w rozmowie — „Pirat bosman”, „Figura autorytetu”,
+„stacja… papiernicza” i „Do realizacji!” pozostają otwarte, tak jak punkty 8–10.
 
 1. **Sztywne obejścia rodzaju w samouczku B.A.C.S.-a** (pierwsze minuty gry):
    - `Dialog/BuzzController_1_BACS` „Czy zauważono na tym statku brzęczek?” → „Czy wiesz, że na tym statku jest brzęczek?”
@@ -152,4 +156,6 @@ Nie wprowadzone — obecny tekst zostaje do decyzji użytkownika.
 - `l10n_report.py`: 0 zgłoszeń poza 18 długości (bez zmian). 15 zgłoszeń typografii (spacja
   końcowa w EN bez doklejanej treści) opisane w biblii jako wyjątek; 4 prawdziwe braki spacji naprawione.
 - `tools/check_games.ts`: przechodzi.
+- Po decyzjach użytkownika: kolejne 31 wpisów; raport kontrolny bez nowych zgłoszeń
+  (długość nadal 18), `check_games.ts` przechodzi. Terminy „przerób” i „weteran” dopisane do biblii.
 - Paczka nie była przebudowywana — poprawki wejdą do następnego wydania.

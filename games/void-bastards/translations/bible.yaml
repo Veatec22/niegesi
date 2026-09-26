@@ -161,6 +161,16 @@ terminy:
     pl: złom
     formy: [złom, śmiec]
     zrodlo: decyzja
+  - en: upscal(?:e|ed|ing)
+    pl: przerób
+    formy: [przer]
+    zrodlo: użytkownik
+    uwaga: przerabianie złomu przy terminalu; nie „ulepsz”, żeby nie mylić z ulepszeniami z warsztatu (review 2026-09-26).
+  - en: Veteran
+    pl: weteran
+    formy: [weteran]
+    zrodlo: użytkownik
+    uwaga: stopień wroga po nazwie („Woźny weteran”, „Skryba weteran”); Senior = „Starszy” (review 2026-09-26).
   - en: ID card
     pl: identyfikator
     formy: [identyfikator]

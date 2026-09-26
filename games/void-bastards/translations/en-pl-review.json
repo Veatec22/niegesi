@@ -52,7 +52,7 @@
   {
     "key": "Achievement/ach_campaign_complete_desc_past",
     "english": "Escaped the nebula.",
-    "polish": "Ucieczka z mgławicy udana."
+    "polish": "Udana ucieczka z mgławicy."
   },
   {
     "key": "Achievement/ach_campaign_complete_name",
@@ -82,7 +82,7 @@
   {
     "key": "Achievement/ach_depth_two_desc_past",
     "english": "Piloted S.T.E.V. to nebula depth two.",
-    "polish": "S.T.E.V. dotarł na drugą głębokość mgławicy."
+    "polish": "Doprowadzono S.T.E.V. na drugą głębokość mgławicy."
   },
   {
     "key": "Achievement/ach_depth_two_name",
@@ -127,7 +127,7 @@
   {
     "key": "Achievement/ach_hard_complete_desc_past",
     "english": "Escaped the nebula on HARD.",
-    "polish": "Ucieczka z mgławicy na poziomie TRUDNY udana."
+    "polish": "Udana ucieczka z mgławicy na poziomie TRUDNY."
   },
   {
     "key": "Achievement/ach_hard_complete_name",
@@ -142,7 +142,7 @@
   {
     "key": "Achievement/ach_impossible_complete_desc_past",
     "english": "Escaped the nebula on HARD BASTARD.",
-    "polish": "Ucieczka z mgławicy na poziomie TWARDY DRAŃ udana."
+    "polish": "Udana ucieczka z mgławicy na poziomie TWARDY DRAŃ."
   },
   {
     "key": "Achievement/ach_impossible_complete_name",
@@ -172,7 +172,7 @@
   {
     "key": "Achievement/ach_no_deaths_desc_past",
     "english": "Escaped the nebula on NORMAL or HARD with no deaths.",
-    "polish": "Ucieczka z mgławicy na poziomie NORMALNY lub TRUDNY bez żadnej śmierci udana."
+    "polish": "Udana ucieczka z mgławicy na poziomie NORMALNY lub TRUDNY bez żadnej śmierci."
   },
   {
     "key": "Achievement/ach_no_deaths_impossible_desc",
@@ -182,7 +182,7 @@
   {
     "key": "Achievement/ach_no_deaths_impossible_desc_past",
     "english": "Escaped the nebula on HARD BASTARD with no deaths.",
-    "polish": "Ucieczka z mgławicy na poziomie TWARDY DRAŃ bez żadnej śmierci udana."
+    "polish": "Udana ucieczka z mgławicy na poziomie TWARDY DRAŃ bez żadnej śmierci."
   },
   {
     "key": "Achievement/ach_no_deaths_impossible_name",
@@ -202,12 +202,12 @@
   {
     "key": "Achievement/ach_no_ugprades_desc_past",
     "english": "Escaped the nebula on NORMAL without building any non progress upgrades.",
-    "polish": "Ucieczka z mgławicy na poziomie NORMALNY bez budowania ulepszeń innych niż fabularne udana."
+    "polish": "Udana ucieczka z mgławicy na poziomie NORMALNY bez budowania ulepszeń innych niż fabularne."
   },
   {
     "key": "Achievement/ach_no_upgrades_name",
     "english": "Penny Pincher",
-    "polish": "Sknerstwo"
+    "polish": "Sknera"
   },
   {
     "key": "Achievement/ach_no_weapons_desc",
@@ -217,7 +217,7 @@
   {
     "key": "Achievement/ach_no_weapons_desc_past",
     "english": "Escaped the nebula on NORMAL with the UNARMED restriction.",
-    "polish": "Ucieczka z mgławicy na poziomie NORMALNY z ograniczeniem BEZ BRONI udana."
+    "polish": "Udana ucieczka z mgławicy na poziomie NORMALNY z ograniczeniem BEZ BRONI."
   },
   {
     "key": "Achievement/ach_no_weapons_name",
@@ -232,7 +232,7 @@
   {
     "key": "Achievement/ach_only_primary_desc_past",
     "english": "Escaped the nebula on NORMAL with the ONLY FIREARMS restriction.",
-    "polish": "Ucieczka z mgławicy na poziomie NORMALNY z ograniczeniem TYLKO BROŃ PALNA udana."
+    "polish": "Udana ucieczka z mgławicy na poziomie NORMALNY z ograniczeniem TYLKO BROŃ PALNA."
   },
   {
     "key": "Achievement/ach_only_primary_name",
@@ -247,7 +247,7 @@
   {
     "key": "Achievement/ach_only_secondary_desc_past",
     "english": "Escaped the nebula on NORMAL with the ONLY INDIRECT restriction.",
-    "polish": "Ucieczka z mgławicy na poziomie NORMALNY z ograniczeniem TYLKO BROŃ POŚREDNIA udana."
+    "polish": "Udana ucieczka z mgławicy na poziomie NORMALNY z ograniczeniem TYLKO BROŃ POŚREDNIA."
   },
   {
     "key": "Achievement/ach_only_secondary_name",
@@ -262,7 +262,7 @@
   {
     "key": "Achievement/ach_only_tool_desc_past",
     "english": "Escaped the nebula on NORMAL with the ONLY DEVICES restriction.",
-    "polish": "Ucieczka z mgławicy na poziomie NORMALNY z ograniczeniem TYLKO URZĄDZENIA udana."
+    "polish": "Udana ucieczka z mgławicy na poziomie NORMALNY z ograniczeniem TYLKO URZĄDZENIA."
   },
   {
     "key": "Achievement/ach_only_tool_name",
@@ -337,7 +337,7 @@
   {
     "key": "Achievement/ach_survive_pirate_desc_past",
     "english": "Survived a pirate encounter.",
-    "polish": "Spotkanie z piratami przeżyte."
+    "polish": "Przeżyto spotkanie z piratami."
   },
   {
     "key": "Achievement/ach_survive_pirate_name",
@@ -367,7 +367,7 @@
   {
     "key": "Action/Attack",
     "english": "Fire",
-    "polish": "Strzał"
+    "polish": "Strzelaj"
   },
   {
     "key": "Action/Crouch",
@@ -387,7 +387,7 @@
   {
     "key": "Action/Jump",
     "english": "Jump",
-    "polish": "Skok"
+    "polish": "Skacz"
   },
   {
     "key": "Action/Left",
@@ -432,7 +432,7 @@
   {
     "key": "Action/Run",
     "english": "Run",
-    "polish": "Bieg"
+    "polish": "Biegnij"
   },
   {
     "key": "Action/SetNextWeapon",
@@ -1146,7 +1146,7 @@
   {
     "key": "Challenges/hush",
     "english": "Mushroom Management",
-    "polish": "Zarządzanie grzybkowe"
+    "polish": "Zarządzanie pieczarkowe"
   },
   {
     "key": "Challenges/hush description",
@@ -2111,7 +2111,7 @@
   {
     "key": "Dialog/BuzzController_1_BACS",
     "english": "Did you notice that there's a buzz box on this vessel?",
-    "polish": "Czy zauważono na tym statku brzęczek?"
+    "polish": "Czy wiesz, że na tym statku jest brzęczek?"
   },
   {
     "key": "Dialog/BuzzController_2_BACS",
@@ -2311,7 +2311,7 @@
   {
     "key": "Dialog/Helm_1_BACS",
     "english": "Lost? Fuel and part locations can be downloaded at the helm.",
-    "polish": "Zgubiony kierunek? Położenie paliwa i części można pobrać na mostku."
+    "polish": "Nie wiesz, dokąd iść? Położenie paliwa i części można pobrać na mostku."
   },
   {
     "key": "Dialog/IDCard_1_BACS",
@@ -2366,7 +2366,7 @@
   {
     "key": "Dialog/Leave_1_BACS",
     "english": "I suggest you return to the S.T.E.V. now - before you are killed or asphyxiated.",
-    "polish": "Proponuję teraz wrócić do S.T.E.V. — zanim dojdzie do zabicia albo uduszenia."
+    "polish": "Proponuję teraz wrócić do S.T.E.V. — zanim ktoś cię zabije albo się udusisz."
   },
   {
     "key": "Dialog/LinePrinter_1_BACS",
@@ -2376,7 +2376,7 @@
   {
     "key": "Dialog/LinePrinter_2_BACS",
     "english": "Please keep looking forward while you search for an ID card.",
-    "polish": "Proszę się nadal doczekiwać, szukając identyfikatora."
+    "polish": "Proszę czekać dalej — i przy okazji szukać identyfikatora."
   },
   {
     "key": "Dialog/LowFuel_1_BACS",
@@ -2476,7 +2476,7 @@
   {
     "key": "Dialog/PirateDisabled_1_Pirate",
     "english": "Hoi troops! Some dobber's set our frigate adrift!",
-    "polish": "Ej, ziomy! Jakiś kapuś puścił naszą fregatę w dryf!",
+    "polish": "Ej, ziomy! Jakiś frajer puścił naszą fregatę w dryf!",
     "context": "Attention Troop, somebody has set our frigate adrift!"
   },
   {
@@ -2510,7 +2510,7 @@
   {
     "key": "Dialog/PirateEscape_2_LiHua",
     "english": "Bawjaws - have I tae come out and dae it myself??",
-    "polish": "Matoły — mam to niby zrobić osobiście??",
+    "polish": "Matoły — mam tam wyleźć i zrobić to za was??",
     "context": "Idiots - do I have to come out and do it myslef ?"
   },
   {
@@ -2547,7 +2547,7 @@
   {
     "key": "Dialog/PirateScanB_2_Pirate",
     "english": "Luli was on sayin' we should've jettisoned them.",
-    "polish": "Luli gadał, że trzeba ich było wywalić za burtę.",
+    "polish": "Luli ciągle gada, że trzeba ich było wywalić za burtę.",
     "context": "Luli was saying we should have jettisoned them."
   },
   {
@@ -2835,7 +2835,7 @@
   {
     "key": "Dialog/ReturnWorkbench_2_BACS",
     "english": "When you could be at the workbench building a part locater.",
-    "polish": "Skoro można by w warsztacie zbudować lokalizator części."
+    "polish": "Zamiast budować w warsztacie lokalizator części."
   },
   {
     "key": "Dialog/STEVKey_1_BACS",
@@ -3731,7 +3731,7 @@
   {
     "key": "Interact/Convert",
     "english": "upscale",
-    "polish": "ulepsz"
+    "polish": "przerób"
   },
   {
     "key": "Interact/Cost",
@@ -4081,7 +4081,7 @@
   {
     "key": "Interact/ToConvert",
     "english": "junk to upscale",
-    "polish": "złom do ulepszenia"
+    "polish": "złom do przeróbki"
   },
   {
     "key": "Interact/Unlock",
@@ -5886,7 +5886,7 @@
   {
     "key": "Log/Converted",
     "english": "Upscaled",
-    "polish": "Ulepszono"
+    "polish": "Przerobiono"
   },
   {
     "key": "Log/DeepPockets",
@@ -6456,7 +6456,7 @@
   {
     "key": "MapPopup/fixTerminal",
     "english": "Upgrades Junk",
-    "polish": "Ulepsza złom"
+    "polish": "Przerabia złom"
   },
   {
     "key": "MapPopup/food",
@@ -6906,7 +6906,7 @@
   {
     "key": "NPC/Alien L2",
     "english": "Veteran Janitor",
-    "polish": "Stary woźny"
+    "polish": "Woźny weteran"
   },
   {
     "key": "NPC/Allied",
@@ -7059,7 +7059,7 @@
   {
     "key": "NPC/Sniper L3",
     "english": "Veteran Scribe",
-    "polish": "Stary skryba"
+    "polish": "Skryba weteran"
   },
   {
     "key": "NPC/Swarm",
