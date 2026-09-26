@@ -61,3 +61,18 @@ ciągi kodów i łacina w transmisjach zostają bez zmian. `[REDACTED]` → `[UT
 
 Wynik przeglądu z 2026-09-26: `docs/localization-review.md`. Rozstrzygnięcia
 użytkownika po przeglądzie dopisujemy tutaj, z odrzuconymi wariantami.
+
+Ocena decyzji na całej grze: wszystkie powyższe **utrzymane**, z jednym wyjątkiem.
+Tytuł E1M4 „Ghost Wetware” → „Biologiczne widmo” (decyzja 6) reviewer proponuje
+zmienić, bo na tym poziomie debiutują jednostki Ghost, a Ghost zostaje w PL
+po angielsku. Warianty: „Ghost Wetware” albo „Wetware klasy Ghost”. Czeka na
+użytkownika, do tego czasu tytuł bez zmian.
+
+Doprecyzowane po przeglądzie (decyzje agenta, nie użytkownika):
+
+- Ekran śmierci „You Died!” → „Nie żyjesz!” (było „Zginąłeś!”). Wybrano formę
+  bezrodzajową, bo w symulacjach PK/HRD gracz może nie być SEVEN. Wariant
+  „Zginęłaś!” czeka na użytkownika.
+- „squad captain” / „Capitan” → „dowódca oddziału”; „weapons testing arena” →
+  „arena testów broni”; „the Sprawl” → „SPRAWL” (wersaliki, nieodmienne, r. nijaki).
+- Hakerzy w PL mówią w rodzaju męskim; EN tego nie rozstrzyga.

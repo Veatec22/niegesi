@@ -127,6 +127,8 @@ postacie:
     rejestr: >-
       czat małymi literami, potoczny, wulgarny („fucking” → „jebany”, „cunt” → „chuju”)
     zrodlo: [tekst, review]
+    uwaga: >-
+      EN nie rozstrzyga płci; w PL przyjęto rodzaj męski (brak dowodu, przegląd 2026-09-26).
 
 terminy:
   - en: Father
@@ -139,7 +141,7 @@ terminy:
     zrodlo: [review]
   - en: Walled City
     pl: Miasto za Murem
-    formy: [miast]
+    formy: [miast, mieści]
     zrodlo: [review]
   - en: Dark City
     pl: Ciemne Miasto
@@ -156,7 +158,7 @@ terminy:
     uwaga: ikona przycisku <img id="Bullet Time"/> zostaje nietknięta
   - en: Junta
     pl: junta
-    formy: [junt]
+    formy: [junt, juncie]
     zrodlo: decyzja
     uwaga: małą literą w środku zdania, jak nazwa pospolita
   - en: keycard
@@ -187,6 +189,24 @@ terminy:
     pl: drzwi pancerne
     formy: [pancern]
     zrodlo: decyzja
+  - en: squad captains?|capitan
+    pl: dowódca oddziału
+    formy: [dowódc]
+    zrodlo: [tekst]
+    uwaga: >-
+      Ojciec: „dowódców oddziałów”; PU_KEYCARD_HEAD „Capitan Head” → „głowę dowódcy”
+      (przegląd 2026-09-26; „kapitan” to stopień, którego gra nie używa).
+  - en: weapons testing arena
+    pl: arena testów broni
+    formy: [testów broni]
+    zrodlo: decyzja
+  - en: the Sprawl
+    pl: SPRAWL
+    formy: [sprawl]
+    zrodlo: [tekst]
+    uwaga: >-
+      Wersalikami i nieodmiennie, rodzaj nijaki („na całe SPRAWL”). Wyjątki: tytuł gry
+      w ostrzeżeniu o epilepsji i czat hakerów pisany małymi literami.
 
 bez_tlumaczenia:
   - SPRAWL

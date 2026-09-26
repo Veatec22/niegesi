@@ -13,6 +13,11 @@ wszystkich długich tekstów czekają na przejście. Agent nigdy nie uruchamia g
 Następny test użytkownika: długie strony kodeksu, późniejsze dialogi, opisy poziomów
 oraz ustawienia. Sprawdzić obcięcia tekstu, znaki PL i ikony przycisków.
 
+Niezależny przegląd językowy całości (2026-09-26): [localization-review.md](localization-review.md).
+Poprawki weszły do `en-pl-review.json`, ale **paczka 0.2 ich nie zawiera** — nie była
+przebudowana. Przed następnym buildem uruchomić `validate_translations.py` (wymaga
+`translations/en.locres` z własnej kopii gry) i sprawdzić w grze punkty z sekcji 4 raportu.
+
 ## Silnik i sposób wejścia
 
 Unreal Engine 4.27, wydanie GOG, ekran tytułowy 2024.12.09 (v1.6).

@@ -10,22 +10,13 @@ Wpisy z tekstem: 717. Biblia: tak.
 | Tokeny i znaczniki | 0 |
 | Płeć mówiącego (według biblii) | 0 |
 | Forma zwracania się | 0 |
-| Terminy z biblii | 2 |
+| Terminy z biblii | 0 |
 | Spójność: ten sam oryginał, różne PL | 0 |
 | Angielskie resztki | 13 |
 | Liczebniki przy placeholderach | 0 |
 | Długość (ryzyko ucięcia) | 15 |
 | Wielkie litery | 4 |
 | Typografia | 50 |
-
-## Terminy z biblii (2)
-
-- `e1m2.chatlogwarehouse` — Walled City → Miasto za Murem
-  - EN: <amber>[UNIT0372]</>: we've been ordered to stay on patrol in these fucking tunnels⏎<amber>[UNIT1128]</>: you think you have it bad? were …
-  - PL: <amber>[UNIT0372]</>: kazali nam dalej patrolować te jebane tunele⏎<amber>[UNIT1128]</>: myślisz, że masz źle? my siedzimy w stacji filtrac…
-- `e1m5.chatlogcasemrph` — Junta → junta
-  - EN: <amber>[mrph]</>: its done, whatever assets we have are in hiding, the rest are burning⏎<amber>[case]</>: then we have done what was neede…
-  - PL: <amber>[mrph]</>: skończone. wszyscy nasi, którzy jeszcze zostali, są w ukryciu. reszta płonie⏎<amber>[case]</>: więc zrobiliśmy, co było t…
 
 ## Angielskie resztki (13)
 
@@ -196,7 +187,7 @@ Wpisy z tekstem: 717. Biblia: tak.
   - PL: Możesz przyczepiać się także do zakrzywionych ścian. Biegnij po nich i odbijaj się (<img id="Jump"/>), by zyskać wysokość i pokonać większe…
 - `E1M1_WALLRUNNING_01_BODY` — proste cudzysłowy zamiast „”
   - EN: You will need to wall run and wall jump to succeed in the Sprawl. Run against the wall on the left and jump (<img id="Jump"/>) to magnetize…
-  - PL: Aby przetrwać w Sprawl, musisz biegać po ścianach i odbijać się od nich. Podbiegnij do ściany po lewej i skocz (<img id="Jump"/>), aby się …
+  - PL: Aby przetrwać w SPRAWL, musisz biegać po ścianach i odbijać się od nich. Podbiegnij do ściany po lewej i skocz (<img id="Jump"/>), aby się …
 - `E1M3_FLAVOUR` — inna spacja na początku/końcu niż w oryginale (doklejana liczba?)
   - EN: After escaping Klub Null, you’ve been guided into the greater SPRAWL by FATHER. These buildings are from a bygone era, infrastructure built…
   - PL: Po ucieczce z Klubu Null OJCIEC skierował cię w głąb SPRAWL. Te budynki pochodzą z minionej epoki, z czasów gwałtownego uprzemysłowienia i …
@@ -205,7 +196,7 @@ Wpisy z tekstem: 717. Biblia: tak.
   - PL: INSTYTUCJA
 - `E1M1_FLAVOUR` — inna spacja na początku/końcu niż w oryginale (doklejana liczba?)
   - EN: It is the year [REDACTED], beyond the Walled City lies the SPRAWL, an urban megapolis choked in ash and smog. Here the seeds of unfettered …
-  - PL: Jest rok [UTAJNIONO]. Za Miastem za Murem rozciąga się SPRAWL — megapolis duszące się w popiele i smogu. To tutaj nieograniczona władza kor…
+  - PL: Jest rok [UTAJNIONO]. Za Miastem za Murem rozciąga się SPRAWL — megapolis dusząca się w popiele i smogu. To tutaj nieograniczona władza kor…
 - `E1M1_COMMS_TOWER_01` — proste cudzysłowy zamiast „”
   - EN: activate comms tower <img id="Interact"/>
   - PL: uruchom wieżę łączności <img id="Interact"/>
