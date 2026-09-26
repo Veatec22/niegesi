@@ -205,13 +205,33 @@ Każdy ma konkretną przesłankę. Są pogrupowane i ułożone od najważniejszy
 | Terminy: karta dostępu, drzwi pancerne, wślizg, bieg po ścianie, słaby punkt, spowolnienie czasu, wszczepy/implant | **utrzymać** | Spójne między samouczkami, UI, World_String_Table i dialogami. „Implant” dla „implant ICARUS” i „wszczepy” dla „cyberware” to rozróżnienie z EN. | Dodać do biblii: „squad captain → dowódca oddziału” (1.10). |
 | Termin „Sprawl/SPRAWL” | **utrzymać „SPRAWL” (nieodm.)** | Poza tytułem gry i czatem jedynym wyłomem jest samouczek (1.9). Rodzaj: „znane nam SPRAWL”, „na całe SPRAWL” (n.) konsekwentnie. | Dopisać do biblii regułę pisowni. |
 
+## Rozstrzygnięcia użytkownika (2026-09-26)
+
+| Temat | Klucze | Decyzja | Status |
+| --- | --- | --- | --- |
+| 2.1 tytuł E1M4 | LEVEL_E1M4_NAME | zostaje „Biologiczne widmo” (na razie) | odrzucone |
+| 1.1 ekran śmierci | YOU_DIED_PROMPT | zostaje „Nie żyjesz!”; „Zginęłaś!” odrzucone | utrzymane |
+| 2.2 „she's not ours” | e1m5.chatlogcasemrph | „ona do nas też nie należy” | wprowadzone |
+| 2.3 Ojciec | E1M1_FATHER_INTRODUCING_Q/R, E2M3_FATHER_END_LEVEL_B, E2M1_FATHER_TROPHY_B, E2M3_FATHER_TRAIN_MOVING_D | „wreszcie będę… / …wolny”, „wykonać skok wiary”, „nie natkniesz się na tego kogoś”, „Na twoim miejscu przygotowałbym minigun.” | wprowadzone |
+| 2.4 SIX | E1M5_REAPER_THIS_CANT_BE, REAPER_E3M2_WORM_A/B | „To niemożliwe!”, „I tak dobrze, że ten robak zdechł.”, „temu czemuś, co szepcze” | wprowadzone |
+| 2.5 Fong | E3M2_POLITICIAN_INTERCOM_02_A | „Egzystencja skazana na zagładę…” | wprowadzone |
+| 2.6 korporacje | E2M4_FLAVOUR, e2m1.syserrorbadlands | „korporacji AEON”, „Korporacja Domand była” | wprowadzone |
+| 2.6 „spill over areas” | e2m2.transit | „TERENÓW PRZYLEGŁYCH” | wprowadzone |
+| 2.6 „Manifest cyborga” | e3m1.cybernetics | zostaje „Manifest cyborgów” | odrzucone |
+| 2.7 wcięcia Matki | e1m2.mother02, e1m3.mother03, e1m4.mother04 | bez zmian | odrzucone |
+
+Nieprzedstawione w rozmowie i nadal **otwarte** (tekst bez zmian): pozostałe szlify Ojca z 2.3
+(HALLMARK_D, FRIEDHACKER_B, AT_SWITCH_B, GARAGE_C, ASSISTED_SUICIDE_D, INTRODUCING_L),
+z 2.6 (NINJA, „lekkie patrole”, CONFIRM_RETURN_TO_MENU_MESSAGE, CONTROL_*, WALLRUNNING_04_BODY,
+COMBAT_10_BODY) i z 2.7 (szyk w e1m4.syserrorspire, „wbiegał” w e3m2.mother777, średnik w e3m3.kintsukuroi).
+
 ## Ponowna kontrola po poprawkach
 
-- Zmieniono 31 pól `polish` (16 pozycji z tabeli). `key`, `english` i układ pliku bez zmian.
+- Zmieniono 31 pól `polish` (16 pozycji z tabeli), a po rozstrzygnięciach użytkownika kolejne 13. `key`, `english` i układ pliku bez zmian.
 - `l10n_report.py`: brak=0, tokeny=0, płeć=0, adresat=0, terminy=0, spójność=0. Pozostałe zgłoszenia
   (angielskie resztki, długości, typografia) to nazwy własne, fałszywe alarmy albo punkty do testu w grze (sekcja 4).
 - `tools/check_games.ts` przechodzi.
 - `games/sprawl/tools/validate_translations.py` wymaga `translations/en.locres` z własnej kopii gry,
   której nie ma w repo, więc nie został tu uruchomiony. Uruchomić przed następnym buildem.
 - Paczka nie była przebudowana. Wersja 0.2 w `dist/` i na stronie nie zawiera tych poprawek.
-- Warianty z sekcji 2 czekają na decyzję użytkownika; obecny tekst zostaje do czasu rozstrzygnięcia.
+- Warianty rozstrzygnięte przez użytkownika opisuje sekcja wyżej; pozostałe otwarte punkty mają obecny tekst.

@@ -39,6 +39,7 @@ postacie:
     uwaga: >-
       „She gave her life for you all. Her name was SEVEN.” (ACME_UNKNOWN_VOICE_G);
       Reaper: „you were just their new toy” → „byłaś”. W raportach „agentka”, „obiekt”.
+      Ekran śmierci bezrodzajowo „Nie żyjesz!” (użytkownik 2026-09-26, odrzucone „Zginęłaś!”).
   - id: father
     nazwa: Ojciec
     plec: m
@@ -189,6 +190,13 @@ terminy:
     pl: drzwi pancerne
     formy: [pancern]
     zrodlo: decyzja
+  - en: (AEON|Domand) Corp\b
+    pl: korporacja AEON / korporacja Domand
+    formy: [korporac]
+    zrodlo: uzytkownik
+    uwaga: >-
+      2026-09-26, po przeglądzie. Odrzucone „AEON Corp”, „Domand Corp” w tekście PL.
+      „AEON Cybertech” jako pełna nazwa zostaje.
   - en: squad captains?|capitan
     pl: dowódca oddziału
     formy: [dowódc]

@@ -62,17 +62,35 @@ ciągi kodów i łacina w transmisjach zostają bez zmian. `[REDACTED]` → `[UT
 Wynik przeglądu z 2026-09-26: `docs/localization-review.md`. Rozstrzygnięcia
 użytkownika po przeglądzie dopisujemy tutaj, z odrzuconymi wariantami.
 
-Ocena decyzji na całej grze: wszystkie powyższe **utrzymane**, z jednym wyjątkiem.
-Tytuł E1M4 „Ghost Wetware” → „Biologiczne widmo” (decyzja 6) reviewer proponuje
-zmienić, bo na tym poziomie debiutują jednostki Ghost, a Ghost zostaje w PL
-po angielsku. Warianty: „Ghost Wetware” albo „Wetware klasy Ghost”. Czeka na
-użytkownika, do tego czasu tytuł bez zmian.
+Ocena decyzji na całej grze: wszystkie powyższe **utrzymane**; reviewer podważył tylko tytuł E1M4.
 
-Doprecyzowane po przeglądzie (decyzje agenta, nie użytkownika):
+### Rozstrzygnięcia użytkownika (2026-09-26)
 
-- Ekran śmierci „You Died!” → „Nie żyjesz!” (było „Zginąłeś!”). Wybrano formę
-  bezrodzajową, bo w symulacjach PK/HRD gracz może nie być SEVEN. Wariant
-  „Zginęłaś!” czeka na użytkownika.
+1. **Tytuł E1M4 „Ghost Wetware”** — zostaje „Biologiczne widmo” (na razie).
+   Odrzucone: „Ghost Wetware” jako nazwa własna i „Wetware klasy Ghost”
+   (przesłanka reviewera: na E1M4 debiutują jednostki Ghost, a Ghost w PL zostaje po angielsku).
+   Temat można otworzyć ponownie po teście poziomu w grze.
+2. **Ekran śmierci** — zostaje bezrodzajowe „Nie żyjesz!”. Odrzucone „Zginęłaś!”.
+3. **Czat case/mrph** (`e1m5.chatlogcasemrph`): „she's not ours either” →
+   „ona do nas też nie należy” — zachowana wskazówka, że żniwiarzem jest kobieta (SEVEN).
+   Odrzucone: bezpodmiotowe „do nas też nie należy”.
+4. **Ojciec** — przyjęte: „A w zamian ja wreszcie będę… / …wolny.” (był „odzyskam… wolność”,
+   a Ojciec nigdy nie był wolny); „wykonać skok wiary” (było „skoczyć na wiarę”);
+   „nie natkniesz się na tego kogoś” (było „nie spotkasz znalazcy”);
+   „Na twoim miejscu przygotowałbym minigun.” (było bez „na twoim miejscu”).
+5. **SIX** — przyjęte: „To niemożliwe!” (kalka „To nie może się dziać!”),
+   „I tak dobrze, że ten robak zdechł.”, „Przekaż temu czemuś, co szepcze…”
+   (EN „whatever” odczłowiecza Ojca; było „temu, kto szepcze”).
+6. **Fong** — „Egzystencja skazana na zagładę…” (EN „doomed”; było „Przeklęta egzystencja”).
+7. **Korporacje** — zawsze „korporacja AEON”, „korporacja Domand”; odrzucone „AEON Corp”,
+   „Domand Corp” w tekście PL. Pełna nazwa „AEON Cybertech” zostaje.
+8. **Kodeks** — tylko `e2m2.transit`: „spill over areas” → „tereny przyległe”
+   (było „obszary objęte rozprzestrzeniającym się konfliktem” — dopisek).
+   Odrzucone: przywrócenie schodkowych wcięć w transmisjach Matki
+   i zmiana „Manifest cyborgów” na „Manifest cyborga”.
+
+### Doprecyzowane po przeglądzie (decyzje agenta)
+
 - „squad captain” / „Capitan” → „dowódca oddziału”; „weapons testing arena” →
   „arena testów broni”; „the Sprawl” → „SPRAWL” (wersaliki, nieodmienne, r. nijaki).
 - Hakerzy w PL mówią w rodzaju męskim; EN tego nie rozstrzyga.

@@ -237,7 +237,7 @@
     "namespace": "CODEX",
     "key": "e1m5.chatlogcasemrph",
     "english": "<amber>[mrph]</>: its done, whatever assets we have are in hiding, the rest are burning\r\n<amber>[case]</>: then we have done what was needed\r\n<amber>[case]</>: all done as needed\r\n<amber>[mrph]</>: there is nothing left to do, there's nothing left to fight with\r\n<amber>[mrph]</>: have you looked in? have you seen what our heirachy is saying\r\n<amber>[mrph]</>: they all want you dead\r\n<amber>[mrph]</>: most are scattering and infighting now \r\n<amber>[mrph]</>: years of my life for what?\r\n<amber>[mrph]</>: we followed you into hell for what?\r\n<amber>[case]</>: to give way to something greater than us \r\n<amber>[case]</>: how is it you think I knew?\r\n<amber>[mrph]</>: you have your contacts inside the junta, you didn't want to burn them. so you burned us.\r\n<amber>[mrph]</>: the greater good, you rebuild and we can fight again? how many burned at your pyre\r\n<amber>[case]</>: how little do you think of me? how stupid\r\n<amber>[case]</>: if only you knew\r\n<amber>[case]</>: we have done exactly what was asked of us\r\n<amber>[case]</>: have you heard the reports? have you listened to the whispers on their battle net?\r\n<amber>[case]</>: there's a reaper on the loose, and its not theirs\r\n<amber>[case]</>: she's not ours either\r\n<amber>[case]</>: that is our salvation\r\n<amber>[case]</>: i have it on good authority\r\n<amber>[mrph]</>: who's been whispering in your ear case?\r\n<amber>[mrph]</>: how much did they give you?\r\n<amber>[mrph]</>: how much were you fucking worth.\r\n<amber>[case]</>: nothing\r\n<amber>[case]</>: we will either all be free, or all burn soon.\r\n<amber>[case]</>: as for me, that time is here\r\n<amber>[case]</>: goodbye\r\n<red>SYS.MALFORMED.USER.FORCE.DISCONNECT</><blink>_</>",
-    "polish": "<amber>[mrph]</>: skończone. wszyscy nasi, którzy jeszcze zostali, są w ukryciu. reszta płonie\n<amber>[case]</>: więc zrobiliśmy, co było trzeba\n<amber>[case]</>: wszystko tak, jak należało\n<amber>[mrph]</>: nie ma już nic do zrobienia, nie ma czym walczyć\n<amber>[mrph]</>: zaglądałeś do sieci? widziałeś, co mówi nasze kierownictwo?\n<amber>[mrph]</>: wszyscy chcą twojej śmierci\n<amber>[mrph]</>: większość teraz się rozprasza i walczy między sobą\n<amber>[mrph]</>: lata mojego życia. po co?\n<amber>[mrph]</>: poszliśmy za tobą do piekła. po co?\n<amber>[case]</>: żeby ustąpić miejsca czemuś większemu od nas\n<amber>[case]</>: jak myślisz, skąd wiedziałem?\n<amber>[mrph]</>: masz kontakty w juncie i nie chciałeś ich spalić. więc spaliłeś nas.\n<amber>[mrph]</>: wyższe dobro? ty się odbudujesz, a my znów będziemy walczyć? ilu spłonęło na twoim stosie?\n<amber>[case]</>: aż tak nisko mnie cenisz? aż tak głupi jestem w twoich oczach?\n<amber>[case]</>: gdybyś tylko wiedział\n<amber>[case]</>: zrobiliśmy dokładnie to, o co nas poproszono\n<amber>[case]</>: słyszałeś raporty? słuchałeś szeptów w ich sieci bojowej?\n<amber>[case]</>: żniwiarz jest na wolności. i nie należy do nich\n<amber>[case]</>: do nas też nie należy\n<amber>[case]</>: to nasze zbawienie\n<amber>[case]</>: wiem to z wiarygodnego źródła\n<amber>[mrph]</>: kto ci szepcze do ucha, case?\n<amber>[mrph]</>: ile ci dali?\n<amber>[mrph]</>: ile byłeś, kurwa, wart.\n<amber>[case]</>: nic\n<amber>[case]</>: wkrótce albo wszyscy będziemy wolni, albo wszyscy spłoniemy.\n<amber>[case]</>: dla mnie ta chwila już nadeszła\n<amber>[case]</>: żegnaj\n<red>SYS.MALFORMED.USER.FORCE.DISCONNECT</><blink>_</>"
+    "polish": "<amber>[mrph]</>: skończone. wszyscy nasi, którzy jeszcze zostali, są w ukryciu. reszta płonie\n<amber>[case]</>: więc zrobiliśmy, co było trzeba\n<amber>[case]</>: wszystko tak, jak należało\n<amber>[mrph]</>: nie ma już nic do zrobienia, nie ma czym walczyć\n<amber>[mrph]</>: zaglądałeś do sieci? widziałeś, co mówi nasze kierownictwo?\n<amber>[mrph]</>: wszyscy chcą twojej śmierci\n<amber>[mrph]</>: większość teraz się rozprasza i walczy między sobą\n<amber>[mrph]</>: lata mojego życia. po co?\n<amber>[mrph]</>: poszliśmy za tobą do piekła. po co?\n<amber>[case]</>: żeby ustąpić miejsca czemuś większemu od nas\n<amber>[case]</>: jak myślisz, skąd wiedziałem?\n<amber>[mrph]</>: masz kontakty w juncie i nie chciałeś ich spalić. więc spaliłeś nas.\n<amber>[mrph]</>: wyższe dobro? ty się odbudujesz, a my znów będziemy walczyć? ilu spłonęło na twoim stosie?\n<amber>[case]</>: aż tak nisko mnie cenisz? aż tak głupi jestem w twoich oczach?\n<amber>[case]</>: gdybyś tylko wiedział\n<amber>[case]</>: zrobiliśmy dokładnie to, o co nas poproszono\n<amber>[case]</>: słyszałeś raporty? słuchałeś szeptów w ich sieci bojowej?\n<amber>[case]</>: żniwiarz jest na wolności. i nie należy do nich\n<amber>[case]</>: ona do nas też nie należy\n<amber>[case]</>: to nasze zbawienie\n<amber>[case]</>: wiem to z wiarygodnego źródła\n<amber>[mrph]</>: kto ci szepcze do ucha, case?\n<amber>[mrph]</>: ile ci dali?\n<amber>[mrph]</>: ile byłeś, kurwa, wart.\n<amber>[case]</>: nic\n<amber>[case]</>: wkrótce albo wszyscy będziemy wolni, albo wszyscy spłoniemy.\n<amber>[case]</>: dla mnie ta chwila już nadeszła\n<amber>[case]</>: żegnaj\n<red>SYS.MALFORMED.USER.FORCE.DISCONNECT</><blink>_</>"
   },
   {
     "namespace": "CODEX",
@@ -351,7 +351,7 @@
     "namespace": "CODEX",
     "key": "e2m2.transit",
     "english": "Defense Access 40-a &lt;tpr-A21H.43.21.123&gt; <amber>SUBJECT: TRANSIT STATUS</>\r\n\t\t\t\tDEPLOYMENT OF RESOURCED INTO THE WALLED CITY AND SPILL OVER AREAS SEEMED TO RECIEVE SLIGHT DISRUPTIONS FROM VARIOUS SUBSYSTEMS DISPLAYING WHAT SEEMED AT THE TIME AS CHARACTERISTIC INACCURACIES. AFTER CAREFUL ANALYSIS WE HAVE HOWEVER DETERMINED THE RECURSIVE POSSIBILITY OF SUCH INACCURACIES HAPPENING, IN THE SUCCESSION THAT THEY DID, IN THE FAULT POINTS THEY DID, TO HAVE DISPLAYED CHARACTERISTICS OF PURPOSEFUL SUBTERFUGE. THE IMPLICATION HERE IS THAT SOMEHOW, OUR NETWORK HAS BEEN BREACHED. SUCH PRECISION AND PLANNING PLACED ON DISPLAY IN ORDER TO AID REBEL CELLS, WE ARE FACING A THREAT WE HAVE NEVER FACED BEFORE. IF SOMEONE, OR SOMETHING HAS MANAGED TO CAUSE SUCH DAMAGE IN THE PLACES THAT THEY DID, IT IS QUITE LIKELY THAT THEY ARE ABLE TO EXERT ONLY PARTIAL CONTROL OVER SYSTEMS, OR ARE FEIGNING THAT LIMITATION. ANALYSIS ALSO INDICATES THAT THIS SEEMS RATHER INEFFICIENT. WHY NOT JUST SHUT DOWN OUR SYSTEMS OUTRIGHT? IF THEY CAN ACCESS SUBSYSTEMS, AT ROOT LEVEL, THERE WOULD BE NOTHING WE CAN DO TO STOP THEM.\r\n\r\n\r\n <blink>_</>",
-    "polish": "Dostęp wojskowy 40-a &lt;tpr-A21H.43.21.123&gt; <amber>TEMAT: STATUS TRANSPORTU</>\nPRZERZUT ZASOBÓW DO MIASTA ZA MUREM I OBSZARÓW OBJĘTYCH ROZPRZESTRZENIAJĄCYM SIĘ KONFLIKTEM NAPOTYKAŁ NIEWIELKIE ZAKŁÓCENIA W RÓŻNYCH PODSYSTEMACH. POCZĄTKOWO UZNANO JE ZA TYPOWE NIEDOKŁADNOŚCI. PO STARANNEJ ANALIZIE USTALILIŚMY JEDNAK, ŻE POWTARZALNOŚĆ TYCH ZDARZEŃ, ICH KOLEJNOŚĆ ORAZ MIEJSCA WYSTĄPIENIA WYKAZUJĄ CECHY CELOWEGO SABOTAŻU. OZNACZA TO, ŻE W JAKIŚ SPOSÓB WŁAMANO SIĘ DO NASZEJ SIECI. PRECYZJA I PLANOWANIE DZIAŁAŃ WSPIERAJĄCYCH KOMÓRKI REBELIANTÓW WSKAZUJĄ NA ZAGROŻENIE, Z JAKIM NIGDY DOTĄD SIĘ NIE MIERZYLIŚMY. JEŚLI KTOŚ LUB COŚ ZDOŁAŁO WYRZĄDZIĆ TAKIE SZKODY W TYCH WŁAŚNIE MIEJSCACH, NAJPRAWDOPODOBNIEJ SPRAWUJE JEDYNIE CZĘŚCIOWĄ KONTROLĘ NAD SYSTEMAMI ALBO POZORUJE TAKIE OGRANICZENIE. ANALIZA WSKAZUJE TEŻ, ŻE JEST TO DOŚĆ NIEEFEKTYWNE. DLACZEGO PO PROSTU NIE WYŁĄCZYLI OD RAZU NASZYCH SYSTEMÓW? JEŚLI MAJĄ DOSTĘP DO PODSYSTEMÓW NA POZIOMIE ROOT, NIC NIE MOŻEMY ZROBIĆ, BY ICH POWSTRZYMAĆ.\n\n\n<blink>_</>"
+    "polish": "Dostęp wojskowy 40-a &lt;tpr-A21H.43.21.123&gt; <amber>TEMAT: STATUS TRANSPORTU</>\nPRZERZUT ZASOBÓW DO MIASTA ZA MUREM I TERENÓW PRZYLEGŁYCH NAPOTYKAŁ NIEWIELKIE ZAKŁÓCENIA W RÓŻNYCH PODSYSTEMACH. POCZĄTKOWO UZNANO JE ZA TYPOWE NIEDOKŁADNOŚCI. PO STARANNEJ ANALIZIE USTALILIŚMY JEDNAK, ŻE POWTARZALNOŚĆ TYCH ZDARZEŃ, ICH KOLEJNOŚĆ ORAZ MIEJSCA WYSTĄPIENIA WYKAZUJĄ CECHY CELOWEGO SABOTAŻU. OZNACZA TO, ŻE W JAKIŚ SPOSÓB WŁAMANO SIĘ DO NASZEJ SIECI. PRECYZJA I PLANOWANIE DZIAŁAŃ WSPIERAJĄCYCH KOMÓRKI REBELIANTÓW WSKAZUJĄ NA ZAGROŻENIE, Z JAKIM NIGDY DOTĄD SIĘ NIE MIERZYLIŚMY. JEŚLI KTOŚ LUB COŚ ZDOŁAŁO WYRZĄDZIĆ TAKIE SZKODY W TYCH WŁAŚNIE MIEJSCACH, NAJPRAWDOPODOBNIEJ SPRAWUJE JEDYNIE CZĘŚCIOWĄ KONTROLĘ NAD SYSTEMAMI ALBO POZORUJE TAKIE OGRANICZENIE. ANALIZA WSKAZUJE TEŻ, ŻE JEST TO DOŚĆ NIEEFEKTYWNE. DLACZEGO PO PROSTU NIE WYŁĄCZYLI OD RAZU NASZYCH SYSTEMÓW? JEŚLI MAJĄ DOSTĘP DO PODSYSTEMÓW NA POZIOMIE ROOT, NIC NIE MOŻEMY ZROBIĆ, BY ICH POWSTRZYMAĆ.\n\n\n<blink>_</>"
   },
   {
     "namespace": "CODEX",
@@ -411,7 +411,7 @@
     "namespace": "CODEX",
     "key": "e2m1.syserrorbadlands",
     "english": "Operation Failure Anticipated:\r\n\r\nDirective from Garrison Command\r\nTo: Commander Station 432-a\r\n <red>SYS.ERROR.CORRUPT.REDIRECT//INFODOCbad.LANDS</><amber>000001eyw74664h</> \r\n During the year <red>[REDACTED]</> all heavy industry was moved to outer reaches beyond the sprawl in order to keep all military grade contracts in a controlled enviornment. This was done according to Junta decree. All smaller corporations that could not move to this area were absorbed, or dismantled by the last remaining major government contractors. Domand Corp was once a sizable competitor and arms manufacturer with a large host of its manufacturing prowess hosted in this region. Many of the facilities once owned by Domand now run autonomously after its hostile takeover by AEON corporation.\r\n<red>SYS.MALFORMED.USER.FORCE.DISCONNECT</><blink>_</>\r\n\t\t\t",
-    "polish": "Przewidywane niepowodzenie operacji:\n\nDyrektywa dowództwa garnizonu\nDo: Dowódca posterunku 432-a\n<red>SYS.ERROR.CORRUPT.REDIRECT//INFODOCbad.LANDS</><amber>000001eyw74664h</>\nW roku <red>[UTAJNIONO]</> cały przemysł ciężki przeniesiono na odległe tereny poza SPRAWL, aby wszystkie kontrakty wojskowe realizowano w kontrolowanym środowisku. Zrobiono to na mocy dekretu junty. Mniejsze korporacje, które nie mogły się tam przenieść, zostały wchłonięte lub zlikwidowane przez ostatnich wielkich wykonawców rządowych. Domand Corp było niegdyś znaczącym konkurentem i producentem broni, z dużą częścią potencjału produkcyjnego skupioną w tym regionie. Wiele dawnych zakładów Domand działa teraz autonomicznie po wrogim przejęciu przez korporację AEON.\n<red>SYS.MALFORMED.USER.FORCE.DISCONNECT</><blink>_</>"
+    "polish": "Przewidywane niepowodzenie operacji:\n\nDyrektywa dowództwa garnizonu\nDo: Dowódca posterunku 432-a\n<red>SYS.ERROR.CORRUPT.REDIRECT//INFODOCbad.LANDS</><amber>000001eyw74664h</>\nW roku <red>[UTAJNIONO]</> cały przemysł ciężki przeniesiono na odległe tereny poza SPRAWL, aby wszystkie kontrakty wojskowe realizowano w kontrolowanym środowisku. Zrobiono to na mocy dekretu junty. Mniejsze korporacje, które nie mogły się tam przenieść, zostały wchłonięte lub zlikwidowane przez ostatnich wielkich wykonawców rządowych. Korporacja Domand była niegdyś znaczącym konkurentem i producentem broni, z dużą częścią potencjału produkcyjnego skupioną w tym regionie. Wiele dawnych zakładów Domand działa teraz autonomicznie po wrogim przejęciu przez korporację AEON.\n<red>SYS.MALFORMED.USER.FORCE.DISCONNECT</><blink>_</>"
   },
   {
     "namespace": "CODEX",
@@ -453,7 +453,7 @@
     "namespace": "Dialogue_Subs",
     "key": "E3M2_POLITICIAN_INTERCOM_02_A",
     "english": "A doomed existence, humanities graveyard. We are all prisoners here.",
-    "polish": "Przeklęta egzystencja, cmentarzysko ludzkości. Wszyscy jesteśmy tu więźniami."
+    "polish": "Egzystencja skazana na zagładę, cmentarzysko ludzkości. Wszyscy jesteśmy tu więźniami."
   },
   {
     "namespace": "Dialogue_Subs",
@@ -531,7 +531,7 @@
     "namespace": "Dialogue_Subs",
     "key": "E1M1_FATHER_INTRODUCING_Q",
     "english": "And in return, I will be set...",
-    "polish": "A w zamian ja odzyskam…"
+    "polish": "A w zamian ja wreszcie będę…"
   },
   {
     "namespace": "Dialogue_Subs",
@@ -711,7 +711,7 @@
     "namespace": "Dialogue_Subs",
     "key": "E1M1_FATHER_INTRODUCING_R",
     "english": "Free.",
-    "polish": "…wolność."
+    "polish": "…wolny."
   },
   {
     "namespace": "Dialogue_Subs",
@@ -963,7 +963,7 @@
     "namespace": "Dialogue_Subs",
     "key": "E2M3_FATHER_TRAIN_MOVING_D",
     "english": "I'd prime your chaingun.",
-    "polish": "Przygotowałbym minigun."
+    "polish": "Na twoim miejscu przygotowałbym minigun."
   },
   {
     "namespace": "Dialogue_Subs",
@@ -1143,7 +1143,7 @@
     "namespace": "Dialogue_Subs",
     "key": "E2M1_FATHER_TROPHY_B",
     "english": "Let's hope you don't find them.",
-    "polish": "Miejmy nadzieję, że nie spotkasz znalazcy."
+    "polish": "Miejmy nadzieję, że nie natkniesz się na tego kogoś."
   },
   {
     "namespace": "Dialogue_Subs",
@@ -1419,7 +1419,7 @@
     "namespace": "Dialogue_Subs",
     "key": "E2M3_FATHER_END_LEVEL_B",
     "english": "Sometimes you need to take a leap of faith, Seven.",
-    "polish": "Czasem trzeba skoczyć na wiarę, Seven."
+    "polish": "Czasem trzeba wykonać skok wiary, Seven."
   },
   {
     "namespace": "Dialogue_Subs",
@@ -1953,7 +1953,7 @@
     "namespace": "Dialogue_Subs",
     "key": "E1M5_REAPER_THIS_CANT_BE",
     "english": "You bitch! This can't be happening! <Anguished Scream>",
-    "polish": "Ty suko! To nie może się dziać! <Krzyk bólu>"
+    "polish": "Ty suko! To niemożliwe! <Krzyk bólu>"
   },
   {
     "namespace": "Dialogue_Subs",
@@ -2367,13 +2367,13 @@
     "namespace": "Dialogue_Update_Subs",
     "key": "REAPER_E3M2_WORM_B",
     "english": "Tell whatever has been whispering in your ear. They can't touch me, so stop trying.",
-    "polish": "Przekaż temu, kto szepcze ci do ucha: nie dosięgnie mnie. Niech przestanie próbować."
+    "polish": "Przekaż temu czemuś, co szepcze ci do ucha: nie dosięgnie mnie. Niech przestanie próbować."
   },
   {
     "namespace": "Dialogue_Update_Subs",
     "key": "REAPER_E3M2_WORM_A",
     "english": "That worm is better off dead anyway.",
-    "polish": "Ten robak i tak lepiej na tym wyjdzie martwy."
+    "polish": "I tak dobrze, że ten robak zdechł."
   },
   {
     "namespace": "Dialogue_Update_Subs",
@@ -3837,7 +3837,7 @@
     "namespace": "UIStringTable",
     "key": "E2M4_FLAVOUR",
     "english": "The GOR Complex was created during the last corporate war under the supervision of AEON Corp, formerly the largest cybernetics conglomerate operating within the SPRAWL. Here they experimented on human subjects and pioneered a whole new chapter in the human exercise of cruelty. It was here that the REAPER program you, SIX, and the others were a part of was developed. The Junta has most likely become aware of what you’re planning to do here. They are going to deploy whatever they can to stop you…",
-    "polish": "Kompleks GOR powstał podczas ostatniej wojny korporacyjnej pod nadzorem AEON Corp, niegdyś największego konglomeratu cybernetycznego w SPRAWL. Eksperymentowano tu na ludziach, otwierając nowy rozdział w dziejach ludzkiego okrucieństwa. To tutaj opracowano program ŻNIWIARZ, w którym uczestniczyliście ty, SIX i pozostali. Junta najpewniej domyśliła się już, co zamierzasz. Rzucą przeciw tobie wszystko, co mają…"
+    "polish": "Kompleks GOR powstał podczas ostatniej wojny korporacyjnej pod nadzorem korporacji AEON, niegdyś największego konglomeratu cybernetycznego w SPRAWL. Eksperymentowano tu na ludziach, otwierając nowy rozdział w dziejach ludzkiego okrucieństwa. To tutaj opracowano program ŻNIWIARZ, w którym uczestniczyliście ty, SIX i pozostali. Junta najpewniej domyśliła się już, co zamierzasz. Rzucą przeciw tobie wszystko, co mają…"
   },
   {
     "namespace": "UIStringTable",
