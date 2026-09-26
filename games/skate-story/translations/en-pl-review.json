@@ -4949,14 +4949,14 @@
   {
     "key": "ch1/05-L0/1ollieobelisk-1-seq-02",
     "english": "The Ollie is a fundamental skateboarding trick where the Skater jumps up with their board.",
-    "polish": "Ollie to podstawowy trik, w którym skejter wyskakuje wraz z deskorolką.",
+    "polish": "Ollie to podstawowy trik, w którym Skejter wyskakuje wraz z deskorolką.",
     "context": "",
     "status": "translated"
   },
   {
     "key": "ch1/05-L0/1ollieobelisk-1-seq-03",
     "english": "The Ollie is a delicate, precise trick, where the Skater pops the board with their back foot while jumping.",
-    "polish": "Ollie wymaga wyczucia i precyzji: podczas skoku skejter wybija deskę tylną stopą.",
+    "polish": "Ollie wymaga wyczucia i precyzji: podczas skoku Skejter wybija deskę tylną stopą.",
     "context": "",
     "status": "translated"
   },
@@ -4970,7 +4970,7 @@
   {
     "key": "ch1/05-L0/1ollieobelisk-1-seq-05",
     "english": "When done in a fluid motion, the Ollie brings the Skater and their board into the air.",
-    "polish": "Wykonany płynnie ollie unosi w powietrze skejtera i jego deskorolkę.",
+    "polish": "Wykonany płynnie ollie unosi w powietrze Skejtera i jego deskorolkę.",
     "context": "",
     "status": "translated"
   },
@@ -5138,14 +5138,14 @@
   {
     "key": "ch1/06-mooncore/6firstkickflipdone-1-seq-01",
     "english": "The legendary kickflip deals more damage, but gets stale quickly.",
-    "polish": "Legendarny kickflip zadaje większe obrażenia, ale szybko się nudzi.",
+    "polish": "Legendarny kickflip zadaje większe obrażenia, ale szybko staje się oklepany.",
     "context": "",
     "status": "translated"
   },
   {
     "key": "ch1/06-mooncore/ranout-1-seq-01",
     "english": "The Skater's soul expired, so this eternity started over.",
-    "polish": "Dusza Skejtera się wyczerpała, więc ta wieczność zaczęła się od nowa.",
+    "polish": "Dusza Skejtera wygasła, więc ta wieczność zaczęła się od nowa.",
     "context": "",
     "status": "translated"
   },
@@ -5215,7 +5215,7 @@
   {
     "key": "ch1/08-captureskater/1kneeldemon-1-seq-03",
     "english": "\"It has come to my attention that you have been skateboarding.\"",
-    "polish": "„Doszło mnie, że jeździsz na deskorolce”.",
+    "polish": "„Doszło do mojej wiadomości, że jeździsz na deskorolce”.",
     "context": "",
     "status": "translated"
   },
@@ -5411,7 +5411,7 @@
   {
     "key": "ch1/09-lyceum/2rabbit2lookthinkpiece-1-seq-02",
     "english": "Anyway, my role is done here, I believe.\nLook through your arm, the *blu*Moon Vision*blu* will guide your way.\nI'm starving from all this scampering around...\nSee you tomorrow, Skater.",
-    "polish": "Tak czy inaczej, chyba zrobiłem już swoje.\nSpójrz przez swoje ramię — *blu*Księżycowy Wzrok*blu* wskaże ci drogę.\nUmieram z głodu od tego biegania...\nDo jutra, Skejterze.",
+    "polish": "Tak czy inaczej, chyba zrobiłem już swoje.\nSpójrz przez swoją rękę — *blu*Księżycowy Wzrok*blu* wskaże ci drogę.\nUmieram z głodu od tego biegania...\nDo jutra, Skejterze.",
     "context": "",
     "status": "translated"
   },
@@ -5509,7 +5509,7 @@
   {
     "key": "ch1/09-lyceum/HEELFLIPTEXT-1-seq-06",
     "english": "However, it gets stale more quickly and has a slower timing.",
-    "polish": "Jednak szybciej traci skuteczność przy powtarzaniu i wymaga wolniejszego rytmu.",
+    "polish": "Jednak szybciej staje się oklepany i wymaga wolniejszego rytmu.",
     "context": "",
     "status": "translated"
   },
@@ -7193,7 +7193,7 @@
   {
     "key": "ch2/07-worldmap/103amb-1-seq-01",
     "english": "The subway wouldn't go backwards further.",
-    "polish": "Metro nie chciało już dalej cofać.",
+    "polish": "Metro nie chciało się już dalej cofać.",
     "context": "",
     "status": "translated"
   },
@@ -7754,7 +7754,7 @@
   {
     "key": "ch3/01-bedhail/01wakeupintro-1-seq-04",
     "english": "The Rabbit read dimly from a letter burned bedside.",
-    "polish": "Królik czytał sennie z listu spalonego przy łóżku.",
+    "polish": "Królik czytał w półmroku list, który wypalił się przy łóżku.",
     "context": "",
     "status": "translated"
   },
@@ -8202,7 +8202,7 @@
   {
     "key": "ch3/06-flowershop/10talkbea-1-seq-01",
     "english": "Welcome to my flowershop!\nWell, it would be one, if I had any flowers.\nA bald demon came here, grabbed my only *blue*shears*blue*, and *red*snipped*red* my last flower!\nAnd then they ran off with my *blu*shears*blu* into the *b*Meanings Factory*b*.\nSo now I have no flowers, and no *blu*shears*blu*.\nOh, it's horrible.\nAnd just my luck, the Moonflower festival is coming up...",
-    "polish": "Witaj w mojej kwiaciarni!\nTo znaczy, byłaby nią, gdybym miała kwiaty.\nPrzyszedł łysy demon, porwał moje jedyne *blue*nożyce*blue* i *red*ściął*red* ostatni kwiat!\nPotem uciekł z *blu*nożycami*blu* do *b*Fabryki Znaczeń*b*.\nTeraz nie mam ani kwiatów, ani *blu*nożyc*blu*.\nOch, to okropne.\nJak na złość zbliża się święto księżycowych kwiatów...",
+    "polish": "Witaj w mojej kwiaciarni!\nTo znaczy, byłaby nią, gdybym miała kwiaty.\nPrzyszedł łysy demon, porwał moje jedyne *blue*nożyce*blue* i *red*ściął*red* ostatni kwiat!\nPotem uciekł z *blu*nożycami*blu* do *b*Fabryki Znaczeń*b*.\nTeraz nie mam ani kwiatów, ani *blu*nożyc*blu*.\nOch, to okropne.\nJak na złość zbliża się święto Księżycowych Kwiatów...",
     "context": "",
     "status": "translated"
   },
@@ -12935,7 +12935,7 @@
   {
     "key": "ch7/waitstage/89end-1-seq-03",
     "english": "A distant screech was imminent.",
-    "polish": "Daleki skrzek był nieunikniony.",
+    "polish": "Zaraz miał się rozlec daleki skrzek.",
     "context": "",
     "status": "translated"
   },
@@ -14468,7 +14468,7 @@
   {
     "key": "ch9/06-setitonfire-area/89win-1-seq-03",
     "english": "The Moons thawed from the ice.",
-    "polish": "Księżyce odmarzły z lodu.",
+    "polish": "Księżyce wytopiły się z lodu.",
     "context": "",
     "status": "translated"
   },
@@ -14552,7 +14552,7 @@
   {
     "key": "ch9/06-setitonfire-area/ambburning-1-seq-12",
     "english": "Specks of souls thawed from the saliva.",
-    "polish": "Drobiny dusz odmarzały ze śliny.",
+    "polish": "Drobiny dusz wytapiały się ze śliny.",
     "context": "",
     "status": "translated"
   },
@@ -15723,7 +15723,7 @@
   {
     "key": "poems/ch03-poem-body",
     "english": "Twin Moons shone weeping, the Rabbit laid sleeping\n“An invitation from the Devil to a Dinner tonight,”\nthe Rabbit read dimly from a letter burned bedside.\n\nAt twice pierced, swallowed without view.\nTwo Moons into the stomach made Three in tow.\n\nIn a small apartment, with the Skater the Rabbit spoke,\n“The Banquet will be fashionable, with the Devil’s clean clothes.\nSleep now on this bed of fresh snow.”\n\nDrifting off, drifting deeper.\nCracks of glass grew weary and darker.\n\nFloated down, a soul as a stone.",
-    "polish": "Bliźniacze Księżyce świeciły, płacząc, Królik leżał we śnie.\n„Zaproszenie od Diabła na dzisiejszą Kolację”,\nczytał Królik sennie z listu spalonego przy łóżku.\n\nPrzebite dwukrotnie, połknięte bez oglądania.\nDwa Księżyce w żołądku dały już Trzy.\n\nW małym mieszkaniu Królik rzekł do Skejtera:\n„Bankiet będzie modny, w czystych ubraniach Diabła.\nŚpij już na tym łożu świeżego śniegu”.\n\nOdpływał, opadał coraz głębiej.\nPęknięcia szkła stawały się znużone i ciemniejsze.\n\nOpadała dusza niczym kamień.",
+    "polish": "Bliźniacze Księżyce świeciły, płacząc, Królik leżał we śnie.\n„Zaproszenie od Diabła na dzisiejszą Kolację”,\nczytał Królik sennie list, co wypalił się przy łóżku.\n\nPrzebite dwukrotnie, połknięte bez oglądania.\nDwa Księżyce w żołądku dały już Trzy.\n\nW małym mieszkaniu Królik rzekł do Skejtera:\n„Bankiet będzie modny, w czystych ubraniach Diabła.\nŚpij już na tym łożu świeżego śniegu”.\n\nOdpływał, opadał coraz głębiej.\nPęknięcia szkła stawały się znużone i ciemniejsze.\n\nOpadała dusza niczym kamień.",
     "context": "",
     "status": "review_requested",
     "notes": "Do korekty literackiej: przekład poetyckiego podsumowania rozdziału. Zachowano surrealistyczne obrazy oraz podział na wersy; rytm i dobór słów do oceny w kontekście."
@@ -15739,7 +15739,7 @@
   {
     "key": "poems/ch05-poem-body",
     "english": "Dropped through by pure sleep, the Skater\nevaded the Fuss by streets of darkly sparkled sludge.\nHere a penguin fuel'd by Wrath owned the Moon by deed.\n\nHis flippered beak told a spectacle tale of a Holy Karat,\na gem made from 40,000 compressed souls,\nworth a single freedom in this dark land.\n\nThe Skater pushed through sludge and stem,\nand found this Karat. With chase, the gem ground itself into dust.\n\nUpon return the wrathful penguin by close of night,\nto spite the Skater ripped his Violet Deed into thin stripes.\nOh, how the Moon striped, and raced into the air.\n\nThe Moon disintegrated and coated grey cliffs with sickly purple clouds.\n“The Centipede!” the Rabbit warned. “It smells of this\ndust. It seeks to eat the Moon, like you, to sleep.”\n\nAs the Fuss descended to arrest,\nThe Skater inhaled deeply in the thick night\nto dance the Moon’s chalked dust into glass lungs.",
-    "polish": "Przeniknąwszy przez czysty sen, Skejter\numykał Zgiełkowi ulicami ciemno połyskującego szlamu.\nTu pingwin napędzany Gniewem miał akt własności Księżyca.\n\nJego dziób wśród płetw snuł niezwykłą opowieść o Świętym Karacie,\nklejnocie z czterdziestu tysięcy sprasowanych dusz,\nwartym jedną wolność w tej mrocznej krainie.\n\nSkejter przedzierał się przez szlam i łodygi,\naż znalazł ten Karat. W pościgu klejnot starł się na pył.\n\nGdy Skejter wrócił pod koniec nocy, gniewny pingwin\nna złość podarł swój Fioletowy Akt na cienkie paski.\nOch, jak Księżyc rozpadł się na smugi i pomknął w powietrze.\n\nKsiężyc rozproszył się, pokrywając szare skały chorobliwie fioletowymi chmurami.\n„Stonoga!” — ostrzegł Królik. „Czuje ten\npył. Chce zjeść Księżyc, tak jak ty, by zasnąć”.\n\nGdy Zgiełk zstępował, by dokonać aresztowania,\nSkejter wciągnął głęboko gęstą noc,\nby wtańczyć kredowy pył Księżyca do szklanych płuc.",
+    "polish": "Przeniknąwszy przez czysty sen, Skejter\numykał Zgiełkowi ulicami ciemno połyskującego szlamu.\nTu pingwin napędzany Gniewem miał akt własności Księżyca.\n\nJego dziób wśród płetw snuł niezwykłą opowieść o Świętym Karacie,\nklejnocie z czterdziestu tysięcy sprasowanych dusz,\nwartym jedną wolność w tej mrocznej krainie.\n\nSkejter przedzierał się przez szlam i łodygi,\naż znalazł ten Karat. W pościgu klejnot starł się na pył.\n\nGdy Skejter wrócił pod koniec nocy, gniewny pingwin\nna złość podarł swój Fioletowy Akt na cienkie paski.\nOch, jak Księżyc rozpadł się na smugi i pomknął w powietrze.\n\nKsiężyc rozproszył się, pokrywając szare klify chorobliwie fioletowymi chmurami.\n„Stonoga!” — ostrzegł Królik. „Czuje ten\npył. Chce zjeść Księżyc, tak jak ty, by zasnąć”.\n\nGdy Zgiełk zstępował, by dokonać aresztowania,\nSkejter wciągnął głęboko gęstą noc,\nby wtańczyć kredowy pył Księżyca do szklanych płuc.",
     "context": "",
     "status": "review_requested",
     "notes": "Do korekty literackiej: przekład poetyckiego podsumowania rozdziału. Zachowano surrealistyczne obrazy oraz podział na wersy; rytm i dobór słów do oceny w kontekście."
@@ -15771,7 +15771,7 @@
   {
     "key": "poems/ch09-poem-body",
     "english": "The entire Underworld stood to see their night sky\ncrumble as that infinitely long Worm split into two.\n\nAlthough the tail stayed eternally long,\nits red eye screeched with a finite number of violas.\n\nThe Skater shred its metal carapace from within,\nwresting the Moons from its digestive void.\n\nVomit! Vomit!\nMoons came out.\n\nVomit!\nEverysoul saw—\nDespised colors replaced\nmeaninglessness reclaimed.\n\nThe Skater vomitted a soul out\nanew.",
-    "polish": "Całe podziemie stanęło, by patrzeć, jak nocne niebo\nkruszy się, gdy ten nieskończenie długi Robak pęka na dwoje.\n\nChoć ogon wciąż był wiecznie długi,\nczerwone oko zapiszczało skończoną liczbą altówek.\n\nSkejter rozorał metalowy pancerz od środka,\nwyrywając Księżyce z trawiennej pustki.\n\nWymiotuj! Wymiotuj!\nKsiężyce wyszły na zewnątrz.\n\nWymiotuj!\nKażda dusza ujrzała —\nZnienawidzone barwy zastąpione,\nbezsens odzyskany.\n\nSkejter wypluł duszę\nna nowo.",
+    "polish": "Całe Podziemie stanęło, by patrzeć, jak nocne niebo\nkruszy się, gdy ten nieskończenie długi Robak pęka na dwoje.\n\nChoć ogon wciąż był wiecznie długi,\nczerwone oko zapiszczało skończoną liczbą altówek.\n\nSkejter rozorał metalowy pancerz od środka,\nwyrywając Księżyce z trawiennej pustki.\n\nWymiotuj! Wymiotuj!\nKsiężyce wyszły na zewnątrz.\n\nWymiotuj!\nKażda dusza ujrzała —\nZnienawidzone barwy zastąpione,\nbezsens odzyskany.\n\nSkejter wypluł duszę\nna nowo.",
     "context": "",
     "status": "review_requested",
     "notes": "Do korekty literackiej: przekład poetyckiego podsumowania rozdziału. Zachowano surrealistyczne obrazy oraz podział na wersy; rytm i dobór słów do oceny w kontekście."

@@ -162,6 +162,16 @@ terminy:
     formy: [blat, desk]
     zrodlo: decyzja
     uwaga: część deskorolki; „deska/deskorolka” o całości.
+  - en: stale
+    pl: oklepany (mechanika powtarzanego triku)
+    formy: [oklepan]
+    zrodlo: decyzja
+    uwaga: review 2026-09-26 — jedno słowo we wszystkich trzech samouczkach ch1.
+  - en: soul expired
+    pl: dusza wygasła
+    formy: [wygas]
+    zrodlo: decyzja
+    uwaga: review 2026-09-26 — komunikat porażki w ch1 i ch2; HUD „SOUL EXPIRY” czeka na test układu.
 
 bez_tlumaczenia:
   - Philoso

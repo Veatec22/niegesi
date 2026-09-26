@@ -1,5 +1,13 @@
 # Skate Story — technika i stan prac
 
+## Niezależny review (2026-09-26)
+
+Osobny reviewer przeczytał 2305/2305 wpisów; wynik w `docs/localization-review.md`,
+notatki i manifest pokrycia w `work/review/`. 17 pewnych poprawek naniesiono w
+`translations/en-pl-review.json` (SHA-256 `c71e8708…`). Paczki nie przebudowano:
+0.3 w `dist/` i na stronie ich nie zawiera. Następny krok: decyzje użytkownika
+w sprawie wariantów z raportu, potem build i test w grze.
+
 ## Wersja 0.3 — przegląd skillem lokalizacji (2026-09-22)
 
 Tłumaczenie przeszło standard `.claude/skills/localization`: biblia

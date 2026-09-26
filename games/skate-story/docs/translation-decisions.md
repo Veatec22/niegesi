@@ -65,3 +65,19 @@ Terminy 12 — wszystkie to polskie zaimki zamiast powtarzania „Skejter”
 ustawień i nazwy poziomów, wyżej w „sprawdź w grze”.
 Płeć porównana dodatkowo z rosyjską kolumną gry (`work/gender-ru.py`): zostaje
 tylko kamień młyński, opisany wyżej.
+
+## Niezależny review (2026-09-26)
+Osobny reviewer przeczytał całość (2305 wpisów); raport w `docs/localization-review.md`.
+Wszystkie decyzje o płci, terminach i echach utrzymane. Wprowadzono 17 pewnych poprawek
+w polu `polish`, m.in.:
+- **„stale” = „oklepany”** we wszystkich trzech samouczkach (było też „się nudzi”,
+  „traci skuteczność”) — dopisane do biblii.
+- **„soul expired” = „dusza wygasła”** w obu komunikatach porażki — dopisane do biblii.
+- List Diabła „wypalił się” przy łóżku, nie „spalony” (ch3 i wiersz ch3).
+- „Spójrz przez swoją rękę” zamiast „przez ramię” (Księżycowy Wzrok, ch1).
+- „Skejter” wielką literą także na obelisku ollie.
+
+Czeka na decyzję użytkownika (obecny tekst zostaje): pain/pane w telefonie Lichy,
+Liceum czy Likejon, Dziesięć Jarów czy Rowów, rymy Philoso [795] i Larry'ego [990],
+„druciani funkcjonariusze Zgiełku” w wierszach, giełda na Targu Przybyszów,
+Penin „złotko”, blat „Chluśnij Żółciową Herbatą”, „NIE! MA NAS!”, Róg Grzechu.
