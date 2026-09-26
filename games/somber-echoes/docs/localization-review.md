@@ -115,6 +115,21 @@ Niski priorytet:
 - `Rise of Man` → „Kolebka ludzkości” — adaptacja, zostawić.
 - `TUT_Pause_ICON`, `TUT_UI-Back` „— Wyjdź” obok „Wyjście” w `TUT_ExitAetherLamp_ICON` — dwie konwencje podpowiedzi.
 
+## Decyzje użytkownika (2026-09-26)
+
+Przyjęte i **wprowadzone** w `en-pl-review.json`:
+
+| Klucz | EN | Było | Jest |
+| --- | --- | --- | --- |
+| `STRING_InventoryItems/Memory_Seafarer-Complete` | Poseidon's Blight | Udręka Posejdona | Niedola Posejdona |
+| `STRING_Quests/Hephaestus3_TITLE` | Own worst enemy | Własny największy wróg | Sam sobie wrogiem |
+| `STRING_Updated4/ACHIEVEMENT_WellOnYourWay_TITLE` | Well on your way | Dobra droga | Na dobrej drodze |
+| `Dialog/Dialog/AntenorCovetous1.1` | My mind's eye is growing more potent | Wzrok mego umysłu rośnie w siłę. | Moje wewnętrzne oko nabiera mocy. |
+
+„Udręka Demeter” i „jego udręka” w PoseidonTrapped1.2 zostają. Pozostałe tematy z listy „Do rozmowy”
+(Kirke ↔ C.I.R.C.E., „czysta Nyks”, „odnowić Adrestię”, „Celowanie łukiem i włócznią” i niski priorytet)
+bez odpowiedzi — **otwarte**, tekst bez zmian.
+
 ## Do sprawdzenia w grze
 
 - Selektor języka: czy jest „Polski”, czy przełącza od razu i zostaje po restarcie.

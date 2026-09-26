@@ -50,3 +50,4 @@ Pełny raport: `docs/localization-review.md`. Wszystkie decyzje z tabeli termin�
 - **Exit na mapie** (STRING_MapElements/Transition_*): „Wyjście”, rzeczownik jak pozostałe elementy legendy, a nie „Wyjdź”. Podpowiedzi przycisków „[ikona] — Wyjdź” zostają w trybie rozkazującym.
 - Dopisane do biblii bez zmiany tekstu: Spopieleni, Feniks, Legion Helikonu, Mojry, boska dwójca.
 - Otwarte warianty stylistyczne (Udręka Posejdona, osiągnięcia z kalkami, „czysta Nyks” itd.) czekają na użytkownika; do czasu decyzji tekst bez zmian.
+- **Decyzje użytkownika 2026-09-26** (warianty z review, wprowadzone): „Poseidon's Blight” → „Niedola Posejdona” (odróżnia od „Udręki Demeter”), „Own worst enemy” → „Sam sobie wrogiem”, „Well on your way” → „Na dobrej drodze”, „mind's eye” → „wewnętrzne oko” (AntenorCovetous1.1). Pozostałe warianty z review otwarte.

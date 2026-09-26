@@ -1847,7 +1847,7 @@
   {
     "key": "Dialog/Dialog/AntenorCovetous1.1",
     "english": "This Nocturne has granted me sight beyond this world.\nMy mind's eye is growing more potent, I can now see through metal, concrete and… flesh.\nI can see the mystical glow within his chest. It calls to me… I need to possess it regardless of the cost!",
-    "polish": "Nokturn pozwolił mi widzieć poza granicami tego świata.\nWzrok mego umysłu rośnie w siłę. Widzę już przez metal, beton i... ciało.\nDostrzegam mistyczny blask w jego piersi. Wzywa mnie... Muszę go posiąść za wszelką cenę!"
+    "polish": "Nokturn pozwolił mi widzieć poza granicami tego świata.\nMoje wewnętrzne oko nabiera mocy. Widzę już przez metal, beton i... ciało.\nDostrzegam mistyczny blask w jego piersi. Wzywa mnie... Muszę go posiąść za wszelką cenę!"
   },
   {
     "key": "Dialog/Dialog/WhoAmI1.1",
@@ -2957,7 +2957,7 @@
   {
     "key": "StringTables/STRING_InventoryItems/Memory_Seafarer-Complete",
     "english": "Poseidon's Blight",
-    "polish": "Udręka Posejdona"
+    "polish": "Niedola Posejdona"
   },
   {
     "key": "StringTables/STRING_InventoryItems/ZapCharge_TITLE",
@@ -5387,7 +5387,7 @@
   {
     "key": "StringTables/STRING_Quests/Hephaestus3_TITLE",
     "english": "Own worst enemy",
-    "polish": "Własny największy wróg"
+    "polish": "Sam sobie wrogiem"
   },
   {
     "key": "StringTables/STRING_Quests/RescueCapsules",
@@ -7527,7 +7527,7 @@
   {
     "key": "Updated4/STRING_Updated4/ACHIEVEMENT_WellOnYourWay_TITLE",
     "english": "Well on your way",
-    "polish": "Dobra droga"
+    "polish": "Na dobrej drodze"
   },
   {
     "key": "Updated4/STRING_Updated4/ACHIEVEMENT_WorthyOfTheTuneblade_TITLE",
