@@ -7,6 +7,13 @@ zrodla:
       i konsekwentnie mówią o Tepanie „they/themselves”.
   - id: technical
     opis: docs/technical.md — terminologia mocy i decyzja o bezrodzajowym Tepanie z wersji 1.0 (2026-09-21).
+  - id: notatka-plec
+    opis: >-
+      Notatka twórców przy millipede_statue_room_default_1: „many of the characters (Tepan, Kenak)
+      … are not gendered … if needed, Tepan should be gendered female, and Kenak male”.
+      Wychwycona dopiero w niezależnym review 2026-09-26.
+  - id: review
+    opis: docs/localization-review.md — niezależny odczyt 359/359 wpisów, 2026-09-26.
   - id: vertical
     opis: Próbka 0.1 (38 wierszy) potwierdzona w grze przez użytkownika; game.yaml `test_notes`.
 
@@ -32,12 +39,14 @@ postacie:
     mowi_do_gracza: ty
     rejestr: ciepły, uprzejmy, gadatliwy; plącze się i poprawia w pół zdania (|long_pause|); żarty o jedzeniu
     odmiana: Tepana, Tepanowi, Tepanem (męska odmiana samego imienia)
-    zrodlo: [notatki, technical]
+    zrodlo: [notatki, notatka-plec, technical, review]
     uwaga: >-
       Stonoga z innego świata, w notatkach twórców zawsze „they”. W PL o sobie mówi bez
       rodzaju gramatycznego w czasie przeszłym: „udało mi się zobaczyć”, „wyniosło mnie”,
-      „zdarzyło mi się” zamiast „widziałem/widziałam”. Decyzja z 1.0 do potwierdzenia
-      przez użytkownika. Raport nie sprawdza rodzaju dla `plec: n` — kontrola ręczna.
+      „zdarzyło mi się” zamiast „widziałem/widziałam”. Decyzja z 1.0, NIEPOTWIERDZONA
+      przez użytkownika. Twórcy: jeśli rodzaj konieczny — żeński (notatka-plec), więc
+      męskie rzeczowniki o Tepanie („towarzysz”) są błędem w każdym wariancie.
+      Otwarty temat 1 w docs/localization-review.md. Raport nie sprawdza `plec: n` — kontrola ręczna.
     przyklady:
       - klucz: millipede_sewers_lore_4
         en: When I was a wee 'pede,|short_pause| only a dozen or so legs,|short_pause| I remember falling through one.
@@ -56,6 +65,7 @@ postacie:
     uwaga: >-
       Postać gracza nie mówi, jej płeć nie pada w tekstach. Tepan zwraca się do niej na „ty”;
       formy rodzajowe wobec gracza omijamy („Udało ci się!”, „nic ci nie jest”).
+      Po review poprawione „wziąłeś” i „towarzyszowi”; „przyjacielu” (funnel_default_1) do rozmowy.
   - id: kaspidae
     nazwa: Kaspidae
     plec: k
@@ -75,8 +85,10 @@ postacie:
     nazwa: Kenak
     plec: m
     odmiana: Kenaka
-    zrodlo: [notatki]
-    uwaga: Tyran w typie Juliusza Cezara (notatka level_1_name).
+    zrodlo: [notatki, notatka-plec]
+    uwaga: >-
+      Tyran w typie Juliusza Cezara (notatka level_1_name). W EN „they”; twórcy: jeśli
+      rodzaj konieczny — męski. „They wiped out…” w millipede_chasm_default_2 to Kenak.
 
 terminy:
   - en: Flux

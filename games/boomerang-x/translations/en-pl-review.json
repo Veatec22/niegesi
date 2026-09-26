@@ -715,7 +715,7 @@
   {
     "key": "options_photosensitivity_mode_label",
     "english": "Photosensitivity Mode",
-    "polish": "Tryb światłoczuły",
+    "polish": "Tryb dla wrażliwych na światło",
     "context": "label for photosensitivity mode toggle. disables some shader effects that contain strobing. this is either on or off",
     "max_length": 50
   },
@@ -799,14 +799,14 @@
   {
     "key": "options_confirm_controls_change",
     "english": "Press a button to assign to\n\"{0}\"",
-    "polish": "Naciśnij przycisk, który przypiszesz do\n„{0}”",
+    "polish": "Naciśnij przycisk dla akcji\n„{0}”",
     "context": "Text in confirmation screen for control reassignment. {0} corresponds to the name of the action the player is trying to reassign (one of the below controls_action entries). There should most likely be a line break before the action name to make sure there's enough room to display both. This will be center justified. Example:\n\nPress a button to assign to\n \"Jump\"",
     "max_length": 36
   },
   {
     "key": "options_confirm_controls_change_switch",
     "english": "Press a button to assign to\n\"{0}\"",
-    "polish": "Naciśnij przycisk, który przypiszesz do\n„{0}”",
+    "polish": "Naciśnij przycisk dla akcji\n„{0}”",
     "context": "Text in confirmation screen for control reassignment. {0} corresponds to the name of the action the player is trying to reassign (one of the below controls_action entries). There should most likely be a line break before the action name to make sure there's enough room to display both. This will be center justified. Example:\n\nPress a button to assign to\n \"Jump\"\n\n(switch version)",
     "max_length": 36
   },
@@ -1576,7 +1576,7 @@
   {
     "key": "millipede_statue_room_default_1",
     "english": "Ah!|pause| What are you?|pause| You aren't one of the Yoran mantids!|pause| Where have you dropped in from?",
-    "polish": "Ach!|pause| Czym ty jesteś?|pause| Nie należysz do modliszek Yoran!|pause| Skąd ty się tu wziąłeś?",
+    "polish": "Ach!|pause| Czym ty jesteś?|pause| Nie należysz do modliszek Yoran!|pause| Skąd ty się tu bierzesz?",
     "context": "The first time our millipede character, Tepan, first talks to the player. They are surprised to see the player after spending many days alone on the island after the massacre of the Yoran mantids.\nTepan speaks in a stream of consciousness way and will often change grammar in the middle of a sentence as their thoughts change, usually after an ellipses. Tepan has been written as though they are constantly rambling on.\nThis is my first time having my writing localized, so I'm going to be as specific as possible even about obvious things just to be as helpful as possible to you all. Also many of the characters (Tepan, Kenak) referenced are not gendered, and in english we refer to these characters with \"they\" pronouns -- if needed, Tepan should be gendered female, and Kenak male.\n\nAlso, the |pause|, |long_pause| and |short_pause| keywords are used to time out the scrolling of the dialogue. We generally use |pause| after periods (and exclamation marks, etc), |short_pause| after commas, and |long_pause| after ellipses. These keywords don't count towards the character limit."
   },
   {
@@ -1606,7 +1606,7 @@
   {
     "key": "millipede_statue_room_default_6",
     "english": "I only caught little glimpses,|short_pause| but I think all these dark beasts come from it...",
-    "polish": "Udało mi się rzucić okiem tylko przez chwilę,|short_pause| ale wydaje mi się, że wszystkie te mroczne bestie biorą się właśnie stamtąd...",
+    "polish": "Udało mi się rzucić okiem tylko przez chwilę,|short_pause| ale wydaje mi się, że wszystkie te mroczne bestie biorą się właśnie z tego czegoś...",
     "context": "Tepan reveals that the monsters the player fights come from a single beast that resides underground."
   },
   {
@@ -1762,7 +1762,7 @@
   {
     "key": "millipede_chasm_default_2",
     "english": "Hmm,|short_pause| this was a particularly solemn place for the Yoran,|short_pause| you know.|pause| One of Kenak's more heinous crimes.|pause| They wiped out every last trace of it.|pause| No name,|short_pause| just an empty hive.",
-    "polish": "Hmm,|short_pause| to miejsce było dla Yoran wyjątkowo uroczyste,|short_pause| wiesz.|pause| Jedna z paskudniejszych zbrodni Kenaka.|pause| Wymazali po nim wszelki ślad.|pause| Żadnej nazwy,|short_pause| tylko puste gniazdo.",
+    "polish": "Hmm,|short_pause| to miejsce było dla Yoran wyjątkowo uroczyste,|short_pause| wiesz.|pause| Jedna z paskudniejszych zbrodni Kenaka.|pause| Zatarł tu wszelkie ślady.|pause| Żadnej nazwy,|short_pause| tylko puste gniazdo.",
     "context": "Tepan hints at the history of the Starved Hive. During Kenak's (a Julius Caesar-type) conquest, the Tyrant brought the hives in line by seizing all the farmland and cutting off food to this particular Hive before attempting to wipe out all of it's culture and even it's name. Thus, it is considered one of Kenak's greatest crimes during their reign."
   },
   {
@@ -1948,7 +1948,7 @@
   {
     "key": "millipede_funnel_default_3",
     "english": "Can you see the crystals?|pause| They're all over these caves.|pause| I'm sure you saw some higher up.",
-    "polish": "Widzisz te kryształy?|pause| Są w całych tych jaskiniach.|pause| Na pewno trafiały ci się wyżej.",
+    "polish": "Widzisz te kryształy?|pause| Pełno ich w tych jaskiniach.|pause| Na pewno trafiały ci się wyżej.",
     "context": "Tepan draws the player's attention to the large gems present in the space that have been dotted throughout the game. \nTepan is subdued, having learned that the black goo has actually come from the crystals."
   },
   {
@@ -1960,7 +1960,7 @@
   {
     "key": "millipede_funnel_default_5",
     "english": "You know,|short_pause| I never learned what the Yoran did with these crystals.|pause| I know they provide light,|short_pause| but...|long_pause| well,|short_pause| they must do something else.",
-    "polish": "Wiesz,|short_pause| tak i nie było mi dane się dowiedzieć, co Yoranie robili z tymi kryształami.|pause| Wiem, że dają światło,|short_pause| ale...|long_pause| cóż,|short_pause| muszą robić coś jeszcze.",
+    "polish": "Wiesz,|short_pause| do dziś nie wiem, co Yoranie robili z tymi kryształami.|pause| Wiem, że dają światło,|short_pause| ale...|long_pause| cóż,|short_pause| muszą robić coś jeszcze.",
     "context": "Tepan, somewhat confounded and a little upset with themselves, believes the gems must have been used for something else beyond their light-giving properties."
   },
   {
@@ -1990,7 +1990,7 @@
   {
     "key": "millipede_funnel_lore_3",
     "english": "I cannot begin to thank you enough.|pause| I realized,|short_pause| somewhere back there,|short_pause| that you aren't doing this for me in particular,|short_pause| but...|long_pause| Well,|short_pause| from companion to companion I say thank you.",
-    "polish": "Nie umiem ci się dostatecznie odwdzięczyć.|pause| Dotarło do mnie,|short_pause| gdzieś tam po drodze,|short_pause| że nie robisz tego akurat dla mnie,|short_pause| ale...|long_pause| Cóż,|short_pause| jako towarzysz towarzyszowi: dziękuję.",
+    "polish": "Nie umiem ci się dostatecznie odwdzięczyć.|pause| Dotarło do mnie,|short_pause| gdzieś tam po drodze,|short_pause| że nie robisz tego akurat dla mnie,|short_pause| ale...|long_pause| Cóż,|short_pause| po przyjacielsku: dziękuję.",
     "context": "Tepan, while unaware of Kaspidae's influence on the player character's actions, can sense that the player isn't destroying the goo simply to help Tepan get home. Regardless, it is helping Tepan, for which they give the player gracious thanks.\nA little moment of sentimentality, Tepan does feel like they and the player character are companions of sorts."
   },
   {
@@ -2397,7 +2397,7 @@
   {
     "key": "retry_connection_button",
     "english": "Retry Connection",
-    "polish": "Spróbuj połączyć ponownie",
+    "polish": "Połącz ponownie",
     "context": "This is a button that allows the player to attempt to reconnect the game to the internet.",
     "max_length": 20
   },

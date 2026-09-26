@@ -67,7 +67,17 @@ nazwy kategorii-smaków przetłumaczone (Marakuja, Melon, Śliwka), Hardcore →
 - Fonty przycisków (Dead Stock) mają własne `ó ł`, pozostałe polskie litery biorą
   z fallbacku `beer money` — widoczne różnice rozmiaru opisuje `docs/technical.md`.
 
-## Po niezależnym review
+## Po niezależnym review (2026-09-26)
 
 Wynik: `docs/localization-review.md`. Rozstrzygnięcia użytkownika dopisujemy tutaj
 i do biblii jako `zrodlo: uzytkownik`, razem z odrzuconymi wariantami.
+
+- **Decyzja 1 otwarta ponownie — nowa przesłanka.** Notatka twórców przy
+  `millipede_statue_room_default_1`: Tepan i Kenak nie mają płci, „if needed, Tepan
+  should be gendered female, and Kenak male”. Warianty: A — zostać bez rodzaju
+  i wygładzić sztywne miejsca (rekomendacja), B — rodzaj żeński. Męski odpada.
+  Czeka na użytkownika.
+- Poprawione przecieki rodzaju: „wziąłeś” (gracz), „towarzysz towarzyszowi” (Tepan
+  i gracz). „Przyjacielu” (`millipede_funnel_default_1`) czeka w rozmowie.
+- Decyzje 2–7 utrzymane. Do rozmowy: „Trafienie …” → „Zabójstwo …” w powiadomieniach
+  kombo, „DÓŁ URAZY” → „DÓŁ PORACHUNKÓW”.
