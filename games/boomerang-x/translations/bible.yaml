@@ -1,0 +1,178 @@
+zrodla:
+  - id: en
+    opis: translations/en-pl-review.json — angielskie teksty z tabeli SheetData.Init i notatki twórców (pole `context`).
+  - id: notatki
+    opis: >-
+      Notatki twórców przy wierszach (pole `context`). Opisują scenę, intencję kwestii
+      i konsekwentnie mówią o Tepanie „they/themselves”.
+  - id: technical
+    opis: docs/technical.md — terminologia mocy i decyzja o bezrodzajowym Tepanie z wersji 1.0 (2026-09-21).
+  - id: vertical
+    opis: Próbka 0.1 (38 wierszy) potwierdzona w grze przez użytkownika; game.yaml `test_notes`.
+
+styl:
+  ton: >-
+    Spokojny, trochę baśniowy świat modliszek po zagładzie. Menu i tablice samouczka
+    krótkie i rzeczowe. Tepan ciepły, gadatliwy, niezręczny, z kuchennym humorem
+    i chwilami melancholii; bez slangu i bez przekleństw (w EN ich nie ma).
+  adaptacja: >-
+    Nazwy miejsc tłumaczymy, nazwy własne istot i ludów zostają. Idiomy i żarty
+    Tepana oddajemy po polsku („wee 'pede” → „za młodu, przy jakimś tuzinie nóg”).
+    Bez dopisywania lore.
+  zrodlo: decyzja
+  uwaga: >-
+    Ustalone przez tłumacza przy fullu 1.0, bez osobnej rozmowy o kierunku z użytkownikiem
+    (etap localization-direction nie istniał). Vertical 0.1 użytkownik widział w grze.
+
+postacie:
+  - id: tepan
+    nazwa: Tepan
+    plec: n
+    klucz: '^millipede_'
+    mowi_do_gracza: ty
+    rejestr: ciepły, uprzejmy, gadatliwy; plącze się i poprawia w pół zdania (|long_pause|); żarty o jedzeniu
+    odmiana: Tepana, Tepanowi, Tepanem (męska odmiana samego imienia)
+    zrodlo: [notatki, technical]
+    uwaga: >-
+      Stonoga z innego świata, w notatkach twórców zawsze „they”. W PL o sobie mówi bez
+      rodzaju gramatycznego w czasie przeszłym: „udało mi się zobaczyć”, „wyniosło mnie”,
+      „zdarzyło mi się” zamiast „widziałem/widziałam”. Decyzja z 1.0 do potwierdzenia
+      przez użytkownika. Raport nie sprawdza rodzaju dla `plec: n` — kontrola ręczna.
+    przyklady:
+      - klucz: millipede_sewers_lore_4
+        en: When I was a wee 'pede,|short_pause| only a dozen or so legs,|short_pause| I remember falling through one.
+        pl: Za młodu,|short_pause| przy jakimś tuzinie nóg,|short_pause| zdarzyło mi się przez takie wpaść.
+        zrodlo: decyzja
+        uwaga: Konstrukcja bezosobowa zamiast „wpadłem/wpadłam”; żart z nóg zachowany.
+      - klucz: millipede_sauna_lore_7
+        en: It was trying to make someone I knew.|pause| So next time the portal opened I got me and my hundred legs right out of there!
+        pl: Próbował ulepić kogoś znajomego.|pause| Więc gdy tylko portal otworzył się następnym razem, wyniosło mnie stamtąd razem ze stoma nogami!
+        zrodlo: decyzja
+  - id: gracz
+    nazwa: bohater (gracz)
+    plec: '?'
+    mowi_do_gracza: '-'
+    zrodlo: [en]
+    uwaga: >-
+      Postać gracza nie mówi, jej płeć nie pada w tekstach. Tepan zwraca się do niej na „ty”;
+      formy rodzajowe wobec gracza omijamy („Udało ci się!”, „nic ci nie jest”).
+  - id: kaspidae
+    nazwa: Kaspidae
+    plec: k
+    odmiana: nieodmienne („o Kaspidae”, „Dzieci Kaspidae”)
+    zrodlo: [en, notatki]
+    uwaga: >-
+      Legendarny minstrel modliszek, w EN „themselves”. W PL rodzaj żeński za rzeczownikiem
+      „modliszka” („ta wielka modliszka z porożem to Kaspidae… zanurzyła się”). Decyzja z 1.0.
+  - id: pustelnik
+    nazwa: Pustelnik
+    plec: m
+    zrodlo: [en]
+    uwaga: >-
+      W EN „they” (płeć nieznana). W PL rodzaj męski za rzeczownikiem „Pustelnik”
+      („był jakimś dawnym władcą”, „odprawił”, „tęsknił”). Decyzja z 1.0.
+  - id: kenak
+    nazwa: Kenak
+    plec: m
+    odmiana: Kenaka
+    zrodlo: [notatki]
+    uwaga: Tyran w typie Juliusza Cezara (notatka level_1_name).
+
+terminy:
+  - en: Flux
+    pl: Strumień
+    formy: [strumie]
+    zrodlo: [technical]
+    uwaga: Moc spowalniania czasu; wielką literą jak nazwa mocy. W opcjach i sterowaniu też „Strumień”.
+  - en: Slingshot
+    pl: Zryw
+    formy: [zryw]
+    zrodlo: [technical]
+  - en: Scattershot
+    pl: Odłamki
+    formy: [odłam]
+    zrodlo: [technical]
+    uwaga: Liczba mnoga, rodzaj niemęskoosobowy („Odłamki są gotowe”).
+  - en: Needle
+    pl: Igła
+    formy: [igł, igle]
+    zrodlo: [technical]
+  - en: Blaze
+    pl: Żar
+    formy: [żar]
+    zrodlo: [technical]
+  - en: Oblivion Comet
+    pl: Kometa Zapomnienia
+    formy: [komet]
+    zrodlo: [technical]
+  - en: Comet Mode
+    pl: tryb komety
+    formy: [tryb komety]
+    zrodlo: decyzja
+  - en: boomerang
+    pl: bumerang
+    formy: [bumerang]
+    zrodlo: decyzja
+  - en: shields?
+    pl: tarcza
+    formy: [tarcz]
+    zrodlo: decyzja
+    uwaga: Tarcze to punkty życia gracza.
+  - en: recall
+    pl: przywołanie
+    formy: [przywoł]
+    zrodlo: decyzja
+  - en: Endless Run
+    pl: Bieg bez końca
+    formy: [bez końca]
+    zrodlo: decyzja
+  - en: leaderboard
+    pl: ranking
+    formy: [ranking]
+    zrodlo: decyzja
+  - en: waves?
+    pl: fala
+    formy: [fal]
+    zrodlo: decyzja
+  - en: mantids?
+    pl: modliszka
+    formy: [modlisz]
+    zrodlo: decyzja
+  - en: hives?
+    pl: gniazdo
+    formy: [gniazd, gnieź]
+    zrodlo: decyzja
+    uwaga: Starved Hive → Zagłodzone Gniazdo.
+  - en: doorways?
+    pl: drzwi
+    formy: [drzwi]
+    zrodlo: decyzja
+    uwaga: Przejścia między światami w słowach Tepana; „portal” zostaje tam, gdzie jest w EN.
+  - en: speedrun timer
+    pl: stoper szybkiego przejścia
+    formy: [stoper]
+    zrodlo: decyzja
+  - en: required enem(?:y|ies)
+    pl: wymagany wróg
+    formy: [wymagan]
+    zrodlo: decyzja
+  - en: Yoran
+    pl: Yoranie / Yoran (lud), yorański (przymiotnik)
+    formy: ['yoran', 'yorań']
+    zrodlo: decyzja
+    uwaga: >-
+      Mianownik l.mn. „Yoranie”, dopełniacz „Yoran” („modliszki Yoran”, „Legion Yoran”),
+      celownik „Yoranom”; przymiotnik w nazwie miejsca „Yorański Bór”.
+
+bez_tlumaczenia:
+  [Tepan, Kaspidae, Kenak, Atsil, Atsila, Vashkatar, Entacca, Yoran, Yoranie, Yoranom,
+   Boomerang X, Joy-Con, OK, Flick stick, VSync]
+
+ustawienia:
+  dialog_klucz: '^millipede_(?!press_to_talk|name$)'
+  max_wiersz: 15   # tytuły ekranów sterowania (options_remap_*_title); podane przez twórców, niepotwierdzone w grze
+
+ignoruj:
+  - sprawdzenie: terminy
+    klucz: '^boomerang_x_title$'
+    powod: tytuł gry zostaje po angielsku
