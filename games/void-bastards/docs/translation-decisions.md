@@ -1,4 +1,4 @@
-# Void Bastards — decyzje tłumaczenia (0.2.0)
+# Void Bastards — decyzje tłumaczenia (0.2.1, po review)
 
 Fakty i źródła: `translations/bible.yaml`. Raport kontrolny: `work/l10n-report.md`.
 
@@ -83,3 +83,35 @@ opisane w biblii jako wyjątki albo rdzenie.
   Budżet: długość angielskiego (do ~20 znaków). „Wezwano statek zaopatrzenia” →
   „Wezwano dostawę” (spójne z „wezwij dostawę” przy terminalu), „Wypłata
   z ubezpieczenia” → „Odszkodowanie”.
+
+## Review po fullu (2026-09-26)
+
+Niezależny przegląd całości (2480/2480 wpisów, trzech reviewerów w świeżym kontekście):
+`docs/localization-review.md`. Kierunek sprzed verticala utrzymany w całości. Wprowadzono
+31 pewnych poprawek, m.in.:
+
+- **Blokada drzwi:** „lock/unlock” to „blokować/odblokować” także w opisach ulepszenia
+  HackDoor i podpowiedziach (`Hint/Lock`, `Hint/Robots`) — wcześniej „zamykać/otwierać”
+  zmieniało sens mechaniki.
+- **Moduły w opisach amunicji** jak na mapie: „w kwaterach” (hab), „w modułach min
+  atomowych Pac” (nuc bays) — „wyrzutnie” to moduł torped.
+- **rehydrate = nawodnić** także w opisie Void Ark na mapie gwiezdnej.
+- Spacja przed liczbą doklejaną do „Punkty lizusa za te ustawienia:”, jeden wyciek
+  formy męskiej („Bądź gotowy” → „Przygotuj się”), wielka litera po kropce w opisach broni.
+- Biblia: „action items” w praktyce oddawane jako „zadanie/zadania”; spacje końcowe EN
+  bez doklejanej treści oznaczone jako wyjątek raportu.
+
+Przegląd językowy nie zastępuje testu w grze — pełne przejście nadal czeka.
+
+## Do rozmowy (propozycje z review, obecny tekst zostaje do decyzji)
+
+Pełna lista z kluczami: `docs/localization-review.md`, sekcja „Do rozmowy”. Najważniejsze:
+
+1. Samouczek B.A.C.S.-a — sztywne obejścia rodzaju („Czy zauważono na tym statku brzęczek?”,
+   „Zgubiony kierunek?”, „zanim dojdzie do zabicia albo uduszenia”).
+2. Osiągnięcia `_past` z „… udana” na końcu → „Udana ucieczka z mgławicy…”.
+3. Piraci: „kapuś” → „frajer” (dobber), Li Hua „osobiście” → „mam tam wyleźć…”.
+4. Nazwy akcji „Strzał/Skok/Bieg” → „Strzelaj/Skacz/Biegnij”.
+5. Stopnie wrogów „Stary woźny/Stary skryba” (Veteran) słabsze niż „Starszy skryba” (Senior).
+6. „upscale” = „ulepsz” jak ulepszenia z warsztatu → „uszlachetnij” / „przerób”.
+7. Kalambury: „Proszę się nadal doczekiwać”, „Zarządzanie grzybkowe”, „Sknerstwo”.

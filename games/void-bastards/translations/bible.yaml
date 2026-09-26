@@ -72,7 +72,9 @@ terminy:
     pl: zadania do realizacji
     formy: [zadani]
     zrodlo: decyzja
-    uwaga: korpo-żargon; alternatywnie „action itemy” w ironicznych miejscach.
+    uwaga: >
+      korpo-żargon; w praktyce całej gry „zadanie/zadania” („Twoje nowe zadania”),
+      pełne „do realizacji” tylko tam, gdzie brzmi naturalnie (review 2026-09-26).
   - en: FTL
     pl: FTL
     formy: [ftl]
@@ -239,3 +241,6 @@ ignoruj:
   - sprawdzenie: wielkie_litery
     klucz: '^(CS/CS_Prog5_PG2_PAN1_Text1|Offense/(DEADEYE|TRIGGER_HAPPY))$'
     powod: nazwy własne (Orbitalne Centrum…, Pac Force).
+  - sprawdzenie: typografia
+    klucz: '^(CS/CS_Prog1_PG1_PAN1_Text2|Legend/HeartstarterTerminal|MapPopup/(Maintenance|Rendition)|Star Map Event/BombDescription|StartMenu/UnlockFoon|desc_long_[a-f]|desc_short|tydy_desc_long_[a-f])$'
+    powod: spacja na końcu EN to najpewniej pozostałość po autorach, bez doklejanej treści (akapity, opisy, podpis legendy); review 2026-09-26. Spacje przed doklejaną liczbą (Challenges/DifficultySelect*) dodane.

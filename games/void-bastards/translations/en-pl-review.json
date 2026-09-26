@@ -1073,7 +1073,7 @@
   {
     "key": "Challenges/DifficultySelectSettingsAdditionalValue",
     "english": "These settings are worth an additional ",
-    "polish": "Dodatkowe punkty lizusa za te ustawienia:",
+    "polish": "Dodatkowe punkty lizusa za te ustawienia: ",
     "context": "For languages that use plurals like English."
   },
   {
@@ -1084,13 +1084,13 @@
   {
     "key": "Challenges/DifficultySelectSettingsValue",
     "english": "These settings are worth ",
-    "polish": "Punkty lizusa za te ustawienia:",
+    "polish": "Punkty lizusa za te ustawienia: ",
     "context": "For languages that use plurals like English."
   },
   {
     "key": "Challenges/DifficultySelectSuggestHarder",
     "english": "You can choose harder settings to earn up to ",
-    "polish": "Maksimum punktów lizusa za trudniejsze ustawienia:",
+    "polish": "Maksimum punktów lizusa za trudniejsze ustawienia: ",
     "context": "For languages that use plurals like English."
   },
   {
@@ -1181,7 +1181,7 @@
   {
     "key": "Challenges/mystery monsters description",
     "english": "Citizens on board vessels can't be identified from the star map. Vessel traits are hidden. Rooms and terminals aren't shown on the map. Prepare yourself for anything!",
-    "polish": "Obywateli na pokładach nie da się rozpoznać z mapy gwiezdnej. Cechy statków są ukryte. Pomieszczenia i terminale nie są pokazane na mapie. Bądź gotowy na wszystko!"
+    "polish": "Obywateli na pokładach nie da się rozpoznać z mapy gwiezdnej. Cechy statków są ukryte. Pomieszczenia i terminale nie są pokazane na mapie. Przygotuj się na wszystko!"
   },
   {
     "key": "Challenges/pinata",
@@ -3431,7 +3431,7 @@
   {
     "key": "Hint/Lock",
     "english": "Lock doors to control dangerous citizens (they can't unlock them).",
-    "polish": "Zamykaj drzwi, by trzymać groźnych obywateli w ryzach (nie umieją ich otworzyć)."
+    "polish": "Blokuj drzwi, by trzymać groźnych obywateli w ryzach (nie umieją ich odblokować)."
   },
   {
     "key": "Hint/Lux",
@@ -3531,7 +3531,7 @@
   {
     "key": "Hint/Robots",
     "english": "Secbots can unlock doors but not secure ones (found in security and tombs).",
-    "polish": "Secboty otwierają drzwi, ale nie zabezpieczone (te w ochronie i kazamatach)."
+    "polish": "Secboty odblokowują drzwi, ale nie zabezpieczone (te w ochronie i kazamatach)."
   },
   {
     "key": "Hint/Run",
@@ -6291,7 +6291,7 @@
   {
     "key": "MapPopup/Janitorial",
     "english": "Where janitors inspect for dirt and grime",
-    "polish": "Tu woźni szukają brudu i smaru"
+    "polish": "Tu woźni szukają kurzu i brudu"
   },
   {
     "key": "MapPopup/JunkDock",
@@ -9686,7 +9686,7 @@
   {
     "key": "Star Map Event/HazardDescription",
     "english": "S.T.E.V.'s presence has caused a PAC nuc mine to detonate. luckily PAC mines are notoriously unreliable and S.T.E.V. escaped any damage. You, however, did not.",
-    "polish": "Obecność S.T.E.V. zdetonowała atomową minę PAC. na szczęście miny PAC słyną z zawodności i S.T.E.V. wyszedł bez szwanku. Ty — niestety nie."
+    "polish": "Obecność S.T.E.V. zdetonowała atomową minę PAC. Na szczęście miny PAC słyną z zawodności i S.T.E.V. wyszedł bez szwanku. Ty — niestety nie."
   },
   {
     "key": "Star Map Event/HazardTitle",
@@ -9751,7 +9751,7 @@
   {
     "key": "Star Map Event/MineFlotsamDescription",
     "english": "You find an inert buzz bomb drone. The buzzer has run out of power but you recover some explosives from it that are easily turned into Bushwhackers.",
-    "polish": "Znajdujesz nieaktywny dron-bombę. Brzęczkowi skończyła się energia, ale da się z niego odzyskać materiał wybuchowy, z którego łatwo zrobić zasadzkacze."
+    "polish": "Znajdujesz nieaktywnego drona-bombę. Skończyła mu się energia, ale da się z niego odzyskać materiał wybuchowy, z którego łatwo zrobić zasadzkacze."
   },
   {
     "key": "Star Map Event/MineFlotsamTitle",
@@ -9946,7 +9946,7 @@
   {
     "key": "Star Map Event/TwisterDescription",
     "english": "The world seems to stretch and contract as the gene twister passes through you. Everything feels different. You feel different - and not just in the way that you did after drinking that six pack of Ion Bru. Is this what happened to all these crazy citizens out there?",
-    "polish": "Świat zdaje się rozciągać i kurczyć, gdy przechodzi przez ciebie genowir. Wszystko wydaje się inne. Ty też czujesz się inaczej — i nie tak jak po wypiciu sześciopaku Ion Bru. Czy to właśnie spotkało tych wszystkich szalonych obywateli?"
+    "polish": "Świat zdaje się rozciągać i kurczyć, gdy przechodzi przez ciebie genowir. Wszystko wydaje się inne. Ty też czujesz się inaczej — i to nie tylko tak jak po wypiciu sześciopaku Ion Bru. Czy to właśnie spotkało tych wszystkich szalonych obywateli?"
   },
   {
     "key": "Star Map Event/TwisterTitle",
@@ -10520,7 +10520,7 @@
   {
     "key": "Star Map/VoidArk",
     "english": "Prison transport where you were recently rehydrated. BACS directs you from here.",
-    "polish": "Transportowiec więzienny, w którym niedawno przywrócono ci płyny. Stąd kieruje tobą BACS."
+    "polish": "Transportowiec więzienny, w którym niedawno cię nawodniono. Stąd kieruje tobą BACS."
   },
   {
     "key": "Star Map/VoidArkReentryDenied",
@@ -11273,7 +11273,7 @@
   {
     "key": "UpgradeDescription/BombThrower_L1",
     "english": "Releases a chained cluster of bombs. don't get caught in the blast!",
-    "polish": "Uwalnia łańcuch bomb kasetowych. nie daj się złapać w wybuch!",
+    "polish": "Uwalnia łańcuch bomb kasetowych. Nie daj się złapać w wybuch!",
     "context": "A cluseterflack is a bomb that shoots out smaller bombs when it explodes. \n"
   },
   {
@@ -11290,7 +11290,7 @@
   {
     "key": "UpgradeDescription/DartGun_L1",
     "english": "Silently fires toxic spikes. doesn't alert enemies.",
-    "polish": "Bezgłośnie wystrzeliwuje toksyczne kolce. nie alarmuje wrogów."
+    "polish": "Bezgłośnie wystrzeliwuje toksyczne kolce. Nie alarmuje wrogów."
   },
   {
     "key": "UpgradeDescription/DartGun_L2",
@@ -11409,12 +11409,12 @@
   {
     "key": "UpgradeDescription/HackDoor_L1",
     "english": "Authority to lock or unlock doors",
-    "polish": "Uprawnienia do zamykania i otwierania drzwi"
+    "polish": "Uprawnienia do blokowania i odblokowywania drzwi"
   },
   {
     "key": "UpgradeDescription/HackDoor_L2",
     "english": "Super fast door locking and unlocking",
-    "polish": "Błyskawiczne zamykanie i otwieranie drzwi"
+    "polish": "Błyskawiczne blokowanie i odblokowywanie drzwi"
   },
   {
     "key": "UpgradeDescription/HackRobot_L1",
@@ -11484,7 +11484,7 @@
   {
     "key": "UpgradeDescription/Laser_L1",
     "english": "Charges up to fire a burst of polarised light. passes through enemies and windows.",
-    "polish": "Po naładowaniu wystrzeliwuje impuls spolaryzowanego światła. przechodzi przez wrogów i okna.",
+    "polish": "Po naładowaniu wystrzeliwuje impuls spolaryzowanego światła. Przechodzi przez wrogów i okna.",
     "context": "The toaster is a laser weapon that can shoot through glass. It has a slow charge up phase but deals a lot of damage."
   },
   {
@@ -11551,7 +11551,7 @@
   {
     "key": "UpgradeDescription/PistolAmmo_L1",
     "english": "Bullets can be found in hab modules",
-    "polish": "Naboje można znaleźć w modułach mieszkalnych",
+    "polish": "Naboje można znaleźć w kwaterach",
     "context": "Hab modules are the living quarters on each ship. With this upgrade you will find bullets there."
   },
   {
@@ -11595,7 +11595,7 @@
   {
     "key": "UpgradeDescription/RadDartGunAmmo_L1",
     "english": "Rad spikes can be found in pac nuc bays",
-    "polish": "Radkolce można znaleźć w wyrzutniach atomowych Pac",
+    "polish": "Radkolce można znaleźć w modułach min atomowych Pac",
     "context": "The PAC nuke bay is room/module that bombs are dropped out of."
   },
   {
@@ -11756,7 +11756,7 @@
   {
     "key": "UpgradeDescription/Zapper_L1",
     "english": "Stuns target. super effective against mechanical foes",
-    "polish": "Ogłusza cel. bardzo skuteczny przeciw mechanicznym wrogom",
+    "polish": "Ogłusza cel. Bardzo skuteczny przeciw mechanicznym wrogom",
     "context": "The zapper is a weapon that \"stuns” enemies with an electrical spark. The enemy cannot move and you can run away or kill them.  "
   },
   {
@@ -11797,17 +11797,17 @@
   {
     "key": "UpgradeDescriptionAtLevel/DartGun_L1",
     "english": "Silently fires toxic spikes. doesn't alert enemies.",
-    "polish": "Bezgłośnie wystrzeliwuje toksyczne kolce. nie alarmuje wrogów."
+    "polish": "Bezgłośnie wystrzeliwuje toksyczne kolce. Nie alarmuje wrogów."
   },
   {
     "key": "UpgradeDescriptionAtLevel/DartGun_L2",
     "english": "Silently fires very toxic spikes. doesn't alert enemies.",
-    "polish": "Bezgłośnie wystrzeliwuje bardzo toksyczne kolce. nie alarmuje wrogów."
+    "polish": "Bezgłośnie wystrzeliwuje bardzo toksyczne kolce. Nie alarmuje wrogów."
   },
   {
     "key": "UpgradeDescriptionAtLevel/DartGun_L3",
     "english": "Silently fires super toxic spikes. doesn't alert enemies.",
-    "polish": "Bezgłośnie wystrzeliwuje supertoksyczne kolce. nie alarmuje wrogów."
+    "polish": "Bezgłośnie wystrzeliwuje supertoksyczne kolce. Nie alarmuje wrogów."
   },
   {
     "key": "UpgradeDescriptionAtLevel/DecoyAmmo_L1",
@@ -11907,12 +11907,12 @@
   {
     "key": "UpgradeDescriptionAtLevel/HackDoor_L1",
     "english": "Authority to lock or unlock doors",
-    "polish": "Uprawnienia do zamykania i otwierania drzwi"
+    "polish": "Uprawnienia do blokowania i odblokowywania drzwi"
   },
   {
     "key": "UpgradeDescriptionAtLevel/HackDoor_L2",
     "english": "Super fast door locking and unlocking",
-    "polish": "Błyskawiczne zamykanie i otwieranie drzwi"
+    "polish": "Błyskawiczne blokowanie i odblokowywanie drzwi"
   },
   {
     "key": "UpgradeDescriptionAtLevel/HackRobot_L1",
@@ -11977,12 +11977,12 @@
   {
     "key": "UpgradeDescriptionAtLevel/Laser_L1",
     "english": "Charges up to fire a burst of polarised light. passes through enemies and windows.",
-    "polish": "Po naładowaniu wystrzeliwuje impuls spolaryzowanego światła. przechodzi przez wrogów i okna."
+    "polish": "Po naładowaniu wystrzeliwuje impuls spolaryzowanego światła. Przechodzi przez wrogów i okna."
   },
   {
     "key": "UpgradeDescriptionAtLevel/Laser_L2",
     "english": "Charges up quickly to fire an intense burst of light. passes through enemies and windows.",
-    "polish": "Szybko się ładuje i wystrzeliwuje silny impuls światła. przechodzi przez wrogów i okna."
+    "polish": "Szybko się ładuje i wystrzeliwuje silny impuls światła. Przechodzi przez wrogów i okna."
   },
   {
     "key": "UpgradeDescriptionAtLevel/MineThrowerAmmo_L1",
@@ -12037,7 +12037,7 @@
   {
     "key": "UpgradeDescriptionAtLevel/PistolAmmo_L1",
     "english": "Bullets can be found in hab modules",
-    "polish": "Naboje można znaleźć w modułach mieszkalnych"
+    "polish": "Naboje można znaleźć w kwaterach"
   },
   {
     "key": "UpgradeDescriptionAtLevel/Pistol_L1",
@@ -12077,7 +12077,7 @@
   {
     "key": "UpgradeDescriptionAtLevel/RadDartGunAmmo_L1",
     "english": "Rad spikes can be found in pac nuc bays",
-    "polish": "Radkolce można znaleźć w wyrzutniach atomowych Pac"
+    "polish": "Radkolce można znaleźć w modułach min atomowych Pac"
   },
   {
     "key": "UpgradeDescriptionAtLevel/RadDartGun_L1",
@@ -12222,12 +12222,12 @@
   {
     "key": "UpgradeDescriptionAtLevel/Zapper_L1",
     "english": "Stuns target. super effective against mechanical foes",
-    "polish": "Ogłusza cel. bardzo skuteczny przeciw mechanicznym wrogom"
+    "polish": "Ogłusza cel. Bardzo skuteczny przeciw mechanicznym wrogom"
   },
   {
     "key": "UpgradeDescriptionAtLevel/Zapper_L2",
     "english": "Stuns target. super effective against mechanical foes",
-    "polish": "Ogłusza cel. bardzo skuteczny przeciw mechanicznym wrogom"
+    "polish": "Ogłusza cel. Bardzo skuteczny przeciw mechanicznym wrogom"
   },
   {
     "key": "UpgradeDescriptionAtLevel/Zapper_L3",
@@ -12570,7 +12570,7 @@
   {
     "key": "Challenges/DifficultySelectSuggestHarderAlt",
     "english": "Maximum Brownie Points for choosing harder settings: ",
-    "polish": "Maksimum punktów lizusa za trudniejsze ustawienia:",
+    "polish": "Maksimum punktów lizusa za trudniejsze ustawienia: ",
     "context": "For Russian, Japanese, Korean and perhaps Portuguese"
   },
   {

@@ -127,6 +127,12 @@ przejścia niżej, więc tekst doklejony przez grę (nazwa klawisza w miejsce `K
 zamienia `\n` na CRLF, a plugin dzielił plik po `\n`. 0.2.1: zapis z `newline='\n'`
 i `TrimEnd('\r')` przy wczytywaniu. W paczce 0.2.1 `pl.tsv` nie ma żadnego `\r`.
 
+## Review po fullu
+
+26 września 2026: niezależny przegląd całego tekstu (`docs/localization-review.md`),
+31 poprawek w `translations/en-pl-review.json`. Paczka niezbudowana ponownie — poprawki
+wejdą do następnego wydania. Otwarte warianty stylistyczne w `docs/translation-decisions.md`.
+
 ## Następny krok
 
 Test pełnej wersji: warsztat (nazwy części i ulepszeń), mapa gwiezdna (zdarzenia,
