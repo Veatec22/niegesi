@@ -15,7 +15,8 @@ użytkownika** — ten dokument i `translations/bible.yaml` zostały spisane wst
 
 ### 1. Tepan bez rodzaju gramatycznego
 
-Status: **decyzja tłumacza, do potwierdzenia**. Źródło: notatki twórców mówią
+Status: **uzgodnione z użytkownikiem 2026-09-26 — wariant A** (szczegóły niżej,
+„Po niezależnym review”). Źródło: notatki twórców mówią
 o Tepanie wyłącznie „they/themselves” (np. `millipede_statue_room_default_2`:
 „Tepan introduces themselves”). Polszczyzna wymusza rodzaj w czasie przeszłym, więc
 kwestie są przebudowane tak, żeby go nie ujawniać:
@@ -48,7 +49,8 @@ tam, gdzie EN jest jednowyrazowe; limit 20 znaków przy nazwach mocy.
 
 ### 5. Nazwy miejsc tłumaczone, imiona i ludy zostają
 
-Status: **decyzja tłumacza**. THE GRUDGE PIT → DÓŁ URAZY, YORANWOOD → YORAŃSKI BÓR,
+Status: **decyzja tłumacza**; jedna zmiana użytkownika po review. THE GRUDGE PIT →
+DÓŁ PORACHUNKÓW (było: DÓŁ URAZY), YORANWOOD → YORAŃSKI BÓR,
 THE DEEPEST FOLLY → NAJGŁĘBSZE SZALEŃSTWO, HALL OF THE ERSATZ FEAST → SALA POZORNEJ UCZTY
 itd. Tepan, Kaspidae, Kenak, Atsil, Vashkatar, Entacca, Yoran bez zmian.
 
@@ -74,10 +76,30 @@ i do biblii jako `zrodlo: uzytkownik`, razem z odrzuconymi wariantami.
 
 - **Decyzja 1 otwarta ponownie — nowa przesłanka.** Notatka twórców przy
   `millipede_statue_room_default_1`: Tepan i Kenak nie mają płci, „if needed, Tepan
-  should be gendered female, and Kenak male”. Warianty: A — zostać bez rodzaju
-  i wygładzić sztywne miejsca (rekomendacja), B — rodzaj żeński. Męski odpada.
-  Czeka na użytkownika.
-- Poprawione przecieki rodzaju: „wziąłeś” (gracz), „towarzysz towarzyszowi” (Tepan
-  i gracz). „Przyjacielu” (`millipede_funnel_default_1`) czeka w rozmowie.
-- Decyzje 2–7 utrzymane. Do rozmowy: „Trafienie …” → „Zabójstwo …” w powiadomieniach
-  kombo, „DÓŁ URAZY” → „DÓŁ PORACHUNKÓW”.
+  should be gendered female, and Kenak male”.
+- Pewne poprawki reviewera wprowadzone (10 wpisów), m.in. przecieki rodzaju „wziąłeś”
+  (gracz) i „towarzysz towarzyszowi” (Tepan i gracz).
+
+### Rozstrzygnięcia użytkownika (2026-09-26)
+
+Użytkownik przyjął wszystkie osiem rekomendacji („Wszystkie punkty 1-8 tak”):
+
+1. **Tepan zostaje bez rodzaju (wariant A)**, najsztywniejsze konstrukcje wygładzone:
+   `millipede_sewers_lore_3` „mignęło mi, jak przechodzisz”, `_statue_room_default_6`
+   „Tylko parę razy mi to mignęło”, `_sauna_lore_6` „Nie trzeba było w ogóle tak długo
+   tam zostawać”, `_sauna_lore_7` „w nogi — wszystkie sto — i precz stamtąd!”,
+   `_chasm_default_4` „na moich oczach nigdy nie zadziałała”, `_sauna_lore_3` „im dłużej
+   to trwało” (zamiast propozycji reviewera „z każdym dniem”, która nie łączy się
+   z „tym bardziej”). Odrzucony wariant B: rodzaj żeński zgodny z notatką twórców.
+2. „… Kill” → **„Zabójstwo …”** w pięciu powiadomieniach kombo; odrzucone „Trafienie …”.
+3. THE GRUDGE PIT → **„DÓŁ PORACHUNKÓW”**; odrzucone „DÓŁ URAZY”.
+4. HUD Scale → **„Wielkość HUD-u”**; odrzucone „Wielkość interfejsu”.
+5. **„Sterowanie klawiaturą i myszą”** i dla symetrii **„Sterowanie padem”**;
+   odrzucone „Zmień klawiaturę i mysz”, „Zmień sterowanie padem”.
+6. „friend” → **„bratnia duszo”**; odrzucone „przyjacielu” (męskie wobec gracza).
+7. „solemn” → **„otoczone szczególną powagą”**; odrzucone „wyjątkowo uroczyste”.
+8. Etykiety przełączników: **„Przerywnik na początku gry”**, **„Odrodzenie od ostatniej
+   fali”**; odrzucone formy rozkazujące.
+
+Pozostałe propozycje z `docs/localization-review.md` (tematy 7, 9-bis, 10 i tabela
+„Pozostałe”) nie były przedmiotem tej decyzji i zostają otwarte.

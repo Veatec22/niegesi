@@ -190,14 +190,14 @@
   {
     "key": "options_remap_gamepad_controls",
     "english": "Edit Gamepad Controls",
-    "polish": "Zmień sterowanie padem",
+    "polish": "Sterowanie padem",
     "context": "label for the button in the options screen that opens the menu for altering the control mapping for a gamepad (on PC)",
     "max_length": 30
   },
   {
     "key": "options_remap_keyboard_mouse_controls",
     "english": "Edit Keyboard/Mouse Controls",
-    "polish": "Zmień klawiaturę i mysz",
+    "polish": "Sterowanie klawiaturą i myszą",
     "context": "label for the button in the options screen that opens the menu for altering the control mapping for the keyboard and mouse (on PC)",
     "max_length": 30
   },
@@ -323,7 +323,7 @@
   {
     "key": "options_hud_scale_label",
     "english": "HUD Scale",
-    "polish": "Wielkość interfejsu",
+    "polish": "Wielkość HUD-u",
     "context": "label for a slider that changes the scaling of the HUD, in case you need extra visibility when sitting far away from the TV or something. note that this only changes the in-game HUD, not the menu UI",
     "max_length": 50
   },
@@ -1114,7 +1114,7 @@
   {
     "key": "level_2_name",
     "english": "THE GRUDGE PIT",
-    "polish": "DÓŁ URAZY",
+    "polish": "DÓŁ PORACHUNKÓW",
     "context": "the name of level 2. This is a sporting arena where warriors from the different hives would fight in order to settle disputes. Created after Kenak's rise to replace warfare between hives.",
     "max_length": 30
   },
@@ -1233,35 +1233,35 @@
   {
     "key": "air_kill",
     "english": "Air Kill x{0}",
-    "polish": "Trafienie w locie x{0}",
+    "polish": "Zabójstwo w locie x{0}",
     "context": "notification for an air kill combo -- this means that the player has killed multiple enemies without touching the ground",
     "max_length": 30
   },
   {
     "key": "recall_kill",
     "english": "Recall Kill x{0}",
-    "polish": "Trafienie przywołaniem x{0}",
+    "polish": "Zabójstwo przywołaniem x{0}",
     "context": "notification for a recall kill combo -- this means that the player has killed multiple enemies by recalling the boomerang",
     "max_length": 30
   },
   {
     "key": "chain_kill",
     "english": "Single-Throw Kill x{0}",
-    "polish": "Trafienie jednym rzutem x{0}",
+    "polish": "Zabójstwo jednym rzutem x{0}",
     "context": "notification for a chain kill combo -- this means that the player has killed multiple enemies on one throw",
     "max_length": 30
   },
   {
     "key": "simultaneous_kill",
     "english": "Special Kill x{0}",
-    "polish": "Trafienie specjalne x{0}",
+    "polish": "Zabójstwo specjalne x{0}",
     "context": "notification for a simultaneous kill combo -- this means that the player has killed multiple enemies on the same frame",
     "max_length": 30
   },
   {
     "key": "realtime_kill",
     "english": "Realtime Kill x{0}",
-    "polish": "Trafienie bez Strumienia x{0}",
+    "polish": "Zabójstwo bez Strumienia x{0}",
     "context": "notification for a realtime kill combo -- this means that the player has killed multiple enemies in a row without using \"time slow\"",
     "max_length": 30
   },
@@ -1606,7 +1606,7 @@
   {
     "key": "millipede_statue_room_default_6",
     "english": "I only caught little glimpses,|short_pause| but I think all these dark beasts come from it...",
-    "polish": "Udało mi się rzucić okiem tylko przez chwilę,|short_pause| ale wydaje mi się, że wszystkie te mroczne bestie biorą się właśnie z tego czegoś...",
+    "polish": "Tylko parę razy mi to mignęło,|short_pause| ale wydaje mi się, że wszystkie te mroczne bestie biorą się właśnie z tego czegoś...",
     "context": "Tepan reveals that the monsters the player fights come from a single beast that resides underground."
   },
   {
@@ -1708,7 +1708,7 @@
   {
     "key": "millipede_sewers_lore_3",
     "english": "I came to this world through a doorway.|pause| I think you understand.|pause| I saw you pass through something that looked similar back in the shrine.|pause| Doorways between worlds.",
-    "polish": "Do tego świata przywiodły mnie drzwi.|pause| Chyba wiesz, o czym mówię.|pause| Udało mi się zobaczyć, jak przechodzisz przez coś podobnego tam, w sanktuarium.|pause| Drzwi między światami.",
+    "polish": "Do tego świata przywiodły mnie drzwi.|pause| Chyba wiesz, o czym mówię.|pause| Tam, w sanktuarium, mignęło mi, jak przechodzisz przez coś podobnego.|pause| Drzwi między światami.",
     "context": "Tepan tries to describe the portals they use to hop between realities as doorways, alluding to the in-game doorways the player will walk through to reach certain areas of the game. \n"
   },
   {
@@ -1762,7 +1762,7 @@
   {
     "key": "millipede_chasm_default_2",
     "english": "Hmm,|short_pause| this was a particularly solemn place for the Yoran,|short_pause| you know.|pause| One of Kenak's more heinous crimes.|pause| They wiped out every last trace of it.|pause| No name,|short_pause| just an empty hive.",
-    "polish": "Hmm,|short_pause| to miejsce było dla Yoran wyjątkowo uroczyste,|short_pause| wiesz.|pause| Jedna z paskudniejszych zbrodni Kenaka.|pause| Zatarł tu wszelkie ślady.|pause| Żadnej nazwy,|short_pause| tylko puste gniazdo.",
+    "polish": "Hmm,|short_pause| to miejsce było dla Yoran otoczone szczególną powagą,|short_pause| wiesz.|pause| Jedna z paskudniejszych zbrodni Kenaka.|pause| Zatarł tu wszelkie ślady.|pause| Żadnej nazwy,|short_pause| tylko puste gniazdo.",
     "context": "Tepan hints at the history of the Starved Hive. During Kenak's (a Julius Caesar-type) conquest, the Tyrant brought the hives in line by seizing all the farmland and cutting off food to this particular Hive before attempting to wipe out all of it's culture and even it's name. Thus, it is considered one of Kenak's greatest crimes during their reign."
   },
   {
@@ -1774,7 +1774,7 @@
   {
     "key": "millipede_chasm_default_4",
     "english": "A last-ditch effort kind of thing.|pause| Supposed to be a weapon to stop those creatures after the Legion fell,|short_pause| but I never saw it working.",
-    "polish": "Coś w rodzaju ostatniej deski ratunku.|pause| Miała to być broń, która powstrzyma te stworzenia po upadku Legionu,|short_pause| ale nie zdarzyło mi się zobaczyć, żeby działała.",
+    "polish": "Coś w rodzaju ostatniej deski ratunku.|pause| Miała to być broń, która powstrzyma te stworzenia po upadku Legionu,|short_pause| ale na moich oczach nigdy nie zadziałała.",
     "context": "Tepan references the fall of the Yoran Legion, which was a quickly put together army of warriors who fought in the Grudge Pits. The Legion was quickly overcome by the goo."
   },
   {
@@ -1894,7 +1894,7 @@
   {
     "key": "millipede_sauna_lore_3",
     "english": "When I first arrived there,|short_pause| it didn't look like anything in particular.|pause| But the longer I stayed,|short_pause| the more it started to...|long_pause| it tried to shape itself to how I remembered my own home.",
-    "polish": "Zaraz po przybyciu,|short_pause| nie wyglądał na nic szczególnego.|pause| Ale im dłużej mnie tam trzymało,|short_pause| tym bardziej zaczynał...|long_pause| próbował ukształtować się tak, jak dom zapisał mi się w pamięci.",
+    "polish": "Zaraz po przybyciu,|short_pause| nie wyglądał na nic szczególnego.|pause| Ale im dłużej to trwało,|short_pause| tym bardziej zaczynał...|long_pause| próbował ukształtować się tak, jak dom zapisał mi się w pamięci.",
     "context": "Tepan tells of how the world they visited looked unremarkable, but the longer they stayed, the more the environment shifted to resemble places from Tepan's own memory. \nTepan is clearly still affected by these memories, and is probably having a hard time reliving them."
   },
   {
@@ -1912,13 +1912,13 @@
   {
     "key": "millipede_sauna_lore_6",
     "english": "I spent too long there in the first place.|pause| But one day I returned to what was an approximation of my childhood nest,|short_pause| and I saw...",
-    "polish": "Zostawanie tam tak długo było błędem.|pause| Aż pewnego dnia wracam do czegoś, co udawało gniazdo z mojego dzieciństwa,|short_pause| i widzę...",
+    "polish": "Nie trzeba było w ogóle tak długo tam zostawać.|pause| Aż pewnego dnia wracam do czegoś, co udawało gniazdo z mojego dzieciństwa,|short_pause| i widzę...",
     "context": "Tepan admits to being seduced by this world resembling their own, but remembers the particular event that convinced them to leave."
   },
   {
     "key": "millipede_sauna_lore_7",
     "english": "It was trying to make someone I knew.|pause| So next time the portal opened I got me and my hundred legs right out of there!",
-    "polish": "Próbował ulepić kogoś znajomego.|pause| Więc gdy tylko portal otworzył się następnym razem, wyniosło mnie stamtąd razem ze stoma nogami!",
+    "polish": "Próbował ulepić kogoś znajomego.|pause| Więc gdy tylko portal znów się otworzył: w nogi — wszystkie sto — i precz stamtąd!",
     "context": "Tepan clearly remembers the person that world was trying to recreate, but does not share this with the player. \nHorrified by this grotesque being, and realizing Tepan's own thoughts weren't safe from that place, they escaped back through the portal."
   },
   {
@@ -1936,7 +1936,7 @@
   {
     "key": "millipede_funnel_default_1",
     "english": "Hello there,|short_pause| friend.|pause| We're very near to the end now.|pause| Just down below here is where the Yoran found me.",
-    "polish": "Witaj,|short_pause| przyjacielu.|pause| Jesteśmy już bardzo blisko końca.|pause| Tam, niżej, znaleźli mnie Yoranie.",
+    "polish": "Witaj,|short_pause| bratnia duszo.|pause| Jesteśmy już bardzo blisko końca.|pause| Tam, niżej, znaleźli mnie Yoranie.",
     "context": "Sensing the end to their journey, Tepan is feeling anxious and subdued, but with a small hint of excitement. Tepan is taking the time to reflect before moving on.\nTepan reveals that they were found below this quarry."
   },
   {
@@ -2039,14 +2039,14 @@
   {
     "key": "options_play_intro_cutscene",
     "english": "Play Intro Cutscene",
-    "polish": "Odtwórz przerywnik otwierający",
+    "polish": "Przerywnik na początku gry",
     "context": "label for an option that enables/disables the cutscene that plays at the beginning of the game. on by default",
     "max_length": 50
   },
   {
     "key": "options_continue_from_latest_wave",
     "english": "Respawn To Last Reached Wave",
-    "polish": "Odradzaj przy ostatniej fali",
+    "polish": "Odrodzenie od ostatniej fali",
     "context": "label for an accessibility option that skips to the wave they got to before they died when the player respawns, rather than starting from the beginning of the arena as usual",
     "max_length": 50
   },

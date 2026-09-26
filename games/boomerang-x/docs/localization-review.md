@@ -1,8 +1,8 @@
 # Boomerang X — niezależny review po fullu
 
 Data: 2026-09-26. Przekład z paczki 1.1 (paczki nie przebudowano).
-Status: **przeczytano 359/359 wpisów; 10 pewnych poprawek wprowadzonych w pliku
-tłumaczenia, jedna decyzja do rozstrzygnięcia (rodzaj Tepana) i tematy redakcyjne otwarte.
+Status: **przeczytano 359/359 wpisów; 10 pewnych poprawek wprowadzonych; użytkownik
+przyjął 8 tematów z rozmowy (19 wpisów zmienionych), pozostałe propozycje otwarte.
 Testu pełnego tłumaczenia w grze nadal nie było.**
 Raport zawiera treść późniejszych scen z Tepanem.
 
@@ -102,7 +102,12 @@ przejścia, wymagany wróg, ranking) są spójne w całej grze.
 
 ## Do rozmowy
 
-Obecny tekst zostaje, dopóki użytkownik nie wybierze.
+**Rozstrzygnięcie 2026-09-26:** użytkownik przyjął punkty przedstawione w rozmowie:
+tematy 1 (wariant A) i 2, 3, 4, 5, 6, 8, 9 poniżej oraz „bratnia duszo” z tabeli
+„Pozostałe”. Wprowadzone w pliku tłumaczenia; szczegóły w `translation-decisions.md`.
+W `millipede_sauna_lore_3` zamiast „z każdym dniem” wpisano „im dłużej to trwało”
+(„z każdym dniem… tym bardziej” nie łączy się składniowo). Tematy 7 i 10 oraz reszta
+tabeli „Pozostałe” zostają otwarte — obecny tekst bez zmian.
 
 ### Najważniejsze
 
@@ -194,7 +199,7 @@ dwór, czy dziedziniec areny), `required` „WYMAGANI:” (zależy od wyglądu H
    w ramce i czy tempo `|pause|` jest czytelne.
 2. Ekran przypisywania klawisza po poprawce („Naciśnij przycisk dla akcji / „Skok””):
    wyśrodkowanie, dwa wiersze, cudzysłów „” w foncie.
-3. Powiadomienia kombo w foncie Dead Stock: „Trafienie bez Strumienia x3” — szerokość
+3. Powiadomienia kombo w foncie Dead Stock: „Zabójstwo bez Strumienia x3” — szerokość
    i wielkość liter z fallbacku.
 4. Najdłuższe etykiety opcji wobec kolumny wartości: „Kolor wroga bonusowego w Biegu
    bez końca”, „Tryb dla wrażliwych na światło”, „Ostrzeżenia o bliskim zagrożeniu”.
@@ -224,5 +229,7 @@ Po naniesieniu 10 poprawek agent prowadzący ponownie sprawdził zmienione wpisy
 Znaczniki są zgodne z EN we wszystkich 359 wpisach, żaden wpis nie przekracza
 `max_length`, a `l10n_report.py` daje te same zgłoszenia co przed zmianami
 (wszystkie opisane wyżej). `tools/check_games.ts` przechodzi.
+Po rozstrzygnięciach użytkownika zmieniono kolejne 19 wpisów; ponownie sprawdzono
+znaczniki (zgodne), limity (bez przekroczeń), raport kontrolny i `check_games.ts`.
 Paczka 1.1 w `site/public/pobierz/` **nie zawiera tych poprawek** — wejdą przy
 następnym buildzie.

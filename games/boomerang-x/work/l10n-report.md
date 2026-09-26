@@ -88,10 +88,10 @@ Wpisy z tekstem: 359. Biblia: tak.
   - PL: Strumień zatrzymujący czas
 - `recall_kill` — UI 27 zn. vs 16 w EN
   - EN: Recall Kill x{0}
-  - PL: Trafienie przywołaniem x{0}
+  - PL: Zabójstwo przywołaniem x{0}
 - `realtime_kill` — UI 29 zn. vs 18 w EN
   - EN: Realtime Kill x{0}
-  - PL: Trafienie bez Strumienia x{0}
-- `millipede_statue_room_default_6` — napis 143 zn. vs 93 w EN
+  - PL: Zabójstwo bez Strumienia x{0}
+- `millipede_statue_room_default_6` — napis 128 zn. vs 93 w EN
   - EN: I only caught little glimpses,|short_pause| but I think all these dark beasts come from it...
-  - PL: Udało mi się rzucić okiem tylko przez chwilę,|short_pause| ale wydaje mi się, że wszystkie te mroczne bestie biorą się właśnie z tego czego…
+  - PL: Tylko parę razy mi to mignęło,|short_pause| ale wydaje mi się, że wszystkie te mroczne bestie biorą się właśnie z tego czegoś...

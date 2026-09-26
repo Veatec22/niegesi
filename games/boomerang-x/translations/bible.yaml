@@ -14,6 +14,8 @@ zrodla:
       Wychwycona dopiero w niezależnym review 2026-09-26.
   - id: review
     opis: docs/localization-review.md — niezależny odczyt 359/359 wpisów, 2026-09-26.
+  - id: uzytkownik-review
+    opis: Rozstrzygnięcia użytkownika po review, 2026-09-26 („Wszystkie punkty 1-8 tak”).
   - id: vertical
     opis: Próbka 0.1 (38 wierszy) potwierdzona w grze przez użytkownika; game.yaml `test_notes`.
 
@@ -39,14 +41,15 @@ postacie:
     mowi_do_gracza: ty
     rejestr: ciepły, uprzejmy, gadatliwy; plącze się i poprawia w pół zdania (|long_pause|); żarty o jedzeniu
     odmiana: Tepana, Tepanowi, Tepanem (męska odmiana samego imienia)
-    zrodlo: [notatki, notatka-plec, technical, review]
+    zrodlo: uzytkownik
     uwaga: >-
       Stonoga z innego świata, w notatkach twórców zawsze „they”. W PL o sobie mówi bez
-      rodzaju gramatycznego w czasie przeszłym: „udało mi się zobaczyć”, „wyniosło mnie”,
-      „zdarzyło mi się” zamiast „widziałem/widziałam”. Decyzja z 1.0, NIEPOTWIERDZONA
-      przez użytkownika. Twórcy: jeśli rodzaj konieczny — żeński (notatka-plec), więc
-      męskie rzeczowniki o Tepanie („towarzysz”) są błędem w każdym wariancie.
-      Otwarty temat 1 w docs/localization-review.md. Raport nie sprawdza `plec: n` — kontrola ręczna.
+      rodzaju gramatycznego w czasie przeszłym. Użytkownik 2026-09-26 wybrał wariant A:
+      zostaje bez rodzaju, ale bez sztywnych „udało mi się zobaczyć” i biernego „niosło
+      mnie” tam, gdzie da się naturalniej („mignęło mi”, „na moich oczach”, „w nogi”).
+      Odrzucony wariant B: rodzaj żeński, dopuszczony przez twórców „if needed”
+      (notatka-plec). Męskie rzeczowniki o Tepanie („towarzysz”) są błędem.
+      Raport nie sprawdza `plec: n` — kontrola ręczna.
     przyklady:
       - klucz: millipede_sewers_lore_4
         en: When I was a wee 'pede,|short_pause| only a dozen or so legs,|short_pause| I remember falling through one.
@@ -55,8 +58,9 @@ postacie:
         uwaga: Konstrukcja bezosobowa zamiast „wpadłem/wpadłam”; żart z nóg zachowany.
       - klucz: millipede_sauna_lore_7
         en: It was trying to make someone I knew.|pause| So next time the portal opened I got me and my hundred legs right out of there!
-        pl: Próbował ulepić kogoś znajomego.|pause| Więc gdy tylko portal otworzył się następnym razem, wyniosło mnie stamtąd razem ze stoma nogami!
-        zrodlo: decyzja
+        pl: 'Próbował ulepić kogoś znajomego.|pause| Więc gdy tylko portal znów się otworzył: w nogi — wszystkie sto — i precz stamtąd!'
+        zrodlo: uzytkownik
+        uwaga: Tepan ucieka sam, jak w EN. Zastępuje bierne „wyniosło mnie stamtąd razem ze stoma nogami”.
   - id: gracz
     nazwa: bohater (gracz)
     plec: '?'
@@ -65,7 +69,8 @@ postacie:
     uwaga: >-
       Postać gracza nie mówi, jej płeć nie pada w tekstach. Tepan zwraca się do niej na „ty”;
       formy rodzajowe wobec gracza omijamy („Udało ci się!”, „nic ci nie jest”).
-      Po review poprawione „wziąłeś” i „towarzyszowi”; „przyjacielu” (funnel_default_1) do rozmowy.
+      Po review poprawione „wziąłeś” i „towarzyszowi”. „friend” → „bratnia duszo”
+      (funnel_default_1, uzytkownik; odrzucone „przyjacielu” jako męskie).
   - id: kaspidae
     nazwa: Kaspidae
     plec: k
@@ -134,6 +139,25 @@ terminy:
     pl: przywołanie
     formy: [przywoł]
     zrodlo: decyzja
+  - en: (?:Air|Recall|Single-Throw|Special|Realtime) Kill
+    pl: Zabójstwo …
+    formy: [zabójstw]
+    zrodlo: uzytkownik
+    uwaga: >-
+      Powiadomienia kombo, np. „Zabójstwo w locie x{0}”. Odrzucone „Trafienie …” (to „hit”).
+      Kill Combo zostaje „Kombo x{0}”, Realtime Kill = „Zabójstwo bez Strumienia”.
+  - en: Grudge Pit
+    pl: Dół Porachunków
+    formy: [porachunk]
+    zrodlo: uzytkownik
+    uwaga: Arena rozstrzygania sporów między gniazdami. Odrzucone „Dół Urazy” (z 1.0 i verticala).
+  - en: HUD
+    pl: HUD
+    formy: [hud]
+    zrodlo: uzytkownik
+    uwaga: >-
+      HUD Scale → „Wielkość HUD-u” (opcja zmienia tylko HUD, nie menu). Odrzucone
+      „Wielkość interfejsu”. UI (menu) dalej „interfejs”.
   - en: Endless Run
     pl: Bieg bez końca
     formy: [bez końca]
@@ -177,7 +201,7 @@ terminy:
       celownik „Yoranom”; przymiotnik w nazwie miejsca „Yorański Bór”.
 
 bez_tlumaczenia:
-  [Tepan, Kaspidae, Kenak, Atsil, Atsila, Vashkatar, Entacca, Yoran, Yoranie, Yoranom,
+  [HUD, HUD-u, Tepan, Kaspidae, Kenak, Atsil, Atsila, Vashkatar, Entacca, Yoran, Yoranie, Yoranom,
    Boomerang X, Joy-Con, OK, Flick stick, VSync]
 
 ustawienia:
