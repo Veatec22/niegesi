@@ -1,0 +1,217 @@
+# Biblia SPRAWL. Utworzona 2026-09-26 przed niezależnym przeglądem, po fullu 0.2.
+# Przed verticalem SPRAWL-a nie było jeszcze etapu ustalania kierunku z użytkownikiem:
+# ustalenia poniżej odtworzono z translations/REVIEW.md i z samego tłumaczenia.
+# Użytkownik potwierdził w grze działanie spolszczenia, nie zatwierdzał tonu ani terminów,
+# dlatego nic tu nie ma `zrodlo: uzytkownik`.
+
+zrodla:
+  - id: klucze
+    opis: >-
+      Klucze Dialogue_Subs niosą mówcę i scenę, np. E1M1_FATHER_INTRODUCING_B
+      (poziom, postać, scena, litera kolejności). Wiersz raportu to samo `key`.
+  - id: tekst
+    opis: Treść EN w en-pl-review.json (zaimki, zwroty, kodeks).
+  - id: review
+    opis: translations/REVIEW.md — terminologia i uwagi z fullu 0.2.
+  - id: technical
+    opis: docs/technical.md — zakres, test użytkownika w grze.
+
+styl:
+  ton: >-
+    Mroczny cyberpunk, militarna dystopia. Ojciec mówi spokojnie, wyniośle i precyzyjnie,
+    z ironią; raporty wojskowe urzędowe, WIELKIMI LITERAMI jak w EN; hakerzy
+    potocznie, małymi literami, z przekleństwami; wpisy Matki poetyckie, urywane, z zakłóceniami.
+  adaptacja: >-
+    Idiomy swobodnie, bez dopisywania lore. Nie wygładzamy uszkodzonych transmisji,
+    ciągów kodów, łaciny ani celowych urwań. Literówki oryginału (aggresive, errected)
+    poprawiamy po cichu w PL, bo nie są częścią fikcji.
+  zrodlo: [review, tekst]
+  uwaga: odtworzone po fullu; przegląd 2026-09-26 ocenia je na całej grze
+
+postacie:
+  - id: seven
+    nazwa: SEVEN
+    plec: k
+    mowi_do_gracza: '-'
+    odmiana: nieodmienna („dla SEVEN”, „obiekt SEVEN”)
+    rejestr: bohaterka gracza, sama nic nie mówi
+    zrodlo: [tekst, review]
+    uwaga: >-
+      „She gave her life for you all. Her name was SEVEN.” (ACME_UNKNOWN_VOICE_G);
+      Reaper: „you were just their new toy” → „byłaś”. W raportach „agentka”, „obiekt”.
+  - id: father
+    nazwa: Ojciec
+    plec: m
+    klucz: '_FATHER_'
+    mowi_do_gracza: ty
+    rejestr: >-
+      Spokojny, wyniosły, precyzyjny; chłodna ironia („At least you got a souvenir.”).
+      Zdania pełne, bez potoczności. Kwestie rozbite na kilka napisów łączymy wielokropkiem.
+    odmiana: Ojciec, Ojca, Ojcem
+    zrodlo: [klucze, tekst, review]
+    uwaga: >-
+      „I am Father.” → „Jestem Ojciec.” SI uwięziona przez juntę; mówi o sobie w r. męskim
+      („I've tracked down” → „namierzyłem”). Do SEVEN w r. żeńskim („ilu już zabiłaś”).
+    przyklady:
+      - klucz: E1M1_FATHER_HALLMARK_C
+        en: I have faith in your capability for brutality.
+        pl: Wierzę w twoją zdolność do brutalności.
+        zrodlo: [tekst]
+      - klucz: E1M5_FATHER_OGRE_ENCOUNTER_END_D
+        en: At least you got a souvenir.
+        pl: Przynajmniej masz pamiątkę.
+        zrodlo: [tekst]
+  - id: reaper
+    nazwa: SIX
+    plec: m
+    klucz: 'REAPER_'
+    mowi_do_gracza: ty
+    rejestr: szyderczy, rozwrzeszczany, obłąkany; „Daddy” → „Tatuś” o Ojcu
+    odmiana: >-
+      SIX nieodmienne; kryptonim „Żniwiarz” (EnemyNames REAPER: SIX „ŻNIWIARZ”)
+    zrodlo: [klucze, tekst, review]
+    uwaga: >-
+      „I was always the better soldier” → „byłem”; do SEVEN w r. żeńskim.
+  - id: six_teaser
+    nazwa: SIX (zapowiedź)
+    plec: '?'
+    klucz: '_SIX_TEASER'
+    mowi_do_gracza: '-'
+    zrodlo: [klucze]
+    uwaga: >-
+      „I keep hearing this on their battlenet… Sierra, india, x-ray” — klucz nazywa SIX,
+      ale treść pasuje raczej do Ojca podsłuchującego sieć. Brak kontekstu; formy bezosobowe.
+  - id: politician
+    nazwa: Maurice Padilla-Fong
+    plec: m
+    klucz: '_POLITICIAN_'
+    mowi_do_gracza: ty
+    rejestr: zrezygnowany, patetyczny, dostojny
+    odmiana: Maurice'a Padilli-Fonga
+    zrodlo: [klucze, tekst]
+    uwaga: >-
+      Klucze mówią tylko POLITICIAN; tożsamość z kodeksu (e3m1.darkcity, e3m2.faustian [FONG])
+      i z tego, że jego głowa otwiera Iglicę. „Wiedziałem”, „spotkałbym”.
+  - id: mother
+    nazwa: Matka
+    plec: k
+    mowi_do_gracza: ty
+    rejestr: >-
+      Poetycki, urywany strumień świadomości; zakłócenia, powtórzenia, sklejone słowa
+      i małe litery zostają jak w EN.
+    zrodlo: [review, tekst]
+    uwaga: >-
+      Wpisy kodeksu *.mother*: „On the first day I was wrath” → „byłam gniewem”.
+      Pythia → Pytia (wołacz „pytio”). Adresat w mother02 w r. męskim („ty byłeś chaosem”) —
+      to „he”, o którym mówi Matka, nie SEVEN.
+  - id: overseer
+    nazwa: Nadzorca
+    plec: n
+    klucz: '^ANNOUNCER_'
+    mowi_do_gracza: '-'
+    rejestr: komunikaty systemu, bezosobowo
+    zrodlo: [klucze, tekst]
+  - id: unknown
+    nazwa: Nieznany głos
+    plec: m
+    klucz: '^ACME_UNKNOWN'
+    mowi_do_gracza: wy
+    rejestr: podniosłe orędzie po zakończeniu gry
+    zrodlo: [klucze, tekst]
+    uwaga: >-
+      „I have been a whisper in many places” → „Byłem szeptem”; najpewniej Ojciec (brak potwierdzenia).
+  - id: hakerzy
+    nazwa: case, mrph, xerx, hypt, ptr
+    plec: '?'
+    mowi_do_gracza: '-'
+    rejestr: >-
+      czat małymi literami, potoczny, wulgarny („fucking” → „jebany”, „cunt” → „chuju”)
+    zrodlo: [tekst, review]
+
+terminy:
+  - en: Father
+    pl: Ojciec
+    formy: [ojc, ojciec]
+    zrodlo: [review]
+  - en: Spire
+    pl: Iglica
+    formy: [iglic]
+    zrodlo: [review]
+  - en: Walled City
+    pl: Miasto za Murem
+    formy: [miast]
+    zrodlo: [review]
+  - en: Dark City
+    pl: Ciemne Miasto
+    formy: [ciemn]
+    zrodlo: [review]
+  - en: Badlands
+    pl: Pustkowia
+    formy: [pustkow]
+    zrodlo: [review]
+  - en: Bullet Time
+    pl: spowolnienie czasu
+    formy: [spowolni]
+    zrodlo: [review]
+    uwaga: ikona przycisku <img id="Bullet Time"/> zostaje nietknięta
+  - en: Junta
+    pl: junta
+    formy: [junt]
+    zrodlo: decyzja
+    uwaga: małą literą w środku zdania, jak nazwa pospolita
+  - en: keycard
+    pl: karta dostępu
+    formy: [kart]
+    zrodlo: decyzja
+  - en: Reaper Program
+    pl: program ŻNIWIARZ
+    formy: [żniwiarz]
+    zrodlo: [tekst]
+  - en: weakpoints?
+    pl: słaby punkt
+    formy: [słab]
+    zrodlo: decyzja
+  - en: wall ?run(ning)?
+    pl: bieg po ścianie
+    formy: [ścian]
+    zrodlo: decyzja
+  - en: slide
+    pl: wślizg
+    formy: [wślizg, ślizg]
+    zrodlo: decyzja
+  - en: cyberware
+    pl: wszczepy
+    formy: [wszczep]
+    zrodlo: decyzja
+  - en: blast doors?
+    pl: drzwi pancerne
+    formy: [pancern]
+    zrodlo: decyzja
+
+bez_tlumaczenia:
+  - SPRAWL
+  - Sprawl
+  - SEVEN
+  - SIX
+  - FIVE
+  - AEON
+  - NCO
+  - ICARUS
+  - GOR
+  - G.O.R.
+  - O.H.G.R
+  - Ghost
+  - Spectre
+  - Okami
+  - Oni
+  - Bull
+  - Sendai
+  - Suzumebachi
+  - IMAGO-DEI
+  - Domand
+  - MAKASHIMA
+  - HALCYON
+  - Hlford
+
+ustawienia:
+  dialog_klucz: '^(E\dM\d_|REAPER_|ACME_|ANNOUNCER_|KEYCARD_)'
